@@ -228,7 +228,7 @@ void APP_I2C_TEMP_SENSOR_Tasks ( void )
                 // For demonstration purpose, temperature value is assumed to be positive.
                 // The maximum positive temperature measured by sensor is +125 C
                 temp = (appTempData.rxBuffer[0] << 8) | appTempData.rxBuffer[1];
-                temp = (temp >> 7) * 0.5;
+                temp = (temp >> 7)/2;
                 appTempData.temperature = (uint8_t)temp;
 
                 SYS_CONSOLE_PRINT("%d C\r\n", appTempData.temperature);
