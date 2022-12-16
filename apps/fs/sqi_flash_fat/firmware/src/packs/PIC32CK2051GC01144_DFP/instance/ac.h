@@ -20,7 +20,7 @@
  *
  */
 
-/* file generated from device description version 2022-09-16T04:53:16Z */
+/* file generated from device description version 2022-11-28T06:54:19Z */
 #ifndef _PIC32CKGC01_AC_INSTANCE_
 #define _PIC32CKGC01_AC_INSTANCE_
 
@@ -30,12 +30,12 @@
 #define AC_ATEST_SIZE                            (2)        /* Defines the number of effective bits in ATEST register */
 #define AC_DACVALUE_BIT                          (7)        /* Defines the number of bits in DACCTRLn.VALUE */
 #define AC_GCLK_ID                               (34)       /* Index of Generic Clock */
-#define AC_IO_INPUTS                             (4)        /* Defines the number of AC pair inputs connected to IO pins */
-#define AC_PAIRS                                 (1)        /* Defines the number of AC pairs */
 #define AC_INSTANCE_ID                           (73)       /* Instance index for AC */
-#define AC_MCLK_ID_APB                           (105)      /* Index for AC APB clock */
-#define AC_PAC_ID                                (73)       /* Index for AC registers write protection */
-#define AC_NUM_CMP                               (2)        /* Number of comparators */
+#define AC_IO_INPUTS                             (4)        /* Defines the number of AC pair inputs connected to IO pins */
 #define AC_LOAD_CALIB                            (0)        /* Defines if calibration is required */
+#define AC_MCLK_ID_APB                           (105)      /* Index for AC APB clock */
+#define AC_NUM_CMP                               (2)        /* Number of comparators */
+#define AC_PAC_ID                                (73)       /* Index for AC registers write protection */
+#define AC_PAIRS                                 (1)        /* Defines the number of AC pairs */
 
 #endif /* _PIC32CKGC01_AC_INSTANCE_ */

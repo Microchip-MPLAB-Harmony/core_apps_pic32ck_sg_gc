@@ -20,7 +20,7 @@
  *
  */
 
-/* file generated from device description version 2022-09-16T04:53:16Z */
+/* file generated from device description version 2022-11-28T06:54:19Z */
 #ifndef _PIC32CKGC01_EIC_INSTANCE_
 #define _PIC32CKGC01_EIC_INSTANCE_
 
@@ -28,11 +28,11 @@
 /* ========== Instance Parameter definitions for EIC peripheral ========== */
 #define EIC_EXTINT_NUM                           (16)       /* Number of external interrupts */
 #define EIC_GCLK_ID                              (5)        /* Generic Clock index */
-#define EIC_NUMBER_OF_CONFIG_REGS                (2)        /* Number of CONFIG registers */
-#define EIC_NUMBER_OF_INTERRUPTS                 (16)       /* Number of external interrupts (obsolete) */
-#define EIC_SECURE_IMPLEMENTED                   (0)        /* Security Configuration implemented? */
 #define EIC_INSTANCE_ID                          (13)       /* Instance index for EIC */
 #define EIC_MCLK_ID_APB                          (45)       /* Index for EIC APB clock */
+#define EIC_NUMBER_OF_CONFIG_REGS                (2)        /* Number of CONFIG registers */
+#define EIC_NUMBER_OF_INTERRUPTS                 (16)       /* Number of external interrupts (obsolete) */
 #define EIC_PAC_ID                               (13)       /* Index for EIC registers write protection */
+#define EIC_SECURE_IMPLEMENTED                   (0)        /* Security Configuration implemented? */
 
 #endif /* _PIC32CKGC01_EIC_INSTANCE_ */

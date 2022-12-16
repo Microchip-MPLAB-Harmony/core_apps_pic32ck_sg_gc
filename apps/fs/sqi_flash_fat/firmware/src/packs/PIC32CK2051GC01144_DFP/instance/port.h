@@ -20,7 +20,7 @@
  *
  */
 
-/* file generated from device description version 2022-09-16T04:53:16Z */
+/* file generated from device description version 2022-11-28T06:54:19Z */
 #ifndef _PIC32CKGC01_PORT_INSTANCE_
 #define _PIC32CKGC01_PORT_INSTANCE_
 
@@ -32,14 +32,14 @@
 #define PORT_EV_NUM                              (4)        
 #define PORT_GROUPS                              (4)        
 #define PORT_HADDR_MSB                           (31)       /* AHB bus address MSB */
+#define PORT_INSTANCE_ID                         (32)       /* Instance index for PORT */
 #define PORT_IOBUS_IMPLEMENTED                   (0)        
+#define PORT_MCLK_ID_APB                         (64)       /* Index for PORT APB clock */
 #define PORT_MSB                                 (117)      
 #define PORT_ODRAIN                              (1)        /* ODRAIN supported? */
+#define PORT_PAC_ID                              (32)       /* Index for PORT registers write protection */
 #define PORT_PPP_IMPLEMENTED                     (0)        /* IOBUS2 implemented? */
 #define PORT_SECURE_IMPLEMENTED                  (0)        /* Secure I/Os supported? */
 #define PORT_SLEWLIM                             (2)        /* Number of SLEWLIM bits (0/1/2) */
-#define PORT_INSTANCE_ID                         (32)       /* Instance index for PORT */
-#define PORT_MCLK_ID_APB                         (64)       /* Index for PORT APB clock */
-#define PORT_PAC_ID                              (32)       /* Index for PORT registers write protection */
 
 #endif /* _PIC32CKGC01_PORT_INSTANCE_ */
