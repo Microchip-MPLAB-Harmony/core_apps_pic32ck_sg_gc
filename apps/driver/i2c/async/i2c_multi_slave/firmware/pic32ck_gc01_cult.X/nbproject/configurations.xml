@@ -324,6 +324,7 @@
                    projectFiles="false">
       <itemPath>Makefile</itemPath>
       <itemPath>i2c_async_i2c_multi_slave_pic32ck_gc01_cult.mc3</itemPath>
+      <itemPath>../src/config/pic32ck_gc01_cult/harmony-manifest-success.yml</itemPath>
     </logicalFolder>
   </logicalFolder>
   <projectmakefile>Makefile</projectmakefile>

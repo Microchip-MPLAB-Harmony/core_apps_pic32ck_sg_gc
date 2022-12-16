@@ -20,7 +20,7 @@
  *
  */
 
-/* file generated from device description version 2022-09-16T04:53:16Z */
+/* file generated from device description version 2022-11-28T06:54:19Z */
 #ifndef _PIC32CKGC01_SQI_INSTANCE_
 #define _PIC32CKGC01_SQI_INSTANCE_
 
@@ -29,13 +29,13 @@
 #define SQI_ATSPEED_IMPLEMENTED                  (1)        
 #define SQI_CBUF_DEPTH                           (3)        
 #define SQI_GCLK_ID                              (43)       /* Index of Generic Clock */
+#define SQI_INSTANCE_ID                          (96)       /* Instance index for SQI */
+#define SQI_MCLK_ID_AHB                          (16)       /* Index for SQI AHB clock */
+#define SQI_PAC_ID                               (96)       /* Index for SQI registers write protection */
 #define SQI_SFR_ADDRESS                          (0x0ffff000) 
 #define SQI_TRXBUF_DEPTH                         (8)        
 #define SQI_XIP_ADDRESS                          (0x10)     
 #define SQI_XIP_CS_MSB                           (3)        
 #define SQI_XIP_HSEL                             (1)        
-#define SQI_INSTANCE_ID                          (96)       /* Instance index for SQI */
-#define SQI_MCLK_ID_AHB                          (16)       /* Index for SQI AHB clock */
-#define SQI_PAC_ID                               (96)       /* Index for SQI registers write protection */
 
 #endif /* _PIC32CKGC01_SQI_INSTANCE_ */

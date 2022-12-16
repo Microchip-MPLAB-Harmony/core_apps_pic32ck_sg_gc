@@ -20,7 +20,7 @@
  *
  */
 
-/* file generated from device description version 2022-09-16T04:53:16Z */
+/* file generated from device description version 2022-11-28T06:54:19Z */
 #ifndef _PIC32CK2051GC01144_GPIO_H_
 #define _PIC32CK2051GC01144_GPIO_H_
 
