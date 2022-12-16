@@ -299,6 +299,7 @@
                    projectFiles="false">
       <itemPath>Makefile</itemPath>
       <itemPath>spi_async_spi_self_loopback_multi_client_pic32ck_gc01_cult.mc3</itemPath>
+      <itemPath>../src/config/pic32ck_gc01_cult/harmony-manifest-success.yml</itemPath>
     </logicalFolder>
   </logicalFolder>
   <projectmakefile>Makefile</projectmakefile>
@@ -316,7 +317,7 @@
       </toolsSet>
       <packs>
         <pack name="CMSIS" vendor="ARM" version="5.4.0"/>
-        <pack name="PIC32CK-GC_DFP" vendor="Microchip" version="1.0.5"/>
+        <pack name="PIC32CK-GC_DFP" vendor="Microchip" version="1.0.9"/>
       </packs>
       <ScriptingSettings>
       </ScriptingSettings>

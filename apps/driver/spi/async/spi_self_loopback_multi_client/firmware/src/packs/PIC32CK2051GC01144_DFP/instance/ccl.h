@@ -20,15 +20,15 @@
  *
  */
 
-/* file generated from device description version 2022-09-16T04:53:16Z */
+/* file generated from device description version 2022-11-28T06:54:19Z */
 #ifndef _PIC32CKGC01_CCL_INSTANCE_
 #define _PIC32CKGC01_CCL_INSTANCE_
 
 
 /* ========== Instance Parameter definitions for CCL peripheral ========== */
 #define CCL_GCLK_ID                              (37)       /* GCLK index for CCL */
-#define CCL_LUT_NUM                              (4)        /* Number of LUT in a CCL */
 #define CCL_INSTANCE_ID                          (77)       /* Instance index for CCL */
+#define CCL_LUT_NUM                              (4)        /* Number of LUT in a CCL */
 #define CCL_MCLK_ID_APB                          (109)      /* Index for CCL APB clock */
 #define CCL_PAC_ID                               (77)       /* Index for CCL registers write protection */
 
