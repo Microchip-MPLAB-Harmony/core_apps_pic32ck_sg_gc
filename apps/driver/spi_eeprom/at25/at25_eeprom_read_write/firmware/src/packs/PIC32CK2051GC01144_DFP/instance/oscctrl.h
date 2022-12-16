@@ -20,7 +20,7 @@
  *
  */
 
-/* file generated from device description version 2022-09-16T04:53:16Z */
+/* file generated from device description version 2022-11-28T06:54:19Z */
 #ifndef _PIC32CKGC01_OSCCTRL_INSTANCE_
 #define _PIC32CKGC01_OSCCTRL_INSTANCE_
 
@@ -36,16 +36,16 @@
 #define OSCCTRL_FRACDIV_PLLSRC                   (0)        /* Indice of the PLL that is source of the FRACDIV */
 #define OSCCTRL_GCLK_ID_DFLL48M                  (0)        /* Index of Generic Clock for DFLL48 */
 #define OSCCTRL_GCLK_ID_PLL                      (1)        /* Index of Generic Clock for PLL */
-#define OSCCTRL_PLLS_NUM                         (1)        /* Number of PLLs */
+#define OSCCTRL_INSTANCE_ID                      (6)        /* Instance index for OSCCTRL */
+#define OSCCTRL_MCLK_ID_APB                      (38)       /* Index for OSCCTRL APB clock */
+#define OSCCTRL_PAC_ID                           (6)        /* Index for OSCCTRL registers write protection */
 #define OSCCTRL_PLL0_OUTPUTS_NUM                 (6)        /* number of clock outputs for PLL0 */
 #define OSCCTRL_PLL1_OUTPUTS_NUM                 (0)        /* number of clock outputs for PLL1 */
+#define OSCCTRL_PLLS_NUM                         (1)        /* Number of PLLs */
 #define OSCCTRL_USBHS_NUM                        (1)        /* Number of usbhs clock requests */
 #define OSCCTRL_XOSC_ATEST_IMPLEMENTED           (1)        /* XOSC ATEST register implemented */
 #define OSCCTRL_XOSC_ATEST_SIZE                  (4)        /* number of effective bits in XOSC ATEST register */
 #define OSCCTRL_XOSC_CFD_CLK_SELECT_SIZE         (4)        /* Clock fail prescaler size */
 #define OSCCTRL_XOSC_CFD_HAS_RETENTION           (0)        /* Clock fail detected for xosc is in tetention domain */
-#define OSCCTRL_INSTANCE_ID                      (6)        /* Instance index for OSCCTRL */
-#define OSCCTRL_MCLK_ID_APB                      (38)       /* Index for OSCCTRL APB clock */
-#define OSCCTRL_PAC_ID                           (6)        /* Index for OSCCTRL registers write protection */
 
 #endif /* _PIC32CKGC01_OSCCTRL_INSTANCE_ */
