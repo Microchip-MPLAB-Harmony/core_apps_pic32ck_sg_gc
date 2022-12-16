@@ -50,7 +50,6 @@
 #include <string.h>
 #include "interrupts.h"
 #include "plib_fcw.h"
-#include "device_cache.h"
 
 /* ************************************************************************** */
 /* ************************************************************************** */
@@ -201,7 +200,6 @@ bool FCW_RowWrite( uint32_t *data, uint32_t address )
 	{
         /* Do Nothing */        
     }
-
 
     FCW_REGS->FCW_SRCADDR = (uint32_t )(data);
  
