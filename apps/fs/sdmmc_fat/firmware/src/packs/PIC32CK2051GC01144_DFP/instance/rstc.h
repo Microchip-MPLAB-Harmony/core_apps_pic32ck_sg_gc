@@ -20,7 +20,7 @@
  *
  */
 
-/* file generated from device description version 2022-09-16T04:53:16Z */
+/* file generated from device description version 2022-11-28T06:54:19Z */
 #ifndef _PIC32CKGC01_RSTC_INSTANCE_
 #define _PIC32CKGC01_RSTC_INSTANCE_
 
@@ -31,9 +31,9 @@
 #define RSTC_CM_HRESET_N_STRETCHED               (3)        /* Reset stretcher size for Cortex CPU related to HRESETn. */
 #define RSTC_CM_PORESET_STRETCHED                (3)        /* Reset stretcher size for Cortex CPU related to PORESET. */
 #define RSTC_HIB_IMPLEMENTED                     (1)        
-#define RSTC_VBAT_IMPLEMENTED                    (1)        /* One if VBAT (Battery backup mode) is supported */
 #define RSTC_INSTANCE_ID                         (5)        /* Instance index for RSTC */
 #define RSTC_MCLK_ID_APB                         (37)       /* Index for RSTC APB clock */
 #define RSTC_PAC_ID                              (5)        /* Index for RSTC registers write protection */
+#define RSTC_VBAT_IMPLEMENTED                    (1)        /* One if VBAT (Battery backup mode) is supported */
 
 #endif /* _PIC32CKGC01_RSTC_INSTANCE_ */

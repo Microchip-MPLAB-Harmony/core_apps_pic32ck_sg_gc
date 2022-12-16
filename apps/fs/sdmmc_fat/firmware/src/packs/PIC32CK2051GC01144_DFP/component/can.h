@@ -20,7 +20,7 @@
  *
  */
 
-/* file generated from device description version 2022-09-16T04:53:16Z */
+/* file generated from device description version 2022-11-28T06:54:19Z */
 #ifndef _PIC32CKGC01_CAN_COMPONENT_H_
 #define _PIC32CKGC01_CAN_COMPONENT_H_
 
@@ -387,95 +387,6 @@
 #define CAN_XIDFE_1_Msk                       _UINT32_(0xDFFFFFFF)                                 /* (CAN_XIDFE_1) Register Mask  */
 
 
-/* -------- CAN_CREL : (CAN Offset: 0x00) ( R/ 32) Core Release -------- */
-#define CAN_CREL_RESETVALUE                   _UINT32_(0x32300000)                                 /*  (CAN_CREL) Core Release  Reset Value */
-
-#define CAN_CREL_SUBSTEP_Pos                  _UINT32_(20)                                         /* (CAN_CREL) Sub-step of Core Release Position */
-#define CAN_CREL_SUBSTEP_Msk                  (_UINT32_(0xF) << CAN_CREL_SUBSTEP_Pos)              /* (CAN_CREL) Sub-step of Core Release Mask */
-#define CAN_CREL_SUBSTEP(value)               (CAN_CREL_SUBSTEP_Msk & (_UINT32_(value) << CAN_CREL_SUBSTEP_Pos)) /* Assigment of value for SUBSTEP in the CAN_CREL register */
-#define CAN_CREL_STEP_Pos                     _UINT32_(24)                                         /* (CAN_CREL) Step of Core Release Position */
-#define CAN_CREL_STEP_Msk                     (_UINT32_(0xF) << CAN_CREL_STEP_Pos)                 /* (CAN_CREL) Step of Core Release Mask */
-#define CAN_CREL_STEP(value)                  (CAN_CREL_STEP_Msk & (_UINT32_(value) << CAN_CREL_STEP_Pos)) /* Assigment of value for STEP in the CAN_CREL register */
-#define CAN_CREL_REL_Pos                      _UINT32_(28)                                         /* (CAN_CREL) Core Release Position */
-#define CAN_CREL_REL_Msk                      (_UINT32_(0xF) << CAN_CREL_REL_Pos)                  /* (CAN_CREL) Core Release Mask */
-#define CAN_CREL_REL(value)                   (CAN_CREL_REL_Msk & (_UINT32_(value) << CAN_CREL_REL_Pos)) /* Assigment of value for REL in the CAN_CREL register */
-#define CAN_CREL_Msk                          _UINT32_(0xFFF00000)                                 /* (CAN_CREL) Register Mask  */
-
-
-/* -------- CAN_ENDN : (CAN Offset: 0x04) ( R/ 32) Endian -------- */
-#define CAN_ENDN_RESETVALUE                   _UINT32_(0x87654321)                                 /*  (CAN_ENDN) Endian  Reset Value */
-
-#define CAN_ENDN_ETV_Pos                      _UINT32_(0)                                          /* (CAN_ENDN) Endianness Test Value Position */
-#define CAN_ENDN_ETV_Msk                      (_UINT32_(0xFFFFFFFF) << CAN_ENDN_ETV_Pos)           /* (CAN_ENDN) Endianness Test Value Mask */
-#define CAN_ENDN_ETV(value)                   (CAN_ENDN_ETV_Msk & (_UINT32_(value) << CAN_ENDN_ETV_Pos)) /* Assigment of value for ETV in the CAN_ENDN register */
-#define CAN_ENDN_Msk                          _UINT32_(0xFFFFFFFF)                                 /* (CAN_ENDN) Register Mask  */
-
-
-/* -------- CAN_MRCFG : (CAN Offset: 0x08) (R/W 32) Message RAM Configuration -------- */
-#define CAN_MRCFG_RESETVALUE                  _UINT32_(0x00)                                       /*  (CAN_MRCFG) Message RAM Configuration  Reset Value */
-
-#define CAN_MRCFG_OFFSET_Pos                  _UINT32_(16)                                         /* (CAN_MRCFG) Base address offset Position */
-#define CAN_MRCFG_OFFSET_Msk                  (_UINT32_(0xFF) << CAN_MRCFG_OFFSET_Pos)             /* (CAN_MRCFG) Base address offset Mask */
-#define CAN_MRCFG_OFFSET(value)               (CAN_MRCFG_OFFSET_Msk & (_UINT32_(value) << CAN_MRCFG_OFFSET_Pos)) /* Assigment of value for OFFSET in the CAN_MRCFG register */
-#define CAN_MRCFG_Msk                         _UINT32_(0x00FF0000)                                 /* (CAN_MRCFG) Register Mask  */
-
-
-/* -------- CAN_DBTP : (CAN Offset: 0x0C) (R/W 32) Fast Bit Timing and Prescaler -------- */
-#define CAN_DBTP_RESETVALUE                   _UINT32_(0xA33)                                      /*  (CAN_DBTP) Fast Bit Timing and Prescaler  Reset Value */
-
-#define CAN_DBTP_DSJW_Pos                     _UINT32_(0)                                          /* (CAN_DBTP) Data (Re)Synchronization Jump Width Position */
-#define CAN_DBTP_DSJW_Msk                     (_UINT32_(0xF) << CAN_DBTP_DSJW_Pos)                 /* (CAN_DBTP) Data (Re)Synchronization Jump Width Mask */
-#define CAN_DBTP_DSJW(value)                  (CAN_DBTP_DSJW_Msk & (_UINT32_(value) << CAN_DBTP_DSJW_Pos)) /* Assigment of value for DSJW in the CAN_DBTP register */
-#define CAN_DBTP_DTSEG2_Pos                   _UINT32_(4)                                          /* (CAN_DBTP) Data time segment after sample point Position */
-#define CAN_DBTP_DTSEG2_Msk                   (_UINT32_(0xF) << CAN_DBTP_DTSEG2_Pos)               /* (CAN_DBTP) Data time segment after sample point Mask */
-#define CAN_DBTP_DTSEG2(value)                (CAN_DBTP_DTSEG2_Msk & (_UINT32_(value) << CAN_DBTP_DTSEG2_Pos)) /* Assigment of value for DTSEG2 in the CAN_DBTP register */
-#define CAN_DBTP_DTSEG1_Pos                   _UINT32_(8)                                          /* (CAN_DBTP) Data time segment before sample point Position */
-#define CAN_DBTP_DTSEG1_Msk                   (_UINT32_(0x1F) << CAN_DBTP_DTSEG1_Pos)              /* (CAN_DBTP) Data time segment before sample point Mask */
-#define CAN_DBTP_DTSEG1(value)                (CAN_DBTP_DTSEG1_Msk & (_UINT32_(value) << CAN_DBTP_DTSEG1_Pos)) /* Assigment of value for DTSEG1 in the CAN_DBTP register */
-#define CAN_DBTP_DBRP_Pos                     _UINT32_(16)                                         /* (CAN_DBTP) Data Baud Rate Prescaler Position */
-#define CAN_DBTP_DBRP_Msk                     (_UINT32_(0x1F) << CAN_DBTP_DBRP_Pos)                /* (CAN_DBTP) Data Baud Rate Prescaler Mask */
-#define CAN_DBTP_DBRP(value)                  (CAN_DBTP_DBRP_Msk & (_UINT32_(value) << CAN_DBTP_DBRP_Pos)) /* Assigment of value for DBRP in the CAN_DBTP register */
-#define CAN_DBTP_TDC_Pos                      _UINT32_(23)                                         /* (CAN_DBTP) Tranceiver Delay Compensation Position */
-#define CAN_DBTP_TDC_Msk                      (_UINT32_(0x1) << CAN_DBTP_TDC_Pos)                  /* (CAN_DBTP) Tranceiver Delay Compensation Mask */
-#define CAN_DBTP_TDC(value)                   (CAN_DBTP_TDC_Msk & (_UINT32_(value) << CAN_DBTP_TDC_Pos)) /* Assigment of value for TDC in the CAN_DBTP register */
-#define CAN_DBTP_Msk                          _UINT32_(0x009F1FFF)                                 /* (CAN_DBTP) Register Mask  */
-
-
-/* -------- CAN_TEST : (CAN Offset: 0x10) (R/W 32) Test -------- */
-#define CAN_TEST_RESETVALUE                   _UINT32_(0x00)                                       /*  (CAN_TEST) Test  Reset Value */
-
-#define CAN_TEST_LBCK_Pos                     _UINT32_(4)                                          /* (CAN_TEST) Loop Back Mode Position */
-#define CAN_TEST_LBCK_Msk                     (_UINT32_(0x1) << CAN_TEST_LBCK_Pos)                 /* (CAN_TEST) Loop Back Mode Mask */
-#define CAN_TEST_LBCK(value)                  (CAN_TEST_LBCK_Msk & (_UINT32_(value) << CAN_TEST_LBCK_Pos)) /* Assigment of value for LBCK in the CAN_TEST register */
-#define CAN_TEST_TX_Pos                       _UINT32_(5)                                          /* (CAN_TEST) Control of Transmit Pin Position */
-#define CAN_TEST_TX_Msk                       (_UINT32_(0x3) << CAN_TEST_TX_Pos)                   /* (CAN_TEST) Control of Transmit Pin Mask */
-#define CAN_TEST_TX(value)                    (CAN_TEST_TX_Msk & (_UINT32_(value) << CAN_TEST_TX_Pos)) /* Assigment of value for TX in the CAN_TEST register */
-#define   CAN_TEST_TX_CORE_Val                _UINT32_(0x0)                                        /* (CAN_TEST) TX controlled by CAN core  */
-#define   CAN_TEST_TX_SAMPLE_Val              _UINT32_(0x1)                                        /* (CAN_TEST) TX monitoring sample point  */
-#define   CAN_TEST_TX_DOMINANT_Val            _UINT32_(0x2)                                        /* (CAN_TEST) Dominant (0) level at pin CAN_TX  */
-#define   CAN_TEST_TX_RECESSIVE_Val           _UINT32_(0x3)                                        /* (CAN_TEST) Recessive (1) level at pin CAN_TX  */
-#define CAN_TEST_TX_CORE                      (CAN_TEST_TX_CORE_Val << CAN_TEST_TX_Pos)            /* (CAN_TEST) TX controlled by CAN core Position  */
-#define CAN_TEST_TX_SAMPLE                    (CAN_TEST_TX_SAMPLE_Val << CAN_TEST_TX_Pos)          /* (CAN_TEST) TX monitoring sample point Position  */
-#define CAN_TEST_TX_DOMINANT                  (CAN_TEST_TX_DOMINANT_Val << CAN_TEST_TX_Pos)        /* (CAN_TEST) Dominant (0) level at pin CAN_TX Position  */
-#define CAN_TEST_TX_RECESSIVE                 (CAN_TEST_TX_RECESSIVE_Val << CAN_TEST_TX_Pos)       /* (CAN_TEST) Recessive (1) level at pin CAN_TX Position  */
-#define CAN_TEST_RX_Pos                       _UINT32_(7)                                          /* (CAN_TEST) Receive Pin Position */
-#define CAN_TEST_RX_Msk                       (_UINT32_(0x1) << CAN_TEST_RX_Pos)                   /* (CAN_TEST) Receive Pin Mask */
-#define CAN_TEST_RX(value)                    (CAN_TEST_RX_Msk & (_UINT32_(value) << CAN_TEST_RX_Pos)) /* Assigment of value for RX in the CAN_TEST register */
-#define CAN_TEST_Msk                          _UINT32_(0x000000F0)                                 /* (CAN_TEST) Register Mask  */
-
-
-/* -------- CAN_RWD : (CAN Offset: 0x14) (R/W 32) RAM Watchdog -------- */
-#define CAN_RWD_RESETVALUE                    _UINT32_(0x00)                                       /*  (CAN_RWD) RAM Watchdog  Reset Value */
-
-#define CAN_RWD_WDC_Pos                       _UINT32_(0)                                          /* (CAN_RWD) Watchdog Configuration Position */
-#define CAN_RWD_WDC_Msk                       (_UINT32_(0xFF) << CAN_RWD_WDC_Pos)                  /* (CAN_RWD) Watchdog Configuration Mask */
-#define CAN_RWD_WDC(value)                    (CAN_RWD_WDC_Msk & (_UINT32_(value) << CAN_RWD_WDC_Pos)) /* Assigment of value for WDC in the CAN_RWD register */
-#define CAN_RWD_WDV_Pos                       _UINT32_(8)                                          /* (CAN_RWD) Watchdog Value Position */
-#define CAN_RWD_WDV_Msk                       (_UINT32_(0xFF) << CAN_RWD_WDV_Pos)                  /* (CAN_RWD) Watchdog Value Mask */
-#define CAN_RWD_WDV(value)                    (CAN_RWD_WDV_Msk & (_UINT32_(value) << CAN_RWD_WDV_Pos)) /* Assigment of value for WDV in the CAN_RWD register */
-#define CAN_RWD_Msk                           _UINT32_(0x0000FFFF)                                 /* (CAN_RWD) Register Mask  */
-
-
 /* -------- CAN_CCCR : (CAN Offset: 0x18) (R/W 32) CC Control -------- */
 #define CAN_CCCR_RESETVALUE                   _UINT32_(0x01)                                       /*  (CAN_CCCR) CC Control  Reset Value */
 
@@ -521,79 +432,40 @@
 #define CAN_CCCR_Msk                          _UINT32_(0x000073FF)                                 /* (CAN_CCCR) Register Mask  */
 
 
-/* -------- CAN_NBTP : (CAN Offset: 0x1C) (R/W 32) Nominal Bit Timing and Prescaler -------- */
-#define CAN_NBTP_RESETVALUE                   _UINT32_(0x6000A03)                                  /*  (CAN_NBTP) Nominal Bit Timing and Prescaler  Reset Value */
+/* -------- CAN_CREL : (CAN Offset: 0x00) ( R/ 32) Core Release -------- */
+#define CAN_CREL_RESETVALUE                   _UINT32_(0x32300000)                                 /*  (CAN_CREL) Core Release  Reset Value */
 
-#define CAN_NBTP_NTSEG2_Pos                   _UINT32_(0)                                          /* (CAN_NBTP) Nominal Time segment after sample point Position */
-#define CAN_NBTP_NTSEG2_Msk                   (_UINT32_(0x7F) << CAN_NBTP_NTSEG2_Pos)              /* (CAN_NBTP) Nominal Time segment after sample point Mask */
-#define CAN_NBTP_NTSEG2(value)                (CAN_NBTP_NTSEG2_Msk & (_UINT32_(value) << CAN_NBTP_NTSEG2_Pos)) /* Assigment of value for NTSEG2 in the CAN_NBTP register */
-#define CAN_NBTP_NTSEG1_Pos                   _UINT32_(8)                                          /* (CAN_NBTP) Nominal Time segment before sample point Position */
-#define CAN_NBTP_NTSEG1_Msk                   (_UINT32_(0xFF) << CAN_NBTP_NTSEG1_Pos)              /* (CAN_NBTP) Nominal Time segment before sample point Mask */
-#define CAN_NBTP_NTSEG1(value)                (CAN_NBTP_NTSEG1_Msk & (_UINT32_(value) << CAN_NBTP_NTSEG1_Pos)) /* Assigment of value for NTSEG1 in the CAN_NBTP register */
-#define CAN_NBTP_NBRP_Pos                     _UINT32_(16)                                         /* (CAN_NBTP) Nominal Baud Rate Prescaler Position */
-#define CAN_NBTP_NBRP_Msk                     (_UINT32_(0x1FF) << CAN_NBTP_NBRP_Pos)               /* (CAN_NBTP) Nominal Baud Rate Prescaler Mask */
-#define CAN_NBTP_NBRP(value)                  (CAN_NBTP_NBRP_Msk & (_UINT32_(value) << CAN_NBTP_NBRP_Pos)) /* Assigment of value for NBRP in the CAN_NBTP register */
-#define CAN_NBTP_NSJW_Pos                     _UINT32_(25)                                         /* (CAN_NBTP) Nominal (Re)Synchronization Jump Width Position */
-#define CAN_NBTP_NSJW_Msk                     (_UINT32_(0x7F) << CAN_NBTP_NSJW_Pos)                /* (CAN_NBTP) Nominal (Re)Synchronization Jump Width Mask */
-#define CAN_NBTP_NSJW(value)                  (CAN_NBTP_NSJW_Msk & (_UINT32_(value) << CAN_NBTP_NSJW_Pos)) /* Assigment of value for NSJW in the CAN_NBTP register */
-#define CAN_NBTP_Msk                          _UINT32_(0xFFFFFF7F)                                 /* (CAN_NBTP) Register Mask  */
+#define CAN_CREL_SUBSTEP_Pos                  _UINT32_(20)                                         /* (CAN_CREL) Sub-step of Core Release Position */
+#define CAN_CREL_SUBSTEP_Msk                  (_UINT32_(0xF) << CAN_CREL_SUBSTEP_Pos)              /* (CAN_CREL) Sub-step of Core Release Mask */
+#define CAN_CREL_SUBSTEP(value)               (CAN_CREL_SUBSTEP_Msk & (_UINT32_(value) << CAN_CREL_SUBSTEP_Pos)) /* Assigment of value for SUBSTEP in the CAN_CREL register */
+#define CAN_CREL_STEP_Pos                     _UINT32_(24)                                         /* (CAN_CREL) Step of Core Release Position */
+#define CAN_CREL_STEP_Msk                     (_UINT32_(0xF) << CAN_CREL_STEP_Pos)                 /* (CAN_CREL) Step of Core Release Mask */
+#define CAN_CREL_STEP(value)                  (CAN_CREL_STEP_Msk & (_UINT32_(value) << CAN_CREL_STEP_Pos)) /* Assigment of value for STEP in the CAN_CREL register */
+#define CAN_CREL_REL_Pos                      _UINT32_(28)                                         /* (CAN_CREL) Core Release Position */
+#define CAN_CREL_REL_Msk                      (_UINT32_(0xF) << CAN_CREL_REL_Pos)                  /* (CAN_CREL) Core Release Mask */
+#define CAN_CREL_REL(value)                   (CAN_CREL_REL_Msk & (_UINT32_(value) << CAN_CREL_REL_Pos)) /* Assigment of value for REL in the CAN_CREL register */
+#define CAN_CREL_Msk                          _UINT32_(0xFFF00000)                                 /* (CAN_CREL) Register Mask  */
 
 
-/* -------- CAN_TSCC : (CAN Offset: 0x20) (R/W 32) Timestamp Counter Configuration -------- */
-#define CAN_TSCC_RESETVALUE                   _UINT32_(0x00)                                       /*  (CAN_TSCC) Timestamp Counter Configuration  Reset Value */
+/* -------- CAN_DBTP : (CAN Offset: 0x0C) (R/W 32) Fast Bit Timing and Prescaler -------- */
+#define CAN_DBTP_RESETVALUE                   _UINT32_(0xA33)                                      /*  (CAN_DBTP) Fast Bit Timing and Prescaler  Reset Value */
 
-#define CAN_TSCC_TSS_Pos                      _UINT32_(0)                                          /* (CAN_TSCC) Timestamp Select Position */
-#define CAN_TSCC_TSS_Msk                      (_UINT32_(0x3) << CAN_TSCC_TSS_Pos)                  /* (CAN_TSCC) Timestamp Select Mask */
-#define CAN_TSCC_TSS(value)                   (CAN_TSCC_TSS_Msk & (_UINT32_(value) << CAN_TSCC_TSS_Pos)) /* Assigment of value for TSS in the CAN_TSCC register */
-#define   CAN_TSCC_TSS_ZERO_Val               _UINT32_(0x0)                                        /* (CAN_TSCC) Timestamp counter value always 0x0000  */
-#define   CAN_TSCC_TSS_INC_Val                _UINT32_(0x1)                                        /* (CAN_TSCC) Timestamp counter value incremented by TCP  */
-#define CAN_TSCC_TSS_ZERO                     (CAN_TSCC_TSS_ZERO_Val << CAN_TSCC_TSS_Pos)          /* (CAN_TSCC) Timestamp counter value always 0x0000 Position  */
-#define CAN_TSCC_TSS_INC                      (CAN_TSCC_TSS_INC_Val << CAN_TSCC_TSS_Pos)           /* (CAN_TSCC) Timestamp counter value incremented by TCP Position  */
-#define CAN_TSCC_TCP_Pos                      _UINT32_(16)                                         /* (CAN_TSCC) Timestamp Counter Prescaler Position */
-#define CAN_TSCC_TCP_Msk                      (_UINT32_(0xF) << CAN_TSCC_TCP_Pos)                  /* (CAN_TSCC) Timestamp Counter Prescaler Mask */
-#define CAN_TSCC_TCP(value)                   (CAN_TSCC_TCP_Msk & (_UINT32_(value) << CAN_TSCC_TCP_Pos)) /* Assigment of value for TCP in the CAN_TSCC register */
-#define CAN_TSCC_Msk                          _UINT32_(0x000F0003)                                 /* (CAN_TSCC) Register Mask  */
-
-
-/* -------- CAN_TSCV : (CAN Offset: 0x24) ( R/ 32) Timestamp Counter Value -------- */
-#define CAN_TSCV_RESETVALUE                   _UINT32_(0x00)                                       /*  (CAN_TSCV) Timestamp Counter Value  Reset Value */
-
-#define CAN_TSCV_TSC_Pos                      _UINT32_(0)                                          /* (CAN_TSCV) Timestamp Counter Position */
-#define CAN_TSCV_TSC_Msk                      (_UINT32_(0xFFFF) << CAN_TSCV_TSC_Pos)               /* (CAN_TSCV) Timestamp Counter Mask */
-#define CAN_TSCV_TSC(value)                   (CAN_TSCV_TSC_Msk & (_UINT32_(value) << CAN_TSCV_TSC_Pos)) /* Assigment of value for TSC in the CAN_TSCV register */
-#define CAN_TSCV_Msk                          _UINT32_(0x0000FFFF)                                 /* (CAN_TSCV) Register Mask  */
-
-
-/* -------- CAN_TOCC : (CAN Offset: 0x28) (R/W 32) Timeout Counter Configuration -------- */
-#define CAN_TOCC_RESETVALUE                   _UINT32_(0xFFFF0000)                                 /*  (CAN_TOCC) Timeout Counter Configuration  Reset Value */
-
-#define CAN_TOCC_ETOC_Pos                     _UINT32_(0)                                          /* (CAN_TOCC) Enable Timeout Counter Position */
-#define CAN_TOCC_ETOC_Msk                     (_UINT32_(0x1) << CAN_TOCC_ETOC_Pos)                 /* (CAN_TOCC) Enable Timeout Counter Mask */
-#define CAN_TOCC_ETOC(value)                  (CAN_TOCC_ETOC_Msk & (_UINT32_(value) << CAN_TOCC_ETOC_Pos)) /* Assigment of value for ETOC in the CAN_TOCC register */
-#define CAN_TOCC_TOS_Pos                      _UINT32_(1)                                          /* (CAN_TOCC) Timeout Select Position */
-#define CAN_TOCC_TOS_Msk                      (_UINT32_(0x3) << CAN_TOCC_TOS_Pos)                  /* (CAN_TOCC) Timeout Select Mask */
-#define CAN_TOCC_TOS(value)                   (CAN_TOCC_TOS_Msk & (_UINT32_(value) << CAN_TOCC_TOS_Pos)) /* Assigment of value for TOS in the CAN_TOCC register */
-#define   CAN_TOCC_TOS_CONT_Val               _UINT32_(0x0)                                        /* (CAN_TOCC) Continuout operation  */
-#define   CAN_TOCC_TOS_TXEF_Val               _UINT32_(0x1)                                        /* (CAN_TOCC) Timeout controlled by TX Event FIFO  */
-#define   CAN_TOCC_TOS_RXF0_Val               _UINT32_(0x2)                                        /* (CAN_TOCC) Timeout controlled by Rx FIFO 0  */
-#define   CAN_TOCC_TOS_RXF1_Val               _UINT32_(0x3)                                        /* (CAN_TOCC) Timeout controlled by Rx FIFO 1  */
-#define CAN_TOCC_TOS_CONT                     (CAN_TOCC_TOS_CONT_Val << CAN_TOCC_TOS_Pos)          /* (CAN_TOCC) Continuout operation Position  */
-#define CAN_TOCC_TOS_TXEF                     (CAN_TOCC_TOS_TXEF_Val << CAN_TOCC_TOS_Pos)          /* (CAN_TOCC) Timeout controlled by TX Event FIFO Position  */
-#define CAN_TOCC_TOS_RXF0                     (CAN_TOCC_TOS_RXF0_Val << CAN_TOCC_TOS_Pos)          /* (CAN_TOCC) Timeout controlled by Rx FIFO 0 Position  */
-#define CAN_TOCC_TOS_RXF1                     (CAN_TOCC_TOS_RXF1_Val << CAN_TOCC_TOS_Pos)          /* (CAN_TOCC) Timeout controlled by Rx FIFO 1 Position  */
-#define CAN_TOCC_TOP_Pos                      _UINT32_(16)                                         /* (CAN_TOCC) Timeout Period Position */
-#define CAN_TOCC_TOP_Msk                      (_UINT32_(0xFFFF) << CAN_TOCC_TOP_Pos)               /* (CAN_TOCC) Timeout Period Mask */
-#define CAN_TOCC_TOP(value)                   (CAN_TOCC_TOP_Msk & (_UINT32_(value) << CAN_TOCC_TOP_Pos)) /* Assigment of value for TOP in the CAN_TOCC register */
-#define CAN_TOCC_Msk                          _UINT32_(0xFFFF0007)                                 /* (CAN_TOCC) Register Mask  */
-
-
-/* -------- CAN_TOCV : (CAN Offset: 0x2C) (R/W 32) Timeout Counter Value -------- */
-#define CAN_TOCV_RESETVALUE                   _UINT32_(0xFFFF)                                     /*  (CAN_TOCV) Timeout Counter Value  Reset Value */
-
-#define CAN_TOCV_TOC_Pos                      _UINT32_(0)                                          /* (CAN_TOCV) Timeout Counter Position */
-#define CAN_TOCV_TOC_Msk                      (_UINT32_(0xFFFF) << CAN_TOCV_TOC_Pos)               /* (CAN_TOCV) Timeout Counter Mask */
-#define CAN_TOCV_TOC(value)                   (CAN_TOCV_TOC_Msk & (_UINT32_(value) << CAN_TOCV_TOC_Pos)) /* Assigment of value for TOC in the CAN_TOCV register */
-#define CAN_TOCV_Msk                          _UINT32_(0x0000FFFF)                                 /* (CAN_TOCV) Register Mask  */
+#define CAN_DBTP_DSJW_Pos                     _UINT32_(0)                                          /* (CAN_DBTP) Data (Re)Synchronization Jump Width Position */
+#define CAN_DBTP_DSJW_Msk                     (_UINT32_(0xF) << CAN_DBTP_DSJW_Pos)                 /* (CAN_DBTP) Data (Re)Synchronization Jump Width Mask */
+#define CAN_DBTP_DSJW(value)                  (CAN_DBTP_DSJW_Msk & (_UINT32_(value) << CAN_DBTP_DSJW_Pos)) /* Assigment of value for DSJW in the CAN_DBTP register */
+#define CAN_DBTP_DTSEG2_Pos                   _UINT32_(4)                                          /* (CAN_DBTP) Data time segment after sample point Position */
+#define CAN_DBTP_DTSEG2_Msk                   (_UINT32_(0xF) << CAN_DBTP_DTSEG2_Pos)               /* (CAN_DBTP) Data time segment after sample point Mask */
+#define CAN_DBTP_DTSEG2(value)                (CAN_DBTP_DTSEG2_Msk & (_UINT32_(value) << CAN_DBTP_DTSEG2_Pos)) /* Assigment of value for DTSEG2 in the CAN_DBTP register */
+#define CAN_DBTP_DTSEG1_Pos                   _UINT32_(8)                                          /* (CAN_DBTP) Data time segment before sample point Position */
+#define CAN_DBTP_DTSEG1_Msk                   (_UINT32_(0x1F) << CAN_DBTP_DTSEG1_Pos)              /* (CAN_DBTP) Data time segment before sample point Mask */
+#define CAN_DBTP_DTSEG1(value)                (CAN_DBTP_DTSEG1_Msk & (_UINT32_(value) << CAN_DBTP_DTSEG1_Pos)) /* Assigment of value for DTSEG1 in the CAN_DBTP register */
+#define CAN_DBTP_DBRP_Pos                     _UINT32_(16)                                         /* (CAN_DBTP) Data Baud Rate Prescaler Position */
+#define CAN_DBTP_DBRP_Msk                     (_UINT32_(0x1F) << CAN_DBTP_DBRP_Pos)                /* (CAN_DBTP) Data Baud Rate Prescaler Mask */
+#define CAN_DBTP_DBRP(value)                  (CAN_DBTP_DBRP_Msk & (_UINT32_(value) << CAN_DBTP_DBRP_Pos)) /* Assigment of value for DBRP in the CAN_DBTP register */
+#define CAN_DBTP_TDC_Pos                      _UINT32_(23)                                         /* (CAN_DBTP) Tranceiver Delay Compensation Position */
+#define CAN_DBTP_TDC_Msk                      (_UINT32_(0x1) << CAN_DBTP_TDC_Pos)                  /* (CAN_DBTP) Tranceiver Delay Compensation Mask */
+#define CAN_DBTP_TDC(value)                   (CAN_DBTP_TDC_Msk & (_UINT32_(value) << CAN_DBTP_TDC_Pos)) /* Assigment of value for TDC in the CAN_DBTP register */
+#define CAN_DBTP_Msk                          _UINT32_(0x009F1FFF)                                 /* (CAN_DBTP) Register Mask  */
 
 
 /* -------- CAN_ECR : (CAN Offset: 0x40) ( R/ 32) Error Counter -------- */
@@ -614,185 +486,78 @@
 #define CAN_ECR_Msk                           _UINT32_(0x00FFFFFF)                                 /* (CAN_ECR) Register Mask  */
 
 
-/* -------- CAN_PSR : (CAN Offset: 0x44) ( R/ 32) Protocol Status -------- */
-#define CAN_PSR_RESETVALUE                    _UINT32_(0x707)                                      /*  (CAN_PSR) Protocol Status  Reset Value */
+/* -------- CAN_ENDN : (CAN Offset: 0x04) ( R/ 32) Endian -------- */
+#define CAN_ENDN_RESETVALUE                   _UINT32_(0x87654321)                                 /*  (CAN_ENDN) Endian  Reset Value */
 
-#define CAN_PSR_LEC_Pos                       _UINT32_(0)                                          /* (CAN_PSR) Last Error Code Position */
-#define CAN_PSR_LEC_Msk                       (_UINT32_(0x7) << CAN_PSR_LEC_Pos)                   /* (CAN_PSR) Last Error Code Mask */
-#define CAN_PSR_LEC(value)                    (CAN_PSR_LEC_Msk & (_UINT32_(value) << CAN_PSR_LEC_Pos)) /* Assigment of value for LEC in the CAN_PSR register */
-#define   CAN_PSR_LEC_NONE_Val                _UINT32_(0x0)                                        /* (CAN_PSR) No Error  */
-#define   CAN_PSR_LEC_STUFF_Val               _UINT32_(0x1)                                        /* (CAN_PSR) Stuff Error  */
-#define   CAN_PSR_LEC_FORM_Val                _UINT32_(0x2)                                        /* (CAN_PSR) Form Error  */
-#define   CAN_PSR_LEC_ACK_Val                 _UINT32_(0x3)                                        /* (CAN_PSR) Ack Error  */
-#define   CAN_PSR_LEC_BIT1_Val                _UINT32_(0x4)                                        /* (CAN_PSR) Bit1 Error  */
-#define   CAN_PSR_LEC_BIT0_Val                _UINT32_(0x5)                                        /* (CAN_PSR) Bit0 Error  */
-#define   CAN_PSR_LEC_CRC_Val                 _UINT32_(0x6)                                        /* (CAN_PSR) CRC Error  */
-#define   CAN_PSR_LEC_NC_Val                  _UINT32_(0x7)                                        /* (CAN_PSR) No Change  */
-#define CAN_PSR_LEC_NONE                      (CAN_PSR_LEC_NONE_Val << CAN_PSR_LEC_Pos)            /* (CAN_PSR) No Error Position  */
-#define CAN_PSR_LEC_STUFF                     (CAN_PSR_LEC_STUFF_Val << CAN_PSR_LEC_Pos)           /* (CAN_PSR) Stuff Error Position  */
-#define CAN_PSR_LEC_FORM                      (CAN_PSR_LEC_FORM_Val << CAN_PSR_LEC_Pos)            /* (CAN_PSR) Form Error Position  */
-#define CAN_PSR_LEC_ACK                       (CAN_PSR_LEC_ACK_Val << CAN_PSR_LEC_Pos)             /* (CAN_PSR) Ack Error Position  */
-#define CAN_PSR_LEC_BIT1                      (CAN_PSR_LEC_BIT1_Val << CAN_PSR_LEC_Pos)            /* (CAN_PSR) Bit1 Error Position  */
-#define CAN_PSR_LEC_BIT0                      (CAN_PSR_LEC_BIT0_Val << CAN_PSR_LEC_Pos)            /* (CAN_PSR) Bit0 Error Position  */
-#define CAN_PSR_LEC_CRC                       (CAN_PSR_LEC_CRC_Val << CAN_PSR_LEC_Pos)             /* (CAN_PSR) CRC Error Position  */
-#define CAN_PSR_LEC_NC                        (CAN_PSR_LEC_NC_Val << CAN_PSR_LEC_Pos)              /* (CAN_PSR) No Change Position  */
-#define CAN_PSR_ACT_Pos                       _UINT32_(3)                                          /* (CAN_PSR) Activity Position */
-#define CAN_PSR_ACT_Msk                       (_UINT32_(0x3) << CAN_PSR_ACT_Pos)                   /* (CAN_PSR) Activity Mask */
-#define CAN_PSR_ACT(value)                    (CAN_PSR_ACT_Msk & (_UINT32_(value) << CAN_PSR_ACT_Pos)) /* Assigment of value for ACT in the CAN_PSR register */
-#define   CAN_PSR_ACT_SYNC_Val                _UINT32_(0x0)                                        /* (CAN_PSR) Node is synchronizing on CAN communication  */
-#define   CAN_PSR_ACT_IDLE_Val                _UINT32_(0x1)                                        /* (CAN_PSR) Node is neither receiver nor transmitter  */
-#define   CAN_PSR_ACT_RX_Val                  _UINT32_(0x2)                                        /* (CAN_PSR) Node is operating as receiver  */
-#define   CAN_PSR_ACT_TX_Val                  _UINT32_(0x3)                                        /* (CAN_PSR) Node is operating as transmitter  */
-#define CAN_PSR_ACT_SYNC                      (CAN_PSR_ACT_SYNC_Val << CAN_PSR_ACT_Pos)            /* (CAN_PSR) Node is synchronizing on CAN communication Position  */
-#define CAN_PSR_ACT_IDLE                      (CAN_PSR_ACT_IDLE_Val << CAN_PSR_ACT_Pos)            /* (CAN_PSR) Node is neither receiver nor transmitter Position  */
-#define CAN_PSR_ACT_RX                        (CAN_PSR_ACT_RX_Val << CAN_PSR_ACT_Pos)              /* (CAN_PSR) Node is operating as receiver Position  */
-#define CAN_PSR_ACT_TX                        (CAN_PSR_ACT_TX_Val << CAN_PSR_ACT_Pos)              /* (CAN_PSR) Node is operating as transmitter Position  */
-#define CAN_PSR_EP_Pos                        _UINT32_(5)                                          /* (CAN_PSR) Error Passive Position */
-#define CAN_PSR_EP_Msk                        (_UINT32_(0x1) << CAN_PSR_EP_Pos)                    /* (CAN_PSR) Error Passive Mask */
-#define CAN_PSR_EP(value)                     (CAN_PSR_EP_Msk & (_UINT32_(value) << CAN_PSR_EP_Pos)) /* Assigment of value for EP in the CAN_PSR register */
-#define CAN_PSR_EW_Pos                        _UINT32_(6)                                          /* (CAN_PSR) Warning Status Position */
-#define CAN_PSR_EW_Msk                        (_UINT32_(0x1) << CAN_PSR_EW_Pos)                    /* (CAN_PSR) Warning Status Mask */
-#define CAN_PSR_EW(value)                     (CAN_PSR_EW_Msk & (_UINT32_(value) << CAN_PSR_EW_Pos)) /* Assigment of value for EW in the CAN_PSR register */
-#define CAN_PSR_BO_Pos                        _UINT32_(7)                                          /* (CAN_PSR) Bus_Off Status Position */
-#define CAN_PSR_BO_Msk                        (_UINT32_(0x1) << CAN_PSR_BO_Pos)                    /* (CAN_PSR) Bus_Off Status Mask */
-#define CAN_PSR_BO(value)                     (CAN_PSR_BO_Msk & (_UINT32_(value) << CAN_PSR_BO_Pos)) /* Assigment of value for BO in the CAN_PSR register */
-#define CAN_PSR_DLEC_Pos                      _UINT32_(8)                                          /* (CAN_PSR) Data Phase Last Error Code Position */
-#define CAN_PSR_DLEC_Msk                      (_UINT32_(0x7) << CAN_PSR_DLEC_Pos)                  /* (CAN_PSR) Data Phase Last Error Code Mask */
-#define CAN_PSR_DLEC(value)                   (CAN_PSR_DLEC_Msk & (_UINT32_(value) << CAN_PSR_DLEC_Pos)) /* Assigment of value for DLEC in the CAN_PSR register */
-#define   CAN_PSR_DLEC_NONE_Val               _UINT32_(0x0)                                        /* (CAN_PSR) No Error  */
-#define   CAN_PSR_DLEC_STUFF_Val              _UINT32_(0x1)                                        /* (CAN_PSR) Stuff Error  */
-#define   CAN_PSR_DLEC_FORM_Val               _UINT32_(0x2)                                        /* (CAN_PSR) Form Error  */
-#define   CAN_PSR_DLEC_ACK_Val                _UINT32_(0x3)                                        /* (CAN_PSR) Ack Error  */
-#define   CAN_PSR_DLEC_BIT1_Val               _UINT32_(0x4)                                        /* (CAN_PSR) Bit1 Error  */
-#define   CAN_PSR_DLEC_BIT0_Val               _UINT32_(0x5)                                        /* (CAN_PSR) Bit0 Error  */
-#define   CAN_PSR_DLEC_CRC_Val                _UINT32_(0x6)                                        /* (CAN_PSR) CRC Error  */
-#define   CAN_PSR_DLEC_NC_Val                 _UINT32_(0x7)                                        /* (CAN_PSR) No Change  */
-#define CAN_PSR_DLEC_NONE                     (CAN_PSR_DLEC_NONE_Val << CAN_PSR_DLEC_Pos)          /* (CAN_PSR) No Error Position  */
-#define CAN_PSR_DLEC_STUFF                    (CAN_PSR_DLEC_STUFF_Val << CAN_PSR_DLEC_Pos)         /* (CAN_PSR) Stuff Error Position  */
-#define CAN_PSR_DLEC_FORM                     (CAN_PSR_DLEC_FORM_Val << CAN_PSR_DLEC_Pos)          /* (CAN_PSR) Form Error Position  */
-#define CAN_PSR_DLEC_ACK                      (CAN_PSR_DLEC_ACK_Val << CAN_PSR_DLEC_Pos)           /* (CAN_PSR) Ack Error Position  */
-#define CAN_PSR_DLEC_BIT1                     (CAN_PSR_DLEC_BIT1_Val << CAN_PSR_DLEC_Pos)          /* (CAN_PSR) Bit1 Error Position  */
-#define CAN_PSR_DLEC_BIT0                     (CAN_PSR_DLEC_BIT0_Val << CAN_PSR_DLEC_Pos)          /* (CAN_PSR) Bit0 Error Position  */
-#define CAN_PSR_DLEC_CRC                      (CAN_PSR_DLEC_CRC_Val << CAN_PSR_DLEC_Pos)           /* (CAN_PSR) CRC Error Position  */
-#define CAN_PSR_DLEC_NC                       (CAN_PSR_DLEC_NC_Val << CAN_PSR_DLEC_Pos)            /* (CAN_PSR) No Change Position  */
-#define CAN_PSR_RESI_Pos                      _UINT32_(11)                                         /* (CAN_PSR) ESI flag of last received CAN FD Message Position */
-#define CAN_PSR_RESI_Msk                      (_UINT32_(0x1) << CAN_PSR_RESI_Pos)                  /* (CAN_PSR) ESI flag of last received CAN FD Message Mask */
-#define CAN_PSR_RESI(value)                   (CAN_PSR_RESI_Msk & (_UINT32_(value) << CAN_PSR_RESI_Pos)) /* Assigment of value for RESI in the CAN_PSR register */
-#define CAN_PSR_RBRS_Pos                      _UINT32_(12)                                         /* (CAN_PSR) BRS flag of last received CAN FD Message Position */
-#define CAN_PSR_RBRS_Msk                      (_UINT32_(0x1) << CAN_PSR_RBRS_Pos)                  /* (CAN_PSR) BRS flag of last received CAN FD Message Mask */
-#define CAN_PSR_RBRS(value)                   (CAN_PSR_RBRS_Msk & (_UINT32_(value) << CAN_PSR_RBRS_Pos)) /* Assigment of value for RBRS in the CAN_PSR register */
-#define CAN_PSR_RFDF_Pos                      _UINT32_(13)                                         /* (CAN_PSR) Received a CAN FD Message Position */
-#define CAN_PSR_RFDF_Msk                      (_UINT32_(0x1) << CAN_PSR_RFDF_Pos)                  /* (CAN_PSR) Received a CAN FD Message Mask */
-#define CAN_PSR_RFDF(value)                   (CAN_PSR_RFDF_Msk & (_UINT32_(value) << CAN_PSR_RFDF_Pos)) /* Assigment of value for RFDF in the CAN_PSR register */
-#define CAN_PSR_PXE_Pos                       _UINT32_(14)                                         /* (CAN_PSR) Protocol Exception Event Position */
-#define CAN_PSR_PXE_Msk                       (_UINT32_(0x1) << CAN_PSR_PXE_Pos)                   /* (CAN_PSR) Protocol Exception Event Mask */
-#define CAN_PSR_PXE(value)                    (CAN_PSR_PXE_Msk & (_UINT32_(value) << CAN_PSR_PXE_Pos)) /* Assigment of value for PXE in the CAN_PSR register */
-#define CAN_PSR_TDCV_Pos                      _UINT32_(16)                                         /* (CAN_PSR) Transmitter Delay Compensation Value Position */
-#define CAN_PSR_TDCV_Msk                      (_UINT32_(0x7F) << CAN_PSR_TDCV_Pos)                 /* (CAN_PSR) Transmitter Delay Compensation Value Mask */
-#define CAN_PSR_TDCV(value)                   (CAN_PSR_TDCV_Msk & (_UINT32_(value) << CAN_PSR_TDCV_Pos)) /* Assigment of value for TDCV in the CAN_PSR register */
-#define CAN_PSR_Msk                           _UINT32_(0x007F7FFF)                                 /* (CAN_PSR) Register Mask  */
+#define CAN_ENDN_ETV_Pos                      _UINT32_(0)                                          /* (CAN_ENDN) Endianness Test Value Position */
+#define CAN_ENDN_ETV_Msk                      (_UINT32_(0xFFFFFFFF) << CAN_ENDN_ETV_Pos)           /* (CAN_ENDN) Endianness Test Value Mask */
+#define CAN_ENDN_ETV(value)                   (CAN_ENDN_ETV_Msk & (_UINT32_(value) << CAN_ENDN_ETV_Pos)) /* Assigment of value for ETV in the CAN_ENDN register */
+#define CAN_ENDN_Msk                          _UINT32_(0xFFFFFFFF)                                 /* (CAN_ENDN) Register Mask  */
 
 
-/* -------- CAN_TDCR : (CAN Offset: 0x48) (R/W 32) Extended ID Filter Configuration -------- */
-#define CAN_TDCR_RESETVALUE                   _UINT32_(0x00)                                       /*  (CAN_TDCR) Extended ID Filter Configuration  Reset Value */
+/* -------- CAN_ERROR : (CAN Offset: 0x100) (R/W 32) Error Interrupt Flag -------- */
+#define CAN_ERROR_RESETVALUE                  _UINT32_(0x00)                                       /*  (CAN_ERROR) Error Interrupt Flag  Reset Value */
 
-#define CAN_TDCR_TDCF_Pos                     _UINT32_(0)                                          /* (CAN_TDCR) Transmitter Delay Compensation Filter Length Position */
-#define CAN_TDCR_TDCF_Msk                     (_UINT32_(0x7F) << CAN_TDCR_TDCF_Pos)                /* (CAN_TDCR) Transmitter Delay Compensation Filter Length Mask */
-#define CAN_TDCR_TDCF(value)                  (CAN_TDCR_TDCF_Msk & (_UINT32_(value) << CAN_TDCR_TDCF_Pos)) /* Assigment of value for TDCF in the CAN_TDCR register */
-#define CAN_TDCR_TDCO_Pos                     _UINT32_(8)                                          /* (CAN_TDCR) Transmitter Delay Compensation Offset Position */
-#define CAN_TDCR_TDCO_Msk                     (_UINT32_(0x7F) << CAN_TDCR_TDCO_Pos)                /* (CAN_TDCR) Transmitter Delay Compensation Offset Mask */
-#define CAN_TDCR_TDCO(value)                  (CAN_TDCR_TDCO_Msk & (_UINT32_(value) << CAN_TDCR_TDCO_Pos)) /* Assigment of value for TDCO in the CAN_TDCR register */
-#define CAN_TDCR_Msk                          _UINT32_(0x00007F7F)                                 /* (CAN_TDCR) Register Mask  */
+#define CAN_ERROR_BERR_Pos                    _UINT32_(0)                                          /* (CAN_ERROR) AHB Bus Error Detection Position */
+#define CAN_ERROR_BERR_Msk                    (_UINT32_(0x1) << CAN_ERROR_BERR_Pos)                /* (CAN_ERROR) AHB Bus Error Detection Mask */
+#define CAN_ERROR_BERR(value)                 (CAN_ERROR_BERR_Msk & (_UINT32_(value) << CAN_ERROR_BERR_Pos)) /* Assigment of value for BERR in the CAN_ERROR register */
+#define CAN_ERROR_Msk                         _UINT32_(0x00000001)                                 /* (CAN_ERROR) Register Mask  */
 
 
-/* -------- CAN_IR : (CAN Offset: 0x50) (R/W 32) Interrupt -------- */
-#define CAN_IR_RESETVALUE                     _UINT32_(0x00)                                       /*  (CAN_IR) Interrupt  Reset Value */
+/* -------- CAN_GFC : (CAN Offset: 0x80) (R/W 32) Global Filter Configuration -------- */
+#define CAN_GFC_RESETVALUE                    _UINT32_(0x00)                                       /*  (CAN_GFC) Global Filter Configuration  Reset Value */
 
-#define CAN_IR_RF0N_Pos                       _UINT32_(0)                                          /* (CAN_IR) Rx FIFO 0 New Message Position */
-#define CAN_IR_RF0N_Msk                       (_UINT32_(0x1) << CAN_IR_RF0N_Pos)                   /* (CAN_IR) Rx FIFO 0 New Message Mask */
-#define CAN_IR_RF0N(value)                    (CAN_IR_RF0N_Msk & (_UINT32_(value) << CAN_IR_RF0N_Pos)) /* Assigment of value for RF0N in the CAN_IR register */
-#define CAN_IR_RF0W_Pos                       _UINT32_(1)                                          /* (CAN_IR) Rx FIFO 0 Watermark Reached Position */
-#define CAN_IR_RF0W_Msk                       (_UINT32_(0x1) << CAN_IR_RF0W_Pos)                   /* (CAN_IR) Rx FIFO 0 Watermark Reached Mask */
-#define CAN_IR_RF0W(value)                    (CAN_IR_RF0W_Msk & (_UINT32_(value) << CAN_IR_RF0W_Pos)) /* Assigment of value for RF0W in the CAN_IR register */
-#define CAN_IR_RF0F_Pos                       _UINT32_(2)                                          /* (CAN_IR) Rx FIFO 0 Full Position */
-#define CAN_IR_RF0F_Msk                       (_UINT32_(0x1) << CAN_IR_RF0F_Pos)                   /* (CAN_IR) Rx FIFO 0 Full Mask */
-#define CAN_IR_RF0F(value)                    (CAN_IR_RF0F_Msk & (_UINT32_(value) << CAN_IR_RF0F_Pos)) /* Assigment of value for RF0F in the CAN_IR register */
-#define CAN_IR_RF0L_Pos                       _UINT32_(3)                                          /* (CAN_IR) Rx FIFO 0 Message Lost Position */
-#define CAN_IR_RF0L_Msk                       (_UINT32_(0x1) << CAN_IR_RF0L_Pos)                   /* (CAN_IR) Rx FIFO 0 Message Lost Mask */
-#define CAN_IR_RF0L(value)                    (CAN_IR_RF0L_Msk & (_UINT32_(value) << CAN_IR_RF0L_Pos)) /* Assigment of value for RF0L in the CAN_IR register */
-#define CAN_IR_RF1N_Pos                       _UINT32_(4)                                          /* (CAN_IR) Rx FIFO 1 New Message Position */
-#define CAN_IR_RF1N_Msk                       (_UINT32_(0x1) << CAN_IR_RF1N_Pos)                   /* (CAN_IR) Rx FIFO 1 New Message Mask */
-#define CAN_IR_RF1N(value)                    (CAN_IR_RF1N_Msk & (_UINT32_(value) << CAN_IR_RF1N_Pos)) /* Assigment of value for RF1N in the CAN_IR register */
-#define CAN_IR_RF1W_Pos                       _UINT32_(5)                                          /* (CAN_IR) Rx FIFO 1 Watermark Reached Position */
-#define CAN_IR_RF1W_Msk                       (_UINT32_(0x1) << CAN_IR_RF1W_Pos)                   /* (CAN_IR) Rx FIFO 1 Watermark Reached Mask */
-#define CAN_IR_RF1W(value)                    (CAN_IR_RF1W_Msk & (_UINT32_(value) << CAN_IR_RF1W_Pos)) /* Assigment of value for RF1W in the CAN_IR register */
-#define CAN_IR_RF1F_Pos                       _UINT32_(6)                                          /* (CAN_IR) Rx FIFO 1 FIFO Full Position */
-#define CAN_IR_RF1F_Msk                       (_UINT32_(0x1) << CAN_IR_RF1F_Pos)                   /* (CAN_IR) Rx FIFO 1 FIFO Full Mask */
-#define CAN_IR_RF1F(value)                    (CAN_IR_RF1F_Msk & (_UINT32_(value) << CAN_IR_RF1F_Pos)) /* Assigment of value for RF1F in the CAN_IR register */
-#define CAN_IR_RF1L_Pos                       _UINT32_(7)                                          /* (CAN_IR) Rx FIFO 1 Message Lost Position */
-#define CAN_IR_RF1L_Msk                       (_UINT32_(0x1) << CAN_IR_RF1L_Pos)                   /* (CAN_IR) Rx FIFO 1 Message Lost Mask */
-#define CAN_IR_RF1L(value)                    (CAN_IR_RF1L_Msk & (_UINT32_(value) << CAN_IR_RF1L_Pos)) /* Assigment of value for RF1L in the CAN_IR register */
-#define CAN_IR_HPM_Pos                        _UINT32_(8)                                          /* (CAN_IR) High Priority Message Position */
-#define CAN_IR_HPM_Msk                        (_UINT32_(0x1) << CAN_IR_HPM_Pos)                    /* (CAN_IR) High Priority Message Mask */
-#define CAN_IR_HPM(value)                     (CAN_IR_HPM_Msk & (_UINT32_(value) << CAN_IR_HPM_Pos)) /* Assigment of value for HPM in the CAN_IR register */
-#define CAN_IR_TC_Pos                         _UINT32_(9)                                          /* (CAN_IR) Timestamp Completed Position */
-#define CAN_IR_TC_Msk                         (_UINT32_(0x1) << CAN_IR_TC_Pos)                     /* (CAN_IR) Timestamp Completed Mask */
-#define CAN_IR_TC(value)                      (CAN_IR_TC_Msk & (_UINT32_(value) << CAN_IR_TC_Pos)) /* Assigment of value for TC in the CAN_IR register */
-#define CAN_IR_TCF_Pos                        _UINT32_(10)                                         /* (CAN_IR) Transmission Cancellation Finished Position */
-#define CAN_IR_TCF_Msk                        (_UINT32_(0x1) << CAN_IR_TCF_Pos)                    /* (CAN_IR) Transmission Cancellation Finished Mask */
-#define CAN_IR_TCF(value)                     (CAN_IR_TCF_Msk & (_UINT32_(value) << CAN_IR_TCF_Pos)) /* Assigment of value for TCF in the CAN_IR register */
-#define CAN_IR_TFE_Pos                        _UINT32_(11)                                         /* (CAN_IR) Tx FIFO Empty Position */
-#define CAN_IR_TFE_Msk                        (_UINT32_(0x1) << CAN_IR_TFE_Pos)                    /* (CAN_IR) Tx FIFO Empty Mask */
-#define CAN_IR_TFE(value)                     (CAN_IR_TFE_Msk & (_UINT32_(value) << CAN_IR_TFE_Pos)) /* Assigment of value for TFE in the CAN_IR register */
-#define CAN_IR_TEFN_Pos                       _UINT32_(12)                                         /* (CAN_IR) Tx Event FIFO New Entry Position */
-#define CAN_IR_TEFN_Msk                       (_UINT32_(0x1) << CAN_IR_TEFN_Pos)                   /* (CAN_IR) Tx Event FIFO New Entry Mask */
-#define CAN_IR_TEFN(value)                    (CAN_IR_TEFN_Msk & (_UINT32_(value) << CAN_IR_TEFN_Pos)) /* Assigment of value for TEFN in the CAN_IR register */
-#define CAN_IR_TEFW_Pos                       _UINT32_(13)                                         /* (CAN_IR) Tx Event FIFO Watermark Reached Position */
-#define CAN_IR_TEFW_Msk                       (_UINT32_(0x1) << CAN_IR_TEFW_Pos)                   /* (CAN_IR) Tx Event FIFO Watermark Reached Mask */
-#define CAN_IR_TEFW(value)                    (CAN_IR_TEFW_Msk & (_UINT32_(value) << CAN_IR_TEFW_Pos)) /* Assigment of value for TEFW in the CAN_IR register */
-#define CAN_IR_TEFF_Pos                       _UINT32_(14)                                         /* (CAN_IR) Tx Event FIFO Full Position */
-#define CAN_IR_TEFF_Msk                       (_UINT32_(0x1) << CAN_IR_TEFF_Pos)                   /* (CAN_IR) Tx Event FIFO Full Mask */
-#define CAN_IR_TEFF(value)                    (CAN_IR_TEFF_Msk & (_UINT32_(value) << CAN_IR_TEFF_Pos)) /* Assigment of value for TEFF in the CAN_IR register */
-#define CAN_IR_TEFL_Pos                       _UINT32_(15)                                         /* (CAN_IR) Tx Event FIFO Element Lost Position */
-#define CAN_IR_TEFL_Msk                       (_UINT32_(0x1) << CAN_IR_TEFL_Pos)                   /* (CAN_IR) Tx Event FIFO Element Lost Mask */
-#define CAN_IR_TEFL(value)                    (CAN_IR_TEFL_Msk & (_UINT32_(value) << CAN_IR_TEFL_Pos)) /* Assigment of value for TEFL in the CAN_IR register */
-#define CAN_IR_TSW_Pos                        _UINT32_(16)                                         /* (CAN_IR) Timestamp Wraparound Position */
-#define CAN_IR_TSW_Msk                        (_UINT32_(0x1) << CAN_IR_TSW_Pos)                    /* (CAN_IR) Timestamp Wraparound Mask */
-#define CAN_IR_TSW(value)                     (CAN_IR_TSW_Msk & (_UINT32_(value) << CAN_IR_TSW_Pos)) /* Assigment of value for TSW in the CAN_IR register */
-#define CAN_IR_MRAF_Pos                       _UINT32_(17)                                         /* (CAN_IR) Message RAM Access Failure Position */
-#define CAN_IR_MRAF_Msk                       (_UINT32_(0x1) << CAN_IR_MRAF_Pos)                   /* (CAN_IR) Message RAM Access Failure Mask */
-#define CAN_IR_MRAF(value)                    (CAN_IR_MRAF_Msk & (_UINT32_(value) << CAN_IR_MRAF_Pos)) /* Assigment of value for MRAF in the CAN_IR register */
-#define CAN_IR_TOO_Pos                        _UINT32_(18)                                         /* (CAN_IR) Timeout Occurred Position */
-#define CAN_IR_TOO_Msk                        (_UINT32_(0x1) << CAN_IR_TOO_Pos)                    /* (CAN_IR) Timeout Occurred Mask */
-#define CAN_IR_TOO(value)                     (CAN_IR_TOO_Msk & (_UINT32_(value) << CAN_IR_TOO_Pos)) /* Assigment of value for TOO in the CAN_IR register */
-#define CAN_IR_DRX_Pos                        _UINT32_(19)                                         /* (CAN_IR) Message stored to Dedicated Rx Buffer Position */
-#define CAN_IR_DRX_Msk                        (_UINT32_(0x1) << CAN_IR_DRX_Pos)                    /* (CAN_IR) Message stored to Dedicated Rx Buffer Mask */
-#define CAN_IR_DRX(value)                     (CAN_IR_DRX_Msk & (_UINT32_(value) << CAN_IR_DRX_Pos)) /* Assigment of value for DRX in the CAN_IR register */
-#define CAN_IR_ELO_Pos                        _UINT32_(22)                                         /* (CAN_IR) Error Logging Overflow Position */
-#define CAN_IR_ELO_Msk                        (_UINT32_(0x1) << CAN_IR_ELO_Pos)                    /* (CAN_IR) Error Logging Overflow Mask */
-#define CAN_IR_ELO(value)                     (CAN_IR_ELO_Msk & (_UINT32_(value) << CAN_IR_ELO_Pos)) /* Assigment of value for ELO in the CAN_IR register */
-#define CAN_IR_EP_Pos                         _UINT32_(23)                                         /* (CAN_IR) Error Passive Position */
-#define CAN_IR_EP_Msk                         (_UINT32_(0x1) << CAN_IR_EP_Pos)                     /* (CAN_IR) Error Passive Mask */
-#define CAN_IR_EP(value)                      (CAN_IR_EP_Msk & (_UINT32_(value) << CAN_IR_EP_Pos)) /* Assigment of value for EP in the CAN_IR register */
-#define CAN_IR_EW_Pos                         _UINT32_(24)                                         /* (CAN_IR) Warning Status Position */
-#define CAN_IR_EW_Msk                         (_UINT32_(0x1) << CAN_IR_EW_Pos)                     /* (CAN_IR) Warning Status Mask */
-#define CAN_IR_EW(value)                      (CAN_IR_EW_Msk & (_UINT32_(value) << CAN_IR_EW_Pos)) /* Assigment of value for EW in the CAN_IR register */
-#define CAN_IR_BO_Pos                         _UINT32_(25)                                         /* (CAN_IR) Bus_Off Status Position */
-#define CAN_IR_BO_Msk                         (_UINT32_(0x1) << CAN_IR_BO_Pos)                     /* (CAN_IR) Bus_Off Status Mask */
-#define CAN_IR_BO(value)                      (CAN_IR_BO_Msk & (_UINT32_(value) << CAN_IR_BO_Pos)) /* Assigment of value for BO in the CAN_IR register */
-#define CAN_IR_WDI_Pos                        _UINT32_(26)                                         /* (CAN_IR) Watchdog Interrupt Position */
-#define CAN_IR_WDI_Msk                        (_UINT32_(0x1) << CAN_IR_WDI_Pos)                    /* (CAN_IR) Watchdog Interrupt Mask */
-#define CAN_IR_WDI(value)                     (CAN_IR_WDI_Msk & (_UINT32_(value) << CAN_IR_WDI_Pos)) /* Assigment of value for WDI in the CAN_IR register */
-#define CAN_IR_PEA_Pos                        _UINT32_(27)                                         /* (CAN_IR) Protocol Error in Arbitration Phase Position */
-#define CAN_IR_PEA_Msk                        (_UINT32_(0x1) << CAN_IR_PEA_Pos)                    /* (CAN_IR) Protocol Error in Arbitration Phase Mask */
-#define CAN_IR_PEA(value)                     (CAN_IR_PEA_Msk & (_UINT32_(value) << CAN_IR_PEA_Pos)) /* Assigment of value for PEA in the CAN_IR register */
-#define CAN_IR_PED_Pos                        _UINT32_(28)                                         /* (CAN_IR) Protocol Error in Data Phase Position */
-#define CAN_IR_PED_Msk                        (_UINT32_(0x1) << CAN_IR_PED_Pos)                    /* (CAN_IR) Protocol Error in Data Phase Mask */
-#define CAN_IR_PED(value)                     (CAN_IR_PED_Msk & (_UINT32_(value) << CAN_IR_PED_Pos)) /* Assigment of value for PED in the CAN_IR register */
-#define CAN_IR_ARA_Pos                        _UINT32_(29)                                         /* (CAN_IR) Access to Reserved Address Position */
-#define CAN_IR_ARA_Msk                        (_UINT32_(0x1) << CAN_IR_ARA_Pos)                    /* (CAN_IR) Access to Reserved Address Mask */
-#define CAN_IR_ARA(value)                     (CAN_IR_ARA_Msk & (_UINT32_(value) << CAN_IR_ARA_Pos)) /* Assigment of value for ARA in the CAN_IR register */
-#define CAN_IR_Msk                            _UINT32_(0x3FCFFFFF)                                 /* (CAN_IR) Register Mask  */
+#define CAN_GFC_RRFE_Pos                      _UINT32_(0)                                          /* (CAN_GFC) Reject Remote Frames Extended Position */
+#define CAN_GFC_RRFE_Msk                      (_UINT32_(0x1) << CAN_GFC_RRFE_Pos)                  /* (CAN_GFC) Reject Remote Frames Extended Mask */
+#define CAN_GFC_RRFE(value)                   (CAN_GFC_RRFE_Msk & (_UINT32_(value) << CAN_GFC_RRFE_Pos)) /* Assigment of value for RRFE in the CAN_GFC register */
+#define CAN_GFC_RRFS_Pos                      _UINT32_(1)                                          /* (CAN_GFC) Reject Remote Frames Standard Position */
+#define CAN_GFC_RRFS_Msk                      (_UINT32_(0x1) << CAN_GFC_RRFS_Pos)                  /* (CAN_GFC) Reject Remote Frames Standard Mask */
+#define CAN_GFC_RRFS(value)                   (CAN_GFC_RRFS_Msk & (_UINT32_(value) << CAN_GFC_RRFS_Pos)) /* Assigment of value for RRFS in the CAN_GFC register */
+#define CAN_GFC_ANFE_Pos                      _UINT32_(2)                                          /* (CAN_GFC) Accept Non-matching Frames Extended Position */
+#define CAN_GFC_ANFE_Msk                      (_UINT32_(0x3) << CAN_GFC_ANFE_Pos)                  /* (CAN_GFC) Accept Non-matching Frames Extended Mask */
+#define CAN_GFC_ANFE(value)                   (CAN_GFC_ANFE_Msk & (_UINT32_(value) << CAN_GFC_ANFE_Pos)) /* Assigment of value for ANFE in the CAN_GFC register */
+#define   CAN_GFC_ANFE_RXF0_Val               _UINT32_(0x0)                                        /* (CAN_GFC) Accept in Rx FIFO 0  */
+#define   CAN_GFC_ANFE_RXF1_Val               _UINT32_(0x1)                                        /* (CAN_GFC) Accept in Rx FIFO 1  */
+#define   CAN_GFC_ANFE_REJECT_Val             _UINT32_(0x2)                                        /* (CAN_GFC) Reject  */
+#define CAN_GFC_ANFE_RXF0                     (CAN_GFC_ANFE_RXF0_Val << CAN_GFC_ANFE_Pos)          /* (CAN_GFC) Accept in Rx FIFO 0 Position  */
+#define CAN_GFC_ANFE_RXF1                     (CAN_GFC_ANFE_RXF1_Val << CAN_GFC_ANFE_Pos)          /* (CAN_GFC) Accept in Rx FIFO 1 Position  */
+#define CAN_GFC_ANFE_REJECT                   (CAN_GFC_ANFE_REJECT_Val << CAN_GFC_ANFE_Pos)        /* (CAN_GFC) Reject Position  */
+#define CAN_GFC_ANFS_Pos                      _UINT32_(4)                                          /* (CAN_GFC) Accept Non-matching Frames Standard Position */
+#define CAN_GFC_ANFS_Msk                      (_UINT32_(0x3) << CAN_GFC_ANFS_Pos)                  /* (CAN_GFC) Accept Non-matching Frames Standard Mask */
+#define CAN_GFC_ANFS(value)                   (CAN_GFC_ANFS_Msk & (_UINT32_(value) << CAN_GFC_ANFS_Pos)) /* Assigment of value for ANFS in the CAN_GFC register */
+#define   CAN_GFC_ANFS_RXF0_Val               _UINT32_(0x0)                                        /* (CAN_GFC) Accept in Rx FIFO 0  */
+#define   CAN_GFC_ANFS_RXF1_Val               _UINT32_(0x1)                                        /* (CAN_GFC) Accept in Rx FIFO 1  */
+#define   CAN_GFC_ANFS_REJECT_Val             _UINT32_(0x2)                                        /* (CAN_GFC) Reject  */
+#define CAN_GFC_ANFS_RXF0                     (CAN_GFC_ANFS_RXF0_Val << CAN_GFC_ANFS_Pos)          /* (CAN_GFC) Accept in Rx FIFO 0 Position  */
+#define CAN_GFC_ANFS_RXF1                     (CAN_GFC_ANFS_RXF1_Val << CAN_GFC_ANFS_Pos)          /* (CAN_GFC) Accept in Rx FIFO 1 Position  */
+#define CAN_GFC_ANFS_REJECT                   (CAN_GFC_ANFS_REJECT_Val << CAN_GFC_ANFS_Pos)        /* (CAN_GFC) Reject Position  */
+#define CAN_GFC_Msk                           _UINT32_(0x0000003F)                                 /* (CAN_GFC) Register Mask  */
+
+
+/* -------- CAN_HPMS : (CAN Offset: 0x94) ( R/ 32) High Priority Message Status -------- */
+#define CAN_HPMS_RESETVALUE                   _UINT32_(0x00)                                       /*  (CAN_HPMS) High Priority Message Status  Reset Value */
+
+#define CAN_HPMS_BIDX_Pos                     _UINT32_(0)                                          /* (CAN_HPMS) Buffer Index Position */
+#define CAN_HPMS_BIDX_Msk                     (_UINT32_(0x3F) << CAN_HPMS_BIDX_Pos)                /* (CAN_HPMS) Buffer Index Mask */
+#define CAN_HPMS_BIDX(value)                  (CAN_HPMS_BIDX_Msk & (_UINT32_(value) << CAN_HPMS_BIDX_Pos)) /* Assigment of value for BIDX in the CAN_HPMS register */
+#define CAN_HPMS_MSI_Pos                      _UINT32_(6)                                          /* (CAN_HPMS) Message Storage Indicator Position */
+#define CAN_HPMS_MSI_Msk                      (_UINT32_(0x3) << CAN_HPMS_MSI_Pos)                  /* (CAN_HPMS) Message Storage Indicator Mask */
+#define CAN_HPMS_MSI(value)                   (CAN_HPMS_MSI_Msk & (_UINT32_(value) << CAN_HPMS_MSI_Pos)) /* Assigment of value for MSI in the CAN_HPMS register */
+#define   CAN_HPMS_MSI_NONE_Val               _UINT32_(0x0)                                        /* (CAN_HPMS) No FIFO selected  */
+#define   CAN_HPMS_MSI_LOST_Val               _UINT32_(0x1)                                        /* (CAN_HPMS) FIFO message lost  */
+#define   CAN_HPMS_MSI_FIFO0_Val              _UINT32_(0x2)                                        /* (CAN_HPMS) Message stored in FIFO 0  */
+#define   CAN_HPMS_MSI_FIFO1_Val              _UINT32_(0x3)                                        /* (CAN_HPMS) Message stored in FIFO 1  */
+#define CAN_HPMS_MSI_NONE                     (CAN_HPMS_MSI_NONE_Val << CAN_HPMS_MSI_Pos)          /* (CAN_HPMS) No FIFO selected Position  */
+#define CAN_HPMS_MSI_LOST                     (CAN_HPMS_MSI_LOST_Val << CAN_HPMS_MSI_Pos)          /* (CAN_HPMS) FIFO message lost Position  */
+#define CAN_HPMS_MSI_FIFO0                    (CAN_HPMS_MSI_FIFO0_Val << CAN_HPMS_MSI_Pos)         /* (CAN_HPMS) Message stored in FIFO 0 Position  */
+#define CAN_HPMS_MSI_FIFO1                    (CAN_HPMS_MSI_FIFO1_Val << CAN_HPMS_MSI_Pos)         /* (CAN_HPMS) Message stored in FIFO 1 Position  */
+#define CAN_HPMS_FIDX_Pos                     _UINT32_(8)                                          /* (CAN_HPMS) Filter Index Position */
+#define CAN_HPMS_FIDX_Msk                     (_UINT32_(0x7F) << CAN_HPMS_FIDX_Pos)                /* (CAN_HPMS) Filter Index Mask */
+#define CAN_HPMS_FIDX(value)                  (CAN_HPMS_FIDX_Msk & (_UINT32_(value) << CAN_HPMS_FIDX_Pos)) /* Assigment of value for FIDX in the CAN_HPMS register */
+#define CAN_HPMS_FLST_Pos                     _UINT32_(15)                                         /* (CAN_HPMS) Filter List Position */
+#define CAN_HPMS_FLST_Msk                     (_UINT32_(0x1) << CAN_HPMS_FLST_Pos)                 /* (CAN_HPMS) Filter List Mask */
+#define CAN_HPMS_FLST(value)                  (CAN_HPMS_FLST_Msk & (_UINT32_(value) << CAN_HPMS_FLST_Pos)) /* Assigment of value for FLST in the CAN_HPMS register */
+#define CAN_HPMS_Msk                          _UINT32_(0x0000FFFF)                                 /* (CAN_HPMS) Register Mask  */
 
 
 /* -------- CAN_IE : (CAN Offset: 0x54) (R/W 32) Interrupt Enable -------- */
@@ -885,6 +650,21 @@
 #define CAN_IE_Msk                            _UINT32_(0x3FCFFFFF)                                 /* (CAN_IE) Register Mask  */
 
 
+/* -------- CAN_ILE : (CAN Offset: 0x5C) (R/W 32) Interrupt Line Enable -------- */
+#define CAN_ILE_RESETVALUE                    _UINT32_(0x00)                                       /*  (CAN_ILE) Interrupt Line Enable  Reset Value */
+
+#define CAN_ILE_EINT0_Pos                     _UINT32_(0)                                          /* (CAN_ILE) Enable Interrupt Line 0 Position */
+#define CAN_ILE_EINT0_Msk                     (_UINT32_(0x1) << CAN_ILE_EINT0_Pos)                 /* (CAN_ILE) Enable Interrupt Line 0 Mask */
+#define CAN_ILE_EINT0(value)                  (CAN_ILE_EINT0_Msk & (_UINT32_(value) << CAN_ILE_EINT0_Pos)) /* Assigment of value for EINT0 in the CAN_ILE register */
+#define CAN_ILE_EINT1_Pos                     _UINT32_(1)                                          /* (CAN_ILE) Enable Interrupt Line 1 Position */
+#define CAN_ILE_EINT1_Msk                     (_UINT32_(0x1) << CAN_ILE_EINT1_Pos)                 /* (CAN_ILE) Enable Interrupt Line 1 Mask */
+#define CAN_ILE_EINT1(value)                  (CAN_ILE_EINT1_Msk & (_UINT32_(value) << CAN_ILE_EINT1_Pos)) /* Assigment of value for EINT1 in the CAN_ILE register */
+#define CAN_ILE_Msk                           _UINT32_(0x00000003)                                 /* (CAN_ILE) Register Mask  */
+
+#define CAN_ILE_EINT_Pos                      _UINT32_(0)                                          /* (CAN_ILE Position) Enable Interrupt Line x */
+#define CAN_ILE_EINT_Msk                      (_UINT32_(0x3) << CAN_ILE_EINT_Pos)                  /* (CAN_ILE Mask) EINT */
+#define CAN_ILE_EINT(value)                   (CAN_ILE_EINT_Msk & (_UINT32_(value) << CAN_ILE_EINT_Pos)) 
+
 /* -------- CAN_ILS : (CAN Offset: 0x58) (R/W 32) Interrupt Line Select -------- */
 #define CAN_ILS_RESETVALUE                    _UINT32_(0x00)                                       /*  (CAN_ILS) Interrupt Line Select  Reset Value */
 
@@ -975,108 +755,121 @@
 #define CAN_ILS_Msk                           _UINT32_(0x3FCFFFFF)                                 /* (CAN_ILS) Register Mask  */
 
 
-/* -------- CAN_ILE : (CAN Offset: 0x5C) (R/W 32) Interrupt Line Enable -------- */
-#define CAN_ILE_RESETVALUE                    _UINT32_(0x00)                                       /*  (CAN_ILE) Interrupt Line Enable  Reset Value */
+/* -------- CAN_IR : (CAN Offset: 0x50) (R/W 32) Interrupt -------- */
+#define CAN_IR_RESETVALUE                     _UINT32_(0x00)                                       /*  (CAN_IR) Interrupt  Reset Value */
 
-#define CAN_ILE_EINT0_Pos                     _UINT32_(0)                                          /* (CAN_ILE) Enable Interrupt Line 0 Position */
-#define CAN_ILE_EINT0_Msk                     (_UINT32_(0x1) << CAN_ILE_EINT0_Pos)                 /* (CAN_ILE) Enable Interrupt Line 0 Mask */
-#define CAN_ILE_EINT0(value)                  (CAN_ILE_EINT0_Msk & (_UINT32_(value) << CAN_ILE_EINT0_Pos)) /* Assigment of value for EINT0 in the CAN_ILE register */
-#define CAN_ILE_EINT1_Pos                     _UINT32_(1)                                          /* (CAN_ILE) Enable Interrupt Line 1 Position */
-#define CAN_ILE_EINT1_Msk                     (_UINT32_(0x1) << CAN_ILE_EINT1_Pos)                 /* (CAN_ILE) Enable Interrupt Line 1 Mask */
-#define CAN_ILE_EINT1(value)                  (CAN_ILE_EINT1_Msk & (_UINT32_(value) << CAN_ILE_EINT1_Pos)) /* Assigment of value for EINT1 in the CAN_ILE register */
-#define CAN_ILE_Msk                           _UINT32_(0x00000003)                                 /* (CAN_ILE) Register Mask  */
+#define CAN_IR_RF0N_Pos                       _UINT32_(0)                                          /* (CAN_IR) Rx FIFO 0 New Message Position */
+#define CAN_IR_RF0N_Msk                       (_UINT32_(0x1) << CAN_IR_RF0N_Pos)                   /* (CAN_IR) Rx FIFO 0 New Message Mask */
+#define CAN_IR_RF0N(value)                    (CAN_IR_RF0N_Msk & (_UINT32_(value) << CAN_IR_RF0N_Pos)) /* Assigment of value for RF0N in the CAN_IR register */
+#define CAN_IR_RF0W_Pos                       _UINT32_(1)                                          /* (CAN_IR) Rx FIFO 0 Watermark Reached Position */
+#define CAN_IR_RF0W_Msk                       (_UINT32_(0x1) << CAN_IR_RF0W_Pos)                   /* (CAN_IR) Rx FIFO 0 Watermark Reached Mask */
+#define CAN_IR_RF0W(value)                    (CAN_IR_RF0W_Msk & (_UINT32_(value) << CAN_IR_RF0W_Pos)) /* Assigment of value for RF0W in the CAN_IR register */
+#define CAN_IR_RF0F_Pos                       _UINT32_(2)                                          /* (CAN_IR) Rx FIFO 0 Full Position */
+#define CAN_IR_RF0F_Msk                       (_UINT32_(0x1) << CAN_IR_RF0F_Pos)                   /* (CAN_IR) Rx FIFO 0 Full Mask */
+#define CAN_IR_RF0F(value)                    (CAN_IR_RF0F_Msk & (_UINT32_(value) << CAN_IR_RF0F_Pos)) /* Assigment of value for RF0F in the CAN_IR register */
+#define CAN_IR_RF0L_Pos                       _UINT32_(3)                                          /* (CAN_IR) Rx FIFO 0 Message Lost Position */
+#define CAN_IR_RF0L_Msk                       (_UINT32_(0x1) << CAN_IR_RF0L_Pos)                   /* (CAN_IR) Rx FIFO 0 Message Lost Mask */
+#define CAN_IR_RF0L(value)                    (CAN_IR_RF0L_Msk & (_UINT32_(value) << CAN_IR_RF0L_Pos)) /* Assigment of value for RF0L in the CAN_IR register */
+#define CAN_IR_RF1N_Pos                       _UINT32_(4)                                          /* (CAN_IR) Rx FIFO 1 New Message Position */
+#define CAN_IR_RF1N_Msk                       (_UINT32_(0x1) << CAN_IR_RF1N_Pos)                   /* (CAN_IR) Rx FIFO 1 New Message Mask */
+#define CAN_IR_RF1N(value)                    (CAN_IR_RF1N_Msk & (_UINT32_(value) << CAN_IR_RF1N_Pos)) /* Assigment of value for RF1N in the CAN_IR register */
+#define CAN_IR_RF1W_Pos                       _UINT32_(5)                                          /* (CAN_IR) Rx FIFO 1 Watermark Reached Position */
+#define CAN_IR_RF1W_Msk                       (_UINT32_(0x1) << CAN_IR_RF1W_Pos)                   /* (CAN_IR) Rx FIFO 1 Watermark Reached Mask */
+#define CAN_IR_RF1W(value)                    (CAN_IR_RF1W_Msk & (_UINT32_(value) << CAN_IR_RF1W_Pos)) /* Assigment of value for RF1W in the CAN_IR register */
+#define CAN_IR_RF1F_Pos                       _UINT32_(6)                                          /* (CAN_IR) Rx FIFO 1 FIFO Full Position */
+#define CAN_IR_RF1F_Msk                       (_UINT32_(0x1) << CAN_IR_RF1F_Pos)                   /* (CAN_IR) Rx FIFO 1 FIFO Full Mask */
+#define CAN_IR_RF1F(value)                    (CAN_IR_RF1F_Msk & (_UINT32_(value) << CAN_IR_RF1F_Pos)) /* Assigment of value for RF1F in the CAN_IR register */
+#define CAN_IR_RF1L_Pos                       _UINT32_(7)                                          /* (CAN_IR) Rx FIFO 1 Message Lost Position */
+#define CAN_IR_RF1L_Msk                       (_UINT32_(0x1) << CAN_IR_RF1L_Pos)                   /* (CAN_IR) Rx FIFO 1 Message Lost Mask */
+#define CAN_IR_RF1L(value)                    (CAN_IR_RF1L_Msk & (_UINT32_(value) << CAN_IR_RF1L_Pos)) /* Assigment of value for RF1L in the CAN_IR register */
+#define CAN_IR_HPM_Pos                        _UINT32_(8)                                          /* (CAN_IR) High Priority Message Position */
+#define CAN_IR_HPM_Msk                        (_UINT32_(0x1) << CAN_IR_HPM_Pos)                    /* (CAN_IR) High Priority Message Mask */
+#define CAN_IR_HPM(value)                     (CAN_IR_HPM_Msk & (_UINT32_(value) << CAN_IR_HPM_Pos)) /* Assigment of value for HPM in the CAN_IR register */
+#define CAN_IR_TC_Pos                         _UINT32_(9)                                          /* (CAN_IR) Timestamp Completed Position */
+#define CAN_IR_TC_Msk                         (_UINT32_(0x1) << CAN_IR_TC_Pos)                     /* (CAN_IR) Timestamp Completed Mask */
+#define CAN_IR_TC(value)                      (CAN_IR_TC_Msk & (_UINT32_(value) << CAN_IR_TC_Pos)) /* Assigment of value for TC in the CAN_IR register */
+#define CAN_IR_TCF_Pos                        _UINT32_(10)                                         /* (CAN_IR) Transmission Cancellation Finished Position */
+#define CAN_IR_TCF_Msk                        (_UINT32_(0x1) << CAN_IR_TCF_Pos)                    /* (CAN_IR) Transmission Cancellation Finished Mask */
+#define CAN_IR_TCF(value)                     (CAN_IR_TCF_Msk & (_UINT32_(value) << CAN_IR_TCF_Pos)) /* Assigment of value for TCF in the CAN_IR register */
+#define CAN_IR_TFE_Pos                        _UINT32_(11)                                         /* (CAN_IR) Tx FIFO Empty Position */
+#define CAN_IR_TFE_Msk                        (_UINT32_(0x1) << CAN_IR_TFE_Pos)                    /* (CAN_IR) Tx FIFO Empty Mask */
+#define CAN_IR_TFE(value)                     (CAN_IR_TFE_Msk & (_UINT32_(value) << CAN_IR_TFE_Pos)) /* Assigment of value for TFE in the CAN_IR register */
+#define CAN_IR_TEFN_Pos                       _UINT32_(12)                                         /* (CAN_IR) Tx Event FIFO New Entry Position */
+#define CAN_IR_TEFN_Msk                       (_UINT32_(0x1) << CAN_IR_TEFN_Pos)                   /* (CAN_IR) Tx Event FIFO New Entry Mask */
+#define CAN_IR_TEFN(value)                    (CAN_IR_TEFN_Msk & (_UINT32_(value) << CAN_IR_TEFN_Pos)) /* Assigment of value for TEFN in the CAN_IR register */
+#define CAN_IR_TEFW_Pos                       _UINT32_(13)                                         /* (CAN_IR) Tx Event FIFO Watermark Reached Position */
+#define CAN_IR_TEFW_Msk                       (_UINT32_(0x1) << CAN_IR_TEFW_Pos)                   /* (CAN_IR) Tx Event FIFO Watermark Reached Mask */
+#define CAN_IR_TEFW(value)                    (CAN_IR_TEFW_Msk & (_UINT32_(value) << CAN_IR_TEFW_Pos)) /* Assigment of value for TEFW in the CAN_IR register */
+#define CAN_IR_TEFF_Pos                       _UINT32_(14)                                         /* (CAN_IR) Tx Event FIFO Full Position */
+#define CAN_IR_TEFF_Msk                       (_UINT32_(0x1) << CAN_IR_TEFF_Pos)                   /* (CAN_IR) Tx Event FIFO Full Mask */
+#define CAN_IR_TEFF(value)                    (CAN_IR_TEFF_Msk & (_UINT32_(value) << CAN_IR_TEFF_Pos)) /* Assigment of value for TEFF in the CAN_IR register */
+#define CAN_IR_TEFL_Pos                       _UINT32_(15)                                         /* (CAN_IR) Tx Event FIFO Element Lost Position */
+#define CAN_IR_TEFL_Msk                       (_UINT32_(0x1) << CAN_IR_TEFL_Pos)                   /* (CAN_IR) Tx Event FIFO Element Lost Mask */
+#define CAN_IR_TEFL(value)                    (CAN_IR_TEFL_Msk & (_UINT32_(value) << CAN_IR_TEFL_Pos)) /* Assigment of value for TEFL in the CAN_IR register */
+#define CAN_IR_TSW_Pos                        _UINT32_(16)                                         /* (CAN_IR) Timestamp Wraparound Position */
+#define CAN_IR_TSW_Msk                        (_UINT32_(0x1) << CAN_IR_TSW_Pos)                    /* (CAN_IR) Timestamp Wraparound Mask */
+#define CAN_IR_TSW(value)                     (CAN_IR_TSW_Msk & (_UINT32_(value) << CAN_IR_TSW_Pos)) /* Assigment of value for TSW in the CAN_IR register */
+#define CAN_IR_MRAF_Pos                       _UINT32_(17)                                         /* (CAN_IR) Message RAM Access Failure Position */
+#define CAN_IR_MRAF_Msk                       (_UINT32_(0x1) << CAN_IR_MRAF_Pos)                   /* (CAN_IR) Message RAM Access Failure Mask */
+#define CAN_IR_MRAF(value)                    (CAN_IR_MRAF_Msk & (_UINT32_(value) << CAN_IR_MRAF_Pos)) /* Assigment of value for MRAF in the CAN_IR register */
+#define CAN_IR_TOO_Pos                        _UINT32_(18)                                         /* (CAN_IR) Timeout Occurred Position */
+#define CAN_IR_TOO_Msk                        (_UINT32_(0x1) << CAN_IR_TOO_Pos)                    /* (CAN_IR) Timeout Occurred Mask */
+#define CAN_IR_TOO(value)                     (CAN_IR_TOO_Msk & (_UINT32_(value) << CAN_IR_TOO_Pos)) /* Assigment of value for TOO in the CAN_IR register */
+#define CAN_IR_DRX_Pos                        _UINT32_(19)                                         /* (CAN_IR) Message stored to Dedicated Rx Buffer Position */
+#define CAN_IR_DRX_Msk                        (_UINT32_(0x1) << CAN_IR_DRX_Pos)                    /* (CAN_IR) Message stored to Dedicated Rx Buffer Mask */
+#define CAN_IR_DRX(value)                     (CAN_IR_DRX_Msk & (_UINT32_(value) << CAN_IR_DRX_Pos)) /* Assigment of value for DRX in the CAN_IR register */
+#define CAN_IR_ELO_Pos                        _UINT32_(22)                                         /* (CAN_IR) Error Logging Overflow Position */
+#define CAN_IR_ELO_Msk                        (_UINT32_(0x1) << CAN_IR_ELO_Pos)                    /* (CAN_IR) Error Logging Overflow Mask */
+#define CAN_IR_ELO(value)                     (CAN_IR_ELO_Msk & (_UINT32_(value) << CAN_IR_ELO_Pos)) /* Assigment of value for ELO in the CAN_IR register */
+#define CAN_IR_EP_Pos                         _UINT32_(23)                                         /* (CAN_IR) Error Passive Position */
+#define CAN_IR_EP_Msk                         (_UINT32_(0x1) << CAN_IR_EP_Pos)                     /* (CAN_IR) Error Passive Mask */
+#define CAN_IR_EP(value)                      (CAN_IR_EP_Msk & (_UINT32_(value) << CAN_IR_EP_Pos)) /* Assigment of value for EP in the CAN_IR register */
+#define CAN_IR_EW_Pos                         _UINT32_(24)                                         /* (CAN_IR) Warning Status Position */
+#define CAN_IR_EW_Msk                         (_UINT32_(0x1) << CAN_IR_EW_Pos)                     /* (CAN_IR) Warning Status Mask */
+#define CAN_IR_EW(value)                      (CAN_IR_EW_Msk & (_UINT32_(value) << CAN_IR_EW_Pos)) /* Assigment of value for EW in the CAN_IR register */
+#define CAN_IR_BO_Pos                         _UINT32_(25)                                         /* (CAN_IR) Bus_Off Status Position */
+#define CAN_IR_BO_Msk                         (_UINT32_(0x1) << CAN_IR_BO_Pos)                     /* (CAN_IR) Bus_Off Status Mask */
+#define CAN_IR_BO(value)                      (CAN_IR_BO_Msk & (_UINT32_(value) << CAN_IR_BO_Pos)) /* Assigment of value for BO in the CAN_IR register */
+#define CAN_IR_WDI_Pos                        _UINT32_(26)                                         /* (CAN_IR) Watchdog Interrupt Position */
+#define CAN_IR_WDI_Msk                        (_UINT32_(0x1) << CAN_IR_WDI_Pos)                    /* (CAN_IR) Watchdog Interrupt Mask */
+#define CAN_IR_WDI(value)                     (CAN_IR_WDI_Msk & (_UINT32_(value) << CAN_IR_WDI_Pos)) /* Assigment of value for WDI in the CAN_IR register */
+#define CAN_IR_PEA_Pos                        _UINT32_(27)                                         /* (CAN_IR) Protocol Error in Arbitration Phase Position */
+#define CAN_IR_PEA_Msk                        (_UINT32_(0x1) << CAN_IR_PEA_Pos)                    /* (CAN_IR) Protocol Error in Arbitration Phase Mask */
+#define CAN_IR_PEA(value)                     (CAN_IR_PEA_Msk & (_UINT32_(value) << CAN_IR_PEA_Pos)) /* Assigment of value for PEA in the CAN_IR register */
+#define CAN_IR_PED_Pos                        _UINT32_(28)                                         /* (CAN_IR) Protocol Error in Data Phase Position */
+#define CAN_IR_PED_Msk                        (_UINT32_(0x1) << CAN_IR_PED_Pos)                    /* (CAN_IR) Protocol Error in Data Phase Mask */
+#define CAN_IR_PED(value)                     (CAN_IR_PED_Msk & (_UINT32_(value) << CAN_IR_PED_Pos)) /* Assigment of value for PED in the CAN_IR register */
+#define CAN_IR_ARA_Pos                        _UINT32_(29)                                         /* (CAN_IR) Access to Reserved Address Position */
+#define CAN_IR_ARA_Msk                        (_UINT32_(0x1) << CAN_IR_ARA_Pos)                    /* (CAN_IR) Access to Reserved Address Mask */
+#define CAN_IR_ARA(value)                     (CAN_IR_ARA_Msk & (_UINT32_(value) << CAN_IR_ARA_Pos)) /* Assigment of value for ARA in the CAN_IR register */
+#define CAN_IR_Msk                            _UINT32_(0x3FCFFFFF)                                 /* (CAN_IR) Register Mask  */
 
-#define CAN_ILE_EINT_Pos                      _UINT32_(0)                                          /* (CAN_ILE Position) Enable Interrupt Line x */
-#define CAN_ILE_EINT_Msk                      (_UINT32_(0x3) << CAN_ILE_EINT_Pos)                  /* (CAN_ILE Mask) EINT */
-#define CAN_ILE_EINT(value)                   (CAN_ILE_EINT_Msk & (_UINT32_(value) << CAN_ILE_EINT_Pos)) 
 
-/* -------- CAN_GFC : (CAN Offset: 0x80) (R/W 32) Global Filter Configuration -------- */
-#define CAN_GFC_RESETVALUE                    _UINT32_(0x00)                                       /*  (CAN_GFC) Global Filter Configuration  Reset Value */
+/* -------- CAN_MRCFG : (CAN Offset: 0x08) (R/W 32) Message RAM Configuration -------- */
+#define CAN_MRCFG_RESETVALUE                  _UINT32_(0x00)                                       /*  (CAN_MRCFG) Message RAM Configuration  Reset Value */
 
-#define CAN_GFC_RRFE_Pos                      _UINT32_(0)                                          /* (CAN_GFC) Reject Remote Frames Extended Position */
-#define CAN_GFC_RRFE_Msk                      (_UINT32_(0x1) << CAN_GFC_RRFE_Pos)                  /* (CAN_GFC) Reject Remote Frames Extended Mask */
-#define CAN_GFC_RRFE(value)                   (CAN_GFC_RRFE_Msk & (_UINT32_(value) << CAN_GFC_RRFE_Pos)) /* Assigment of value for RRFE in the CAN_GFC register */
-#define CAN_GFC_RRFS_Pos                      _UINT32_(1)                                          /* (CAN_GFC) Reject Remote Frames Standard Position */
-#define CAN_GFC_RRFS_Msk                      (_UINT32_(0x1) << CAN_GFC_RRFS_Pos)                  /* (CAN_GFC) Reject Remote Frames Standard Mask */
-#define CAN_GFC_RRFS(value)                   (CAN_GFC_RRFS_Msk & (_UINT32_(value) << CAN_GFC_RRFS_Pos)) /* Assigment of value for RRFS in the CAN_GFC register */
-#define CAN_GFC_ANFE_Pos                      _UINT32_(2)                                          /* (CAN_GFC) Accept Non-matching Frames Extended Position */
-#define CAN_GFC_ANFE_Msk                      (_UINT32_(0x3) << CAN_GFC_ANFE_Pos)                  /* (CAN_GFC) Accept Non-matching Frames Extended Mask */
-#define CAN_GFC_ANFE(value)                   (CAN_GFC_ANFE_Msk & (_UINT32_(value) << CAN_GFC_ANFE_Pos)) /* Assigment of value for ANFE in the CAN_GFC register */
-#define   CAN_GFC_ANFE_RXF0_Val               _UINT32_(0x0)                                        /* (CAN_GFC) Accept in Rx FIFO 0  */
-#define   CAN_GFC_ANFE_RXF1_Val               _UINT32_(0x1)                                        /* (CAN_GFC) Accept in Rx FIFO 1  */
-#define   CAN_GFC_ANFE_REJECT_Val             _UINT32_(0x2)                                        /* (CAN_GFC) Reject  */
-#define CAN_GFC_ANFE_RXF0                     (CAN_GFC_ANFE_RXF0_Val << CAN_GFC_ANFE_Pos)          /* (CAN_GFC) Accept in Rx FIFO 0 Position  */
-#define CAN_GFC_ANFE_RXF1                     (CAN_GFC_ANFE_RXF1_Val << CAN_GFC_ANFE_Pos)          /* (CAN_GFC) Accept in Rx FIFO 1 Position  */
-#define CAN_GFC_ANFE_REJECT                   (CAN_GFC_ANFE_REJECT_Val << CAN_GFC_ANFE_Pos)        /* (CAN_GFC) Reject Position  */
-#define CAN_GFC_ANFS_Pos                      _UINT32_(4)                                          /* (CAN_GFC) Accept Non-matching Frames Standard Position */
-#define CAN_GFC_ANFS_Msk                      (_UINT32_(0x3) << CAN_GFC_ANFS_Pos)                  /* (CAN_GFC) Accept Non-matching Frames Standard Mask */
-#define CAN_GFC_ANFS(value)                   (CAN_GFC_ANFS_Msk & (_UINT32_(value) << CAN_GFC_ANFS_Pos)) /* Assigment of value for ANFS in the CAN_GFC register */
-#define   CAN_GFC_ANFS_RXF0_Val               _UINT32_(0x0)                                        /* (CAN_GFC) Accept in Rx FIFO 0  */
-#define   CAN_GFC_ANFS_RXF1_Val               _UINT32_(0x1)                                        /* (CAN_GFC) Accept in Rx FIFO 1  */
-#define   CAN_GFC_ANFS_REJECT_Val             _UINT32_(0x2)                                        /* (CAN_GFC) Reject  */
-#define CAN_GFC_ANFS_RXF0                     (CAN_GFC_ANFS_RXF0_Val << CAN_GFC_ANFS_Pos)          /* (CAN_GFC) Accept in Rx FIFO 0 Position  */
-#define CAN_GFC_ANFS_RXF1                     (CAN_GFC_ANFS_RXF1_Val << CAN_GFC_ANFS_Pos)          /* (CAN_GFC) Accept in Rx FIFO 1 Position  */
-#define CAN_GFC_ANFS_REJECT                   (CAN_GFC_ANFS_REJECT_Val << CAN_GFC_ANFS_Pos)        /* (CAN_GFC) Reject Position  */
-#define CAN_GFC_Msk                           _UINT32_(0x0000003F)                                 /* (CAN_GFC) Register Mask  */
+#define CAN_MRCFG_OFFSET_Pos                  _UINT32_(16)                                         /* (CAN_MRCFG) Base address offset Position */
+#define CAN_MRCFG_OFFSET_Msk                  (_UINT32_(0xFF) << CAN_MRCFG_OFFSET_Pos)             /* (CAN_MRCFG) Base address offset Mask */
+#define CAN_MRCFG_OFFSET(value)               (CAN_MRCFG_OFFSET_Msk & (_UINT32_(value) << CAN_MRCFG_OFFSET_Pos)) /* Assigment of value for OFFSET in the CAN_MRCFG register */
+#define CAN_MRCFG_Msk                         _UINT32_(0x00FF0000)                                 /* (CAN_MRCFG) Register Mask  */
 
 
-/* -------- CAN_SIDFC : (CAN Offset: 0x84) (R/W 32) Standard ID Filter Configuration -------- */
-#define CAN_SIDFC_RESETVALUE                  _UINT32_(0x00)                                       /*  (CAN_SIDFC) Standard ID Filter Configuration  Reset Value */
+/* -------- CAN_NBTP : (CAN Offset: 0x1C) (R/W 32) Nominal Bit Timing and Prescaler -------- */
+#define CAN_NBTP_RESETVALUE                   _UINT32_(0x6000A03)                                  /*  (CAN_NBTP) Nominal Bit Timing and Prescaler  Reset Value */
 
-#define CAN_SIDFC_FLSSA_Pos                   _UINT32_(0)                                          /* (CAN_SIDFC) Filter List Standard Start Address Position */
-#define CAN_SIDFC_FLSSA_Msk                   (_UINT32_(0xFFFF) << CAN_SIDFC_FLSSA_Pos)            /* (CAN_SIDFC) Filter List Standard Start Address Mask */
-#define CAN_SIDFC_FLSSA(value)                (CAN_SIDFC_FLSSA_Msk & (_UINT32_(value) << CAN_SIDFC_FLSSA_Pos)) /* Assigment of value for FLSSA in the CAN_SIDFC register */
-#define CAN_SIDFC_LSS_Pos                     _UINT32_(16)                                         /* (CAN_SIDFC) List Size Standard Position */
-#define CAN_SIDFC_LSS_Msk                     (_UINT32_(0xFF) << CAN_SIDFC_LSS_Pos)                /* (CAN_SIDFC) List Size Standard Mask */
-#define CAN_SIDFC_LSS(value)                  (CAN_SIDFC_LSS_Msk & (_UINT32_(value) << CAN_SIDFC_LSS_Pos)) /* Assigment of value for LSS in the CAN_SIDFC register */
-#define CAN_SIDFC_Msk                         _UINT32_(0x00FFFFFF)                                 /* (CAN_SIDFC) Register Mask  */
-
-
-/* -------- CAN_XIDFC : (CAN Offset: 0x88) (R/W 32) Extended ID Filter Configuration -------- */
-#define CAN_XIDFC_RESETVALUE                  _UINT32_(0x00)                                       /*  (CAN_XIDFC) Extended ID Filter Configuration  Reset Value */
-
-#define CAN_XIDFC_FLESA_Pos                   _UINT32_(0)                                          /* (CAN_XIDFC) Filter List Extended Start Address Position */
-#define CAN_XIDFC_FLESA_Msk                   (_UINT32_(0xFFFF) << CAN_XIDFC_FLESA_Pos)            /* (CAN_XIDFC) Filter List Extended Start Address Mask */
-#define CAN_XIDFC_FLESA(value)                (CAN_XIDFC_FLESA_Msk & (_UINT32_(value) << CAN_XIDFC_FLESA_Pos)) /* Assigment of value for FLESA in the CAN_XIDFC register */
-#define CAN_XIDFC_LSE_Pos                     _UINT32_(16)                                         /* (CAN_XIDFC) List Size Extended Position */
-#define CAN_XIDFC_LSE_Msk                     (_UINT32_(0x7F) << CAN_XIDFC_LSE_Pos)                /* (CAN_XIDFC) List Size Extended Mask */
-#define CAN_XIDFC_LSE(value)                  (CAN_XIDFC_LSE_Msk & (_UINT32_(value) << CAN_XIDFC_LSE_Pos)) /* Assigment of value for LSE in the CAN_XIDFC register */
-#define CAN_XIDFC_Msk                         _UINT32_(0x007FFFFF)                                 /* (CAN_XIDFC) Register Mask  */
-
-
-/* -------- CAN_XIDAM : (CAN Offset: 0x90) (R/W 32) Extended ID AND Mask -------- */
-#define CAN_XIDAM_RESETVALUE                  _UINT32_(0x1FFFFFFF)                                 /*  (CAN_XIDAM) Extended ID AND Mask  Reset Value */
-
-#define CAN_XIDAM_EIDM_Pos                    _UINT32_(0)                                          /* (CAN_XIDAM) Extended ID Mask Position */
-#define CAN_XIDAM_EIDM_Msk                    (_UINT32_(0x1FFFFFFF) << CAN_XIDAM_EIDM_Pos)         /* (CAN_XIDAM) Extended ID Mask Mask */
-#define CAN_XIDAM_EIDM(value)                 (CAN_XIDAM_EIDM_Msk & (_UINT32_(value) << CAN_XIDAM_EIDM_Pos)) /* Assigment of value for EIDM in the CAN_XIDAM register */
-#define CAN_XIDAM_Msk                         _UINT32_(0x1FFFFFFF)                                 /* (CAN_XIDAM) Register Mask  */
-
-
-/* -------- CAN_HPMS : (CAN Offset: 0x94) ( R/ 32) High Priority Message Status -------- */
-#define CAN_HPMS_RESETVALUE                   _UINT32_(0x00)                                       /*  (CAN_HPMS) High Priority Message Status  Reset Value */
-
-#define CAN_HPMS_BIDX_Pos                     _UINT32_(0)                                          /* (CAN_HPMS) Buffer Index Position */
-#define CAN_HPMS_BIDX_Msk                     (_UINT32_(0x3F) << CAN_HPMS_BIDX_Pos)                /* (CAN_HPMS) Buffer Index Mask */
-#define CAN_HPMS_BIDX(value)                  (CAN_HPMS_BIDX_Msk & (_UINT32_(value) << CAN_HPMS_BIDX_Pos)) /* Assigment of value for BIDX in the CAN_HPMS register */
-#define CAN_HPMS_MSI_Pos                      _UINT32_(6)                                          /* (CAN_HPMS) Message Storage Indicator Position */
-#define CAN_HPMS_MSI_Msk                      (_UINT32_(0x3) << CAN_HPMS_MSI_Pos)                  /* (CAN_HPMS) Message Storage Indicator Mask */
-#define CAN_HPMS_MSI(value)                   (CAN_HPMS_MSI_Msk & (_UINT32_(value) << CAN_HPMS_MSI_Pos)) /* Assigment of value for MSI in the CAN_HPMS register */
-#define   CAN_HPMS_MSI_NONE_Val               _UINT32_(0x0)                                        /* (CAN_HPMS) No FIFO selected  */
-#define   CAN_HPMS_MSI_LOST_Val               _UINT32_(0x1)                                        /* (CAN_HPMS) FIFO message lost  */
-#define   CAN_HPMS_MSI_FIFO0_Val              _UINT32_(0x2)                                        /* (CAN_HPMS) Message stored in FIFO 0  */
-#define   CAN_HPMS_MSI_FIFO1_Val              _UINT32_(0x3)                                        /* (CAN_HPMS) Message stored in FIFO 1  */
-#define CAN_HPMS_MSI_NONE                     (CAN_HPMS_MSI_NONE_Val << CAN_HPMS_MSI_Pos)          /* (CAN_HPMS) No FIFO selected Position  */
-#define CAN_HPMS_MSI_LOST                     (CAN_HPMS_MSI_LOST_Val << CAN_HPMS_MSI_Pos)          /* (CAN_HPMS) FIFO message lost Position  */
-#define CAN_HPMS_MSI_FIFO0                    (CAN_HPMS_MSI_FIFO0_Val << CAN_HPMS_MSI_Pos)         /* (CAN_HPMS) Message stored in FIFO 0 Position  */
-#define CAN_HPMS_MSI_FIFO1                    (CAN_HPMS_MSI_FIFO1_Val << CAN_HPMS_MSI_Pos)         /* (CAN_HPMS) Message stored in FIFO 1 Position  */
-#define CAN_HPMS_FIDX_Pos                     _UINT32_(8)                                          /* (CAN_HPMS) Filter Index Position */
-#define CAN_HPMS_FIDX_Msk                     (_UINT32_(0x7F) << CAN_HPMS_FIDX_Pos)                /* (CAN_HPMS) Filter Index Mask */
-#define CAN_HPMS_FIDX(value)                  (CAN_HPMS_FIDX_Msk & (_UINT32_(value) << CAN_HPMS_FIDX_Pos)) /* Assigment of value for FIDX in the CAN_HPMS register */
-#define CAN_HPMS_FLST_Pos                     _UINT32_(15)                                         /* (CAN_HPMS) Filter List Position */
-#define CAN_HPMS_FLST_Msk                     (_UINT32_(0x1) << CAN_HPMS_FLST_Pos)                 /* (CAN_HPMS) Filter List Mask */
-#define CAN_HPMS_FLST(value)                  (CAN_HPMS_FLST_Msk & (_UINT32_(value) << CAN_HPMS_FLST_Pos)) /* Assigment of value for FLST in the CAN_HPMS register */
-#define CAN_HPMS_Msk                          _UINT32_(0x0000FFFF)                                 /* (CAN_HPMS) Register Mask  */
+#define CAN_NBTP_NTSEG2_Pos                   _UINT32_(0)                                          /* (CAN_NBTP) Nominal Time segment after sample point Position */
+#define CAN_NBTP_NTSEG2_Msk                   (_UINT32_(0x7F) << CAN_NBTP_NTSEG2_Pos)              /* (CAN_NBTP) Nominal Time segment after sample point Mask */
+#define CAN_NBTP_NTSEG2(value)                (CAN_NBTP_NTSEG2_Msk & (_UINT32_(value) << CAN_NBTP_NTSEG2_Pos)) /* Assigment of value for NTSEG2 in the CAN_NBTP register */
+#define CAN_NBTP_NTSEG1_Pos                   _UINT32_(8)                                          /* (CAN_NBTP) Nominal Time segment before sample point Position */
+#define CAN_NBTP_NTSEG1_Msk                   (_UINT32_(0xFF) << CAN_NBTP_NTSEG1_Pos)              /* (CAN_NBTP) Nominal Time segment before sample point Mask */
+#define CAN_NBTP_NTSEG1(value)                (CAN_NBTP_NTSEG1_Msk & (_UINT32_(value) << CAN_NBTP_NTSEG1_Pos)) /* Assigment of value for NTSEG1 in the CAN_NBTP register */
+#define CAN_NBTP_NBRP_Pos                     _UINT32_(16)                                         /* (CAN_NBTP) Nominal Baud Rate Prescaler Position */
+#define CAN_NBTP_NBRP_Msk                     (_UINT32_(0x1FF) << CAN_NBTP_NBRP_Pos)               /* (CAN_NBTP) Nominal Baud Rate Prescaler Mask */
+#define CAN_NBTP_NBRP(value)                  (CAN_NBTP_NBRP_Msk & (_UINT32_(value) << CAN_NBTP_NBRP_Pos)) /* Assigment of value for NBRP in the CAN_NBTP register */
+#define CAN_NBTP_NSJW_Pos                     _UINT32_(25)                                         /* (CAN_NBTP) Nominal (Re)Synchronization Jump Width Position */
+#define CAN_NBTP_NSJW_Msk                     (_UINT32_(0x7F) << CAN_NBTP_NSJW_Pos)                /* (CAN_NBTP) Nominal (Re)Synchronization Jump Width Mask */
+#define CAN_NBTP_NSJW(value)                  (CAN_NBTP_NSJW_Msk & (_UINT32_(value) << CAN_NBTP_NSJW_Pos)) /* Assigment of value for NSJW in the CAN_NBTP register */
+#define CAN_NBTP_Msk                          _UINT32_(0xFFFFFF7F)                                 /* (CAN_NBTP) Register Mask  */
 
 
 /* -------- CAN_NDAT1 : (CAN Offset: 0x98) (R/W 32) New Data 1 -------- */
@@ -1289,52 +1082,95 @@
 #define CAN_NDAT2_ND_Msk                      (_UINT32_(0xFFFFFFFF) << CAN_NDAT2_ND_Pos)           /* (CAN_NDAT2 Mask) ND */
 #define CAN_NDAT2_ND(value)                   (CAN_NDAT2_ND_Msk & (_UINT32_(value) << CAN_NDAT2_ND_Pos)) 
 
-/* -------- CAN_RXF0C : (CAN Offset: 0xA0) (R/W 32) Rx FIFO 0 Configuration -------- */
-#define CAN_RXF0C_RESETVALUE                  _UINT32_(0x00)                                       /*  (CAN_RXF0C) Rx FIFO 0 Configuration  Reset Value */
+/* -------- CAN_PSR : (CAN Offset: 0x44) ( R/ 32) Protocol Status -------- */
+#define CAN_PSR_RESETVALUE                    _UINT32_(0x707)                                      /*  (CAN_PSR) Protocol Status  Reset Value */
 
-#define CAN_RXF0C_F0SA_Pos                    _UINT32_(0)                                          /* (CAN_RXF0C) Rx FIFO 0 Start Address Position */
-#define CAN_RXF0C_F0SA_Msk                    (_UINT32_(0xFFFF) << CAN_RXF0C_F0SA_Pos)             /* (CAN_RXF0C) Rx FIFO 0 Start Address Mask */
-#define CAN_RXF0C_F0SA(value)                 (CAN_RXF0C_F0SA_Msk & (_UINT32_(value) << CAN_RXF0C_F0SA_Pos)) /* Assigment of value for F0SA in the CAN_RXF0C register */
-#define CAN_RXF0C_F0S_Pos                     _UINT32_(16)                                         /* (CAN_RXF0C) Rx FIFO 0 Size Position */
-#define CAN_RXF0C_F0S_Msk                     (_UINT32_(0x7F) << CAN_RXF0C_F0S_Pos)                /* (CAN_RXF0C) Rx FIFO 0 Size Mask */
-#define CAN_RXF0C_F0S(value)                  (CAN_RXF0C_F0S_Msk & (_UINT32_(value) << CAN_RXF0C_F0S_Pos)) /* Assigment of value for F0S in the CAN_RXF0C register */
-#define CAN_RXF0C_F0WM_Pos                    _UINT32_(24)                                         /* (CAN_RXF0C) Rx FIFO 0 Watermark Position */
-#define CAN_RXF0C_F0WM_Msk                    (_UINT32_(0x7F) << CAN_RXF0C_F0WM_Pos)               /* (CAN_RXF0C) Rx FIFO 0 Watermark Mask */
-#define CAN_RXF0C_F0WM(value)                 (CAN_RXF0C_F0WM_Msk & (_UINT32_(value) << CAN_RXF0C_F0WM_Pos)) /* Assigment of value for F0WM in the CAN_RXF0C register */
-#define CAN_RXF0C_F0OM_Pos                    _UINT32_(31)                                         /* (CAN_RXF0C) FIFO 0 Operation Mode Position */
-#define CAN_RXF0C_F0OM_Msk                    (_UINT32_(0x1) << CAN_RXF0C_F0OM_Pos)                /* (CAN_RXF0C) FIFO 0 Operation Mode Mask */
-#define CAN_RXF0C_F0OM(value)                 (CAN_RXF0C_F0OM_Msk & (_UINT32_(value) << CAN_RXF0C_F0OM_Pos)) /* Assigment of value for F0OM in the CAN_RXF0C register */
-#define CAN_RXF0C_Msk                         _UINT32_(0xFF7FFFFF)                                 /* (CAN_RXF0C) Register Mask  */
+#define CAN_PSR_LEC_Pos                       _UINT32_(0)                                          /* (CAN_PSR) Last Error Code Position */
+#define CAN_PSR_LEC_Msk                       (_UINT32_(0x7) << CAN_PSR_LEC_Pos)                   /* (CAN_PSR) Last Error Code Mask */
+#define CAN_PSR_LEC(value)                    (CAN_PSR_LEC_Msk & (_UINT32_(value) << CAN_PSR_LEC_Pos)) /* Assigment of value for LEC in the CAN_PSR register */
+#define   CAN_PSR_LEC_NONE_Val                _UINT32_(0x0)                                        /* (CAN_PSR) No Error  */
+#define   CAN_PSR_LEC_STUFF_Val               _UINT32_(0x1)                                        /* (CAN_PSR) Stuff Error  */
+#define   CAN_PSR_LEC_FORM_Val                _UINT32_(0x2)                                        /* (CAN_PSR) Form Error  */
+#define   CAN_PSR_LEC_ACK_Val                 _UINT32_(0x3)                                        /* (CAN_PSR) Ack Error  */
+#define   CAN_PSR_LEC_BIT1_Val                _UINT32_(0x4)                                        /* (CAN_PSR) Bit1 Error  */
+#define   CAN_PSR_LEC_BIT0_Val                _UINT32_(0x5)                                        /* (CAN_PSR) Bit0 Error  */
+#define   CAN_PSR_LEC_CRC_Val                 _UINT32_(0x6)                                        /* (CAN_PSR) CRC Error  */
+#define   CAN_PSR_LEC_NC_Val                  _UINT32_(0x7)                                        /* (CAN_PSR) No Change  */
+#define CAN_PSR_LEC_NONE                      (CAN_PSR_LEC_NONE_Val << CAN_PSR_LEC_Pos)            /* (CAN_PSR) No Error Position  */
+#define CAN_PSR_LEC_STUFF                     (CAN_PSR_LEC_STUFF_Val << CAN_PSR_LEC_Pos)           /* (CAN_PSR) Stuff Error Position  */
+#define CAN_PSR_LEC_FORM                      (CAN_PSR_LEC_FORM_Val << CAN_PSR_LEC_Pos)            /* (CAN_PSR) Form Error Position  */
+#define CAN_PSR_LEC_ACK                       (CAN_PSR_LEC_ACK_Val << CAN_PSR_LEC_Pos)             /* (CAN_PSR) Ack Error Position  */
+#define CAN_PSR_LEC_BIT1                      (CAN_PSR_LEC_BIT1_Val << CAN_PSR_LEC_Pos)            /* (CAN_PSR) Bit1 Error Position  */
+#define CAN_PSR_LEC_BIT0                      (CAN_PSR_LEC_BIT0_Val << CAN_PSR_LEC_Pos)            /* (CAN_PSR) Bit0 Error Position  */
+#define CAN_PSR_LEC_CRC                       (CAN_PSR_LEC_CRC_Val << CAN_PSR_LEC_Pos)             /* (CAN_PSR) CRC Error Position  */
+#define CAN_PSR_LEC_NC                        (CAN_PSR_LEC_NC_Val << CAN_PSR_LEC_Pos)              /* (CAN_PSR) No Change Position  */
+#define CAN_PSR_ACT_Pos                       _UINT32_(3)                                          /* (CAN_PSR) Activity Position */
+#define CAN_PSR_ACT_Msk                       (_UINT32_(0x3) << CAN_PSR_ACT_Pos)                   /* (CAN_PSR) Activity Mask */
+#define CAN_PSR_ACT(value)                    (CAN_PSR_ACT_Msk & (_UINT32_(value) << CAN_PSR_ACT_Pos)) /* Assigment of value for ACT in the CAN_PSR register */
+#define   CAN_PSR_ACT_SYNC_Val                _UINT32_(0x0)                                        /* (CAN_PSR) Node is synchronizing on CAN communication  */
+#define   CAN_PSR_ACT_IDLE_Val                _UINT32_(0x1)                                        /* (CAN_PSR) Node is neither receiver nor transmitter  */
+#define   CAN_PSR_ACT_RX_Val                  _UINT32_(0x2)                                        /* (CAN_PSR) Node is operating as receiver  */
+#define   CAN_PSR_ACT_TX_Val                  _UINT32_(0x3)                                        /* (CAN_PSR) Node is operating as transmitter  */
+#define CAN_PSR_ACT_SYNC                      (CAN_PSR_ACT_SYNC_Val << CAN_PSR_ACT_Pos)            /* (CAN_PSR) Node is synchronizing on CAN communication Position  */
+#define CAN_PSR_ACT_IDLE                      (CAN_PSR_ACT_IDLE_Val << CAN_PSR_ACT_Pos)            /* (CAN_PSR) Node is neither receiver nor transmitter Position  */
+#define CAN_PSR_ACT_RX                        (CAN_PSR_ACT_RX_Val << CAN_PSR_ACT_Pos)              /* (CAN_PSR) Node is operating as receiver Position  */
+#define CAN_PSR_ACT_TX                        (CAN_PSR_ACT_TX_Val << CAN_PSR_ACT_Pos)              /* (CAN_PSR) Node is operating as transmitter Position  */
+#define CAN_PSR_EP_Pos                        _UINT32_(5)                                          /* (CAN_PSR) Error Passive Position */
+#define CAN_PSR_EP_Msk                        (_UINT32_(0x1) << CAN_PSR_EP_Pos)                    /* (CAN_PSR) Error Passive Mask */
+#define CAN_PSR_EP(value)                     (CAN_PSR_EP_Msk & (_UINT32_(value) << CAN_PSR_EP_Pos)) /* Assigment of value for EP in the CAN_PSR register */
+#define CAN_PSR_EW_Pos                        _UINT32_(6)                                          /* (CAN_PSR) Warning Status Position */
+#define CAN_PSR_EW_Msk                        (_UINT32_(0x1) << CAN_PSR_EW_Pos)                    /* (CAN_PSR) Warning Status Mask */
+#define CAN_PSR_EW(value)                     (CAN_PSR_EW_Msk & (_UINT32_(value) << CAN_PSR_EW_Pos)) /* Assigment of value for EW in the CAN_PSR register */
+#define CAN_PSR_BO_Pos                        _UINT32_(7)                                          /* (CAN_PSR) Bus_Off Status Position */
+#define CAN_PSR_BO_Msk                        (_UINT32_(0x1) << CAN_PSR_BO_Pos)                    /* (CAN_PSR) Bus_Off Status Mask */
+#define CAN_PSR_BO(value)                     (CAN_PSR_BO_Msk & (_UINT32_(value) << CAN_PSR_BO_Pos)) /* Assigment of value for BO in the CAN_PSR register */
+#define CAN_PSR_DLEC_Pos                      _UINT32_(8)                                          /* (CAN_PSR) Data Phase Last Error Code Position */
+#define CAN_PSR_DLEC_Msk                      (_UINT32_(0x7) << CAN_PSR_DLEC_Pos)                  /* (CAN_PSR) Data Phase Last Error Code Mask */
+#define CAN_PSR_DLEC(value)                   (CAN_PSR_DLEC_Msk & (_UINT32_(value) << CAN_PSR_DLEC_Pos)) /* Assigment of value for DLEC in the CAN_PSR register */
+#define   CAN_PSR_DLEC_NONE_Val               _UINT32_(0x0)                                        /* (CAN_PSR) No Error  */
+#define   CAN_PSR_DLEC_STUFF_Val              _UINT32_(0x1)                                        /* (CAN_PSR) Stuff Error  */
+#define   CAN_PSR_DLEC_FORM_Val               _UINT32_(0x2)                                        /* (CAN_PSR) Form Error  */
+#define   CAN_PSR_DLEC_ACK_Val                _UINT32_(0x3)                                        /* (CAN_PSR) Ack Error  */
+#define   CAN_PSR_DLEC_BIT1_Val               _UINT32_(0x4)                                        /* (CAN_PSR) Bit1 Error  */
+#define   CAN_PSR_DLEC_BIT0_Val               _UINT32_(0x5)                                        /* (CAN_PSR) Bit0 Error  */
+#define   CAN_PSR_DLEC_CRC_Val                _UINT32_(0x6)                                        /* (CAN_PSR) CRC Error  */
+#define   CAN_PSR_DLEC_NC_Val                 _UINT32_(0x7)                                        /* (CAN_PSR) No Change  */
+#define CAN_PSR_DLEC_NONE                     (CAN_PSR_DLEC_NONE_Val << CAN_PSR_DLEC_Pos)          /* (CAN_PSR) No Error Position  */
+#define CAN_PSR_DLEC_STUFF                    (CAN_PSR_DLEC_STUFF_Val << CAN_PSR_DLEC_Pos)         /* (CAN_PSR) Stuff Error Position  */
+#define CAN_PSR_DLEC_FORM                     (CAN_PSR_DLEC_FORM_Val << CAN_PSR_DLEC_Pos)          /* (CAN_PSR) Form Error Position  */
+#define CAN_PSR_DLEC_ACK                      (CAN_PSR_DLEC_ACK_Val << CAN_PSR_DLEC_Pos)           /* (CAN_PSR) Ack Error Position  */
+#define CAN_PSR_DLEC_BIT1                     (CAN_PSR_DLEC_BIT1_Val << CAN_PSR_DLEC_Pos)          /* (CAN_PSR) Bit1 Error Position  */
+#define CAN_PSR_DLEC_BIT0                     (CAN_PSR_DLEC_BIT0_Val << CAN_PSR_DLEC_Pos)          /* (CAN_PSR) Bit0 Error Position  */
+#define CAN_PSR_DLEC_CRC                      (CAN_PSR_DLEC_CRC_Val << CAN_PSR_DLEC_Pos)           /* (CAN_PSR) CRC Error Position  */
+#define CAN_PSR_DLEC_NC                       (CAN_PSR_DLEC_NC_Val << CAN_PSR_DLEC_Pos)            /* (CAN_PSR) No Change Position  */
+#define CAN_PSR_RESI_Pos                      _UINT32_(11)                                         /* (CAN_PSR) ESI flag of last received CAN FD Message Position */
+#define CAN_PSR_RESI_Msk                      (_UINT32_(0x1) << CAN_PSR_RESI_Pos)                  /* (CAN_PSR) ESI flag of last received CAN FD Message Mask */
+#define CAN_PSR_RESI(value)                   (CAN_PSR_RESI_Msk & (_UINT32_(value) << CAN_PSR_RESI_Pos)) /* Assigment of value for RESI in the CAN_PSR register */
+#define CAN_PSR_RBRS_Pos                      _UINT32_(12)                                         /* (CAN_PSR) BRS flag of last received CAN FD Message Position */
+#define CAN_PSR_RBRS_Msk                      (_UINT32_(0x1) << CAN_PSR_RBRS_Pos)                  /* (CAN_PSR) BRS flag of last received CAN FD Message Mask */
+#define CAN_PSR_RBRS(value)                   (CAN_PSR_RBRS_Msk & (_UINT32_(value) << CAN_PSR_RBRS_Pos)) /* Assigment of value for RBRS in the CAN_PSR register */
+#define CAN_PSR_RFDF_Pos                      _UINT32_(13)                                         /* (CAN_PSR) Received a CAN FD Message Position */
+#define CAN_PSR_RFDF_Msk                      (_UINT32_(0x1) << CAN_PSR_RFDF_Pos)                  /* (CAN_PSR) Received a CAN FD Message Mask */
+#define CAN_PSR_RFDF(value)                   (CAN_PSR_RFDF_Msk & (_UINT32_(value) << CAN_PSR_RFDF_Pos)) /* Assigment of value for RFDF in the CAN_PSR register */
+#define CAN_PSR_PXE_Pos                       _UINT32_(14)                                         /* (CAN_PSR) Protocol Exception Event Position */
+#define CAN_PSR_PXE_Msk                       (_UINT32_(0x1) << CAN_PSR_PXE_Pos)                   /* (CAN_PSR) Protocol Exception Event Mask */
+#define CAN_PSR_PXE(value)                    (CAN_PSR_PXE_Msk & (_UINT32_(value) << CAN_PSR_PXE_Pos)) /* Assigment of value for PXE in the CAN_PSR register */
+#define CAN_PSR_TDCV_Pos                      _UINT32_(16)                                         /* (CAN_PSR) Transmitter Delay Compensation Value Position */
+#define CAN_PSR_TDCV_Msk                      (_UINT32_(0x7F) << CAN_PSR_TDCV_Pos)                 /* (CAN_PSR) Transmitter Delay Compensation Value Mask */
+#define CAN_PSR_TDCV(value)                   (CAN_PSR_TDCV_Msk & (_UINT32_(value) << CAN_PSR_TDCV_Pos)) /* Assigment of value for TDCV in the CAN_PSR register */
+#define CAN_PSR_Msk                           _UINT32_(0x007F7FFF)                                 /* (CAN_PSR) Register Mask  */
 
 
-/* -------- CAN_RXF0S : (CAN Offset: 0xA4) ( R/ 32) Rx FIFO 0 Status -------- */
-#define CAN_RXF0S_RESETVALUE                  _UINT32_(0x00)                                       /*  (CAN_RXF0S) Rx FIFO 0 Status  Reset Value */
+/* -------- CAN_RWD : (CAN Offset: 0x14) (R/W 32) RAM Watchdog -------- */
+#define CAN_RWD_RESETVALUE                    _UINT32_(0x00)                                       /*  (CAN_RWD) RAM Watchdog  Reset Value */
 
-#define CAN_RXF0S_F0FL_Pos                    _UINT32_(0)                                          /* (CAN_RXF0S) Rx FIFO 0 Fill Level Position */
-#define CAN_RXF0S_F0FL_Msk                    (_UINT32_(0x7F) << CAN_RXF0S_F0FL_Pos)               /* (CAN_RXF0S) Rx FIFO 0 Fill Level Mask */
-#define CAN_RXF0S_F0FL(value)                 (CAN_RXF0S_F0FL_Msk & (_UINT32_(value) << CAN_RXF0S_F0FL_Pos)) /* Assigment of value for F0FL in the CAN_RXF0S register */
-#define CAN_RXF0S_F0GI_Pos                    _UINT32_(8)                                          /* (CAN_RXF0S) Rx FIFO 0 Get Index Position */
-#define CAN_RXF0S_F0GI_Msk                    (_UINT32_(0x3F) << CAN_RXF0S_F0GI_Pos)               /* (CAN_RXF0S) Rx FIFO 0 Get Index Mask */
-#define CAN_RXF0S_F0GI(value)                 (CAN_RXF0S_F0GI_Msk & (_UINT32_(value) << CAN_RXF0S_F0GI_Pos)) /* Assigment of value for F0GI in the CAN_RXF0S register */
-#define CAN_RXF0S_F0PI_Pos                    _UINT32_(16)                                         /* (CAN_RXF0S) Rx FIFO 0 Put Index Position */
-#define CAN_RXF0S_F0PI_Msk                    (_UINT32_(0x3F) << CAN_RXF0S_F0PI_Pos)               /* (CAN_RXF0S) Rx FIFO 0 Put Index Mask */
-#define CAN_RXF0S_F0PI(value)                 (CAN_RXF0S_F0PI_Msk & (_UINT32_(value) << CAN_RXF0S_F0PI_Pos)) /* Assigment of value for F0PI in the CAN_RXF0S register */
-#define CAN_RXF0S_F0F_Pos                     _UINT32_(24)                                         /* (CAN_RXF0S) Rx FIFO 0 Full Position */
-#define CAN_RXF0S_F0F_Msk                     (_UINT32_(0x1) << CAN_RXF0S_F0F_Pos)                 /* (CAN_RXF0S) Rx FIFO 0 Full Mask */
-#define CAN_RXF0S_F0F(value)                  (CAN_RXF0S_F0F_Msk & (_UINT32_(value) << CAN_RXF0S_F0F_Pos)) /* Assigment of value for F0F in the CAN_RXF0S register */
-#define CAN_RXF0S_RF0L_Pos                    _UINT32_(25)                                         /* (CAN_RXF0S) Rx FIFO 0 Message Lost Position */
-#define CAN_RXF0S_RF0L_Msk                    (_UINT32_(0x1) << CAN_RXF0S_RF0L_Pos)                /* (CAN_RXF0S) Rx FIFO 0 Message Lost Mask */
-#define CAN_RXF0S_RF0L(value)                 (CAN_RXF0S_RF0L_Msk & (_UINT32_(value) << CAN_RXF0S_RF0L_Pos)) /* Assigment of value for RF0L in the CAN_RXF0S register */
-#define CAN_RXF0S_Msk                         _UINT32_(0x033F3F7F)                                 /* (CAN_RXF0S) Register Mask  */
-
-
-/* -------- CAN_RXF0A : (CAN Offset: 0xA8) (R/W 32) Rx FIFO 0 Acknowledge -------- */
-#define CAN_RXF0A_RESETVALUE                  _UINT32_(0x00)                                       /*  (CAN_RXF0A) Rx FIFO 0 Acknowledge  Reset Value */
-
-#define CAN_RXF0A_F0AI_Pos                    _UINT32_(0)                                          /* (CAN_RXF0A) Rx FIFO 0 Acknowledge Index Position */
-#define CAN_RXF0A_F0AI_Msk                    (_UINT32_(0x3F) << CAN_RXF0A_F0AI_Pos)               /* (CAN_RXF0A) Rx FIFO 0 Acknowledge Index Mask */
-#define CAN_RXF0A_F0AI(value)                 (CAN_RXF0A_F0AI_Msk & (_UINT32_(value) << CAN_RXF0A_F0AI_Pos)) /* Assigment of value for F0AI in the CAN_RXF0A register */
-#define CAN_RXF0A_Msk                         _UINT32_(0x0000003F)                                 /* (CAN_RXF0A) Register Mask  */
+#define CAN_RWD_WDC_Pos                       _UINT32_(0)                                          /* (CAN_RWD) Watchdog Configuration Position */
+#define CAN_RWD_WDC_Msk                       (_UINT32_(0xFF) << CAN_RWD_WDC_Pos)                  /* (CAN_RWD) Watchdog Configuration Mask */
+#define CAN_RWD_WDC(value)                    (CAN_RWD_WDC_Msk & (_UINT32_(value) << CAN_RWD_WDC_Pos)) /* Assigment of value for WDC in the CAN_RWD register */
+#define CAN_RWD_WDV_Pos                       _UINT32_(8)                                          /* (CAN_RWD) Watchdog Value Position */
+#define CAN_RWD_WDV_Msk                       (_UINT32_(0xFF) << CAN_RWD_WDV_Pos)                  /* (CAN_RWD) Watchdog Value Mask */
+#define CAN_RWD_WDV(value)                    (CAN_RWD_WDV_Msk & (_UINT32_(value) << CAN_RWD_WDV_Pos)) /* Assigment of value for WDV in the CAN_RWD register */
+#define CAN_RWD_Msk                           _UINT32_(0x0000FFFF)                                 /* (CAN_RWD) Register Mask  */
 
 
 /* -------- CAN_RXBC : (CAN Offset: 0xAC) (R/W 32) Rx Buffer Configuration -------- */
@@ -1344,65 +1180,6 @@
 #define CAN_RXBC_RBSA_Msk                     (_UINT32_(0xFFFF) << CAN_RXBC_RBSA_Pos)              /* (CAN_RXBC) Rx Buffer Start Address Mask */
 #define CAN_RXBC_RBSA(value)                  (CAN_RXBC_RBSA_Msk & (_UINT32_(value) << CAN_RXBC_RBSA_Pos)) /* Assigment of value for RBSA in the CAN_RXBC register */
 #define CAN_RXBC_Msk                          _UINT32_(0x0000FFFF)                                 /* (CAN_RXBC) Register Mask  */
-
-
-/* -------- CAN_RXF1C : (CAN Offset: 0xB0) (R/W 32) Rx FIFO 1 Configuration -------- */
-#define CAN_RXF1C_RESETVALUE                  _UINT32_(0x00)                                       /*  (CAN_RXF1C) Rx FIFO 1 Configuration  Reset Value */
-
-#define CAN_RXF1C_F1SA_Pos                    _UINT32_(0)                                          /* (CAN_RXF1C) Rx FIFO 1 Start Address Position */
-#define CAN_RXF1C_F1SA_Msk                    (_UINT32_(0xFFFF) << CAN_RXF1C_F1SA_Pos)             /* (CAN_RXF1C) Rx FIFO 1 Start Address Mask */
-#define CAN_RXF1C_F1SA(value)                 (CAN_RXF1C_F1SA_Msk & (_UINT32_(value) << CAN_RXF1C_F1SA_Pos)) /* Assigment of value for F1SA in the CAN_RXF1C register */
-#define CAN_RXF1C_F1S_Pos                     _UINT32_(16)                                         /* (CAN_RXF1C) Rx FIFO 1 Size Position */
-#define CAN_RXF1C_F1S_Msk                     (_UINT32_(0x7F) << CAN_RXF1C_F1S_Pos)                /* (CAN_RXF1C) Rx FIFO 1 Size Mask */
-#define CAN_RXF1C_F1S(value)                  (CAN_RXF1C_F1S_Msk & (_UINT32_(value) << CAN_RXF1C_F1S_Pos)) /* Assigment of value for F1S in the CAN_RXF1C register */
-#define CAN_RXF1C_F1WM_Pos                    _UINT32_(24)                                         /* (CAN_RXF1C) Rx FIFO 1 Watermark Position */
-#define CAN_RXF1C_F1WM_Msk                    (_UINT32_(0x7F) << CAN_RXF1C_F1WM_Pos)               /* (CAN_RXF1C) Rx FIFO 1 Watermark Mask */
-#define CAN_RXF1C_F1WM(value)                 (CAN_RXF1C_F1WM_Msk & (_UINT32_(value) << CAN_RXF1C_F1WM_Pos)) /* Assigment of value for F1WM in the CAN_RXF1C register */
-#define CAN_RXF1C_F1OM_Pos                    _UINT32_(31)                                         /* (CAN_RXF1C) FIFO 1 Operation Mode Position */
-#define CAN_RXF1C_F1OM_Msk                    (_UINT32_(0x1) << CAN_RXF1C_F1OM_Pos)                /* (CAN_RXF1C) FIFO 1 Operation Mode Mask */
-#define CAN_RXF1C_F1OM(value)                 (CAN_RXF1C_F1OM_Msk & (_UINT32_(value) << CAN_RXF1C_F1OM_Pos)) /* Assigment of value for F1OM in the CAN_RXF1C register */
-#define CAN_RXF1C_Msk                         _UINT32_(0xFF7FFFFF)                                 /* (CAN_RXF1C) Register Mask  */
-
-
-/* -------- CAN_RXF1S : (CAN Offset: 0xB4) ( R/ 32) Rx FIFO 1 Status -------- */
-#define CAN_RXF1S_RESETVALUE                  _UINT32_(0x00)                                       /*  (CAN_RXF1S) Rx FIFO 1 Status  Reset Value */
-
-#define CAN_RXF1S_F1FL_Pos                    _UINT32_(0)                                          /* (CAN_RXF1S) Rx FIFO 1 Fill Level Position */
-#define CAN_RXF1S_F1FL_Msk                    (_UINT32_(0x7F) << CAN_RXF1S_F1FL_Pos)               /* (CAN_RXF1S) Rx FIFO 1 Fill Level Mask */
-#define CAN_RXF1S_F1FL(value)                 (CAN_RXF1S_F1FL_Msk & (_UINT32_(value) << CAN_RXF1S_F1FL_Pos)) /* Assigment of value for F1FL in the CAN_RXF1S register */
-#define CAN_RXF1S_F1GI_Pos                    _UINT32_(8)                                          /* (CAN_RXF1S) Rx FIFO 1 Get Index Position */
-#define CAN_RXF1S_F1GI_Msk                    (_UINT32_(0x3F) << CAN_RXF1S_F1GI_Pos)               /* (CAN_RXF1S) Rx FIFO 1 Get Index Mask */
-#define CAN_RXF1S_F1GI(value)                 (CAN_RXF1S_F1GI_Msk & (_UINT32_(value) << CAN_RXF1S_F1GI_Pos)) /* Assigment of value for F1GI in the CAN_RXF1S register */
-#define CAN_RXF1S_F1PI_Pos                    _UINT32_(16)                                         /* (CAN_RXF1S) Rx FIFO 1 Put Index Position */
-#define CAN_RXF1S_F1PI_Msk                    (_UINT32_(0x3F) << CAN_RXF1S_F1PI_Pos)               /* (CAN_RXF1S) Rx FIFO 1 Put Index Mask */
-#define CAN_RXF1S_F1PI(value)                 (CAN_RXF1S_F1PI_Msk & (_UINT32_(value) << CAN_RXF1S_F1PI_Pos)) /* Assigment of value for F1PI in the CAN_RXF1S register */
-#define CAN_RXF1S_F1F_Pos                     _UINT32_(24)                                         /* (CAN_RXF1S) Rx FIFO 1 Full Position */
-#define CAN_RXF1S_F1F_Msk                     (_UINT32_(0x1) << CAN_RXF1S_F1F_Pos)                 /* (CAN_RXF1S) Rx FIFO 1 Full Mask */
-#define CAN_RXF1S_F1F(value)                  (CAN_RXF1S_F1F_Msk & (_UINT32_(value) << CAN_RXF1S_F1F_Pos)) /* Assigment of value for F1F in the CAN_RXF1S register */
-#define CAN_RXF1S_RF1L_Pos                    _UINT32_(25)                                         /* (CAN_RXF1S) Rx FIFO 1 Message Lost Position */
-#define CAN_RXF1S_RF1L_Msk                    (_UINT32_(0x1) << CAN_RXF1S_RF1L_Pos)                /* (CAN_RXF1S) Rx FIFO 1 Message Lost Mask */
-#define CAN_RXF1S_RF1L(value)                 (CAN_RXF1S_RF1L_Msk & (_UINT32_(value) << CAN_RXF1S_RF1L_Pos)) /* Assigment of value for RF1L in the CAN_RXF1S register */
-#define CAN_RXF1S_DMS_Pos                     _UINT32_(30)                                         /* (CAN_RXF1S) Debug Message Status Position */
-#define CAN_RXF1S_DMS_Msk                     (_UINT32_(0x3) << CAN_RXF1S_DMS_Pos)                 /* (CAN_RXF1S) Debug Message Status Mask */
-#define CAN_RXF1S_DMS(value)                  (CAN_RXF1S_DMS_Msk & (_UINT32_(value) << CAN_RXF1S_DMS_Pos)) /* Assigment of value for DMS in the CAN_RXF1S register */
-#define   CAN_RXF1S_DMS_IDLE_Val              _UINT32_(0x0)                                        /* (CAN_RXF1S) Idle state  */
-#define   CAN_RXF1S_DMS_DBGA_Val              _UINT32_(0x1)                                        /* (CAN_RXF1S) Debug message A received  */
-#define   CAN_RXF1S_DMS_DBGB_Val              _UINT32_(0x2)                                        /* (CAN_RXF1S) Debug message A/B received  */
-#define   CAN_RXF1S_DMS_DBGC_Val              _UINT32_(0x3)                                        /* (CAN_RXF1S) Debug message A/B/C received, DMA request set  */
-#define CAN_RXF1S_DMS_IDLE                    (CAN_RXF1S_DMS_IDLE_Val << CAN_RXF1S_DMS_Pos)        /* (CAN_RXF1S) Idle state Position  */
-#define CAN_RXF1S_DMS_DBGA                    (CAN_RXF1S_DMS_DBGA_Val << CAN_RXF1S_DMS_Pos)        /* (CAN_RXF1S) Debug message A received Position  */
-#define CAN_RXF1S_DMS_DBGB                    (CAN_RXF1S_DMS_DBGB_Val << CAN_RXF1S_DMS_Pos)        /* (CAN_RXF1S) Debug message A/B received Position  */
-#define CAN_RXF1S_DMS_DBGC                    (CAN_RXF1S_DMS_DBGC_Val << CAN_RXF1S_DMS_Pos)        /* (CAN_RXF1S) Debug message A/B/C received, DMA request set Position  */
-#define CAN_RXF1S_Msk                         _UINT32_(0xC33F3F7F)                                 /* (CAN_RXF1S) Register Mask  */
-
-
-/* -------- CAN_RXF1A : (CAN Offset: 0xB8) (R/W 32) Rx FIFO 1 Acknowledge -------- */
-#define CAN_RXF1A_RESETVALUE                  _UINT32_(0x00)                                       /*  (CAN_RXF1A) Rx FIFO 1 Acknowledge  Reset Value */
-
-#define CAN_RXF1A_F1AI_Pos                    _UINT32_(0)                                          /* (CAN_RXF1A) Rx FIFO 1 Acknowledge Index Position */
-#define CAN_RXF1A_F1AI_Msk                    (_UINT32_(0x3F) << CAN_RXF1A_F1AI_Pos)               /* (CAN_RXF1A) Rx FIFO 1 Acknowledge Index Mask */
-#define CAN_RXF1A_F1AI(value)                 (CAN_RXF1A_F1AI_Msk & (_UINT32_(value) << CAN_RXF1A_F1AI_Pos)) /* Assigment of value for F1AI in the CAN_RXF1A register */
-#define CAN_RXF1A_Msk                         _UINT32_(0x0000003F)                                 /* (CAN_RXF1A) Register Mask  */
 
 
 /* -------- CAN_RXESC : (CAN Offset: 0xBC) (R/W 32) Rx Buffer / FIFO Element Size Configuration -------- */
@@ -1468,171 +1245,216 @@
 #define CAN_RXESC_Msk                         _UINT32_(0x00000777)                                 /* (CAN_RXESC) Register Mask  */
 
 
-/* -------- CAN_TXBC : (CAN Offset: 0xC0) (R/W 32) Tx Buffer Configuration -------- */
-#define CAN_TXBC_RESETVALUE                   _UINT32_(0x00)                                       /*  (CAN_TXBC) Tx Buffer Configuration  Reset Value */
+/* -------- CAN_RXF0A : (CAN Offset: 0xA8) (R/W 32) Rx FIFO 0 Acknowledge -------- */
+#define CAN_RXF0A_RESETVALUE                  _UINT32_(0x00)                                       /*  (CAN_RXF0A) Rx FIFO 0 Acknowledge  Reset Value */
 
-#define CAN_TXBC_TBSA_Pos                     _UINT32_(0)                                          /* (CAN_TXBC) Tx Buffers Start Address Position */
-#define CAN_TXBC_TBSA_Msk                     (_UINT32_(0xFFFF) << CAN_TXBC_TBSA_Pos)              /* (CAN_TXBC) Tx Buffers Start Address Mask */
-#define CAN_TXBC_TBSA(value)                  (CAN_TXBC_TBSA_Msk & (_UINT32_(value) << CAN_TXBC_TBSA_Pos)) /* Assigment of value for TBSA in the CAN_TXBC register */
-#define CAN_TXBC_NDTB_Pos                     _UINT32_(16)                                         /* (CAN_TXBC) Number of Dedicated Transmit Buffers Position */
-#define CAN_TXBC_NDTB_Msk                     (_UINT32_(0x3F) << CAN_TXBC_NDTB_Pos)                /* (CAN_TXBC) Number of Dedicated Transmit Buffers Mask */
-#define CAN_TXBC_NDTB(value)                  (CAN_TXBC_NDTB_Msk & (_UINT32_(value) << CAN_TXBC_NDTB_Pos)) /* Assigment of value for NDTB in the CAN_TXBC register */
-#define CAN_TXBC_TFQS_Pos                     _UINT32_(24)                                         /* (CAN_TXBC) Transmit FIFO/Queue Size Position */
-#define CAN_TXBC_TFQS_Msk                     (_UINT32_(0x3F) << CAN_TXBC_TFQS_Pos)                /* (CAN_TXBC) Transmit FIFO/Queue Size Mask */
-#define CAN_TXBC_TFQS(value)                  (CAN_TXBC_TFQS_Msk & (_UINT32_(value) << CAN_TXBC_TFQS_Pos)) /* Assigment of value for TFQS in the CAN_TXBC register */
-#define CAN_TXBC_TFQM_Pos                     _UINT32_(30)                                         /* (CAN_TXBC) Tx FIFO/Queue Mode Position */
-#define CAN_TXBC_TFQM_Msk                     (_UINT32_(0x1) << CAN_TXBC_TFQM_Pos)                 /* (CAN_TXBC) Tx FIFO/Queue Mode Mask */
-#define CAN_TXBC_TFQM(value)                  (CAN_TXBC_TFQM_Msk & (_UINT32_(value) << CAN_TXBC_TFQM_Pos)) /* Assigment of value for TFQM in the CAN_TXBC register */
-#define CAN_TXBC_Msk                          _UINT32_(0x7F3FFFFF)                                 /* (CAN_TXBC) Register Mask  */
+#define CAN_RXF0A_F0AI_Pos                    _UINT32_(0)                                          /* (CAN_RXF0A) Rx FIFO 0 Acknowledge Index Position */
+#define CAN_RXF0A_F0AI_Msk                    (_UINT32_(0x3F) << CAN_RXF0A_F0AI_Pos)               /* (CAN_RXF0A) Rx FIFO 0 Acknowledge Index Mask */
+#define CAN_RXF0A_F0AI(value)                 (CAN_RXF0A_F0AI_Msk & (_UINT32_(value) << CAN_RXF0A_F0AI_Pos)) /* Assigment of value for F0AI in the CAN_RXF0A register */
+#define CAN_RXF0A_Msk                         _UINT32_(0x0000003F)                                 /* (CAN_RXF0A) Register Mask  */
 
 
-/* -------- CAN_TXFQS : (CAN Offset: 0xC4) ( R/ 32) Tx FIFO / Queue Status -------- */
-#define CAN_TXFQS_RESETVALUE                  _UINT32_(0x00)                                       /*  (CAN_TXFQS) Tx FIFO / Queue Status  Reset Value */
+/* -------- CAN_RXF0C : (CAN Offset: 0xA0) (R/W 32) Rx FIFO 0 Configuration -------- */
+#define CAN_RXF0C_RESETVALUE                  _UINT32_(0x00)                                       /*  (CAN_RXF0C) Rx FIFO 0 Configuration  Reset Value */
 
-#define CAN_TXFQS_TFFL_Pos                    _UINT32_(0)                                          /* (CAN_TXFQS) Tx FIFO Free Level Position */
-#define CAN_TXFQS_TFFL_Msk                    (_UINT32_(0x3F) << CAN_TXFQS_TFFL_Pos)               /* (CAN_TXFQS) Tx FIFO Free Level Mask */
-#define CAN_TXFQS_TFFL(value)                 (CAN_TXFQS_TFFL_Msk & (_UINT32_(value) << CAN_TXFQS_TFFL_Pos)) /* Assigment of value for TFFL in the CAN_TXFQS register */
-#define CAN_TXFQS_TFGI_Pos                    _UINT32_(8)                                          /* (CAN_TXFQS) Tx FIFO Get Index Position */
-#define CAN_TXFQS_TFGI_Msk                    (_UINT32_(0x1F) << CAN_TXFQS_TFGI_Pos)               /* (CAN_TXFQS) Tx FIFO Get Index Mask */
-#define CAN_TXFQS_TFGI(value)                 (CAN_TXFQS_TFGI_Msk & (_UINT32_(value) << CAN_TXFQS_TFGI_Pos)) /* Assigment of value for TFGI in the CAN_TXFQS register */
-#define CAN_TXFQS_TFQPI_Pos                   _UINT32_(16)                                         /* (CAN_TXFQS) Tx FIFO/Queue Put Index Position */
-#define CAN_TXFQS_TFQPI_Msk                   (_UINT32_(0x1F) << CAN_TXFQS_TFQPI_Pos)              /* (CAN_TXFQS) Tx FIFO/Queue Put Index Mask */
-#define CAN_TXFQS_TFQPI(value)                (CAN_TXFQS_TFQPI_Msk & (_UINT32_(value) << CAN_TXFQS_TFQPI_Pos)) /* Assigment of value for TFQPI in the CAN_TXFQS register */
-#define CAN_TXFQS_TFQF_Pos                    _UINT32_(21)                                         /* (CAN_TXFQS) Tx FIFO/Queue Full Position */
-#define CAN_TXFQS_TFQF_Msk                    (_UINT32_(0x1) << CAN_TXFQS_TFQF_Pos)                /* (CAN_TXFQS) Tx FIFO/Queue Full Mask */
-#define CAN_TXFQS_TFQF(value)                 (CAN_TXFQS_TFQF_Msk & (_UINT32_(value) << CAN_TXFQS_TFQF_Pos)) /* Assigment of value for TFQF in the CAN_TXFQS register */
-#define CAN_TXFQS_Msk                         _UINT32_(0x003F1F3F)                                 /* (CAN_TXFQS) Register Mask  */
-
-
-/* -------- CAN_TXESC : (CAN Offset: 0xC8) (R/W 32) Tx Buffer Element Size Configuration -------- */
-#define CAN_TXESC_RESETVALUE                  _UINT32_(0x00)                                       /*  (CAN_TXESC) Tx Buffer Element Size Configuration  Reset Value */
-
-#define CAN_TXESC_TBDS_Pos                    _UINT32_(0)                                          /* (CAN_TXESC) Tx Buffer Data Field Size Position */
-#define CAN_TXESC_TBDS_Msk                    (_UINT32_(0x7) << CAN_TXESC_TBDS_Pos)                /* (CAN_TXESC) Tx Buffer Data Field Size Mask */
-#define CAN_TXESC_TBDS(value)                 (CAN_TXESC_TBDS_Msk & (_UINT32_(value) << CAN_TXESC_TBDS_Pos)) /* Assigment of value for TBDS in the CAN_TXESC register */
-#define   CAN_TXESC_TBDS_DATA8_Val            _UINT32_(0x0)                                        /* (CAN_TXESC) 8 byte data field  */
-#define   CAN_TXESC_TBDS_DATA12_Val           _UINT32_(0x1)                                        /* (CAN_TXESC) 12 byte data field  */
-#define   CAN_TXESC_TBDS_DATA16_Val           _UINT32_(0x2)                                        /* (CAN_TXESC) 16 byte data field  */
-#define   CAN_TXESC_TBDS_DATA20_Val           _UINT32_(0x3)                                        /* (CAN_TXESC) 20 byte data field  */
-#define   CAN_TXESC_TBDS_DATA24_Val           _UINT32_(0x4)                                        /* (CAN_TXESC) 24 byte data field  */
-#define   CAN_TXESC_TBDS_DATA32_Val           _UINT32_(0x5)                                        /* (CAN_TXESC) 32 byte data field  */
-#define   CAN_TXESC_TBDS_DATA48_Val           _UINT32_(0x6)                                        /* (CAN_TXESC) 48 byte data field  */
-#define   CAN_TXESC_TBDS_DATA64_Val           _UINT32_(0x7)                                        /* (CAN_TXESC) 64 byte data field  */
-#define CAN_TXESC_TBDS_DATA8                  (CAN_TXESC_TBDS_DATA8_Val << CAN_TXESC_TBDS_Pos)     /* (CAN_TXESC) 8 byte data field Position  */
-#define CAN_TXESC_TBDS_DATA12                 (CAN_TXESC_TBDS_DATA12_Val << CAN_TXESC_TBDS_Pos)    /* (CAN_TXESC) 12 byte data field Position  */
-#define CAN_TXESC_TBDS_DATA16                 (CAN_TXESC_TBDS_DATA16_Val << CAN_TXESC_TBDS_Pos)    /* (CAN_TXESC) 16 byte data field Position  */
-#define CAN_TXESC_TBDS_DATA20                 (CAN_TXESC_TBDS_DATA20_Val << CAN_TXESC_TBDS_Pos)    /* (CAN_TXESC) 20 byte data field Position  */
-#define CAN_TXESC_TBDS_DATA24                 (CAN_TXESC_TBDS_DATA24_Val << CAN_TXESC_TBDS_Pos)    /* (CAN_TXESC) 24 byte data field Position  */
-#define CAN_TXESC_TBDS_DATA32                 (CAN_TXESC_TBDS_DATA32_Val << CAN_TXESC_TBDS_Pos)    /* (CAN_TXESC) 32 byte data field Position  */
-#define CAN_TXESC_TBDS_DATA48                 (CAN_TXESC_TBDS_DATA48_Val << CAN_TXESC_TBDS_Pos)    /* (CAN_TXESC) 48 byte data field Position  */
-#define CAN_TXESC_TBDS_DATA64                 (CAN_TXESC_TBDS_DATA64_Val << CAN_TXESC_TBDS_Pos)    /* (CAN_TXESC) 64 byte data field Position  */
-#define CAN_TXESC_Msk                         _UINT32_(0x00000007)                                 /* (CAN_TXESC) Register Mask  */
+#define CAN_RXF0C_F0SA_Pos                    _UINT32_(0)                                          /* (CAN_RXF0C) Rx FIFO 0 Start Address Position */
+#define CAN_RXF0C_F0SA_Msk                    (_UINT32_(0xFFFF) << CAN_RXF0C_F0SA_Pos)             /* (CAN_RXF0C) Rx FIFO 0 Start Address Mask */
+#define CAN_RXF0C_F0SA(value)                 (CAN_RXF0C_F0SA_Msk & (_UINT32_(value) << CAN_RXF0C_F0SA_Pos)) /* Assigment of value for F0SA in the CAN_RXF0C register */
+#define CAN_RXF0C_F0S_Pos                     _UINT32_(16)                                         /* (CAN_RXF0C) Rx FIFO 0 Size Position */
+#define CAN_RXF0C_F0S_Msk                     (_UINT32_(0x7F) << CAN_RXF0C_F0S_Pos)                /* (CAN_RXF0C) Rx FIFO 0 Size Mask */
+#define CAN_RXF0C_F0S(value)                  (CAN_RXF0C_F0S_Msk & (_UINT32_(value) << CAN_RXF0C_F0S_Pos)) /* Assigment of value for F0S in the CAN_RXF0C register */
+#define CAN_RXF0C_F0WM_Pos                    _UINT32_(24)                                         /* (CAN_RXF0C) Rx FIFO 0 Watermark Position */
+#define CAN_RXF0C_F0WM_Msk                    (_UINT32_(0x7F) << CAN_RXF0C_F0WM_Pos)               /* (CAN_RXF0C) Rx FIFO 0 Watermark Mask */
+#define CAN_RXF0C_F0WM(value)                 (CAN_RXF0C_F0WM_Msk & (_UINT32_(value) << CAN_RXF0C_F0WM_Pos)) /* Assigment of value for F0WM in the CAN_RXF0C register */
+#define CAN_RXF0C_F0OM_Pos                    _UINT32_(31)                                         /* (CAN_RXF0C) FIFO 0 Operation Mode Position */
+#define CAN_RXF0C_F0OM_Msk                    (_UINT32_(0x1) << CAN_RXF0C_F0OM_Pos)                /* (CAN_RXF0C) FIFO 0 Operation Mode Mask */
+#define CAN_RXF0C_F0OM(value)                 (CAN_RXF0C_F0OM_Msk & (_UINT32_(value) << CAN_RXF0C_F0OM_Pos)) /* Assigment of value for F0OM in the CAN_RXF0C register */
+#define CAN_RXF0C_Msk                         _UINT32_(0xFF7FFFFF)                                 /* (CAN_RXF0C) Register Mask  */
 
 
-/* -------- CAN_TXBRP : (CAN Offset: 0xCC) ( R/ 32) Tx Buffer Request Pending -------- */
-#define CAN_TXBRP_RESETVALUE                  _UINT32_(0x00)                                       /*  (CAN_TXBRP) Tx Buffer Request Pending  Reset Value */
+/* -------- CAN_RXF0S : (CAN Offset: 0xA4) ( R/ 32) Rx FIFO 0 Status -------- */
+#define CAN_RXF0S_RESETVALUE                  _UINT32_(0x00)                                       /*  (CAN_RXF0S) Rx FIFO 0 Status  Reset Value */
 
-#define CAN_TXBRP_TRP0_Pos                    _UINT32_(0)                                          /* (CAN_TXBRP) Transmission Request Pending 0 Position */
-#define CAN_TXBRP_TRP0_Msk                    (_UINT32_(0x1) << CAN_TXBRP_TRP0_Pos)                /* (CAN_TXBRP) Transmission Request Pending 0 Mask */
-#define CAN_TXBRP_TRP0(value)                 (CAN_TXBRP_TRP0_Msk & (_UINT32_(value) << CAN_TXBRP_TRP0_Pos)) /* Assigment of value for TRP0 in the CAN_TXBRP register */
-#define CAN_TXBRP_TRP1_Pos                    _UINT32_(1)                                          /* (CAN_TXBRP) Transmission Request Pending 1 Position */
-#define CAN_TXBRP_TRP1_Msk                    (_UINT32_(0x1) << CAN_TXBRP_TRP1_Pos)                /* (CAN_TXBRP) Transmission Request Pending 1 Mask */
-#define CAN_TXBRP_TRP1(value)                 (CAN_TXBRP_TRP1_Msk & (_UINT32_(value) << CAN_TXBRP_TRP1_Pos)) /* Assigment of value for TRP1 in the CAN_TXBRP register */
-#define CAN_TXBRP_TRP2_Pos                    _UINT32_(2)                                          /* (CAN_TXBRP) Transmission Request Pending 2 Position */
-#define CAN_TXBRP_TRP2_Msk                    (_UINT32_(0x1) << CAN_TXBRP_TRP2_Pos)                /* (CAN_TXBRP) Transmission Request Pending 2 Mask */
-#define CAN_TXBRP_TRP2(value)                 (CAN_TXBRP_TRP2_Msk & (_UINT32_(value) << CAN_TXBRP_TRP2_Pos)) /* Assigment of value for TRP2 in the CAN_TXBRP register */
-#define CAN_TXBRP_TRP3_Pos                    _UINT32_(3)                                          /* (CAN_TXBRP) Transmission Request Pending 3 Position */
-#define CAN_TXBRP_TRP3_Msk                    (_UINT32_(0x1) << CAN_TXBRP_TRP3_Pos)                /* (CAN_TXBRP) Transmission Request Pending 3 Mask */
-#define CAN_TXBRP_TRP3(value)                 (CAN_TXBRP_TRP3_Msk & (_UINT32_(value) << CAN_TXBRP_TRP3_Pos)) /* Assigment of value for TRP3 in the CAN_TXBRP register */
-#define CAN_TXBRP_TRP4_Pos                    _UINT32_(4)                                          /* (CAN_TXBRP) Transmission Request Pending 4 Position */
-#define CAN_TXBRP_TRP4_Msk                    (_UINT32_(0x1) << CAN_TXBRP_TRP4_Pos)                /* (CAN_TXBRP) Transmission Request Pending 4 Mask */
-#define CAN_TXBRP_TRP4(value)                 (CAN_TXBRP_TRP4_Msk & (_UINT32_(value) << CAN_TXBRP_TRP4_Pos)) /* Assigment of value for TRP4 in the CAN_TXBRP register */
-#define CAN_TXBRP_TRP5_Pos                    _UINT32_(5)                                          /* (CAN_TXBRP) Transmission Request Pending 5 Position */
-#define CAN_TXBRP_TRP5_Msk                    (_UINT32_(0x1) << CAN_TXBRP_TRP5_Pos)                /* (CAN_TXBRP) Transmission Request Pending 5 Mask */
-#define CAN_TXBRP_TRP5(value)                 (CAN_TXBRP_TRP5_Msk & (_UINT32_(value) << CAN_TXBRP_TRP5_Pos)) /* Assigment of value for TRP5 in the CAN_TXBRP register */
-#define CAN_TXBRP_TRP6_Pos                    _UINT32_(6)                                          /* (CAN_TXBRP) Transmission Request Pending 6 Position */
-#define CAN_TXBRP_TRP6_Msk                    (_UINT32_(0x1) << CAN_TXBRP_TRP6_Pos)                /* (CAN_TXBRP) Transmission Request Pending 6 Mask */
-#define CAN_TXBRP_TRP6(value)                 (CAN_TXBRP_TRP6_Msk & (_UINT32_(value) << CAN_TXBRP_TRP6_Pos)) /* Assigment of value for TRP6 in the CAN_TXBRP register */
-#define CAN_TXBRP_TRP7_Pos                    _UINT32_(7)                                          /* (CAN_TXBRP) Transmission Request Pending 7 Position */
-#define CAN_TXBRP_TRP7_Msk                    (_UINT32_(0x1) << CAN_TXBRP_TRP7_Pos)                /* (CAN_TXBRP) Transmission Request Pending 7 Mask */
-#define CAN_TXBRP_TRP7(value)                 (CAN_TXBRP_TRP7_Msk & (_UINT32_(value) << CAN_TXBRP_TRP7_Pos)) /* Assigment of value for TRP7 in the CAN_TXBRP register */
-#define CAN_TXBRP_TRP8_Pos                    _UINT32_(8)                                          /* (CAN_TXBRP) Transmission Request Pending 8 Position */
-#define CAN_TXBRP_TRP8_Msk                    (_UINT32_(0x1) << CAN_TXBRP_TRP8_Pos)                /* (CAN_TXBRP) Transmission Request Pending 8 Mask */
-#define CAN_TXBRP_TRP8(value)                 (CAN_TXBRP_TRP8_Msk & (_UINT32_(value) << CAN_TXBRP_TRP8_Pos)) /* Assigment of value for TRP8 in the CAN_TXBRP register */
-#define CAN_TXBRP_TRP9_Pos                    _UINT32_(9)                                          /* (CAN_TXBRP) Transmission Request Pending 9 Position */
-#define CAN_TXBRP_TRP9_Msk                    (_UINT32_(0x1) << CAN_TXBRP_TRP9_Pos)                /* (CAN_TXBRP) Transmission Request Pending 9 Mask */
-#define CAN_TXBRP_TRP9(value)                 (CAN_TXBRP_TRP9_Msk & (_UINT32_(value) << CAN_TXBRP_TRP9_Pos)) /* Assigment of value for TRP9 in the CAN_TXBRP register */
-#define CAN_TXBRP_TRP10_Pos                   _UINT32_(10)                                         /* (CAN_TXBRP) Transmission Request Pending 10 Position */
-#define CAN_TXBRP_TRP10_Msk                   (_UINT32_(0x1) << CAN_TXBRP_TRP10_Pos)               /* (CAN_TXBRP) Transmission Request Pending 10 Mask */
-#define CAN_TXBRP_TRP10(value)                (CAN_TXBRP_TRP10_Msk & (_UINT32_(value) << CAN_TXBRP_TRP10_Pos)) /* Assigment of value for TRP10 in the CAN_TXBRP register */
-#define CAN_TXBRP_TRP11_Pos                   _UINT32_(11)                                         /* (CAN_TXBRP) Transmission Request Pending 11 Position */
-#define CAN_TXBRP_TRP11_Msk                   (_UINT32_(0x1) << CAN_TXBRP_TRP11_Pos)               /* (CAN_TXBRP) Transmission Request Pending 11 Mask */
-#define CAN_TXBRP_TRP11(value)                (CAN_TXBRP_TRP11_Msk & (_UINT32_(value) << CAN_TXBRP_TRP11_Pos)) /* Assigment of value for TRP11 in the CAN_TXBRP register */
-#define CAN_TXBRP_TRP12_Pos                   _UINT32_(12)                                         /* (CAN_TXBRP) Transmission Request Pending 12 Position */
-#define CAN_TXBRP_TRP12_Msk                   (_UINT32_(0x1) << CAN_TXBRP_TRP12_Pos)               /* (CAN_TXBRP) Transmission Request Pending 12 Mask */
-#define CAN_TXBRP_TRP12(value)                (CAN_TXBRP_TRP12_Msk & (_UINT32_(value) << CAN_TXBRP_TRP12_Pos)) /* Assigment of value for TRP12 in the CAN_TXBRP register */
-#define CAN_TXBRP_TRP13_Pos                   _UINT32_(13)                                         /* (CAN_TXBRP) Transmission Request Pending 13 Position */
-#define CAN_TXBRP_TRP13_Msk                   (_UINT32_(0x1) << CAN_TXBRP_TRP13_Pos)               /* (CAN_TXBRP) Transmission Request Pending 13 Mask */
-#define CAN_TXBRP_TRP13(value)                (CAN_TXBRP_TRP13_Msk & (_UINT32_(value) << CAN_TXBRP_TRP13_Pos)) /* Assigment of value for TRP13 in the CAN_TXBRP register */
-#define CAN_TXBRP_TRP14_Pos                   _UINT32_(14)                                         /* (CAN_TXBRP) Transmission Request Pending 14 Position */
-#define CAN_TXBRP_TRP14_Msk                   (_UINT32_(0x1) << CAN_TXBRP_TRP14_Pos)               /* (CAN_TXBRP) Transmission Request Pending 14 Mask */
-#define CAN_TXBRP_TRP14(value)                (CAN_TXBRP_TRP14_Msk & (_UINT32_(value) << CAN_TXBRP_TRP14_Pos)) /* Assigment of value for TRP14 in the CAN_TXBRP register */
-#define CAN_TXBRP_TRP15_Pos                   _UINT32_(15)                                         /* (CAN_TXBRP) Transmission Request Pending 15 Position */
-#define CAN_TXBRP_TRP15_Msk                   (_UINT32_(0x1) << CAN_TXBRP_TRP15_Pos)               /* (CAN_TXBRP) Transmission Request Pending 15 Mask */
-#define CAN_TXBRP_TRP15(value)                (CAN_TXBRP_TRP15_Msk & (_UINT32_(value) << CAN_TXBRP_TRP15_Pos)) /* Assigment of value for TRP15 in the CAN_TXBRP register */
-#define CAN_TXBRP_TRP16_Pos                   _UINT32_(16)                                         /* (CAN_TXBRP) Transmission Request Pending 16 Position */
-#define CAN_TXBRP_TRP16_Msk                   (_UINT32_(0x1) << CAN_TXBRP_TRP16_Pos)               /* (CAN_TXBRP) Transmission Request Pending 16 Mask */
-#define CAN_TXBRP_TRP16(value)                (CAN_TXBRP_TRP16_Msk & (_UINT32_(value) << CAN_TXBRP_TRP16_Pos)) /* Assigment of value for TRP16 in the CAN_TXBRP register */
-#define CAN_TXBRP_TRP17_Pos                   _UINT32_(17)                                         /* (CAN_TXBRP) Transmission Request Pending 17 Position */
-#define CAN_TXBRP_TRP17_Msk                   (_UINT32_(0x1) << CAN_TXBRP_TRP17_Pos)               /* (CAN_TXBRP) Transmission Request Pending 17 Mask */
-#define CAN_TXBRP_TRP17(value)                (CAN_TXBRP_TRP17_Msk & (_UINT32_(value) << CAN_TXBRP_TRP17_Pos)) /* Assigment of value for TRP17 in the CAN_TXBRP register */
-#define CAN_TXBRP_TRP18_Pos                   _UINT32_(18)                                         /* (CAN_TXBRP) Transmission Request Pending 18 Position */
-#define CAN_TXBRP_TRP18_Msk                   (_UINT32_(0x1) << CAN_TXBRP_TRP18_Pos)               /* (CAN_TXBRP) Transmission Request Pending 18 Mask */
-#define CAN_TXBRP_TRP18(value)                (CAN_TXBRP_TRP18_Msk & (_UINT32_(value) << CAN_TXBRP_TRP18_Pos)) /* Assigment of value for TRP18 in the CAN_TXBRP register */
-#define CAN_TXBRP_TRP19_Pos                   _UINT32_(19)                                         /* (CAN_TXBRP) Transmission Request Pending 19 Position */
-#define CAN_TXBRP_TRP19_Msk                   (_UINT32_(0x1) << CAN_TXBRP_TRP19_Pos)               /* (CAN_TXBRP) Transmission Request Pending 19 Mask */
-#define CAN_TXBRP_TRP19(value)                (CAN_TXBRP_TRP19_Msk & (_UINT32_(value) << CAN_TXBRP_TRP19_Pos)) /* Assigment of value for TRP19 in the CAN_TXBRP register */
-#define CAN_TXBRP_TRP20_Pos                   _UINT32_(20)                                         /* (CAN_TXBRP) Transmission Request Pending 20 Position */
-#define CAN_TXBRP_TRP20_Msk                   (_UINT32_(0x1) << CAN_TXBRP_TRP20_Pos)               /* (CAN_TXBRP) Transmission Request Pending 20 Mask */
-#define CAN_TXBRP_TRP20(value)                (CAN_TXBRP_TRP20_Msk & (_UINT32_(value) << CAN_TXBRP_TRP20_Pos)) /* Assigment of value for TRP20 in the CAN_TXBRP register */
-#define CAN_TXBRP_TRP21_Pos                   _UINT32_(21)                                         /* (CAN_TXBRP) Transmission Request Pending 21 Position */
-#define CAN_TXBRP_TRP21_Msk                   (_UINT32_(0x1) << CAN_TXBRP_TRP21_Pos)               /* (CAN_TXBRP) Transmission Request Pending 21 Mask */
-#define CAN_TXBRP_TRP21(value)                (CAN_TXBRP_TRP21_Msk & (_UINT32_(value) << CAN_TXBRP_TRP21_Pos)) /* Assigment of value for TRP21 in the CAN_TXBRP register */
-#define CAN_TXBRP_TRP22_Pos                   _UINT32_(22)                                         /* (CAN_TXBRP) Transmission Request Pending 22 Position */
-#define CAN_TXBRP_TRP22_Msk                   (_UINT32_(0x1) << CAN_TXBRP_TRP22_Pos)               /* (CAN_TXBRP) Transmission Request Pending 22 Mask */
-#define CAN_TXBRP_TRP22(value)                (CAN_TXBRP_TRP22_Msk & (_UINT32_(value) << CAN_TXBRP_TRP22_Pos)) /* Assigment of value for TRP22 in the CAN_TXBRP register */
-#define CAN_TXBRP_TRP23_Pos                   _UINT32_(23)                                         /* (CAN_TXBRP) Transmission Request Pending 23 Position */
-#define CAN_TXBRP_TRP23_Msk                   (_UINT32_(0x1) << CAN_TXBRP_TRP23_Pos)               /* (CAN_TXBRP) Transmission Request Pending 23 Mask */
-#define CAN_TXBRP_TRP23(value)                (CAN_TXBRP_TRP23_Msk & (_UINT32_(value) << CAN_TXBRP_TRP23_Pos)) /* Assigment of value for TRP23 in the CAN_TXBRP register */
-#define CAN_TXBRP_TRP24_Pos                   _UINT32_(24)                                         /* (CAN_TXBRP) Transmission Request Pending 24 Position */
-#define CAN_TXBRP_TRP24_Msk                   (_UINT32_(0x1) << CAN_TXBRP_TRP24_Pos)               /* (CAN_TXBRP) Transmission Request Pending 24 Mask */
-#define CAN_TXBRP_TRP24(value)                (CAN_TXBRP_TRP24_Msk & (_UINT32_(value) << CAN_TXBRP_TRP24_Pos)) /* Assigment of value for TRP24 in the CAN_TXBRP register */
-#define CAN_TXBRP_TRP25_Pos                   _UINT32_(25)                                         /* (CAN_TXBRP) Transmission Request Pending 25 Position */
-#define CAN_TXBRP_TRP25_Msk                   (_UINT32_(0x1) << CAN_TXBRP_TRP25_Pos)               /* (CAN_TXBRP) Transmission Request Pending 25 Mask */
-#define CAN_TXBRP_TRP25(value)                (CAN_TXBRP_TRP25_Msk & (_UINT32_(value) << CAN_TXBRP_TRP25_Pos)) /* Assigment of value for TRP25 in the CAN_TXBRP register */
-#define CAN_TXBRP_TRP26_Pos                   _UINT32_(26)                                         /* (CAN_TXBRP) Transmission Request Pending 26 Position */
-#define CAN_TXBRP_TRP26_Msk                   (_UINT32_(0x1) << CAN_TXBRP_TRP26_Pos)               /* (CAN_TXBRP) Transmission Request Pending 26 Mask */
-#define CAN_TXBRP_TRP26(value)                (CAN_TXBRP_TRP26_Msk & (_UINT32_(value) << CAN_TXBRP_TRP26_Pos)) /* Assigment of value for TRP26 in the CAN_TXBRP register */
-#define CAN_TXBRP_TRP27_Pos                   _UINT32_(27)                                         /* (CAN_TXBRP) Transmission Request Pending 27 Position */
-#define CAN_TXBRP_TRP27_Msk                   (_UINT32_(0x1) << CAN_TXBRP_TRP27_Pos)               /* (CAN_TXBRP) Transmission Request Pending 27 Mask */
-#define CAN_TXBRP_TRP27(value)                (CAN_TXBRP_TRP27_Msk & (_UINT32_(value) << CAN_TXBRP_TRP27_Pos)) /* Assigment of value for TRP27 in the CAN_TXBRP register */
-#define CAN_TXBRP_TRP28_Pos                   _UINT32_(28)                                         /* (CAN_TXBRP) Transmission Request Pending 28 Position */
-#define CAN_TXBRP_TRP28_Msk                   (_UINT32_(0x1) << CAN_TXBRP_TRP28_Pos)               /* (CAN_TXBRP) Transmission Request Pending 28 Mask */
-#define CAN_TXBRP_TRP28(value)                (CAN_TXBRP_TRP28_Msk & (_UINT32_(value) << CAN_TXBRP_TRP28_Pos)) /* Assigment of value for TRP28 in the CAN_TXBRP register */
-#define CAN_TXBRP_TRP29_Pos                   _UINT32_(29)                                         /* (CAN_TXBRP) Transmission Request Pending 29 Position */
-#define CAN_TXBRP_TRP29_Msk                   (_UINT32_(0x1) << CAN_TXBRP_TRP29_Pos)               /* (CAN_TXBRP) Transmission Request Pending 29 Mask */
-#define CAN_TXBRP_TRP29(value)                (CAN_TXBRP_TRP29_Msk & (_UINT32_(value) << CAN_TXBRP_TRP29_Pos)) /* Assigment of value for TRP29 in the CAN_TXBRP register */
-#define CAN_TXBRP_TRP30_Pos                   _UINT32_(30)                                         /* (CAN_TXBRP) Transmission Request Pending 30 Position */
-#define CAN_TXBRP_TRP30_Msk                   (_UINT32_(0x1) << CAN_TXBRP_TRP30_Pos)               /* (CAN_TXBRP) Transmission Request Pending 30 Mask */
-#define CAN_TXBRP_TRP30(value)                (CAN_TXBRP_TRP30_Msk & (_UINT32_(value) << CAN_TXBRP_TRP30_Pos)) /* Assigment of value for TRP30 in the CAN_TXBRP register */
-#define CAN_TXBRP_TRP31_Pos                   _UINT32_(31)                                         /* (CAN_TXBRP) Transmission Request Pending 31 Position */
-#define CAN_TXBRP_TRP31_Msk                   (_UINT32_(0x1) << CAN_TXBRP_TRP31_Pos)               /* (CAN_TXBRP) Transmission Request Pending 31 Mask */
-#define CAN_TXBRP_TRP31(value)                (CAN_TXBRP_TRP31_Msk & (_UINT32_(value) << CAN_TXBRP_TRP31_Pos)) /* Assigment of value for TRP31 in the CAN_TXBRP register */
-#define CAN_TXBRP_Msk                         _UINT32_(0xFFFFFFFF)                                 /* (CAN_TXBRP) Register Mask  */
+#define CAN_RXF0S_F0FL_Pos                    _UINT32_(0)                                          /* (CAN_RXF0S) Rx FIFO 0 Fill Level Position */
+#define CAN_RXF0S_F0FL_Msk                    (_UINT32_(0x7F) << CAN_RXF0S_F0FL_Pos)               /* (CAN_RXF0S) Rx FIFO 0 Fill Level Mask */
+#define CAN_RXF0S_F0FL(value)                 (CAN_RXF0S_F0FL_Msk & (_UINT32_(value) << CAN_RXF0S_F0FL_Pos)) /* Assigment of value for F0FL in the CAN_RXF0S register */
+#define CAN_RXF0S_F0GI_Pos                    _UINT32_(8)                                          /* (CAN_RXF0S) Rx FIFO 0 Get Index Position */
+#define CAN_RXF0S_F0GI_Msk                    (_UINT32_(0x3F) << CAN_RXF0S_F0GI_Pos)               /* (CAN_RXF0S) Rx FIFO 0 Get Index Mask */
+#define CAN_RXF0S_F0GI(value)                 (CAN_RXF0S_F0GI_Msk & (_UINT32_(value) << CAN_RXF0S_F0GI_Pos)) /* Assigment of value for F0GI in the CAN_RXF0S register */
+#define CAN_RXF0S_F0PI_Pos                    _UINT32_(16)                                         /* (CAN_RXF0S) Rx FIFO 0 Put Index Position */
+#define CAN_RXF0S_F0PI_Msk                    (_UINT32_(0x3F) << CAN_RXF0S_F0PI_Pos)               /* (CAN_RXF0S) Rx FIFO 0 Put Index Mask */
+#define CAN_RXF0S_F0PI(value)                 (CAN_RXF0S_F0PI_Msk & (_UINT32_(value) << CAN_RXF0S_F0PI_Pos)) /* Assigment of value for F0PI in the CAN_RXF0S register */
+#define CAN_RXF0S_F0F_Pos                     _UINT32_(24)                                         /* (CAN_RXF0S) Rx FIFO 0 Full Position */
+#define CAN_RXF0S_F0F_Msk                     (_UINT32_(0x1) << CAN_RXF0S_F0F_Pos)                 /* (CAN_RXF0S) Rx FIFO 0 Full Mask */
+#define CAN_RXF0S_F0F(value)                  (CAN_RXF0S_F0F_Msk & (_UINT32_(value) << CAN_RXF0S_F0F_Pos)) /* Assigment of value for F0F in the CAN_RXF0S register */
+#define CAN_RXF0S_RF0L_Pos                    _UINT32_(25)                                         /* (CAN_RXF0S) Rx FIFO 0 Message Lost Position */
+#define CAN_RXF0S_RF0L_Msk                    (_UINT32_(0x1) << CAN_RXF0S_RF0L_Pos)                /* (CAN_RXF0S) Rx FIFO 0 Message Lost Mask */
+#define CAN_RXF0S_RF0L(value)                 (CAN_RXF0S_RF0L_Msk & (_UINT32_(value) << CAN_RXF0S_RF0L_Pos)) /* Assigment of value for RF0L in the CAN_RXF0S register */
+#define CAN_RXF0S_Msk                         _UINT32_(0x033F3F7F)                                 /* (CAN_RXF0S) Register Mask  */
 
-#define CAN_TXBRP_TRP_Pos                     _UINT32_(0)                                          /* (CAN_TXBRP Position) Transmission Request Pending 3x */
-#define CAN_TXBRP_TRP_Msk                     (_UINT32_(0xFFFFFFFF) << CAN_TXBRP_TRP_Pos)          /* (CAN_TXBRP Mask) TRP */
-#define CAN_TXBRP_TRP(value)                  (CAN_TXBRP_TRP_Msk & (_UINT32_(value) << CAN_TXBRP_TRP_Pos)) 
+
+/* -------- CAN_RXF1A : (CAN Offset: 0xB8) (R/W 32) Rx FIFO 1 Acknowledge -------- */
+#define CAN_RXF1A_RESETVALUE                  _UINT32_(0x00)                                       /*  (CAN_RXF1A) Rx FIFO 1 Acknowledge  Reset Value */
+
+#define CAN_RXF1A_F1AI_Pos                    _UINT32_(0)                                          /* (CAN_RXF1A) Rx FIFO 1 Acknowledge Index Position */
+#define CAN_RXF1A_F1AI_Msk                    (_UINT32_(0x3F) << CAN_RXF1A_F1AI_Pos)               /* (CAN_RXF1A) Rx FIFO 1 Acknowledge Index Mask */
+#define CAN_RXF1A_F1AI(value)                 (CAN_RXF1A_F1AI_Msk & (_UINT32_(value) << CAN_RXF1A_F1AI_Pos)) /* Assigment of value for F1AI in the CAN_RXF1A register */
+#define CAN_RXF1A_Msk                         _UINT32_(0x0000003F)                                 /* (CAN_RXF1A) Register Mask  */
+
+
+/* -------- CAN_RXF1C : (CAN Offset: 0xB0) (R/W 32) Rx FIFO 1 Configuration -------- */
+#define CAN_RXF1C_RESETVALUE                  _UINT32_(0x00)                                       /*  (CAN_RXF1C) Rx FIFO 1 Configuration  Reset Value */
+
+#define CAN_RXF1C_F1SA_Pos                    _UINT32_(0)                                          /* (CAN_RXF1C) Rx FIFO 1 Start Address Position */
+#define CAN_RXF1C_F1SA_Msk                    (_UINT32_(0xFFFF) << CAN_RXF1C_F1SA_Pos)             /* (CAN_RXF1C) Rx FIFO 1 Start Address Mask */
+#define CAN_RXF1C_F1SA(value)                 (CAN_RXF1C_F1SA_Msk & (_UINT32_(value) << CAN_RXF1C_F1SA_Pos)) /* Assigment of value for F1SA in the CAN_RXF1C register */
+#define CAN_RXF1C_F1S_Pos                     _UINT32_(16)                                         /* (CAN_RXF1C) Rx FIFO 1 Size Position */
+#define CAN_RXF1C_F1S_Msk                     (_UINT32_(0x7F) << CAN_RXF1C_F1S_Pos)                /* (CAN_RXF1C) Rx FIFO 1 Size Mask */
+#define CAN_RXF1C_F1S(value)                  (CAN_RXF1C_F1S_Msk & (_UINT32_(value) << CAN_RXF1C_F1S_Pos)) /* Assigment of value for F1S in the CAN_RXF1C register */
+#define CAN_RXF1C_F1WM_Pos                    _UINT32_(24)                                         /* (CAN_RXF1C) Rx FIFO 1 Watermark Position */
+#define CAN_RXF1C_F1WM_Msk                    (_UINT32_(0x7F) << CAN_RXF1C_F1WM_Pos)               /* (CAN_RXF1C) Rx FIFO 1 Watermark Mask */
+#define CAN_RXF1C_F1WM(value)                 (CAN_RXF1C_F1WM_Msk & (_UINT32_(value) << CAN_RXF1C_F1WM_Pos)) /* Assigment of value for F1WM in the CAN_RXF1C register */
+#define CAN_RXF1C_F1OM_Pos                    _UINT32_(31)                                         /* (CAN_RXF1C) FIFO 1 Operation Mode Position */
+#define CAN_RXF1C_F1OM_Msk                    (_UINT32_(0x1) << CAN_RXF1C_F1OM_Pos)                /* (CAN_RXF1C) FIFO 1 Operation Mode Mask */
+#define CAN_RXF1C_F1OM(value)                 (CAN_RXF1C_F1OM_Msk & (_UINT32_(value) << CAN_RXF1C_F1OM_Pos)) /* Assigment of value for F1OM in the CAN_RXF1C register */
+#define CAN_RXF1C_Msk                         _UINT32_(0xFF7FFFFF)                                 /* (CAN_RXF1C) Register Mask  */
+
+
+/* -------- CAN_RXF1S : (CAN Offset: 0xB4) ( R/ 32) Rx FIFO 1 Status -------- */
+#define CAN_RXF1S_RESETVALUE                  _UINT32_(0x00)                                       /*  (CAN_RXF1S) Rx FIFO 1 Status  Reset Value */
+
+#define CAN_RXF1S_F1FL_Pos                    _UINT32_(0)                                          /* (CAN_RXF1S) Rx FIFO 1 Fill Level Position */
+#define CAN_RXF1S_F1FL_Msk                    (_UINT32_(0x7F) << CAN_RXF1S_F1FL_Pos)               /* (CAN_RXF1S) Rx FIFO 1 Fill Level Mask */
+#define CAN_RXF1S_F1FL(value)                 (CAN_RXF1S_F1FL_Msk & (_UINT32_(value) << CAN_RXF1S_F1FL_Pos)) /* Assigment of value for F1FL in the CAN_RXF1S register */
+#define CAN_RXF1S_F1GI_Pos                    _UINT32_(8)                                          /* (CAN_RXF1S) Rx FIFO 1 Get Index Position */
+#define CAN_RXF1S_F1GI_Msk                    (_UINT32_(0x3F) << CAN_RXF1S_F1GI_Pos)               /* (CAN_RXF1S) Rx FIFO 1 Get Index Mask */
+#define CAN_RXF1S_F1GI(value)                 (CAN_RXF1S_F1GI_Msk & (_UINT32_(value) << CAN_RXF1S_F1GI_Pos)) /* Assigment of value for F1GI in the CAN_RXF1S register */
+#define CAN_RXF1S_F1PI_Pos                    _UINT32_(16)                                         /* (CAN_RXF1S) Rx FIFO 1 Put Index Position */
+#define CAN_RXF1S_F1PI_Msk                    (_UINT32_(0x3F) << CAN_RXF1S_F1PI_Pos)               /* (CAN_RXF1S) Rx FIFO 1 Put Index Mask */
+#define CAN_RXF1S_F1PI(value)                 (CAN_RXF1S_F1PI_Msk & (_UINT32_(value) << CAN_RXF1S_F1PI_Pos)) /* Assigment of value for F1PI in the CAN_RXF1S register */
+#define CAN_RXF1S_F1F_Pos                     _UINT32_(24)                                         /* (CAN_RXF1S) Rx FIFO 1 Full Position */
+#define CAN_RXF1S_F1F_Msk                     (_UINT32_(0x1) << CAN_RXF1S_F1F_Pos)                 /* (CAN_RXF1S) Rx FIFO 1 Full Mask */
+#define CAN_RXF1S_F1F(value)                  (CAN_RXF1S_F1F_Msk & (_UINT32_(value) << CAN_RXF1S_F1F_Pos)) /* Assigment of value for F1F in the CAN_RXF1S register */
+#define CAN_RXF1S_RF1L_Pos                    _UINT32_(25)                                         /* (CAN_RXF1S) Rx FIFO 1 Message Lost Position */
+#define CAN_RXF1S_RF1L_Msk                    (_UINT32_(0x1) << CAN_RXF1S_RF1L_Pos)                /* (CAN_RXF1S) Rx FIFO 1 Message Lost Mask */
+#define CAN_RXF1S_RF1L(value)                 (CAN_RXF1S_RF1L_Msk & (_UINT32_(value) << CAN_RXF1S_RF1L_Pos)) /* Assigment of value for RF1L in the CAN_RXF1S register */
+#define CAN_RXF1S_DMS_Pos                     _UINT32_(30)                                         /* (CAN_RXF1S) Debug Message Status Position */
+#define CAN_RXF1S_DMS_Msk                     (_UINT32_(0x3) << CAN_RXF1S_DMS_Pos)                 /* (CAN_RXF1S) Debug Message Status Mask */
+#define CAN_RXF1S_DMS(value)                  (CAN_RXF1S_DMS_Msk & (_UINT32_(value) << CAN_RXF1S_DMS_Pos)) /* Assigment of value for DMS in the CAN_RXF1S register */
+#define   CAN_RXF1S_DMS_IDLE_Val              _UINT32_(0x0)                                        /* (CAN_RXF1S) Idle state  */
+#define   CAN_RXF1S_DMS_DBGA_Val              _UINT32_(0x1)                                        /* (CAN_RXF1S) Debug message A received  */
+#define   CAN_RXF1S_DMS_DBGB_Val              _UINT32_(0x2)                                        /* (CAN_RXF1S) Debug message A/B received  */
+#define   CAN_RXF1S_DMS_DBGC_Val              _UINT32_(0x3)                                        /* (CAN_RXF1S) Debug message A/B/C received, DMA request set  */
+#define CAN_RXF1S_DMS_IDLE                    (CAN_RXF1S_DMS_IDLE_Val << CAN_RXF1S_DMS_Pos)        /* (CAN_RXF1S) Idle state Position  */
+#define CAN_RXF1S_DMS_DBGA                    (CAN_RXF1S_DMS_DBGA_Val << CAN_RXF1S_DMS_Pos)        /* (CAN_RXF1S) Debug message A received Position  */
+#define CAN_RXF1S_DMS_DBGB                    (CAN_RXF1S_DMS_DBGB_Val << CAN_RXF1S_DMS_Pos)        /* (CAN_RXF1S) Debug message A/B received Position  */
+#define CAN_RXF1S_DMS_DBGC                    (CAN_RXF1S_DMS_DBGC_Val << CAN_RXF1S_DMS_Pos)        /* (CAN_RXF1S) Debug message A/B/C received, DMA request set Position  */
+#define CAN_RXF1S_Msk                         _UINT32_(0xC33F3F7F)                                 /* (CAN_RXF1S) Register Mask  */
+
+
+/* -------- CAN_SIDFC : (CAN Offset: 0x84) (R/W 32) Standard ID Filter Configuration -------- */
+#define CAN_SIDFC_RESETVALUE                  _UINT32_(0x00)                                       /*  (CAN_SIDFC) Standard ID Filter Configuration  Reset Value */
+
+#define CAN_SIDFC_FLSSA_Pos                   _UINT32_(0)                                          /* (CAN_SIDFC) Filter List Standard Start Address Position */
+#define CAN_SIDFC_FLSSA_Msk                   (_UINT32_(0xFFFF) << CAN_SIDFC_FLSSA_Pos)            /* (CAN_SIDFC) Filter List Standard Start Address Mask */
+#define CAN_SIDFC_FLSSA(value)                (CAN_SIDFC_FLSSA_Msk & (_UINT32_(value) << CAN_SIDFC_FLSSA_Pos)) /* Assigment of value for FLSSA in the CAN_SIDFC register */
+#define CAN_SIDFC_LSS_Pos                     _UINT32_(16)                                         /* (CAN_SIDFC) List Size Standard Position */
+#define CAN_SIDFC_LSS_Msk                     (_UINT32_(0xFF) << CAN_SIDFC_LSS_Pos)                /* (CAN_SIDFC) List Size Standard Mask */
+#define CAN_SIDFC_LSS(value)                  (CAN_SIDFC_LSS_Msk & (_UINT32_(value) << CAN_SIDFC_LSS_Pos)) /* Assigment of value for LSS in the CAN_SIDFC register */
+#define CAN_SIDFC_Msk                         _UINT32_(0x00FFFFFF)                                 /* (CAN_SIDFC) Register Mask  */
+
+
+/* -------- CAN_TDCR : (CAN Offset: 0x48) (R/W 32) Extended ID Filter Configuration -------- */
+#define CAN_TDCR_RESETVALUE                   _UINT32_(0x00)                                       /*  (CAN_TDCR) Extended ID Filter Configuration  Reset Value */
+
+#define CAN_TDCR_TDCF_Pos                     _UINT32_(0)                                          /* (CAN_TDCR) Transmitter Delay Compensation Filter Length Position */
+#define CAN_TDCR_TDCF_Msk                     (_UINT32_(0x7F) << CAN_TDCR_TDCF_Pos)                /* (CAN_TDCR) Transmitter Delay Compensation Filter Length Mask */
+#define CAN_TDCR_TDCF(value)                  (CAN_TDCR_TDCF_Msk & (_UINT32_(value) << CAN_TDCR_TDCF_Pos)) /* Assigment of value for TDCF in the CAN_TDCR register */
+#define CAN_TDCR_TDCO_Pos                     _UINT32_(8)                                          /* (CAN_TDCR) Transmitter Delay Compensation Offset Position */
+#define CAN_TDCR_TDCO_Msk                     (_UINT32_(0x7F) << CAN_TDCR_TDCO_Pos)                /* (CAN_TDCR) Transmitter Delay Compensation Offset Mask */
+#define CAN_TDCR_TDCO(value)                  (CAN_TDCR_TDCO_Msk & (_UINT32_(value) << CAN_TDCR_TDCO_Pos)) /* Assigment of value for TDCO in the CAN_TDCR register */
+#define CAN_TDCR_Msk                          _UINT32_(0x00007F7F)                                 /* (CAN_TDCR) Register Mask  */
+
+
+/* -------- CAN_TEST : (CAN Offset: 0x10) (R/W 32) Test -------- */
+#define CAN_TEST_RESETVALUE                   _UINT32_(0x00)                                       /*  (CAN_TEST) Test  Reset Value */
+
+#define CAN_TEST_LBCK_Pos                     _UINT32_(4)                                          /* (CAN_TEST) Loop Back Mode Position */
+#define CAN_TEST_LBCK_Msk                     (_UINT32_(0x1) << CAN_TEST_LBCK_Pos)                 /* (CAN_TEST) Loop Back Mode Mask */
+#define CAN_TEST_LBCK(value)                  (CAN_TEST_LBCK_Msk & (_UINT32_(value) << CAN_TEST_LBCK_Pos)) /* Assigment of value for LBCK in the CAN_TEST register */
+#define CAN_TEST_TX_Pos                       _UINT32_(5)                                          /* (CAN_TEST) Control of Transmit Pin Position */
+#define CAN_TEST_TX_Msk                       (_UINT32_(0x3) << CAN_TEST_TX_Pos)                   /* (CAN_TEST) Control of Transmit Pin Mask */
+#define CAN_TEST_TX(value)                    (CAN_TEST_TX_Msk & (_UINT32_(value) << CAN_TEST_TX_Pos)) /* Assigment of value for TX in the CAN_TEST register */
+#define   CAN_TEST_TX_CORE_Val                _UINT32_(0x0)                                        /* (CAN_TEST) TX controlled by CAN core  */
+#define   CAN_TEST_TX_SAMPLE_Val              _UINT32_(0x1)                                        /* (CAN_TEST) TX monitoring sample point  */
+#define   CAN_TEST_TX_DOMINANT_Val            _UINT32_(0x2)                                        /* (CAN_TEST) Dominant (0) level at pin CAN_TX  */
+#define   CAN_TEST_TX_RECESSIVE_Val           _UINT32_(0x3)                                        /* (CAN_TEST) Recessive (1) level at pin CAN_TX  */
+#define CAN_TEST_TX_CORE                      (CAN_TEST_TX_CORE_Val << CAN_TEST_TX_Pos)            /* (CAN_TEST) TX controlled by CAN core Position  */
+#define CAN_TEST_TX_SAMPLE                    (CAN_TEST_TX_SAMPLE_Val << CAN_TEST_TX_Pos)          /* (CAN_TEST) TX monitoring sample point Position  */
+#define CAN_TEST_TX_DOMINANT                  (CAN_TEST_TX_DOMINANT_Val << CAN_TEST_TX_Pos)        /* (CAN_TEST) Dominant (0) level at pin CAN_TX Position  */
+#define CAN_TEST_TX_RECESSIVE                 (CAN_TEST_TX_RECESSIVE_Val << CAN_TEST_TX_Pos)       /* (CAN_TEST) Recessive (1) level at pin CAN_TX Position  */
+#define CAN_TEST_RX_Pos                       _UINT32_(7)                                          /* (CAN_TEST) Receive Pin Position */
+#define CAN_TEST_RX_Msk                       (_UINT32_(0x1) << CAN_TEST_RX_Pos)                   /* (CAN_TEST) Receive Pin Mask */
+#define CAN_TEST_RX(value)                    (CAN_TEST_RX_Msk & (_UINT32_(value) << CAN_TEST_RX_Pos)) /* Assigment of value for RX in the CAN_TEST register */
+#define CAN_TEST_Msk                          _UINT32_(0x000000F0)                                 /* (CAN_TEST) Register Mask  */
+
+
+/* -------- CAN_TOCC : (CAN Offset: 0x28) (R/W 32) Timeout Counter Configuration -------- */
+#define CAN_TOCC_RESETVALUE                   _UINT32_(0xFFFF0000)                                 /*  (CAN_TOCC) Timeout Counter Configuration  Reset Value */
+
+#define CAN_TOCC_ETOC_Pos                     _UINT32_(0)                                          /* (CAN_TOCC) Enable Timeout Counter Position */
+#define CAN_TOCC_ETOC_Msk                     (_UINT32_(0x1) << CAN_TOCC_ETOC_Pos)                 /* (CAN_TOCC) Enable Timeout Counter Mask */
+#define CAN_TOCC_ETOC(value)                  (CAN_TOCC_ETOC_Msk & (_UINT32_(value) << CAN_TOCC_ETOC_Pos)) /* Assigment of value for ETOC in the CAN_TOCC register */
+#define CAN_TOCC_TOS_Pos                      _UINT32_(1)                                          /* (CAN_TOCC) Timeout Select Position */
+#define CAN_TOCC_TOS_Msk                      (_UINT32_(0x3) << CAN_TOCC_TOS_Pos)                  /* (CAN_TOCC) Timeout Select Mask */
+#define CAN_TOCC_TOS(value)                   (CAN_TOCC_TOS_Msk & (_UINT32_(value) << CAN_TOCC_TOS_Pos)) /* Assigment of value for TOS in the CAN_TOCC register */
+#define   CAN_TOCC_TOS_CONT_Val               _UINT32_(0x0)                                        /* (CAN_TOCC) Continuout operation  */
+#define   CAN_TOCC_TOS_TXEF_Val               _UINT32_(0x1)                                        /* (CAN_TOCC) Timeout controlled by TX Event FIFO  */
+#define   CAN_TOCC_TOS_RXF0_Val               _UINT32_(0x2)                                        /* (CAN_TOCC) Timeout controlled by Rx FIFO 0  */
+#define   CAN_TOCC_TOS_RXF1_Val               _UINT32_(0x3)                                        /* (CAN_TOCC) Timeout controlled by Rx FIFO 1  */
+#define CAN_TOCC_TOS_CONT                     (CAN_TOCC_TOS_CONT_Val << CAN_TOCC_TOS_Pos)          /* (CAN_TOCC) Continuout operation Position  */
+#define CAN_TOCC_TOS_TXEF                     (CAN_TOCC_TOS_TXEF_Val << CAN_TOCC_TOS_Pos)          /* (CAN_TOCC) Timeout controlled by TX Event FIFO Position  */
+#define CAN_TOCC_TOS_RXF0                     (CAN_TOCC_TOS_RXF0_Val << CAN_TOCC_TOS_Pos)          /* (CAN_TOCC) Timeout controlled by Rx FIFO 0 Position  */
+#define CAN_TOCC_TOS_RXF1                     (CAN_TOCC_TOS_RXF1_Val << CAN_TOCC_TOS_Pos)          /* (CAN_TOCC) Timeout controlled by Rx FIFO 1 Position  */
+#define CAN_TOCC_TOP_Pos                      _UINT32_(16)                                         /* (CAN_TOCC) Timeout Period Position */
+#define CAN_TOCC_TOP_Msk                      (_UINT32_(0xFFFF) << CAN_TOCC_TOP_Pos)               /* (CAN_TOCC) Timeout Period Mask */
+#define CAN_TOCC_TOP(value)                   (CAN_TOCC_TOP_Msk & (_UINT32_(value) << CAN_TOCC_TOP_Pos)) /* Assigment of value for TOP in the CAN_TOCC register */
+#define CAN_TOCC_Msk                          _UINT32_(0xFFFF0007)                                 /* (CAN_TOCC) Register Mask  */
+
+
+/* -------- CAN_TOCV : (CAN Offset: 0x2C) (R/W 32) Timeout Counter Value -------- */
+#define CAN_TOCV_RESETVALUE                   _UINT32_(0xFFFF)                                     /*  (CAN_TOCV) Timeout Counter Value  Reset Value */
+
+#define CAN_TOCV_TOC_Pos                      _UINT32_(0)                                          /* (CAN_TOCV) Timeout Counter Position */
+#define CAN_TOCV_TOC_Msk                      (_UINT32_(0xFFFF) << CAN_TOCV_TOC_Pos)               /* (CAN_TOCV) Timeout Counter Mask */
+#define CAN_TOCV_TOC(value)                   (CAN_TOCV_TOC_Msk & (_UINT32_(value) << CAN_TOCV_TOC_Pos)) /* Assigment of value for TOC in the CAN_TOCV register */
+#define CAN_TOCV_Msk                          _UINT32_(0x0000FFFF)                                 /* (CAN_TOCV) Register Mask  */
+
+
+/* -------- CAN_TSCC : (CAN Offset: 0x20) (R/W 32) Timestamp Counter Configuration -------- */
+#define CAN_TSCC_RESETVALUE                   _UINT32_(0x00)                                       /*  (CAN_TSCC) Timestamp Counter Configuration  Reset Value */
+
+#define CAN_TSCC_TSS_Pos                      _UINT32_(0)                                          /* (CAN_TSCC) Timestamp Select Position */
+#define CAN_TSCC_TSS_Msk                      (_UINT32_(0x3) << CAN_TSCC_TSS_Pos)                  /* (CAN_TSCC) Timestamp Select Mask */
+#define CAN_TSCC_TSS(value)                   (CAN_TSCC_TSS_Msk & (_UINT32_(value) << CAN_TSCC_TSS_Pos)) /* Assigment of value for TSS in the CAN_TSCC register */
+#define   CAN_TSCC_TSS_ZERO_Val               _UINT32_(0x0)                                        /* (CAN_TSCC) Timestamp counter value always 0x0000  */
+#define   CAN_TSCC_TSS_INC_Val                _UINT32_(0x1)                                        /* (CAN_TSCC) Timestamp counter value incremented by TCP  */
+#define CAN_TSCC_TSS_ZERO                     (CAN_TSCC_TSS_ZERO_Val << CAN_TSCC_TSS_Pos)          /* (CAN_TSCC) Timestamp counter value always 0x0000 Position  */
+#define CAN_TSCC_TSS_INC                      (CAN_TSCC_TSS_INC_Val << CAN_TSCC_TSS_Pos)           /* (CAN_TSCC) Timestamp counter value incremented by TCP Position  */
+#define CAN_TSCC_TCP_Pos                      _UINT32_(16)                                         /* (CAN_TSCC) Timestamp Counter Prescaler Position */
+#define CAN_TSCC_TCP_Msk                      (_UINT32_(0xF) << CAN_TSCC_TCP_Pos)                  /* (CAN_TSCC) Timestamp Counter Prescaler Mask */
+#define CAN_TSCC_TCP(value)                   (CAN_TSCC_TCP_Msk & (_UINT32_(value) << CAN_TSCC_TCP_Pos)) /* Assigment of value for TCP in the CAN_TSCC register */
+#define CAN_TSCC_Msk                          _UINT32_(0x000F0003)                                 /* (CAN_TSCC) Register Mask  */
+
+
+/* -------- CAN_TSCV : (CAN Offset: 0x24) ( R/ 32) Timestamp Counter Value -------- */
+#define CAN_TSCV_RESETVALUE                   _UINT32_(0x00)                                       /*  (CAN_TSCV) Timestamp Counter Value  Reset Value */
+
+#define CAN_TSCV_TSC_Pos                      _UINT32_(0)                                          /* (CAN_TSCV) Timestamp Counter Position */
+#define CAN_TSCV_TSC_Msk                      (_UINT32_(0xFFFF) << CAN_TSCV_TSC_Pos)               /* (CAN_TSCV) Timestamp Counter Mask */
+#define CAN_TSCV_TSC(value)                   (CAN_TSCV_TSC_Msk & (_UINT32_(value) << CAN_TSCV_TSC_Pos)) /* Assigment of value for TSC in the CAN_TSCV register */
+#define CAN_TSCV_Msk                          _UINT32_(0x0000FFFF)                                 /* (CAN_TSCV) Register Mask  */
+
 
 /* -------- CAN_TXBAR : (CAN Offset: 0xD0) (R/W 32) Tx Buffer Add Request -------- */
 #define CAN_TXBAR_RESETVALUE                  _UINT32_(0x00)                                       /*  (CAN_TXBAR) Tx Buffer Add Request  Reset Value */
@@ -1739,215 +1561,23 @@
 #define CAN_TXBAR_AR_Msk                      (_UINT32_(0xFFFFFFFF) << CAN_TXBAR_AR_Pos)           /* (CAN_TXBAR Mask) AR */
 #define CAN_TXBAR_AR(value)                   (CAN_TXBAR_AR_Msk & (_UINT32_(value) << CAN_TXBAR_AR_Pos)) 
 
-/* -------- CAN_TXBCR : (CAN Offset: 0xD4) (R/W 32) Tx Buffer Cancellation Request -------- */
-#define CAN_TXBCR_RESETVALUE                  _UINT32_(0x00)                                       /*  (CAN_TXBCR) Tx Buffer Cancellation Request  Reset Value */
+/* -------- CAN_TXBC : (CAN Offset: 0xC0) (R/W 32) Tx Buffer Configuration -------- */
+#define CAN_TXBC_RESETVALUE                   _UINT32_(0x00)                                       /*  (CAN_TXBC) Tx Buffer Configuration  Reset Value */
 
-#define CAN_TXBCR_CR0_Pos                     _UINT32_(0)                                          /* (CAN_TXBCR) Cancellation Request 0 Position */
-#define CAN_TXBCR_CR0_Msk                     (_UINT32_(0x1) << CAN_TXBCR_CR0_Pos)                 /* (CAN_TXBCR) Cancellation Request 0 Mask */
-#define CAN_TXBCR_CR0(value)                  (CAN_TXBCR_CR0_Msk & (_UINT32_(value) << CAN_TXBCR_CR0_Pos)) /* Assigment of value for CR0 in the CAN_TXBCR register */
-#define CAN_TXBCR_CR1_Pos                     _UINT32_(1)                                          /* (CAN_TXBCR) Cancellation Request 1 Position */
-#define CAN_TXBCR_CR1_Msk                     (_UINT32_(0x1) << CAN_TXBCR_CR1_Pos)                 /* (CAN_TXBCR) Cancellation Request 1 Mask */
-#define CAN_TXBCR_CR1(value)                  (CAN_TXBCR_CR1_Msk & (_UINT32_(value) << CAN_TXBCR_CR1_Pos)) /* Assigment of value for CR1 in the CAN_TXBCR register */
-#define CAN_TXBCR_CR2_Pos                     _UINT32_(2)                                          /* (CAN_TXBCR) Cancellation Request 2 Position */
-#define CAN_TXBCR_CR2_Msk                     (_UINT32_(0x1) << CAN_TXBCR_CR2_Pos)                 /* (CAN_TXBCR) Cancellation Request 2 Mask */
-#define CAN_TXBCR_CR2(value)                  (CAN_TXBCR_CR2_Msk & (_UINT32_(value) << CAN_TXBCR_CR2_Pos)) /* Assigment of value for CR2 in the CAN_TXBCR register */
-#define CAN_TXBCR_CR3_Pos                     _UINT32_(3)                                          /* (CAN_TXBCR) Cancellation Request 3 Position */
-#define CAN_TXBCR_CR3_Msk                     (_UINT32_(0x1) << CAN_TXBCR_CR3_Pos)                 /* (CAN_TXBCR) Cancellation Request 3 Mask */
-#define CAN_TXBCR_CR3(value)                  (CAN_TXBCR_CR3_Msk & (_UINT32_(value) << CAN_TXBCR_CR3_Pos)) /* Assigment of value for CR3 in the CAN_TXBCR register */
-#define CAN_TXBCR_CR4_Pos                     _UINT32_(4)                                          /* (CAN_TXBCR) Cancellation Request 4 Position */
-#define CAN_TXBCR_CR4_Msk                     (_UINT32_(0x1) << CAN_TXBCR_CR4_Pos)                 /* (CAN_TXBCR) Cancellation Request 4 Mask */
-#define CAN_TXBCR_CR4(value)                  (CAN_TXBCR_CR4_Msk & (_UINT32_(value) << CAN_TXBCR_CR4_Pos)) /* Assigment of value for CR4 in the CAN_TXBCR register */
-#define CAN_TXBCR_CR5_Pos                     _UINT32_(5)                                          /* (CAN_TXBCR) Cancellation Request 5 Position */
-#define CAN_TXBCR_CR5_Msk                     (_UINT32_(0x1) << CAN_TXBCR_CR5_Pos)                 /* (CAN_TXBCR) Cancellation Request 5 Mask */
-#define CAN_TXBCR_CR5(value)                  (CAN_TXBCR_CR5_Msk & (_UINT32_(value) << CAN_TXBCR_CR5_Pos)) /* Assigment of value for CR5 in the CAN_TXBCR register */
-#define CAN_TXBCR_CR6_Pos                     _UINT32_(6)                                          /* (CAN_TXBCR) Cancellation Request 6 Position */
-#define CAN_TXBCR_CR6_Msk                     (_UINT32_(0x1) << CAN_TXBCR_CR6_Pos)                 /* (CAN_TXBCR) Cancellation Request 6 Mask */
-#define CAN_TXBCR_CR6(value)                  (CAN_TXBCR_CR6_Msk & (_UINT32_(value) << CAN_TXBCR_CR6_Pos)) /* Assigment of value for CR6 in the CAN_TXBCR register */
-#define CAN_TXBCR_CR7_Pos                     _UINT32_(7)                                          /* (CAN_TXBCR) Cancellation Request 7 Position */
-#define CAN_TXBCR_CR7_Msk                     (_UINT32_(0x1) << CAN_TXBCR_CR7_Pos)                 /* (CAN_TXBCR) Cancellation Request 7 Mask */
-#define CAN_TXBCR_CR7(value)                  (CAN_TXBCR_CR7_Msk & (_UINT32_(value) << CAN_TXBCR_CR7_Pos)) /* Assigment of value for CR7 in the CAN_TXBCR register */
-#define CAN_TXBCR_CR8_Pos                     _UINT32_(8)                                          /* (CAN_TXBCR) Cancellation Request 8 Position */
-#define CAN_TXBCR_CR8_Msk                     (_UINT32_(0x1) << CAN_TXBCR_CR8_Pos)                 /* (CAN_TXBCR) Cancellation Request 8 Mask */
-#define CAN_TXBCR_CR8(value)                  (CAN_TXBCR_CR8_Msk & (_UINT32_(value) << CAN_TXBCR_CR8_Pos)) /* Assigment of value for CR8 in the CAN_TXBCR register */
-#define CAN_TXBCR_CR9_Pos                     _UINT32_(9)                                          /* (CAN_TXBCR) Cancellation Request 9 Position */
-#define CAN_TXBCR_CR9_Msk                     (_UINT32_(0x1) << CAN_TXBCR_CR9_Pos)                 /* (CAN_TXBCR) Cancellation Request 9 Mask */
-#define CAN_TXBCR_CR9(value)                  (CAN_TXBCR_CR9_Msk & (_UINT32_(value) << CAN_TXBCR_CR9_Pos)) /* Assigment of value for CR9 in the CAN_TXBCR register */
-#define CAN_TXBCR_CR10_Pos                    _UINT32_(10)                                         /* (CAN_TXBCR) Cancellation Request 10 Position */
-#define CAN_TXBCR_CR10_Msk                    (_UINT32_(0x1) << CAN_TXBCR_CR10_Pos)                /* (CAN_TXBCR) Cancellation Request 10 Mask */
-#define CAN_TXBCR_CR10(value)                 (CAN_TXBCR_CR10_Msk & (_UINT32_(value) << CAN_TXBCR_CR10_Pos)) /* Assigment of value for CR10 in the CAN_TXBCR register */
-#define CAN_TXBCR_CR11_Pos                    _UINT32_(11)                                         /* (CAN_TXBCR) Cancellation Request 11 Position */
-#define CAN_TXBCR_CR11_Msk                    (_UINT32_(0x1) << CAN_TXBCR_CR11_Pos)                /* (CAN_TXBCR) Cancellation Request 11 Mask */
-#define CAN_TXBCR_CR11(value)                 (CAN_TXBCR_CR11_Msk & (_UINT32_(value) << CAN_TXBCR_CR11_Pos)) /* Assigment of value for CR11 in the CAN_TXBCR register */
-#define CAN_TXBCR_CR12_Pos                    _UINT32_(12)                                         /* (CAN_TXBCR) Cancellation Request 12 Position */
-#define CAN_TXBCR_CR12_Msk                    (_UINT32_(0x1) << CAN_TXBCR_CR12_Pos)                /* (CAN_TXBCR) Cancellation Request 12 Mask */
-#define CAN_TXBCR_CR12(value)                 (CAN_TXBCR_CR12_Msk & (_UINT32_(value) << CAN_TXBCR_CR12_Pos)) /* Assigment of value for CR12 in the CAN_TXBCR register */
-#define CAN_TXBCR_CR13_Pos                    _UINT32_(13)                                         /* (CAN_TXBCR) Cancellation Request 13 Position */
-#define CAN_TXBCR_CR13_Msk                    (_UINT32_(0x1) << CAN_TXBCR_CR13_Pos)                /* (CAN_TXBCR) Cancellation Request 13 Mask */
-#define CAN_TXBCR_CR13(value)                 (CAN_TXBCR_CR13_Msk & (_UINT32_(value) << CAN_TXBCR_CR13_Pos)) /* Assigment of value for CR13 in the CAN_TXBCR register */
-#define CAN_TXBCR_CR14_Pos                    _UINT32_(14)                                         /* (CAN_TXBCR) Cancellation Request 14 Position */
-#define CAN_TXBCR_CR14_Msk                    (_UINT32_(0x1) << CAN_TXBCR_CR14_Pos)                /* (CAN_TXBCR) Cancellation Request 14 Mask */
-#define CAN_TXBCR_CR14(value)                 (CAN_TXBCR_CR14_Msk & (_UINT32_(value) << CAN_TXBCR_CR14_Pos)) /* Assigment of value for CR14 in the CAN_TXBCR register */
-#define CAN_TXBCR_CR15_Pos                    _UINT32_(15)                                         /* (CAN_TXBCR) Cancellation Request 15 Position */
-#define CAN_TXBCR_CR15_Msk                    (_UINT32_(0x1) << CAN_TXBCR_CR15_Pos)                /* (CAN_TXBCR) Cancellation Request 15 Mask */
-#define CAN_TXBCR_CR15(value)                 (CAN_TXBCR_CR15_Msk & (_UINT32_(value) << CAN_TXBCR_CR15_Pos)) /* Assigment of value for CR15 in the CAN_TXBCR register */
-#define CAN_TXBCR_CR16_Pos                    _UINT32_(16)                                         /* (CAN_TXBCR) Cancellation Request 16 Position */
-#define CAN_TXBCR_CR16_Msk                    (_UINT32_(0x1) << CAN_TXBCR_CR16_Pos)                /* (CAN_TXBCR) Cancellation Request 16 Mask */
-#define CAN_TXBCR_CR16(value)                 (CAN_TXBCR_CR16_Msk & (_UINT32_(value) << CAN_TXBCR_CR16_Pos)) /* Assigment of value for CR16 in the CAN_TXBCR register */
-#define CAN_TXBCR_CR17_Pos                    _UINT32_(17)                                         /* (CAN_TXBCR) Cancellation Request 17 Position */
-#define CAN_TXBCR_CR17_Msk                    (_UINT32_(0x1) << CAN_TXBCR_CR17_Pos)                /* (CAN_TXBCR) Cancellation Request 17 Mask */
-#define CAN_TXBCR_CR17(value)                 (CAN_TXBCR_CR17_Msk & (_UINT32_(value) << CAN_TXBCR_CR17_Pos)) /* Assigment of value for CR17 in the CAN_TXBCR register */
-#define CAN_TXBCR_CR18_Pos                    _UINT32_(18)                                         /* (CAN_TXBCR) Cancellation Request 18 Position */
-#define CAN_TXBCR_CR18_Msk                    (_UINT32_(0x1) << CAN_TXBCR_CR18_Pos)                /* (CAN_TXBCR) Cancellation Request 18 Mask */
-#define CAN_TXBCR_CR18(value)                 (CAN_TXBCR_CR18_Msk & (_UINT32_(value) << CAN_TXBCR_CR18_Pos)) /* Assigment of value for CR18 in the CAN_TXBCR register */
-#define CAN_TXBCR_CR19_Pos                    _UINT32_(19)                                         /* (CAN_TXBCR) Cancellation Request 19 Position */
-#define CAN_TXBCR_CR19_Msk                    (_UINT32_(0x1) << CAN_TXBCR_CR19_Pos)                /* (CAN_TXBCR) Cancellation Request 19 Mask */
-#define CAN_TXBCR_CR19(value)                 (CAN_TXBCR_CR19_Msk & (_UINT32_(value) << CAN_TXBCR_CR19_Pos)) /* Assigment of value for CR19 in the CAN_TXBCR register */
-#define CAN_TXBCR_CR20_Pos                    _UINT32_(20)                                         /* (CAN_TXBCR) Cancellation Request 20 Position */
-#define CAN_TXBCR_CR20_Msk                    (_UINT32_(0x1) << CAN_TXBCR_CR20_Pos)                /* (CAN_TXBCR) Cancellation Request 20 Mask */
-#define CAN_TXBCR_CR20(value)                 (CAN_TXBCR_CR20_Msk & (_UINT32_(value) << CAN_TXBCR_CR20_Pos)) /* Assigment of value for CR20 in the CAN_TXBCR register */
-#define CAN_TXBCR_CR21_Pos                    _UINT32_(21)                                         /* (CAN_TXBCR) Cancellation Request 21 Position */
-#define CAN_TXBCR_CR21_Msk                    (_UINT32_(0x1) << CAN_TXBCR_CR21_Pos)                /* (CAN_TXBCR) Cancellation Request 21 Mask */
-#define CAN_TXBCR_CR21(value)                 (CAN_TXBCR_CR21_Msk & (_UINT32_(value) << CAN_TXBCR_CR21_Pos)) /* Assigment of value for CR21 in the CAN_TXBCR register */
-#define CAN_TXBCR_CR22_Pos                    _UINT32_(22)                                         /* (CAN_TXBCR) Cancellation Request 22 Position */
-#define CAN_TXBCR_CR22_Msk                    (_UINT32_(0x1) << CAN_TXBCR_CR22_Pos)                /* (CAN_TXBCR) Cancellation Request 22 Mask */
-#define CAN_TXBCR_CR22(value)                 (CAN_TXBCR_CR22_Msk & (_UINT32_(value) << CAN_TXBCR_CR22_Pos)) /* Assigment of value for CR22 in the CAN_TXBCR register */
-#define CAN_TXBCR_CR23_Pos                    _UINT32_(23)                                         /* (CAN_TXBCR) Cancellation Request 23 Position */
-#define CAN_TXBCR_CR23_Msk                    (_UINT32_(0x1) << CAN_TXBCR_CR23_Pos)                /* (CAN_TXBCR) Cancellation Request 23 Mask */
-#define CAN_TXBCR_CR23(value)                 (CAN_TXBCR_CR23_Msk & (_UINT32_(value) << CAN_TXBCR_CR23_Pos)) /* Assigment of value for CR23 in the CAN_TXBCR register */
-#define CAN_TXBCR_CR24_Pos                    _UINT32_(24)                                         /* (CAN_TXBCR) Cancellation Request 24 Position */
-#define CAN_TXBCR_CR24_Msk                    (_UINT32_(0x1) << CAN_TXBCR_CR24_Pos)                /* (CAN_TXBCR) Cancellation Request 24 Mask */
-#define CAN_TXBCR_CR24(value)                 (CAN_TXBCR_CR24_Msk & (_UINT32_(value) << CAN_TXBCR_CR24_Pos)) /* Assigment of value for CR24 in the CAN_TXBCR register */
-#define CAN_TXBCR_CR25_Pos                    _UINT32_(25)                                         /* (CAN_TXBCR) Cancellation Request 25 Position */
-#define CAN_TXBCR_CR25_Msk                    (_UINT32_(0x1) << CAN_TXBCR_CR25_Pos)                /* (CAN_TXBCR) Cancellation Request 25 Mask */
-#define CAN_TXBCR_CR25(value)                 (CAN_TXBCR_CR25_Msk & (_UINT32_(value) << CAN_TXBCR_CR25_Pos)) /* Assigment of value for CR25 in the CAN_TXBCR register */
-#define CAN_TXBCR_CR26_Pos                    _UINT32_(26)                                         /* (CAN_TXBCR) Cancellation Request 26 Position */
-#define CAN_TXBCR_CR26_Msk                    (_UINT32_(0x1) << CAN_TXBCR_CR26_Pos)                /* (CAN_TXBCR) Cancellation Request 26 Mask */
-#define CAN_TXBCR_CR26(value)                 (CAN_TXBCR_CR26_Msk & (_UINT32_(value) << CAN_TXBCR_CR26_Pos)) /* Assigment of value for CR26 in the CAN_TXBCR register */
-#define CAN_TXBCR_CR27_Pos                    _UINT32_(27)                                         /* (CAN_TXBCR) Cancellation Request 27 Position */
-#define CAN_TXBCR_CR27_Msk                    (_UINT32_(0x1) << CAN_TXBCR_CR27_Pos)                /* (CAN_TXBCR) Cancellation Request 27 Mask */
-#define CAN_TXBCR_CR27(value)                 (CAN_TXBCR_CR27_Msk & (_UINT32_(value) << CAN_TXBCR_CR27_Pos)) /* Assigment of value for CR27 in the CAN_TXBCR register */
-#define CAN_TXBCR_CR28_Pos                    _UINT32_(28)                                         /* (CAN_TXBCR) Cancellation Request 28 Position */
-#define CAN_TXBCR_CR28_Msk                    (_UINT32_(0x1) << CAN_TXBCR_CR28_Pos)                /* (CAN_TXBCR) Cancellation Request 28 Mask */
-#define CAN_TXBCR_CR28(value)                 (CAN_TXBCR_CR28_Msk & (_UINT32_(value) << CAN_TXBCR_CR28_Pos)) /* Assigment of value for CR28 in the CAN_TXBCR register */
-#define CAN_TXBCR_CR29_Pos                    _UINT32_(29)                                         /* (CAN_TXBCR) Cancellation Request 29 Position */
-#define CAN_TXBCR_CR29_Msk                    (_UINT32_(0x1) << CAN_TXBCR_CR29_Pos)                /* (CAN_TXBCR) Cancellation Request 29 Mask */
-#define CAN_TXBCR_CR29(value)                 (CAN_TXBCR_CR29_Msk & (_UINT32_(value) << CAN_TXBCR_CR29_Pos)) /* Assigment of value for CR29 in the CAN_TXBCR register */
-#define CAN_TXBCR_CR30_Pos                    _UINT32_(30)                                         /* (CAN_TXBCR) Cancellation Request 30 Position */
-#define CAN_TXBCR_CR30_Msk                    (_UINT32_(0x1) << CAN_TXBCR_CR30_Pos)                /* (CAN_TXBCR) Cancellation Request 30 Mask */
-#define CAN_TXBCR_CR30(value)                 (CAN_TXBCR_CR30_Msk & (_UINT32_(value) << CAN_TXBCR_CR30_Pos)) /* Assigment of value for CR30 in the CAN_TXBCR register */
-#define CAN_TXBCR_CR31_Pos                    _UINT32_(31)                                         /* (CAN_TXBCR) Cancellation Request 31 Position */
-#define CAN_TXBCR_CR31_Msk                    (_UINT32_(0x1) << CAN_TXBCR_CR31_Pos)                /* (CAN_TXBCR) Cancellation Request 31 Mask */
-#define CAN_TXBCR_CR31(value)                 (CAN_TXBCR_CR31_Msk & (_UINT32_(value) << CAN_TXBCR_CR31_Pos)) /* Assigment of value for CR31 in the CAN_TXBCR register */
-#define CAN_TXBCR_Msk                         _UINT32_(0xFFFFFFFF)                                 /* (CAN_TXBCR) Register Mask  */
+#define CAN_TXBC_TBSA_Pos                     _UINT32_(0)                                          /* (CAN_TXBC) Tx Buffers Start Address Position */
+#define CAN_TXBC_TBSA_Msk                     (_UINT32_(0xFFFF) << CAN_TXBC_TBSA_Pos)              /* (CAN_TXBC) Tx Buffers Start Address Mask */
+#define CAN_TXBC_TBSA(value)                  (CAN_TXBC_TBSA_Msk & (_UINT32_(value) << CAN_TXBC_TBSA_Pos)) /* Assigment of value for TBSA in the CAN_TXBC register */
+#define CAN_TXBC_NDTB_Pos                     _UINT32_(16)                                         /* (CAN_TXBC) Number of Dedicated Transmit Buffers Position */
+#define CAN_TXBC_NDTB_Msk                     (_UINT32_(0x3F) << CAN_TXBC_NDTB_Pos)                /* (CAN_TXBC) Number of Dedicated Transmit Buffers Mask */
+#define CAN_TXBC_NDTB(value)                  (CAN_TXBC_NDTB_Msk & (_UINT32_(value) << CAN_TXBC_NDTB_Pos)) /* Assigment of value for NDTB in the CAN_TXBC register */
+#define CAN_TXBC_TFQS_Pos                     _UINT32_(24)                                         /* (CAN_TXBC) Transmit FIFO/Queue Size Position */
+#define CAN_TXBC_TFQS_Msk                     (_UINT32_(0x3F) << CAN_TXBC_TFQS_Pos)                /* (CAN_TXBC) Transmit FIFO/Queue Size Mask */
+#define CAN_TXBC_TFQS(value)                  (CAN_TXBC_TFQS_Msk & (_UINT32_(value) << CAN_TXBC_TFQS_Pos)) /* Assigment of value for TFQS in the CAN_TXBC register */
+#define CAN_TXBC_TFQM_Pos                     _UINT32_(30)                                         /* (CAN_TXBC) Tx FIFO/Queue Mode Position */
+#define CAN_TXBC_TFQM_Msk                     (_UINT32_(0x1) << CAN_TXBC_TFQM_Pos)                 /* (CAN_TXBC) Tx FIFO/Queue Mode Mask */
+#define CAN_TXBC_TFQM(value)                  (CAN_TXBC_TFQM_Msk & (_UINT32_(value) << CAN_TXBC_TFQM_Pos)) /* Assigment of value for TFQM in the CAN_TXBC register */
+#define CAN_TXBC_Msk                          _UINT32_(0x7F3FFFFF)                                 /* (CAN_TXBC) Register Mask  */
 
-#define CAN_TXBCR_CR_Pos                      _UINT32_(0)                                          /* (CAN_TXBCR Position) Cancellation Request 3x */
-#define CAN_TXBCR_CR_Msk                      (_UINT32_(0xFFFFFFFF) << CAN_TXBCR_CR_Pos)           /* (CAN_TXBCR Mask) CR */
-#define CAN_TXBCR_CR(value)                   (CAN_TXBCR_CR_Msk & (_UINT32_(value) << CAN_TXBCR_CR_Pos)) 
-
-/* -------- CAN_TXBTO : (CAN Offset: 0xD8) ( R/ 32) Tx Buffer Transmission Occurred -------- */
-#define CAN_TXBTO_RESETVALUE                  _UINT32_(0x00)                                       /*  (CAN_TXBTO) Tx Buffer Transmission Occurred  Reset Value */
-
-#define CAN_TXBTO_TO0_Pos                     _UINT32_(0)                                          /* (CAN_TXBTO) Transmission Occurred 0 Position */
-#define CAN_TXBTO_TO0_Msk                     (_UINT32_(0x1) << CAN_TXBTO_TO0_Pos)                 /* (CAN_TXBTO) Transmission Occurred 0 Mask */
-#define CAN_TXBTO_TO0(value)                  (CAN_TXBTO_TO0_Msk & (_UINT32_(value) << CAN_TXBTO_TO0_Pos)) /* Assigment of value for TO0 in the CAN_TXBTO register */
-#define CAN_TXBTO_TO1_Pos                     _UINT32_(1)                                          /* (CAN_TXBTO) Transmission Occurred 1 Position */
-#define CAN_TXBTO_TO1_Msk                     (_UINT32_(0x1) << CAN_TXBTO_TO1_Pos)                 /* (CAN_TXBTO) Transmission Occurred 1 Mask */
-#define CAN_TXBTO_TO1(value)                  (CAN_TXBTO_TO1_Msk & (_UINT32_(value) << CAN_TXBTO_TO1_Pos)) /* Assigment of value for TO1 in the CAN_TXBTO register */
-#define CAN_TXBTO_TO2_Pos                     _UINT32_(2)                                          /* (CAN_TXBTO) Transmission Occurred 2 Position */
-#define CAN_TXBTO_TO2_Msk                     (_UINT32_(0x1) << CAN_TXBTO_TO2_Pos)                 /* (CAN_TXBTO) Transmission Occurred 2 Mask */
-#define CAN_TXBTO_TO2(value)                  (CAN_TXBTO_TO2_Msk & (_UINT32_(value) << CAN_TXBTO_TO2_Pos)) /* Assigment of value for TO2 in the CAN_TXBTO register */
-#define CAN_TXBTO_TO3_Pos                     _UINT32_(3)                                          /* (CAN_TXBTO) Transmission Occurred 3 Position */
-#define CAN_TXBTO_TO3_Msk                     (_UINT32_(0x1) << CAN_TXBTO_TO3_Pos)                 /* (CAN_TXBTO) Transmission Occurred 3 Mask */
-#define CAN_TXBTO_TO3(value)                  (CAN_TXBTO_TO3_Msk & (_UINT32_(value) << CAN_TXBTO_TO3_Pos)) /* Assigment of value for TO3 in the CAN_TXBTO register */
-#define CAN_TXBTO_TO4_Pos                     _UINT32_(4)                                          /* (CAN_TXBTO) Transmission Occurred 4 Position */
-#define CAN_TXBTO_TO4_Msk                     (_UINT32_(0x1) << CAN_TXBTO_TO4_Pos)                 /* (CAN_TXBTO) Transmission Occurred 4 Mask */
-#define CAN_TXBTO_TO4(value)                  (CAN_TXBTO_TO4_Msk & (_UINT32_(value) << CAN_TXBTO_TO4_Pos)) /* Assigment of value for TO4 in the CAN_TXBTO register */
-#define CAN_TXBTO_TO5_Pos                     _UINT32_(5)                                          /* (CAN_TXBTO) Transmission Occurred 5 Position */
-#define CAN_TXBTO_TO5_Msk                     (_UINT32_(0x1) << CAN_TXBTO_TO5_Pos)                 /* (CAN_TXBTO) Transmission Occurred 5 Mask */
-#define CAN_TXBTO_TO5(value)                  (CAN_TXBTO_TO5_Msk & (_UINT32_(value) << CAN_TXBTO_TO5_Pos)) /* Assigment of value for TO5 in the CAN_TXBTO register */
-#define CAN_TXBTO_TO6_Pos                     _UINT32_(6)                                          /* (CAN_TXBTO) Transmission Occurred 6 Position */
-#define CAN_TXBTO_TO6_Msk                     (_UINT32_(0x1) << CAN_TXBTO_TO6_Pos)                 /* (CAN_TXBTO) Transmission Occurred 6 Mask */
-#define CAN_TXBTO_TO6(value)                  (CAN_TXBTO_TO6_Msk & (_UINT32_(value) << CAN_TXBTO_TO6_Pos)) /* Assigment of value for TO6 in the CAN_TXBTO register */
-#define CAN_TXBTO_TO7_Pos                     _UINT32_(7)                                          /* (CAN_TXBTO) Transmission Occurred 7 Position */
-#define CAN_TXBTO_TO7_Msk                     (_UINT32_(0x1) << CAN_TXBTO_TO7_Pos)                 /* (CAN_TXBTO) Transmission Occurred 7 Mask */
-#define CAN_TXBTO_TO7(value)                  (CAN_TXBTO_TO7_Msk & (_UINT32_(value) << CAN_TXBTO_TO7_Pos)) /* Assigment of value for TO7 in the CAN_TXBTO register */
-#define CAN_TXBTO_TO8_Pos                     _UINT32_(8)                                          /* (CAN_TXBTO) Transmission Occurred 8 Position */
-#define CAN_TXBTO_TO8_Msk                     (_UINT32_(0x1) << CAN_TXBTO_TO8_Pos)                 /* (CAN_TXBTO) Transmission Occurred 8 Mask */
-#define CAN_TXBTO_TO8(value)                  (CAN_TXBTO_TO8_Msk & (_UINT32_(value) << CAN_TXBTO_TO8_Pos)) /* Assigment of value for TO8 in the CAN_TXBTO register */
-#define CAN_TXBTO_TO9_Pos                     _UINT32_(9)                                          /* (CAN_TXBTO) Transmission Occurred 9 Position */
-#define CAN_TXBTO_TO9_Msk                     (_UINT32_(0x1) << CAN_TXBTO_TO9_Pos)                 /* (CAN_TXBTO) Transmission Occurred 9 Mask */
-#define CAN_TXBTO_TO9(value)                  (CAN_TXBTO_TO9_Msk & (_UINT32_(value) << CAN_TXBTO_TO9_Pos)) /* Assigment of value for TO9 in the CAN_TXBTO register */
-#define CAN_TXBTO_TO10_Pos                    _UINT32_(10)                                         /* (CAN_TXBTO) Transmission Occurred 10 Position */
-#define CAN_TXBTO_TO10_Msk                    (_UINT32_(0x1) << CAN_TXBTO_TO10_Pos)                /* (CAN_TXBTO) Transmission Occurred 10 Mask */
-#define CAN_TXBTO_TO10(value)                 (CAN_TXBTO_TO10_Msk & (_UINT32_(value) << CAN_TXBTO_TO10_Pos)) /* Assigment of value for TO10 in the CAN_TXBTO register */
-#define CAN_TXBTO_TO11_Pos                    _UINT32_(11)                                         /* (CAN_TXBTO) Transmission Occurred 11 Position */
-#define CAN_TXBTO_TO11_Msk                    (_UINT32_(0x1) << CAN_TXBTO_TO11_Pos)                /* (CAN_TXBTO) Transmission Occurred 11 Mask */
-#define CAN_TXBTO_TO11(value)                 (CAN_TXBTO_TO11_Msk & (_UINT32_(value) << CAN_TXBTO_TO11_Pos)) /* Assigment of value for TO11 in the CAN_TXBTO register */
-#define CAN_TXBTO_TO12_Pos                    _UINT32_(12)                                         /* (CAN_TXBTO) Transmission Occurred 12 Position */
-#define CAN_TXBTO_TO12_Msk                    (_UINT32_(0x1) << CAN_TXBTO_TO12_Pos)                /* (CAN_TXBTO) Transmission Occurred 12 Mask */
-#define CAN_TXBTO_TO12(value)                 (CAN_TXBTO_TO12_Msk & (_UINT32_(value) << CAN_TXBTO_TO12_Pos)) /* Assigment of value for TO12 in the CAN_TXBTO register */
-#define CAN_TXBTO_TO13_Pos                    _UINT32_(13)                                         /* (CAN_TXBTO) Transmission Occurred 13 Position */
-#define CAN_TXBTO_TO13_Msk                    (_UINT32_(0x1) << CAN_TXBTO_TO13_Pos)                /* (CAN_TXBTO) Transmission Occurred 13 Mask */
-#define CAN_TXBTO_TO13(value)                 (CAN_TXBTO_TO13_Msk & (_UINT32_(value) << CAN_TXBTO_TO13_Pos)) /* Assigment of value for TO13 in the CAN_TXBTO register */
-#define CAN_TXBTO_TO14_Pos                    _UINT32_(14)                                         /* (CAN_TXBTO) Transmission Occurred 14 Position */
-#define CAN_TXBTO_TO14_Msk                    (_UINT32_(0x1) << CAN_TXBTO_TO14_Pos)                /* (CAN_TXBTO) Transmission Occurred 14 Mask */
-#define CAN_TXBTO_TO14(value)                 (CAN_TXBTO_TO14_Msk & (_UINT32_(value) << CAN_TXBTO_TO14_Pos)) /* Assigment of value for TO14 in the CAN_TXBTO register */
-#define CAN_TXBTO_TO15_Pos                    _UINT32_(15)                                         /* (CAN_TXBTO) Transmission Occurred 15 Position */
-#define CAN_TXBTO_TO15_Msk                    (_UINT32_(0x1) << CAN_TXBTO_TO15_Pos)                /* (CAN_TXBTO) Transmission Occurred 15 Mask */
-#define CAN_TXBTO_TO15(value)                 (CAN_TXBTO_TO15_Msk & (_UINT32_(value) << CAN_TXBTO_TO15_Pos)) /* Assigment of value for TO15 in the CAN_TXBTO register */
-#define CAN_TXBTO_TO16_Pos                    _UINT32_(16)                                         /* (CAN_TXBTO) Transmission Occurred 16 Position */
-#define CAN_TXBTO_TO16_Msk                    (_UINT32_(0x1) << CAN_TXBTO_TO16_Pos)                /* (CAN_TXBTO) Transmission Occurred 16 Mask */
-#define CAN_TXBTO_TO16(value)                 (CAN_TXBTO_TO16_Msk & (_UINT32_(value) << CAN_TXBTO_TO16_Pos)) /* Assigment of value for TO16 in the CAN_TXBTO register */
-#define CAN_TXBTO_TO17_Pos                    _UINT32_(17)                                         /* (CAN_TXBTO) Transmission Occurred 17 Position */
-#define CAN_TXBTO_TO17_Msk                    (_UINT32_(0x1) << CAN_TXBTO_TO17_Pos)                /* (CAN_TXBTO) Transmission Occurred 17 Mask */
-#define CAN_TXBTO_TO17(value)                 (CAN_TXBTO_TO17_Msk & (_UINT32_(value) << CAN_TXBTO_TO17_Pos)) /* Assigment of value for TO17 in the CAN_TXBTO register */
-#define CAN_TXBTO_TO18_Pos                    _UINT32_(18)                                         /* (CAN_TXBTO) Transmission Occurred 18 Position */
-#define CAN_TXBTO_TO18_Msk                    (_UINT32_(0x1) << CAN_TXBTO_TO18_Pos)                /* (CAN_TXBTO) Transmission Occurred 18 Mask */
-#define CAN_TXBTO_TO18(value)                 (CAN_TXBTO_TO18_Msk & (_UINT32_(value) << CAN_TXBTO_TO18_Pos)) /* Assigment of value for TO18 in the CAN_TXBTO register */
-#define CAN_TXBTO_TO19_Pos                    _UINT32_(19)                                         /* (CAN_TXBTO) Transmission Occurred 19 Position */
-#define CAN_TXBTO_TO19_Msk                    (_UINT32_(0x1) << CAN_TXBTO_TO19_Pos)                /* (CAN_TXBTO) Transmission Occurred 19 Mask */
-#define CAN_TXBTO_TO19(value)                 (CAN_TXBTO_TO19_Msk & (_UINT32_(value) << CAN_TXBTO_TO19_Pos)) /* Assigment of value for TO19 in the CAN_TXBTO register */
-#define CAN_TXBTO_TO20_Pos                    _UINT32_(20)                                         /* (CAN_TXBTO) Transmission Occurred 20 Position */
-#define CAN_TXBTO_TO20_Msk                    (_UINT32_(0x1) << CAN_TXBTO_TO20_Pos)                /* (CAN_TXBTO) Transmission Occurred 20 Mask */
-#define CAN_TXBTO_TO20(value)                 (CAN_TXBTO_TO20_Msk & (_UINT32_(value) << CAN_TXBTO_TO20_Pos)) /* Assigment of value for TO20 in the CAN_TXBTO register */
-#define CAN_TXBTO_TO21_Pos                    _UINT32_(21)                                         /* (CAN_TXBTO) Transmission Occurred 21 Position */
-#define CAN_TXBTO_TO21_Msk                    (_UINT32_(0x1) << CAN_TXBTO_TO21_Pos)                /* (CAN_TXBTO) Transmission Occurred 21 Mask */
-#define CAN_TXBTO_TO21(value)                 (CAN_TXBTO_TO21_Msk & (_UINT32_(value) << CAN_TXBTO_TO21_Pos)) /* Assigment of value for TO21 in the CAN_TXBTO register */
-#define CAN_TXBTO_TO22_Pos                    _UINT32_(22)                                         /* (CAN_TXBTO) Transmission Occurred 22 Position */
-#define CAN_TXBTO_TO22_Msk                    (_UINT32_(0x1) << CAN_TXBTO_TO22_Pos)                /* (CAN_TXBTO) Transmission Occurred 22 Mask */
-#define CAN_TXBTO_TO22(value)                 (CAN_TXBTO_TO22_Msk & (_UINT32_(value) << CAN_TXBTO_TO22_Pos)) /* Assigment of value for TO22 in the CAN_TXBTO register */
-#define CAN_TXBTO_TO23_Pos                    _UINT32_(23)                                         /* (CAN_TXBTO) Transmission Occurred 23 Position */
-#define CAN_TXBTO_TO23_Msk                    (_UINT32_(0x1) << CAN_TXBTO_TO23_Pos)                /* (CAN_TXBTO) Transmission Occurred 23 Mask */
-#define CAN_TXBTO_TO23(value)                 (CAN_TXBTO_TO23_Msk & (_UINT32_(value) << CAN_TXBTO_TO23_Pos)) /* Assigment of value for TO23 in the CAN_TXBTO register */
-#define CAN_TXBTO_TO24_Pos                    _UINT32_(24)                                         /* (CAN_TXBTO) Transmission Occurred 24 Position */
-#define CAN_TXBTO_TO24_Msk                    (_UINT32_(0x1) << CAN_TXBTO_TO24_Pos)                /* (CAN_TXBTO) Transmission Occurred 24 Mask */
-#define CAN_TXBTO_TO24(value)                 (CAN_TXBTO_TO24_Msk & (_UINT32_(value) << CAN_TXBTO_TO24_Pos)) /* Assigment of value for TO24 in the CAN_TXBTO register */
-#define CAN_TXBTO_TO25_Pos                    _UINT32_(25)                                         /* (CAN_TXBTO) Transmission Occurred 25 Position */
-#define CAN_TXBTO_TO25_Msk                    (_UINT32_(0x1) << CAN_TXBTO_TO25_Pos)                /* (CAN_TXBTO) Transmission Occurred 25 Mask */
-#define CAN_TXBTO_TO25(value)                 (CAN_TXBTO_TO25_Msk & (_UINT32_(value) << CAN_TXBTO_TO25_Pos)) /* Assigment of value for TO25 in the CAN_TXBTO register */
-#define CAN_TXBTO_TO26_Pos                    _UINT32_(26)                                         /* (CAN_TXBTO) Transmission Occurred 26 Position */
-#define CAN_TXBTO_TO26_Msk                    (_UINT32_(0x1) << CAN_TXBTO_TO26_Pos)                /* (CAN_TXBTO) Transmission Occurred 26 Mask */
-#define CAN_TXBTO_TO26(value)                 (CAN_TXBTO_TO26_Msk & (_UINT32_(value) << CAN_TXBTO_TO26_Pos)) /* Assigment of value for TO26 in the CAN_TXBTO register */
-#define CAN_TXBTO_TO27_Pos                    _UINT32_(27)                                         /* (CAN_TXBTO) Transmission Occurred 27 Position */
-#define CAN_TXBTO_TO27_Msk                    (_UINT32_(0x1) << CAN_TXBTO_TO27_Pos)                /* (CAN_TXBTO) Transmission Occurred 27 Mask */
-#define CAN_TXBTO_TO27(value)                 (CAN_TXBTO_TO27_Msk & (_UINT32_(value) << CAN_TXBTO_TO27_Pos)) /* Assigment of value for TO27 in the CAN_TXBTO register */
-#define CAN_TXBTO_TO28_Pos                    _UINT32_(28)                                         /* (CAN_TXBTO) Transmission Occurred 28 Position */
-#define CAN_TXBTO_TO28_Msk                    (_UINT32_(0x1) << CAN_TXBTO_TO28_Pos)                /* (CAN_TXBTO) Transmission Occurred 28 Mask */
-#define CAN_TXBTO_TO28(value)                 (CAN_TXBTO_TO28_Msk & (_UINT32_(value) << CAN_TXBTO_TO28_Pos)) /* Assigment of value for TO28 in the CAN_TXBTO register */
-#define CAN_TXBTO_TO29_Pos                    _UINT32_(29)                                         /* (CAN_TXBTO) Transmission Occurred 29 Position */
-#define CAN_TXBTO_TO29_Msk                    (_UINT32_(0x1) << CAN_TXBTO_TO29_Pos)                /* (CAN_TXBTO) Transmission Occurred 29 Mask */
-#define CAN_TXBTO_TO29(value)                 (CAN_TXBTO_TO29_Msk & (_UINT32_(value) << CAN_TXBTO_TO29_Pos)) /* Assigment of value for TO29 in the CAN_TXBTO register */
-#define CAN_TXBTO_TO30_Pos                    _UINT32_(30)                                         /* (CAN_TXBTO) Transmission Occurred 30 Position */
-#define CAN_TXBTO_TO30_Msk                    (_UINT32_(0x1) << CAN_TXBTO_TO30_Pos)                /* (CAN_TXBTO) Transmission Occurred 30 Mask */
-#define CAN_TXBTO_TO30(value)                 (CAN_TXBTO_TO30_Msk & (_UINT32_(value) << CAN_TXBTO_TO30_Pos)) /* Assigment of value for TO30 in the CAN_TXBTO register */
-#define CAN_TXBTO_TO31_Pos                    _UINT32_(31)                                         /* (CAN_TXBTO) Transmission Occurred 31 Position */
-#define CAN_TXBTO_TO31_Msk                    (_UINT32_(0x1) << CAN_TXBTO_TO31_Pos)                /* (CAN_TXBTO) Transmission Occurred 31 Mask */
-#define CAN_TXBTO_TO31(value)                 (CAN_TXBTO_TO31_Msk & (_UINT32_(value) << CAN_TXBTO_TO31_Pos)) /* Assigment of value for TO31 in the CAN_TXBTO register */
-#define CAN_TXBTO_Msk                         _UINT32_(0xFFFFFFFF)                                 /* (CAN_TXBTO) Register Mask  */
-
-#define CAN_TXBTO_TO_Pos                      _UINT32_(0)                                          /* (CAN_TXBTO Position) Transmission Occurred 3x */
-#define CAN_TXBTO_TO_Msk                      (_UINT32_(0xFFFFFFFF) << CAN_TXBTO_TO_Pos)           /* (CAN_TXBTO Mask) TO */
-#define CAN_TXBTO_TO(value)                   (CAN_TXBTO_TO_Msk & (_UINT32_(value) << CAN_TXBTO_TO_Pos)) 
 
 /* -------- CAN_TXBCF : (CAN Offset: 0xDC) ( R/ 32) Tx Buffer Cancellation Finished -------- */
 #define CAN_TXBCF_RESETVALUE                  _UINT32_(0x00)                                       /*  (CAN_TXBCF) Tx Buffer Cancellation Finished  Reset Value */
@@ -2054,111 +1684,6 @@
 #define CAN_TXBCF_CF_Msk                      (_UINT32_(0xFFFFFFFF) << CAN_TXBCF_CF_Pos)           /* (CAN_TXBCF Mask) CF */
 #define CAN_TXBCF_CF(value)                   (CAN_TXBCF_CF_Msk & (_UINT32_(value) << CAN_TXBCF_CF_Pos)) 
 
-/* -------- CAN_TXBTIE : (CAN Offset: 0xE0) (R/W 32) Tx Buffer Transmission Interrupt Enable -------- */
-#define CAN_TXBTIE_RESETVALUE                 _UINT32_(0x00)                                       /*  (CAN_TXBTIE) Tx Buffer Transmission Interrupt Enable  Reset Value */
-
-#define CAN_TXBTIE_TIE0_Pos                   _UINT32_(0)                                          /* (CAN_TXBTIE) Transmission Interrupt Enable 0 Position */
-#define CAN_TXBTIE_TIE0_Msk                   (_UINT32_(0x1) << CAN_TXBTIE_TIE0_Pos)               /* (CAN_TXBTIE) Transmission Interrupt Enable 0 Mask */
-#define CAN_TXBTIE_TIE0(value)                (CAN_TXBTIE_TIE0_Msk & (_UINT32_(value) << CAN_TXBTIE_TIE0_Pos)) /* Assigment of value for TIE0 in the CAN_TXBTIE register */
-#define CAN_TXBTIE_TIE1_Pos                   _UINT32_(1)                                          /* (CAN_TXBTIE) Transmission Interrupt Enable 1 Position */
-#define CAN_TXBTIE_TIE1_Msk                   (_UINT32_(0x1) << CAN_TXBTIE_TIE1_Pos)               /* (CAN_TXBTIE) Transmission Interrupt Enable 1 Mask */
-#define CAN_TXBTIE_TIE1(value)                (CAN_TXBTIE_TIE1_Msk & (_UINT32_(value) << CAN_TXBTIE_TIE1_Pos)) /* Assigment of value for TIE1 in the CAN_TXBTIE register */
-#define CAN_TXBTIE_TIE2_Pos                   _UINT32_(2)                                          /* (CAN_TXBTIE) Transmission Interrupt Enable 2 Position */
-#define CAN_TXBTIE_TIE2_Msk                   (_UINT32_(0x1) << CAN_TXBTIE_TIE2_Pos)               /* (CAN_TXBTIE) Transmission Interrupt Enable 2 Mask */
-#define CAN_TXBTIE_TIE2(value)                (CAN_TXBTIE_TIE2_Msk & (_UINT32_(value) << CAN_TXBTIE_TIE2_Pos)) /* Assigment of value for TIE2 in the CAN_TXBTIE register */
-#define CAN_TXBTIE_TIE3_Pos                   _UINT32_(3)                                          /* (CAN_TXBTIE) Transmission Interrupt Enable 3 Position */
-#define CAN_TXBTIE_TIE3_Msk                   (_UINT32_(0x1) << CAN_TXBTIE_TIE3_Pos)               /* (CAN_TXBTIE) Transmission Interrupt Enable 3 Mask */
-#define CAN_TXBTIE_TIE3(value)                (CAN_TXBTIE_TIE3_Msk & (_UINT32_(value) << CAN_TXBTIE_TIE3_Pos)) /* Assigment of value for TIE3 in the CAN_TXBTIE register */
-#define CAN_TXBTIE_TIE4_Pos                   _UINT32_(4)                                          /* (CAN_TXBTIE) Transmission Interrupt Enable 4 Position */
-#define CAN_TXBTIE_TIE4_Msk                   (_UINT32_(0x1) << CAN_TXBTIE_TIE4_Pos)               /* (CAN_TXBTIE) Transmission Interrupt Enable 4 Mask */
-#define CAN_TXBTIE_TIE4(value)                (CAN_TXBTIE_TIE4_Msk & (_UINT32_(value) << CAN_TXBTIE_TIE4_Pos)) /* Assigment of value for TIE4 in the CAN_TXBTIE register */
-#define CAN_TXBTIE_TIE5_Pos                   _UINT32_(5)                                          /* (CAN_TXBTIE) Transmission Interrupt Enable 5 Position */
-#define CAN_TXBTIE_TIE5_Msk                   (_UINT32_(0x1) << CAN_TXBTIE_TIE5_Pos)               /* (CAN_TXBTIE) Transmission Interrupt Enable 5 Mask */
-#define CAN_TXBTIE_TIE5(value)                (CAN_TXBTIE_TIE5_Msk & (_UINT32_(value) << CAN_TXBTIE_TIE5_Pos)) /* Assigment of value for TIE5 in the CAN_TXBTIE register */
-#define CAN_TXBTIE_TIE6_Pos                   _UINT32_(6)                                          /* (CAN_TXBTIE) Transmission Interrupt Enable 6 Position */
-#define CAN_TXBTIE_TIE6_Msk                   (_UINT32_(0x1) << CAN_TXBTIE_TIE6_Pos)               /* (CAN_TXBTIE) Transmission Interrupt Enable 6 Mask */
-#define CAN_TXBTIE_TIE6(value)                (CAN_TXBTIE_TIE6_Msk & (_UINT32_(value) << CAN_TXBTIE_TIE6_Pos)) /* Assigment of value for TIE6 in the CAN_TXBTIE register */
-#define CAN_TXBTIE_TIE7_Pos                   _UINT32_(7)                                          /* (CAN_TXBTIE) Transmission Interrupt Enable 7 Position */
-#define CAN_TXBTIE_TIE7_Msk                   (_UINT32_(0x1) << CAN_TXBTIE_TIE7_Pos)               /* (CAN_TXBTIE) Transmission Interrupt Enable 7 Mask */
-#define CAN_TXBTIE_TIE7(value)                (CAN_TXBTIE_TIE7_Msk & (_UINT32_(value) << CAN_TXBTIE_TIE7_Pos)) /* Assigment of value for TIE7 in the CAN_TXBTIE register */
-#define CAN_TXBTIE_TIE8_Pos                   _UINT32_(8)                                          /* (CAN_TXBTIE) Transmission Interrupt Enable 8 Position */
-#define CAN_TXBTIE_TIE8_Msk                   (_UINT32_(0x1) << CAN_TXBTIE_TIE8_Pos)               /* (CAN_TXBTIE) Transmission Interrupt Enable 8 Mask */
-#define CAN_TXBTIE_TIE8(value)                (CAN_TXBTIE_TIE8_Msk & (_UINT32_(value) << CAN_TXBTIE_TIE8_Pos)) /* Assigment of value for TIE8 in the CAN_TXBTIE register */
-#define CAN_TXBTIE_TIE9_Pos                   _UINT32_(9)                                          /* (CAN_TXBTIE) Transmission Interrupt Enable 9 Position */
-#define CAN_TXBTIE_TIE9_Msk                   (_UINT32_(0x1) << CAN_TXBTIE_TIE9_Pos)               /* (CAN_TXBTIE) Transmission Interrupt Enable 9 Mask */
-#define CAN_TXBTIE_TIE9(value)                (CAN_TXBTIE_TIE9_Msk & (_UINT32_(value) << CAN_TXBTIE_TIE9_Pos)) /* Assigment of value for TIE9 in the CAN_TXBTIE register */
-#define CAN_TXBTIE_TIE10_Pos                  _UINT32_(10)                                         /* (CAN_TXBTIE) Transmission Interrupt Enable 10 Position */
-#define CAN_TXBTIE_TIE10_Msk                  (_UINT32_(0x1) << CAN_TXBTIE_TIE10_Pos)              /* (CAN_TXBTIE) Transmission Interrupt Enable 10 Mask */
-#define CAN_TXBTIE_TIE10(value)               (CAN_TXBTIE_TIE10_Msk & (_UINT32_(value) << CAN_TXBTIE_TIE10_Pos)) /* Assigment of value for TIE10 in the CAN_TXBTIE register */
-#define CAN_TXBTIE_TIE11_Pos                  _UINT32_(11)                                         /* (CAN_TXBTIE) Transmission Interrupt Enable 11 Position */
-#define CAN_TXBTIE_TIE11_Msk                  (_UINT32_(0x1) << CAN_TXBTIE_TIE11_Pos)              /* (CAN_TXBTIE) Transmission Interrupt Enable 11 Mask */
-#define CAN_TXBTIE_TIE11(value)               (CAN_TXBTIE_TIE11_Msk & (_UINT32_(value) << CAN_TXBTIE_TIE11_Pos)) /* Assigment of value for TIE11 in the CAN_TXBTIE register */
-#define CAN_TXBTIE_TIE12_Pos                  _UINT32_(12)                                         /* (CAN_TXBTIE) Transmission Interrupt Enable 12 Position */
-#define CAN_TXBTIE_TIE12_Msk                  (_UINT32_(0x1) << CAN_TXBTIE_TIE12_Pos)              /* (CAN_TXBTIE) Transmission Interrupt Enable 12 Mask */
-#define CAN_TXBTIE_TIE12(value)               (CAN_TXBTIE_TIE12_Msk & (_UINT32_(value) << CAN_TXBTIE_TIE12_Pos)) /* Assigment of value for TIE12 in the CAN_TXBTIE register */
-#define CAN_TXBTIE_TIE13_Pos                  _UINT32_(13)                                         /* (CAN_TXBTIE) Transmission Interrupt Enable 13 Position */
-#define CAN_TXBTIE_TIE13_Msk                  (_UINT32_(0x1) << CAN_TXBTIE_TIE13_Pos)              /* (CAN_TXBTIE) Transmission Interrupt Enable 13 Mask */
-#define CAN_TXBTIE_TIE13(value)               (CAN_TXBTIE_TIE13_Msk & (_UINT32_(value) << CAN_TXBTIE_TIE13_Pos)) /* Assigment of value for TIE13 in the CAN_TXBTIE register */
-#define CAN_TXBTIE_TIE14_Pos                  _UINT32_(14)                                         /* (CAN_TXBTIE) Transmission Interrupt Enable 14 Position */
-#define CAN_TXBTIE_TIE14_Msk                  (_UINT32_(0x1) << CAN_TXBTIE_TIE14_Pos)              /* (CAN_TXBTIE) Transmission Interrupt Enable 14 Mask */
-#define CAN_TXBTIE_TIE14(value)               (CAN_TXBTIE_TIE14_Msk & (_UINT32_(value) << CAN_TXBTIE_TIE14_Pos)) /* Assigment of value for TIE14 in the CAN_TXBTIE register */
-#define CAN_TXBTIE_TIE15_Pos                  _UINT32_(15)                                         /* (CAN_TXBTIE) Transmission Interrupt Enable 15 Position */
-#define CAN_TXBTIE_TIE15_Msk                  (_UINT32_(0x1) << CAN_TXBTIE_TIE15_Pos)              /* (CAN_TXBTIE) Transmission Interrupt Enable 15 Mask */
-#define CAN_TXBTIE_TIE15(value)               (CAN_TXBTIE_TIE15_Msk & (_UINT32_(value) << CAN_TXBTIE_TIE15_Pos)) /* Assigment of value for TIE15 in the CAN_TXBTIE register */
-#define CAN_TXBTIE_TIE16_Pos                  _UINT32_(16)                                         /* (CAN_TXBTIE) Transmission Interrupt Enable 16 Position */
-#define CAN_TXBTIE_TIE16_Msk                  (_UINT32_(0x1) << CAN_TXBTIE_TIE16_Pos)              /* (CAN_TXBTIE) Transmission Interrupt Enable 16 Mask */
-#define CAN_TXBTIE_TIE16(value)               (CAN_TXBTIE_TIE16_Msk & (_UINT32_(value) << CAN_TXBTIE_TIE16_Pos)) /* Assigment of value for TIE16 in the CAN_TXBTIE register */
-#define CAN_TXBTIE_TIE17_Pos                  _UINT32_(17)                                         /* (CAN_TXBTIE) Transmission Interrupt Enable 17 Position */
-#define CAN_TXBTIE_TIE17_Msk                  (_UINT32_(0x1) << CAN_TXBTIE_TIE17_Pos)              /* (CAN_TXBTIE) Transmission Interrupt Enable 17 Mask */
-#define CAN_TXBTIE_TIE17(value)               (CAN_TXBTIE_TIE17_Msk & (_UINT32_(value) << CAN_TXBTIE_TIE17_Pos)) /* Assigment of value for TIE17 in the CAN_TXBTIE register */
-#define CAN_TXBTIE_TIE18_Pos                  _UINT32_(18)                                         /* (CAN_TXBTIE) Transmission Interrupt Enable 18 Position */
-#define CAN_TXBTIE_TIE18_Msk                  (_UINT32_(0x1) << CAN_TXBTIE_TIE18_Pos)              /* (CAN_TXBTIE) Transmission Interrupt Enable 18 Mask */
-#define CAN_TXBTIE_TIE18(value)               (CAN_TXBTIE_TIE18_Msk & (_UINT32_(value) << CAN_TXBTIE_TIE18_Pos)) /* Assigment of value for TIE18 in the CAN_TXBTIE register */
-#define CAN_TXBTIE_TIE19_Pos                  _UINT32_(19)                                         /* (CAN_TXBTIE) Transmission Interrupt Enable 19 Position */
-#define CAN_TXBTIE_TIE19_Msk                  (_UINT32_(0x1) << CAN_TXBTIE_TIE19_Pos)              /* (CAN_TXBTIE) Transmission Interrupt Enable 19 Mask */
-#define CAN_TXBTIE_TIE19(value)               (CAN_TXBTIE_TIE19_Msk & (_UINT32_(value) << CAN_TXBTIE_TIE19_Pos)) /* Assigment of value for TIE19 in the CAN_TXBTIE register */
-#define CAN_TXBTIE_TIE20_Pos                  _UINT32_(20)                                         /* (CAN_TXBTIE) Transmission Interrupt Enable 20 Position */
-#define CAN_TXBTIE_TIE20_Msk                  (_UINT32_(0x1) << CAN_TXBTIE_TIE20_Pos)              /* (CAN_TXBTIE) Transmission Interrupt Enable 20 Mask */
-#define CAN_TXBTIE_TIE20(value)               (CAN_TXBTIE_TIE20_Msk & (_UINT32_(value) << CAN_TXBTIE_TIE20_Pos)) /* Assigment of value for TIE20 in the CAN_TXBTIE register */
-#define CAN_TXBTIE_TIE21_Pos                  _UINT32_(21)                                         /* (CAN_TXBTIE) Transmission Interrupt Enable 21 Position */
-#define CAN_TXBTIE_TIE21_Msk                  (_UINT32_(0x1) << CAN_TXBTIE_TIE21_Pos)              /* (CAN_TXBTIE) Transmission Interrupt Enable 21 Mask */
-#define CAN_TXBTIE_TIE21(value)               (CAN_TXBTIE_TIE21_Msk & (_UINT32_(value) << CAN_TXBTIE_TIE21_Pos)) /* Assigment of value for TIE21 in the CAN_TXBTIE register */
-#define CAN_TXBTIE_TIE22_Pos                  _UINT32_(22)                                         /* (CAN_TXBTIE) Transmission Interrupt Enable 22 Position */
-#define CAN_TXBTIE_TIE22_Msk                  (_UINT32_(0x1) << CAN_TXBTIE_TIE22_Pos)              /* (CAN_TXBTIE) Transmission Interrupt Enable 22 Mask */
-#define CAN_TXBTIE_TIE22(value)               (CAN_TXBTIE_TIE22_Msk & (_UINT32_(value) << CAN_TXBTIE_TIE22_Pos)) /* Assigment of value for TIE22 in the CAN_TXBTIE register */
-#define CAN_TXBTIE_TIE23_Pos                  _UINT32_(23)                                         /* (CAN_TXBTIE) Transmission Interrupt Enable 23 Position */
-#define CAN_TXBTIE_TIE23_Msk                  (_UINT32_(0x1) << CAN_TXBTIE_TIE23_Pos)              /* (CAN_TXBTIE) Transmission Interrupt Enable 23 Mask */
-#define CAN_TXBTIE_TIE23(value)               (CAN_TXBTIE_TIE23_Msk & (_UINT32_(value) << CAN_TXBTIE_TIE23_Pos)) /* Assigment of value for TIE23 in the CAN_TXBTIE register */
-#define CAN_TXBTIE_TIE24_Pos                  _UINT32_(24)                                         /* (CAN_TXBTIE) Transmission Interrupt Enable 24 Position */
-#define CAN_TXBTIE_TIE24_Msk                  (_UINT32_(0x1) << CAN_TXBTIE_TIE24_Pos)              /* (CAN_TXBTIE) Transmission Interrupt Enable 24 Mask */
-#define CAN_TXBTIE_TIE24(value)               (CAN_TXBTIE_TIE24_Msk & (_UINT32_(value) << CAN_TXBTIE_TIE24_Pos)) /* Assigment of value for TIE24 in the CAN_TXBTIE register */
-#define CAN_TXBTIE_TIE25_Pos                  _UINT32_(25)                                         /* (CAN_TXBTIE) Transmission Interrupt Enable 25 Position */
-#define CAN_TXBTIE_TIE25_Msk                  (_UINT32_(0x1) << CAN_TXBTIE_TIE25_Pos)              /* (CAN_TXBTIE) Transmission Interrupt Enable 25 Mask */
-#define CAN_TXBTIE_TIE25(value)               (CAN_TXBTIE_TIE25_Msk & (_UINT32_(value) << CAN_TXBTIE_TIE25_Pos)) /* Assigment of value for TIE25 in the CAN_TXBTIE register */
-#define CAN_TXBTIE_TIE26_Pos                  _UINT32_(26)                                         /* (CAN_TXBTIE) Transmission Interrupt Enable 26 Position */
-#define CAN_TXBTIE_TIE26_Msk                  (_UINT32_(0x1) << CAN_TXBTIE_TIE26_Pos)              /* (CAN_TXBTIE) Transmission Interrupt Enable 26 Mask */
-#define CAN_TXBTIE_TIE26(value)               (CAN_TXBTIE_TIE26_Msk & (_UINT32_(value) << CAN_TXBTIE_TIE26_Pos)) /* Assigment of value for TIE26 in the CAN_TXBTIE register */
-#define CAN_TXBTIE_TIE27_Pos                  _UINT32_(27)                                         /* (CAN_TXBTIE) Transmission Interrupt Enable 27 Position */
-#define CAN_TXBTIE_TIE27_Msk                  (_UINT32_(0x1) << CAN_TXBTIE_TIE27_Pos)              /* (CAN_TXBTIE) Transmission Interrupt Enable 27 Mask */
-#define CAN_TXBTIE_TIE27(value)               (CAN_TXBTIE_TIE27_Msk & (_UINT32_(value) << CAN_TXBTIE_TIE27_Pos)) /* Assigment of value for TIE27 in the CAN_TXBTIE register */
-#define CAN_TXBTIE_TIE28_Pos                  _UINT32_(28)                                         /* (CAN_TXBTIE) Transmission Interrupt Enable 28 Position */
-#define CAN_TXBTIE_TIE28_Msk                  (_UINT32_(0x1) << CAN_TXBTIE_TIE28_Pos)              /* (CAN_TXBTIE) Transmission Interrupt Enable 28 Mask */
-#define CAN_TXBTIE_TIE28(value)               (CAN_TXBTIE_TIE28_Msk & (_UINT32_(value) << CAN_TXBTIE_TIE28_Pos)) /* Assigment of value for TIE28 in the CAN_TXBTIE register */
-#define CAN_TXBTIE_TIE29_Pos                  _UINT32_(29)                                         /* (CAN_TXBTIE) Transmission Interrupt Enable 29 Position */
-#define CAN_TXBTIE_TIE29_Msk                  (_UINT32_(0x1) << CAN_TXBTIE_TIE29_Pos)              /* (CAN_TXBTIE) Transmission Interrupt Enable 29 Mask */
-#define CAN_TXBTIE_TIE29(value)               (CAN_TXBTIE_TIE29_Msk & (_UINT32_(value) << CAN_TXBTIE_TIE29_Pos)) /* Assigment of value for TIE29 in the CAN_TXBTIE register */
-#define CAN_TXBTIE_TIE30_Pos                  _UINT32_(30)                                         /* (CAN_TXBTIE) Transmission Interrupt Enable 30 Position */
-#define CAN_TXBTIE_TIE30_Msk                  (_UINT32_(0x1) << CAN_TXBTIE_TIE30_Pos)              /* (CAN_TXBTIE) Transmission Interrupt Enable 30 Mask */
-#define CAN_TXBTIE_TIE30(value)               (CAN_TXBTIE_TIE30_Msk & (_UINT32_(value) << CAN_TXBTIE_TIE30_Pos)) /* Assigment of value for TIE30 in the CAN_TXBTIE register */
-#define CAN_TXBTIE_TIE31_Pos                  _UINT32_(31)                                         /* (CAN_TXBTIE) Transmission Interrupt Enable 31 Position */
-#define CAN_TXBTIE_TIE31_Msk                  (_UINT32_(0x1) << CAN_TXBTIE_TIE31_Pos)              /* (CAN_TXBTIE) Transmission Interrupt Enable 31 Mask */
-#define CAN_TXBTIE_TIE31(value)               (CAN_TXBTIE_TIE31_Msk & (_UINT32_(value) << CAN_TXBTIE_TIE31_Pos)) /* Assigment of value for TIE31 in the CAN_TXBTIE register */
-#define CAN_TXBTIE_Msk                        _UINT32_(0xFFFFFFFF)                                 /* (CAN_TXBTIE) Register Mask  */
-
-#define CAN_TXBTIE_TIE_Pos                    _UINT32_(0)                                          /* (CAN_TXBTIE Position) Transmission Interrupt Enable 3x */
-#define CAN_TXBTIE_TIE_Msk                    (_UINT32_(0xFFFFFFFF) << CAN_TXBTIE_TIE_Pos)         /* (CAN_TXBTIE Mask) TIE */
-#define CAN_TXBTIE_TIE(value)                 (CAN_TXBTIE_TIE_Msk & (_UINT32_(value) << CAN_TXBTIE_TIE_Pos)) 
-
 /* -------- CAN_TXBCIE : (CAN Offset: 0xE4) (R/W 32) Tx Buffer Cancellation Finished Interrupt Enable -------- */
 #define CAN_TXBCIE_RESETVALUE                 _UINT32_(0x00)                                       /*  (CAN_TXBCIE) Tx Buffer Cancellation Finished Interrupt Enable  Reset Value */
 
@@ -2264,6 +1789,435 @@
 #define CAN_TXBCIE_CFIE_Msk                   (_UINT32_(0xFFFFFFFF) << CAN_TXBCIE_CFIE_Pos)        /* (CAN_TXBCIE Mask) CFIE */
 #define CAN_TXBCIE_CFIE(value)                (CAN_TXBCIE_CFIE_Msk & (_UINT32_(value) << CAN_TXBCIE_CFIE_Pos)) 
 
+/* -------- CAN_TXBCR : (CAN Offset: 0xD4) (R/W 32) Tx Buffer Cancellation Request -------- */
+#define CAN_TXBCR_RESETVALUE                  _UINT32_(0x00)                                       /*  (CAN_TXBCR) Tx Buffer Cancellation Request  Reset Value */
+
+#define CAN_TXBCR_CR0_Pos                     _UINT32_(0)                                          /* (CAN_TXBCR) Cancellation Request 0 Position */
+#define CAN_TXBCR_CR0_Msk                     (_UINT32_(0x1) << CAN_TXBCR_CR0_Pos)                 /* (CAN_TXBCR) Cancellation Request 0 Mask */
+#define CAN_TXBCR_CR0(value)                  (CAN_TXBCR_CR0_Msk & (_UINT32_(value) << CAN_TXBCR_CR0_Pos)) /* Assigment of value for CR0 in the CAN_TXBCR register */
+#define CAN_TXBCR_CR1_Pos                     _UINT32_(1)                                          /* (CAN_TXBCR) Cancellation Request 1 Position */
+#define CAN_TXBCR_CR1_Msk                     (_UINT32_(0x1) << CAN_TXBCR_CR1_Pos)                 /* (CAN_TXBCR) Cancellation Request 1 Mask */
+#define CAN_TXBCR_CR1(value)                  (CAN_TXBCR_CR1_Msk & (_UINT32_(value) << CAN_TXBCR_CR1_Pos)) /* Assigment of value for CR1 in the CAN_TXBCR register */
+#define CAN_TXBCR_CR2_Pos                     _UINT32_(2)                                          /* (CAN_TXBCR) Cancellation Request 2 Position */
+#define CAN_TXBCR_CR2_Msk                     (_UINT32_(0x1) << CAN_TXBCR_CR2_Pos)                 /* (CAN_TXBCR) Cancellation Request 2 Mask */
+#define CAN_TXBCR_CR2(value)                  (CAN_TXBCR_CR2_Msk & (_UINT32_(value) << CAN_TXBCR_CR2_Pos)) /* Assigment of value for CR2 in the CAN_TXBCR register */
+#define CAN_TXBCR_CR3_Pos                     _UINT32_(3)                                          /* (CAN_TXBCR) Cancellation Request 3 Position */
+#define CAN_TXBCR_CR3_Msk                     (_UINT32_(0x1) << CAN_TXBCR_CR3_Pos)                 /* (CAN_TXBCR) Cancellation Request 3 Mask */
+#define CAN_TXBCR_CR3(value)                  (CAN_TXBCR_CR3_Msk & (_UINT32_(value) << CAN_TXBCR_CR3_Pos)) /* Assigment of value for CR3 in the CAN_TXBCR register */
+#define CAN_TXBCR_CR4_Pos                     _UINT32_(4)                                          /* (CAN_TXBCR) Cancellation Request 4 Position */
+#define CAN_TXBCR_CR4_Msk                     (_UINT32_(0x1) << CAN_TXBCR_CR4_Pos)                 /* (CAN_TXBCR) Cancellation Request 4 Mask */
+#define CAN_TXBCR_CR4(value)                  (CAN_TXBCR_CR4_Msk & (_UINT32_(value) << CAN_TXBCR_CR4_Pos)) /* Assigment of value for CR4 in the CAN_TXBCR register */
+#define CAN_TXBCR_CR5_Pos                     _UINT32_(5)                                          /* (CAN_TXBCR) Cancellation Request 5 Position */
+#define CAN_TXBCR_CR5_Msk                     (_UINT32_(0x1) << CAN_TXBCR_CR5_Pos)                 /* (CAN_TXBCR) Cancellation Request 5 Mask */
+#define CAN_TXBCR_CR5(value)                  (CAN_TXBCR_CR5_Msk & (_UINT32_(value) << CAN_TXBCR_CR5_Pos)) /* Assigment of value for CR5 in the CAN_TXBCR register */
+#define CAN_TXBCR_CR6_Pos                     _UINT32_(6)                                          /* (CAN_TXBCR) Cancellation Request 6 Position */
+#define CAN_TXBCR_CR6_Msk                     (_UINT32_(0x1) << CAN_TXBCR_CR6_Pos)                 /* (CAN_TXBCR) Cancellation Request 6 Mask */
+#define CAN_TXBCR_CR6(value)                  (CAN_TXBCR_CR6_Msk & (_UINT32_(value) << CAN_TXBCR_CR6_Pos)) /* Assigment of value for CR6 in the CAN_TXBCR register */
+#define CAN_TXBCR_CR7_Pos                     _UINT32_(7)                                          /* (CAN_TXBCR) Cancellation Request 7 Position */
+#define CAN_TXBCR_CR7_Msk                     (_UINT32_(0x1) << CAN_TXBCR_CR7_Pos)                 /* (CAN_TXBCR) Cancellation Request 7 Mask */
+#define CAN_TXBCR_CR7(value)                  (CAN_TXBCR_CR7_Msk & (_UINT32_(value) << CAN_TXBCR_CR7_Pos)) /* Assigment of value for CR7 in the CAN_TXBCR register */
+#define CAN_TXBCR_CR8_Pos                     _UINT32_(8)                                          /* (CAN_TXBCR) Cancellation Request 8 Position */
+#define CAN_TXBCR_CR8_Msk                     (_UINT32_(0x1) << CAN_TXBCR_CR8_Pos)                 /* (CAN_TXBCR) Cancellation Request 8 Mask */
+#define CAN_TXBCR_CR8(value)                  (CAN_TXBCR_CR8_Msk & (_UINT32_(value) << CAN_TXBCR_CR8_Pos)) /* Assigment of value for CR8 in the CAN_TXBCR register */
+#define CAN_TXBCR_CR9_Pos                     _UINT32_(9)                                          /* (CAN_TXBCR) Cancellation Request 9 Position */
+#define CAN_TXBCR_CR9_Msk                     (_UINT32_(0x1) << CAN_TXBCR_CR9_Pos)                 /* (CAN_TXBCR) Cancellation Request 9 Mask */
+#define CAN_TXBCR_CR9(value)                  (CAN_TXBCR_CR9_Msk & (_UINT32_(value) << CAN_TXBCR_CR9_Pos)) /* Assigment of value for CR9 in the CAN_TXBCR register */
+#define CAN_TXBCR_CR10_Pos                    _UINT32_(10)                                         /* (CAN_TXBCR) Cancellation Request 10 Position */
+#define CAN_TXBCR_CR10_Msk                    (_UINT32_(0x1) << CAN_TXBCR_CR10_Pos)                /* (CAN_TXBCR) Cancellation Request 10 Mask */
+#define CAN_TXBCR_CR10(value)                 (CAN_TXBCR_CR10_Msk & (_UINT32_(value) << CAN_TXBCR_CR10_Pos)) /* Assigment of value for CR10 in the CAN_TXBCR register */
+#define CAN_TXBCR_CR11_Pos                    _UINT32_(11)                                         /* (CAN_TXBCR) Cancellation Request 11 Position */
+#define CAN_TXBCR_CR11_Msk                    (_UINT32_(0x1) << CAN_TXBCR_CR11_Pos)                /* (CAN_TXBCR) Cancellation Request 11 Mask */
+#define CAN_TXBCR_CR11(value)                 (CAN_TXBCR_CR11_Msk & (_UINT32_(value) << CAN_TXBCR_CR11_Pos)) /* Assigment of value for CR11 in the CAN_TXBCR register */
+#define CAN_TXBCR_CR12_Pos                    _UINT32_(12)                                         /* (CAN_TXBCR) Cancellation Request 12 Position */
+#define CAN_TXBCR_CR12_Msk                    (_UINT32_(0x1) << CAN_TXBCR_CR12_Pos)                /* (CAN_TXBCR) Cancellation Request 12 Mask */
+#define CAN_TXBCR_CR12(value)                 (CAN_TXBCR_CR12_Msk & (_UINT32_(value) << CAN_TXBCR_CR12_Pos)) /* Assigment of value for CR12 in the CAN_TXBCR register */
+#define CAN_TXBCR_CR13_Pos                    _UINT32_(13)                                         /* (CAN_TXBCR) Cancellation Request 13 Position */
+#define CAN_TXBCR_CR13_Msk                    (_UINT32_(0x1) << CAN_TXBCR_CR13_Pos)                /* (CAN_TXBCR) Cancellation Request 13 Mask */
+#define CAN_TXBCR_CR13(value)                 (CAN_TXBCR_CR13_Msk & (_UINT32_(value) << CAN_TXBCR_CR13_Pos)) /* Assigment of value for CR13 in the CAN_TXBCR register */
+#define CAN_TXBCR_CR14_Pos                    _UINT32_(14)                                         /* (CAN_TXBCR) Cancellation Request 14 Position */
+#define CAN_TXBCR_CR14_Msk                    (_UINT32_(0x1) << CAN_TXBCR_CR14_Pos)                /* (CAN_TXBCR) Cancellation Request 14 Mask */
+#define CAN_TXBCR_CR14(value)                 (CAN_TXBCR_CR14_Msk & (_UINT32_(value) << CAN_TXBCR_CR14_Pos)) /* Assigment of value for CR14 in the CAN_TXBCR register */
+#define CAN_TXBCR_CR15_Pos                    _UINT32_(15)                                         /* (CAN_TXBCR) Cancellation Request 15 Position */
+#define CAN_TXBCR_CR15_Msk                    (_UINT32_(0x1) << CAN_TXBCR_CR15_Pos)                /* (CAN_TXBCR) Cancellation Request 15 Mask */
+#define CAN_TXBCR_CR15(value)                 (CAN_TXBCR_CR15_Msk & (_UINT32_(value) << CAN_TXBCR_CR15_Pos)) /* Assigment of value for CR15 in the CAN_TXBCR register */
+#define CAN_TXBCR_CR16_Pos                    _UINT32_(16)                                         /* (CAN_TXBCR) Cancellation Request 16 Position */
+#define CAN_TXBCR_CR16_Msk                    (_UINT32_(0x1) << CAN_TXBCR_CR16_Pos)                /* (CAN_TXBCR) Cancellation Request 16 Mask */
+#define CAN_TXBCR_CR16(value)                 (CAN_TXBCR_CR16_Msk & (_UINT32_(value) << CAN_TXBCR_CR16_Pos)) /* Assigment of value for CR16 in the CAN_TXBCR register */
+#define CAN_TXBCR_CR17_Pos                    _UINT32_(17)                                         /* (CAN_TXBCR) Cancellation Request 17 Position */
+#define CAN_TXBCR_CR17_Msk                    (_UINT32_(0x1) << CAN_TXBCR_CR17_Pos)                /* (CAN_TXBCR) Cancellation Request 17 Mask */
+#define CAN_TXBCR_CR17(value)                 (CAN_TXBCR_CR17_Msk & (_UINT32_(value) << CAN_TXBCR_CR17_Pos)) /* Assigment of value for CR17 in the CAN_TXBCR register */
+#define CAN_TXBCR_CR18_Pos                    _UINT32_(18)                                         /* (CAN_TXBCR) Cancellation Request 18 Position */
+#define CAN_TXBCR_CR18_Msk                    (_UINT32_(0x1) << CAN_TXBCR_CR18_Pos)                /* (CAN_TXBCR) Cancellation Request 18 Mask */
+#define CAN_TXBCR_CR18(value)                 (CAN_TXBCR_CR18_Msk & (_UINT32_(value) << CAN_TXBCR_CR18_Pos)) /* Assigment of value for CR18 in the CAN_TXBCR register */
+#define CAN_TXBCR_CR19_Pos                    _UINT32_(19)                                         /* (CAN_TXBCR) Cancellation Request 19 Position */
+#define CAN_TXBCR_CR19_Msk                    (_UINT32_(0x1) << CAN_TXBCR_CR19_Pos)                /* (CAN_TXBCR) Cancellation Request 19 Mask */
+#define CAN_TXBCR_CR19(value)                 (CAN_TXBCR_CR19_Msk & (_UINT32_(value) << CAN_TXBCR_CR19_Pos)) /* Assigment of value for CR19 in the CAN_TXBCR register */
+#define CAN_TXBCR_CR20_Pos                    _UINT32_(20)                                         /* (CAN_TXBCR) Cancellation Request 20 Position */
+#define CAN_TXBCR_CR20_Msk                    (_UINT32_(0x1) << CAN_TXBCR_CR20_Pos)                /* (CAN_TXBCR) Cancellation Request 20 Mask */
+#define CAN_TXBCR_CR20(value)                 (CAN_TXBCR_CR20_Msk & (_UINT32_(value) << CAN_TXBCR_CR20_Pos)) /* Assigment of value for CR20 in the CAN_TXBCR register */
+#define CAN_TXBCR_CR21_Pos                    _UINT32_(21)                                         /* (CAN_TXBCR) Cancellation Request 21 Position */
+#define CAN_TXBCR_CR21_Msk                    (_UINT32_(0x1) << CAN_TXBCR_CR21_Pos)                /* (CAN_TXBCR) Cancellation Request 21 Mask */
+#define CAN_TXBCR_CR21(value)                 (CAN_TXBCR_CR21_Msk & (_UINT32_(value) << CAN_TXBCR_CR21_Pos)) /* Assigment of value for CR21 in the CAN_TXBCR register */
+#define CAN_TXBCR_CR22_Pos                    _UINT32_(22)                                         /* (CAN_TXBCR) Cancellation Request 22 Position */
+#define CAN_TXBCR_CR22_Msk                    (_UINT32_(0x1) << CAN_TXBCR_CR22_Pos)                /* (CAN_TXBCR) Cancellation Request 22 Mask */
+#define CAN_TXBCR_CR22(value)                 (CAN_TXBCR_CR22_Msk & (_UINT32_(value) << CAN_TXBCR_CR22_Pos)) /* Assigment of value for CR22 in the CAN_TXBCR register */
+#define CAN_TXBCR_CR23_Pos                    _UINT32_(23)                                         /* (CAN_TXBCR) Cancellation Request 23 Position */
+#define CAN_TXBCR_CR23_Msk                    (_UINT32_(0x1) << CAN_TXBCR_CR23_Pos)                /* (CAN_TXBCR) Cancellation Request 23 Mask */
+#define CAN_TXBCR_CR23(value)                 (CAN_TXBCR_CR23_Msk & (_UINT32_(value) << CAN_TXBCR_CR23_Pos)) /* Assigment of value for CR23 in the CAN_TXBCR register */
+#define CAN_TXBCR_CR24_Pos                    _UINT32_(24)                                         /* (CAN_TXBCR) Cancellation Request 24 Position */
+#define CAN_TXBCR_CR24_Msk                    (_UINT32_(0x1) << CAN_TXBCR_CR24_Pos)                /* (CAN_TXBCR) Cancellation Request 24 Mask */
+#define CAN_TXBCR_CR24(value)                 (CAN_TXBCR_CR24_Msk & (_UINT32_(value) << CAN_TXBCR_CR24_Pos)) /* Assigment of value for CR24 in the CAN_TXBCR register */
+#define CAN_TXBCR_CR25_Pos                    _UINT32_(25)                                         /* (CAN_TXBCR) Cancellation Request 25 Position */
+#define CAN_TXBCR_CR25_Msk                    (_UINT32_(0x1) << CAN_TXBCR_CR25_Pos)                /* (CAN_TXBCR) Cancellation Request 25 Mask */
+#define CAN_TXBCR_CR25(value)                 (CAN_TXBCR_CR25_Msk & (_UINT32_(value) << CAN_TXBCR_CR25_Pos)) /* Assigment of value for CR25 in the CAN_TXBCR register */
+#define CAN_TXBCR_CR26_Pos                    _UINT32_(26)                                         /* (CAN_TXBCR) Cancellation Request 26 Position */
+#define CAN_TXBCR_CR26_Msk                    (_UINT32_(0x1) << CAN_TXBCR_CR26_Pos)                /* (CAN_TXBCR) Cancellation Request 26 Mask */
+#define CAN_TXBCR_CR26(value)                 (CAN_TXBCR_CR26_Msk & (_UINT32_(value) << CAN_TXBCR_CR26_Pos)) /* Assigment of value for CR26 in the CAN_TXBCR register */
+#define CAN_TXBCR_CR27_Pos                    _UINT32_(27)                                         /* (CAN_TXBCR) Cancellation Request 27 Position */
+#define CAN_TXBCR_CR27_Msk                    (_UINT32_(0x1) << CAN_TXBCR_CR27_Pos)                /* (CAN_TXBCR) Cancellation Request 27 Mask */
+#define CAN_TXBCR_CR27(value)                 (CAN_TXBCR_CR27_Msk & (_UINT32_(value) << CAN_TXBCR_CR27_Pos)) /* Assigment of value for CR27 in the CAN_TXBCR register */
+#define CAN_TXBCR_CR28_Pos                    _UINT32_(28)                                         /* (CAN_TXBCR) Cancellation Request 28 Position */
+#define CAN_TXBCR_CR28_Msk                    (_UINT32_(0x1) << CAN_TXBCR_CR28_Pos)                /* (CAN_TXBCR) Cancellation Request 28 Mask */
+#define CAN_TXBCR_CR28(value)                 (CAN_TXBCR_CR28_Msk & (_UINT32_(value) << CAN_TXBCR_CR28_Pos)) /* Assigment of value for CR28 in the CAN_TXBCR register */
+#define CAN_TXBCR_CR29_Pos                    _UINT32_(29)                                         /* (CAN_TXBCR) Cancellation Request 29 Position */
+#define CAN_TXBCR_CR29_Msk                    (_UINT32_(0x1) << CAN_TXBCR_CR29_Pos)                /* (CAN_TXBCR) Cancellation Request 29 Mask */
+#define CAN_TXBCR_CR29(value)                 (CAN_TXBCR_CR29_Msk & (_UINT32_(value) << CAN_TXBCR_CR29_Pos)) /* Assigment of value for CR29 in the CAN_TXBCR register */
+#define CAN_TXBCR_CR30_Pos                    _UINT32_(30)                                         /* (CAN_TXBCR) Cancellation Request 30 Position */
+#define CAN_TXBCR_CR30_Msk                    (_UINT32_(0x1) << CAN_TXBCR_CR30_Pos)                /* (CAN_TXBCR) Cancellation Request 30 Mask */
+#define CAN_TXBCR_CR30(value)                 (CAN_TXBCR_CR30_Msk & (_UINT32_(value) << CAN_TXBCR_CR30_Pos)) /* Assigment of value for CR30 in the CAN_TXBCR register */
+#define CAN_TXBCR_CR31_Pos                    _UINT32_(31)                                         /* (CAN_TXBCR) Cancellation Request 31 Position */
+#define CAN_TXBCR_CR31_Msk                    (_UINT32_(0x1) << CAN_TXBCR_CR31_Pos)                /* (CAN_TXBCR) Cancellation Request 31 Mask */
+#define CAN_TXBCR_CR31(value)                 (CAN_TXBCR_CR31_Msk & (_UINT32_(value) << CAN_TXBCR_CR31_Pos)) /* Assigment of value for CR31 in the CAN_TXBCR register */
+#define CAN_TXBCR_Msk                         _UINT32_(0xFFFFFFFF)                                 /* (CAN_TXBCR) Register Mask  */
+
+#define CAN_TXBCR_CR_Pos                      _UINT32_(0)                                          /* (CAN_TXBCR Position) Cancellation Request 3x */
+#define CAN_TXBCR_CR_Msk                      (_UINT32_(0xFFFFFFFF) << CAN_TXBCR_CR_Pos)           /* (CAN_TXBCR Mask) CR */
+#define CAN_TXBCR_CR(value)                   (CAN_TXBCR_CR_Msk & (_UINT32_(value) << CAN_TXBCR_CR_Pos)) 
+
+/* -------- CAN_TXBRP : (CAN Offset: 0xCC) ( R/ 32) Tx Buffer Request Pending -------- */
+#define CAN_TXBRP_RESETVALUE                  _UINT32_(0x00)                                       /*  (CAN_TXBRP) Tx Buffer Request Pending  Reset Value */
+
+#define CAN_TXBRP_TRP0_Pos                    _UINT32_(0)                                          /* (CAN_TXBRP) Transmission Request Pending 0 Position */
+#define CAN_TXBRP_TRP0_Msk                    (_UINT32_(0x1) << CAN_TXBRP_TRP0_Pos)                /* (CAN_TXBRP) Transmission Request Pending 0 Mask */
+#define CAN_TXBRP_TRP0(value)                 (CAN_TXBRP_TRP0_Msk & (_UINT32_(value) << CAN_TXBRP_TRP0_Pos)) /* Assigment of value for TRP0 in the CAN_TXBRP register */
+#define CAN_TXBRP_TRP1_Pos                    _UINT32_(1)                                          /* (CAN_TXBRP) Transmission Request Pending 1 Position */
+#define CAN_TXBRP_TRP1_Msk                    (_UINT32_(0x1) << CAN_TXBRP_TRP1_Pos)                /* (CAN_TXBRP) Transmission Request Pending 1 Mask */
+#define CAN_TXBRP_TRP1(value)                 (CAN_TXBRP_TRP1_Msk & (_UINT32_(value) << CAN_TXBRP_TRP1_Pos)) /* Assigment of value for TRP1 in the CAN_TXBRP register */
+#define CAN_TXBRP_TRP2_Pos                    _UINT32_(2)                                          /* (CAN_TXBRP) Transmission Request Pending 2 Position */
+#define CAN_TXBRP_TRP2_Msk                    (_UINT32_(0x1) << CAN_TXBRP_TRP2_Pos)                /* (CAN_TXBRP) Transmission Request Pending 2 Mask */
+#define CAN_TXBRP_TRP2(value)                 (CAN_TXBRP_TRP2_Msk & (_UINT32_(value) << CAN_TXBRP_TRP2_Pos)) /* Assigment of value for TRP2 in the CAN_TXBRP register */
+#define CAN_TXBRP_TRP3_Pos                    _UINT32_(3)                                          /* (CAN_TXBRP) Transmission Request Pending 3 Position */
+#define CAN_TXBRP_TRP3_Msk                    (_UINT32_(0x1) << CAN_TXBRP_TRP3_Pos)                /* (CAN_TXBRP) Transmission Request Pending 3 Mask */
+#define CAN_TXBRP_TRP3(value)                 (CAN_TXBRP_TRP3_Msk & (_UINT32_(value) << CAN_TXBRP_TRP3_Pos)) /* Assigment of value for TRP3 in the CAN_TXBRP register */
+#define CAN_TXBRP_TRP4_Pos                    _UINT32_(4)                                          /* (CAN_TXBRP) Transmission Request Pending 4 Position */
+#define CAN_TXBRP_TRP4_Msk                    (_UINT32_(0x1) << CAN_TXBRP_TRP4_Pos)                /* (CAN_TXBRP) Transmission Request Pending 4 Mask */
+#define CAN_TXBRP_TRP4(value)                 (CAN_TXBRP_TRP4_Msk & (_UINT32_(value) << CAN_TXBRP_TRP4_Pos)) /* Assigment of value for TRP4 in the CAN_TXBRP register */
+#define CAN_TXBRP_TRP5_Pos                    _UINT32_(5)                                          /* (CAN_TXBRP) Transmission Request Pending 5 Position */
+#define CAN_TXBRP_TRP5_Msk                    (_UINT32_(0x1) << CAN_TXBRP_TRP5_Pos)                /* (CAN_TXBRP) Transmission Request Pending 5 Mask */
+#define CAN_TXBRP_TRP5(value)                 (CAN_TXBRP_TRP5_Msk & (_UINT32_(value) << CAN_TXBRP_TRP5_Pos)) /* Assigment of value for TRP5 in the CAN_TXBRP register */
+#define CAN_TXBRP_TRP6_Pos                    _UINT32_(6)                                          /* (CAN_TXBRP) Transmission Request Pending 6 Position */
+#define CAN_TXBRP_TRP6_Msk                    (_UINT32_(0x1) << CAN_TXBRP_TRP6_Pos)                /* (CAN_TXBRP) Transmission Request Pending 6 Mask */
+#define CAN_TXBRP_TRP6(value)                 (CAN_TXBRP_TRP6_Msk & (_UINT32_(value) << CAN_TXBRP_TRP6_Pos)) /* Assigment of value for TRP6 in the CAN_TXBRP register */
+#define CAN_TXBRP_TRP7_Pos                    _UINT32_(7)                                          /* (CAN_TXBRP) Transmission Request Pending 7 Position */
+#define CAN_TXBRP_TRP7_Msk                    (_UINT32_(0x1) << CAN_TXBRP_TRP7_Pos)                /* (CAN_TXBRP) Transmission Request Pending 7 Mask */
+#define CAN_TXBRP_TRP7(value)                 (CAN_TXBRP_TRP7_Msk & (_UINT32_(value) << CAN_TXBRP_TRP7_Pos)) /* Assigment of value for TRP7 in the CAN_TXBRP register */
+#define CAN_TXBRP_TRP8_Pos                    _UINT32_(8)                                          /* (CAN_TXBRP) Transmission Request Pending 8 Position */
+#define CAN_TXBRP_TRP8_Msk                    (_UINT32_(0x1) << CAN_TXBRP_TRP8_Pos)                /* (CAN_TXBRP) Transmission Request Pending 8 Mask */
+#define CAN_TXBRP_TRP8(value)                 (CAN_TXBRP_TRP8_Msk & (_UINT32_(value) << CAN_TXBRP_TRP8_Pos)) /* Assigment of value for TRP8 in the CAN_TXBRP register */
+#define CAN_TXBRP_TRP9_Pos                    _UINT32_(9)                                          /* (CAN_TXBRP) Transmission Request Pending 9 Position */
+#define CAN_TXBRP_TRP9_Msk                    (_UINT32_(0x1) << CAN_TXBRP_TRP9_Pos)                /* (CAN_TXBRP) Transmission Request Pending 9 Mask */
+#define CAN_TXBRP_TRP9(value)                 (CAN_TXBRP_TRP9_Msk & (_UINT32_(value) << CAN_TXBRP_TRP9_Pos)) /* Assigment of value for TRP9 in the CAN_TXBRP register */
+#define CAN_TXBRP_TRP10_Pos                   _UINT32_(10)                                         /* (CAN_TXBRP) Transmission Request Pending 10 Position */
+#define CAN_TXBRP_TRP10_Msk                   (_UINT32_(0x1) << CAN_TXBRP_TRP10_Pos)               /* (CAN_TXBRP) Transmission Request Pending 10 Mask */
+#define CAN_TXBRP_TRP10(value)                (CAN_TXBRP_TRP10_Msk & (_UINT32_(value) << CAN_TXBRP_TRP10_Pos)) /* Assigment of value for TRP10 in the CAN_TXBRP register */
+#define CAN_TXBRP_TRP11_Pos                   _UINT32_(11)                                         /* (CAN_TXBRP) Transmission Request Pending 11 Position */
+#define CAN_TXBRP_TRP11_Msk                   (_UINT32_(0x1) << CAN_TXBRP_TRP11_Pos)               /* (CAN_TXBRP) Transmission Request Pending 11 Mask */
+#define CAN_TXBRP_TRP11(value)                (CAN_TXBRP_TRP11_Msk & (_UINT32_(value) << CAN_TXBRP_TRP11_Pos)) /* Assigment of value for TRP11 in the CAN_TXBRP register */
+#define CAN_TXBRP_TRP12_Pos                   _UINT32_(12)                                         /* (CAN_TXBRP) Transmission Request Pending 12 Position */
+#define CAN_TXBRP_TRP12_Msk                   (_UINT32_(0x1) << CAN_TXBRP_TRP12_Pos)               /* (CAN_TXBRP) Transmission Request Pending 12 Mask */
+#define CAN_TXBRP_TRP12(value)                (CAN_TXBRP_TRP12_Msk & (_UINT32_(value) << CAN_TXBRP_TRP12_Pos)) /* Assigment of value for TRP12 in the CAN_TXBRP register */
+#define CAN_TXBRP_TRP13_Pos                   _UINT32_(13)                                         /* (CAN_TXBRP) Transmission Request Pending 13 Position */
+#define CAN_TXBRP_TRP13_Msk                   (_UINT32_(0x1) << CAN_TXBRP_TRP13_Pos)               /* (CAN_TXBRP) Transmission Request Pending 13 Mask */
+#define CAN_TXBRP_TRP13(value)                (CAN_TXBRP_TRP13_Msk & (_UINT32_(value) << CAN_TXBRP_TRP13_Pos)) /* Assigment of value for TRP13 in the CAN_TXBRP register */
+#define CAN_TXBRP_TRP14_Pos                   _UINT32_(14)                                         /* (CAN_TXBRP) Transmission Request Pending 14 Position */
+#define CAN_TXBRP_TRP14_Msk                   (_UINT32_(0x1) << CAN_TXBRP_TRP14_Pos)               /* (CAN_TXBRP) Transmission Request Pending 14 Mask */
+#define CAN_TXBRP_TRP14(value)                (CAN_TXBRP_TRP14_Msk & (_UINT32_(value) << CAN_TXBRP_TRP14_Pos)) /* Assigment of value for TRP14 in the CAN_TXBRP register */
+#define CAN_TXBRP_TRP15_Pos                   _UINT32_(15)                                         /* (CAN_TXBRP) Transmission Request Pending 15 Position */
+#define CAN_TXBRP_TRP15_Msk                   (_UINT32_(0x1) << CAN_TXBRP_TRP15_Pos)               /* (CAN_TXBRP) Transmission Request Pending 15 Mask */
+#define CAN_TXBRP_TRP15(value)                (CAN_TXBRP_TRP15_Msk & (_UINT32_(value) << CAN_TXBRP_TRP15_Pos)) /* Assigment of value for TRP15 in the CAN_TXBRP register */
+#define CAN_TXBRP_TRP16_Pos                   _UINT32_(16)                                         /* (CAN_TXBRP) Transmission Request Pending 16 Position */
+#define CAN_TXBRP_TRP16_Msk                   (_UINT32_(0x1) << CAN_TXBRP_TRP16_Pos)               /* (CAN_TXBRP) Transmission Request Pending 16 Mask */
+#define CAN_TXBRP_TRP16(value)                (CAN_TXBRP_TRP16_Msk & (_UINT32_(value) << CAN_TXBRP_TRP16_Pos)) /* Assigment of value for TRP16 in the CAN_TXBRP register */
+#define CAN_TXBRP_TRP17_Pos                   _UINT32_(17)                                         /* (CAN_TXBRP) Transmission Request Pending 17 Position */
+#define CAN_TXBRP_TRP17_Msk                   (_UINT32_(0x1) << CAN_TXBRP_TRP17_Pos)               /* (CAN_TXBRP) Transmission Request Pending 17 Mask */
+#define CAN_TXBRP_TRP17(value)                (CAN_TXBRP_TRP17_Msk & (_UINT32_(value) << CAN_TXBRP_TRP17_Pos)) /* Assigment of value for TRP17 in the CAN_TXBRP register */
+#define CAN_TXBRP_TRP18_Pos                   _UINT32_(18)                                         /* (CAN_TXBRP) Transmission Request Pending 18 Position */
+#define CAN_TXBRP_TRP18_Msk                   (_UINT32_(0x1) << CAN_TXBRP_TRP18_Pos)               /* (CAN_TXBRP) Transmission Request Pending 18 Mask */
+#define CAN_TXBRP_TRP18(value)                (CAN_TXBRP_TRP18_Msk & (_UINT32_(value) << CAN_TXBRP_TRP18_Pos)) /* Assigment of value for TRP18 in the CAN_TXBRP register */
+#define CAN_TXBRP_TRP19_Pos                   _UINT32_(19)                                         /* (CAN_TXBRP) Transmission Request Pending 19 Position */
+#define CAN_TXBRP_TRP19_Msk                   (_UINT32_(0x1) << CAN_TXBRP_TRP19_Pos)               /* (CAN_TXBRP) Transmission Request Pending 19 Mask */
+#define CAN_TXBRP_TRP19(value)                (CAN_TXBRP_TRP19_Msk & (_UINT32_(value) << CAN_TXBRP_TRP19_Pos)) /* Assigment of value for TRP19 in the CAN_TXBRP register */
+#define CAN_TXBRP_TRP20_Pos                   _UINT32_(20)                                         /* (CAN_TXBRP) Transmission Request Pending 20 Position */
+#define CAN_TXBRP_TRP20_Msk                   (_UINT32_(0x1) << CAN_TXBRP_TRP20_Pos)               /* (CAN_TXBRP) Transmission Request Pending 20 Mask */
+#define CAN_TXBRP_TRP20(value)                (CAN_TXBRP_TRP20_Msk & (_UINT32_(value) << CAN_TXBRP_TRP20_Pos)) /* Assigment of value for TRP20 in the CAN_TXBRP register */
+#define CAN_TXBRP_TRP21_Pos                   _UINT32_(21)                                         /* (CAN_TXBRP) Transmission Request Pending 21 Position */
+#define CAN_TXBRP_TRP21_Msk                   (_UINT32_(0x1) << CAN_TXBRP_TRP21_Pos)               /* (CAN_TXBRP) Transmission Request Pending 21 Mask */
+#define CAN_TXBRP_TRP21(value)                (CAN_TXBRP_TRP21_Msk & (_UINT32_(value) << CAN_TXBRP_TRP21_Pos)) /* Assigment of value for TRP21 in the CAN_TXBRP register */
+#define CAN_TXBRP_TRP22_Pos                   _UINT32_(22)                                         /* (CAN_TXBRP) Transmission Request Pending 22 Position */
+#define CAN_TXBRP_TRP22_Msk                   (_UINT32_(0x1) << CAN_TXBRP_TRP22_Pos)               /* (CAN_TXBRP) Transmission Request Pending 22 Mask */
+#define CAN_TXBRP_TRP22(value)                (CAN_TXBRP_TRP22_Msk & (_UINT32_(value) << CAN_TXBRP_TRP22_Pos)) /* Assigment of value for TRP22 in the CAN_TXBRP register */
+#define CAN_TXBRP_TRP23_Pos                   _UINT32_(23)                                         /* (CAN_TXBRP) Transmission Request Pending 23 Position */
+#define CAN_TXBRP_TRP23_Msk                   (_UINT32_(0x1) << CAN_TXBRP_TRP23_Pos)               /* (CAN_TXBRP) Transmission Request Pending 23 Mask */
+#define CAN_TXBRP_TRP23(value)                (CAN_TXBRP_TRP23_Msk & (_UINT32_(value) << CAN_TXBRP_TRP23_Pos)) /* Assigment of value for TRP23 in the CAN_TXBRP register */
+#define CAN_TXBRP_TRP24_Pos                   _UINT32_(24)                                         /* (CAN_TXBRP) Transmission Request Pending 24 Position */
+#define CAN_TXBRP_TRP24_Msk                   (_UINT32_(0x1) << CAN_TXBRP_TRP24_Pos)               /* (CAN_TXBRP) Transmission Request Pending 24 Mask */
+#define CAN_TXBRP_TRP24(value)                (CAN_TXBRP_TRP24_Msk & (_UINT32_(value) << CAN_TXBRP_TRP24_Pos)) /* Assigment of value for TRP24 in the CAN_TXBRP register */
+#define CAN_TXBRP_TRP25_Pos                   _UINT32_(25)                                         /* (CAN_TXBRP) Transmission Request Pending 25 Position */
+#define CAN_TXBRP_TRP25_Msk                   (_UINT32_(0x1) << CAN_TXBRP_TRP25_Pos)               /* (CAN_TXBRP) Transmission Request Pending 25 Mask */
+#define CAN_TXBRP_TRP25(value)                (CAN_TXBRP_TRP25_Msk & (_UINT32_(value) << CAN_TXBRP_TRP25_Pos)) /* Assigment of value for TRP25 in the CAN_TXBRP register */
+#define CAN_TXBRP_TRP26_Pos                   _UINT32_(26)                                         /* (CAN_TXBRP) Transmission Request Pending 26 Position */
+#define CAN_TXBRP_TRP26_Msk                   (_UINT32_(0x1) << CAN_TXBRP_TRP26_Pos)               /* (CAN_TXBRP) Transmission Request Pending 26 Mask */
+#define CAN_TXBRP_TRP26(value)                (CAN_TXBRP_TRP26_Msk & (_UINT32_(value) << CAN_TXBRP_TRP26_Pos)) /* Assigment of value for TRP26 in the CAN_TXBRP register */
+#define CAN_TXBRP_TRP27_Pos                   _UINT32_(27)                                         /* (CAN_TXBRP) Transmission Request Pending 27 Position */
+#define CAN_TXBRP_TRP27_Msk                   (_UINT32_(0x1) << CAN_TXBRP_TRP27_Pos)               /* (CAN_TXBRP) Transmission Request Pending 27 Mask */
+#define CAN_TXBRP_TRP27(value)                (CAN_TXBRP_TRP27_Msk & (_UINT32_(value) << CAN_TXBRP_TRP27_Pos)) /* Assigment of value for TRP27 in the CAN_TXBRP register */
+#define CAN_TXBRP_TRP28_Pos                   _UINT32_(28)                                         /* (CAN_TXBRP) Transmission Request Pending 28 Position */
+#define CAN_TXBRP_TRP28_Msk                   (_UINT32_(0x1) << CAN_TXBRP_TRP28_Pos)               /* (CAN_TXBRP) Transmission Request Pending 28 Mask */
+#define CAN_TXBRP_TRP28(value)                (CAN_TXBRP_TRP28_Msk & (_UINT32_(value) << CAN_TXBRP_TRP28_Pos)) /* Assigment of value for TRP28 in the CAN_TXBRP register */
+#define CAN_TXBRP_TRP29_Pos                   _UINT32_(29)                                         /* (CAN_TXBRP) Transmission Request Pending 29 Position */
+#define CAN_TXBRP_TRP29_Msk                   (_UINT32_(0x1) << CAN_TXBRP_TRP29_Pos)               /* (CAN_TXBRP) Transmission Request Pending 29 Mask */
+#define CAN_TXBRP_TRP29(value)                (CAN_TXBRP_TRP29_Msk & (_UINT32_(value) << CAN_TXBRP_TRP29_Pos)) /* Assigment of value for TRP29 in the CAN_TXBRP register */
+#define CAN_TXBRP_TRP30_Pos                   _UINT32_(30)                                         /* (CAN_TXBRP) Transmission Request Pending 30 Position */
+#define CAN_TXBRP_TRP30_Msk                   (_UINT32_(0x1) << CAN_TXBRP_TRP30_Pos)               /* (CAN_TXBRP) Transmission Request Pending 30 Mask */
+#define CAN_TXBRP_TRP30(value)                (CAN_TXBRP_TRP30_Msk & (_UINT32_(value) << CAN_TXBRP_TRP30_Pos)) /* Assigment of value for TRP30 in the CAN_TXBRP register */
+#define CAN_TXBRP_TRP31_Pos                   _UINT32_(31)                                         /* (CAN_TXBRP) Transmission Request Pending 31 Position */
+#define CAN_TXBRP_TRP31_Msk                   (_UINT32_(0x1) << CAN_TXBRP_TRP31_Pos)               /* (CAN_TXBRP) Transmission Request Pending 31 Mask */
+#define CAN_TXBRP_TRP31(value)                (CAN_TXBRP_TRP31_Msk & (_UINT32_(value) << CAN_TXBRP_TRP31_Pos)) /* Assigment of value for TRP31 in the CAN_TXBRP register */
+#define CAN_TXBRP_Msk                         _UINT32_(0xFFFFFFFF)                                 /* (CAN_TXBRP) Register Mask  */
+
+#define CAN_TXBRP_TRP_Pos                     _UINT32_(0)                                          /* (CAN_TXBRP Position) Transmission Request Pending 3x */
+#define CAN_TXBRP_TRP_Msk                     (_UINT32_(0xFFFFFFFF) << CAN_TXBRP_TRP_Pos)          /* (CAN_TXBRP Mask) TRP */
+#define CAN_TXBRP_TRP(value)                  (CAN_TXBRP_TRP_Msk & (_UINT32_(value) << CAN_TXBRP_TRP_Pos)) 
+
+/* -------- CAN_TXBTIE : (CAN Offset: 0xE0) (R/W 32) Tx Buffer Transmission Interrupt Enable -------- */
+#define CAN_TXBTIE_RESETVALUE                 _UINT32_(0x00)                                       /*  (CAN_TXBTIE) Tx Buffer Transmission Interrupt Enable  Reset Value */
+
+#define CAN_TXBTIE_TIE0_Pos                   _UINT32_(0)                                          /* (CAN_TXBTIE) Transmission Interrupt Enable 0 Position */
+#define CAN_TXBTIE_TIE0_Msk                   (_UINT32_(0x1) << CAN_TXBTIE_TIE0_Pos)               /* (CAN_TXBTIE) Transmission Interrupt Enable 0 Mask */
+#define CAN_TXBTIE_TIE0(value)                (CAN_TXBTIE_TIE0_Msk & (_UINT32_(value) << CAN_TXBTIE_TIE0_Pos)) /* Assigment of value for TIE0 in the CAN_TXBTIE register */
+#define CAN_TXBTIE_TIE1_Pos                   _UINT32_(1)                                          /* (CAN_TXBTIE) Transmission Interrupt Enable 1 Position */
+#define CAN_TXBTIE_TIE1_Msk                   (_UINT32_(0x1) << CAN_TXBTIE_TIE1_Pos)               /* (CAN_TXBTIE) Transmission Interrupt Enable 1 Mask */
+#define CAN_TXBTIE_TIE1(value)                (CAN_TXBTIE_TIE1_Msk & (_UINT32_(value) << CAN_TXBTIE_TIE1_Pos)) /* Assigment of value for TIE1 in the CAN_TXBTIE register */
+#define CAN_TXBTIE_TIE2_Pos                   _UINT32_(2)                                          /* (CAN_TXBTIE) Transmission Interrupt Enable 2 Position */
+#define CAN_TXBTIE_TIE2_Msk                   (_UINT32_(0x1) << CAN_TXBTIE_TIE2_Pos)               /* (CAN_TXBTIE) Transmission Interrupt Enable 2 Mask */
+#define CAN_TXBTIE_TIE2(value)                (CAN_TXBTIE_TIE2_Msk & (_UINT32_(value) << CAN_TXBTIE_TIE2_Pos)) /* Assigment of value for TIE2 in the CAN_TXBTIE register */
+#define CAN_TXBTIE_TIE3_Pos                   _UINT32_(3)                                          /* (CAN_TXBTIE) Transmission Interrupt Enable 3 Position */
+#define CAN_TXBTIE_TIE3_Msk                   (_UINT32_(0x1) << CAN_TXBTIE_TIE3_Pos)               /* (CAN_TXBTIE) Transmission Interrupt Enable 3 Mask */
+#define CAN_TXBTIE_TIE3(value)                (CAN_TXBTIE_TIE3_Msk & (_UINT32_(value) << CAN_TXBTIE_TIE3_Pos)) /* Assigment of value for TIE3 in the CAN_TXBTIE register */
+#define CAN_TXBTIE_TIE4_Pos                   _UINT32_(4)                                          /* (CAN_TXBTIE) Transmission Interrupt Enable 4 Position */
+#define CAN_TXBTIE_TIE4_Msk                   (_UINT32_(0x1) << CAN_TXBTIE_TIE4_Pos)               /* (CAN_TXBTIE) Transmission Interrupt Enable 4 Mask */
+#define CAN_TXBTIE_TIE4(value)                (CAN_TXBTIE_TIE4_Msk & (_UINT32_(value) << CAN_TXBTIE_TIE4_Pos)) /* Assigment of value for TIE4 in the CAN_TXBTIE register */
+#define CAN_TXBTIE_TIE5_Pos                   _UINT32_(5)                                          /* (CAN_TXBTIE) Transmission Interrupt Enable 5 Position */
+#define CAN_TXBTIE_TIE5_Msk                   (_UINT32_(0x1) << CAN_TXBTIE_TIE5_Pos)               /* (CAN_TXBTIE) Transmission Interrupt Enable 5 Mask */
+#define CAN_TXBTIE_TIE5(value)                (CAN_TXBTIE_TIE5_Msk & (_UINT32_(value) << CAN_TXBTIE_TIE5_Pos)) /* Assigment of value for TIE5 in the CAN_TXBTIE register */
+#define CAN_TXBTIE_TIE6_Pos                   _UINT32_(6)                                          /* (CAN_TXBTIE) Transmission Interrupt Enable 6 Position */
+#define CAN_TXBTIE_TIE6_Msk                   (_UINT32_(0x1) << CAN_TXBTIE_TIE6_Pos)               /* (CAN_TXBTIE) Transmission Interrupt Enable 6 Mask */
+#define CAN_TXBTIE_TIE6(value)                (CAN_TXBTIE_TIE6_Msk & (_UINT32_(value) << CAN_TXBTIE_TIE6_Pos)) /* Assigment of value for TIE6 in the CAN_TXBTIE register */
+#define CAN_TXBTIE_TIE7_Pos                   _UINT32_(7)                                          /* (CAN_TXBTIE) Transmission Interrupt Enable 7 Position */
+#define CAN_TXBTIE_TIE7_Msk                   (_UINT32_(0x1) << CAN_TXBTIE_TIE7_Pos)               /* (CAN_TXBTIE) Transmission Interrupt Enable 7 Mask */
+#define CAN_TXBTIE_TIE7(value)                (CAN_TXBTIE_TIE7_Msk & (_UINT32_(value) << CAN_TXBTIE_TIE7_Pos)) /* Assigment of value for TIE7 in the CAN_TXBTIE register */
+#define CAN_TXBTIE_TIE8_Pos                   _UINT32_(8)                                          /* (CAN_TXBTIE) Transmission Interrupt Enable 8 Position */
+#define CAN_TXBTIE_TIE8_Msk                   (_UINT32_(0x1) << CAN_TXBTIE_TIE8_Pos)               /* (CAN_TXBTIE) Transmission Interrupt Enable 8 Mask */
+#define CAN_TXBTIE_TIE8(value)                (CAN_TXBTIE_TIE8_Msk & (_UINT32_(value) << CAN_TXBTIE_TIE8_Pos)) /* Assigment of value for TIE8 in the CAN_TXBTIE register */
+#define CAN_TXBTIE_TIE9_Pos                   _UINT32_(9)                                          /* (CAN_TXBTIE) Transmission Interrupt Enable 9 Position */
+#define CAN_TXBTIE_TIE9_Msk                   (_UINT32_(0x1) << CAN_TXBTIE_TIE9_Pos)               /* (CAN_TXBTIE) Transmission Interrupt Enable 9 Mask */
+#define CAN_TXBTIE_TIE9(value)                (CAN_TXBTIE_TIE9_Msk & (_UINT32_(value) << CAN_TXBTIE_TIE9_Pos)) /* Assigment of value for TIE9 in the CAN_TXBTIE register */
+#define CAN_TXBTIE_TIE10_Pos                  _UINT32_(10)                                         /* (CAN_TXBTIE) Transmission Interrupt Enable 10 Position */
+#define CAN_TXBTIE_TIE10_Msk                  (_UINT32_(0x1) << CAN_TXBTIE_TIE10_Pos)              /* (CAN_TXBTIE) Transmission Interrupt Enable 10 Mask */
+#define CAN_TXBTIE_TIE10(value)               (CAN_TXBTIE_TIE10_Msk & (_UINT32_(value) << CAN_TXBTIE_TIE10_Pos)) /* Assigment of value for TIE10 in the CAN_TXBTIE register */
+#define CAN_TXBTIE_TIE11_Pos                  _UINT32_(11)                                         /* (CAN_TXBTIE) Transmission Interrupt Enable 11 Position */
+#define CAN_TXBTIE_TIE11_Msk                  (_UINT32_(0x1) << CAN_TXBTIE_TIE11_Pos)              /* (CAN_TXBTIE) Transmission Interrupt Enable 11 Mask */
+#define CAN_TXBTIE_TIE11(value)               (CAN_TXBTIE_TIE11_Msk & (_UINT32_(value) << CAN_TXBTIE_TIE11_Pos)) /* Assigment of value for TIE11 in the CAN_TXBTIE register */
+#define CAN_TXBTIE_TIE12_Pos                  _UINT32_(12)                                         /* (CAN_TXBTIE) Transmission Interrupt Enable 12 Position */
+#define CAN_TXBTIE_TIE12_Msk                  (_UINT32_(0x1) << CAN_TXBTIE_TIE12_Pos)              /* (CAN_TXBTIE) Transmission Interrupt Enable 12 Mask */
+#define CAN_TXBTIE_TIE12(value)               (CAN_TXBTIE_TIE12_Msk & (_UINT32_(value) << CAN_TXBTIE_TIE12_Pos)) /* Assigment of value for TIE12 in the CAN_TXBTIE register */
+#define CAN_TXBTIE_TIE13_Pos                  _UINT32_(13)                                         /* (CAN_TXBTIE) Transmission Interrupt Enable 13 Position */
+#define CAN_TXBTIE_TIE13_Msk                  (_UINT32_(0x1) << CAN_TXBTIE_TIE13_Pos)              /* (CAN_TXBTIE) Transmission Interrupt Enable 13 Mask */
+#define CAN_TXBTIE_TIE13(value)               (CAN_TXBTIE_TIE13_Msk & (_UINT32_(value) << CAN_TXBTIE_TIE13_Pos)) /* Assigment of value for TIE13 in the CAN_TXBTIE register */
+#define CAN_TXBTIE_TIE14_Pos                  _UINT32_(14)                                         /* (CAN_TXBTIE) Transmission Interrupt Enable 14 Position */
+#define CAN_TXBTIE_TIE14_Msk                  (_UINT32_(0x1) << CAN_TXBTIE_TIE14_Pos)              /* (CAN_TXBTIE) Transmission Interrupt Enable 14 Mask */
+#define CAN_TXBTIE_TIE14(value)               (CAN_TXBTIE_TIE14_Msk & (_UINT32_(value) << CAN_TXBTIE_TIE14_Pos)) /* Assigment of value for TIE14 in the CAN_TXBTIE register */
+#define CAN_TXBTIE_TIE15_Pos                  _UINT32_(15)                                         /* (CAN_TXBTIE) Transmission Interrupt Enable 15 Position */
+#define CAN_TXBTIE_TIE15_Msk                  (_UINT32_(0x1) << CAN_TXBTIE_TIE15_Pos)              /* (CAN_TXBTIE) Transmission Interrupt Enable 15 Mask */
+#define CAN_TXBTIE_TIE15(value)               (CAN_TXBTIE_TIE15_Msk & (_UINT32_(value) << CAN_TXBTIE_TIE15_Pos)) /* Assigment of value for TIE15 in the CAN_TXBTIE register */
+#define CAN_TXBTIE_TIE16_Pos                  _UINT32_(16)                                         /* (CAN_TXBTIE) Transmission Interrupt Enable 16 Position */
+#define CAN_TXBTIE_TIE16_Msk                  (_UINT32_(0x1) << CAN_TXBTIE_TIE16_Pos)              /* (CAN_TXBTIE) Transmission Interrupt Enable 16 Mask */
+#define CAN_TXBTIE_TIE16(value)               (CAN_TXBTIE_TIE16_Msk & (_UINT32_(value) << CAN_TXBTIE_TIE16_Pos)) /* Assigment of value for TIE16 in the CAN_TXBTIE register */
+#define CAN_TXBTIE_TIE17_Pos                  _UINT32_(17)                                         /* (CAN_TXBTIE) Transmission Interrupt Enable 17 Position */
+#define CAN_TXBTIE_TIE17_Msk                  (_UINT32_(0x1) << CAN_TXBTIE_TIE17_Pos)              /* (CAN_TXBTIE) Transmission Interrupt Enable 17 Mask */
+#define CAN_TXBTIE_TIE17(value)               (CAN_TXBTIE_TIE17_Msk & (_UINT32_(value) << CAN_TXBTIE_TIE17_Pos)) /* Assigment of value for TIE17 in the CAN_TXBTIE register */
+#define CAN_TXBTIE_TIE18_Pos                  _UINT32_(18)                                         /* (CAN_TXBTIE) Transmission Interrupt Enable 18 Position */
+#define CAN_TXBTIE_TIE18_Msk                  (_UINT32_(0x1) << CAN_TXBTIE_TIE18_Pos)              /* (CAN_TXBTIE) Transmission Interrupt Enable 18 Mask */
+#define CAN_TXBTIE_TIE18(value)               (CAN_TXBTIE_TIE18_Msk & (_UINT32_(value) << CAN_TXBTIE_TIE18_Pos)) /* Assigment of value for TIE18 in the CAN_TXBTIE register */
+#define CAN_TXBTIE_TIE19_Pos                  _UINT32_(19)                                         /* (CAN_TXBTIE) Transmission Interrupt Enable 19 Position */
+#define CAN_TXBTIE_TIE19_Msk                  (_UINT32_(0x1) << CAN_TXBTIE_TIE19_Pos)              /* (CAN_TXBTIE) Transmission Interrupt Enable 19 Mask */
+#define CAN_TXBTIE_TIE19(value)               (CAN_TXBTIE_TIE19_Msk & (_UINT32_(value) << CAN_TXBTIE_TIE19_Pos)) /* Assigment of value for TIE19 in the CAN_TXBTIE register */
+#define CAN_TXBTIE_TIE20_Pos                  _UINT32_(20)                                         /* (CAN_TXBTIE) Transmission Interrupt Enable 20 Position */
+#define CAN_TXBTIE_TIE20_Msk                  (_UINT32_(0x1) << CAN_TXBTIE_TIE20_Pos)              /* (CAN_TXBTIE) Transmission Interrupt Enable 20 Mask */
+#define CAN_TXBTIE_TIE20(value)               (CAN_TXBTIE_TIE20_Msk & (_UINT32_(value) << CAN_TXBTIE_TIE20_Pos)) /* Assigment of value for TIE20 in the CAN_TXBTIE register */
+#define CAN_TXBTIE_TIE21_Pos                  _UINT32_(21)                                         /* (CAN_TXBTIE) Transmission Interrupt Enable 21 Position */
+#define CAN_TXBTIE_TIE21_Msk                  (_UINT32_(0x1) << CAN_TXBTIE_TIE21_Pos)              /* (CAN_TXBTIE) Transmission Interrupt Enable 21 Mask */
+#define CAN_TXBTIE_TIE21(value)               (CAN_TXBTIE_TIE21_Msk & (_UINT32_(value) << CAN_TXBTIE_TIE21_Pos)) /* Assigment of value for TIE21 in the CAN_TXBTIE register */
+#define CAN_TXBTIE_TIE22_Pos                  _UINT32_(22)                                         /* (CAN_TXBTIE) Transmission Interrupt Enable 22 Position */
+#define CAN_TXBTIE_TIE22_Msk                  (_UINT32_(0x1) << CAN_TXBTIE_TIE22_Pos)              /* (CAN_TXBTIE) Transmission Interrupt Enable 22 Mask */
+#define CAN_TXBTIE_TIE22(value)               (CAN_TXBTIE_TIE22_Msk & (_UINT32_(value) << CAN_TXBTIE_TIE22_Pos)) /* Assigment of value for TIE22 in the CAN_TXBTIE register */
+#define CAN_TXBTIE_TIE23_Pos                  _UINT32_(23)                                         /* (CAN_TXBTIE) Transmission Interrupt Enable 23 Position */
+#define CAN_TXBTIE_TIE23_Msk                  (_UINT32_(0x1) << CAN_TXBTIE_TIE23_Pos)              /* (CAN_TXBTIE) Transmission Interrupt Enable 23 Mask */
+#define CAN_TXBTIE_TIE23(value)               (CAN_TXBTIE_TIE23_Msk & (_UINT32_(value) << CAN_TXBTIE_TIE23_Pos)) /* Assigment of value for TIE23 in the CAN_TXBTIE register */
+#define CAN_TXBTIE_TIE24_Pos                  _UINT32_(24)                                         /* (CAN_TXBTIE) Transmission Interrupt Enable 24 Position */
+#define CAN_TXBTIE_TIE24_Msk                  (_UINT32_(0x1) << CAN_TXBTIE_TIE24_Pos)              /* (CAN_TXBTIE) Transmission Interrupt Enable 24 Mask */
+#define CAN_TXBTIE_TIE24(value)               (CAN_TXBTIE_TIE24_Msk & (_UINT32_(value) << CAN_TXBTIE_TIE24_Pos)) /* Assigment of value for TIE24 in the CAN_TXBTIE register */
+#define CAN_TXBTIE_TIE25_Pos                  _UINT32_(25)                                         /* (CAN_TXBTIE) Transmission Interrupt Enable 25 Position */
+#define CAN_TXBTIE_TIE25_Msk                  (_UINT32_(0x1) << CAN_TXBTIE_TIE25_Pos)              /* (CAN_TXBTIE) Transmission Interrupt Enable 25 Mask */
+#define CAN_TXBTIE_TIE25(value)               (CAN_TXBTIE_TIE25_Msk & (_UINT32_(value) << CAN_TXBTIE_TIE25_Pos)) /* Assigment of value for TIE25 in the CAN_TXBTIE register */
+#define CAN_TXBTIE_TIE26_Pos                  _UINT32_(26)                                         /* (CAN_TXBTIE) Transmission Interrupt Enable 26 Position */
+#define CAN_TXBTIE_TIE26_Msk                  (_UINT32_(0x1) << CAN_TXBTIE_TIE26_Pos)              /* (CAN_TXBTIE) Transmission Interrupt Enable 26 Mask */
+#define CAN_TXBTIE_TIE26(value)               (CAN_TXBTIE_TIE26_Msk & (_UINT32_(value) << CAN_TXBTIE_TIE26_Pos)) /* Assigment of value for TIE26 in the CAN_TXBTIE register */
+#define CAN_TXBTIE_TIE27_Pos                  _UINT32_(27)                                         /* (CAN_TXBTIE) Transmission Interrupt Enable 27 Position */
+#define CAN_TXBTIE_TIE27_Msk                  (_UINT32_(0x1) << CAN_TXBTIE_TIE27_Pos)              /* (CAN_TXBTIE) Transmission Interrupt Enable 27 Mask */
+#define CAN_TXBTIE_TIE27(value)               (CAN_TXBTIE_TIE27_Msk & (_UINT32_(value) << CAN_TXBTIE_TIE27_Pos)) /* Assigment of value for TIE27 in the CAN_TXBTIE register */
+#define CAN_TXBTIE_TIE28_Pos                  _UINT32_(28)                                         /* (CAN_TXBTIE) Transmission Interrupt Enable 28 Position */
+#define CAN_TXBTIE_TIE28_Msk                  (_UINT32_(0x1) << CAN_TXBTIE_TIE28_Pos)              /* (CAN_TXBTIE) Transmission Interrupt Enable 28 Mask */
+#define CAN_TXBTIE_TIE28(value)               (CAN_TXBTIE_TIE28_Msk & (_UINT32_(value) << CAN_TXBTIE_TIE28_Pos)) /* Assigment of value for TIE28 in the CAN_TXBTIE register */
+#define CAN_TXBTIE_TIE29_Pos                  _UINT32_(29)                                         /* (CAN_TXBTIE) Transmission Interrupt Enable 29 Position */
+#define CAN_TXBTIE_TIE29_Msk                  (_UINT32_(0x1) << CAN_TXBTIE_TIE29_Pos)              /* (CAN_TXBTIE) Transmission Interrupt Enable 29 Mask */
+#define CAN_TXBTIE_TIE29(value)               (CAN_TXBTIE_TIE29_Msk & (_UINT32_(value) << CAN_TXBTIE_TIE29_Pos)) /* Assigment of value for TIE29 in the CAN_TXBTIE register */
+#define CAN_TXBTIE_TIE30_Pos                  _UINT32_(30)                                         /* (CAN_TXBTIE) Transmission Interrupt Enable 30 Position */
+#define CAN_TXBTIE_TIE30_Msk                  (_UINT32_(0x1) << CAN_TXBTIE_TIE30_Pos)              /* (CAN_TXBTIE) Transmission Interrupt Enable 30 Mask */
+#define CAN_TXBTIE_TIE30(value)               (CAN_TXBTIE_TIE30_Msk & (_UINT32_(value) << CAN_TXBTIE_TIE30_Pos)) /* Assigment of value for TIE30 in the CAN_TXBTIE register */
+#define CAN_TXBTIE_TIE31_Pos                  _UINT32_(31)                                         /* (CAN_TXBTIE) Transmission Interrupt Enable 31 Position */
+#define CAN_TXBTIE_TIE31_Msk                  (_UINT32_(0x1) << CAN_TXBTIE_TIE31_Pos)              /* (CAN_TXBTIE) Transmission Interrupt Enable 31 Mask */
+#define CAN_TXBTIE_TIE31(value)               (CAN_TXBTIE_TIE31_Msk & (_UINT32_(value) << CAN_TXBTIE_TIE31_Pos)) /* Assigment of value for TIE31 in the CAN_TXBTIE register */
+#define CAN_TXBTIE_Msk                        _UINT32_(0xFFFFFFFF)                                 /* (CAN_TXBTIE) Register Mask  */
+
+#define CAN_TXBTIE_TIE_Pos                    _UINT32_(0)                                          /* (CAN_TXBTIE Position) Transmission Interrupt Enable 3x */
+#define CAN_TXBTIE_TIE_Msk                    (_UINT32_(0xFFFFFFFF) << CAN_TXBTIE_TIE_Pos)         /* (CAN_TXBTIE Mask) TIE */
+#define CAN_TXBTIE_TIE(value)                 (CAN_TXBTIE_TIE_Msk & (_UINT32_(value) << CAN_TXBTIE_TIE_Pos)) 
+
+/* -------- CAN_TXBTO : (CAN Offset: 0xD8) ( R/ 32) Tx Buffer Transmission Occurred -------- */
+#define CAN_TXBTO_RESETVALUE                  _UINT32_(0x00)                                       /*  (CAN_TXBTO) Tx Buffer Transmission Occurred  Reset Value */
+
+#define CAN_TXBTO_TO0_Pos                     _UINT32_(0)                                          /* (CAN_TXBTO) Transmission Occurred 0 Position */
+#define CAN_TXBTO_TO0_Msk                     (_UINT32_(0x1) << CAN_TXBTO_TO0_Pos)                 /* (CAN_TXBTO) Transmission Occurred 0 Mask */
+#define CAN_TXBTO_TO0(value)                  (CAN_TXBTO_TO0_Msk & (_UINT32_(value) << CAN_TXBTO_TO0_Pos)) /* Assigment of value for TO0 in the CAN_TXBTO register */
+#define CAN_TXBTO_TO1_Pos                     _UINT32_(1)                                          /* (CAN_TXBTO) Transmission Occurred 1 Position */
+#define CAN_TXBTO_TO1_Msk                     (_UINT32_(0x1) << CAN_TXBTO_TO1_Pos)                 /* (CAN_TXBTO) Transmission Occurred 1 Mask */
+#define CAN_TXBTO_TO1(value)                  (CAN_TXBTO_TO1_Msk & (_UINT32_(value) << CAN_TXBTO_TO1_Pos)) /* Assigment of value for TO1 in the CAN_TXBTO register */
+#define CAN_TXBTO_TO2_Pos                     _UINT32_(2)                                          /* (CAN_TXBTO) Transmission Occurred 2 Position */
+#define CAN_TXBTO_TO2_Msk                     (_UINT32_(0x1) << CAN_TXBTO_TO2_Pos)                 /* (CAN_TXBTO) Transmission Occurred 2 Mask */
+#define CAN_TXBTO_TO2(value)                  (CAN_TXBTO_TO2_Msk & (_UINT32_(value) << CAN_TXBTO_TO2_Pos)) /* Assigment of value for TO2 in the CAN_TXBTO register */
+#define CAN_TXBTO_TO3_Pos                     _UINT32_(3)                                          /* (CAN_TXBTO) Transmission Occurred 3 Position */
+#define CAN_TXBTO_TO3_Msk                     (_UINT32_(0x1) << CAN_TXBTO_TO3_Pos)                 /* (CAN_TXBTO) Transmission Occurred 3 Mask */
+#define CAN_TXBTO_TO3(value)                  (CAN_TXBTO_TO3_Msk & (_UINT32_(value) << CAN_TXBTO_TO3_Pos)) /* Assigment of value for TO3 in the CAN_TXBTO register */
+#define CAN_TXBTO_TO4_Pos                     _UINT32_(4)                                          /* (CAN_TXBTO) Transmission Occurred 4 Position */
+#define CAN_TXBTO_TO4_Msk                     (_UINT32_(0x1) << CAN_TXBTO_TO4_Pos)                 /* (CAN_TXBTO) Transmission Occurred 4 Mask */
+#define CAN_TXBTO_TO4(value)                  (CAN_TXBTO_TO4_Msk & (_UINT32_(value) << CAN_TXBTO_TO4_Pos)) /* Assigment of value for TO4 in the CAN_TXBTO register */
+#define CAN_TXBTO_TO5_Pos                     _UINT32_(5)                                          /* (CAN_TXBTO) Transmission Occurred 5 Position */
+#define CAN_TXBTO_TO5_Msk                     (_UINT32_(0x1) << CAN_TXBTO_TO5_Pos)                 /* (CAN_TXBTO) Transmission Occurred 5 Mask */
+#define CAN_TXBTO_TO5(value)                  (CAN_TXBTO_TO5_Msk & (_UINT32_(value) << CAN_TXBTO_TO5_Pos)) /* Assigment of value for TO5 in the CAN_TXBTO register */
+#define CAN_TXBTO_TO6_Pos                     _UINT32_(6)                                          /* (CAN_TXBTO) Transmission Occurred 6 Position */
+#define CAN_TXBTO_TO6_Msk                     (_UINT32_(0x1) << CAN_TXBTO_TO6_Pos)                 /* (CAN_TXBTO) Transmission Occurred 6 Mask */
+#define CAN_TXBTO_TO6(value)                  (CAN_TXBTO_TO6_Msk & (_UINT32_(value) << CAN_TXBTO_TO6_Pos)) /* Assigment of value for TO6 in the CAN_TXBTO register */
+#define CAN_TXBTO_TO7_Pos                     _UINT32_(7)                                          /* (CAN_TXBTO) Transmission Occurred 7 Position */
+#define CAN_TXBTO_TO7_Msk                     (_UINT32_(0x1) << CAN_TXBTO_TO7_Pos)                 /* (CAN_TXBTO) Transmission Occurred 7 Mask */
+#define CAN_TXBTO_TO7(value)                  (CAN_TXBTO_TO7_Msk & (_UINT32_(value) << CAN_TXBTO_TO7_Pos)) /* Assigment of value for TO7 in the CAN_TXBTO register */
+#define CAN_TXBTO_TO8_Pos                     _UINT32_(8)                                          /* (CAN_TXBTO) Transmission Occurred 8 Position */
+#define CAN_TXBTO_TO8_Msk                     (_UINT32_(0x1) << CAN_TXBTO_TO8_Pos)                 /* (CAN_TXBTO) Transmission Occurred 8 Mask */
+#define CAN_TXBTO_TO8(value)                  (CAN_TXBTO_TO8_Msk & (_UINT32_(value) << CAN_TXBTO_TO8_Pos)) /* Assigment of value for TO8 in the CAN_TXBTO register */
+#define CAN_TXBTO_TO9_Pos                     _UINT32_(9)                                          /* (CAN_TXBTO) Transmission Occurred 9 Position */
+#define CAN_TXBTO_TO9_Msk                     (_UINT32_(0x1) << CAN_TXBTO_TO9_Pos)                 /* (CAN_TXBTO) Transmission Occurred 9 Mask */
+#define CAN_TXBTO_TO9(value)                  (CAN_TXBTO_TO9_Msk & (_UINT32_(value) << CAN_TXBTO_TO9_Pos)) /* Assigment of value for TO9 in the CAN_TXBTO register */
+#define CAN_TXBTO_TO10_Pos                    _UINT32_(10)                                         /* (CAN_TXBTO) Transmission Occurred 10 Position */
+#define CAN_TXBTO_TO10_Msk                    (_UINT32_(0x1) << CAN_TXBTO_TO10_Pos)                /* (CAN_TXBTO) Transmission Occurred 10 Mask */
+#define CAN_TXBTO_TO10(value)                 (CAN_TXBTO_TO10_Msk & (_UINT32_(value) << CAN_TXBTO_TO10_Pos)) /* Assigment of value for TO10 in the CAN_TXBTO register */
+#define CAN_TXBTO_TO11_Pos                    _UINT32_(11)                                         /* (CAN_TXBTO) Transmission Occurred 11 Position */
+#define CAN_TXBTO_TO11_Msk                    (_UINT32_(0x1) << CAN_TXBTO_TO11_Pos)                /* (CAN_TXBTO) Transmission Occurred 11 Mask */
+#define CAN_TXBTO_TO11(value)                 (CAN_TXBTO_TO11_Msk & (_UINT32_(value) << CAN_TXBTO_TO11_Pos)) /* Assigment of value for TO11 in the CAN_TXBTO register */
+#define CAN_TXBTO_TO12_Pos                    _UINT32_(12)                                         /* (CAN_TXBTO) Transmission Occurred 12 Position */
+#define CAN_TXBTO_TO12_Msk                    (_UINT32_(0x1) << CAN_TXBTO_TO12_Pos)                /* (CAN_TXBTO) Transmission Occurred 12 Mask */
+#define CAN_TXBTO_TO12(value)                 (CAN_TXBTO_TO12_Msk & (_UINT32_(value) << CAN_TXBTO_TO12_Pos)) /* Assigment of value for TO12 in the CAN_TXBTO register */
+#define CAN_TXBTO_TO13_Pos                    _UINT32_(13)                                         /* (CAN_TXBTO) Transmission Occurred 13 Position */
+#define CAN_TXBTO_TO13_Msk                    (_UINT32_(0x1) << CAN_TXBTO_TO13_Pos)                /* (CAN_TXBTO) Transmission Occurred 13 Mask */
+#define CAN_TXBTO_TO13(value)                 (CAN_TXBTO_TO13_Msk & (_UINT32_(value) << CAN_TXBTO_TO13_Pos)) /* Assigment of value for TO13 in the CAN_TXBTO register */
+#define CAN_TXBTO_TO14_Pos                    _UINT32_(14)                                         /* (CAN_TXBTO) Transmission Occurred 14 Position */
+#define CAN_TXBTO_TO14_Msk                    (_UINT32_(0x1) << CAN_TXBTO_TO14_Pos)                /* (CAN_TXBTO) Transmission Occurred 14 Mask */
+#define CAN_TXBTO_TO14(value)                 (CAN_TXBTO_TO14_Msk & (_UINT32_(value) << CAN_TXBTO_TO14_Pos)) /* Assigment of value for TO14 in the CAN_TXBTO register */
+#define CAN_TXBTO_TO15_Pos                    _UINT32_(15)                                         /* (CAN_TXBTO) Transmission Occurred 15 Position */
+#define CAN_TXBTO_TO15_Msk                    (_UINT32_(0x1) << CAN_TXBTO_TO15_Pos)                /* (CAN_TXBTO) Transmission Occurred 15 Mask */
+#define CAN_TXBTO_TO15(value)                 (CAN_TXBTO_TO15_Msk & (_UINT32_(value) << CAN_TXBTO_TO15_Pos)) /* Assigment of value for TO15 in the CAN_TXBTO register */
+#define CAN_TXBTO_TO16_Pos                    _UINT32_(16)                                         /* (CAN_TXBTO) Transmission Occurred 16 Position */
+#define CAN_TXBTO_TO16_Msk                    (_UINT32_(0x1) << CAN_TXBTO_TO16_Pos)                /* (CAN_TXBTO) Transmission Occurred 16 Mask */
+#define CAN_TXBTO_TO16(value)                 (CAN_TXBTO_TO16_Msk & (_UINT32_(value) << CAN_TXBTO_TO16_Pos)) /* Assigment of value for TO16 in the CAN_TXBTO register */
+#define CAN_TXBTO_TO17_Pos                    _UINT32_(17)                                         /* (CAN_TXBTO) Transmission Occurred 17 Position */
+#define CAN_TXBTO_TO17_Msk                    (_UINT32_(0x1) << CAN_TXBTO_TO17_Pos)                /* (CAN_TXBTO) Transmission Occurred 17 Mask */
+#define CAN_TXBTO_TO17(value)                 (CAN_TXBTO_TO17_Msk & (_UINT32_(value) << CAN_TXBTO_TO17_Pos)) /* Assigment of value for TO17 in the CAN_TXBTO register */
+#define CAN_TXBTO_TO18_Pos                    _UINT32_(18)                                         /* (CAN_TXBTO) Transmission Occurred 18 Position */
+#define CAN_TXBTO_TO18_Msk                    (_UINT32_(0x1) << CAN_TXBTO_TO18_Pos)                /* (CAN_TXBTO) Transmission Occurred 18 Mask */
+#define CAN_TXBTO_TO18(value)                 (CAN_TXBTO_TO18_Msk & (_UINT32_(value) << CAN_TXBTO_TO18_Pos)) /* Assigment of value for TO18 in the CAN_TXBTO register */
+#define CAN_TXBTO_TO19_Pos                    _UINT32_(19)                                         /* (CAN_TXBTO) Transmission Occurred 19 Position */
+#define CAN_TXBTO_TO19_Msk                    (_UINT32_(0x1) << CAN_TXBTO_TO19_Pos)                /* (CAN_TXBTO) Transmission Occurred 19 Mask */
+#define CAN_TXBTO_TO19(value)                 (CAN_TXBTO_TO19_Msk & (_UINT32_(value) << CAN_TXBTO_TO19_Pos)) /* Assigment of value for TO19 in the CAN_TXBTO register */
+#define CAN_TXBTO_TO20_Pos                    _UINT32_(20)                                         /* (CAN_TXBTO) Transmission Occurred 20 Position */
+#define CAN_TXBTO_TO20_Msk                    (_UINT32_(0x1) << CAN_TXBTO_TO20_Pos)                /* (CAN_TXBTO) Transmission Occurred 20 Mask */
+#define CAN_TXBTO_TO20(value)                 (CAN_TXBTO_TO20_Msk & (_UINT32_(value) << CAN_TXBTO_TO20_Pos)) /* Assigment of value for TO20 in the CAN_TXBTO register */
+#define CAN_TXBTO_TO21_Pos                    _UINT32_(21)                                         /* (CAN_TXBTO) Transmission Occurred 21 Position */
+#define CAN_TXBTO_TO21_Msk                    (_UINT32_(0x1) << CAN_TXBTO_TO21_Pos)                /* (CAN_TXBTO) Transmission Occurred 21 Mask */
+#define CAN_TXBTO_TO21(value)                 (CAN_TXBTO_TO21_Msk & (_UINT32_(value) << CAN_TXBTO_TO21_Pos)) /* Assigment of value for TO21 in the CAN_TXBTO register */
+#define CAN_TXBTO_TO22_Pos                    _UINT32_(22)                                         /* (CAN_TXBTO) Transmission Occurred 22 Position */
+#define CAN_TXBTO_TO22_Msk                    (_UINT32_(0x1) << CAN_TXBTO_TO22_Pos)                /* (CAN_TXBTO) Transmission Occurred 22 Mask */
+#define CAN_TXBTO_TO22(value)                 (CAN_TXBTO_TO22_Msk & (_UINT32_(value) << CAN_TXBTO_TO22_Pos)) /* Assigment of value for TO22 in the CAN_TXBTO register */
+#define CAN_TXBTO_TO23_Pos                    _UINT32_(23)                                         /* (CAN_TXBTO) Transmission Occurred 23 Position */
+#define CAN_TXBTO_TO23_Msk                    (_UINT32_(0x1) << CAN_TXBTO_TO23_Pos)                /* (CAN_TXBTO) Transmission Occurred 23 Mask */
+#define CAN_TXBTO_TO23(value)                 (CAN_TXBTO_TO23_Msk & (_UINT32_(value) << CAN_TXBTO_TO23_Pos)) /* Assigment of value for TO23 in the CAN_TXBTO register */
+#define CAN_TXBTO_TO24_Pos                    _UINT32_(24)                                         /* (CAN_TXBTO) Transmission Occurred 24 Position */
+#define CAN_TXBTO_TO24_Msk                    (_UINT32_(0x1) << CAN_TXBTO_TO24_Pos)                /* (CAN_TXBTO) Transmission Occurred 24 Mask */
+#define CAN_TXBTO_TO24(value)                 (CAN_TXBTO_TO24_Msk & (_UINT32_(value) << CAN_TXBTO_TO24_Pos)) /* Assigment of value for TO24 in the CAN_TXBTO register */
+#define CAN_TXBTO_TO25_Pos                    _UINT32_(25)                                         /* (CAN_TXBTO) Transmission Occurred 25 Position */
+#define CAN_TXBTO_TO25_Msk                    (_UINT32_(0x1) << CAN_TXBTO_TO25_Pos)                /* (CAN_TXBTO) Transmission Occurred 25 Mask */
+#define CAN_TXBTO_TO25(value)                 (CAN_TXBTO_TO25_Msk & (_UINT32_(value) << CAN_TXBTO_TO25_Pos)) /* Assigment of value for TO25 in the CAN_TXBTO register */
+#define CAN_TXBTO_TO26_Pos                    _UINT32_(26)                                         /* (CAN_TXBTO) Transmission Occurred 26 Position */
+#define CAN_TXBTO_TO26_Msk                    (_UINT32_(0x1) << CAN_TXBTO_TO26_Pos)                /* (CAN_TXBTO) Transmission Occurred 26 Mask */
+#define CAN_TXBTO_TO26(value)                 (CAN_TXBTO_TO26_Msk & (_UINT32_(value) << CAN_TXBTO_TO26_Pos)) /* Assigment of value for TO26 in the CAN_TXBTO register */
+#define CAN_TXBTO_TO27_Pos                    _UINT32_(27)                                         /* (CAN_TXBTO) Transmission Occurred 27 Position */
+#define CAN_TXBTO_TO27_Msk                    (_UINT32_(0x1) << CAN_TXBTO_TO27_Pos)                /* (CAN_TXBTO) Transmission Occurred 27 Mask */
+#define CAN_TXBTO_TO27(value)                 (CAN_TXBTO_TO27_Msk & (_UINT32_(value) << CAN_TXBTO_TO27_Pos)) /* Assigment of value for TO27 in the CAN_TXBTO register */
+#define CAN_TXBTO_TO28_Pos                    _UINT32_(28)                                         /* (CAN_TXBTO) Transmission Occurred 28 Position */
+#define CAN_TXBTO_TO28_Msk                    (_UINT32_(0x1) << CAN_TXBTO_TO28_Pos)                /* (CAN_TXBTO) Transmission Occurred 28 Mask */
+#define CAN_TXBTO_TO28(value)                 (CAN_TXBTO_TO28_Msk & (_UINT32_(value) << CAN_TXBTO_TO28_Pos)) /* Assigment of value for TO28 in the CAN_TXBTO register */
+#define CAN_TXBTO_TO29_Pos                    _UINT32_(29)                                         /* (CAN_TXBTO) Transmission Occurred 29 Position */
+#define CAN_TXBTO_TO29_Msk                    (_UINT32_(0x1) << CAN_TXBTO_TO29_Pos)                /* (CAN_TXBTO) Transmission Occurred 29 Mask */
+#define CAN_TXBTO_TO29(value)                 (CAN_TXBTO_TO29_Msk & (_UINT32_(value) << CAN_TXBTO_TO29_Pos)) /* Assigment of value for TO29 in the CAN_TXBTO register */
+#define CAN_TXBTO_TO30_Pos                    _UINT32_(30)                                         /* (CAN_TXBTO) Transmission Occurred 30 Position */
+#define CAN_TXBTO_TO30_Msk                    (_UINT32_(0x1) << CAN_TXBTO_TO30_Pos)                /* (CAN_TXBTO) Transmission Occurred 30 Mask */
+#define CAN_TXBTO_TO30(value)                 (CAN_TXBTO_TO30_Msk & (_UINT32_(value) << CAN_TXBTO_TO30_Pos)) /* Assigment of value for TO30 in the CAN_TXBTO register */
+#define CAN_TXBTO_TO31_Pos                    _UINT32_(31)                                         /* (CAN_TXBTO) Transmission Occurred 31 Position */
+#define CAN_TXBTO_TO31_Msk                    (_UINT32_(0x1) << CAN_TXBTO_TO31_Pos)                /* (CAN_TXBTO) Transmission Occurred 31 Mask */
+#define CAN_TXBTO_TO31(value)                 (CAN_TXBTO_TO31_Msk & (_UINT32_(value) << CAN_TXBTO_TO31_Pos)) /* Assigment of value for TO31 in the CAN_TXBTO register */
+#define CAN_TXBTO_Msk                         _UINT32_(0xFFFFFFFF)                                 /* (CAN_TXBTO) Register Mask  */
+
+#define CAN_TXBTO_TO_Pos                      _UINT32_(0)                                          /* (CAN_TXBTO Position) Transmission Occurred 3x */
+#define CAN_TXBTO_TO_Msk                      (_UINT32_(0xFFFFFFFF) << CAN_TXBTO_TO_Pos)           /* (CAN_TXBTO Mask) TO */
+#define CAN_TXBTO_TO(value)                   (CAN_TXBTO_TO_Msk & (_UINT32_(value) << CAN_TXBTO_TO_Pos)) 
+
+/* -------- CAN_TXEFA : (CAN Offset: 0xF8) (R/W 32) Tx Event FIFO Acknowledge -------- */
+#define CAN_TXEFA_RESETVALUE                  _UINT32_(0x00)                                       /*  (CAN_TXEFA) Tx Event FIFO Acknowledge  Reset Value */
+
+#define CAN_TXEFA_EFAI_Pos                    _UINT32_(0)                                          /* (CAN_TXEFA) Event FIFO Acknowledge Index Position */
+#define CAN_TXEFA_EFAI_Msk                    (_UINT32_(0x1F) << CAN_TXEFA_EFAI_Pos)               /* (CAN_TXEFA) Event FIFO Acknowledge Index Mask */
+#define CAN_TXEFA_EFAI(value)                 (CAN_TXEFA_EFAI_Msk & (_UINT32_(value) << CAN_TXEFA_EFAI_Pos)) /* Assigment of value for EFAI in the CAN_TXEFA register */
+#define CAN_TXEFA_Msk                         _UINT32_(0x0000001F)                                 /* (CAN_TXEFA) Register Mask  */
+
+
 /* -------- CAN_TXEFC : (CAN Offset: 0xF0) (R/W 32) Tx Event FIFO Configuration -------- */
 #define CAN_TXEFC_RESETVALUE                  _UINT32_(0x00)                                       /*  (CAN_TXEFC) Tx Event FIFO Configuration  Reset Value */
 
@@ -2300,22 +2254,68 @@
 #define CAN_TXEFS_Msk                         _UINT32_(0x031F1F3F)                                 /* (CAN_TXEFS) Register Mask  */
 
 
-/* -------- CAN_TXEFA : (CAN Offset: 0xF8) (R/W 32) Tx Event FIFO Acknowledge -------- */
-#define CAN_TXEFA_RESETVALUE                  _UINT32_(0x00)                                       /*  (CAN_TXEFA) Tx Event FIFO Acknowledge  Reset Value */
+/* -------- CAN_TXESC : (CAN Offset: 0xC8) (R/W 32) Tx Buffer Element Size Configuration -------- */
+#define CAN_TXESC_RESETVALUE                  _UINT32_(0x00)                                       /*  (CAN_TXESC) Tx Buffer Element Size Configuration  Reset Value */
 
-#define CAN_TXEFA_EFAI_Pos                    _UINT32_(0)                                          /* (CAN_TXEFA) Event FIFO Acknowledge Index Position */
-#define CAN_TXEFA_EFAI_Msk                    (_UINT32_(0x1F) << CAN_TXEFA_EFAI_Pos)               /* (CAN_TXEFA) Event FIFO Acknowledge Index Mask */
-#define CAN_TXEFA_EFAI(value)                 (CAN_TXEFA_EFAI_Msk & (_UINT32_(value) << CAN_TXEFA_EFAI_Pos)) /* Assigment of value for EFAI in the CAN_TXEFA register */
-#define CAN_TXEFA_Msk                         _UINT32_(0x0000001F)                                 /* (CAN_TXEFA) Register Mask  */
+#define CAN_TXESC_TBDS_Pos                    _UINT32_(0)                                          /* (CAN_TXESC) Tx Buffer Data Field Size Position */
+#define CAN_TXESC_TBDS_Msk                    (_UINT32_(0x7) << CAN_TXESC_TBDS_Pos)                /* (CAN_TXESC) Tx Buffer Data Field Size Mask */
+#define CAN_TXESC_TBDS(value)                 (CAN_TXESC_TBDS_Msk & (_UINT32_(value) << CAN_TXESC_TBDS_Pos)) /* Assigment of value for TBDS in the CAN_TXESC register */
+#define   CAN_TXESC_TBDS_DATA8_Val            _UINT32_(0x0)                                        /* (CAN_TXESC) 8 byte data field  */
+#define   CAN_TXESC_TBDS_DATA12_Val           _UINT32_(0x1)                                        /* (CAN_TXESC) 12 byte data field  */
+#define   CAN_TXESC_TBDS_DATA16_Val           _UINT32_(0x2)                                        /* (CAN_TXESC) 16 byte data field  */
+#define   CAN_TXESC_TBDS_DATA20_Val           _UINT32_(0x3)                                        /* (CAN_TXESC) 20 byte data field  */
+#define   CAN_TXESC_TBDS_DATA24_Val           _UINT32_(0x4)                                        /* (CAN_TXESC) 24 byte data field  */
+#define   CAN_TXESC_TBDS_DATA32_Val           _UINT32_(0x5)                                        /* (CAN_TXESC) 32 byte data field  */
+#define   CAN_TXESC_TBDS_DATA48_Val           _UINT32_(0x6)                                        /* (CAN_TXESC) 48 byte data field  */
+#define   CAN_TXESC_TBDS_DATA64_Val           _UINT32_(0x7)                                        /* (CAN_TXESC) 64 byte data field  */
+#define CAN_TXESC_TBDS_DATA8                  (CAN_TXESC_TBDS_DATA8_Val << CAN_TXESC_TBDS_Pos)     /* (CAN_TXESC) 8 byte data field Position  */
+#define CAN_TXESC_TBDS_DATA12                 (CAN_TXESC_TBDS_DATA12_Val << CAN_TXESC_TBDS_Pos)    /* (CAN_TXESC) 12 byte data field Position  */
+#define CAN_TXESC_TBDS_DATA16                 (CAN_TXESC_TBDS_DATA16_Val << CAN_TXESC_TBDS_Pos)    /* (CAN_TXESC) 16 byte data field Position  */
+#define CAN_TXESC_TBDS_DATA20                 (CAN_TXESC_TBDS_DATA20_Val << CAN_TXESC_TBDS_Pos)    /* (CAN_TXESC) 20 byte data field Position  */
+#define CAN_TXESC_TBDS_DATA24                 (CAN_TXESC_TBDS_DATA24_Val << CAN_TXESC_TBDS_Pos)    /* (CAN_TXESC) 24 byte data field Position  */
+#define CAN_TXESC_TBDS_DATA32                 (CAN_TXESC_TBDS_DATA32_Val << CAN_TXESC_TBDS_Pos)    /* (CAN_TXESC) 32 byte data field Position  */
+#define CAN_TXESC_TBDS_DATA48                 (CAN_TXESC_TBDS_DATA48_Val << CAN_TXESC_TBDS_Pos)    /* (CAN_TXESC) 48 byte data field Position  */
+#define CAN_TXESC_TBDS_DATA64                 (CAN_TXESC_TBDS_DATA64_Val << CAN_TXESC_TBDS_Pos)    /* (CAN_TXESC) 64 byte data field Position  */
+#define CAN_TXESC_Msk                         _UINT32_(0x00000007)                                 /* (CAN_TXESC) Register Mask  */
 
 
-/* -------- CAN_ERROR : (CAN Offset: 0x100) (R/W 32) Error Interrupt Flag -------- */
-#define CAN_ERROR_RESETVALUE                  _UINT32_(0x00)                                       /*  (CAN_ERROR) Error Interrupt Flag  Reset Value */
+/* -------- CAN_TXFQS : (CAN Offset: 0xC4) ( R/ 32) Tx FIFO / Queue Status -------- */
+#define CAN_TXFQS_RESETVALUE                  _UINT32_(0x00)                                       /*  (CAN_TXFQS) Tx FIFO / Queue Status  Reset Value */
 
-#define CAN_ERROR_BERR_Pos                    _UINT32_(0)                                          /* (CAN_ERROR) AHB Bus Error Detection Position */
-#define CAN_ERROR_BERR_Msk                    (_UINT32_(0x1) << CAN_ERROR_BERR_Pos)                /* (CAN_ERROR) AHB Bus Error Detection Mask */
-#define CAN_ERROR_BERR(value)                 (CAN_ERROR_BERR_Msk & (_UINT32_(value) << CAN_ERROR_BERR_Pos)) /* Assigment of value for BERR in the CAN_ERROR register */
-#define CAN_ERROR_Msk                         _UINT32_(0x00000001)                                 /* (CAN_ERROR) Register Mask  */
+#define CAN_TXFQS_TFFL_Pos                    _UINT32_(0)                                          /* (CAN_TXFQS) Tx FIFO Free Level Position */
+#define CAN_TXFQS_TFFL_Msk                    (_UINT32_(0x3F) << CAN_TXFQS_TFFL_Pos)               /* (CAN_TXFQS) Tx FIFO Free Level Mask */
+#define CAN_TXFQS_TFFL(value)                 (CAN_TXFQS_TFFL_Msk & (_UINT32_(value) << CAN_TXFQS_TFFL_Pos)) /* Assigment of value for TFFL in the CAN_TXFQS register */
+#define CAN_TXFQS_TFGI_Pos                    _UINT32_(8)                                          /* (CAN_TXFQS) Tx FIFO Get Index Position */
+#define CAN_TXFQS_TFGI_Msk                    (_UINT32_(0x1F) << CAN_TXFQS_TFGI_Pos)               /* (CAN_TXFQS) Tx FIFO Get Index Mask */
+#define CAN_TXFQS_TFGI(value)                 (CAN_TXFQS_TFGI_Msk & (_UINT32_(value) << CAN_TXFQS_TFGI_Pos)) /* Assigment of value for TFGI in the CAN_TXFQS register */
+#define CAN_TXFQS_TFQPI_Pos                   _UINT32_(16)                                         /* (CAN_TXFQS) Tx FIFO/Queue Put Index Position */
+#define CAN_TXFQS_TFQPI_Msk                   (_UINT32_(0x1F) << CAN_TXFQS_TFQPI_Pos)              /* (CAN_TXFQS) Tx FIFO/Queue Put Index Mask */
+#define CAN_TXFQS_TFQPI(value)                (CAN_TXFQS_TFQPI_Msk & (_UINT32_(value) << CAN_TXFQS_TFQPI_Pos)) /* Assigment of value for TFQPI in the CAN_TXFQS register */
+#define CAN_TXFQS_TFQF_Pos                    _UINT32_(21)                                         /* (CAN_TXFQS) Tx FIFO/Queue Full Position */
+#define CAN_TXFQS_TFQF_Msk                    (_UINT32_(0x1) << CAN_TXFQS_TFQF_Pos)                /* (CAN_TXFQS) Tx FIFO/Queue Full Mask */
+#define CAN_TXFQS_TFQF(value)                 (CAN_TXFQS_TFQF_Msk & (_UINT32_(value) << CAN_TXFQS_TFQF_Pos)) /* Assigment of value for TFQF in the CAN_TXFQS register */
+#define CAN_TXFQS_Msk                         _UINT32_(0x003F1F3F)                                 /* (CAN_TXFQS) Register Mask  */
+
+
+/* -------- CAN_XIDAM : (CAN Offset: 0x90) (R/W 32) Extended ID AND Mask -------- */
+#define CAN_XIDAM_RESETVALUE                  _UINT32_(0x1FFFFFFF)                                 /*  (CAN_XIDAM) Extended ID AND Mask  Reset Value */
+
+#define CAN_XIDAM_EIDM_Pos                    _UINT32_(0)                                          /* (CAN_XIDAM) Extended ID Mask Position */
+#define CAN_XIDAM_EIDM_Msk                    (_UINT32_(0x1FFFFFFF) << CAN_XIDAM_EIDM_Pos)         /* (CAN_XIDAM) Extended ID Mask Mask */
+#define CAN_XIDAM_EIDM(value)                 (CAN_XIDAM_EIDM_Msk & (_UINT32_(value) << CAN_XIDAM_EIDM_Pos)) /* Assigment of value for EIDM in the CAN_XIDAM register */
+#define CAN_XIDAM_Msk                         _UINT32_(0x1FFFFFFF)                                 /* (CAN_XIDAM) Register Mask  */
+
+
+/* -------- CAN_XIDFC : (CAN Offset: 0x88) (R/W 32) Extended ID Filter Configuration -------- */
+#define CAN_XIDFC_RESETVALUE                  _UINT32_(0x00)                                       /*  (CAN_XIDFC) Extended ID Filter Configuration  Reset Value */
+
+#define CAN_XIDFC_FLESA_Pos                   _UINT32_(0)                                          /* (CAN_XIDFC) Filter List Extended Start Address Position */
+#define CAN_XIDFC_FLESA_Msk                   (_UINT32_(0xFFFF) << CAN_XIDFC_FLESA_Pos)            /* (CAN_XIDFC) Filter List Extended Start Address Mask */
+#define CAN_XIDFC_FLESA(value)                (CAN_XIDFC_FLESA_Msk & (_UINT32_(value) << CAN_XIDFC_FLESA_Pos)) /* Assigment of value for FLESA in the CAN_XIDFC register */
+#define CAN_XIDFC_LSE_Pos                     _UINT32_(16)                                         /* (CAN_XIDFC) List Size Extended Position */
+#define CAN_XIDFC_LSE_Msk                     (_UINT32_(0x7F) << CAN_XIDFC_LSE_Pos)                /* (CAN_XIDFC) List Size Extended Mask */
+#define CAN_XIDFC_LSE(value)                  (CAN_XIDFC_LSE_Msk & (_UINT32_(value) << CAN_XIDFC_LSE_Pos)) /* Assigment of value for LSE in the CAN_XIDFC register */
+#define CAN_XIDFC_Msk                         _UINT32_(0x007FFFFF)                                 /* (CAN_XIDFC) Register Mask  */
 
 
 /** \brief CAN register offsets definitions */
@@ -2368,54 +2368,54 @@
 #define CAN_TXEFE_1_REG_OFST           _UINT32_(0x04)      /* (CAN_TXEFE_1) Tx Event FIFO Element 1 Offset */
 #define CAN_XIDFE_0_REG_OFST           _UINT32_(0x00)      /* (CAN_XIDFE_0) Extended Message ID Filter Element 0 Offset */
 #define CAN_XIDFE_1_REG_OFST           _UINT32_(0x04)      /* (CAN_XIDFE_1) Extended Message ID Filter Element 1 Offset */
-#define CAN_CREL_REG_OFST              _UINT32_(0x00)      /* (CAN_CREL) Core Release Offset */
-#define CAN_ENDN_REG_OFST              _UINT32_(0x04)      /* (CAN_ENDN) Endian Offset */
-#define CAN_MRCFG_REG_OFST             _UINT32_(0x08)      /* (CAN_MRCFG) Message RAM Configuration Offset */
-#define CAN_DBTP_REG_OFST              _UINT32_(0x0C)      /* (CAN_DBTP) Fast Bit Timing and Prescaler Offset */
-#define CAN_TEST_REG_OFST              _UINT32_(0x10)      /* (CAN_TEST) Test Offset */
-#define CAN_RWD_REG_OFST               _UINT32_(0x14)      /* (CAN_RWD) RAM Watchdog Offset */
 #define CAN_CCCR_REG_OFST              _UINT32_(0x18)      /* (CAN_CCCR) CC Control Offset */
-#define CAN_NBTP_REG_OFST              _UINT32_(0x1C)      /* (CAN_NBTP) Nominal Bit Timing and Prescaler Offset */
-#define CAN_TSCC_REG_OFST              _UINT32_(0x20)      /* (CAN_TSCC) Timestamp Counter Configuration Offset */
-#define CAN_TSCV_REG_OFST              _UINT32_(0x24)      /* (CAN_TSCV) Timestamp Counter Value Offset */
-#define CAN_TOCC_REG_OFST              _UINT32_(0x28)      /* (CAN_TOCC) Timeout Counter Configuration Offset */
-#define CAN_TOCV_REG_OFST              _UINT32_(0x2C)      /* (CAN_TOCV) Timeout Counter Value Offset */
+#define CAN_CREL_REG_OFST              _UINT32_(0x00)      /* (CAN_CREL) Core Release Offset */
+#define CAN_DBTP_REG_OFST              _UINT32_(0x0C)      /* (CAN_DBTP) Fast Bit Timing and Prescaler Offset */
 #define CAN_ECR_REG_OFST               _UINT32_(0x40)      /* (CAN_ECR) Error Counter Offset */
-#define CAN_PSR_REG_OFST               _UINT32_(0x44)      /* (CAN_PSR) Protocol Status Offset */
-#define CAN_TDCR_REG_OFST              _UINT32_(0x48)      /* (CAN_TDCR) Extended ID Filter Configuration Offset */
-#define CAN_IR_REG_OFST                _UINT32_(0x50)      /* (CAN_IR) Interrupt Offset */
-#define CAN_IE_REG_OFST                _UINT32_(0x54)      /* (CAN_IE) Interrupt Enable Offset */
-#define CAN_ILS_REG_OFST               _UINT32_(0x58)      /* (CAN_ILS) Interrupt Line Select Offset */
-#define CAN_ILE_REG_OFST               _UINT32_(0x5C)      /* (CAN_ILE) Interrupt Line Enable Offset */
+#define CAN_ENDN_REG_OFST              _UINT32_(0x04)      /* (CAN_ENDN) Endian Offset */
+#define CAN_ERROR_REG_OFST             _UINT32_(0x100)     /* (CAN_ERROR) Error Interrupt Flag Offset */
 #define CAN_GFC_REG_OFST               _UINT32_(0x80)      /* (CAN_GFC) Global Filter Configuration Offset */
-#define CAN_SIDFC_REG_OFST             _UINT32_(0x84)      /* (CAN_SIDFC) Standard ID Filter Configuration Offset */
-#define CAN_XIDFC_REG_OFST             _UINT32_(0x88)      /* (CAN_XIDFC) Extended ID Filter Configuration Offset */
-#define CAN_XIDAM_REG_OFST             _UINT32_(0x90)      /* (CAN_XIDAM) Extended ID AND Mask Offset */
 #define CAN_HPMS_REG_OFST              _UINT32_(0x94)      /* (CAN_HPMS) High Priority Message Status Offset */
+#define CAN_IE_REG_OFST                _UINT32_(0x54)      /* (CAN_IE) Interrupt Enable Offset */
+#define CAN_ILE_REG_OFST               _UINT32_(0x5C)      /* (CAN_ILE) Interrupt Line Enable Offset */
+#define CAN_ILS_REG_OFST               _UINT32_(0x58)      /* (CAN_ILS) Interrupt Line Select Offset */
+#define CAN_IR_REG_OFST                _UINT32_(0x50)      /* (CAN_IR) Interrupt Offset */
+#define CAN_MRCFG_REG_OFST             _UINT32_(0x08)      /* (CAN_MRCFG) Message RAM Configuration Offset */
+#define CAN_NBTP_REG_OFST              _UINT32_(0x1C)      /* (CAN_NBTP) Nominal Bit Timing and Prescaler Offset */
 #define CAN_NDAT1_REG_OFST             _UINT32_(0x98)      /* (CAN_NDAT1) New Data 1 Offset */
 #define CAN_NDAT2_REG_OFST             _UINT32_(0x9C)      /* (CAN_NDAT2) New Data 2 Offset */
+#define CAN_PSR_REG_OFST               _UINT32_(0x44)      /* (CAN_PSR) Protocol Status Offset */
+#define CAN_RWD_REG_OFST               _UINT32_(0x14)      /* (CAN_RWD) RAM Watchdog Offset */
+#define CAN_RXBC_REG_OFST              _UINT32_(0xAC)      /* (CAN_RXBC) Rx Buffer Configuration Offset */
+#define CAN_RXESC_REG_OFST             _UINT32_(0xBC)      /* (CAN_RXESC) Rx Buffer / FIFO Element Size Configuration Offset */
+#define CAN_RXF0A_REG_OFST             _UINT32_(0xA8)      /* (CAN_RXF0A) Rx FIFO 0 Acknowledge Offset */
 #define CAN_RXF0C_REG_OFST             _UINT32_(0xA0)      /* (CAN_RXF0C) Rx FIFO 0 Configuration Offset */
 #define CAN_RXF0S_REG_OFST             _UINT32_(0xA4)      /* (CAN_RXF0S) Rx FIFO 0 Status Offset */
-#define CAN_RXF0A_REG_OFST             _UINT32_(0xA8)      /* (CAN_RXF0A) Rx FIFO 0 Acknowledge Offset */
-#define CAN_RXBC_REG_OFST              _UINT32_(0xAC)      /* (CAN_RXBC) Rx Buffer Configuration Offset */
+#define CAN_RXF1A_REG_OFST             _UINT32_(0xB8)      /* (CAN_RXF1A) Rx FIFO 1 Acknowledge Offset */
 #define CAN_RXF1C_REG_OFST             _UINT32_(0xB0)      /* (CAN_RXF1C) Rx FIFO 1 Configuration Offset */
 #define CAN_RXF1S_REG_OFST             _UINT32_(0xB4)      /* (CAN_RXF1S) Rx FIFO 1 Status Offset */
-#define CAN_RXF1A_REG_OFST             _UINT32_(0xB8)      /* (CAN_RXF1A) Rx FIFO 1 Acknowledge Offset */
-#define CAN_RXESC_REG_OFST             _UINT32_(0xBC)      /* (CAN_RXESC) Rx Buffer / FIFO Element Size Configuration Offset */
-#define CAN_TXBC_REG_OFST              _UINT32_(0xC0)      /* (CAN_TXBC) Tx Buffer Configuration Offset */
-#define CAN_TXFQS_REG_OFST             _UINT32_(0xC4)      /* (CAN_TXFQS) Tx FIFO / Queue Status Offset */
-#define CAN_TXESC_REG_OFST             _UINT32_(0xC8)      /* (CAN_TXESC) Tx Buffer Element Size Configuration Offset */
-#define CAN_TXBRP_REG_OFST             _UINT32_(0xCC)      /* (CAN_TXBRP) Tx Buffer Request Pending Offset */
+#define CAN_SIDFC_REG_OFST             _UINT32_(0x84)      /* (CAN_SIDFC) Standard ID Filter Configuration Offset */
+#define CAN_TDCR_REG_OFST              _UINT32_(0x48)      /* (CAN_TDCR) Extended ID Filter Configuration Offset */
+#define CAN_TEST_REG_OFST              _UINT32_(0x10)      /* (CAN_TEST) Test Offset */
+#define CAN_TOCC_REG_OFST              _UINT32_(0x28)      /* (CAN_TOCC) Timeout Counter Configuration Offset */
+#define CAN_TOCV_REG_OFST              _UINT32_(0x2C)      /* (CAN_TOCV) Timeout Counter Value Offset */
+#define CAN_TSCC_REG_OFST              _UINT32_(0x20)      /* (CAN_TSCC) Timestamp Counter Configuration Offset */
+#define CAN_TSCV_REG_OFST              _UINT32_(0x24)      /* (CAN_TSCV) Timestamp Counter Value Offset */
 #define CAN_TXBAR_REG_OFST             _UINT32_(0xD0)      /* (CAN_TXBAR) Tx Buffer Add Request Offset */
-#define CAN_TXBCR_REG_OFST             _UINT32_(0xD4)      /* (CAN_TXBCR) Tx Buffer Cancellation Request Offset */
-#define CAN_TXBTO_REG_OFST             _UINT32_(0xD8)      /* (CAN_TXBTO) Tx Buffer Transmission Occurred Offset */
+#define CAN_TXBC_REG_OFST              _UINT32_(0xC0)      /* (CAN_TXBC) Tx Buffer Configuration Offset */
 #define CAN_TXBCF_REG_OFST             _UINT32_(0xDC)      /* (CAN_TXBCF) Tx Buffer Cancellation Finished Offset */
-#define CAN_TXBTIE_REG_OFST            _UINT32_(0xE0)      /* (CAN_TXBTIE) Tx Buffer Transmission Interrupt Enable Offset */
 #define CAN_TXBCIE_REG_OFST            _UINT32_(0xE4)      /* (CAN_TXBCIE) Tx Buffer Cancellation Finished Interrupt Enable Offset */
+#define CAN_TXBCR_REG_OFST             _UINT32_(0xD4)      /* (CAN_TXBCR) Tx Buffer Cancellation Request Offset */
+#define CAN_TXBRP_REG_OFST             _UINT32_(0xCC)      /* (CAN_TXBRP) Tx Buffer Request Pending Offset */
+#define CAN_TXBTIE_REG_OFST            _UINT32_(0xE0)      /* (CAN_TXBTIE) Tx Buffer Transmission Interrupt Enable Offset */
+#define CAN_TXBTO_REG_OFST             _UINT32_(0xD8)      /* (CAN_TXBTO) Tx Buffer Transmission Occurred Offset */
+#define CAN_TXEFA_REG_OFST             _UINT32_(0xF8)      /* (CAN_TXEFA) Tx Event FIFO Acknowledge Offset */
 #define CAN_TXEFC_REG_OFST             _UINT32_(0xF0)      /* (CAN_TXEFC) Tx Event FIFO Configuration Offset */
 #define CAN_TXEFS_REG_OFST             _UINT32_(0xF4)      /* (CAN_TXEFS) Tx Event FIFO Status Offset */
-#define CAN_TXEFA_REG_OFST             _UINT32_(0xF8)      /* (CAN_TXEFA) Tx Event FIFO Acknowledge Offset */
-#define CAN_ERROR_REG_OFST             _UINT32_(0x100)     /* (CAN_ERROR) Error Interrupt Flag Offset */
+#define CAN_TXESC_REG_OFST             _UINT32_(0xC8)      /* (CAN_TXESC) Tx Buffer Element Size Configuration Offset */
+#define CAN_TXFQS_REG_OFST             _UINT32_(0xC4)      /* (CAN_TXFQS) Tx FIFO / Queue Status Offset */
+#define CAN_XIDAM_REG_OFST             _UINT32_(0x90)      /* (CAN_XIDAM) Extended ID AND Mask Offset */
+#define CAN_XIDFC_REG_OFST             _UINT32_(0x88)      /* (CAN_XIDFC) Extended ID Filter Configuration Offset */
 
 #if !(defined(__ASSEMBLER__) || defined(__IAR_SYSTEMS_ASM__))
 /** \brief CAN_RXBE register API structure */

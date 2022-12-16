@@ -41,8 +41,8 @@
 *******************************************************************************/
 //DOM-IGNORE-END
 
-#ifndef DRV_SDMMC_H
-#define DRV_SDMMC_H
+#ifndef _DRV_SDMMC_H
+#define _DRV_SDMMC_H
 
 
 // *****************************************************************************
@@ -221,12 +221,14 @@ typedef enum
         {
             case DRV_SDMMC_EVENT_COMMAND_COMPLETE:
             {
+                // Handle the completed buffer.
                 break;
             }
 
             case DRV_SDMMC_EVENT_COMMAND_ERROR:
             default:
             {
+                // Handle error.
                 break;
             }
         }
@@ -277,12 +279,13 @@ typedef SYS_MEDIA_EVENT_HANDLER DRV_SDMMC_EVENT_HANDLER;
     <code>
     DRV_SDMMC_INIT      init;
     SYS_MODULE_OBJ      objectHandle;
-    
+
+    // Populate the SD Card initialization structure
 
     objectHandle = DRV_SDMMC_Initialize(DRV_SDMMC_INDEX_0, (SYS_MODULE_INIT*)&init);
     if (objectHandle == SYS_MODULE_OBJ_INVALID)
     {
-       
+        // Handle error
     }
     </code>
 
@@ -296,7 +299,7 @@ typedef SYS_MEDIA_EVENT_HANDLER DRV_SDMMC_EVENT_HANDLER;
 
 SYS_MODULE_OBJ DRV_SDMMC_Initialize
 (
-    const SYS_MODULE_INDEX drvIndex,
+    const SYS_MODULE_INDEX index,
     const SYS_MODULE_INIT* const init
 );
 
@@ -333,14 +336,14 @@ SYS_MODULE_OBJ DRV_SDMMC_Initialize
 
   Example:
     <code>
-    SYS_MODULE_OBJ      object;     
+    SYS_MODULE_OBJ      object;     // Returned from DRV_SDMMC_Initialize
     SYS_STATUS          status;
 
     status = DRV_SDMMC_Status(object);
 
     if (status == SYS_STATUS_READY)
     {
-        
+        // Driver is initialized and ready to accept requests
     }
     </code>
 
@@ -378,12 +381,13 @@ SYS_STATUS DRV_SDMMC_Status
 
   Example:
     <code>
-    SYS_MODULE_OBJ      object;    
+    SYS_MODULE_OBJ      object;     // Returned from DRV_SDMMC_Initialize
 
     while (true)
     {
         DRV_SDMMC_Tasks (object);
-        
+
+        // Do other tasks
     }
     </code>
 
@@ -443,7 +447,7 @@ void DRV_SDMMC_Tasks
 
     if (handle == DRV_HANDLE_INVALID)
     {
-        
+        // Unable to open the driver
     }
     </code>
 
@@ -454,7 +458,7 @@ void DRV_SDMMC_Tasks
 DRV_HANDLE DRV_SDMMC_Open
 (
     const SYS_MODULE_INDEX drvIndex,
-    const DRV_IO_INTENT    ioIntent
+    const DRV_IO_INTENT    intent
 );
 
 
@@ -487,7 +491,7 @@ DRV_HANDLE DRV_SDMMC_Open
 
   Example:
     <code>
-    DRV_HANDLE handle;  
+    DRV_HANDLE handle;  // Returned from DRV_SDMMC_Open
 
     DRV_SDMMC_Close (handle);
     </code>
@@ -568,22 +572,25 @@ void DRV_SDMMC_Close
     <code>
 
     uint8_t CACHE_ALIGN myBuffer[MY_BUFFER_SIZE];
-    
+
+    // address should be block aligned.
     uint32_t blockStart = 0x00;
     uint32_t nBlock = 2;
     DRV_SDMMC_COMMAND_HANDLE commandHandle;
     MY_APP_OBJ myAppObj;
-    
+
+    // mySDMMCHandle is the handle returned
+    // by the DRV_SDMMC_Open function.
 
     DRV_SDMMC_AsyncRead(mySDMMCHandle, &commandHandle, &myBuffer[0], blockStart, nBlock);
 
     if(commandHandle == DRV_SDMMC_COMMAND_HANDLE_INVALID)
     {
-        
+        // Error handling here
     }
     else
     {
-        
+        // Read Successfully queued
     }
 
     </code>
@@ -594,11 +601,11 @@ void DRV_SDMMC_Close
 
 void DRV_SDMMC_AsyncRead
 (
-    const DRV_HANDLE handle,
+    DRV_HANDLE handle,
     DRV_SDMMC_COMMAND_HANDLE* commandHandle,
     void* targetBuffer,
     uint32_t blockStart,
-    uint32_t nBlocks
+    uint32_t nBlock
 );
 
 // *****************************************************************************
@@ -662,12 +669,14 @@ void DRV_SDMMC_AsyncRead
     <code>
 
     uint8_t CACHE_ALIGN myBuffer[MY_BUFFER_SIZE];
-    
+
+    // address should be block aligned.
     uint32_t blockStart = 0x00;
     uint32_t nBlock = 2;
     DRV_SDMMC_COMMAND_HANDLE commandHandle;
     MY_APP_OBJ myAppObj;
-    
+
+    // Event is received when the buffer is processed.
 
     void APP_SDMMCEventHandler(
         DRV_SDMMC_EVENT event,
@@ -675,18 +684,19 @@ void DRV_SDMMC_AsyncRead
         uintptr_t contextHandle
     )
     {
-        
+        // contextHandle points to myAppObj.
+
         switch(event)
         {
             case DRV_SDMMC_EVENT_COMMAND_COMPLETE:
             {
-               
+                // This means the data was transferred successfully
                 break;
             }
 
             case DRV_SDMMC_EVENT_COMMAND_ERROR:
             {
-                
+                // Error handling here
                 break;
             }
 
@@ -695,7 +705,12 @@ void DRV_SDMMC_AsyncRead
                 break;
             }
         }
-    }    
+    }
+
+    // mySDMMCHandle is the handle returned
+    // by the DRV_SDMMC_Open function.
+
+    // Client registers an event handler with driver
 
     DRV_SDMMC_EventHandlerSet(mySDMMCHandle, APP_SDMMCEventHandler, (uintptr_t)&myAppObj);
 
@@ -703,7 +718,7 @@ void DRV_SDMMC_AsyncRead
 
     if(commandHandle == DRV_SDMMC_COMMAND_HANDLE_INVALID)
     {
-       
+        // Error handling here
     }
 
     </code>
@@ -714,11 +729,11 @@ void DRV_SDMMC_AsyncRead
 
 void DRV_SDMMC_AsyncWrite
 (
-    const DRV_HANDLE handle,
+    DRV_HANDLE handle,
     DRV_SDMMC_COMMAND_HANDLE* commandHandle,
     void* sourceBuffer,
     uint32_t blockStart,
-    uint32_t nBlocks
+    uint32_t nBlock
 );
 
 // *****************************************************************************
@@ -758,14 +773,14 @@ void DRV_SDMMC_AsyncWrite
 
   Example:
     <code>
-    DRV_HANDLE                    handle;         
+    DRV_HANDLE                    handle;         // Returned from DRV_SDMMC_Open
     DRV_SDMMC_COMMAND_HANDLE      commandHandle;
     DRV_SDMMC_COMMAND_STATUS      status;
 
     status = DRV_SDMMC_CommandStatus(handle, commandHandle);
     if(status == DRV_SDMMC_COMMAND_COMPLETED)
     {
-        
+        // Operation Done
     }
     </code>
 
@@ -887,12 +902,15 @@ SYS_MEDIA_GEOMETRY* DRV_SDMMC_GeometryGet
     None.
 
   Example:
-    <code>   
+    <code>
+    // myAppObj is an application specific state data object.
     MY_APP_OBJ myAppObj;
 
     uint8_t CACHE_ALIGN myBuffer[MY_BUFFER_SIZE];
     uint32_t blockStart, nBlock;
-    DRV_SDMMC_COMMAND_HANDLE commandHandle;    
+    DRV_SDMMC_COMMAND_HANDLE commandHandle;
+
+    // Event Processing Technique. Event is received when operation is done.
 
     void APP_SDMMCEventHandler(
         DRV_SDMMC_EVENT event,
@@ -900,20 +918,22 @@ SYS_MEDIA_GEOMETRY* DRV_SDMMC_GeometryGet
         uintptr_t context
     )
     {
-        
+        // The context handle was set to an application specific
+        // object. It is now retrievable easily in the event handler.
+
         MY_APP_OBJ myAppObj = (MY_APP_OBJ* ) context;
 
         switch(event)
         {
             case DRV_SDMMC_EVENT_COMMAND_COMPLETE:
             {
-               
+                // This means the data was transferred successfully
                 break;
             }
 
             case DRV_SDMMC_EVENT_COMMAND_ERROR:
             {
-                
+                // Error handling here
                 break;
             }
 
@@ -924,14 +944,18 @@ SYS_MEDIA_GEOMETRY* DRV_SDMMC_GeometryGet
         }
     }
 
-   
+    // drvSDMMCHandle is the handle returned
+    // by the DRV_SDMMC_Open function.
+
+    // Client registers an event handler with driver. This is done once.
+
     DRV_SDMMC_EventHandlerSet(drvSDMMCHandle, APP_SDMMCEventHandler, (uintptr_t)&myAppObj);
 
     DRV_SDMMC_AsyncRead(drvSDMMCHandle, &commandHandle, &myBuffer[0], blockStart, nBlock);
 
     if(commandHandle == DRV_SDMMC_COMMAND_HANDLE_INVALID)
     {
-        
+        // Error handling here
     }
 
     </code>
@@ -978,6 +1002,9 @@ void DRV_SDMMC_EventHandlerSet
 
   Example:
     <code>
+
+    // drvSDMMCHandle is the handle returned
+    // by the DRV_SDMMC_Open function.
 
     bool isSDMMCAttached;
     isSDMMCAttached = DRV_SDMMC_isAttached(drvSDMMCHandle);
@@ -1045,7 +1072,7 @@ bool DRV_SDMMC_IsWriteProtected
 
 #include "driver/sdmmc/src/drv_sdmmc_local.h"
 
-#endif // #ifndef DRV_SDMMC_H
+#endif // #ifndef _DRV_SDMMC_H
 
 /*******************************************************************************
  End of File

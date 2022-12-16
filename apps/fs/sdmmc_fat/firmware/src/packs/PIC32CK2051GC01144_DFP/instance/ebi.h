@@ -20,7 +20,7 @@
  *
  */
 
-/* file generated from device description version 2022-09-16T04:53:16Z */
+/* file generated from device description version 2022-11-28T06:54:19Z */
 #ifndef _PIC32CKGC01_EBI_INSTANCE_
 #define _PIC32CKGC01_EBI_INSTANCE_
 
@@ -34,14 +34,14 @@
 #define EBI_DIFF_CHIP_ID                         (0x554E)   /* 2 ASCII characters to differentiate chips (0x554E <--> "UN") */
 #define EBI_EMC_DELAY_REGISTER                   (0)        /* Electro Magnetic Compatibility control registers embedded ? */
 #define EBI_EX_WAIT                              (0)        /* External Wait signal polarity */
+#define EBI_INSTANCE_ID                          (86)       /* Instance index for EBI */
+#define EBI_MCLK_ID_AHB                          (21)       /* Index for EBI AHB clock */
+#define EBI_MCLK_ID_APB                          (114)      /* Index for EBI APB clock */
 #define EBI_MEM_ADDR_SIZE                        (24)       /* Memory Interface size (aligned 32 bits) */
 #define EBI_NB_CS                                (4)        /* Number of Chip Select */
 #define EBI_NB_PAD_NOE                           (16)       /* Number of Pad Control */
 #define EBI_OCMS_INTERFACE                       (0)        /* Off Chip Memory Scrambling implemented ? */
 #define EBI_OVERLOADED                           (1)        /* Overloaded Mode implemented ? */
-#define EBI_INSTANCE_ID                          (86)       /* Instance index for EBI */
-#define EBI_MCLK_ID_AHB                          (21)       /* Index for EBI AHB clock */
-#define EBI_MCLK_ID_APB                          (114)      /* Index for EBI APB clock */
 #define EBI_PAC_ID                               (86)       /* Index for EBI registers write protection */
 
 #endif /* _PIC32CKGC01_EBI_INSTANCE_ */

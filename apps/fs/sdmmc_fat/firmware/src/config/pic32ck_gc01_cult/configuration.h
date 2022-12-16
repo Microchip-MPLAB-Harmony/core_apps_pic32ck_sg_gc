@@ -126,7 +126,7 @@ extern "C" {
 // *****************************************************************************
 // *****************************************************************************
 /* SDMMC Driver Global Configuration Options */
-#define DRV_SDMMC_INSTANCES_NUMBER                       (1U)
+#define DRV_SDMMC_INSTANCES_NUMBER                       1
 
 
 /*** SDMMC Driver Instance 0 Configuration ***/

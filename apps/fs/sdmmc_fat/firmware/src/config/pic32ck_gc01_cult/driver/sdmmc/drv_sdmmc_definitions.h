@@ -40,8 +40,8 @@
 *******************************************************************************/
 //DOM-IGNORE-END
 
-#ifndef DRV_SDMMC_DEFINITIONS_H
-#define DRV_SDMMC_DEFINITIONS_H
+#ifndef _DRV_SDMMC_DEFINITIONS_H
+#define _DRV_SDMMC_DEFINITIONS_H
 
 // DOM-IGNORE-BEGIN
 #ifdef __cplusplus  // Provide C++ Compatibility
@@ -229,7 +229,7 @@ typedef struct
     None.
 */
 
-typedef struct DRV_SDMMC_INIT_T
+typedef struct _DRV_SDMMC_INIT
 {
     /* PLIB API set used by the driver to access the peripheral */
     const DRV_SDMMC_PLIB_API*    sdmmcPlib;
@@ -281,4 +281,4 @@ typedef struct DRV_SDMMC_INIT_T
 #endif
 //DOM-IGNORE-END
 
-#endif      // #ifndef DRV_SDMMC_DEFINITIONS_H
+#endif      // #ifndef _DRV_SDMMC_DEFINITIONS_H
