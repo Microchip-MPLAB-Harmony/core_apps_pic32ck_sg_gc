@@ -84,7 +84,7 @@ static void DRV_SDSPI_TimerCallback( uintptr_t context )
 
 */
 
-void DRV_SDSPI_SPIPlibCallbackHandler( uintptr_t context )
+void _DRV_SDSPI_SPIPlibCallbackHandler( uintptr_t context )
 {
     DRV_SDSPI_OBJ* dObj = (DRV_SDSPI_OBJ *)context;
 
@@ -110,7 +110,7 @@ void DRV_SDSPI_SPIPlibCallbackHandler( uintptr_t context )
 
 */
 
-void DRV_SDSPI_RX_DMA_CallbackHandler(
+void _DRV_SDSPI_RX_DMA_CallbackHandler(
     SYS_DMA_TRANSFER_EVENT event,
     uintptr_t context
 )
@@ -144,7 +144,7 @@ void DRV_SDSPI_RX_DMA_CallbackHandler(
 
 */
 
-void DRV_SDSPI_TX_DMA_CallbackHandler(
+void _DRV_SDSPI_TX_DMA_CallbackHandler(
     SYS_DMA_TRANSFER_EVENT event,
     uintptr_t context
 )
@@ -166,7 +166,7 @@ void DRV_SDSPI_TX_DMA_CallbackHandler(
 
 */
 
-static bool lDRV_SDSPI_DMA_Write(
+static bool _DRV_SDSPI_DMA_Write(
     DRV_SDSPI_OBJ* dObj,
     void* pWriteBuffer,
     uint32_t nBytes
@@ -217,7 +217,7 @@ static bool lDRV_SDSPI_DMA_Write(
 
 */
 
-static bool lDRV_SDSPI_DMA_Read(
+static bool _DRV_SDSPI_DMA_Read(
     DRV_SDSPI_OBJ* dObj,
     void* pReadBuffer,
     uint32_t nBytes
@@ -268,7 +268,7 @@ static bool lDRV_SDSPI_DMA_Read(
     This is a blocking implementation. This function does not block on a semaphore.
 */
 
-bool DRV_SDSPI_SPIWrite(
+bool _DRV_SDSPI_SPIWrite(
     DRV_SDSPI_OBJ* dObj,
     void* pWriteBuffer,
     uint32_t nBytes
@@ -283,7 +283,7 @@ bool DRV_SDSPI_SPIWrite(
     /* If enabled, used DMA */
     if ((dObj->txDMAChannel != SYS_DMA_CHANNEL_NONE) && (dObj->rxDMAChannel != SYS_DMA_CHANNEL_NONE ))
     {
-        if (lDRV_SDSPI_DMA_Write(dObj, pWriteBuffer, nBytes) == false)
+        if (_DRV_SDSPI_DMA_Write(dObj, pWriteBuffer, nBytes) == false)
         {
             SYS_PORT_PinSet(dObj->chipSelectPin);
         }
@@ -319,7 +319,7 @@ bool DRV_SDSPI_SPIWrite(
     This is a blocking implementation. This function does not block on a semaphore.
 */
 
-bool DRV_SDSPI_SPIRead(
+bool _DRV_SDSPI_SPIRead(
     DRV_SDSPI_OBJ* dObj,
     void* pReadBuffer,
     uint32_t nBytes
@@ -334,7 +334,7 @@ bool DRV_SDSPI_SPIRead(
     /* If enabled, used DMA */
     if ((dObj->txDMAChannel != SYS_DMA_CHANNEL_NONE) && (dObj->rxDMAChannel != SYS_DMA_CHANNEL_NONE ))
     {
-        if (lDRV_SDSPI_DMA_Read(dObj, pReadBuffer, nBytes) == false)
+        if (_DRV_SDSPI_DMA_Read(dObj, pReadBuffer, nBytes) == false)
         {
             SYS_PORT_PinSet(dObj->chipSelectPin);
         }
@@ -358,7 +358,7 @@ bool DRV_SDSPI_SPIRead(
     return isSuccess;
 }
 
-bool DRV_SDSPI_SPIWriteWithChipSelectDisabled(
+bool _DRV_SDSPI_SPIWriteWithChipSelectDisabled(
     DRV_SDSPI_OBJ* dObj,
     void* pWriteBuffer,
     uint32_t nBytes
@@ -373,7 +373,7 @@ bool DRV_SDSPI_SPIWriteWithChipSelectDisabled(
     /* If enabled, used DMA */
     if ((dObj->txDMAChannel != SYS_DMA_CHANNEL_NONE) && (dObj->rxDMAChannel != SYS_DMA_CHANNEL_NONE ))
     {
-        if (lDRV_SDSPI_DMA_Write(dObj, pWriteBuffer, nBytes) == true)
+        if (_DRV_SDSPI_DMA_Write(dObj, pWriteBuffer, nBytes) == true)
         {
             isSuccess = true;
         }
@@ -402,7 +402,7 @@ bool DRV_SDSPI_SPIWriteWithChipSelectDisabled(
   Remarks:
 
 */
-bool DRV_SDSPI_CardDetectPollingTimerStart(
+bool _DRV_SDSPI_CardDetectPollingTimerStart(
     DRV_SDSPI_OBJ* const dObj,
     uint32_t period
 )
@@ -434,7 +434,7 @@ bool DRV_SDSPI_CardDetectPollingTimerStart(
   Remarks:
 
 */
-bool DRV_SDSPI_CmdResponseTimerStart(
+bool _DRV_SDSPI_CmdResponseTimerStart(
     DRV_SDSPI_OBJ* const dObj,
     uint32_t period
 )
@@ -465,13 +465,13 @@ bool DRV_SDSPI_CmdResponseTimerStart(
 
 */
 
-bool DRV_SDSPI_CmdResponseTimerStop( DRV_SDSPI_OBJ* const dObj )
+bool _DRV_SDSPI_CmdResponseTimerStop( DRV_SDSPI_OBJ* const dObj )
 {
     bool isSuccess = false;
 
     if (dObj->cmdRespTmrHandle != SYS_TIME_HANDLE_INVALID)
     {
-        (void) SYS_TIME_TimerDestroy(dObj->cmdRespTmrHandle);
+        SYS_TIME_TimerDestroy(dObj->cmdRespTmrHandle);
         isSuccess = true;
     }
 
@@ -491,7 +491,7 @@ bool DRV_SDSPI_CmdResponseTimerStop( DRV_SDSPI_OBJ* const dObj )
 
 */
 
-bool DRV_SDSPI_TimerStart(
+bool _DRV_SDSPI_TimerStart(
     DRV_SDSPI_OBJ* const dObj,
     uint32_t period
 )
@@ -523,13 +523,13 @@ bool DRV_SDSPI_TimerStart(
 
 */
 
-bool DRV_SDSPI_TimerStop( DRV_SDSPI_OBJ* const dObj )
+bool _DRV_SDSPI_TimerStop( DRV_SDSPI_OBJ* const dObj )
 {
     bool isSuccess = false;
 
     if (dObj->timerHandle != SYS_TIME_HANDLE_INVALID)
     {
-        (void) SYS_TIME_TimerDestroy(dObj->timerHandle);
+        SYS_TIME_TimerDestroy(dObj->timerHandle);
         isSuccess = true;
     }
 
@@ -550,7 +550,7 @@ bool DRV_SDSPI_TimerStop( DRV_SDSPI_OBJ* const dObj )
 
 */
 
-bool DRV_SDSPI_SPISpeedSetup(
+bool _DRV_SDSPI_SPISpeedSetup(
     DRV_SDSPI_OBJ* const dObj,
     uint32_t clockFrequency
 )

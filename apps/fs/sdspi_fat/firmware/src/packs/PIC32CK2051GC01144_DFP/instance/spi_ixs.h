@@ -20,7 +20,7 @@
  *
  */
 
-/* file generated from device description version 2022-09-16T04:53:16Z */
+/* file generated from device description version 2022-11-28T06:54:19Z */
 #ifndef _PIC32CKGC01_SPI_IXS_INSTANCE_
 #define _PIC32CKGC01_SPI_IXS_INSTANCE_
 
@@ -29,9 +29,9 @@
 #define SPI_IXS_DMAC_ID_RX                       (65)       
 #define SPI_IXS_DMAC_ID_TX                       (66)       
 #define SPI_IXS_GCLK_ID                          (36)       /* Index of Generic Clock */
-#define SPI_IXS_TPD_MASTER                       (0)        /* Indicates a master or slave number for TPD mode( 1=master,0=slave) */
 #define SPI_IXS_INSTANCE_ID                      (75)       /* Instance index for SPI_IXS */
 #define SPI_IXS_MCLK_ID_APB                      (107)      /* Index for SPI_IXS APB clock */
 #define SPI_IXS_PAC_ID                           (75)       /* Index for SPI_IXS registers write protection */
+#define SPI_IXS_TPD_MASTER                       (0)        /* Indicates a master or slave number for TPD mode( 1=master,0=slave) */
 
 #endif /* _PIC32CKGC01_SPI_IXS_INSTANCE_ */
