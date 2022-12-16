@@ -20,7 +20,7 @@
  *
  */
 
-/* file generated from device description version 2022-09-16T04:53:16Z */
+/* file generated from device description version 2022-11-28T06:54:19Z */
 #ifndef _PIC32CKGC01_ADC_INSTANCE_
 #define _PIC32CKGC01_ADC_INSTANCE_
 
@@ -36,14 +36,14 @@
 #define ADC_EARLY_INTR_PRESENT                   (1)        /* Early Interrupts Present */
 #define ADC_FLTR_NMBR                            (1)        /* Number of Digital Filters, Max=0 */
 #define ADC_GCLK_ID                              (33)       /* Index of Generic Clock */
+#define ADC_INSTANCE_ID                          (72)       /* Instance index for ADC */
+#define ADC_MCLK_ID_APB                          (104)      /* Index for ADC APB clock */
 #define ADC_OCP_ADDR_WIDTH                       (0)        /* OCP Address Width */
 #define ADC_OCP_FIFO_DEPTH                       (0)        /* Number of Words in OCP DMA FIFO */
 #define ADC_OCP_PORT_PRESENT                     (0)        /* OCP DMA Bus Master Present */
+#define ADC_PAC_ID                               (72)       /* Index for ADC registers write protection */
 #define ADC_SARCORE_NMBR                         (1)        /* Number of SARCOREs. Max=4, Min-1 */
 #define ADC_TRGS_NMBR                            (16)       /* Number of Trigger Sources, Max=16 */
 #define ADC_VREF_STARTUP_TIME                    (50)       /* Number of Control Clock cycles for VREF to stabalize */
-#define ADC_INSTANCE_ID                          (72)       /* Instance index for ADC */
-#define ADC_MCLK_ID_APB                          (104)      /* Index for ADC APB clock */
-#define ADC_PAC_ID                               (72)       /* Index for ADC registers write protection */
 
 #endif /* _PIC32CKGC01_ADC_INSTANCE_ */

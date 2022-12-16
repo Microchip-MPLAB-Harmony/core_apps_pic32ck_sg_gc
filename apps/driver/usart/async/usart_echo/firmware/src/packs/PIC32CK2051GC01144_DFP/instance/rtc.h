@@ -20,19 +20,19 @@
  *
  */
 
-/* file generated from device description version 2022-09-16T04:53:16Z */
+/* file generated from device description version 2022-11-28T06:54:19Z */
 #ifndef _PIC32CKGC01_RTC_INSTANCE_
 #define _PIC32CKGC01_RTC_INSTANCE_
 
 
 /* ========== Instance Parameter definitions for RTC peripheral ========== */
 #define RTC_DMAC_ID_TIMESTAMP                    (4)        /* DMA RTC timestamp trigger */
+#define RTC_INSTANCE_ID                          (12)       /* Instance index for RTC */
+#define RTC_MCLK_ID_APB                          (44)       /* Index for RTC APB clock */
 #define RTC_NUM_OF_ALARMS                        (2)        /* Number of Alarms */
 #define RTC_NUM_OF_BKREGS                        (0)        /* Number of Backup Registers */
 #define RTC_NUM_OF_COMP16                        (4)        /* Number of 16-bit Comparators */
 #define RTC_NUM_OF_TAMPERS                       (8)        /* Number of Tamper Inputs */
-#define RTC_INSTANCE_ID                          (12)       /* Instance index for RTC */
-#define RTC_MCLK_ID_APB                          (44)       /* Index for RTC APB clock */
 #define RTC_PAC_ID                               (12)       /* Index for RTC registers write protection */
 
 #endif /* _PIC32CKGC01_RTC_INSTANCE_ */

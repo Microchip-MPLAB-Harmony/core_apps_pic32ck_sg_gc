@@ -20,7 +20,7 @@
  *
  */
 
-/* file generated from device description version 2022-09-16T04:53:16Z */
+/* file generated from device description version 2022-11-28T06:54:19Z */
 #ifndef _PIC32CKGC01_CAN0_INSTANCE_
 #define _PIC32CKGC01_CAN0_INSTANCE_
 
@@ -30,10 +30,10 @@
 #define CAN0_ECC_BERR_IMPLEMENTED                (0)        /* ECC error */
 #define CAN0_EXT_TSTAMP_IMPLEMENTED              (0)        /* External time stamp */
 #define CAN0_GCLK_ID                             (39)       /* Index of Generic Clock */
-#define CAN0_MSG_RAM_ADDR                        (0x20)     /* 8-bits MSB */
-#define CAN0_RXD_SYNC_METHOD                     (0)        /* RXD Synchronization Method */
 #define CAN0_INSTANCE_ID                         (79)       /* Instance index for CAN0 */
 #define CAN0_MCLK_ID_AHB                         (13)       /* Index for CAN0 AHB clock */
+#define CAN0_MSG_RAM_ADDR                        (0x20)     /* 8-bits MSB */
 #define CAN0_PAC_ID                              (79)       /* Index for CAN0 registers write protection */
+#define CAN0_RXD_SYNC_METHOD                     (0)        /* RXD Synchronization Method */
 
 #endif /* _PIC32CKGC01_CAN0_INSTANCE_ */
