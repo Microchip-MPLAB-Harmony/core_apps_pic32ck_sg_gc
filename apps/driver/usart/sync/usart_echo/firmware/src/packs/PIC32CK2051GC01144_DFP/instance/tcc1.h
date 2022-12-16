@@ -20,7 +20,7 @@
  *
  */
 
-/* file generated from device description version 2022-09-16T04:53:16Z */
+/* file generated from device description version 2022-11-28T06:54:19Z */
 #ifndef _PIC32CKGC01_TCC1_INSTANCE_
 #define _PIC32CKGC01_TCC1_INSTANCE_
 
@@ -37,14 +37,14 @@
 #define TCC1_DMAC_ID_OVF                         (20)       /* DMA overflow/underflow/retrigger trigger */
 #define TCC1_DTI                                 (1)        /* Dead-Time-Insertion feature implemented */
 #define TCC1_GCLK_ID                             (23)       /* Index of Generic Clock */
+#define TCC1_INSTANCE_ID                         (45)       /* Instance index for TCC1 */
 #define TCC1_MASTER_SLAVE_MODE                   (2)        /* TCC type 0 : NA, 1 : Master, 2 : Slave */
+#define TCC1_MCLK_ID_APB                         (76)       /* Index for TCC1 APB clock */
 #define TCC1_OTMX                                (1)        /* Output Matrix feature implemented */
 #define TCC1_OW_NUM                              (8)        /* Number of Output Waveforms */
+#define TCC1_PAC_ID                              (45)       /* Index for TCC1 registers write protection */
 #define TCC1_PG                                  (1)        /* Pattern Generation feature implemented */
 #define TCC1_SIZE                                (32)       
 #define TCC1_SWAP                                (1)        /* DTI outputs swap feature implemented */
-#define TCC1_INSTANCE_ID                         (45)       /* Instance index for TCC1 */
-#define TCC1_MCLK_ID_APB                         (76)       /* Index for TCC1 APB clock */
-#define TCC1_PAC_ID                              (45)       /* Index for TCC1 registers write protection */
 
 #endif /* _PIC32CKGC01_TCC1_INSTANCE_ */

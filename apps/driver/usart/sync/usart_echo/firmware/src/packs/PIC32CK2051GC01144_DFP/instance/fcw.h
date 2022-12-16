@@ -20,24 +20,24 @@
  *
  */
 
-/* file generated from device description version 2022-09-16T04:53:16Z */
+/* file generated from device description version 2022-11-28T06:54:19Z */
 #ifndef _PIC32CKGC01_FCW_INSTANCE_
 #define _PIC32CKGC01_FCW_INSTANCE_
 
 
 /* ========== Instance Parameter definitions for FCW peripheral ========== */
+#define FCW_FLASH_SIZE                           (2097152)  
+#define FCW_INSTANCE_ID                          (2)        /* Instance index for FCW */
+#define FCW_MCLK_ID_AHB                          (5)        /* Index for FCW AHB clock */
+#define FCW_MCLK_ID_APB                          (34)       /* Index for FCW APB clock */
+#define FCW_PAC_ID                               (2)        /* Index for FCW registers write protection */
+#define FCW_PAGES                                (512)      
+#define FCW_PAGES_PR_REGION                      (32)       
 #define FCW_PFM_NUM_PAGES                        (256)      /* No of PFM Pages Per panel */
 #define FCW_PFM_PAGE_ADDR_MSB                    (11)       /* Flash Page Size MSB */
 #define FCW_PFM_PAGE_SIZE                        (4096)     /* PFM page size */
 #define FCW_PFM_PNL_ADDR_MSB                     (21)       /* Single flash panel read address MSbit (using byte addressing) */
 #define FCW_PFM_SIZE                             (8)        /* Flash Memory Parameters */
 #define FCW_PFM_SYS_ADDR_MSB                     (20)       /* The MS bit of the system byte address needed to address the entire PFM region (both panels Main) */
-#define FCW_FLASH_SIZE                           (2097152)  
-#define FCW_PAGES                                (512)      
-#define FCW_PAGES_PR_REGION                      (32)       
-#define FCW_INSTANCE_ID                          (2)        /* Instance index for FCW */
-#define FCW_MCLK_ID_AHB                          (5)        /* Index for FCW AHB clock */
-#define FCW_MCLK_ID_APB                          (34)       /* Index for FCW APB clock */
-#define FCW_PAC_ID                               (2)        /* Index for FCW registers write protection */
 
 #endif /* _PIC32CKGC01_FCW_INSTANCE_ */
