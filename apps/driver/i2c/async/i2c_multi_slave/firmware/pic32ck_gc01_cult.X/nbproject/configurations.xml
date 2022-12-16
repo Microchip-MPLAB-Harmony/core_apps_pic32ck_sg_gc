@@ -341,7 +341,7 @@
       </toolsSet>
       <packs>
         <pack name="CMSIS" vendor="ARM" version="5.4.0"/>
-        <pack name="PIC32CK-GC_DFP" vendor="Microchip" version="1.0.5"/>
+        <pack name="PIC32CK-GC_DFP" vendor="Microchip" version="1.0.9"/>
       </packs>
       <ScriptingSettings>
       </ScriptingSettings>

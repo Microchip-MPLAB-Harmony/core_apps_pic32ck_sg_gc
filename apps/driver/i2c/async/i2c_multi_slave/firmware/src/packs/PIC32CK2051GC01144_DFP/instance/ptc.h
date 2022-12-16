@@ -20,7 +20,7 @@
  *
  */
 
-/* file generated from device description version 2022-09-16T04:53:16Z */
+/* file generated from device description version 2022-11-28T06:54:19Z */
 #ifndef _PIC32CKGC01_PTC_INSTANCE_
 #define _PIC32CKGC01_PTC_INSTANCE_
 
@@ -30,8 +30,8 @@
 #define PTC_DMAC_ID_SEQ                          (62)       /* Index of DMA SEQ trigger */
 #define PTC_DMAC_ID_WCOMP                        (63)       /* Index of DMA WCOMP trigger */
 #define PTC_GCLK_ID                              (35)       /* Index of Generic Clock */
-#define PTC_LINES_NUM                            (32)       /* Number of PTC lines */
 #define PTC_INSTANCE_ID                          (74)       /* Instance index for PTC */
+#define PTC_LINES_NUM                            (32)       /* Number of PTC lines */
 #define PTC_MCLK_ID_APB                          (106)      /* Index for PTC APB clock */
 #define PTC_PAC_ID                               (74)       /* Index for PTC registers write protection */
 
