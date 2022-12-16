@@ -20,7 +20,7 @@
  *
  */
 
-/* file generated from device description version 2022-09-16T04:53:16Z */
+/* file generated from device description version 2022-11-28T06:54:19Z */
 #ifndef _PIC32CKGC01_SERCOM1_INSTANCE_
 #define _PIC32CKGC01_SERCOM1_INSTANCE_
 
@@ -35,29 +35,29 @@
 #define SERCOM1_FSYNC_IMPLEMENTED                (1)        /* SPI Frame Synch mode implemented? */
 #define SERCOM1_GCLK_ID_CORE                     (20)       
 #define SERCOM1_GCLK_ID_SLOW                     (18)       
+#define SERCOM1_I2C_0_INT_SRC                    (50)       /* USART/SPI/I2C Error */
+#define SERCOM1_I2C_1_INT_SRC                    (53)       /* USART-SPI Receive Complete/ I2C Data Ready */
+#define SERCOM1_I2C_2_INT_SRC                    (54)       /* USART Receive Start/ SPI Slave Select Low/ I2C TX FIFO Empty */
+#define SERCOM1_I2C_3_INT_SRC                    (55)       /* USART Clear To Send Input Change/ I2C RX FIFO Full */
+#define SERCOM1_INSTANCE_ID                      (41)       /* Instance index for SERCOM1 */
+#define SERCOM1_MCLK_ID_APB                      (72)       /* Index for SERCOM1 APB clock */
+#define SERCOM1_PAC_ID                           (41)       /* Index for SERCOM1 registers write protection */
 #define SERCOM1_SPI                              (1)        /* SPI mode implemented? */
+#define SERCOM1_SPI_RX_INT_SRC                   (53)       /* USART-SPI Receive Complete/ I2C Data Ready */
+#define SERCOM1_SPI_TX_COMPLETE_INT_SRC          (52)       /* USART-SPI Transmit Complete/ I2C Address Match */
+#define SERCOM1_SPI_TX_READY_INT_SRC             (51)       /* USART-SPI Data Register Empty/ I2C Stop Received */
 #define SERCOM1_TWIM                             (1)        /* TWI Master mode implemented? */
 #define SERCOM1_TWIS                             (1)        /* TWI Slave mode implemented? */
 #define SERCOM1_ULTRA_IMPLEMENTATION             (0)        /* ULTRA platform compatibility? */
 #define SERCOM1_USART                            (1)        /* USART mode implemented? */
 #define SERCOM1_USART_AUTOBAUD                   (1)        /* USART autobaud implemented? */
+#define SERCOM1_USART_ERROR_INT_SRC              (50)       /* USART/SPI/I2C Error */
 #define SERCOM1_USART_IRDA                       (1)        /* USART IrDA implemented? */
 #define SERCOM1_USART_ISO7816                    (1)        /* USART ISO7816 mode implemented? */
 #define SERCOM1_USART_LIN_MASTER                 (1)        /* USART LIN Master mode implemented? */
 #define SERCOM1_USART_RS485                      (1)        /* USART RS485 mode implemented? */
-#define SERCOM1_INSTANCE_ID                      (41)       /* Instance index for SERCOM1 */
-#define SERCOM1_MCLK_ID_APB                      (72)       /* Index for SERCOM1 APB clock */
-#define SERCOM1_PAC_ID                           (41)       /* Index for SERCOM1 registers write protection */
-#define SERCOM1_USART_ERROR_INT_SRC              (50)       /* USART/SPI/I2C Error */
-#define SERCOM1_USART_TX_READY_INT_SRC           (51)       /* USART-SPI Data Register Empty/ I2C Stop Received */
-#define SERCOM1_USART_TX_COMPLETE_INT_SRC        (52)       /* USART-SPI Transmit Complete/ I2C Address Match */
 #define SERCOM1_USART_RX_INT_SRC                 (53)       /* USART-SPI Receive Complete/ I2C Data Ready */
-#define SERCOM1_SPI_TX_READY_INT_SRC             (51)       /* USART-SPI Data Register Empty/ I2C Stop Received */
-#define SERCOM1_SPI_TX_COMPLETE_INT_SRC          (52)       /* USART-SPI Transmit Complete/ I2C Address Match */
-#define SERCOM1_SPI_RX_INT_SRC                   (53)       /* USART-SPI Receive Complete/ I2C Data Ready */
-#define SERCOM1_I2C_0_INT_SRC                    (50)       /* USART/SPI/I2C Error */
-#define SERCOM1_I2C_1_INT_SRC                    (53)       /* USART-SPI Receive Complete/ I2C Data Ready */
-#define SERCOM1_I2C_2_INT_SRC                    (54)       /* USART Receive Start/ SPI Slave Select Low/ I2C TX FIFO Empty */
-#define SERCOM1_I2C_3_INT_SRC                    (55)       /* USART Clear To Send Input Change/ I2C RX FIFO Full */
+#define SERCOM1_USART_TX_COMPLETE_INT_SRC        (52)       /* USART-SPI Transmit Complete/ I2C Address Match */
+#define SERCOM1_USART_TX_READY_INT_SRC           (51)       /* USART-SPI Data Register Empty/ I2C Stop Received */
 
 #endif /* _PIC32CKGC01_SERCOM1_INSTANCE_ */

@@ -20,18 +20,18 @@
  *
  */
 
-/* file generated from device description version 2022-09-16T04:53:16Z */
+/* file generated from device description version 2022-11-28T06:54:19Z */
 #ifndef _PIC32CKGC01_PRM_INSTANCE_
 #define _PIC32CKGC01_PRM_INSTANCE_
 
 
 /* ========== Instance Parameter definitions for PRM peripheral ========== */
-#define PRM_PRMWS_DEFAULT                        (0)        /* Default value of PRMWS register field */
-#define PRM_ROM_KEN                              (0)        /* Value driven on to ROM's KEN input */
-#define PRM_ROM_SPLIT                            (0x1C00)   /* Address defining first restricted address */
 #define PRM_INSTANCE_ID                          (37)       /* Instance index for PRM */
 #define PRM_MCLK_ID_AHB                          (12)       /* Index for PRM AHB clock */
 #define PRM_MCLK_ID_APB                          (68)       /* Index for PRM APB clock */
 #define PRM_PAC_ID                               (37)       /* Index for PRM registers write protection */
+#define PRM_PRMWS_DEFAULT                        (0)        /* Default value of PRMWS register field */
+#define PRM_ROM_KEN                              (0)        /* Value driven on to ROM's KEN input */
+#define PRM_ROM_SPLIT                            (0x1C00)   /* Address defining first restricted address */
 
 #endif /* _PIC32CKGC01_PRM_INSTANCE_ */

@@ -20,7 +20,7 @@
  *
  */
 
-/* file generated from device description version 2022-09-16T04:53:16Z */
+/* file generated from device description version 2022-11-28T06:54:19Z */
 #ifndef _PIC32CKGC01_PAC_INSTANCE_
 #define _PIC32CKGC01_PAC_INSTANCE_
 
@@ -28,10 +28,10 @@
 /* ========== Instance Parameter definitions for PAC peripheral ========== */
 #define PAC_HMATRIX1_IMPLEMENTED                 (0)        
 #define PAC_HPB_NUM                              (4)        /* Number of bridges AHB/APB */
-#define PAC_SECURE_IMPLEMENTED                   (0)        /* Security Configuration implemented? */
 #define PAC_INSTANCE_ID                          (14)       /* Instance index for PAC */
 #define PAC_MCLK_ID_AHB                          (6)        /* Index for PAC AHB clock */
 #define PAC_MCLK_ID_APB                          (46)       /* Index for PAC APB clock */
 #define PAC_ID                                   (14)       /* Index for PAC registers write protection */
+#define PAC_SECURE_IMPLEMENTED                   (0)        /* Security Configuration implemented? */
 
 #endif /* _PIC32CKGC01_PAC_INSTANCE_ */

@@ -194,8 +194,6 @@
 #pragma config FUSES_BOOTCFG1_BROM_BOOTCFGCRC2_BROM_BOOTCFGCRC = 0xffffffffU
 #pragma config FUSES_BOOTCFG1_BROM_BOOTCFGCRC3_BROM_BOOTCFGCRC = 0xffffffffU
 #pragma config FUSES_BOOTCFG1_BROM_PAGEEND_BROM_PAGEEND = 0xffffffffU
-#pragma config FUSES_DALCFG_DAL_CPU0 = DAL2
-#pragma config FUSES_DALCFG_DAL_CPU1 = DAL2
 #pragma config FUSES_USERCFG2_FSEQ0_SEQNUM = 0x0U
 #pragma config FUSES_USERCFG2_FSEQ0_SEQBAR = 0xffffU
 #pragma config FUSES_USERCFG2_FSEQ1_SEQNUM = 0x0U
@@ -402,9 +400,9 @@ void SYS_Initialize ( void* data )
     EVSYS_Initialize();
 
 	BSP_Initialize();
-    SERCOM5_USART_Initialize();
-
     PM_Initialize();
+
+    SERCOM5_USART_Initialize();
 
     EIC_Initialize();
 

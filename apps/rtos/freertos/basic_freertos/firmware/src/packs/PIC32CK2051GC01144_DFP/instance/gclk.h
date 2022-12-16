@@ -20,7 +20,7 @@
  *
  */
 
-/* file generated from device description version 2022-09-16T04:53:16Z */
+/* file generated from device description version 2022-11-28T06:54:19Z */
 #ifndef _PIC32CKGC01_GCLK_INSTANCE_
 #define _PIC32CKGC01_GCLK_INSTANCE_
 
@@ -30,12 +30,12 @@
 #define GCLK_GEN_NUM                             (12)       /* Number of Generic Clock Generators */
 #define GCLK_GEN_NUM_MSB                         (11)       /* Number of Generic Clock Generators - 1 */
 #define GCLK_GEN_SOURCE_NUM_MSB                  (11)       /* Number of Generic Clock Sources - 1 */
+#define GCLK_INSTANCE_ID                         (8)        /* Instance index for GCLK */
 #define GCLK_IO_NUM                              (8)        /* Number of Generic Clock I/Os */
+#define GCLK_MCLK_ID_APB                         (40)       /* Index for GCLK APB clock */
 #define GCLK_NUM                                 (48)       /* Number of Generic Clock Users */
+#define GCLK_PAC_ID                              (8)        /* Index for GCLK registers write protection */
 #define GCLK_SOURCE_BITS                         (4)        
 #define GCLK_SOURCE_NUM                          (12)       /* Number of Generic Clock Sources */
-#define GCLK_INSTANCE_ID                         (8)        /* Instance index for GCLK */
-#define GCLK_MCLK_ID_APB                         (40)       /* Index for GCLK APB clock */
-#define GCLK_PAC_ID                              (8)        /* Index for GCLK registers write protection */
 
 #endif /* _PIC32CKGC01_GCLK_INSTANCE_ */
