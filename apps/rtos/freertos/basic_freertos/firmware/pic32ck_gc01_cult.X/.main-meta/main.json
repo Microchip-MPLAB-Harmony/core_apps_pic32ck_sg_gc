@@ -1,0 +1,80 @@
+{
+	"metaDataVersion": "1.0.0",
+	"category": "com.microchip.ide.project",
+	"content": {
+		"metaDataVersion": "1.1.0",
+		"name": "com.microchip.mcu32.mplabx.project.core_apps_pic32cz_ca_rtos_freertos_basic_freertos_pic32ck_gc01_cult_ultra",
+		"version": "3.0.0",
+		"displayName": "FreeRTOS basic Example for PIC32CK_GC Family",
+		"projectName": "basic_freertos_pic32ck_gc01_cult",
+		"shortDescription": "This example application demonstrates context switching between four tasks of different priorites. Two tasks run periodically while the other two tasks are event driven.",
+		"ide": {
+			"name": "MPLABX",
+			"semverRange": ">=6.05.0"
+		},
+		"compiler": [
+			{
+				"name": "XC32",
+				"semverRange": ">=4.2.0"
+			}
+		],
+		"dfp": {
+			"name": "PIC32CK-GC_DFP",
+			"semverRange": "^1.0.9"
+		},
+		"configurator": {
+			"name": "MCC",
+			"semverRange": ">=5.2.2"
+		},
+		"device": {
+			"metaDataVersion": "1.0.0",
+			"category": "com.microchip.portal.contentRef",
+			"content": {
+				"metaDataVersion": "1.0.0",
+				"category": "com.microchip.device",
+				"name": "PIC32CK2051GC01144",
+				"versionRange": "*"
+			}
+		},
+		"author": "Microchip",
+		"subcategories": [
+			[
+				"Development Kit",
+				"PIC32CK-GC01 Curiosity Ultra board"
+			],
+			[
+				"Harmony",
+				"RTOS",
+				"FreeRTOS",
+				"BASIC_FREERTOS"
+			],
+			[
+				"RTOS",
+				"FreeRTOS",
+				"BASIC_FREERTOS"
+			]
+		],
+		"peripherals": [
+			"BASIC_FREERTOS"
+		],
+		"keywords": [
+			"MCC",
+			"Harmony",
+			"RTOS",
+			"FreeRTOS",
+			"PIC32CK2051GC01144",
+			"PIC32CK_GC Family"
+		],
+		"additionalData": {
+			"longDescription": {
+				"metaDataVersion": "1.0.0",
+				"category": "com.microchip.portal.fileRef",
+				"content": {
+					"metaDataVersion": "1.0.0",
+					"fileName": "./../../readme.md",
+					"mimeType": "text/markdown"
+				}
+			}
+		}
+	}
+}

@@ -20,7 +20,7 @@
  *
  */
 
-/* file generated from device description version 2022-09-16T04:53:16Z */
+/* file generated from device description version 2022-11-28T06:54:19Z */
 #ifndef _PIC32CKGC01_FREQM_INSTANCE_
 #define _PIC32CKGC01_FREQM_INSTANCE_
 
@@ -29,9 +29,9 @@
 #define FREQM_GCLK_ID_MSR_0                      (2)        /* Index of measure generic clock 0 */
 #define FREQM_GCLK_ID_MSR_1                      (3)        /* Index of measure generic clock 1 */
 #define FREQM_GCLK_ID_REF                        (4)        /* Index of reference generic clock */
-#define FREQM_MSRCLK_NB                          (2)        /* Number of measured clock sources */
 #define FREQM_INSTANCE_ID                        (10)       /* Instance index for FREQM */
 #define FREQM_MCLK_ID_APB                        (42)       /* Index for FREQM APB clock */
+#define FREQM_MSRCLK_NB                          (2)        /* Number of measured clock sources */
 #define FREQM_PAC_ID                             (10)       /* Index for FREQM registers write protection */
 
 #endif /* _PIC32CKGC01_FREQM_INSTANCE_ */

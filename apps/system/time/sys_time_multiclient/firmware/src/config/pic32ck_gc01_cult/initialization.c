@@ -194,8 +194,6 @@
 #pragma config FUSES_BOOTCFG1_BROM_BOOTCFGCRC2_BROM_BOOTCFGCRC = 0xffffffffU
 #pragma config FUSES_BOOTCFG1_BROM_BOOTCFGCRC3_BROM_BOOTCFGCRC = 0xffffffffU
 #pragma config FUSES_BOOTCFG1_BROM_PAGEEND_BROM_PAGEEND = 0xffffffffU
-#pragma config FUSES_DALCFG_DAL_CPU0 = DAL2
-#pragma config FUSES_DALCFG_DAL_CPU1 = DAL2
 #pragma config FUSES_USERCFG2_FSEQ0_SEQNUM = 0x0U
 #pragma config FUSES_USERCFG2_FSEQ0_SEQBAR = 0xffffU
 #pragma config FUSES_USERCFG2_FSEQ1_SEQNUM = 0x0U
@@ -404,8 +402,6 @@ const SYS_TIME_INIT sysTimeInitData =
  ********************************************************************************/
 static void STDIO_BufferModeSet(void)
 {
-    /* MISRAC 2012 deviation block start */
-    /* MISRA C-2012 Rule 21.6 deviated 2 times in this file.  Deviation record ID -  H3_MISRAC_2012_R_21_6_DR_3 */
 
     /* Make stdin unbuffered */
     setbuf(stdin, NULL);

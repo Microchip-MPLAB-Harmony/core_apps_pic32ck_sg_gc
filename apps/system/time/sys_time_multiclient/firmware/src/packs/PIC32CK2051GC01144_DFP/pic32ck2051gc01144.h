@@ -20,7 +20,7 @@
  *
  */
 
-/* File generated from device description version 2022-09-16T04:53:16Z */
+/* File generated from device description version 2022-11-28T06:54:19Z */
 #ifndef _PIC32CK2051GC01144_H_
 #define _PIC32CK2051GC01144_H_
 

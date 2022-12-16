@@ -1,0 +1,78 @@
+{
+	"metaDataVersion": "1.0.0",
+	"category": "com.microchip.ide.project",
+	"content": {
+		"metaDataVersion": "1.1.0",
+		"name": "com.microchip.mcu32.mplabx.project.core_apps_pic32cz_ca_fs_sdmmc_fat_pic32ck_gc01_cult_freertos",
+		"version": "3.0.0",
+		"displayName": "FAT filesystem using SDMMC Media Example for PIC32CK_GC Family",
+		"projectName": "sdmmc_fat_pic32ck_gc01_cult",
+		"shortDescription": "This application shows an example of using the MPLAB Harmony File System to access and modify the contents of a SD card using the SDMMC driver",
+		"ide": {
+			"name": "MPLABX",
+			"semverRange": ">=6.05.0"
+		},
+		"compiler": [
+			{
+				"name": "XC32",
+				"semverRange": ">=4.2.0"
+			}
+		],
+		"dfp": {
+			"name": "PIC32CK-GC_DFP",
+			"semverRange": "^1.0.9"
+		},
+		"configurator": {
+			"name": "MCC",
+			"semverRange": ">=5.2.2"
+		},
+		"device": {
+			"metaDataVersion": "1.0.0",
+			"category": "com.microchip.portal.contentRef",
+			"content": {
+				"metaDataVersion": "1.0.0",
+				"category": "com.microchip.device",
+				"name": "PIC32CK2051GC01144",
+				"versionRange": "*"
+			}
+		},
+		"author": "Microchip",
+		"subcategories": [
+			[
+				"Development Kit",
+				"PIC32CK-GC01 Curiosity Ultra board"
+			],
+			[
+				"Harmony",
+				"Middleware",
+				"File System (FS)",
+				"SDMMC_FAT"
+			],
+			[
+				"File System (FS)",
+				"SDMMC_FAT"
+			]
+		],
+		"peripherals": [
+			"SDMMC_FAT"
+		],
+		"keywords": [
+			"MCC",
+			"Harmony",
+			"File System",
+			"PIC32CK2051GC01144",
+			"PIC32CK_GC Family"
+		],
+		"additionalData": {
+			"longDescription": {
+				"metaDataVersion": "1.0.0",
+				"category": "com.microchip.portal.fileRef",
+				"content": {
+					"metaDataVersion": "1.0.0",
+					"fileName": "./../../readme.md",
+					"mimeType": "text/markdown"
+				}
+			}
+		}
+	}
+}

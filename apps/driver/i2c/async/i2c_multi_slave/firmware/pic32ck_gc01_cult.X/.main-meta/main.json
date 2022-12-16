@@ -1,0 +1,81 @@
+{
+	"metaDataVersion": "1.0.0",
+	"category": "com.microchip.ide.project",
+	"content": {
+		"metaDataVersion": "1.1.0",
+		"name": "com.microchip.mcu32.mplabx.project.core_apps_pic32cz_ca_driver_i2c_async_i2c_multi_slave_pic32ck_gc01_cult",
+		"version": "3.0.0",
+		"displayName": "I2C driver asynchronous - I2C Multi Slave Example for PIC32CK_GC Family",
+		"projectName": "i2c_multi_slave_pic32ck_gc01_cult",
+		"shortDescription": "This example application demonstrates the multi-client feature of the asynchronous mode of the I2C driver by communicating with an external EEPROM and a temperature sensor.",
+		"ide": {
+			"name": "MPLABX",
+			"semverRange": ">=6.05.0"
+		},
+		"compiler": [
+			{
+				"name": "XC32",
+				"semverRange": ">=4.2.0"
+			}
+		],
+		"dfp": {
+			"name": "PIC32CK-GC_DFP",
+			"semverRange": "^1.0.9"
+		},
+		"configurator": {
+			"name": "MCC",
+			"semverRange": ">=5.2.2"
+		},
+		"device": {
+			"metaDataVersion": "1.0.0",
+			"category": "com.microchip.portal.contentRef",
+			"content": {
+				"metaDataVersion": "1.0.0",
+				"category": "com.microchip.device",
+				"name": "PIC32CK2051GC01144",
+				"versionRange": "*"
+			}
+		},
+		"author": "Microchip",
+		"subcategories": [
+			[
+				"Development Kit",
+				"PIC32CK-GC01 Curiosity Ultra board"
+			],
+			[
+				"Harmony",
+				"Drivers",
+				"I2C"
+			],
+			[
+				"Peripherals",
+				"I2C"
+			]
+		],
+		"peripherals": [
+			"I2C"
+		],
+		"keywords": [
+			"MCC",
+			"Harmony",
+			"PIC32CK2051GC01144",
+			"PIC32CK_GC Family",
+			"I2C",
+			"Serial Communication",
+			"MULTI SLAVE",
+			"TWI",
+			"FLEXCOM"
+		],
+		"additionalData": {
+			"longDescription": {
+				"metaDataVersion": "1.0.0",
+				"category": "com.microchip.portal.fileRef",
+				"content": {
+					"metaDataVersion": "1.0.0",
+					"fileName": "./../../readme.md",
+					"mimeType": "text/markdown"
+				}
+			}
+		}
+	}
+}

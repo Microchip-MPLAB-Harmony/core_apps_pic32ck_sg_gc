@@ -20,7 +20,7 @@
  *
  */
 
-/* file generated from device description version 2022-09-16T04:53:16Z */
+/* file generated from device description version 2022-11-28T06:54:19Z */
 #ifndef _PIC32CKGC01_SUPC_INSTANCE_
 #define _PIC32CKGC01_SUPC_INSTANCE_
 
@@ -32,12 +32,12 @@
 #define SUPC_BKOUT_NUM                           (2)        /* Number of BKOUT output pin */
 #define SUPC_BORVDDUSB_NUM                       (1)        /* Number of BOR_USB */
 #define SUPC_CHRG_PUMP_NUM                       (2)        /* Number of Charge Pump */
+#define SUPC_INSTANCE_ID                         (4)        /* Instance index for SUPC */
 #define SUPC_IOB_IMPLEMENTED                     (1)        /* one if IOB feature is implemented */
+#define SUPC_MCLK_ID_APB                         (36)       /* Index for SUPC APB clock */
+#define SUPC_PAC_ID                              (4)        /* Index for SUPC registers write protection */
 #define SUPC_USER_LDO_IMPLEMENTED                (1)        /* one if USER_LDO feature is implemented */
 #define SUPC_VBAT_IMPLEMENTED                    (1)        /* one if VBAT feature (battery backup feature) is implemented. */
 #define SUPC_VREGSW_NUM                          (2)        /* Number of main voltage regulator (100mA). Example: 1 for Unicorn, 4 for Riverside. */
-#define SUPC_INSTANCE_ID                         (4)        /* Instance index for SUPC */
-#define SUPC_MCLK_ID_APB                         (36)       /* Index for SUPC APB clock */
-#define SUPC_PAC_ID                              (4)        /* Index for SUPC registers write protection */
 
 #endif /* _PIC32CKGC01_SUPC_INSTANCE_ */
