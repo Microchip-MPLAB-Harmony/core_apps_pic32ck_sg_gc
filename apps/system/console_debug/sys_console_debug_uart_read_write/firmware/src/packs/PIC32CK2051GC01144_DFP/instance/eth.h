@@ -20,7 +20,7 @@
  *
  */
 
-/* file generated from device description version 2022-09-16T04:53:16Z */
+/* file generated from device description version 2022-11-28T06:54:19Z */
 #ifndef _PIC32CKGC01_ETH_INSTANCE_
 #define _PIC32CKGC01_ETH_INSTANCE_
 
@@ -28,11 +28,11 @@
 /* ========== Instance Parameter definitions for ETH peripheral ========== */
 #define ETH_GCLK_ID_TSU                          (42)       /* 1588 External Clock */
 #define ETH_GCLK_ID_TX                           (41)       /* GIGE/Loopback clock */
-#define ETH_MEM_MARGINADJ_MSB                    (9)        /* Number of Memory Margin Adjust bits */
-#define ETH_NUM_INT                              (1)        /* Number of Interrupts */
 #define ETH_INSTANCE_ID                          (81)       /* Instance index for ETH */
 #define ETH_MCLK_ID_AHB                          (15)       /* Index for ETH AHB clock */
 #define ETH_MCLK_ID_APB                          (111)      /* Index for ETH APB clock */
+#define ETH_MEM_MARGINADJ_MSB                    (9)        /* Number of Memory Margin Adjust bits */
+#define ETH_NUM_INT                              (1)        /* Number of Interrupts */
 #define ETH_PAC_ID                               (81)       /* Index for ETH registers write protection */
 
 #endif /* _PIC32CKGC01_ETH_INSTANCE_ */

@@ -50,12 +50,12 @@
 #include <stdbool.h>
 #include "peripheral/evsys/plib_evsys.h"
 #include "bsp/bsp.h"
-#include "peripheral/pm/plib_pm.h"
 #include "peripheral/port/plib_port.h"
 #include "peripheral/clock/plib_clock.h"
 #include "peripheral/nvic/plib_nvic.h"
 #include "peripheral/cmcc/plib_cmcc.h"
 #include "peripheral/sercom/usart/plib_sercom5_usart.h"
+#include "peripheral/pm/plib_pm.h"
 #include "system/console/sys_console.h"
 #include "system/console/src/sys_console_uart_definitions.h"
 #include "system/int/sys_int.h"

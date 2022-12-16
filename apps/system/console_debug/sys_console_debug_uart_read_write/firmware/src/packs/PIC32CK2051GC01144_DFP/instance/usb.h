@@ -20,7 +20,7 @@
  *
  */
 
-/* file generated from device description version 2022-09-16T04:53:16Z */
+/* file generated from device description version 2022-11-28T06:54:19Z */
 #ifndef _PIC32CKGC01_USB_INSTANCE_
 #define _PIC32CKGC01_USB_INSTANCE_
 
@@ -36,16 +36,16 @@
 #define USB_GCLK_ID                              (46)       /* Index of Generic Clock */
 #define USB_INITIAL_CONTROL_QOS                  (3)        /* CONTROL QOS RESET value */
 #define USB_INITIAL_DATA_QOS                     (3)        /* DATA QOS RESET value */
+#define USB_INSTANCE_ID                          (85)       /* Instance index for USB */
+#define USB_MCLK_ID_AHB                          (19)       /* Index for USB AHB clock */
+#define USB_MCLK_ID_APB                          (113)      /* Index for USB APB clock */
 #define USB_MISSING_SOF_DET_IMPLEMENTED          (1)        /* 48 mHz xPLL feature implemented */
+#define USB_PAC_ID                               (85)       /* Index for USB registers write protection */
 #define USB_PIPE_NUM                             (8)        /* Number of USB pipes */
 #define USB_SYSTEM_CLOCK_IS_CKUSB                (0)        /* Dual (1'b0) or Single (1'b1) clock system */
 #define USB_2_AHB_FIFO_DEPTH                     (4)        /* bytes number, should be at least 2, and 2^n (4,8,16 ...) */
 #define USB_2_AHB_RD_DATA_BITS                   (16)       /* 8, 16 or 32, here : 8-bits is required as UTMI interface should work in 8-bits mode */
 #define USB_2_AHB_RD_THRESHOLD                   (2)        /* as soon as there are 16 bytes-free inside the fifo, ahb read transfer is requested */
 #define USB_2_AHB_WR_DATA_BITS                   (8)        /* 8, 16 or 32 : here : 8-bits is required as UTMI interface should work in 8-bits mode */
-#define USB_INSTANCE_ID                          (85)       /* Instance index for USB */
-#define USB_MCLK_ID_AHB                          (19)       /* Index for USB AHB clock */
-#define USB_MCLK_ID_APB                          (113)      /* Index for USB APB clock */
-#define USB_PAC_ID                               (85)       /* Index for USB registers write protection */
 
 #endif /* _PIC32CKGC01_USB_INSTANCE_ */
