@@ -2,6 +2,6 @@
 <Package name="core_apps_pic32ck_sg_gc">
     <Dependencies>
         <Dependency name="core" version="v3.12.0-E1"/>
-        <Dependency name="csp" version="v3.15.0-E2"/>
+        <Dependency name="csp" version="v3.16.0-E1"/>
     </Dependencies>
 </Package>
