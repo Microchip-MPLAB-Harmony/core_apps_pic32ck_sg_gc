@@ -1,17 +1,18 @@
 package:
   format-version: "1.0.0"
   name: "core_apps_pic32ck_sg_gc"
-  version: "v3.0.0-E2"
+  version: "dev"
   type: "application"
   status: "production"
-  required: true
+  required: false
 
   dependencies:
-    - name: "core"
-      type: "package"
-      version: "v3.12.0-E1"
     - name: "csp"
       type: "package"
-      version: "v3.16.0-E1"
-
-
+      version: "dev"
+    - name: "dev_packs"
+      type: "package"
+      version: "dev"
+    - name: "core"
+      type: "package"
+      version: "dev"
