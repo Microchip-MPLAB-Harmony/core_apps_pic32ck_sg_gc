@@ -65,7 +65,7 @@
 #define SERCOM4_I2CM_BAUD_VALUE         (0x43U)
 
 
-static SERCOM_I2C_OBJ sercom4I2CObj;
+volatile static SERCOM_I2C_OBJ sercom4I2CObj;
 
 // *****************************************************************************
 // *****************************************************************************
@@ -98,7 +98,7 @@ void SERCOM4_I2C_Initialize(void)
     SERCOM4_REGS->I2CM.SERCOM_BAUD = SERCOM4_I2CM_BAUD_VALUE;
 
     /* Set Operation Mode (Master), SDA Hold time, run in stand by and i2c master enable */
-    SERCOM4_REGS->I2CM.SERCOM_CTRLA = SERCOM_I2CM_CTRLA_MODE_I2C_MASTER | SERCOM_I2CM_CTRLA_SDAHOLD_75NS | SERCOM_I2CM_CTRLA_SPEED_SM | SERCOM_I2CM_CTRLA_SCLSM(0UL) | SERCOM_I2CM_CTRLA_ENABLE_Msk ;
+    SERCOM4_REGS->I2CM.SERCOM_CTRLA = SERCOM_I2CM_CTRLA_MODE_I2C_MASTER | SERCOM_I2CM_CTRLA_SDAHOLD_75NS | SERCOM_I2CM_CTRLA_SPEED_SM | SERCOM_I2CM_CTRLA_SCLSM(0UL) | SERCOM_I2CM_CTRLA_ENABLE_Msk | SERCOM_I2CM_CTRLA_SLEWRATE(SERCOM_I2CM_CTRLA_SLEWRATE_FM_Val);
 
     /* Wait for synchronization */
     while((SERCOM4_REGS->I2CM.SERCOM_SYNCBUSY) != 0U)
@@ -410,10 +410,12 @@ void SERCOM4_I2C_TransferAbort( void )
     }
 }
 
-void SERCOM4_I2C_InterruptHandler(void)
+void __attribute__((used)) SERCOM4_I2C_InterruptHandler(void)
 {
     if(SERCOM4_REGS->I2CM.SERCOM_INTENSET != 0U)
     {
+        uintptr_t context = sercom4I2CObj.context;
+
         /* Checks if the arbitration lost in multi-master scenario */
         if((SERCOM4_REGS->I2CM.SERCOM_STATUS & SERCOM_I2CM_STATUS_ARBLOST_Msk) == SERCOM_I2CM_STATUS_ARBLOST_Msk)
         {
@@ -462,8 +464,10 @@ void SERCOM4_I2C_InterruptHandler(void)
 
 
                 case SERCOM_I2C_STATE_TRANSFER_WRITE:
+                {
+                    size_t writeCount = sercom4I2CObj.writeCount;
 
-                    if (sercom4I2CObj.writeCount == (sercom4I2CObj.writeSize))
+                    if (writeCount == (sercom4I2CObj.writeSize))
                     {
                         if(sercom4I2CObj.readSize != 0U)
                         {
@@ -497,20 +501,25 @@ void SERCOM4_I2C_InterruptHandler(void)
                     /* Write next byte */
                     else
                     {
-                        SERCOM4_REGS->I2CM.SERCOM_DATA = sercom4I2CObj.writeBuffer[sercom4I2CObj.writeCount];
-                        sercom4I2CObj.writeCount++;
+                        SERCOM4_REGS->I2CM.SERCOM_DATA = sercom4I2CObj.writeBuffer[writeCount];
+                        writeCount++;
                         /* Wait for synchronization */
                             while((SERCOM4_REGS->I2CM.SERCOM_SYNCBUSY) != 0U)
                             {
                                 /* Do nothing */
                             }
+                        sercom4I2CObj.writeCount = writeCount;
                     }
+                }
 
                     break;
 
                 case SERCOM_I2C_STATE_TRANSFER_READ:
+                {
+                    size_t readCount = sercom4I2CObj.readCount;
 
-                    if(sercom4I2CObj.readCount == (sercom4I2CObj.readSize - 1U))
+
+                    if(readCount == (sercom4I2CObj.readSize - 1U))
                     {
                         /* Set NACK and send stop condition to the slave from master */
                         SERCOM4_REGS->I2CM.SERCOM_CTRLB |= SERCOM_I2CM_CTRLB_ACKACT_Msk | SERCOM_I2CM_CTRLB_CMD(3UL);
@@ -531,8 +540,11 @@ void SERCOM4_I2C_InterruptHandler(void)
                         }
 
                     /* Read the received data */
-                    sercom4I2CObj.readBuffer[sercom4I2CObj.readCount] = (uint8_t) SERCOM4_REGS->I2CM.SERCOM_DATA;
-                    sercom4I2CObj.readCount++;
+                    sercom4I2CObj.readBuffer[readCount] = (uint8_t) SERCOM4_REGS->I2CM.SERCOM_DATA;
+                    readCount++;
+
+                    sercom4I2CObj.readCount = readCount;
+                }
 
                     break;
 
@@ -563,7 +575,7 @@ void SERCOM4_I2C_InterruptHandler(void)
 
             if (sercom4I2CObj.callback != NULL)
             {
-                sercom4I2CObj.callback(sercom4I2CObj.context);
+                sercom4I2CObj.callback(context);
             }
         }
         /* Transfer Complete */
@@ -583,7 +595,7 @@ void SERCOM4_I2C_InterruptHandler(void)
 
             if(sercom4I2CObj.callback != NULL)
             {
-                sercom4I2CObj.callback(sercom4I2CObj.context);
+                sercom4I2CObj.callback(context);
             }
 
         }
