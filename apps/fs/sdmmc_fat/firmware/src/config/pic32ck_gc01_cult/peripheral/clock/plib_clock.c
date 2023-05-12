@@ -41,9 +41,6 @@
 #include "plib_clock.h"
 #include "device.h"
 
-static void OSCCTRL_Initialize(void)
-{
-}
 
 static void OSC32KCTRL_Initialize(void)
 {
@@ -83,11 +80,6 @@ static void PLL0_Initialize(void)
     }
 }
 
-static void DFLL_Initialize(void)
-{
-}
-
-
 static void GCLK0_Initialize(void)
 {
 
@@ -121,18 +113,13 @@ static void GCLK2_Initialize(void)
 
 void CLOCK_Initialize (void)
 {
-    /* Function to Initialize the Oscillators */
-    OSCCTRL_Initialize();
-
     /* Function to Initialize the 32KHz Oscillators */
     OSC32KCTRL_Initialize();
 
     PLL0_Initialize();
-    DFLL_Initialize();
     GCLK0_Initialize();
     GCLK1_Initialize();
     GCLK2_Initialize();
-
 
 
     /* Selection of the Generator and write Lock for SDMMC0_SLOW SDMMC1_SLOW SERCOM0_SLOW SERCOM1_SLOW SERCOM2_SLOW SERCOM3_SLOW SERCOM4_SLOW SERCOM5_SLOW SERCOM6_SLOW SERCOM7_SLOW */
