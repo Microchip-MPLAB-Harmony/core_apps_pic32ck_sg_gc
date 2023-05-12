@@ -49,20 +49,20 @@
 #include <stddef.h>
 #include <stdbool.h>
 #include "peripheral/evsys/plib_evsys.h"
+#include "bsp/bsp.h"
 #include "system/fs/sys_fs.h"
 #include "system/fs/sys_fs_media_manager.h"
 #include "system/fs/sys_fs_fat_interface.h"
 #include "system/fs/fat_fs/file_system/ff.h"
 #include "system/fs/fat_fs/file_system/ffconf.h"
 #include "system/fs/fat_fs/hardware_access/diskio.h"
-#include "bsp/bsp.h"
 #include "peripheral/sqi/plib_sqi.h"
 #include "peripheral/port/plib_port.h"
 #include "peripheral/clock/plib_clock.h"
 #include "peripheral/nvic/plib_nvic.h"
 #include "peripheral/cmcc/plib_cmcc.h"
-#include "driver/memory/drv_memory.h"
 #include "peripheral/pm/plib_pm.h"
+#include "driver/memory/drv_memory.h"
 #include "driver/sst26/drv_sst26.h"
 #include "system/int/sys_int.h"
 #include "system/cache/sys_cache.h"
@@ -79,6 +79,12 @@ extern "C" {
 
 #endif
 // DOM-IGNORE-END
+
+/* Device Information */
+#define DEVICE_NAME			 "PIC32CK2051GC01144"
+#define DEVICE_ARCH			 "CORTEX-M33"
+#define DEVICE_FAMILY		 "PIC32CK"
+#define DEVICE_SERIES		 "PIC32CKGC01"
 
 /* CPU clock frequency */
 #define CPU_CLOCK_FREQUENCY 120000000
