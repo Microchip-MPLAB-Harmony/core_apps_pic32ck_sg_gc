@@ -63,7 +63,7 @@
 // *****************************************************************************
 
 /* EIC Channel Callback object */
-static EIC_CALLBACK_OBJ    eicCallbackObject[EXTINT_COUNT];
+volatile static EIC_CALLBACK_OBJ    eicCallbackObject[EXTINT_COUNT];
 
 
 void EIC_Initialize (void)
@@ -158,7 +158,7 @@ void EIC_CallbackRegister(EIC_PIN pin, EIC_CALLBACK callback, uintptr_t context)
 }
 
 
-void EIC_EXTINT_10_InterruptHandler(void)
+void __attribute__((used)) EIC_EXTINT_10_InterruptHandler(void)
 {
     /* Clear interrupt flag */
     EIC_REGS->EIC_INTFLAG = (1UL << 10);
@@ -166,7 +166,8 @@ void EIC_EXTINT_10_InterruptHandler(void)
     /* Find any associated callback entries in the callback table */
     if ((eicCallbackObject[10].callback != NULL))
     {
-        eicCallbackObject[10].callback(eicCallbackObject[10].context);
+        uintptr_t context = eicCallbackObject[10].context;
+        eicCallbackObject[10].callback(context);
     }
 
 }
