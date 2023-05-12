@@ -1,18 +1,20 @@
-/*******************************************************************************
-  Board Support Package Header File.
+/******************************************************************************
+  SD Card (SPI) Driver File System Interface Implementation
 
   Company:
     Microchip Technology Inc.
 
   File Name:
-    bsp.h
+    drv_sdspi_file_system.h
 
   Summary:
-    Board Support Package Header File 
+    SD Card (SPI) Driver Interface Definition
 
   Description:
-    This file contains constants, macros, type definitions and function
-    declarations 
+    The SD Card Driver provides a interface to access the SD Card. This file
+    implements the SD Card Driver file system interface.
+    This file should be included in the project if SD Card driver functionality
+    with File system is needed.
 *******************************************************************************/
 
 // DOM-IGNORE-BEGIN
@@ -37,96 +39,42 @@
 * FULLEST EXTENT ALLOWED BY LAW, MICROCHIP'S TOTAL LIABILITY ON ALL CLAIMS IN
 * ANY WAY RELATED TO THIS SOFTWARE WILL NOT EXCEED THE AMOUNT OF FEES, IF ANY,
 * THAT YOU HAVE PAID DIRECTLY TO MICROCHIP FOR THIS SOFTWARE.
-*******************************************************************************/
+ *******************************************************************************/
 // DOM-IGNORE-END
-
-#ifndef BSP_H
-#define BSP_H
-
-// *****************************************************************************
-// *****************************************************************************
-// Section: Included Files
-// *****************************************************************************
-// *****************************************************************************
-
-#include <stdio.h>
-#include <stdlib.h>
-#include <stdint.h>
-#include <stdbool.h>
-#include "device.h"
+#ifndef DRV_SDSPI_FILE_SYSTEM_H
+#define DRV_SDSPI_FILE_SYSTEM_H
 
 // *****************************************************************************
 // *****************************************************************************
-// Section: BSP Macros
+// Section: Include Files
 // *****************************************************************************
 // *****************************************************************************
-#define pic32ck_gc01_curiosity_ultra
-#define BSP_NAME             "pic32ck_gc01_curiosity_ultra"
 
+#include "driver/sdspi/drv_sdspi.h"
+#include "system/fs/sys_fs_media_manager.h"
 
-
-/*** LED Macros for LED1 ***/
-#define LED1_Toggle()     (PORT_REGS->GROUP[1].PORT_OUTTGL = 1UL << 25)
-#define LED1_On()         (PORT_REGS->GROUP[1].PORT_OUTCLR = 1UL << 25)
-#define LED1_Off()        (PORT_REGS->GROUP[1].PORT_OUTSET = 1UL << 25)
-/*** LED Macros for LED0 ***/
-#define LED0_Toggle()     (PORT_REGS->GROUP[3].PORT_OUTTGL = 1UL << 20)
-#define LED0_On()         (PORT_REGS->GROUP[3].PORT_OUTCLR = 1UL << 20)
-#define LED0_Off()        (PORT_REGS->GROUP[3].PORT_OUTSET = 1UL << 20)
-
-/*** SWITCH Macros for SW0 ***/
-#define SW0_Get()     ((PORT_REGS->GROUP[1].PORT_IN >> 26) & 0x01)
-#define SW0_STATE_PRESSED   0
-#define SW0_STATE_RELEASED  1
-/*** SWITCH Macros for SW1 ***/
-#define SW1_Get()     ((PORT_REGS->GROUP[3].PORT_IN >> 2) & 0x01)
-#define SW1_STATE_PRESSED   0
-#define SW1_STATE_RELEASED  1
-
-
-
+// DOM-IGNORE-BEGIN
+#ifdef __cplusplus  // Provide C++ Compatibility
+    extern "C" {
+#endif
+// DOM-IGNORE-END
+// *****************************************************************************
+// *****************************************************************************
+// Section: Global objects
+// *****************************************************************************
+// *****************************************************************************
 
 
 // *****************************************************************************
 // *****************************************************************************
-// Section: Interface Routines
+// Section: MEMORY Driver File system interface Routines
 // *****************************************************************************
 // *****************************************************************************
 
-// *****************************************************************************
-/* Function:
-    void BSP_Initialize(void)
+void DRV_SDSPI_RegisterWithSysFs( const SYS_MODULE_INDEX drvIndex);
 
-  Summary:
-    Performs the necessary actions to initialize a board
+#ifdef __cplusplus
+}
+#endif
 
-  Description:
-    This function initializes the LED and Switch ports on the board.  This
-    function must be called by the user before using any APIs present on this
-    BSP.
-
-  Precondition:
-    None.
-
-  Parameters:
-    None
-
-  Returns:
-    None.
-
-  Example:
-    <code>
-    BSP_Initialize();
-    </code>
-
-  Remarks:
-    None
-*/
-
-void BSP_Initialize(void);
-
-#endif // BSP_H
-
-/*******************************************************************************
- End of File
-*/
+#endif //#ifndef DRV_SDSPI_FILE_SYSTEM_H
