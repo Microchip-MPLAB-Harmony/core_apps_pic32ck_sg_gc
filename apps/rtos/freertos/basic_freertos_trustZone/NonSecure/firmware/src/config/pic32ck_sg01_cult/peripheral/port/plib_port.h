@@ -123,17 +123,13 @@ typedef enum
 typedef enum
 {
     /* PB25 pin */
-    PORT_PIN_PB25 = 25,
-
+    PORT_PIN_PB25 = 57,
     /* PB26 pin */
-    PORT_PIN_PB26 = 26,
-
+    PORT_PIN_PB26 = 58,
     /* PD02 pin */
-    PORT_PIN_PD02 = 2,
-
+    PORT_PIN_PD02 = 98,
     /* PD20 pin */
-    PORT_PIN_PD20 = 20,
-
+    PORT_PIN_PD20 = 116,
     /* This element should not be used in any of the PORT APIs.
      * It will be used by other modules or application to denote that none of
      * the PORT Pin is used */

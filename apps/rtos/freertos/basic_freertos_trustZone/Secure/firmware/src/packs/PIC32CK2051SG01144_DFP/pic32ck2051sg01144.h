@@ -20,7 +20,7 @@
  *
  */
 
-/* File generated from device description version 2023-02-20T18:48:58Z */
+/* File generated from device description version 2023-04-05T13:26:59Z */
 #ifndef _PIC32CK2051SG01144_H_
 #define _PIC32CK2051SG01144_H_
 
@@ -836,6 +836,7 @@ void HSM_RXINT_Handler             ( void );
 #define FUSES_DALCFG_REGS                ((fuses_dalcfg_registers_t*)0x0a004000)       /* FUSES Registers Address      */
 #define FUSES_USERCFG1_REGS              ((fuses_usercfg1_registers_t*)0x0a000000)     /* FUSES Registers Address      */
 #define FUSES_USERCFG2_REGS              ((fuses_usercfg1_registers_t*)0x0a008000)     /* FUSES Registers Address      */
+#define FUSES_CALOTP_REGS                ((fuses_calotp_registers_t*)0x0a007000)       /* FUSES Registers Address      */
 #define GCLK_REGS                        ((gclk_registers_t*)0x44010000)               /* GCLK Registers Address       */
 #define HMATRIX_REGS                     ((hmatrix2_registers_t*)0x44806000)           /* HMATRIX Registers Address    */
 #define HSM_REGS                         ((hsm_registers_t*)0x48000000)                /* HSM Registers Address        */
@@ -908,6 +909,7 @@ void HSM_RXINT_Handler             ( void );
 #define FUSES_DALCFG_BASE_ADDRESS        _UINT32_(0x0a004000)                          /* FUSES Base Address */
 #define FUSES_USERCFG1_BASE_ADDRESS      _UINT32_(0x0a000000)                          /* FUSES Base Address */
 #define FUSES_USERCFG2_BASE_ADDRESS      _UINT32_(0x0a008000)                          /* FUSES Base Address */
+#define FUSES_CALOTP_BASE_ADDRESS        _UINT32_(0x0a007000)                          /* FUSES Base Address */
 #define GCLK_BASE_ADDRESS                _UINT32_(0x44010000)                          /* GCLK Base Address */
 #define HMATRIX_BASE_ADDRESS             _UINT32_(0x44806000)                          /* HMATRIX Base Address */
 #define HSM_BASE_ADDRESS                 _UINT32_(0x48000000)                          /* HSM Base Address */

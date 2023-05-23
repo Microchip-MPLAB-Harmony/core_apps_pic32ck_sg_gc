@@ -20,7 +20,7 @@
  *
  */
 
-/* file generated from device description version 2023-02-20T18:48:58Z */
+/* file generated from device description version 2023-04-05T13:26:59Z */
 #ifndef _PIC32CKSG01_SIG_NS_INSTANCE_
 #define _PIC32CKSG01_SIG_NS_INSTANCE_
 

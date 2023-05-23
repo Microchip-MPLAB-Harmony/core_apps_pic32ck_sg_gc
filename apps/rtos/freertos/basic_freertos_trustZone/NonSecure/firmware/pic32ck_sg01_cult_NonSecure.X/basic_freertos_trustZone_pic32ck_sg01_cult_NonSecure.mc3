@@ -1,4 +1,4 @@
-<config configName="pic32ck_sg01_cult" projectName="basic_freertos_trustZone_pic32ck_sg01_cult_NonSecure" configVersion="1.1" device="PIC32CK2051SG01144" deviceLibraryClass="com.microchip.mcc.harmony.Harmony3Library" coreVersion="5.4.14">
+<config configName="pic32ck_sg01_cult" projectName="basic_freertos_trustZone_pic32ck_sg01_cult_NonSecure" configVersion="1.1" device="PIC32CK2051SG01144" deviceLibraryClass="com.microchip.mcc.harmony.Harmony3Library" coreVersion="5.5.0">
    <usedPackages class="java.util.ArrayList"/>
    <usedClasses class="java.util.TreeMap">
       <entry>
@@ -35,12 +35,21 @@
       </entry>
    </usedClasses>
    <usedLibraries class="java.util.ArrayList">
-      <ILibraryFile class="com.microchip.mcc.core.library.BaseLibraryFile" libraryClass="com.microchip.mcc.harmony.Harmony3Library" version="1.2.0"/>
+      <ILibraryFile class="com.microchip.mcc.core.library.BaseLibraryFile" libraryClass="com.microchip.mcc.harmony.Harmony3Library" version="1.3.1"/>
    </usedLibraries>
    <tokenMap class="java.util.TreeMap">
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="BSP_PIC32CK_SG01_Curiosity_Ultra" name="#&amp;__MCC_Group_Parrent_id"/>
          <value>__ROOTVIEW</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="BSP_PIC32CK_SG01_Curiosity_Ultra" name="BSP_BOARD_NAME"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;BSP_PIC32CK_SG01_Curiosity_Ultra&gt;
+  &lt;BSP_PIC32CK_SG01_Curiosity_Ultra dnOrder=&quot;0&quot; id=&quot;BSP_BOARD_NAME&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/BSP_PIC32CK_SG01_Curiosity_Ultra&gt;
+&lt;/BSP_PIC32CK_SG01_Curiosity_Ultra&gt;
+</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="BSP_PIC32CK_SG01_Curiosity_Ultra" name="BSP_CUSTOM_DIR0"/>
@@ -552,6 +561,15 @@
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="FreeRTOS" name="FREERTOS_ENABLE_MPU"/>
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;FreeRTOS&gt;
   &lt;FreeRTOS dnOrder=&quot;0&quot; id=&quot;FREERTOS_ENABLE_MPU&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/FreeRTOS&gt;
+&lt;/FreeRTOS&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="FreeRTOS" name="FREERTOS_ENABLE_MVE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;FreeRTOS&gt;
+  &lt;FreeRTOS dnOrder=&quot;0&quot; id=&quot;FREERTOS_ENABLE_MVE&quot;&gt;
     &lt;Values dnOrder=&quot;0&quot;/&gt;
   &lt;/FreeRTOS&gt;
 &lt;/FreeRTOS&gt;
@@ -3711,6 +3729,19 @@
 </value>
       </entry>
       <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="HarmonyCore" name="GEN_RTOS_APP_TASKS_HANDLE_DECL"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;HarmonyCore&gt;
+  &lt;HarmonyCore dnOrder=&quot;0&quot; id=&quot;GEN_RTOS_APP_TASKS_HANDLE_DECL&quot;&gt;
+    &lt;Attributes dnOrder=&quot;0&quot;&gt;
+      &lt;Boolean dnOrder=&quot;0&quot; id=&quot;enabled&quot;&gt;
+        &lt;Value dnOrder=&quot;0&quot;&gt;true&lt;/Value&gt;
+      &lt;/Boolean&gt;
+    &lt;/Attributes&gt;
+  &lt;/HarmonyCore&gt;
+&lt;/HarmonyCore&gt;
+</value>
+      </entry>
+      <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="HarmonyCore" name="OSAL_DEFINITIONS_H"/>
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;HarmonyCore&gt;
   &lt;HarmonyCore dnOrder=&quot;0&quot; id=&quot;OSAL_DEFINITIONS_H&quot;&gt;
@@ -3787,6 +3818,19 @@
 </value>
       </entry>
       <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="HarmonyCore" name="SYS_TASKS_H"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;HarmonyCore&gt;
+  &lt;HarmonyCore dnOrder=&quot;0&quot; id=&quot;SYS_TASKS_H&quot;&gt;
+    &lt;Attributes dnOrder=&quot;0&quot;&gt;
+      &lt;Boolean dnOrder=&quot;0&quot; id=&quot;enabled&quot;&gt;
+        &lt;Value dnOrder=&quot;0&quot;&gt;true&lt;/Value&gt;
+      &lt;/Boolean&gt;
+    &lt;/Attributes&gt;
+  &lt;/HarmonyCore&gt;
+&lt;/HarmonyCore&gt;
+</value>
+      </entry>
+      <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="HarmonyCore" name="TASKS_C"/>
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;HarmonyCore&gt;
   &lt;HarmonyCore dnOrder=&quot;0&quot; id=&quot;TASKS_C&quot;&gt;
@@ -3820,11 +3864,12 @@
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="!@#harmonyUserData"/>
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;UserData&gt;
   &lt;UserData dnOrder=&quot;0&quot;&gt;
-    &lt;ComponentGraph dnOrder=&quot;0&quot; id=&quot;__ROOTVIEW&quot;&gt;
+    &lt;GraphSettings canvasHeight=&quot;290&quot; canvasWidth=&quot;563&quot; dnOrder=&quot;0&quot;/&gt;
+    &lt;ComponentGraph dnOrder=&quot;1&quot; id=&quot;__ROOTVIEW&quot;&gt;
       &lt;ElementPositions dnOrder=&quot;0&quot;&gt;
-        &lt;ElementPosition dnOrder=&quot;0&quot; id=&quot;BSP_PIC32CK_SG01_Curiosity_Ultra&quot; x=&quot;180&quot; y=&quot;20&quot;/&gt;
-        &lt;ElementPosition dnOrder=&quot;1&quot; id=&quot;FreeRTOS&quot; x=&quot;250&quot; y=&quot;60&quot;/&gt;
-        &lt;ElementPosition dnOrder=&quot;2&quot; id=&quot;HarmonyCore&quot; x=&quot;410&quot; y=&quot;60&quot;/&gt;
+        &lt;ElementPosition dnOrder=&quot;0&quot; id=&quot;BSP_PIC32CK_SG01_Curiosity_Ultra&quot; x=&quot;190&quot; y=&quot;120&quot;/&gt;
+        &lt;ElementPosition dnOrder=&quot;1&quot; id=&quot;FreeRTOS&quot; x=&quot;240&quot; y=&quot;20&quot;/&gt;
+        &lt;ElementPosition dnOrder=&quot;2&quot; id=&quot;HarmonyCore&quot; x=&quot;400&quot; y=&quot;20&quot;/&gt;
         &lt;ElementPosition dnOrder=&quot;3&quot; id=&quot;cmsis&quot; x=&quot;30&quot; y=&quot;220&quot;/&gt;
         &lt;ElementPosition dnOrder=&quot;4&quot; id=&quot;core&quot; x=&quot;30&quot; y=&quot;180&quot;/&gt;
         &lt;ElementPosition dnOrder=&quot;5&quot; id=&quot;dfp&quot; x=&quot;30&quot; y=&quot;80&quot;/&gt;
@@ -3832,7 +3877,6 @@
         &lt;ElementPosition dnOrder=&quot;7&quot; id=&quot;pm&quot; x=&quot;30&quot; y=&quot;120&quot;/&gt;
       &lt;/ElementPositions&gt;
     &lt;/ComponentGraph&gt;
-    &lt;GraphSettings canvasHeight=&quot;290&quot; canvasWidth=&quot;433&quot; dnOrder=&quot;1&quot;/&gt;
   &lt;/UserData&gt;
 &lt;/UserData&gt;
 </value>
@@ -4462,7 +4506,7 @@
    <generatedFileHashHistoryMap class="java.util.HashMap">
       <entry>
          <file>..\..\..\NonSecure\firmware\src\packs\PIC32CK2051SG01144_DFP\instance\osc32kctrl.h</file>
-         <hash>f2c989795af0ea2890f360fc9f490d11673cc8d5ca8035868227f4b1a91d16f1</hash>
+         <hash>0864c9aa1215ffebf268058c4ac8ddd56936be4821750fc1bc16336a9e98e3d3</hash>
       </entry>
       <entry>
          <file>..\..\..\Secure\firmware\src\packs\CMSIS\CMSIS\Core\Include\cmsis_gcc.h</file>
@@ -4470,87 +4514,87 @@
       </entry>
       <entry>
          <file>..\..\..\NonSecure\firmware\src\packs\PIC32CK2051SG01144_DFP\instance\prm.h</file>
-         <hash>c690b9f1e43d7a570966f794ae6911de7ab552381119bb6fd2778c2f37f77deb</hash>
+         <hash>e2a77edd0491e79f9b4017e84da144389af33f549545886b9d293e5a36937132</hash>
       </entry>
       <entry>
          <file>..\..\..\NonSecure\firmware\src\third_party\rtos\FreeRTOS\Source\stream_buffer.c</file>
-         <hash>a62731cd211dd9caf70958b229d4a3a607ef12e6fbfec573a0d089f21c45f34f</hash>
+         <hash>0ec303ba296caca5de955dc470bcadd134fb15b192ddf61c9afc92070bc1039a</hash>
       </entry>
       <entry>
          <file>..\..\..\NonSecure\firmware\src\packs\PIC32CK2051SG01144_DFP\component\ac.h</file>
-         <hash>55f715f1a05cd85b5064e15aa2331fbdd1a3db1fa904cd90caf4ce906ab1c089</hash>
+         <hash>5d281c8717a7582c32ee6aa981146b139282214e55de09543fb80a61a60578b3</hash>
       </entry>
       <entry>
          <file>..\..\..\NonSecure\firmware\src\packs\PIC32CK2051SG01144_DFP\instance\port.h</file>
-         <hash>89fb747e516a7db791f002bd1de25fc941368b4560a8f983f407abc81f2905d3</hash>
+         <hash>59c6ca74e670ce8a508bcf6c0d4c15283dcb206c56ad22e06c7f633fa5716602</hash>
       </entry>
       <entry>
          <file>..\..\..\NonSecure\firmware\src\packs\PIC32CK2051SG01144_DFP\instance\tcc6.h</file>
-         <hash>4c8e3bfaced51103a087227e3a71b0b51ad2d2e7bc14b9808ccea51f681bce64</hash>
+         <hash>7e21ab7a2ad44b16f3b34ddc6cc2bc68e305f9c21f2a1352f943a33e23172978</hash>
       </entry>
       <entry>
          <file>..\..\..\Secure\firmware\src\packs\PIC32CK2051SG01144_DFP\instance\pac.h</file>
-         <hash>9e015a3453591365afd455f645f95c10283d7bd029e261d36c3917caffe6c8cf</hash>
+         <hash>7f25865494cd0d8dc040a0b0cbd7caedf26c623c7f2a912f6dbc53c65413c58f</hash>
       </entry>
       <entry>
          <file>..\..\..\Secure\firmware\src\packs\PIC32CK2051SG01144_DFP\instance\idau.h</file>
-         <hash>9ab3beb9acfd0d32633429f4557ebdf8bcdf9bdaea57915f345cf030392282fe</hash>
+         <hash>3b73b6ade30c376bc638d4427b3dff2dd3bcf43749ac5ff582dfa0e8527c7418</hash>
       </entry>
       <entry>
          <file>..\..\..\NonSecure\firmware\src\config\pic32ck_sg01_cult\osal\osal.h</file>
-         <hash>d42702188d00d3e1d7219d7eef030485896bf8b5ebe55318656e82f0fbb89788</hash>
+         <hash>8404fbe44807fa0484ffb38843a72cb9af8e31c9c30bd1b2594e609b8ea317d9</hash>
       </entry>
       <entry>
          <file>..\..\..\Secure\firmware\src\packs\PIC32CK2051SG01144_DFP\instance\tcc1.h</file>
-         <hash>4ada483ee4e800f5cdde5b3a2644a83013cb3604d5b171f1ec1469e94257692f</hash>
+         <hash>73784906e152e02cf641aeb3b03734947e3ab93c43f1a56a00d411590947daa5</hash>
       </entry>
       <entry>
          <file>..\..\..\Secure\firmware\src\packs\PIC32CK2051SG01144_DFP\component\freqm.h</file>
-         <hash>d8c02bb9cac3dfc088a11eeb11f42660b21bf9ed7c34ebf8cbe86225556933d1</hash>
+         <hash>caeef6d8670671adf8fc7e38030d5aab208f8b63a4ef9426d7ec52a1a23b11b9</hash>
       </entry>
       <entry>
          <file>..\..\..\Secure\firmware\src\packs\PIC32CK2051SG01144_DFP\instance\evsys.h</file>
-         <hash>4cf791f65efded27e22cc358177d7f845b50c824ddbfb671b55ca0b065c84daa</hash>
+         <hash>a604c6470f898dc6dfbfb77fab4d775fccf60f122f85211277dc3b5dd12a223b</hash>
       </entry>
       <entry>
          <file>..\..\..\NonSecure\firmware\src\packs\PIC32CK2051SG01144_DFP\component\supc.h</file>
-         <hash>fbaae6c28965e7090f669f5976dd864ad8342cf650374a26eaf9dcd6d4c68f15</hash>
+         <hash>abe8333d1f7d81f1e3ba6950054cd69475de2b1e4b188a41987147b6623ec638</hash>
       </entry>
       <entry>
          <file>..\..\..\Secure\firmware\src\config\pic32ck_sg01_cult\FreeRTOSConfig.h</file>
-         <hash>deb8c68462c2380602a377d17342d43bd600b5f1d2e385f9e972db1022e3ffd3</hash>
+         <hash>027bb4eb98ad287845f6d5adfb2c5be61030b659232523657d6fa571b9f92ee1</hash>
       </entry>
       <entry>
          <file>..\..\..\Secure\firmware\src\packs\PIC32CK2051SG01144_DFP\instance\sercom3.h</file>
-         <hash>7f3adc9f7b3b41274f5105e3a1e30aee1e60c5cf86129ecbd43b0ef73f6a57ec</hash>
+         <hash>ea55ebfc5439d668eb46d188412b039f4faee5a9b12b699cdfe5e650e3762b69</hash>
       </entry>
       <entry>
          <file>..\..\..\NonSecure\firmware\src\packs\PIC32CK2051SG01144_DFP\instance\mclk.h</file>
-         <hash>45c277824953f31c104ab13b129e4da417c7e6b0abc7ec2b0bbb293825136577</hash>
+         <hash>37a16f824b6f11201a711a1ef08dd02711e65dc748e44ec180026c77c6300644</hash>
       </entry>
       <entry>
          <file>..\..\..\NonSecure\firmware\src\packs\PIC32CK2051SG01144_DFP\instance\sercom2.h</file>
-         <hash>9d981af4ea5a6df7eaf5ae7332335580a1c343ffceadbe5bb59ad2453e1c103d</hash>
+         <hash>98e7ea8717cd9da3ec37daec14d612541bdc2da0abad74b978efcdeaf7739cc2</hash>
       </entry>
       <entry>
          <file>..\..\..\NonSecure\firmware\src\packs\PIC32CK2051SG01144_DFP\component\adc.h</file>
-         <hash>1df46038ba397b60ad54e9779e46c8865bb8c7576945653fd7caf80b8c717f3d</hash>
+         <hash>494de06abe3cebbc38d6d12894eb69dd2b209e8f22d2326bf44494fb588230b6</hash>
       </entry>
       <entry>
          <file>..\..\..\NonSecure\firmware\src\packs\PIC32CK2051SG01144_DFP\instance\cmcc.h</file>
-         <hash>7df9717dad2dd31443348a864d22ea7f55f86c5c74dd15648621970a02738685</hash>
+         <hash>042f54afa7a06cf204b632f1d436845217bdb76bd361e9ee753fcb76636b0eac</hash>
       </entry>
       <entry>
          <file>..\..\..\Secure\firmware\src\packs\PIC32CK2051SG01144_DFP\component\fcr.h</file>
-         <hash>2fbb8c4700f31df0ba2a44d810a9e8d0dab8c1cf6ef4e4ef998c994be1d37938</hash>
+         <hash>391f9ca7163e975cc0b16ab0382266139bc43fff5fcd41f01d839cf19b92c852</hash>
       </entry>
       <entry>
          <file>..\..\..\Secure\firmware\src\packs\PIC32CK2051SG01144_DFP\instance\eth.h</file>
-         <hash>d784b5901cca6e7908c3ffe336c4a54fa5a69cf5e60a570ce3288af737fb4fc7</hash>
+         <hash>10d6ff491d9d89b3cb7276187291ada2994bc163d3be14a067cef80c5c2b748c</hash>
       </entry>
       <entry>
          <file>..\..\..\NonSecure\firmware\src\packs\PIC32CK2051SG01144_DFP\component\idau.h</file>
-         <hash>2fd0d103728c4f9120c919aa73ed80b8548a7b105ee19b260e40a8e9a74e15d2</hash>
+         <hash>350a04a6d6c0acd2a52e12db09d38dbbe2777c6d6b3f071c1a0c7544bf505065</hash>
       </entry>
       <entry>
          <file>..\..\..\NonSecure\firmware\src\packs\CMSIS\CMSIS\Core\Include\cmsis_armcc.h</file>
@@ -4558,27 +4602,27 @@
       </entry>
       <entry>
          <file>..\..\..\NonSecure\firmware\src\config\pic32ck_sg01_cult\tasks.c</file>
-         <hash>e76a43d0a5802d6bf0a9883402764b59e8f0bfe11ff9f703f3ea97eb568f5c0b</hash>
+         <hash>dd5eb39a9e3fbd30eecacf7fa2fbe079f1c064373fbb450b88d5a4cd03104bc4</hash>
       </entry>
       <entry>
          <file>..\..\..\Secure\firmware\src\packs\PIC32CK2051SG01144_DFP\component\tcc.h</file>
-         <hash>681ed5fc54bab69fdac1c028ed8c94fc3d26ab9052ca0b0c1f5c9d791d52106f</hash>
+         <hash>9818314c91f906aeca2d0060869b042f6372ffae18167822db17242392f45f19</hash>
       </entry>
       <entry>
          <file>..\..\..\NonSecure\firmware\src\third_party\rtos\FreeRTOS\Source\include\stack_macros.h</file>
-         <hash>06b5b66a9b98ad4998c82d353c0108b9db1a846951b8865cbdeeef90c5bbe2fe</hash>
+         <hash>3cddf2b3d47ae387e376ac75eb468f9d8ffb575d68c143e08d54af4087474cce</hash>
       </entry>
       <entry>
          <file>..\..\..\Secure\firmware\src\third_party\rtos\FreeRTOS\Source\portable\GCC\ARM_CM33\secure\secure_init.c</file>
-         <hash>18773a1461d922f6c7cf81666b3f628b54a199f269360efd3fb0377343e3adda</hash>
+         <hash>2d73838a2d5f25d1393ada5bd824037971e869ed2a75c9d74d626beb9bd1a61c</hash>
       </entry>
       <entry>
          <file>..\..\..\Secure\firmware\src\packs\PIC32CK2051SG01144_DFP\component\pdec.h</file>
-         <hash>f7d1129e66dee953d655d8549e09748705ea47a965b8f404bbbacaaa71405dd1</hash>
+         <hash>550da58fb0ea2456250921488e9f5c05c1cd6eecc3a0c7926875c49d07f8c32a</hash>
       </entry>
       <entry>
          <file>..\..\..\Secure\firmware\src\third_party\rtos\FreeRTOS\Source\portable\GCC\ARM_CM33\secure\secure_init.h</file>
-         <hash>e8ea6ec1e9a74ed98be28aef8f0b04a43db9d48b1d3813803bd5642cdd7881a7</hash>
+         <hash>18ccc503c6085d4f9b1759ade241b2d5810c61d0a5cfa9393c36718e282e812c</hash>
       </entry>
       <entry>
          <file>..\..\..\Secure\firmware\src\config\pic32ck_sg01_cult\exceptions.c</file>
@@ -4586,11 +4630,11 @@
       </entry>
       <entry>
          <file>..\..\..\NonSecure\firmware\src\packs\PIC32CK2051SG01144_DFP\component\fcw.h</file>
-         <hash>6dd76f046c6d376ca7a3a06a4436f0aeb800d6e4a5dc4eb31590fa1aca89815f</hash>
+         <hash>bfc2e21f60c2164edc146f0d8626dbad1b34264c594463b8ff76710ae60e3d1e</hash>
       </entry>
       <entry>
          <file>..\..\..\Secure\firmware\src\packs\PIC32CK2051SG01144_DFP\component\trng.h</file>
-         <hash>491c85c61cb2064265375b854a43429ac27bdf88a9452e1094926f8e4eefb973</hash>
+         <hash>a1f0d831437da6606ea65db259625d6b2c012ff9943653cb99ae1bb66605f9cc</hash>
       </entry>
       <entry>
          <file>..\..\..\Secure\firmware\src\packs\CMSIS\CMSIS\Core\Include\cmsis_compiler.h</file>
@@ -4598,19 +4642,19 @@
       </entry>
       <entry>
          <file>..\..\..\NonSecure\firmware\src\packs\PIC32CK2051SG01144_DFP\instance\pac.h</file>
-         <hash>9e015a3453591365afd455f645f95c10283d7bd029e261d36c3917caffe6c8cf</hash>
+         <hash>7f25865494cd0d8dc040a0b0cbd7caedf26c623c7f2a912f6dbc53c65413c58f</hash>
       </entry>
       <entry>
          <file>..\..\..\Secure\firmware\src\packs\PIC32CK2051SG01144_DFP\instance\rtc.h</file>
-         <hash>4efbc3506c41d0f3b650cec506ae2c10cdb5271758193fe30b87ea6749329522</hash>
+         <hash>4e296da41893cfa8c18be26ded2e950858018dee8c3ba6f14eae199dac4a28f9</hash>
       </entry>
       <entry>
          <file>..\..\..\NonSecure\firmware\src\packs\PIC32CK2051SG01144_DFP\component\wdt.h</file>
-         <hash>a0f4fb6f61d9170add50663d3d27394d6d8a5f67eb1b558a786134c88a5f2af1</hash>
+         <hash>4e9d1217cf12831ed5b8c4de515a6dba349b1e6394648c24b56b86f6db1dd4d3</hash>
       </entry>
       <entry>
          <file>..\..\..\NonSecure\firmware\src\config\pic32ck_sg01_cult\FreeRTOSConfig.h</file>
-         <hash>deb8c68462c2380602a377d17342d43bd600b5f1d2e385f9e972db1022e3ffd3</hash>
+         <hash>027bb4eb98ad287845f6d5adfb2c5be61030b659232523657d6fa571b9f92ee1</hash>
       </entry>
       <entry>
          <file>..\..\..\Secure\firmware\src\packs\CMSIS\CMSIS\Core\Include\mpu_armv8.h</file>
@@ -4618,23 +4662,23 @@
       </entry>
       <entry>
          <file>..\..\..\NonSecure\firmware\src\third_party\rtos\FreeRTOS\Source\timers.c</file>
-         <hash>dae8ab1093eed0eebd86eef7f4e777e3d249d98b75528ff3841d41ce1c8f3fa6</hash>
+         <hash>24962ef361f396aaa5e6e33776eeeddaf2fb251c87b6fe50602acc56c537b093</hash>
       </entry>
       <entry>
          <file>..\..\..\Secure\firmware\src\packs\PIC32CK2051SG01144_DFP\component\can.h</file>
-         <hash>6c5686c4e6b3b3a1d63d1cefd617d3990cb40aadde5c7807f56c901038df625a</hash>
+         <hash>44749f351668ee904a08866f3caaca75d7a826157c26428a7c734e6af4afe5c5</hash>
       </entry>
       <entry>
          <file>..\..\..\Secure\firmware\src\packs\PIC32CK2051SG01144_DFP\instance\fuses.h</file>
-         <hash>548e6384f31f2e0a512ee6755e283b59e56e67994c6b7a1bc4373fe7c0d3c4e3</hash>
+         <hash>f44792aef37d9a54963b3767759cdf09d3ccc8ff39001c1f69c5fac546985889</hash>
       </entry>
       <entry>
          <file>..\..\..\NonSecure\firmware\src\config\pic32ck_sg01_cult\interrupts.c</file>
-         <hash>55af65da740b0b5e811aab74aa752a3fa5072b4741d836c2424d2856ef93d4a0</hash>
+         <hash>acf76a9b621dd0432e4c5a3d852154a419cd31a46ec74f855ac3e026ed371250</hash>
       </entry>
       <entry>
          <file>..\..\..\Secure\firmware\src\packs\PIC32CK2051SG01144_DFP\instance\sercom4.h</file>
-         <hash>81dabc2bbe03086a3117124b489756810ae15a3011d22c2d2a065fd25b810aac</hash>
+         <hash>987726c0a5ba10e418f3a6d9fc9026f7ff915d2b23f54473e23cd768c8ea8458</hash>
       </entry>
       <entry>
          <file>..\..\..\NonSecure\firmware\src\config\pic32ck_sg01_cult\interrupts.h</file>
@@ -4642,11 +4686,11 @@
       </entry>
       <entry>
          <file>..\..\..\NonSecure\firmware\src\packs\PIC32CK2051SG01144_DFP\instance\tcc7.h</file>
-         <hash>4a7e5c12098a5e8a9822cf54d67f3527eb09ff35caace0c44c64d0671c50b29d</hash>
+         <hash>ef4519c29d8c42175268805744196f8020f9cc0fcdfea5d0caa6dc223d45d4f5</hash>
       </entry>
       <entry>
          <file>..\..\..\Secure\firmware\src\packs\PIC32CK2051SG01144_DFP\component\cmcc.h</file>
-         <hash>7783217ad28dff10b22fbaa61ac4676baf2e856c5b29540ea0dfcb2193ebfb45</hash>
+         <hash>a09a1c8ac234dc134415c3883a32ffe7472739221cc2eceb07a90d064913302d</hash>
       </entry>
       <entry>
          <file>..\..\..\NonSecure\firmware\src\config\pic32ck_sg01_cult\stdio\xc32_monitor.c</file>
@@ -4654,11 +4698,11 @@
       </entry>
       <entry>
          <file>..\..\..\NonSecure\firmware\src\packs\PIC32CK2051SG01144_DFP\component\freqm.h</file>
-         <hash>d8c02bb9cac3dfc088a11eeb11f42660b21bf9ed7c34ebf8cbe86225556933d1</hash>
+         <hash>caeef6d8670671adf8fc7e38030d5aab208f8b63a4ef9426d7ec52a1a23b11b9</hash>
       </entry>
       <entry>
          <file>..\..\..\NonSecure\firmware\src\packs\PIC32CK2051SG01144_DFP\instance\trng.h</file>
-         <hash>5e2d238f9f9673f9bd7c0b8ac38393f93590288f8799f1151b4bc7778c7811ef</hash>
+         <hash>c477cad2ca11ec9c5e53a31fe4734e7fa5348943fd5f1d586e5ab56f64a3d0a3</hash>
       </entry>
       <entry>
          <file>..\..\..\NonSecure\firmware\src\packs\CMSIS\CMSIS\Core\Include\mpu_armv8.h</file>
@@ -4666,7 +4710,7 @@
       </entry>
       <entry>
          <file>..\..\..\NonSecure\firmware\src\third_party\rtos\FreeRTOS\Source\portable\GCC\ARM_CM33\non_secure\portasm.c</file>
-         <hash>0a36667e183d624da1b0a3ae3fa7ea6d0d49c50f9c4002c0825ef8e5ae1de9ef</hash>
+         <hash>c157430eba1c9a359c15365502a9cb6d4a9cd7725655f07878536595cfd0462f</hash>
       </entry>
       <entry>
          <file>..\..\..\NonSecure\firmware\src\config\pic32ck_sg01_cult\user.h</file>
@@ -4674,23 +4718,23 @@
       </entry>
       <entry>
          <file>..\..\..\NonSecure\firmware\src\third_party\rtos\FreeRTOS\Source\include\event_groups.h</file>
-         <hash>a73c0b319370116d5981d5dacbabad3a775f85ae540ef70b4ced1c99c9ac6cd5</hash>
+         <hash>7b3dd12a50d649c124c1af8be742671b9965b6f924310bda7984fe1b65c7f54a</hash>
       </entry>
       <entry>
          <file>..\..\..\NonSecure\firmware\src\third_party\rtos\FreeRTOS\Source\include\stream_buffer.h</file>
-         <hash>43bd2a4bf5d6495e04c8409187d8f31dfaee58d8f94d7e3a4fd9830e5d7e68dc</hash>
+         <hash>b876d839460197d94d0f95fb93c6aeb457f6fc572d32258480fed7d4de686b6b</hash>
       </entry>
       <entry>
          <file>..\..\..\Secure\firmware\src\config\pic32ck_sg01_cult\definitions.h</file>
-         <hash>e1d7ae673c8a1027ff5f94e85bd7910412bed899e86b667e54cbc94349f4d95a</hash>
+         <hash>fdcbba3b1d66d9b9a0e5daafa9107d42b8e5f2a8c74c333a6af0fac2f92593f9</hash>
       </entry>
       <entry>
          <file>..\..\..\NonSecure\firmware\src\packs\PIC32CK2051SG01144_DFP\component\ebi.h</file>
-         <hash>95fe4715c7671cc46587fd3eda115490e94bbf3dff71b2801aa108d4a14a724f</hash>
+         <hash>bcf3578aa3f0d1d05760b64e44fbf0eaa253ff982aa0eb893bf0a6165bf53d42</hash>
       </entry>
       <entry>
          <file>..\..\..\NonSecure\firmware\src\third_party\rtos\FreeRTOS\Source\portable\GCC\ARM_CM33\non_secure\portasm.h</file>
-         <hash>44a9958d91bef57adf9e47d35de0445b7b30b209d34b803b1e89dc3e0a981012</hash>
+         <hash>2a627e5c6cbf5aa907e95526b7f656f2a903bdad8e24c3c11bd25d00769c224a</hash>
       </entry>
       <entry>
          <file>..\..\..\Secure\firmware\src\config\pic32ck_sg01_cult\interrupts.c</file>
@@ -4698,27 +4742,27 @@
       </entry>
       <entry>
          <file>..\..\..\Secure\firmware\src\packs\PIC32CK2051SG01144_DFP\pio\pic32ck2051sg01144.h</file>
-         <hash>639b00d6123f5f63ee35d3c441790092b1499ca5a02f104648a5946c15ac3f96</hash>
+         <hash>acef03be006ca5293cecc21d34c2f44326292c3fbca5d50b44be6e3cf3407bf4</hash>
       </entry>
       <entry>
          <file>..\..\..\Secure\firmware\src\packs\PIC32CK2051SG01144_DFP\component\mclk.h</file>
-         <hash>d4f4b6e6c174e9baeb2de9ca690b08e427641e181f76898286afafa5a6a102d2</hash>
+         <hash>ac44bde75320cef1e2157d7faf9c311371c2da81484199293dd46210bfaf2742</hash>
       </entry>
       <entry>
          <file>..\..\..\Secure\firmware\src\packs\PIC32CK2051SG01144_DFP\instance\tcc0.h</file>
-         <hash>d009c1cfdaf325a155e99731e97e06af6f29c5e4f69583421788229650a96520</hash>
+         <hash>054897939808a7b8fa07d73df3425aac9befd6fa107e7198ccbc29845745b213</hash>
       </entry>
       <entry>
          <file>..\..\..\Secure\firmware\src\packs\PIC32CK2051SG01144_DFP\instance\usb.h</file>
-         <hash>b395d00c95a10d6e7eae076dc9ed633feb8d5a1a762fc8d119fd55073815230f</hash>
+         <hash>20228e54a99617ce0d1c30b835fdbc6ad7049aca9f6a7ef4970e79b8ea9d8d5d</hash>
       </entry>
       <entry>
          <file>..\..\..\Secure\firmware\src\packs\PIC32CK2051SG01144_DFP\component\sqi.h</file>
-         <hash>25b5f3f893bedf97eae5a4468ba68dced6a1fbf0fe2db21db7eea2069ebc877e</hash>
+         <hash>c94b741a482f388a50315705ff2945b03d3003f8037008cc7a3445ad02a7c4a0</hash>
       </entry>
       <entry>
          <file>..\..\..\Secure\firmware\src\packs\PIC32CK2051SG01144_DFP\instance\supc.h</file>
-         <hash>2febebc9ced87b41ffde5e9c093d0fab93d3f2879530fb150bf59df23939dfe1</hash>
+         <hash>39f58e3d12115ef88b645d9159ad02455e51b7ec99784246c04d3d361971cfb6</hash>
       </entry>
       <entry>
          <file>..\..\..\Secure\firmware\src\config\pic32ck_sg01_cult\interrupts.h</file>
@@ -4730,35 +4774,39 @@
       </entry>
       <entry>
          <file>..\..\..\NonSecure\firmware\src\packs\PIC32CK2051SG01144_DFP\instance\sercom1.h</file>
-         <hash>4d5ac013dfbca039cd9affbbd7c18aed8fe17735e70018cfe3cb3ec46a0c2519</hash>
+         <hash>f4d404985274b85bfb99833b2b81222a7c20f94b7448b3cf4df8195d046b52d9</hash>
       </entry>
       <entry>
          <file>..\..\..\NonSecure\firmware\src\third_party\rtos\FreeRTOS\Source\include\croutine.h</file>
-         <hash>b6da8ad0cb09303c87eb634679b97f56001c14f45acd1378103504699a95cad4</hash>
+         <hash>cf52c15fa26a8d4f82b55909b75ebfe2aab25468ba7780748912ddead9812b4e</hash>
       </entry>
       <entry>
          <file>..\..\..\Secure\firmware\src\config\pic32ck_sg01_cult\peripheral\port\plib_port.h</file>
-         <hash>eaa974608ad0db4595db68157a668df90c71e28926fe030bc3aa5251780bdb4a</hash>
+         <hash>c0ccdc199f7a17b05b636060d94435f56758f7a746bf9b05bdbc3ceb91a60b32</hash>
       </entry>
       <entry>
          <file>..\..\..\NonSecure\firmware\src\packs\PIC32CK2051SG01144_DFP\instance\ccl.h</file>
-         <hash>33f8f123f7598dce0120844972ee130a63e6300f6c1fc8659c0754a113cfbf9c</hash>
+         <hash>9266e3b2256602fedd069a0b719c4145bc821663da85425151aa91ca31103cc9</hash>
       </entry>
       <entry>
          <file>..\..\..\NonSecure\firmware\src\packs\PIC32CK2051SG01144_DFP\instance\rtc.h</file>
-         <hash>4efbc3506c41d0f3b650cec506ae2c10cdb5271758193fe30b87ea6749329522</hash>
+         <hash>4e296da41893cfa8c18be26ded2e950858018dee8c3ba6f14eae199dac4a28f9</hash>
       </entry>
       <entry>
          <file>..\..\..\NonSecure\firmware\src\packs\PIC32CK2051SG01144_DFP\component\hmatrix2.h</file>
-         <hash>9d55031ec91fb7e557ae723fb26a5481d411653f00fef51409bc55918833cf8d</hash>
+         <hash>b8abecdaf7cf3b889fc3fc1b4273321cad206d4f799477584a972b424b9ba6ac</hash>
       </entry>
       <entry>
          <file>..\..\..\Secure\firmware\src\packs\PIC32CK2051SG01144_DFP\instance\prm.h</file>
-         <hash>c690b9f1e43d7a570966f794ae6911de7ab552381119bb6fd2778c2f37f77deb</hash>
+         <hash>e2a77edd0491e79f9b4017e84da144389af33f549545886b9d293e5a36937132</hash>
+      </entry>
+      <entry>
+         <file>..\..\..\NonSecure\firmware\src\third_party\rtos\FreeRTOS\Source\portable\GCC\ARM_CM33\non_secure\portmacrocommon.h</file>
+         <hash>092ada632d0d217b194ba3e1344b814c0ca80913ee3546b40e5c5914a100cd87</hash>
       </entry>
       <entry>
          <file>..\..\..\Secure\firmware\src\packs\PIC32CK2051SG01144_DFP\instance\spi_ixs.h</file>
-         <hash>9933b138d0d3f8fa56fb5ac99bc3ca592daba286fe3775600828de2fd77c1e73</hash>
+         <hash>04badf7a70d8e23690fe97e1da01066696ed2e57919c9cdb01d702654ef068dd</hash>
       </entry>
       <entry>
          <file>..\..\..\Secure\firmware\src\config\pic32ck_sg01_cult\peripheral\port\plib_port.c</file>
@@ -4766,23 +4814,23 @@
       </entry>
       <entry>
          <file>..\..\..\Secure\firmware\src\third_party\rtos\FreeRTOS\Source\portable\GCC\ARM_CM33\secure\secure_heap.c</file>
-         <hash>a832c0af18c76a28be5cc342c76ac9b5b3bc1fb2ba4f2e0ab805054936df73a1</hash>
+         <hash>3bc55eed4a8fb875af67e9eba8f8922ad9a0f1636a5a3e378d77ee65fa1b8cc6</hash>
       </entry>
       <entry>
          <file>..\..\..\Secure\firmware\src\third_party\rtos\FreeRTOS\Source\portable\GCC\ARM_CM33\secure\secure_heap.h</file>
-         <hash>c2fa0764b71886b99a00df94a4dc55cff867bbc2efc653354d58d49f388a8711</hash>
+         <hash>f231f2ace9f2f0830551970803c0507042a716475dc1e09f5525fa28cb279d0c</hash>
       </entry>
       <entry>
          <file>..\..\..\Secure\firmware\src\packs\PIC32CK2051SG01144_DFP\component\sdmmc.h</file>
-         <hash>a8dfa9f48e5d5f0cb7f89b355e74c7e2425748bd9e2037894ef9dd6867fdb1fd</hash>
+         <hash>f86653b70939f51cc3c4d0376878e53319c50f4410d22cb366a6448069c66b34</hash>
       </entry>
       <entry>
          <file>..\..\..\NonSecure\firmware\src\packs\PIC32CK2051SG01144_DFP\component\dsu.h</file>
-         <hash>8ac3458cd97a7cb53f27bddd615da5593420cce03d470a058fd73c9b5c2a814c</hash>
+         <hash>0b5e4439faaddf17aaf814892dd77a56b8b7afb5cacfeaeb2c45f4ac9eec20de</hash>
       </entry>
       <entry>
          <file>..\..\..\Secure\firmware\src\packs\PIC32CK2051SG01144_DFP\instance\usbhs.h</file>
-         <hash>2574ec0e08ff25cdecb22d0757a9c9fcde795090b5b26f2c8f05a0bcb6b5f61a</hash>
+         <hash>26c0d1d3d50dd01f6d5d67048d90de00974dc884c435224476a842361eea481b</hash>
       </entry>
       <entry>
          <file>..\..\..\NonSecure\firmware\src\trustZone\nonsecure_entry.h</file>
@@ -4790,11 +4838,15 @@
       </entry>
       <entry>
          <file>..\..\..\Secure\firmware\src\packs\PIC32CK2051SG01144_DFP\component\tram.h</file>
-         <hash>0662770f80bb2a0dcfcd044aa05526d2c9b9d3533dc8064d59042bea3418a83c</hash>
+         <hash>88960a9558f78c29f53a0e82ef65e1876447d175faf2627f1889deb11ef5b7b1</hash>
       </entry>
       <entry>
          <file>..\..\..\NonSecure\firmware\src\packs\PIC32CK2051SG01144_DFP\instance\fcw.h</file>
-         <hash>24dffc1f592cd7f18d9f8ed81916965868507410bb12909048806d7e2707869c</hash>
+         <hash>d1fea56685183f4d51409a453faf3381b5b621945d535c3d259a930423c92be5</hash>
+      </entry>
+      <entry>
+         <file>..\..\..\NonSecure\firmware\src\config\pic32ck_sg01_cult\sys_tasks.h</file>
+         <hash>e6a52fd8a9c1a711cd7dea48c63cf30b372824281d9dc846b2ecd95d5e11ec6a</hash>
       </entry>
       <entry>
          <file>..\..\..\Secure\firmware\src\config\pic32ck_sg01_cult\peripheral\evsys\plib_evsys.h</file>
@@ -4802,27 +4854,27 @@
       </entry>
       <entry>
          <file>..\..\..\Secure\firmware\src\packs\PIC32CK2051SG01144_DFP\component\ebi.h</file>
-         <hash>95fe4715c7671cc46587fd3eda115490e94bbf3dff71b2801aa108d4a14a724f</hash>
+         <hash>bcf3578aa3f0d1d05760b64e44fbf0eaa253ff982aa0eb893bf0a6165bf53d42</hash>
       </entry>
       <entry>
          <file>..\..\..\Secure\firmware\src\packs\PIC32CK2051SG01144_DFP\component\rtc.h</file>
-         <hash>61c0eddf726d78a78712a8284b305c2df26fcc8a2fe29a722bf5c070003fd5ff</hash>
+         <hash>b3a82c0147c442db80c81b10f908fef08d2875d12b14d84b1f69d562f57496c0</hash>
       </entry>
       <entry>
          <file>..\..\..\NonSecure\firmware\src\packs\PIC32CK2051SG01144_DFP\instance\tcc4.h</file>
-         <hash>cb86685832339f07aa09a0426024b72179028457fdb3871f96135962b1eacac4</hash>
+         <hash>32a19df1d43446470ee70df4846d272dfee9c07595f3471d7244a7938e1e80a9</hash>
       </entry>
       <entry>
          <file>..\..\..\NonSecure\firmware\src\third_party\rtos\FreeRTOS\Source\include\queue.h</file>
-         <hash>ff7a2139380ad0e2695bbc0d068db7a3b7e54ec41387b4c77acbe1aaa2921b7c</hash>
+         <hash>1b61c1669091e59798a34c32c0f1e234d3f6a645f47641753eceeb7e1d9ce628</hash>
       </entry>
       <entry>
          <file>..\..\..\NonSecure\firmware\src\config\pic32ck_sg01_cult\definitions.h</file>
-         <hash>2910d89e9649722e9f92275f7459ebe9351da69c4506f87ef6acdae08abfee40</hash>
+         <hash>b11169c1b3c0821e2cfc61a0cd9ad9a122cb04333e267f5611cfaf51f9ad6150</hash>
       </entry>
       <entry>
          <file>..\..\..\NonSecure\firmware\src\packs\PIC32CK2051SG01144_DFP\component\pcc.h</file>
-         <hash>10f21314686209e4207e808a54b6d8f4397f6c9608b3f9a3bd90534f5c68da5b</hash>
+         <hash>979853161fce454adad3c59ad9f7e78d096f366aa82b4a478fc09ea157eb3970</hash>
       </entry>
       <entry>
          <file>..\..\..\Secure\firmware\src\config\pic32ck_sg01_cult\peripheral\evsys\plib_evsys.c</file>
@@ -4830,11 +4882,11 @@
       </entry>
       <entry>
          <file>..\..\..\Secure\firmware\src\packs\PIC32CK2051SG01144_DFP\instance\tcc3.h</file>
-         <hash>dbc574752de8f1c01704f24b850affdb1386515e47641f2c223cbaf224a5376f</hash>
+         <hash>81d26b9baa573a05d862881d0db3511142d72c61c655be589946b62d7197a78a</hash>
       </entry>
       <entry>
          <file>..\..\..\Secure\firmware\src\packs\PIC32CK2051SG01144_DFP\pic32ck2051sg01144.h</file>
-         <hash>d69cbd6d6bc3801210e0e485d7a4fc08e8359166bc957a24aff097b9e069326b</hash>
+         <hash>c515a3b0c32ed700e25b3ffd3ec13d283475e69beb59ff7e2ca4216f2c8be98d</hash>
       </entry>
       <entry>
          <file>..\..\..\Secure\firmware\src\config\pic32ck_sg01_cult\peripheral\nvic\plib_nvic.h</file>
@@ -4842,31 +4894,31 @@
       </entry>
       <entry>
          <file>..\..\..\Secure\firmware\src\packs\PIC32CK2051SG01144_DFP\component\idau.h</file>
-         <hash>2fd0d103728c4f9120c919aa73ed80b8548a7b105ee19b260e40a8e9a74e15d2</hash>
+         <hash>350a04a6d6c0acd2a52e12db09d38dbbe2777c6d6b3f071c1a0c7544bf505065</hash>
       </entry>
       <entry>
          <file>..\..\..\NonSecure\firmware\src\packs\PIC32CK2051SG01144_DFP\component\eth.h</file>
-         <hash>03d926c611ce9cde8dcf34925ff64a00729509433fe9c68b98a6b5acbd6ddfd0</hash>
+         <hash>052af3a6109f5c7f17738a41bf4c58d2f84e50db91cb7d7ebbe16a76d64a8528</hash>
       </entry>
       <entry>
          <file>..\..\..\NonSecure\firmware\src\third_party\rtos\FreeRTOS\Source\portable\GCC\ARM_CM33\non_secure\portmacro.h</file>
-         <hash>f034b6fcd66b6958f9a99c04e2610c35bdbfb982ebd92d136d10c335bc8ad9a2</hash>
+         <hash>707806f0daf9d35abd7de52d1a2fe3fba796b4bdb786c76bce924342bfab6b36</hash>
       </entry>
       <entry>
          <file>..\..\..\NonSecure\firmware\src\packs\PIC32CK2051SG01144_DFP\component\sqi.h</file>
-         <hash>25b5f3f893bedf97eae5a4468ba68dced6a1fbf0fe2db21db7eea2069ebc877e</hash>
+         <hash>c94b741a482f388a50315705ff2945b03d3003f8037008cc7a3445ad02a7c4a0</hash>
       </entry>
       <entry>
          <file>..\..\..\Secure\firmware\src\packs\PIC32CK2051SG01144_DFP\instance\sercom1.h</file>
-         <hash>4d5ac013dfbca039cd9affbbd7c18aed8fe17735e70018cfe3cb3ec46a0c2519</hash>
+         <hash>f4d404985274b85bfb99833b2b81222a7c20f94b7448b3cf4df8195d046b52d9</hash>
       </entry>
       <entry>
          <file>..\..\..\Secure\firmware\src\config\pic32ck_sg01_cult\peripheral\nvic\plib_nvic.c</file>
-         <hash>298e65f64c7e4b6490a6294896091e11769b08432b474a8cdf2ee8cf3b7f6ca2</hash>
+         <hash>d38c795ae5da5dc90cb22861d4e28492b368fc260e1043d610a9a56edbb48c65</hash>
       </entry>
       <entry>
          <file>..\..\..\Secure\firmware\src\packs\PIC32CK2051SG01144_DFP\component\port.h</file>
-         <hash>5da6ad6723caf6bbcde1d9df596c8988679fdb062bac8bf93f18f4bac7537ef8</hash>
+         <hash>f517799fe4eb819ffbe7f6f141b8d5b964d88f3ad0db873b7aa338147cc0f9a9</hash>
       </entry>
       <entry>
          <file>..\..\..\NonSecure\firmware\src\config\pic32ck_sg01_cult\device_cache.h</file>
@@ -4874,23 +4926,23 @@
       </entry>
       <entry>
          <file>..\..\..\NonSecure\firmware\src\third_party\rtos\FreeRTOS\Source\include\portable.h</file>
-         <hash>c95eb0d549ff1c20edebfec41d73584b5a20d21df20a724084200954b9e8d252</hash>
+         <hash>7ade8f368002778c723b3c4e14084910b7225cd36363ed0c948e9ea36c6f251f</hash>
       </entry>
       <entry>
          <file>..\..\..\NonSecure\firmware\src\packs\PIC32CK2051SG01144_DFP\instance\sercom4.h</file>
-         <hash>81dabc2bbe03086a3117124b489756810ae15a3011d22c2d2a065fd25b810aac</hash>
+         <hash>987726c0a5ba10e418f3a6d9fc9026f7ff915d2b23f54473e23cd768c8ea8458</hash>
       </entry>
       <entry>
          <file>..\..\..\Secure\firmware\src\config\pic32ck_sg01_cult\bsp\bsp.h</file>
-         <hash>c0981b89ef5f0317620edce05cc825bea1d792278ce049743b20a17794150336</hash>
+         <hash>b067fbcd68e3ff9faa5fedd8517386e626814ed11c80ef5e6502ca4465079e49</hash>
       </entry>
       <entry>
          <file>..\..\..\Secure\firmware\src\third_party\rtos\FreeRTOS\Source\portable\GCC\ARM_CM33\secure\secure_port_macros.h</file>
-         <hash>25d01ff80c814393e8aca94a3b8de01ce6a152220828e708fb10d8cefe33bd0c</hash>
+         <hash>bbf060910331b1f92cec8d8915d1d7a007ae077264e3ad860be6b3105180f2ff</hash>
       </entry>
       <entry>
          <file>..\..\..\Secure\firmware\src\packs\PIC32CK2051SG01144_DFP\component\dsu.h</file>
-         <hash>8ac3458cd97a7cb53f27bddd615da5593420cce03d470a058fd73c9b5c2a814c</hash>
+         <hash>0b5e4439faaddf17aaf814892dd77a56b8b7afb5cacfeaeb2c45f4ac9eec20de</hash>
       </entry>
       <entry>
          <file>..\..\..\Secure\firmware\src\config\pic32ck_sg01_cult\bsp\bsp.c</file>
@@ -4898,19 +4950,19 @@
       </entry>
       <entry>
          <file>..\..\..\Secure\firmware\src\packs\PIC32CK2051SG01144_DFP\instance\fcw.h</file>
-         <hash>24dffc1f592cd7f18d9f8ed81916965868507410bb12909048806d7e2707869c</hash>
+         <hash>d1fea56685183f4d51409a453faf3381b5b621945d535c3d259a930423c92be5</hash>
       </entry>
       <entry>
          <file>..\..\..\Secure\firmware\src\packs\PIC32CK2051SG01144_DFP\instance\dma0.h</file>
-         <hash>9b9f301a04a7a88544de82f36e6fdd7ba8df0de91a66ef035f9975086977161d</hash>
+         <hash>80215cc96322ab35184eda70f64faf7214b51e2b61c3c668976ea4bd1155a17b</hash>
       </entry>
       <entry>
          <file>..\..\..\Secure\firmware\src\packs\PIC32CK2051SG01144_DFP\component\pac.h</file>
-         <hash>c153be97193528435930362a618c3ce9753c36e35c0feed959bfa9f3fbb839f1</hash>
+         <hash>958fbcb71017c7406d354bc0b4863b6e6045d425d17ec9a6b1124d73713d3908</hash>
       </entry>
       <entry>
          <file>..\..\..\Secure\firmware\src\packs\PIC32CK2051SG01144_DFP\instance\can1.h</file>
-         <hash>1fa16cf01d72adf2be3843abc98b078c536b6c54b5c0a3fd7e167a826da07771</hash>
+         <hash>2c13512309c5cd4716ab15f56365766c84a8b779c48e351a483613a386e4d26d</hash>
       </entry>
       <entry>
          <file>..\..\..\Secure\firmware\src\trustZone\nonsecure_entry.c</file>
@@ -4918,27 +4970,27 @@
       </entry>
       <entry>
          <file>..\..\..\NonSecure\firmware\src\packs\PIC32CK2051SG01144_DFP\instance\ac.h</file>
-         <hash>bdc3cb1acaa0ad2b7093b520820ad12f8d5c05371a7603bea2c9b0096b9c7db3</hash>
+         <hash>681be2bad656c8c94a6a27b292cef0edcd81ff8e9f40695cd7983f8c2a6cce86</hash>
       </entry>
       <entry>
          <file>..\..\..\NonSecure\firmware\src\packs\PIC32CK2051SG01144_DFP\instance\pdec.h</file>
-         <hash>9ae4165f367279102fbe7556b891ce0a7c7f15ac1019d4542a37b34f73eaedc8</hash>
+         <hash>e0697e97c105c1fd544b3dc8682eb552a9992c30174a0f37fe9f5502a0e799ff</hash>
       </entry>
       <entry>
          <file>..\..\..\Secure\firmware\src\packs\PIC32CK2051SG01144_DFP\instance\tram.h</file>
-         <hash>1304d78d9a2cd933082e79cd07282e2870df391ac5ac03e2c11464fef40c1bd8</hash>
+         <hash>9992b4c9cf67554e27d7de3de5fb2070987e6c60d134572ba1c4a96836e18c90</hash>
       </entry>
       <entry>
          <file>..\..\..\NonSecure\firmware\src\packs\PIC32CK2051SG01144_DFP\instance\usbhs.h</file>
-         <hash>2574ec0e08ff25cdecb22d0757a9c9fcde795090b5b26f2c8f05a0bcb6b5f61a</hash>
+         <hash>26c0d1d3d50dd01f6d5d67048d90de00974dc884c435224476a842361eea481b</hash>
       </entry>
       <entry>
          <file>..\..\..\NonSecure\firmware\src\packs\PIC32CK2051SG01144_DFP\component\tram.h</file>
-         <hash>0662770f80bb2a0dcfcd044aa05526d2c9b9d3533dc8064d59042bea3418a83c</hash>
+         <hash>88960a9558f78c29f53a0e82ef65e1876447d175faf2627f1889deb11ef5b7b1</hash>
       </entry>
       <entry>
          <file>..\..\..\Secure\firmware\src\packs\PIC32CK2051SG01144_DFP\instance\sig.h</file>
-         <hash>0a002f3a275bd720d6de96f5d929b1a4a383890533d3a442ac5710d473438b37</hash>
+         <hash>526ec819895c0da2da6ee1f0841020c170d3e468f38636ec8122679808d8dde0</hash>
       </entry>
       <entry>
          <file>..\..\..\Secure\firmware\src\packs\CMSIS\CMSIS\Core\Include\cachel1_armv7.h</file>
@@ -4946,7 +4998,7 @@
       </entry>
       <entry>
          <file>..\..\..\NonSecure\firmware\src\third_party\rtos\FreeRTOS\Source\include\task.h</file>
-         <hash>85a11a834d04120402087ac61190566f893480e9d6c8fe903218330dc4ea7d30</hash>
+         <hash>45f2245c914ed25ab26a1ea78ddd4ac74cb6522e1b26ac5c44b614ca4c8cee99</hash>
       </entry>
       <entry>
          <file>..\..\..\NonSecure\firmware\src\packs\CMSIS\CMSIS\Core\Include\tz_context.h</file>
@@ -4954,7 +5006,7 @@
       </entry>
       <entry>
          <file>..\..\..\NonSecure\firmware\src\packs\PIC32CK2051SG01144_DFP\instance\wdt.h</file>
-         <hash>63fd2086d0b9e089ee1be31f418a06d40e7b7d5e677d439b6a4656d10119030e</hash>
+         <hash>f7bd265b51ec422069b75c0ae5c1fe28b0a9dae587a482f31c5be2d64c126e8d</hash>
       </entry>
       <entry>
          <file>..\..\..\NonSecure\firmware\src\config\pic32ck_sg01_cult\bsp\bsp.c</file>
@@ -4962,23 +5014,23 @@
       </entry>
       <entry>
          <file>..\..\..\NonSecure\firmware\src\packs\PIC32CK2051SG01144_DFP\instance\tcc5.h</file>
-         <hash>bf4e4f763aa0dbba33d5325dba28946288c3605df04f198d27dee1d903f7cbc4</hash>
+         <hash>2c9706b29d54df958d800a67d699553f88fa5813067ff9a89e39ba999211a322</hash>
       </entry>
       <entry>
          <file>..\..\..\NonSecure\firmware\src\third_party\rtos\FreeRTOS\Source\include\projdefs.h</file>
-         <hash>292c78c91dbf63a6aa028f381b1dd548d549949f4fb9fcfd97f949569e013d76</hash>
+         <hash>8faf4220ded25b00fd72424a2fa4e63e154713ae7b42f7270f1e3289362a6312</hash>
       </entry>
       <entry>
          <file>..\..\..\NonSecure\firmware\src\packs\PIC32CK2051SG01144_DFP\component\ptc.h</file>
-         <hash>68a7c347a8b5c9b9b5549790d69cdd2c4bb8274906f8fa3e11dd6357e6abe53a</hash>
+         <hash>b01e0506c60a42eda905aa6567cad1c8547eb92fe968e5a64eef060a3070badf</hash>
       </entry>
       <entry>
          <file>..\..\..\NonSecure\firmware\src\packs\PIC32CK2051SG01144_DFP\component\tcc.h</file>
-         <hash>681ed5fc54bab69fdac1c028ed8c94fc3d26ab9052ca0b0c1f5c9d791d52106f</hash>
+         <hash>9818314c91f906aeca2d0060869b042f6372ffae18167822db17242392f45f19</hash>
       </entry>
       <entry>
          <file>..\..\..\Secure\firmware\src\packs\PIC32CK2051SG01144_DFP\instance\fpu_ns.h</file>
-         <hash>25664fc578840932c79c58918f012addd055f72fa3efc63a3a407ce0e9ff808b</hash>
+         <hash>1d7ae55f565467fdffd917f82ce3e57a7526326c38597f32f19f08517f0e198a</hash>
       </entry>
       <entry>
          <file>..\..\..\Secure\firmware\src\config\pic32ck_sg01_cult\peripheral\pm\plib_pm.h</file>
@@ -4990,91 +5042,91 @@
       </entry>
       <entry>
          <file>..\..\..\Secure\firmware\src\packs\PIC32CK2051SG01144_DFP\instance\cmcc.h</file>
-         <hash>7df9717dad2dd31443348a864d22ea7f55f86c5c74dd15648621970a02738685</hash>
+         <hash>042f54afa7a06cf204b632f1d436845217bdb76bd361e9ee753fcb76636b0eac</hash>
       </entry>
       <entry>
          <file>..\..\..\Secure\firmware\src\packs\PIC32CK2051SG01144_DFP\instance\tcc2.h</file>
-         <hash>af716afb924402efe6563899f112a1ad8d068097aa4f4baf80aca4cb64865911</hash>
+         <hash>dff0d879c49fc6b0426addd9370b2531eb769f060f600b60ee72b2f4a01e1a6a</hash>
       </entry>
       <entry>
          <file>..\..\..\Secure\firmware\src\packs\PIC32CK2051SG01144_DFP\component\supc.h</file>
-         <hash>fbaae6c28965e7090f669f5976dd864ad8342cf650374a26eaf9dcd6d4c68f15</hash>
+         <hash>abe8333d1f7d81f1e3ba6950054cd69475de2b1e4b188a41987147b6623ec638</hash>
       </entry>
       <entry>
          <file>..\..\..\NonSecure\firmware\src\packs\PIC32CK2051SG01144_DFP\component\usbhs.h</file>
-         <hash>176580bd9f6a1c8c6eb7b4d24e0f162e7e54362ffdf0faaea5872614a4127437</hash>
+         <hash>f54667f2d7ea5cbe9a905f01bf4db90f3fb0044ca8bfe3226f7d4abbeaf91bdb</hash>
       </entry>
       <entry>
          <file>..\..\..\NonSecure\firmware\src\packs\PIC32CK2051SG01144_DFP\instance\eic.h</file>
-         <hash>bad2d30808dd5492c5ee07f124e2f631def91240b585c325d14d28b2be8f889f</hash>
+         <hash>4efedd7c06f306b89fccc90da5879067590ec31284eb4d55e9bfd3f166fef86d</hash>
       </entry>
       <entry>
          <file>..\..\..\Secure\firmware\src\packs\PIC32CK2051SG01144_DFP\instance\ccl.h</file>
-         <hash>33f8f123f7598dce0120844972ee130a63e6300f6c1fc8659c0754a113cfbf9c</hash>
+         <hash>9266e3b2256602fedd069a0b719c4145bc821663da85425151aa91ca31103cc9</hash>
       </entry>
       <entry>
          <file>..\..\..\Secure\firmware\src\packs\PIC32CK2051SG01144_DFP\instance\sercom2.h</file>
-         <hash>9d981af4ea5a6df7eaf5ae7332335580a1c343ffceadbe5bb59ad2453e1c103d</hash>
+         <hash>98e7ea8717cd9da3ec37daec14d612541bdc2da0abad74b978efcdeaf7739cc2</hash>
       </entry>
       <entry>
          <file>..\..\..\Secure\firmware\src\third_party\rtos\FreeRTOS\Source\portable\GCC\ARM_CM33\secure\secure_context.c</file>
-         <hash>b9efca744186189dd16442ec1dcf3ebd5e1007451565a7e921bb9a063013f697</hash>
+         <hash>f02d9865272423ef884534f26868ce2027ff8a478def76a33c965cfe455a62c9</hash>
       </entry>
       <entry>
          <file>..\..\..\NonSecure\firmware\src\packs\PIC32CK2051SG01144_DFP\component\cmcc.h</file>
-         <hash>7783217ad28dff10b22fbaa61ac4676baf2e856c5b29540ea0dfcb2193ebfb45</hash>
+         <hash>a09a1c8ac234dc134415c3883a32ffe7472739221cc2eceb07a90d064913302d</hash>
       </entry>
       <entry>
          <file>..\..\..\NonSecure\firmware\src\packs\PIC32CK2051SG01144_DFP\instance\sercom3.h</file>
-         <hash>7f3adc9f7b3b41274f5105e3a1e30aee1e60c5cf86129ecbd43b0ef73f6a57ec</hash>
+         <hash>ea55ebfc5439d668eb46d188412b039f4faee5a9b12b699cdfe5e650e3762b69</hash>
       </entry>
       <entry>
          <file>..\..\..\Secure\firmware\src\third_party\rtos\FreeRTOS\Source\portable\GCC\ARM_CM33\secure\secure_context.h</file>
-         <hash>ee74160d9994429655d82387944874e2af38feddaa77bced7247b2f3a6ca1d99</hash>
+         <hash>13d3a5a04d29fc0f4063f925f5b87132d228a0fe925c3d2858daa3d344524f3d</hash>
       </entry>
       <entry>
          <file>..\..\..\NonSecure\firmware\src\packs\PIC32CK2051SG01144_DFP\instance\gclk.h</file>
-         <hash>0660f035ecb547b6edd8d632df81f7bcc27b817e4971e5e9a76a9bb9ac70a6c2</hash>
+         <hash>5e018bc91dd16521e405e659b4e7412d634787cfb657f8a133c603d1a5409fee</hash>
       </entry>
       <entry>
          <file>..\..\..\Secure\firmware\src\packs\PIC32CK2051SG01144_DFP\component\prm.h</file>
-         <hash>2afe4ce76fafcbf66a782960d1d7727fa1d87c6e9f530d530ba7609555600462</hash>
+         <hash>7bb26fc2fe12097ca06f48a735270da583006126a7ea1e7f8fb7d52993937283</hash>
       </entry>
       <entry>
          <file>..\..\..\NonSecure\firmware\src\third_party\rtos\FreeRTOS\Source\portable\MemMang\heap_1.c</file>
-         <hash>d03a08079e678cc6e6a1e2105684ab0082d190bbb731f6807d75e1aca260e98f</hash>
+         <hash>286e3fee81c9107fc6dec40405f500cabdca56836d29747c182f0899bb8997fd</hash>
       </entry>
       <entry>
          <file>..\..\..\Secure\firmware\src\packs\PIC32CK2051SG01144_DFP\component\eic.h</file>
-         <hash>e3cfc92d2dffe76cedc85c32082fa464da23d34a632be930b77d9b852c8d4393</hash>
+         <hash>f827dce4f6488866676626d10d0b1ee23a1c08693877b5b3cb8554d0c2d783f6</hash>
       </entry>
       <entry>
          <file>..\..\..\NonSecure\firmware\src\config\pic32ck_sg01_cult\system\cache\sys_cache.h</file>
-         <hash>3407ecac4da455d4b8ba70043f10c20b10e1304e92402db824ca5efa6a2f8402</hash>
+         <hash>b4b3a4e7434759c9bbcd3c6a0ab97558eb2a007f083a4eb76dbedcb2e2c3d86b</hash>
       </entry>
       <entry>
          <file>..\..\..\Secure\firmware\src\packs\PIC32CK2051SG01144_DFP\component\hmatrix2.h</file>
-         <hash>9d55031ec91fb7e557ae723fb26a5481d411653f00fef51409bc55918833cf8d</hash>
+         <hash>b8abecdaf7cf3b889fc3fc1b4273321cad206d4f799477584a972b424b9ba6ac</hash>
       </entry>
       <entry>
          <file>..\..\..\NonSecure\firmware\src\config\pic32ck_sg01_cult\system\cache\sys_cache.c</file>
-         <hash>7266793f96d0991d1cff7006720bff2a3f6974ca34aa53e488763b2a9f307ab9</hash>
+         <hash>5f8c30e8077b915a4c4ff0515354b2877dc74c3236f307bdc1132307269fbf86</hash>
       </entry>
       <entry>
          <file>..\..\..\Secure\firmware\src\config\pic32ck_sg01_cult\toolchain_specifics.h</file>
-         <hash>fb1c58b7fb94545ef6247f18ea3001b719e06ec29bf39bfd68fe3927f709eaa3</hash>
+         <hash>6fc0551b0fa3362678b3d7a227386fafa343140d31e4da3ad4af972e61cd0acb</hash>
       </entry>
       <entry>
          <file>..\..\..\Secure\firmware\src\packs\PIC32CK2051SG01144_DFP\component\wdt.h</file>
-         <hash>a0f4fb6f61d9170add50663d3d27394d6d8a5f67eb1b558a786134c88a5f2af1</hash>
+         <hash>4e9d1217cf12831ed5b8c4de515a6dba349b1e6394648c24b56b86f6db1dd4d3</hash>
       </entry>
       <entry>
          <file>..\..\..\Secure\firmware\src\packs\PIC32CK2051SG01144_DFP\component\ac.h</file>
-         <hash>55f715f1a05cd85b5064e15aa2331fbdd1a3db1fa904cd90caf4ce906ab1c089</hash>
+         <hash>5d281c8717a7582c32ee6aa981146b139282214e55de09543fb80a61a60578b3</hash>
       </entry>
       <entry>
          <file>..\..\..\Secure\firmware\src\packs\PIC32CK2051SG01144_DFP\component\adc.h</file>
-         <hash>1df46038ba397b60ad54e9779e46c8865bb8c7576945653fd7caf80b8c717f3d</hash>
+         <hash>494de06abe3cebbc38d6d12894eb69dd2b209e8f22d2326bf44494fb588230b6</hash>
       </entry>
       <entry>
          <file>..\..\..\NonSecure\firmware\src\packs\CMSIS\CMSIS\Core\Include\cmsis_version.h</file>
@@ -5082,15 +5134,15 @@
       </entry>
       <entry>
          <file>..\..\..\Secure\firmware\src\packs\PIC32CK2051SG01144_DFP\instance\dma1.h</file>
-         <hash>0918a3e5d02556da768b42ffb13966d2761274a3e43b79008c4546829aa9129f</hash>
+         <hash>bb996d519b7a3558c2742444c2377f367f6d60a32d48f44b7e3d05a1a4d30441</hash>
       </entry>
       <entry>
          <file>..\..\..\NonSecure\firmware\src\packs\PIC32CK2051SG01144_DFP\component\can.h</file>
-         <hash>6c5686c4e6b3b3a1d63d1cefd617d3990cb40aadde5c7807f56c901038df625a</hash>
+         <hash>44749f351668ee904a08866f3caaca75d7a826157c26428a7c734e6af4afe5c5</hash>
       </entry>
       <entry>
          <file>..\..\..\NonSecure\firmware\src\packs\PIC32CK2051SG01144_DFP\instance\hsm.h</file>
-         <hash>5288b04a4d71146366c21e68ff6c9b4143608ce7fc1308f97324e2097f2f301e</hash>
+         <hash>c7ac05be394440853d908533c227d6e5ee0bceabf600022a6720d39ad18f77b2</hash>
       </entry>
       <entry>
          <file>..\..\..\NonSecure\firmware\src\packs\CMSIS\CMSIS\Core\Include\cmsis_compiler.h</file>
@@ -5098,43 +5150,43 @@
       </entry>
       <entry>
          <file>..\..\..\NonSecure\firmware\src\packs\PIC32CK2051SG01144_DFP\instance\ebi.h</file>
-         <hash>ed572ea942fbb648e2d82ce5221f1fdafdccde0a71aae9990a8427c32fc66575</hash>
+         <hash>5883414ca206ba88c90a2bb38f63d1b32e9a4321c45bbb95b635f618866c0e6f</hash>
       </entry>
       <entry>
          <file>..\..\..\Secure\firmware\src\packs\PIC32CK2051SG01144_DFP\component\hsm.h</file>
-         <hash>a9be62385159c2b6591ade84725a7da48f2ae3afa753015448d9bf48a935ca72</hash>
+         <hash>6b5c5b9b4c3baeda41a23427f319cbb7022e53087a31c987962934d6359d5d20</hash>
       </entry>
       <entry>
          <file>..\..\..\NonSecure\firmware\src\config\pic32ck_sg01_cult\bsp\bsp.h</file>
-         <hash>6ae2397ca0e87a1ad2d5e7e3ec8b8cec3c05c2bf486e623bc0f2753835b8375a</hash>
+         <hash>dcdfd1289e888db5465ba1b164ddf8d76774a50684ce8ff6715afca66dd91b87</hash>
       </entry>
       <entry>
          <file>..\..\..\NonSecure\firmware\src\config\pic32ck_sg01_cult\freertos_hooks.c</file>
-         <hash>1c31f7febed38afbcb09d11b002c5dddda98c7ed7aba9ff8f8e32b8c5f288a47</hash>
+         <hash>ee4a4dfc44aa3d45b99065a3d972818fcbd019d39450a67f168aa7f047f55149</hash>
       </entry>
       <entry>
          <file>..\..\..\NonSecure\firmware\src\config\pic32ck_sg01_cult\PIC32CK2051SG01144.ld</file>
-         <hash>06bfe466a052855dbf828752d38c4e58e7c10f96a17695ad3649ee009b248cd9</hash>
+         <hash>16d8b0f0e37f2c0337a93f19ec389a89dd459ec935bfdf2a95212c608e849285</hash>
       </entry>
       <entry>
          <file>..\..\..\Secure\firmware\src\packs\PIC32CK2051SG01144_DFP\instance\can0.h</file>
-         <hash>3858d9a38a58e928931e480bb6f8387212826e4c524ba977941c8ce59b8e121d</hash>
+         <hash>5bce06106c8e6ad35a8fd9d97d7d7b82c991dd85d312fd997c5713ec07b1160c</hash>
       </entry>
       <entry>
          <file>..\..\..\NonSecure\firmware\src\packs\PIC32CK2051SG01144_DFP\instance\fuses.h</file>
-         <hash>548e6384f31f2e0a512ee6755e283b59e56e67994c6b7a1bc4373fe7c0d3c4e3</hash>
+         <hash>f44792aef37d9a54963b3767759cdf09d3ccc8ff39001c1f69c5fac546985889</hash>
       </entry>
       <entry>
          <file>..\..\..\NonSecure\firmware\src\packs\PIC32CK2051SG01144_DFP\instance\adc.h</file>
-         <hash>9e74f4d45beaba4c80d5c22f720f4a691cf171c3facbfe52127635c6a422e1ac</hash>
+         <hash>6d3f18cb227e21dad98b2bda4ffa179c4aeb813c692b2a9245723d22ad68f8ce</hash>
       </entry>
       <entry>
          <file>..\..\..\NonSecure\firmware\src\third_party\rtos\FreeRTOS\Source\queue.c</file>
-         <hash>4452e3b0e6446b74c7d010d308072ba0a35c1f92bcf3882a54bf3796a72517aa</hash>
+         <hash>5cdf4fa35fe059446effff5bf20deaf83ddffb08921bc198fda106b1d17dd894</hash>
       </entry>
       <entry>
          <file>..\..\..\NonSecure\firmware\src\third_party\rtos\FreeRTOS\Source\include\timers.h</file>
-         <hash>2bf5b5f5d83684c1e6d90e5bd17da9de41d38ed61ec0410f94595ff343f89174</hash>
+         <hash>ee0f596a54137e26ca806ebf067c4c6219a61348f1cbae8861a43d2d4891e1f9</hash>
       </entry>
       <entry>
          <file>..\..\..\Secure\firmware\src\config\pic32ck_sg01_cult\initialization.c</file>
@@ -5142,39 +5194,39 @@
       </entry>
       <entry>
          <file>..\..\..\Secure\firmware\src\packs\PIC32CK2051SG01144_DFP\component\evsys.h</file>
-         <hash>af03978cddeb83c3a1eb560187cbea580b6a90022a3498b780d79afd5c0ab087</hash>
+         <hash>b57860950890f0092af2a248f8ee5e3dbd1fd23602534d32a04a61897e46dc66</hash>
       </entry>
       <entry>
          <file>..\..\..\NonSecure\firmware\src\packs\PIC32CK2051SG01144_DFP\component\port.h</file>
-         <hash>5da6ad6723caf6bbcde1d9df596c8988679fdb062bac8bf93f18f4bac7537ef8</hash>
+         <hash>f517799fe4eb819ffbe7f6f141b8d5b964d88f3ad0db873b7aa338147cc0f9a9</hash>
       </entry>
       <entry>
          <file>..\..\..\NonSecure\firmware\src\packs\PIC32CK2051SG01144_DFP\instance\tcc2.h</file>
-         <hash>af716afb924402efe6563899f112a1ad8d068097aa4f4baf80aca4cb64865911</hash>
+         <hash>dff0d879c49fc6b0426addd9370b2531eb769f060f600b60ee72b2f4a01e1a6a</hash>
       </entry>
       <entry>
          <file>..\..\..\Secure\firmware\src\packs\PIC32CK2051SG01144_DFP\instance\sercom7.h</file>
-         <hash>0df19b5fd974c0b36d525c1eda347b917b7d823e7b63d56912bd520d54c4ab13</hash>
+         <hash>e1d5aee6ef428ff3bd16ba755d9e1ba04817a938f06622eae98054421e2cbad1</hash>
       </entry>
       <entry>
          <file>..\..\..\NonSecure\firmware\src\config\pic32ck_sg01_cult\osal\osal_definitions.h</file>
-         <hash>6dc49e317b4557c5516a172c1437125874abd98ffcc7260e3422966078dcef7f</hash>
+         <hash>af2f2336fac0fd5b49fb2d1c8f81baa4f554101b06f130aaa608cd9685c4ac35</hash>
       </entry>
       <entry>
          <file>..\..\..\Secure\firmware\src\packs\PIC32CK2051SG01144_DFP\instance\ebi.h</file>
-         <hash>ed572ea942fbb648e2d82ce5221f1fdafdccde0a71aae9990a8427c32fc66575</hash>
+         <hash>5883414ca206ba88c90a2bb38f63d1b32e9a4321c45bbb95b635f618866c0e6f</hash>
       </entry>
       <entry>
          <file>..\..\..\Secure\firmware\src\packs\PIC32CK2051SG01144_DFP\instance\freqm.h</file>
-         <hash>3e5efe3a4d12aa31ec3b1346e972372c7ba38f9b26cbdf1408ee1a6095bb4d82</hash>
+         <hash>e31d286e654eadeb4285a9747036bfcd74cc187fd97032ec6246b02328368d84</hash>
       </entry>
       <entry>
          <file>..\..\..\NonSecure\firmware\src\packs\PIC32CK2051SG01144_DFP\instance\dsu.h</file>
-         <hash>4c7d2024376df0dd12cded1c24f1cae4e31c634299cb26645f4d0d83139a38f5</hash>
+         <hash>fb2e9ef039c25889821488a8292aa066b7df4171a9e44b4329f95a0bcd95dad7</hash>
       </entry>
       <entry>
          <file>..\..\..\NonSecure\firmware\src\third_party\rtos\FreeRTOS\Source\portable\GCC\ARM_CM33\non_secure\port.c</file>
-         <hash>a1df21f5ecfe79a380258e020ca8283fa2d2bd09caf437f0428080843bd8f034</hash>
+         <hash>ed5b374f68ec512f04d0b8d0c2589630cb6dd066d8c912ded53d6cdc9d8bcf11</hash>
       </entry>
       <entry>
          <file>..\..\..\Secure\firmware\src\config\pic32ck_sg01_cult\libc_syscalls.c</file>
@@ -5182,31 +5234,31 @@
       </entry>
       <entry>
          <file>..\..\..\NonSecure\firmware\src\packs\PIC32CK2051SG01144_DFP\instance\sqi.h</file>
-         <hash>ee58eb7414ffff5c78e35e23a0c20454bac8dd44d4eb0078470175a2454f7032</hash>
+         <hash>2a3a1556792cf5490b43b0699cd222c6dc59d7f15f1f21e43381e32c3ffcf81f</hash>
       </entry>
       <entry>
          <file>..\..\..\Secure\firmware\src\packs\PIC32CK2051SG01144_DFP\instance\eic.h</file>
-         <hash>bad2d30808dd5492c5ee07f124e2f631def91240b585c325d14d28b2be8f889f</hash>
+         <hash>4efedd7c06f306b89fccc90da5879067590ec31284eb4d55e9bfd3f166fef86d</hash>
       </entry>
       <entry>
          <file>..\..\..\Secure\firmware\src\packs\PIC32CK2051SG01144_DFP\instance\ptc.h</file>
-         <hash>5db434c8b431fa62085a8cadb0a968197594c8e3a92cb8389f8759a7b03d7cb6</hash>
+         <hash>f466e35a4c70b5c03c6bcbddf233a55beb70873350a2f3302dfcc5c85e31944e</hash>
       </entry>
       <entry>
          <file>..\..\..\Secure\firmware\src\packs\PIC32CK2051SG01144_DFP\instance\sdmmc1.h</file>
-         <hash>392a60465f8d9be131e6ac5ee7c3c4b47cfd8ebc80bb1cd3a1e1931c90cf4a50</hash>
+         <hash>2b46b2b20bbf0e9334ef90a3efd1f30afff0a60f4010be156f013ad878da04dc</hash>
       </entry>
       <entry>
          <file>..\..\..\NonSecure\firmware\src\config\pic32ck_sg01_cult\initialization.c</file>
-         <hash>ebf2506112e3ffe322b288ce5e3a971b6d8477e365c97882d4cd2193c4532438</hash>
+         <hash>373b74ffccc3f00f85a6da9d541f04600944a292be6045350914b0e41fbe9b1d</hash>
       </entry>
       <entry>
          <file>..\..\..\Secure\firmware\src\packs\PIC32CK2051SG01144_DFP\component\rstc.h</file>
-         <hash>b030473a3f18a971b5285b7992dae7f7cff7760e6c45497e52718ab56a0ada9d</hash>
+         <hash>08700e01e46af4e925e5a6863263ad126b80e94a63b8e2f10910b088f911b5ec</hash>
       </entry>
       <entry>
          <file>..\..\..\NonSecure\firmware\src\packs\PIC32CK2051SG01144_DFP\component\sig.h</file>
-         <hash>65a89660791fa35b51a733060e84166b2de6f6c10f141bc6098dfa20da46f1ac</hash>
+         <hash>8eae325e60f19c4d3cba6b1a018c569b2c03e05524f7f4573715cd099ac0d99e</hash>
       </entry>
       <entry>
          <file>..\..\..\NonSecure\firmware\src\packs\CMSIS\CMSIS\Core\Include\cachel1_armv7.h</file>
@@ -5214,47 +5266,47 @@
       </entry>
       <entry>
          <file>..\..\..\NonSecure\firmware\src\third_party\rtos\FreeRTOS\Source\event_groups.c</file>
-         <hash>82542c835466f2abd0eeb2988a0bcecf3d6a14c9dd87ad4a7ca325b15afbce95</hash>
+         <hash>76e967b14d231e4f31f014f1564f359a7bfd36bfa263ee6f437afa8c056df657</hash>
       </entry>
       <entry>
          <file>..\..\..\NonSecure\firmware\src\third_party\rtos\FreeRTOS\Source\include\mpu_wrappers.h</file>
-         <hash>0f7a750669b24c41af51482eb76c867a1ed11c14dd4877d07433db3953d9a792</hash>
+         <hash>5014408cc33f0f616215f2b48c67b0d47ccc35bfd5f0044ac653b5bbc6cf5778</hash>
       </entry>
       <entry>
          <file>..\..\..\NonSecure\firmware\src\packs\PIC32CK2051SG01144_DFP\instance\supc.h</file>
-         <hash>2febebc9ced87b41ffde5e9c093d0fab93d3f2879530fb150bf59df23939dfe1</hash>
+         <hash>39f58e3d12115ef88b645d9159ad02455e51b7ec99784246c04d3d361971cfb6</hash>
       </entry>
       <entry>
          <file>..\..\..\Secure\firmware\src\packs\PIC32CK2051SG01144_DFP\component\pm.h</file>
-         <hash>ead3afc21086d2197e130c26b51f0dfffb368546dd0199b38417280c1e79ffc6</hash>
+         <hash>4ca8729d2d2260ccc03c96986e943029fe1fd3693f201eff39db7a18d49ed461</hash>
       </entry>
       <entry>
          <file>..\..\..\Secure\firmware\src\packs\PIC32CK2051SG01144_DFP\instance\tcc5.h</file>
-         <hash>bf4e4f763aa0dbba33d5325dba28946288c3605df04f198d27dee1d903f7cbc4</hash>
+         <hash>2c9706b29d54df958d800a67d699553f88fa5813067ff9a89e39ba999211a322</hash>
       </entry>
       <entry>
          <file>..\..\..\NonSecure\firmware\src\packs\PIC32CK2051SG01144_DFP\instance\sig_ns.h</file>
-         <hash>393a3f840de9e127fd2102128fd2684804eb3c079b5666135f07cd6c7d03023d</hash>
+         <hash>f14a6e1952f06c4ddac63eae10ae34798ce069b52dfeb5787d956a80a757a8c6</hash>
       </entry>
       <entry>
          <file>..\..\..\NonSecure\firmware\src\packs\PIC32CK2051SG01144_DFP\component\mclk.h</file>
-         <hash>d4f4b6e6c174e9baeb2de9ca690b08e427641e181f76898286afafa5a6a102d2</hash>
+         <hash>ac44bde75320cef1e2157d7faf9c311371c2da81484199293dd46210bfaf2742</hash>
       </entry>
       <entry>
          <file>..\..\..\NonSecure\firmware\src\packs\PIC32CK2051SG01144_DFP\component\usb.h</file>
-         <hash>6cd94dc9c9135aa63ae2823812893f5c195f660213b0b199518b238f0f21ec5e</hash>
+         <hash>5f64c11994e1f7cd619d2451cc3fc4d27a6f1b9d899eb30d78d013b17e89edf8</hash>
       </entry>
       <entry>
          <file>..\..\..\NonSecure\firmware\src\packs\PIC32CK2051SG01144_DFP\instance\sercom6.h</file>
-         <hash>ae0cbfd8c3e852b2156d27ac3cddd84f4148f40743b35d8b59a778a056c2d1d3</hash>
+         <hash>6e574194aeb17eac7287a9a7acd4745ee21579e77a9dfcf86a0373e5e6207ee4</hash>
       </entry>
       <entry>
          <file>..\..\..\Secure\firmware\src\packs\PIC32CK2051SG01144_DFP\instance\dsu.h</file>
-         <hash>4c7d2024376df0dd12cded1c24f1cae4e31c634299cb26645f4d0d83139a38f5</hash>
+         <hash>fb2e9ef039c25889821488a8292aa066b7df4171a9e44b4329f95a0bcd95dad7</hash>
       </entry>
       <entry>
          <file>..\..\..\NonSecure\firmware\src\packs\PIC32CK2051SG01144_DFP\instance\hmatrix.h</file>
-         <hash>32df921b363f566771fd015263b06add116c8841fb12b2ac6dd4159a671d8c8c</hash>
+         <hash>7dcdbb290dcb52e0206e174c2adc056f031622210edf00bec8097fce8e4f32db</hash>
       </entry>
       <entry>
          <file>..\..\..\Secure\firmware\src\packs\CMSIS\CMSIS\Core\Include\cmsis_armclang.h</file>
@@ -5266,27 +5318,27 @@
       </entry>
       <entry>
          <file>..\..\..\NonSecure\firmware\src\third_party\rtos\FreeRTOS\Source\croutine.c</file>
-         <hash>4566d5abfceea128a553ecf2bbb22b9d7c9c8a1d3c1f02f9091182b5290d02fc</hash>
+         <hash>ebf0cdce261dc4a256c06c0d4ad2582e6026a6da0e973d4cb92092e94ce8f370</hash>
       </entry>
       <entry>
          <file>..\..\..\NonSecure\firmware\src\packs\PIC32CK2051SG01144_DFP\component\pm.h</file>
-         <hash>ead3afc21086d2197e130c26b51f0dfffb368546dd0199b38417280c1e79ffc6</hash>
+         <hash>4ca8729d2d2260ccc03c96986e943029fe1fd3693f201eff39db7a18d49ed461</hash>
       </entry>
       <entry>
          <file>..\..\..\Secure\firmware\src\packs\PIC32CK2051SG01144_DFP\component\osc32kctrl.h</file>
-         <hash>c1141e88bf0673276c73ca03df2e91141f5734d82795d4454755e8af2e1c6e15</hash>
+         <hash>40a96c882b8d3d25e19d3fbc3c2d1729ab62df6984e212099d5b397a318d9067</hash>
       </entry>
       <entry>
          <file>..\..\..\Secure\firmware\src\packs\PIC32CK2051SG01144_DFP\instance\sig_ns.h</file>
-         <hash>393a3f840de9e127fd2102128fd2684804eb3c079b5666135f07cd6c7d03023d</hash>
+         <hash>f14a6e1952f06c4ddac63eae10ae34798ce069b52dfeb5787d956a80a757a8c6</hash>
       </entry>
       <entry>
          <file>..\..\..\Secure\firmware\src\packs\PIC32CK2051SG01144_DFP\instance\sqi.h</file>
-         <hash>ee58eb7414ffff5c78e35e23a0c20454bac8dd44d4eb0078470175a2454f7032</hash>
+         <hash>2a3a1556792cf5490b43b0699cd222c6dc59d7f15f1f21e43381e32c3ffcf81f</hash>
       </entry>
       <entry>
          <file>..\..\..\Secure\firmware\src\third_party\rtos\FreeRTOS\Source\portable\GCC\ARM_CM33\secure\secure_context_port.c</file>
-         <hash>f0780d57257b44684c9e17b88c656db21ca88192fde9b86b9e546ae3f54efaa3</hash>
+         <hash>53c5e5caf57023f82d02222db11cb2ed7d17cb1b86a3ba2f761a0ee402f01634</hash>
       </entry>
       <entry>
          <file>..\..\..\Secure\firmware\src\config\pic32ck_sg01_cult\peripheral\cmcc\plib_cmcc.c</file>
@@ -5294,7 +5346,7 @@
       </entry>
       <entry>
          <file>..\..\..\NonSecure\firmware\src\config\pic32ck_sg01_cult\osal\osal_freertos.c</file>
-         <hash>6f35cfd335587dd112d0ac648ae99539a5acbb98ba80ce6e8c7c855e7b8d7465</hash>
+         <hash>8092bb557d244984ab601e36d3dc25408c8b57f3c8f090aac491891b4a32cb28</hash>
       </entry>
       <entry>
          <file>..\..\..\Secure\firmware\src\config\pic32ck_sg01_cult\peripheral\cmcc\plib_cmcc.h</file>
@@ -5302,11 +5354,11 @@
       </entry>
       <entry>
          <file>..\..\..\NonSecure\firmware\src\config\pic32ck_sg01_cult\osal\osal_freertos.h</file>
-         <hash>ca5e502b9f076c4bdc8d97ac2e4cfdfa5d1b49f7d64222c353fac4dcd794bc7c</hash>
+         <hash>7ad9faa903d8587bab9490660328f134b8e027f9c24bca47201f3f96f3b99474</hash>
       </entry>
       <entry>
          <file>..\..\..\Secure\firmware\src\packs\PIC32CK2051SG01144_DFP\component\usbhs.h</file>
-         <hash>176580bd9f6a1c8c6eb7b4d24e0f162e7e54362ffdf0faaea5872614a4127437</hash>
+         <hash>f54667f2d7ea5cbe9a905f01bf4db90f3fb0044ca8bfe3226f7d4abbeaf91bdb</hash>
       </entry>
       <entry>
          <file>..\..\..\NonSecure\firmware\src\main.c</file>
@@ -5314,43 +5366,43 @@
       </entry>
       <entry>
          <file>..\..\..\NonSecure\firmware\src\packs\PIC32CK2051SG01144_DFP\instance\can0.h</file>
-         <hash>3858d9a38a58e928931e480bb6f8387212826e4c524ba977941c8ce59b8e121d</hash>
+         <hash>5bce06106c8e6ad35a8fd9d97d7d7b82c991dd85d312fd997c5713ec07b1160c</hash>
       </entry>
       <entry>
          <file>..\..\..\NonSecure\firmware\src\packs\PIC32CK2051SG01144_DFP\instance\tcc3.h</file>
-         <hash>dbc574752de8f1c01704f24b850affdb1386515e47641f2c223cbaf224a5376f</hash>
+         <hash>81d26b9baa573a05d862881d0db3511142d72c61c655be589946b62d7197a78a</hash>
       </entry>
       <entry>
          <file>..\..\..\Secure\firmware\src\config\pic32ck_sg01_cult\startup_xc32.c</file>
-         <hash>8bf4c0edd68823631c6d3888362a528f75ec3034888acfda134987b86e4b3cea</hash>
+         <hash>d12e568e013d079f9f82faf2f6125f6f6605a03d30d66892b0e84c4c21c272b8</hash>
       </entry>
       <entry>
          <file>..\..\..\NonSecure\firmware\src\packs\PIC32CK2051SG01144_DFP\instance\fcr.h</file>
-         <hash>017fd2d63ea9542f87dce9f64e1aa79c73e253fa25682c38d611553425002f53</hash>
+         <hash>b909e559f25e64b120cc8837ee35d24f8596b30180ae72d0c85a715c39d14192</hash>
       </entry>
       <entry>
          <file>..\..\..\Secure\firmware\src\packs\PIC32CK2051SG01144_DFP\component\ccl.h</file>
-         <hash>44358eaec8c785e55accba588de18751248f4a45674f466c5b9439ef1cadeb11</hash>
+         <hash>138f2169358450bb121d04ae2f635e5ab89f795b0b46f5d236a2a2e69fb8b9c9</hash>
       </entry>
       <entry>
          <file>..\..\..\NonSecure\firmware\src\third_party\rtos\FreeRTOS\Source\include\semphr.h</file>
-         <hash>6bc571df5182f06bcafe5280fdf762bbba2bf1dbb7867ae3721ce2d7e3e51dae</hash>
+         <hash>c624e8cdfc07844d4cf35382f3cc908c872375c7a3048482bdc110bda88cc4f2</hash>
       </entry>
       <entry>
          <file>..\..\..\Secure\firmware\src\packs\PIC32CK2051SG01144_DFP\instance\pcc.h</file>
-         <hash>d3feee69044bbe3c55df2a6ec768f7bb4ddcdc2e0c3945e4dc71157fd0681b66</hash>
+         <hash>3c9bb6b5ec93f8594a98cc61d2763ac1898ffe1f51f86fa026ac8d76a4b6d4d3</hash>
       </entry>
       <entry>
          <file>..\..\..\NonSecure\firmware\src\packs\PIC32CK2051SG01144_DFP\component\trng.h</file>
-         <hash>491c85c61cb2064265375b854a43429ac27bdf88a9452e1094926f8e4eefb973</hash>
+         <hash>a1f0d831437da6606ea65db259625d6b2c012ff9943653cb99ae1bb66605f9cc</hash>
       </entry>
       <entry>
          <file>..\..\..\Secure\firmware\src\packs\PIC32CK2051SG01144_DFP\component\gclk.h</file>
-         <hash>e6c79a8b0d07d6be7955e18538ee8e7826544aa1a09b465e19274a3b941def25</hash>
+         <hash>ec9912740b091d2dbd0047d9f1f3189e737229beba7a3214e1b5cf43eaf05b42</hash>
       </entry>
       <entry>
          <file>..\..\..\Secure\firmware\src\packs\PIC32CK2051SG01144_DFP\instance\sdmmc0.h</file>
-         <hash>9c86620f978b0776e10586ad9c95fdbd08aaf5c76b06025e96f592d85f9fe347</hash>
+         <hash>6f667d8a8d1a30f63fe8688db2e7eafb10ea6dc146d9b521bbde012edc3ecf01</hash>
       </entry>
       <entry>
          <file>..\..\..\NonSecure\firmware\src\config\pic32ck_sg01_cult\device.h</file>
@@ -5358,19 +5410,19 @@
       </entry>
       <entry>
          <file>..\..\..\Secure\firmware\src\packs\PIC32CK2051SG01144_DFP\instance\ac.h</file>
-         <hash>bdc3cb1acaa0ad2b7093b520820ad12f8d5c05371a7603bea2c9b0096b9c7db3</hash>
+         <hash>681be2bad656c8c94a6a27b292cef0edcd81ff8e9f40695cd7983f8c2a6cce86</hash>
       </entry>
       <entry>
          <file>..\..\..\Secure\firmware\src\packs\PIC32CK2051SG01144_DFP\instance\tcc4.h</file>
-         <hash>cb86685832339f07aa09a0426024b72179028457fdb3871f96135962b1eacac4</hash>
+         <hash>32a19df1d43446470ee70df4846d272dfee9c07595f3471d7244a7938e1e80a9</hash>
       </entry>
       <entry>
          <file>..\..\..\NonSecure\firmware\src\packs\PIC32CK2051SG01144_DFP\component\fcr.h</file>
-         <hash>2fbb8c4700f31df0ba2a44d810a9e8d0dab8c1cf6ef4e4ef998c994be1d37938</hash>
+         <hash>391f9ca7163e975cc0b16ab0382266139bc43fff5fcd41f01d839cf19b92c852</hash>
       </entry>
       <entry>
          <file>..\..\..\NonSecure\firmware\src\packs\PIC32CK2051SG01144_DFP\instance\spi_ixs.h</file>
-         <hash>9933b138d0d3f8fa56fb5ac99bc3ca592daba286fe3775600828de2fd77c1e73</hash>
+         <hash>04badf7a70d8e23690fe97e1da01066696ed2e57919c9cdb01d702654ef068dd</hash>
       </entry>
       <entry>
          <file>..\..\..\NonSecure\firmware\src\packs\CMSIS\CMSIS\Core\Include\cmsis_iccarm.h</file>
@@ -5378,23 +5430,23 @@
       </entry>
       <entry>
          <file>..\..\..\NonSecure\firmware\src\third_party\rtos\FreeRTOS\Source\include\FreeRTOS.h</file>
-         <hash>c8d9b7a52d092f37b4c3b821806bd6e8a30dbcc600960f9aed2b2f10f965c09f</hash>
+         <hash>03e9c94aba57e3cf7f4f73bc2d3eb4a96ae38f3425eedb5450622ca286475a0b</hash>
       </entry>
       <entry>
          <file>..\..\..\NonSecure\firmware\src\packs\PIC32CK2051SG01144_DFP\instance\ptc.h</file>
-         <hash>5db434c8b431fa62085a8cadb0a968197594c8e3a92cb8389f8759a7b03d7cb6</hash>
+         <hash>f466e35a4c70b5c03c6bcbddf233a55beb70873350a2f3302dfcc5c85e31944e</hash>
       </entry>
       <entry>
          <file>..\..\..\NonSecure\firmware\src\packs\PIC32CK2051SG01144_DFP\instance\evsys.h</file>
-         <hash>4cf791f65efded27e22cc358177d7f845b50c824ddbfb671b55ca0b065c84daa</hash>
+         <hash>a604c6470f898dc6dfbfb77fab4d775fccf60f122f85211277dc3b5dd12a223b</hash>
       </entry>
       <entry>
          <file>..\..\..\Secure\firmware\src\packs\PIC32CK2051SG01144_DFP\instance\oscctrl.h</file>
-         <hash>2f8cce41ea68f263e136d611bfda9dada8c6337e6919c27b7ec36c33ad53371b</hash>
+         <hash>5921b2b5fb76cf4c9df12b21634cc3cd88e9e86b9e446a15590e10487cb4e3d8</hash>
       </entry>
       <entry>
          <file>..\..\..\Secure\firmware\src\packs\PIC32CK2051SG01144_DFP\instance\sercom0.h</file>
-         <hash>78b3f7d11225d44ea8fcf71363879b32e61a4d70489437083852bb90e55d0db6</hash>
+         <hash>943d036bf337fc0ce2e4e554c76976a1441657fb868da2f10968e5eea9d08ccd</hash>
       </entry>
       <entry>
          <file>..\..\..\NonSecure\firmware\src\config\pic32ck_sg01_cult\device_vectors.h</file>
@@ -5402,35 +5454,35 @@
       </entry>
       <entry>
          <file>..\..\..\NonSecure\firmware\src\packs\PIC32CK2051SG01144_DFP\component\sdmmc.h</file>
-         <hash>a8dfa9f48e5d5f0cb7f89b355e74c7e2425748bd9e2037894ef9dd6867fdb1fd</hash>
+         <hash>f86653b70939f51cc3c4d0376878e53319c50f4410d22cb366a6448069c66b34</hash>
       </entry>
       <entry>
          <file>..\..\..\NonSecure\firmware\src\packs\PIC32CK2051SG01144_DFP\component\fuses.h</file>
-         <hash>10f78d31bafbddf860b5e3bf4c26641d58740a89b76be979a3a7c739970ffb0d</hash>
+         <hash>99d7d5d90f3fd95d7d5d79f2e636e157184f8cd1a4a8411356d4bca7ea357c92</hash>
       </entry>
       <entry>
          <file>..\..\..\NonSecure\firmware\src\packs\PIC32CK2051SG01144_DFP\instance\sercom5.h</file>
-         <hash>2c321a227583e6e9cdaf8e9c8d175127b72f13f311a3d981671c30ec0d643d92</hash>
+         <hash>8e027c7c4b36823b8390f49ce19ccdfd3a7cd0652a9488053bd94974b75e81fb</hash>
       </entry>
       <entry>
          <file>..\..\..\Secure\firmware\src\packs\PIC32CK2051SG01144_DFP\component\dma.h</file>
-         <hash>5ff7d6c525911ec7886779cc6c1785b63cf2300eee47616378609b6a6b587969</hash>
+         <hash>9d6480764fd52e06421a5168f9fe9dcc4c1dcdce1b89e24b3904c12373cb73a5</hash>
       </entry>
       <entry>
          <file>..\..\..\Secure\firmware\src\packs\PIC32CK2051SG01144_DFP\instance\wdt.h</file>
-         <hash>63fd2086d0b9e089ee1be31f418a06d40e7b7d5e677d439b6a4656d10119030e</hash>
+         <hash>f7bd265b51ec422069b75c0ae5c1fe28b0a9dae587a482f31c5be2d64c126e8d</hash>
       </entry>
       <entry>
          <file>..\..\..\Secure\firmware\src\packs\PIC32CK2051SG01144_DFP\component\fcw.h</file>
-         <hash>6dd76f046c6d376ca7a3a06a4436f0aeb800d6e4a5dc4eb31590fa1aca89815f</hash>
+         <hash>bfc2e21f60c2164edc146f0d8626dbad1b34264c594463b8ff76710ae60e3d1e</hash>
       </entry>
       <entry>
          <file>..\..\..\NonSecure\firmware\src\packs\PIC32CK2051SG01144_DFP\instance\idau.h</file>
-         <hash>9ab3beb9acfd0d32633429f4557ebdf8bcdf9bdaea57915f345cf030392282fe</hash>
+         <hash>3b73b6ade30c376bc638d4427b3dff2dd3bcf43749ac5ff582dfa0e8527c7418</hash>
       </entry>
       <entry>
          <file>..\..\..\Secure\firmware\src\packs\PIC32CK2051SG01144_DFP\instance\trng.h</file>
-         <hash>5e2d238f9f9673f9bd7c0b8ac38393f93590288f8799f1151b4bc7778c7811ef</hash>
+         <hash>c477cad2ca11ec9c5e53a31fe4734e7fa5348943fd5f1d586e5ab56f64a3d0a3</hash>
       </entry>
       <entry>
          <file>..\..\..\Secure\firmware\src\packs\CMSIS\CMSIS\Core\Include\cmsis_armcc.h</file>
@@ -5442,7 +5494,7 @@
       </entry>
       <entry>
          <file>..\..\..\NonSecure\firmware\src\packs\PIC32CK2051SG01144_DFP\instance\sdmmc1.h</file>
-         <hash>392a60465f8d9be131e6ac5ee7c3c4b47cfd8ebc80bb1cd3a1e1931c90cf4a50</hash>
+         <hash>2b46b2b20bbf0e9334ef90a3efd1f30afff0a60f4010be156f013ad878da04dc</hash>
       </entry>
       <entry>
          <file>..\..\..\NonSecure\firmware\src\app.h</file>
@@ -5450,15 +5502,15 @@
       </entry>
       <entry>
          <file>..\..\..\Secure\firmware\src\config\pic32ck_sg01_cult\peripheral\clock\plib_clock.c</file>
-         <hash>a3287643bd76a51f114ae92c5f7e4ffcb349ae09a1ebbb746cd3172b204f26bc</hash>
+         <hash>d316271de704ec19e073b47a33bee1ac3fd0389a33ab491bff2aafdd553fa5ad</hash>
       </entry>
       <entry>
          <file>..\..\..\Secure\firmware\src\packs\PIC32CK2051SG01144_DFP\component\fuses.h</file>
-         <hash>10f78d31bafbddf860b5e3bf4c26641d58740a89b76be979a3a7c739970ffb0d</hash>
+         <hash>99d7d5d90f3fd95d7d5d79f2e636e157184f8cd1a4a8411356d4bca7ea357c92</hash>
       </entry>
       <entry>
          <file>..\..\..\NonSecure\firmware\src\packs\PIC32CK2051SG01144_DFP\pic32ck2051sg01144.h</file>
-         <hash>d69cbd6d6bc3801210e0e485d7a4fc08e8359166bc957a24aff097b9e069326b</hash>
+         <hash>c515a3b0c32ed700e25b3ffd3ec13d283475e69beb59ff7e2ca4216f2c8be98d</hash>
       </entry>
       <entry>
          <file>..\..\..\Secure\firmware\src\config\pic32ck_sg01_cult\peripheral\clock\plib_clock.h</file>
@@ -5470,15 +5522,15 @@
       </entry>
       <entry>
          <file>..\..\..\NonSecure\firmware\src\packs\PIC32CK2051SG01144_DFP\instance\can1.h</file>
-         <hash>1fa16cf01d72adf2be3843abc98b078c536b6c54b5c0a3fd7e167a826da07771</hash>
+         <hash>2c13512309c5cd4716ab15f56365766c84a8b779c48e351a483613a386e4d26d</hash>
       </entry>
       <entry>
          <file>..\..\..\Secure\firmware\src\packs\PIC32CK2051SG01144_DFP\instance\sercom5.h</file>
-         <hash>2c321a227583e6e9cdaf8e9c8d175127b72f13f311a3d981671c30ec0d643d92</hash>
+         <hash>8e027c7c4b36823b8390f49ce19ccdfd3a7cd0652a9488053bd94974b75e81fb</hash>
       </entry>
       <entry>
          <file>..\..\..\NonSecure\firmware\src\packs\PIC32CK2051SG01144_DFP\instance\tcc0.h</file>
-         <hash>d009c1cfdaf325a155e99731e97e06af6f29c5e4f69583421788229650a96520</hash>
+         <hash>054897939808a7b8fa07d73df3425aac9befd6fa107e7198ccbc29845745b213</hash>
       </entry>
       <entry>
          <file>..\..\..\NonSecure\firmware\src\app1.c</file>
@@ -5486,7 +5538,7 @@
       </entry>
       <entry>
          <file>..\..\..\NonSecure\firmware\src\packs\PIC32CK2051SG01144_DFP\instance\fpu_ns.h</file>
-         <hash>25664fc578840932c79c58918f012addd055f72fa3efc63a3a407ce0e9ff808b</hash>
+         <hash>1d7ae55f565467fdffd917f82ce3e57a7526326c38597f32f19f08517f0e198a</hash>
       </entry>
       <entry>
          <file>..\..\..\NonSecure\firmware\src\packs\CMSIS\CMSIS\Core\Include\cmsis_armclang.h</file>
@@ -5494,7 +5546,7 @@
       </entry>
       <entry>
          <file>..\..\..\Secure\firmware\src\packs\PIC32CK2051SG01144_DFP\component\oscctrl.h</file>
-         <hash>e33ecbdc2ccefceba713004bc3afe775269e0c79da43dd094d241cf8d7160eee</hash>
+         <hash>c65e2cae3462922e39b8a5c90abbc2773ec1cd37d0c4d094ba903ddd9d087f54</hash>
       </entry>
       <entry>
          <file>..\..\..\NonSecure\firmware\src\app1.h</file>
@@ -5502,43 +5554,43 @@
       </entry>
       <entry>
          <file>..\..\..\Secure\firmware\src\packs\PIC32CK2051SG01144_DFP\component\spi_ixs.h</file>
-         <hash>364ac6ab01fbda22c20c127473cd7fc38d19f48398e0cea7f66118beef34b228</hash>
+         <hash>6704b87de5aa8fc2971372b89f5affc4f4c83634f88c7114400105cf90b865fa</hash>
       </entry>
       <entry>
          <file>..\..\..\NonSecure\firmware\src\packs\PIC32CK2051SG01144_DFP\instance\tram.h</file>
-         <hash>1304d78d9a2cd933082e79cd07282e2870df391ac5ac03e2c11464fef40c1bd8</hash>
+         <hash>9992b4c9cf67554e27d7de3de5fb2070987e6c60d134572ba1c4a96836e18c90</hash>
       </entry>
       <entry>
          <file>..\..\..\NonSecure\firmware\src\packs\PIC32CK2051SG01144_DFP\component\osc32kctrl.h</file>
-         <hash>c1141e88bf0673276c73ca03df2e91141f5734d82795d4454755e8af2e1c6e15</hash>
+         <hash>40a96c882b8d3d25e19d3fbc3c2d1729ab62df6984e212099d5b397a318d9067</hash>
       </entry>
       <entry>
          <file>..\..\..\NonSecure\firmware\src\packs\PIC32CK2051SG01144_DFP\component\pdec.h</file>
-         <hash>f7d1129e66dee953d655d8549e09748705ea47a965b8f404bbbacaaa71405dd1</hash>
+         <hash>550da58fb0ea2456250921488e9f5c05c1cd6eecc3a0c7926875c49d07f8c32a</hash>
       </entry>
       <entry>
          <file>..\..\..\NonSecure\firmware\src\packs\PIC32CK2051SG01144_DFP\component\rstc.h</file>
-         <hash>b030473a3f18a971b5285b7992dae7f7cff7760e6c45497e52718ab56a0ada9d</hash>
+         <hash>08700e01e46af4e925e5a6863263ad126b80e94a63b8e2f10910b088f911b5ec</hash>
       </entry>
       <entry>
          <file>..\..\..\NonSecure\firmware\src\packs\PIC32CK2051SG01144_DFP\instance\sig.h</file>
-         <hash>0a002f3a275bd720d6de96f5d929b1a4a383890533d3a442ac5710d473438b37</hash>
+         <hash>526ec819895c0da2da6ee1f0841020c170d3e468f38636ec8122679808d8dde0</hash>
       </entry>
       <entry>
          <file>..\..\..\NonSecure\firmware\src\config\pic32ck_sg01_cult\pin_configurations.csv</file>
-         <hash>dc546dcb5751cf13e278004282c42e6d352a9b418b4b16abe4e95db68e24d386</hash>
+         <hash>fdfd6657b68817a8af3259bc5446ee90255e7e5869687d16da4a07ceb5dbdb9c</hash>
       </entry>
       <entry>
          <file>..\..\..\NonSecure\firmware\src\packs\PIC32CK2051SG01144_DFP\component\prm.h</file>
-         <hash>2afe4ce76fafcbf66a782960d1d7727fa1d87c6e9f530d530ba7609555600462</hash>
+         <hash>7bb26fc2fe12097ca06f48a735270da583006126a7ea1e7f8fb7d52993937283</hash>
       </entry>
       <entry>
          <file>..\..\..\NonSecure\firmware\src\packs\PIC32CK2051SG01144_DFP\instance\rstc.h</file>
-         <hash>e25352dadf23628e49b50bcbe6288799bb70885ec135c95331c576a1388e4e15</hash>
+         <hash>4b331becd7f3d9ffc76148cfbf598cc15c01c34a71f649507f286c1226284113</hash>
       </entry>
       <entry>
          <file>..\..\..\NonSecure\firmware\src\packs\PIC32CK2051SG01144_DFP\instance\freqm.h</file>
-         <hash>3e5efe3a4d12aa31ec3b1346e972372c7ba38f9b26cbdf1408ee1a6095bb4d82</hash>
+         <hash>e31d286e654eadeb4285a9747036bfcd74cc187fd97032ec6246b02328368d84</hash>
       </entry>
       <entry>
          <file>..\..\..\Secure\firmware\src\packs\CMSIS\CMSIS\Core\Include\tz_context.h</file>
@@ -5546,35 +5598,35 @@
       </entry>
       <entry>
          <file>..\..\..\Secure\firmware\src\packs\PIC32CK2051SG01144_DFP\component\sercom.h</file>
-         <hash>8c259c87b9d4dbf7ea544308872bb35accf3028a5c00b4d2d895c29818716499</hash>
+         <hash>b1ea2ea252f42c0a95dfd54a033b88aebb98f23ca0a199c0cec5efd15ff0b63c</hash>
       </entry>
       <entry>
          <file>..\..\..\Secure\firmware\src\packs\PIC32CK2051SG01144_DFP\instance\osc32kctrl.h</file>
-         <hash>f2c989795af0ea2890f360fc9f490d11673cc8d5ca8035868227f4b1a91d16f1</hash>
+         <hash>0864c9aa1215ffebf268058c4ac8ddd56936be4821750fc1bc16336a9e98e3d3</hash>
       </entry>
       <entry>
          <file>..\..\..\NonSecure\firmware\src\config\pic32ck_sg01_cult\exceptions.c</file>
-         <hash>cc07b84902bf881b410bee8cd4463b438ad2997c8fd8d3f308a16d926f75d601</hash>
+         <hash>3d788ce1bd25caaaf6b533ec5b06e4b1e753044c1a217dd5cdf8629628ae85a9</hash>
       </entry>
       <entry>
          <file>..\..\..\NonSecure\firmware\src\third_party\rtos\FreeRTOS\Source\include\list.h</file>
-         <hash>f288a68b8559a1913dd663136711f7adcaf8b3430627d7102978be4d808a02eb</hash>
+         <hash>dc572f54391c0407fc25db360d912fca9118cddae7bd2e3099eb13f18804e5a9</hash>
       </entry>
       <entry>
          <file>..\..\..\Secure\firmware\src\packs\PIC32CK2051SG01144_DFP\instance\tcc7.h</file>
-         <hash>4a7e5c12098a5e8a9822cf54d67f3527eb09ff35caace0c44c64d0671c50b29d</hash>
+         <hash>ef4519c29d8c42175268805744196f8020f9cc0fcdfea5d0caa6dc223d45d4f5</hash>
       </entry>
       <entry>
          <file>..\..\..\Secure\firmware\src\packs\PIC32CK2051SG01144_DFP\instance\hsm.h</file>
-         <hash>5288b04a4d71146366c21e68ff6c9b4143608ce7fc1308f97324e2097f2f301e</hash>
+         <hash>c7ac05be394440853d908533c227d6e5ee0bceabf600022a6720d39ad18f77b2</hash>
       </entry>
       <entry>
          <file>..\..\..\NonSecure\firmware\src\third_party\rtos\FreeRTOS\Source\include\mpu_prototypes.h</file>
-         <hash>783d9a41c90817eec55d9317475cc2663a785fc9a955c06d3207fcee6e0ec080</hash>
+         <hash>2b46a2511ce5d23a56bc83079333d8d0a2e33763e5829c9383252806887a3dc0</hash>
       </entry>
       <entry>
          <file>..\..\..\Secure\firmware\src\packs\PIC32CK2051SG01144_DFP\instance\rstc.h</file>
-         <hash>e25352dadf23628e49b50bcbe6288799bb70885ec135c95331c576a1388e4e15</hash>
+         <hash>4b331becd7f3d9ffc76148cfbf598cc15c01c34a71f649507f286c1226284113</hash>
       </entry>
       <entry>
          <file>..\..\..\NonSecure\firmware\src\config\pic32ck_sg01_cult\peripheral\port\plib_port.c</file>
@@ -5582,47 +5634,47 @@
       </entry>
       <entry>
          <file>..\..\..\NonSecure\firmware\src\config\pic32ck_sg01_cult\peripheral\port\plib_port.h</file>
-         <hash>fe4fc7e9349d9981010bc59888fd1d31793eff246bf651264995001497b1be4b</hash>
+         <hash>87bba014c56775ca0c040e1597dd0f014b947ccac7b4cf9f2654e4df8e437724</hash>
       </entry>
       <entry>
          <file>..\..\..\NonSecure\firmware\src\third_party\rtos\FreeRTOS\Source\list.c</file>
-         <hash>21fe8dd565f9610e1ff4a6bf7bebbd16842af13d3d2294f1dc67ad279fb01d22</hash>
+         <hash>db5c169cf3efd68da1c6a923ac84eebc724d602c940bde0b9b5f01f05028fde4</hash>
       </entry>
       <entry>
          <file>..\..\..\Secure\firmware\src\packs\PIC32CK2051SG01144_DFP\instance\adc.h</file>
-         <hash>9e74f4d45beaba4c80d5c22f720f4a691cf171c3facbfe52127635c6a422e1ac</hash>
+         <hash>6d3f18cb227e21dad98b2bda4ffa179c4aeb813c692b2a9245723d22ad68f8ce</hash>
       </entry>
       <entry>
          <file>..\..\..\NonSecure\firmware\src\config\pic32ck_sg01_cult\toolchain_specifics.h</file>
-         <hash>fb1c58b7fb94545ef6247f18ea3001b719e06ec29bf39bfd68fe3927f709eaa3</hash>
+         <hash>6fc0551b0fa3362678b3d7a227386fafa343140d31e4da3ad4af972e61cd0acb</hash>
       </entry>
       <entry>
          <file>..\..\..\Secure\firmware\src\packs\PIC32CK2051SG01144_DFP\component\ptc.h</file>
-         <hash>68a7c347a8b5c9b9b5549790d69cdd2c4bb8274906f8fa3e11dd6357e6abe53a</hash>
+         <hash>b01e0506c60a42eda905aa6567cad1c8547eb92fe968e5a64eef060a3070badf</hash>
       </entry>
       <entry>
          <file>..\..\..\NonSecure\firmware\src\packs\PIC32CK2051SG01144_DFP\instance\sercom0.h</file>
-         <hash>78b3f7d11225d44ea8fcf71363879b32e61a4d70489437083852bb90e55d0db6</hash>
+         <hash>943d036bf337fc0ce2e4e554c76976a1441657fb868da2f10968e5eea9d08ccd</hash>
       </entry>
       <entry>
          <file>..\..\..\NonSecure\firmware\src\packs\PIC32CK2051SG01144_DFP\component\gclk.h</file>
-         <hash>e6c79a8b0d07d6be7955e18538ee8e7826544aa1a09b465e19274a3b941def25</hash>
+         <hash>ec9912740b091d2dbd0047d9f1f3189e737229beba7a3214e1b5cf43eaf05b42</hash>
       </entry>
       <entry>
          <file>..\..\..\NonSecure\firmware\src\packs\PIC32CK2051SG01144_DFP\instance\dma1.h</file>
-         <hash>0918a3e5d02556da768b42ffb13966d2761274a3e43b79008c4546829aa9129f</hash>
+         <hash>bb996d519b7a3558c2742444c2377f367f6d60a32d48f44b7e3d05a1a4d30441</hash>
       </entry>
       <entry>
          <file>..\..\..\NonSecure\firmware\src\packs\PIC32CK2051SG01144_DFP\component\evsys.h</file>
-         <hash>af03978cddeb83c3a1eb560187cbea580b6a90022a3498b780d79afd5c0ab087</hash>
+         <hash>b57860950890f0092af2a248f8ee5e3dbd1fd23602534d32a04a61897e46dc66</hash>
       </entry>
       <entry>
          <file>..\..\..\NonSecure\firmware\src\packs\PIC32CK2051SG01144_DFP\component\ccl.h</file>
-         <hash>44358eaec8c785e55accba588de18751248f4a45674f466c5b9439ef1cadeb11</hash>
+         <hash>138f2169358450bb121d04ae2f635e5ab89f795b0b46f5d236a2a2e69fb8b9c9</hash>
       </entry>
       <entry>
          <file>..\..\..\NonSecure\firmware\src\packs\PIC32CK2051SG01144_DFP\instance\sdmmc0.h</file>
-         <hash>9c86620f978b0776e10586ad9c95fdbd08aaf5c76b06025e96f592d85f9fe347</hash>
+         <hash>6f667d8a8d1a30f63fe8688db2e7eafb10ea6dc146d9b521bbde012edc3ecf01</hash>
       </entry>
       <entry>
          <file>..\..\..\NonSecure\firmware\src\packs\CMSIS\CMSIS\Core\Include\core_cm33.h</file>
@@ -5630,7 +5682,7 @@
       </entry>
       <entry>
          <file>..\..\..\NonSecure\firmware\src\third_party\rtos\FreeRTOS\Source\include\deprecated_definitions.h</file>
-         <hash>1947473678873963f3193497280d907f59a5936f92df6395327f7ca684cb1aa6</hash>
+         <hash>35000a143464bbbd8df7c9a6f066a64598a24da5174a7be33972e62bfbd75f4d</hash>
       </entry>
       <entry>
          <file>..\..\..\Secure\firmware\src\config\pic32ck_sg01_cult\device_vectors.h</file>
@@ -5638,23 +5690,23 @@
       </entry>
       <entry>
          <file>..\..\..\NonSecure\firmware\src\packs\PIC32CK2051SG01144_DFP\pio\pic32ck2051sg01144.h</file>
-         <hash>639b00d6123f5f63ee35d3c441790092b1499ca5a02f104648a5946c15ac3f96</hash>
+         <hash>acef03be006ca5293cecc21d34c2f44326292c3fbca5d50b44be6e3cf3407bf4</hash>
       </entry>
       <entry>
          <file>..\..\..\NonSecure\firmware\src\packs\PIC32CK2051SG01144_DFP\component\hsm.h</file>
-         <hash>a9be62385159c2b6591ade84725a7da48f2ae3afa753015448d9bf48a935ca72</hash>
+         <hash>6b5c5b9b4c3baeda41a23427f319cbb7022e53087a31c987962934d6359d5d20</hash>
       </entry>
       <entry>
          <file>..\..\..\Secure\firmware\src\packs\PIC32CK2051SG01144_DFP\instance\pm.h</file>
-         <hash>d9d89203df3d0beaa17f211aa9e1606258e4a2161ed557292b590f5b0b39899e</hash>
+         <hash>d5bcbf3018198677b4a857a4c50a43cbd41e36eb612a18d272dc3951869c2c61</hash>
       </entry>
       <entry>
          <file>..\..\..\NonSecure\firmware\src\third_party\rtos\FreeRTOS\Source\include\message_buffer.h</file>
-         <hash>0f5a90e8303d9aa2a9c897d6b90da50df21776c6bde7bf8c792cacffa3048c8d</hash>
+         <hash>9a8141d3d6c8044a57d7e448180c9bd2ed32e45ded32be288d095a39dced91ab</hash>
       </entry>
       <entry>
          <file>..\..\..\NonSecure\firmware\src\packs\PIC32CK2051SG01144_DFP\component\pac.h</file>
-         <hash>c153be97193528435930362a618c3ce9753c36e35c0feed959bfa9f3fbb839f1</hash>
+         <hash>958fbcb71017c7406d354bc0b4863b6e6045d425d17ec9a6b1124d73713d3908</hash>
       </entry>
       <entry>
          <file>..\..\..\NonSecure\firmware\src\config\pic32ck_sg01_cult\configuration.h</file>
@@ -5662,7 +5714,7 @@
       </entry>
       <entry>
          <file>..\..\..\NonSecure\firmware\src\packs\PIC32CK2051SG01144_DFP\instance\tcc1.h</file>
-         <hash>4ada483ee4e800f5cdde5b3a2644a83013cb3604d5b171f1ec1469e94257692f</hash>
+         <hash>73784906e152e02cf641aeb3b03734947e3ab93c43f1a56a00d411590947daa5</hash>
       </entry>
       <entry>
          <file>..\..\..\NonSecure\firmware\src\app2.c</file>
@@ -5670,7 +5722,7 @@
       </entry>
       <entry>
          <file>..\..\..\Secure\firmware\src\packs\PIC32CK2051SG01144_DFP\instance\sercom6.h</file>
-         <hash>ae0cbfd8c3e852b2156d27ac3cddd84f4148f40743b35d8b59a778a056c2d1d3</hash>
+         <hash>6e574194aeb17eac7287a9a7acd4745ee21579e77a9dfcf86a0373e5e6207ee4</hash>
       </entry>
       <entry>
          <file>..\..\..\Secure\firmware\src\packs\CMSIS\CMSIS\Core\Include\cmsis_version.h</file>
@@ -5678,15 +5730,15 @@
       </entry>
       <entry>
          <file>..\..\..\NonSecure\firmware\src\config\pic32ck_sg01_cult\startup_xc32.c</file>
-         <hash>8bf4c0edd68823631c6d3888362a528f75ec3034888acfda134987b86e4b3cea</hash>
+         <hash>d12e568e013d079f9f82faf2f6125f6f6605a03d30d66892b0e84c4c21c272b8</hash>
       </entry>
       <entry>
          <file>..\..\..\NonSecure\firmware\src\packs\PIC32CK2051SG01144_DFP\component\eic.h</file>
-         <hash>e3cfc92d2dffe76cedc85c32082fa464da23d34a632be930b77d9b852c8d4393</hash>
+         <hash>f827dce4f6488866676626d10d0b1ee23a1c08693877b5b3cb8554d0c2d783f6</hash>
       </entry>
       <entry>
          <file>..\..\..\NonSecure\firmware\src\packs\PIC32CK2051SG01144_DFP\component\oscctrl.h</file>
-         <hash>e33ecbdc2ccefceba713004bc3afe775269e0c79da43dd094d241cf8d7160eee</hash>
+         <hash>c65e2cae3462922e39b8a5c90abbc2773ec1cd37d0c4d094ba903ddd9d087f54</hash>
       </entry>
       <entry>
          <file>..\..\..\NonSecure\firmware\src\packs\CMSIS\CMSIS\Core\Include\cmsis_gcc.h</file>
@@ -5694,23 +5746,23 @@
       </entry>
       <entry>
          <file>..\..\..\NonSecure\firmware\src\packs\PIC32CK2051SG01144_DFP\component\dma.h</file>
-         <hash>5ff7d6c525911ec7886779cc6c1785b63cf2300eee47616378609b6a6b587969</hash>
+         <hash>9d6480764fd52e06421a5168f9fe9dcc4c1dcdce1b89e24b3904c12373cb73a5</hash>
       </entry>
       <entry>
          <file>..\..\..\NonSecure\firmware\src\packs\PIC32CK2051SG01144_DFP\component\spi_ixs.h</file>
-         <hash>364ac6ab01fbda22c20c127473cd7fc38d19f48398e0cea7f66118beef34b228</hash>
+         <hash>6704b87de5aa8fc2971372b89f5affc4f4c83634f88c7114400105cf90b865fa</hash>
       </entry>
       <entry>
          <file>..\..\..\Secure\firmware\src\packs\PIC32CK2051SG01144_DFP\instance\gclk.h</file>
-         <hash>0660f035ecb547b6edd8d632df81f7bcc27b817e4971e5e9a76a9bb9ac70a6c2</hash>
+         <hash>5e018bc91dd16521e405e659b4e7412d634787cfb657f8a133c603d1a5409fee</hash>
       </entry>
       <entry>
          <file>..\..\..\Secure\firmware\src\packs\PIC32CK2051SG01144_DFP\instance\pdec.h</file>
-         <hash>9ae4165f367279102fbe7556b891ce0a7c7f15ac1019d4542a37b34f73eaedc8</hash>
+         <hash>e0697e97c105c1fd544b3dc8682eb552a9992c30174a0f37fe9f5502a0e799ff</hash>
       </entry>
       <entry>
          <file>..\..\..\Secure\firmware\src\packs\PIC32CK2051SG01144_DFP\instance\hmatrix.h</file>
-         <hash>32df921b363f566771fd015263b06add116c8841fb12b2ac6dd4159a671d8c8c</hash>
+         <hash>7dcdbb290dcb52e0206e174c2adc056f031622210edf00bec8097fce8e4f32db</hash>
       </entry>
       <entry>
          <file>..\..\..\Secure\firmware\src\packs\CMSIS\CMSIS\Core\Include\core_cm33.h</file>
@@ -5722,7 +5774,7 @@
       </entry>
       <entry>
          <file>..\..\..\NonSecure\firmware\src\packs\PIC32CK2051SG01144_DFP\instance\oscctrl.h</file>
-         <hash>2f8cce41ea68f263e136d611bfda9dada8c6337e6919c27b7ec36c33ad53371b</hash>
+         <hash>5921b2b5fb76cf4c9df12b21634cc3cd88e9e86b9e446a15590e10487cb4e3d8</hash>
       </entry>
       <entry>
          <file>..\..\..\Secure\firmware\src\config\pic32ck_sg01_cult\device.h</file>
@@ -5730,7 +5782,7 @@
       </entry>
       <entry>
          <file>..\..\..\NonSecure\firmware\src\packs\PIC32CK2051SG01144_DFP\component\rtc.h</file>
-         <hash>61c0eddf726d78a78712a8284b305c2df26fcc8a2fe29a722bf5c070003fd5ff</hash>
+         <hash>b3a82c0147c442db80c81b10f908fef08d2875d12b14d84b1f69d562f57496c0</hash>
       </entry>
       <entry>
          <file>..\..\..\NonSecure\firmware\src\app2.h</file>
@@ -5738,19 +5790,19 @@
       </entry>
       <entry>
          <file>..\..\..\Secure\firmware\src\packs\PIC32CK2051SG01144_DFP\instance\port.h</file>
-         <hash>89fb747e516a7db791f002bd1de25fc941368b4560a8f983f407abc81f2905d3</hash>
+         <hash>59c6ca74e670ce8a508bcf6c0d4c15283dcb206c56ad22e06c7f633fa5716602</hash>
       </entry>
       <entry>
          <file>..\..\..\Secure\firmware\src\packs\PIC32CK2051SG01144_DFP\instance\mclk.h</file>
-         <hash>45c277824953f31c104ab13b129e4da417c7e6b0abc7ec2b0bbb293825136577</hash>
+         <hash>37a16f824b6f11201a711a1ef08dd02711e65dc748e44ec180026c77c6300644</hash>
       </entry>
       <entry>
          <file>..\..\..\Secure\firmware\src\packs\PIC32CK2051SG01144_DFP\instance\tcc6.h</file>
-         <hash>4c8e3bfaced51103a087227e3a71b0b51ad2d2e7bc14b9808ccea51f681bce64</hash>
+         <hash>7e21ab7a2ad44b16f3b34ddc6cc2bc68e305f9c21f2a1352f943a33e23172978</hash>
       </entry>
       <entry>
          <file>..\..\..\Secure\firmware\src\config\pic32ck_sg01_cult\PIC32CK2051SG01144.ld</file>
-         <hash>06bfe466a052855dbf828752d38c4e58e7c10f96a17695ad3649ee009b248cd9</hash>
+         <hash>16d8b0f0e37f2c0337a93f19ec389a89dd459ec935bfdf2a95212c608e849285</hash>
       </entry>
       <entry>
          <file>..\..\..\Secure\firmware\src\config\pic32ck_sg01_cult\device_cache.h</file>
@@ -5758,23 +5810,23 @@
       </entry>
       <entry>
          <file>..\..\..\Secure\firmware\src\packs\PIC32CK2051SG01144_DFP\component\sig.h</file>
-         <hash>65a89660791fa35b51a733060e84166b2de6f6c10f141bc6098dfa20da46f1ac</hash>
+         <hash>8eae325e60f19c4d3cba6b1a018c569b2c03e05524f7f4573715cd099ac0d99e</hash>
       </entry>
       <entry>
          <file>..\..\..\NonSecure\firmware\src\third_party\rtos\FreeRTOS\Source\FreeRTOS_tasks.c</file>
-         <hash>f97f4e54a7511e5aea34f583061c628bf718b1024af6ec4cff55cb50365305da</hash>
+         <hash>14020d617b96dd2814e1211f6e3b645bcf5e2bd3179c23fe7dd16bc666fe9463</hash>
       </entry>
       <entry>
          <file>..\..\..\NonSecure\firmware\src\packs\PIC32CK2051SG01144_DFP\instance\sercom7.h</file>
-         <hash>0df19b5fd974c0b36d525c1eda347b917b7d823e7b63d56912bd520d54c4ab13</hash>
+         <hash>e1d5aee6ef428ff3bd16ba755d9e1ba04817a938f06622eae98054421e2cbad1</hash>
       </entry>
       <entry>
          <file>..\..\..\NonSecure\firmware\src\packs\PIC32CK2051SG01144_DFP\instance\pm.h</file>
-         <hash>d9d89203df3d0beaa17f211aa9e1606258e4a2161ed557292b590f5b0b39899e</hash>
+         <hash>d5bcbf3018198677b4a857a4c50a43cbd41e36eb612a18d272dc3951869c2c61</hash>
       </entry>
       <entry>
          <file>..\..\..\Secure\firmware\src\packs\PIC32CK2051SG01144_DFP\component\eth.h</file>
-         <hash>03d926c611ce9cde8dcf34925ff64a00729509433fe9c68b98a6b5acbd6ddfd0</hash>
+         <hash>052af3a6109f5c7f17738a41bf4c58d2f84e50db91cb7d7ebbe16a76d64a8528</hash>
       </entry>
       <entry>
          <file>..\..\..\NonSecure\firmware\src\config\pic32ck_sg01_cult\peripheral\nvic\plib_nvic.h</file>
@@ -5786,31 +5838,31 @@
       </entry>
       <entry>
          <file>..\..\..\NonSecure\firmware\src\packs\PIC32CK2051SG01144_DFP\instance\dma0.h</file>
-         <hash>9b9f301a04a7a88544de82f36e6fdd7ba8df0de91a66ef035f9975086977161d</hash>
+         <hash>80215cc96322ab35184eda70f64faf7214b51e2b61c3c668976ea4bd1155a17b</hash>
       </entry>
       <entry>
          <file>..\..\..\Secure\firmware\src\packs\PIC32CK2051SG01144_DFP\instance\fcr.h</file>
-         <hash>017fd2d63ea9542f87dce9f64e1aa79c73e253fa25682c38d611553425002f53</hash>
+         <hash>b909e559f25e64b120cc8837ee35d24f8596b30180ae72d0c85a715c39d14192</hash>
       </entry>
       <entry>
          <file>..\..\..\NonSecure\firmware\src\packs\PIC32CK2051SG01144_DFP\instance\pcc.h</file>
-         <hash>d3feee69044bbe3c55df2a6ec768f7bb4ddcdc2e0c3945e4dc71157fd0681b66</hash>
+         <hash>3c9bb6b5ec93f8594a98cc61d2763ac1898ffe1f51f86fa026ac8d76a4b6d4d3</hash>
       </entry>
       <entry>
          <file>..\..\..\Secure\firmware\src\packs\PIC32CK2051SG01144_DFP\component\pcc.h</file>
-         <hash>10f21314686209e4207e808a54b6d8f4397f6c9608b3f9a3bd90534f5c68da5b</hash>
+         <hash>979853161fce454adad3c59ad9f7e78d096f366aa82b4a478fc09ea157eb3970</hash>
       </entry>
       <entry>
          <file>..\..\..\NonSecure\firmware\src\packs\PIC32CK2051SG01144_DFP\component\sercom.h</file>
-         <hash>8c259c87b9d4dbf7ea544308872bb35accf3028a5c00b4d2d895c29818716499</hash>
+         <hash>b1ea2ea252f42c0a95dfd54a033b88aebb98f23ca0a199c0cec5efd15ff0b63c</hash>
       </entry>
       <entry>
          <file>..\..\..\NonSecure\firmware\src\packs\PIC32CK2051SG01144_DFP\instance\eth.h</file>
-         <hash>d784b5901cca6e7908c3ffe336c4a54fa5a69cf5e60a570ce3288af737fb4fc7</hash>
+         <hash>10d6ff491d9d89b3cb7276187291ada2994bc163d3be14a067cef80c5c2b748c</hash>
       </entry>
       <entry>
          <file>..\..\..\Secure\firmware\src\packs\PIC32CK2051SG01144_DFP\component\usb.h</file>
-         <hash>6cd94dc9c9135aa63ae2823812893f5c195f660213b0b199518b238f0f21ec5e</hash>
+         <hash>5f64c11994e1f7cd619d2451cc3fc4d27a6f1b9d899eb30d78d013b17e89edf8</hash>
       </entry>
       <entry>
          <file>..\..\..\NonSecure\firmware\src\config\pic32ck_sg01_cult\peripheral\nvic\plib_nvic.c</file>
@@ -5822,7 +5874,7 @@
       </entry>
       <entry>
          <file>..\..\..\NonSecure\firmware\src\packs\PIC32CK2051SG01144_DFP\instance\usb.h</file>
-         <hash>b395d00c95a10d6e7eae076dc9ed633feb8d5a1a762fc8d119fd55073815230f</hash>
+         <hash>20228e54a99617ce0d1c30b835fdbc6ad7049aca9f6a7ef4970e79b8ea9d8d5d</hash>
       </entry>
    </generatedFileHashHistoryMap>
 </config>
