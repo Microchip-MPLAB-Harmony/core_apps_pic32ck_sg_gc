@@ -1,5 +1,5 @@
 ---
-parent: Harmony 3 driver and system service application examples for PIC32CK SG/GC family
+parent: Harmony 3 driver and system service application examples for PIC32CK-GC/SG family
 title: I2C driver asynchronous - multi slave 
 has_children: false
 has_toc: false
