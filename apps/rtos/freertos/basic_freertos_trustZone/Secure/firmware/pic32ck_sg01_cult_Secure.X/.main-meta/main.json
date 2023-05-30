@@ -3,11 +3,11 @@
 	"category": "com.microchip.ide.project",
 	"content": {
 		"metaDataVersion": "1.1.0",
-		"name": "com.microchip.mcu32.mplabx.project.core_apps_pic32cz_ca_fs_nvm_fat_pic32ck_gc01_cult_ultra",
+		"name": "com.microchip.mcu32.mplabx.project.core_apps_pic32cz_ca_basic_freertos_trustZone_pic32ck_sg01_cult_Secure",
 		"version": "3.0.0",
-		"displayName": "FAT filesystem using NVM Media Example for PIC32CK_GC Family",
-		"projectName": "nvm_fat_pic32ck_gc01_cult",
-		"shortDescription": "This application shows an example of implementing a FAT disk in the device internal Flash memory.",
+		"displayName": "TrustZone FreeRTOS basic Example for PIC32CK-SG01 Family",
+		"projectName": "basic_freertos_trustZone_pic32ck_sg01_cult_Secure",
+		"shortDescription": "This example application demonstrates context switching between four tasks of different priorites. Two tasks run periodically while the other two tasks are event driven.",
 		"ide": {
 			"name": "MPLABX",
 			"semverRange": ">=6.5.0"
@@ -19,8 +19,8 @@
 			}
 		],
 		"dfp": {
-			"name": "PIC32CK-GC_DFP",
-			"semverRange": "^1.0.131"
+			"name": "PIC32CK-SG_DFP",
+			"semverRange": "^1.0.141"
 		},
 		"configurator": {
 			"name": "MCC",
@@ -32,7 +32,7 @@
 			"content": {
 				"metaDataVersion": "1.0.0",
 				"category": "com.microchip.device",
-				"name": "PIC32CK2051GC01144",
+				"name": "PIC32CK2051SG01144",
 				"versionRange": "*"
 			}
 		},
@@ -40,28 +40,30 @@
 		"subcategories": [
 			[
 				"Development Kit",
-				"PIC32CK-GC01 Curiosity Ultra board"
+				"PIC32CK-SG01 Curiosity Ultra board"
 			],
 			[
 				"Harmony",
-				"Middleware",
-				"File System (FS)",
-				"NVM_FAT"
+				"RTOS",
+				"FreeRTOS",
+				"BASIC_FREERTOS"
 			],
 			[
-				"File System (FS)",
-				"NVM_FAT"
+				"RTOS",
+				"FreeRTOS",
+				"BASIC_FREERTOS"
 			]
 		],
 		"peripherals": [
-			"NVM_FAT"
+			"BASIC_FREERTOS"
 		],
 		"keywords": [
 			"MCC",
 			"Harmony",
-			"File System",
-			"PIC32CK2051GC01144",
-			"PIC32CK_GC Family"
+			"RTOS",
+			"FreeRTOS",
+			"PIC32CK2051SG01144",
+			"PIC32CK-SG01 Family"
 		],
 		"additionalData": {
 			"longDescription": {
