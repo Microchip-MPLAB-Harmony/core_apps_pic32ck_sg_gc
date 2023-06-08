@@ -70,6 +70,7 @@
           <itemPath>../src/config/pic32ck_gc01_cult/device_vectors.h</itemPath>
           <itemPath>../src/config/pic32ck_gc01_cult/device.h</itemPath>
           <itemPath>../src/config/pic32ck_gc01_cult/definitions.h</itemPath>
+          <itemPath>../src/config/pic32ck_gc01_cult/sys_tasks.h</itemPath>
         </logicalFolder>
       </logicalFolder>
       <logicalFolder name="packs" displayName="packs" projectFiles="true">

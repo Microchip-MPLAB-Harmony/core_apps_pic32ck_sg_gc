@@ -1,13 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <configurationDescriptor version="65">
   <logicalFolder name="root" displayName="root" projectFiles="true">
-    <logicalFolder name="HeaderFiles"
-                   displayName="Header Files"
-                   projectFiles="true">
+    <logicalFolder name="HeaderFiles" displayName="Header Files" projectFiles="true">
       <logicalFolder name="config" displayName="config" projectFiles="true">
-        <logicalFolder name="pic32ck_sg01_cult"
-                       displayName="pic32ck_sg01_cult"
-                       projectFiles="true">
+        <logicalFolder name="pic32ck_sg01_cult" displayName="pic32ck_sg01_cult" projectFiles="true">
           <logicalFolder name="bsp" displayName="bsp" projectFiles="true">
             <itemPath>../src/config/pic32ck_sg01_cult/bsp/bsp.h</itemPath>
           </logicalFolder>
@@ -94,9 +90,7 @@
             </logicalFolder>
           </logicalFolder>
         </logicalFolder>
-        <logicalFolder name="PIC32CK2051SG01144_DFP"
-                       displayName="PIC32CK2051SG01144_DFP"
-                       projectFiles="true">
+        <logicalFolder name="PIC32CK2051SG01144_DFP" displayName="PIC32CK2051SG01144_DFP" projectFiles="true">
           <logicalFolder name="component" displayName="component" projectFiles="true">
             <itemPath>../src/packs/PIC32CK2051SG01144_DFP/component/hmatrix2.h</itemPath>
             <itemPath>../src/packs/PIC32CK2051SG01144_DFP/component/usb.h</itemPath>
@@ -219,24 +213,16 @@
       <itemPath>../src/app.h</itemPath>
       <itemPath>../src/app1.h</itemPath>
     </logicalFolder>
-    <logicalFolder name="LinkerScript"
-                   displayName="Linker Files"
-                   projectFiles="true">
+    <logicalFolder name="LinkerScript" displayName="Linker Files" projectFiles="true">
       <logicalFolder name="config" displayName="config" projectFiles="true">
-        <logicalFolder name="pic32ck_sg01_cult"
-                       displayName="pic32ck_sg01_cult"
-                       projectFiles="true">
+        <logicalFolder name="pic32ck_sg01_cult" displayName="pic32ck_sg01_cult" projectFiles="true">
           <itemPath>../src/config/pic32ck_sg01_cult/PIC32CK2051SG01144.ld</itemPath>
         </logicalFolder>
       </logicalFolder>
     </logicalFolder>
-    <logicalFolder name="SourceFiles"
-                   displayName="Source Files"
-                   projectFiles="true">
+    <logicalFolder name="SourceFiles" displayName="Source Files" projectFiles="true">
       <logicalFolder name="config" displayName="config" projectFiles="true">
-        <logicalFolder name="pic32ck_sg01_cult"
-                       displayName="pic32ck_sg01_cult"
-                       projectFiles="true">
+        <logicalFolder name="pic32ck_sg01_cult" displayName="pic32ck_sg01_cult" projectFiles="true">
           <logicalFolder name="bsp" displayName="bsp" projectFiles="true">
             <itemPath>../src/config/pic32ck_sg01_cult/bsp/bsp.c</itemPath>
           </logicalFolder>
@@ -298,11 +284,10 @@
       <itemPath>../src/config/pic32ck_sg01_cult/pin_configurations.csv</itemPath>
       <itemPath>../src/app.c</itemPath>
     </logicalFolder>
-    <logicalFolder name="ExternalFiles"
-                   displayName="Important Files"
-                   projectFiles="false">
+    <logicalFolder name="ExternalFiles" displayName="Important Files" projectFiles="false">
       <itemPath>Makefile</itemPath>
       <itemPath>basic_freertos_trustZone_pic32ck_sg01_cult_NonSecure.mc3</itemPath>
+      <itemPath>../src/config/pic32ck_sg01_cult/harmony-manifest-success.yml</itemPath>
     </logicalFolder>
   </logicalFolder>
   <projectmakefile>Makefile</projectmakefile>
@@ -311,9 +296,9 @@
       <toolsSet>
         <developmentServer>localhost</developmentServer>
         <targetDevice>PIC32CK2051SG01144</targetDevice>
-        <targetHeader></targetHeader>
-        <targetPluginBoard></targetPluginBoard>
-        <platformTool></platformTool>
+        <targetHeader/>
+        <targetPluginBoard/>
+        <platformTool/>
         <languageToolchain>XC32</languageToolchain>
         <languageToolchainVersion>4.21</languageToolchainVersion>
         <platform>3</platform>
@@ -332,24 +317,11 @@
         <archiverTool>
         </archiverTool>
         <loading>
-          <makeArtifact PL="../../../Secure/firmware/pic32ck_sg01_cult_Secure.X"
-                        CT="1"
-                        CN="pic32ck_sg01_cult"
-                        AC="true"
-                        BL="true"
-                        WD="../../../Secure/firmware/pic32ck_sg01_cult_Secure.X"
-                        BC="${MAKE}  -f Makefile CONF=pic32ck_sg01_cult"
-                        DBC="${MAKE}  -f Makefile CONF=pic32ck_sg01_cult TYPE_IMAGE=DEBUG_RUN"
-                        CC="rm -rf &quot;build/pic32ck_sg01_cult&quot; &quot;dist/pic32ck_sg01_cult&quot;"
-                        OP="dist/pic32ck_sg01_cult/production/pic32ck_sg01_cult_Secure.X.production.hex"
-                        DOP="dist/pic32ck_sg01_cult/debug/pic32ck_sg01_cult_Secure.X.debug.elf"
-                        FL="dist/pic32ck_sg01_cult/production/pic32ck_sg01_cult_Secure.X.production.hex"
-                        PD="dist/pic32ck_sg01_cult/production/pic32ck_sg01_cult_Secure.X.production.elf"
-                        DD="dist/pic32ck_sg01_cult/debug/pic32ck_sg01_cult_Secure.X.debug.elf">
+          <makeArtifact PL="../../../Secure/firmware/pic32ck_sg01_cult_Secure.X" CT="1" CN="pic32ck_sg01_cult" AC="true" BL="true" WD="../../../Secure/firmware/pic32ck_sg01_cult_Secure.X" BC="${MAKE}  -f Makefile CONF=pic32ck_sg01_cult" DBC="${MAKE}  -f Makefile CONF=pic32ck_sg01_cult TYPE_IMAGE=DEBUG_RUN" CC="rm -rf &quot;build/pic32ck_sg01_cult&quot; &quot;dist/pic32ck_sg01_cult&quot;" OP="dist/pic32ck_sg01_cult/production/pic32ck_sg01_cult_Secure.X.production.hex" DOP="dist/pic32ck_sg01_cult/debug/pic32ck_sg01_cult_Secure.X.debug.elf" FL="dist/pic32ck_sg01_cult/production/pic32ck_sg01_cult_Secure.X.production.hex" PD="dist/pic32ck_sg01_cult/production/pic32ck_sg01_cult_Secure.X.production.elf" DD="dist/pic32ck_sg01_cult/debug/pic32ck_sg01_cult_Secure.X.debug.elf">
           </makeArtifact>
           <useAlternateLoadableFile>false</useAlternateLoadableFile>
           <parseOnProdLoad>false</parseOnProdLoad>
-          <alternateLoadableFile></alternateLoadableFile>
+          <alternateLoadableFile/>
         </loading>
         <subordinates>
         </subordinates>
@@ -357,9 +329,9 @@
       <makeCustomizationType>
         <makeCustomizationPreStepEnabled>false</makeCustomizationPreStepEnabled>
         <makeUseCleanTarget>false</makeUseCleanTarget>
-        <makeCustomizationPreStep></makeCustomizationPreStep>
+        <makeCustomizationPreStep/>
         <makeCustomizationPostStepEnabled>false</makeCustomizationPostStepEnabled>
-        <makeCustomizationPostStep></makeCustomizationPostStep>
+        <makeCustomizationPostStep/>
         <makeCustomizationPutChecksumInUserID>false</makeCustomizationPutChecksumInUserID>
         <makeCustomizationEnableLongLines>false</makeCustomizationEnableLongLines>
         <makeCustomizationNormalizeHexFile>false</makeCustomizationNormalizeHexFile>
@@ -373,8 +345,7 @@
         <property key="enable-symbols" value="true"/>
         <property key="enable-unroll-loops" value="false"/>
         <property key="exclude-floating-point" value="false"/>
-        <property key="extra-include-directories"
-                  value="../../../Secure/firmware/src/third_party/rtos/FreeRTOS/Source/portable/GCC/ARM_CM33/secure;../src;../src/config/pic32ck_sg01_cult;../src/packs/CMSIS/;../src/packs/CMSIS/CMSIS/Core/Include;../src/packs/PIC32CK2051SG01144_DFP;../src/third_party/rtos/FreeRTOS/Source/include;../src/third_party/rtos/FreeRTOS/Source/portable/GCC/ARM_CM33/non_secure"/>
+        <property key="extra-include-directories" value="../../../Secure/firmware/src/third_party/rtos/FreeRTOS/Source/portable/GCC/ARM_CM33/secure;../src;../src/config/pic32ck_sg01_cult;../src/packs/CMSIS/;../src/packs/CMSIS/CMSIS/Core/Include;../src/packs/PIC32CK2051SG01144_DFP;../src/third_party/rtos/FreeRTOS/Source/include;../src/third_party/rtos/FreeRTOS/Source/portable/GCC/ARM_CM33/non_secure"/>
         <property key="generate-16-bit-code" value="false"/>
         <property key="generate-micro-compressed-code" value="false"/>
         <property key="isolate-each-function" value="true"/>
@@ -451,8 +422,7 @@
         <property key="no-startup-files" value="false"/>
         <property key="oXC32ld-extra-opts" value=""/>
         <property key="optimization-level" value=""/>
-        <property key="preprocessor-macros"
-                  value="ANS_SIZE=0x100000;NONSECURE;RNS_SIZE=0x40000"/>
+        <property key="preprocessor-macros" value="ANS_SIZE=0x100000;NONSECURE;RNS_SIZE=0x40000"/>
         <property key="remove-unused-sections" value="true"/>
         <property key="report-memory-usage" value="false"/>
         <property key="serial-length" value=""/>
@@ -475,8 +445,7 @@
         <property key="enable-unroll-loops" value="false"/>
         <property key="exceptions" value="true"/>
         <property key="exclude-floating-point" value="false"/>
-        <property key="extra-include-directories"
-                  value="../../../Secure/firmware/src/third_party/rtos/FreeRTOS/Source/portable/GCC/ARM_CM33/secure;../src;../src/config/pic32ck_sg01_cult;../src/packs/CMSIS/;../src/packs/CMSIS/CMSIS/Core/Include;../src/packs/PIC32CK2051SG01144_DFP;../src/third_party/rtos/FreeRTOS/Source/include;../src/third_party/rtos/FreeRTOS/Source/portable/GCC/ARM_CM33/non_secure"/>
+        <property key="extra-include-directories" value="../../../Secure/firmware/src/third_party/rtos/FreeRTOS/Source/portable/GCC/ARM_CM33/secure;../src;../src/config/pic32ck_sg01_cult;../src/packs/CMSIS/;../src/packs/CMSIS/CMSIS/Core/Include;../src/packs/PIC32CK2051SG01144_DFP;../src/third_party/rtos/FreeRTOS/Source/include;../src/third_party/rtos/FreeRTOS/Source/portable/GCC/ARM_CM33/non_secure"/>
         <property key="generate-16-bit-code" value="false"/>
         <property key="generate-micro-compressed-code" value="false"/>
         <property key="isolate-each-function" value="true"/>
