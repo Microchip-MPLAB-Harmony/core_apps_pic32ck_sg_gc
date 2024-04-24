@@ -1,26 +1,23 @@
 /*
  * Component description for FUSES
  *
- * Copyright (c) 2023 Microchip Technology Inc. and its subsidiaries.
+ * Copyright (c) 2024 Microchip Technology Inc. and its subsidiaries.
  *
- * Subject to your compliance with these terms, you may use Microchip software and any derivatives
- * exclusively with Microchip products. It is your responsibility to comply with third party license
- * terms applicable to your use of third party software (including open source software) that may
- * accompany Microchip software.
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
  *
- * THIS SOFTWARE IS SUPPLIED BY MICROCHIP "AS IS". NO WARRANTIES, WHETHER EXPRESS, IMPLIED OR STATUTORY,
- * APPLY TO THIS SOFTWARE, INCLUDING ANY IMPLIED WARRANTIES OF NON-INFRINGEMENT, MERCHANTABILITY, AND
- * FITNESS FOR A PARTICULAR PURPOSE.
+ *   http://www.apache.org/licenses/LICENSE-2.0
  *
- * IN NO EVENT WILL MICROCHIP BE LIABLE FOR ANY INDIRECT, SPECIAL, PUNITIVE, INCIDENTAL OR CONSEQUENTIAL
- * LOSS, DAMAGE, COST OR EXPENSE OF ANY KIND WHATSOEVER RELATED TO THE SOFTWARE, HOWEVER CAUSED, EVEN IF
- * MICROCHIP HAS BEEN ADVISED OF THE POSSIBILITY OR THE DAMAGES ARE FORESEEABLE. TO THE FULLEST EXTENT
- * ALLOWED BY LAW, MICROCHIP'S TOTAL LIABILITY ON ALL CLAIMS IN ANY WAY RELATED TO THIS SOFTWARE WILL NOT
- * EXCEED THE AMOUNT OF FEES, IF ANY, THAT YOU HAVE PAID DIRECTLY TO MICROCHIP FOR THIS SOFTWARE.
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
  *
  */
 
-/* file generated from device description version 2023-04-05T13:26:59Z */
+/* file generated from device description file (ATDF) version 2024-04-02T09:16:38Z */
 #ifndef _PIC32CKSG01_FUSES_COMPONENT_H_
 #define _PIC32CKSG01_FUSES_COMPONENT_H_
 
@@ -409,94 +406,100 @@
 #define FUSES_FUCFG11_NONSECB_TCC3_Pos        _UINT32_(15)                                         /* (FUSES_FUCFG11) BOOTROM NONSEC B TCC3 secure/non-secure Position */
 #define FUSES_FUCFG11_NONSECB_TCC3_Msk        (_UINT32_(0x1) << FUSES_FUCFG11_NONSECB_TCC3_Pos)    /* (FUSES_FUCFG11) BOOTROM NONSEC B TCC3 secure/non-secure Mask */
 #define FUSES_FUCFG11_NONSECB_TCC3(value)     (FUSES_FUCFG11_NONSECB_TCC3_Msk & (_UINT32_(value) << FUSES_FUCFG11_NONSECB_TCC3_Pos)) /* Assigment of value for NONSECB_TCC3 in the FUSES_FUCFG11 register */
-#define FUSES_FUCFG11_NONSECB_SERCOM4_Pos     _UINT32_(16)                                         /* (FUSES_FUCFG11) BOOTROM NONSEC B SERCOM4 secure/non-secure Position */
-#define FUSES_FUCFG11_NONSECB_SERCOM4_Msk     (_UINT32_(0x1) << FUSES_FUCFG11_NONSECB_SERCOM4_Pos) /* (FUSES_FUCFG11) BOOTROM NONSEC B SERCOM4 secure/non-secure Mask */
-#define FUSES_FUCFG11_NONSECB_SERCOM4(value)  (FUSES_FUCFG11_NONSECB_SERCOM4_Msk & (_UINT32_(value) << FUSES_FUCFG11_NONSECB_SERCOM4_Pos)) /* Assigment of value for NONSECB_SERCOM4 in the FUSES_FUCFG11 register */
-#define FUSES_FUCFG11_NONSECB_SERCOM5_Pos     _UINT32_(17)                                         /* (FUSES_FUCFG11) BOOTROM NONSEC B SERCOM5 secure/non-secure Position */
-#define FUSES_FUCFG11_NONSECB_SERCOM5_Msk     (_UINT32_(0x1) << FUSES_FUCFG11_NONSECB_SERCOM5_Pos) /* (FUSES_FUCFG11) BOOTROM NONSEC B SERCOM5 secure/non-secure Mask */
-#define FUSES_FUCFG11_NONSECB_SERCOM5(value)  (FUSES_FUCFG11_NONSECB_SERCOM5_Msk & (_UINT32_(value) << FUSES_FUCFG11_NONSECB_SERCOM5_Pos)) /* Assigment of value for NONSECB_SERCOM5 in the FUSES_FUCFG11 register */
-#define FUSES_FUCFG11_Msk                     _UINT32_(0x0003FFBF)                                 /* (FUSES_FUCFG11) Register Mask  */
+#define FUSES_FUCFG11_Msk                     _UINT32_(0x0000FFBF)                                 /* (FUSES_FUCFG11) Register Mask  */
 
 #define FUSES_FUCFG11_NONSECB_DMA_Pos         _UINT32_(1)                                          /* (FUSES_FUCFG11 Position) BOOTROM NONSEC B DMAx secure/non-secure */
 #define FUSES_FUCFG11_NONSECB_DMA_Msk         (_UINT32_(0x3) << FUSES_FUCFG11_NONSECB_DMA_Pos)     /* (FUSES_FUCFG11 Mask) NONSECB_DMA */
 #define FUSES_FUCFG11_NONSECB_DMA(value)      (FUSES_FUCFG11_NONSECB_DMA_Msk & (_UINT32_(value) << FUSES_FUCFG11_NONSECB_DMA_Pos)) 
-#define FUSES_FUCFG11_NONSECB_TCC_Pos         _UINT32_(12)                                         /* (FUSES_FUCFG11 Position) BOOTROM NONSEC B TCCx secure/non-secure */
+#define FUSES_FUCFG11_NONSECB_SERCOM_Pos      _UINT32_(8)                                          /* (FUSES_FUCFG11 Position) BOOTROM NONSEC B SERCOMx secure/non-secure */
+#define FUSES_FUCFG11_NONSECB_SERCOM_Msk      (_UINT32_(0xF) << FUSES_FUCFG11_NONSECB_SERCOM_Pos)  /* (FUSES_FUCFG11 Mask) NONSECB_SERCOM */
+#define FUSES_FUCFG11_NONSECB_SERCOM(value)   (FUSES_FUCFG11_NONSECB_SERCOM_Msk & (_UINT32_(value) << FUSES_FUCFG11_NONSECB_SERCOM_Pos)) 
+#define FUSES_FUCFG11_NONSECB_TCC_Pos         _UINT32_(12)                                         /* (FUSES_FUCFG11 Position) BOOTROM NONSEC B TCC3 secure/non-secure */
 #define FUSES_FUCFG11_NONSECB_TCC_Msk         (_UINT32_(0xF) << FUSES_FUCFG11_NONSECB_TCC_Pos)     /* (FUSES_FUCFG11 Mask) NONSECB_TCC */
 #define FUSES_FUCFG11_NONSECB_TCC(value)      (FUSES_FUCFG11_NONSECB_TCC_Msk & (_UINT32_(value) << FUSES_FUCFG11_NONSECB_TCC_Pos)) 
 
 /* -------- FUSES_FUCFG12 : (FUSES Offset: 0x70) (R/W 32) User Configuration 12 (Peripheral Bus C security attribution -------- */
-#define FUSES_FUCFG12_NONSECC_SERCOM6_Pos     _UINT32_(0)                                          /* (FUSES_FUCFG12) BOOTROM NONSEC C SERCOM6 secure/non-secure Position */
+#define FUSES_FUCFG12_NONSECC_SERCOM4_Pos     _UINT32_(0)                                          /* (FUSES_FUCFG12) BOOTROM NONSEC C SERCOM4 secure/non-secure Position */
+#define FUSES_FUCFG12_NONSECC_SERCOM4_Msk     (_UINT32_(0x1) << FUSES_FUCFG12_NONSECC_SERCOM4_Pos) /* (FUSES_FUCFG12) BOOTROM NONSEC C SERCOM4 secure/non-secure Mask */
+#define FUSES_FUCFG12_NONSECC_SERCOM4(value)  (FUSES_FUCFG12_NONSECC_SERCOM4_Msk & (_UINT32_(value) << FUSES_FUCFG12_NONSECC_SERCOM4_Pos)) /* Assigment of value for NONSECC_SERCOM4 in the FUSES_FUCFG12 register */
+#define FUSES_FUCFG12_NONSECC_SERCOM5_Pos     _UINT32_(1)                                          /* (FUSES_FUCFG12) BOOTROM NONSEC C SERCOM5 secure/non-secure Position */
+#define FUSES_FUCFG12_NONSECC_SERCOM5_Msk     (_UINT32_(0x1) << FUSES_FUCFG12_NONSECC_SERCOM5_Pos) /* (FUSES_FUCFG12) BOOTROM NONSEC C SERCOM5 secure/non-secure Mask */
+#define FUSES_FUCFG12_NONSECC_SERCOM5(value)  (FUSES_FUCFG12_NONSECC_SERCOM5_Msk & (_UINT32_(value) << FUSES_FUCFG12_NONSECC_SERCOM5_Pos)) /* Assigment of value for NONSECC_SERCOM5 in the FUSES_FUCFG12 register */
+#define FUSES_FUCFG12_NONSECC_SERCOM6_Pos     _UINT32_(2)                                          /* (FUSES_FUCFG12) BOOTROM NONSEC C SERCOM6 secure/non-secure Position */
 #define FUSES_FUCFG12_NONSECC_SERCOM6_Msk     (_UINT32_(0x1) << FUSES_FUCFG12_NONSECC_SERCOM6_Pos) /* (FUSES_FUCFG12) BOOTROM NONSEC C SERCOM6 secure/non-secure Mask */
 #define FUSES_FUCFG12_NONSECC_SERCOM6(value)  (FUSES_FUCFG12_NONSECC_SERCOM6_Msk & (_UINT32_(value) << FUSES_FUCFG12_NONSECC_SERCOM6_Pos)) /* Assigment of value for NONSECC_SERCOM6 in the FUSES_FUCFG12 register */
-#define FUSES_FUCFG12_NONSECC_SERCOM7_Pos     _UINT32_(1)                                          /* (FUSES_FUCFG12) BOOTROM NONSEC C SERCOM7 secure/non-secure Position */
+#define FUSES_FUCFG12_NONSECC_SERCOM7_Pos     _UINT32_(3)                                          /* (FUSES_FUCFG12) BOOTROM NONSEC C SERCOM7 secure/non-secure Position */
 #define FUSES_FUCFG12_NONSECC_SERCOM7_Msk     (_UINT32_(0x1) << FUSES_FUCFG12_NONSECC_SERCOM7_Pos) /* (FUSES_FUCFG12) BOOTROM NONSEC C SERCOM7 secure/non-secure Mask */
 #define FUSES_FUCFG12_NONSECC_SERCOM7(value)  (FUSES_FUCFG12_NONSECC_SERCOM7_Msk & (_UINT32_(value) << FUSES_FUCFG12_NONSECC_SERCOM7_Pos)) /* Assigment of value for NONSECC_SERCOM7 in the FUSES_FUCFG12 register */
-#define FUSES_FUCFG12_NONSECC_TCC4_Pos        _UINT32_(2)                                          /* (FUSES_FUCFG12) BOOTROM NONSEC C TCC4 secure/non-secure Position */
+#define FUSES_FUCFG12_NONSECC_TCC4_Pos        _UINT32_(4)                                          /* (FUSES_FUCFG12) BOOTROM NONSEC C TCC4 secure/non-secure Position */
 #define FUSES_FUCFG12_NONSECC_TCC4_Msk        (_UINT32_(0x1) << FUSES_FUCFG12_NONSECC_TCC4_Pos)    /* (FUSES_FUCFG12) BOOTROM NONSEC C TCC4 secure/non-secure Mask */
 #define FUSES_FUCFG12_NONSECC_TCC4(value)     (FUSES_FUCFG12_NONSECC_TCC4_Msk & (_UINT32_(value) << FUSES_FUCFG12_NONSECC_TCC4_Pos)) /* Assigment of value for NONSECC_TCC4 in the FUSES_FUCFG12 register */
-#define FUSES_FUCFG12_NONSECC_TCC5_Pos        _UINT32_(3)                                          /* (FUSES_FUCFG12) BOOTROM NONSEC C TCC5 secure/non-secure Position */
+#define FUSES_FUCFG12_NONSECC_TCC5_Pos        _UINT32_(5)                                          /* (FUSES_FUCFG12) BOOTROM NONSEC C TCC5 secure/non-secure Position */
 #define FUSES_FUCFG12_NONSECC_TCC5_Msk        (_UINT32_(0x1) << FUSES_FUCFG12_NONSECC_TCC5_Pos)    /* (FUSES_FUCFG12) BOOTROM NONSEC C TCC5 secure/non-secure Mask */
 #define FUSES_FUCFG12_NONSECC_TCC5(value)     (FUSES_FUCFG12_NONSECC_TCC5_Msk & (_UINT32_(value) << FUSES_FUCFG12_NONSECC_TCC5_Pos)) /* Assigment of value for NONSECC_TCC5 in the FUSES_FUCFG12 register */
-#define FUSES_FUCFG12_NONSECC_TCC6_Pos        _UINT32_(4)                                          /* (FUSES_FUCFG12) BOOTROM NONSEC C TCC6 secure/non-secure Position */
+#define FUSES_FUCFG12_NONSECC_TCC6_Pos        _UINT32_(6)                                          /* (FUSES_FUCFG12) BOOTROM NONSEC C TCC6 secure/non-secure Position */
 #define FUSES_FUCFG12_NONSECC_TCC6_Msk        (_UINT32_(0x1) << FUSES_FUCFG12_NONSECC_TCC6_Pos)    /* (FUSES_FUCFG12) BOOTROM NONSEC C TCC6 secure/non-secure Mask */
 #define FUSES_FUCFG12_NONSECC_TCC6(value)     (FUSES_FUCFG12_NONSECC_TCC6_Msk & (_UINT32_(value) << FUSES_FUCFG12_NONSECC_TCC6_Pos)) /* Assigment of value for NONSECC_TCC6 in the FUSES_FUCFG12 register */
-#define FUSES_FUCFG12_NONSECC_TCC7_Pos        _UINT32_(5)                                          /* (FUSES_FUCFG12) BOOTROM NONSEC C TCC7 secure/non-secure Position */
+#define FUSES_FUCFG12_NONSECC_TCC7_Pos        _UINT32_(7)                                          /* (FUSES_FUCFG12) BOOTROM NONSEC C TCC7 secure/non-secure Position */
 #define FUSES_FUCFG12_NONSECC_TCC7_Msk        (_UINT32_(0x1) << FUSES_FUCFG12_NONSECC_TCC7_Pos)    /* (FUSES_FUCFG12) BOOTROM NONSEC C TCC7 secure/non-secure Mask */
 #define FUSES_FUCFG12_NONSECC_TCC7(value)     (FUSES_FUCFG12_NONSECC_TCC7_Msk & (_UINT32_(value) << FUSES_FUCFG12_NONSECC_TCC7_Pos)) /* Assigment of value for NONSECC_TCC7 in the FUSES_FUCFG12 register */
-#define FUSES_FUCFG12_NONSECC_ADC_Pos         _UINT32_(6)                                          /* (FUSES_FUCFG12) BOOTROM NONSEC C ADC secure/non-secure Position */
+#define FUSES_FUCFG12_NONSECC_ADC_Pos         _UINT32_(8)                                          /* (FUSES_FUCFG12) BOOTROM NONSEC C ADC secure/non-secure Position */
 #define FUSES_FUCFG12_NONSECC_ADC_Msk         (_UINT32_(0x1) << FUSES_FUCFG12_NONSECC_ADC_Pos)     /* (FUSES_FUCFG12) BOOTROM NONSEC C ADC secure/non-secure Mask */
 #define FUSES_FUCFG12_NONSECC_ADC(value)      (FUSES_FUCFG12_NONSECC_ADC_Msk & (_UINT32_(value) << FUSES_FUCFG12_NONSECC_ADC_Pos)) /* Assigment of value for NONSECC_ADC in the FUSES_FUCFG12 register */
-#define FUSES_FUCFG12_NONSECC_AC_Pos          _UINT32_(7)                                          /* (FUSES_FUCFG12) BOOTROM NONSEC C Analog Comparator secure/non-secure Position */
+#define FUSES_FUCFG12_NONSECC_AC_Pos          _UINT32_(9)                                          /* (FUSES_FUCFG12) BOOTROM NONSEC C Analog Comparator secure/non-secure Position */
 #define FUSES_FUCFG12_NONSECC_AC_Msk          (_UINT32_(0x1) << FUSES_FUCFG12_NONSECC_AC_Pos)      /* (FUSES_FUCFG12) BOOTROM NONSEC C Analog Comparator secure/non-secure Mask */
 #define FUSES_FUCFG12_NONSECC_AC(value)       (FUSES_FUCFG12_NONSECC_AC_Msk & (_UINT32_(value) << FUSES_FUCFG12_NONSECC_AC_Pos)) /* Assigment of value for NONSECC_AC in the FUSES_FUCFG12 register */
-#define FUSES_FUCFG12_NONSECC_PTC_Pos         _UINT32_(8)                                          /* (FUSES_FUCFG12) BOOTROM NONSEC C PTC secure/non-secure Position */
+#define FUSES_FUCFG12_NONSECC_PTC_Pos         _UINT32_(10)                                         /* (FUSES_FUCFG12) BOOTROM NONSEC C PTC secure/non-secure Position */
 #define FUSES_FUCFG12_NONSECC_PTC_Msk         (_UINT32_(0x1) << FUSES_FUCFG12_NONSECC_PTC_Pos)     /* (FUSES_FUCFG12) BOOTROM NONSEC C PTC secure/non-secure Mask */
 #define FUSES_FUCFG12_NONSECC_PTC(value)      (FUSES_FUCFG12_NONSECC_PTC_Msk & (_UINT32_(value) << FUSES_FUCFG12_NONSECC_PTC_Pos)) /* Assigment of value for NONSECC_PTC in the FUSES_FUCFG12 register */
-#define FUSES_FUCFG12_NONSECC_SPI_IXS_Pos     _UINT32_(9)                                          /* (FUSES_FUCFG12) BOOTROM NONSEC C SPI_IXS secure/non-secure Position */
+#define FUSES_FUCFG12_NONSECC_SPI_IXS_Pos     _UINT32_(11)                                         /* (FUSES_FUCFG12) BOOTROM NONSEC C SPI_IXS secure/non-secure Position */
 #define FUSES_FUCFG12_NONSECC_SPI_IXS_Msk     (_UINT32_(0x1) << FUSES_FUCFG12_NONSECC_SPI_IXS_Pos) /* (FUSES_FUCFG12) BOOTROM NONSEC C SPI_IXS secure/non-secure Mask */
 #define FUSES_FUCFG12_NONSECC_SPI_IXS(value)  (FUSES_FUCFG12_NONSECC_SPI_IXS_Msk & (_UINT32_(value) << FUSES_FUCFG12_NONSECC_SPI_IXS_Pos)) /* Assigment of value for NONSECC_SPI_IXS in the FUSES_FUCFG12 register */
-#define FUSES_FUCFG12_NONSECC_PCC_Pos         _UINT32_(10)                                         /* (FUSES_FUCFG12) BOOTROM NONSEC C PCC secure/non-secure Position */
+#define FUSES_FUCFG12_NONSECC_PCC_Pos         _UINT32_(12)                                         /* (FUSES_FUCFG12) BOOTROM NONSEC C PCC secure/non-secure Position */
 #define FUSES_FUCFG12_NONSECC_PCC_Msk         (_UINT32_(0x1) << FUSES_FUCFG12_NONSECC_PCC_Pos)     /* (FUSES_FUCFG12) BOOTROM NONSEC C PCC secure/non-secure Mask */
 #define FUSES_FUCFG12_NONSECC_PCC(value)      (FUSES_FUCFG12_NONSECC_PCC_Msk & (_UINT32_(value) << FUSES_FUCFG12_NONSECC_PCC_Pos)) /* Assigment of value for NONSECC_PCC in the FUSES_FUCFG12 register */
-#define FUSES_FUCFG12_NONSECC_CCL_Pos         _UINT32_(11)                                         /* (FUSES_FUCFG12) BOOTROM NONSEC C CCL secure/non-secure Position */
+#define FUSES_FUCFG12_NONSECC_CCL_Pos         _UINT32_(13)                                         /* (FUSES_FUCFG12) BOOTROM NONSEC C CCL secure/non-secure Position */
 #define FUSES_FUCFG12_NONSECC_CCL_Msk         (_UINT32_(0x1) << FUSES_FUCFG12_NONSECC_CCL_Pos)     /* (FUSES_FUCFG12) BOOTROM NONSEC C CCL secure/non-secure Mask */
 #define FUSES_FUCFG12_NONSECC_CCL(value)      (FUSES_FUCFG12_NONSECC_CCL_Msk & (_UINT32_(value) << FUSES_FUCFG12_NONSECC_CCL_Pos)) /* Assigment of value for NONSECC_CCL in the FUSES_FUCFG12 register */
-#define FUSES_FUCFG12_NONSECC_PDEC_Pos        _UINT32_(12)                                         /* (FUSES_FUCFG12) BOOTROM NONSEC C PDEC secure/non-secure Position */
+#define FUSES_FUCFG12_NONSECC_PDEC_Pos        _UINT32_(14)                                         /* (FUSES_FUCFG12) BOOTROM NONSEC C PDEC secure/non-secure Position */
 #define FUSES_FUCFG12_NONSECC_PDEC_Msk        (_UINT32_(0x1) << FUSES_FUCFG12_NONSECC_PDEC_Pos)    /* (FUSES_FUCFG12) BOOTROM NONSEC C PDEC secure/non-secure Mask */
 #define FUSES_FUCFG12_NONSECC_PDEC(value)     (FUSES_FUCFG12_NONSECC_PDEC_Msk & (_UINT32_(value) << FUSES_FUCFG12_NONSECC_PDEC_Pos)) /* Assigment of value for NONSECC_PDEC in the FUSES_FUCFG12 register */
-#define FUSES_FUCFG12_NONSECC_CAN0_Pos        _UINT32_(13)                                         /* (FUSES_FUCFG12) BOOTROM NONSEC C CAN0 secure/non-secure Position */
+#define FUSES_FUCFG12_NONSECC_CAN0_Pos        _UINT32_(15)                                         /* (FUSES_FUCFG12) BOOTROM NONSEC C CAN0 secure/non-secure Position */
 #define FUSES_FUCFG12_NONSECC_CAN0_Msk        (_UINT32_(0x1) << FUSES_FUCFG12_NONSECC_CAN0_Pos)    /* (FUSES_FUCFG12) BOOTROM NONSEC C CAN0 secure/non-secure Mask */
 #define FUSES_FUCFG12_NONSECC_CAN0(value)     (FUSES_FUCFG12_NONSECC_CAN0_Msk & (_UINT32_(value) << FUSES_FUCFG12_NONSECC_CAN0_Pos)) /* Assigment of value for NONSECC_CAN0 in the FUSES_FUCFG12 register */
-#define FUSES_FUCFG12_NONSECC_CAN1_Pos        _UINT32_(14)                                         /* (FUSES_FUCFG12) BOOTROM NONSEC C CAN1 secure/non-secure Position */
+#define FUSES_FUCFG12_NONSECC_CAN1_Pos        _UINT32_(16)                                         /* (FUSES_FUCFG12) BOOTROM NONSEC C CAN1 secure/non-secure Position */
 #define FUSES_FUCFG12_NONSECC_CAN1_Msk        (_UINT32_(0x1) << FUSES_FUCFG12_NONSECC_CAN1_Pos)    /* (FUSES_FUCFG12) BOOTROM NONSEC C CAN1 secure/non-secure Mask */
 #define FUSES_FUCFG12_NONSECC_CAN1(value)     (FUSES_FUCFG12_NONSECC_CAN1_Msk & (_UINT32_(value) << FUSES_FUCFG12_NONSECC_CAN1_Pos)) /* Assigment of value for NONSECC_CAN1 in the FUSES_FUCFG12 register */
-#define FUSES_FUCFG12_NONSECC_ETH_Pos         _UINT32_(15)                                         /* (FUSES_FUCFG12) BOOTROM NONSEC C ETH secure/non-secure Position */
+#define FUSES_FUCFG12_NONSECC_ETH_Pos         _UINT32_(17)                                         /* (FUSES_FUCFG12) BOOTROM NONSEC C ETH secure/non-secure Position */
 #define FUSES_FUCFG12_NONSECC_ETH_Msk         (_UINT32_(0x1) << FUSES_FUCFG12_NONSECC_ETH_Pos)     /* (FUSES_FUCFG12) BOOTROM NONSEC C ETH secure/non-secure Mask */
 #define FUSES_FUCFG12_NONSECC_ETH(value)      (FUSES_FUCFG12_NONSECC_ETH_Msk & (_UINT32_(value) << FUSES_FUCFG12_NONSECC_ETH_Pos)) /* Assigment of value for NONSECC_ETH in the FUSES_FUCFG12 register */
-#define FUSES_FUCFG12_NONSECC_TRNG_Pos        _UINT32_(16)                                         /* (FUSES_FUCFG12) BOOTROM NONSEC C TRNG secure/non-secure Position */
+#define FUSES_FUCFG12_NONSECC_TRNG_Pos        _UINT32_(18)                                         /* (FUSES_FUCFG12) BOOTROM NONSEC C TRNG secure/non-secure Position */
 #define FUSES_FUCFG12_NONSECC_TRNG_Msk        (_UINT32_(0x1) << FUSES_FUCFG12_NONSECC_TRNG_Pos)    /* (FUSES_FUCFG12) BOOTROM NONSEC C TRNG secure/non-secure Mask */
 #define FUSES_FUCFG12_NONSECC_TRNG(value)     (FUSES_FUCFG12_NONSECC_TRNG_Msk & (_UINT32_(value) << FUSES_FUCFG12_NONSECC_TRNG_Pos)) /* Assigment of value for NONSECC_TRNG in the FUSES_FUCFG12 register */
-#define FUSES_FUCFG12_NONSECC_SDMMC0_Pos      _UINT32_(17)                                         /* (FUSES_FUCFG12) BOOTROM NONSEC C SDMMC0 secure/non-secure Position */
+#define FUSES_FUCFG12_NONSECC_SDMMC0_Pos      _UINT32_(19)                                         /* (FUSES_FUCFG12) BOOTROM NONSEC C SDMMC0 secure/non-secure Position */
 #define FUSES_FUCFG12_NONSECC_SDMMC0_Msk      (_UINT32_(0x1) << FUSES_FUCFG12_NONSECC_SDMMC0_Pos)  /* (FUSES_FUCFG12) BOOTROM NONSEC C SDMMC0 secure/non-secure Mask */
 #define FUSES_FUCFG12_NONSECC_SDMMC0(value)   (FUSES_FUCFG12_NONSECC_SDMMC0_Msk & (_UINT32_(value) << FUSES_FUCFG12_NONSECC_SDMMC0_Pos)) /* Assigment of value for NONSECC_SDMMC0 in the FUSES_FUCFG12 register */
-#define FUSES_FUCFG12_NONSECC_SDMMC1_Pos      _UINT32_(18)                                         /* (FUSES_FUCFG12) BOOTROM NONSEC C SDMMC1 secure/non-secure Position */
+#define FUSES_FUCFG12_NONSECC_SDMMC1_Pos      _UINT32_(20)                                         /* (FUSES_FUCFG12) BOOTROM NONSEC C SDMMC1 secure/non-secure Position */
 #define FUSES_FUCFG12_NONSECC_SDMMC1_Msk      (_UINT32_(0x1) << FUSES_FUCFG12_NONSECC_SDMMC1_Pos)  /* (FUSES_FUCFG12) BOOTROM NONSEC C SDMMC1 secure/non-secure Mask */
 #define FUSES_FUCFG12_NONSECC_SDMMC1(value)   (FUSES_FUCFG12_NONSECC_SDMMC1_Msk & (_UINT32_(value) << FUSES_FUCFG12_NONSECC_SDMMC1_Pos)) /* Assigment of value for NONSECC_SDMMC1 in the FUSES_FUCFG12 register */
-#define FUSES_FUCFG12_NONSECC_USB_Pos         _UINT32_(19)                                         /* (FUSES_FUCFG12) BOOTROM NONSEC C Full Speed USB secure/non-secure Position */
+#define FUSES_FUCFG12_NONSECC_USB_Pos         _UINT32_(21)                                         /* (FUSES_FUCFG12) BOOTROM NONSEC C Full Speed USB secure/non-secure Position */
 #define FUSES_FUCFG12_NONSECC_USB_Msk         (_UINT32_(0x1) << FUSES_FUCFG12_NONSECC_USB_Pos)     /* (FUSES_FUCFG12) BOOTROM NONSEC C Full Speed USB secure/non-secure Mask */
 #define FUSES_FUCFG12_NONSECC_USB(value)      (FUSES_FUCFG12_NONSECC_USB_Msk & (_UINT32_(value) << FUSES_FUCFG12_NONSECC_USB_Pos)) /* Assigment of value for NONSECC_USB in the FUSES_FUCFG12 register */
-#define FUSES_FUCFG12_Msk                     _UINT32_(0x000FFFFF)                                 /* (FUSES_FUCFG12) Register Mask  */
+#define FUSES_FUCFG12_NONSECC_EBI_Pos         _UINT32_(22)                                         /* (FUSES_FUCFG12) BOOTROM NONSEC C EBI secure/non-secure Position */
+#define FUSES_FUCFG12_NONSECC_EBI_Msk         (_UINT32_(0x1) << FUSES_FUCFG12_NONSECC_EBI_Pos)     /* (FUSES_FUCFG12) BOOTROM NONSEC C EBI secure/non-secure Mask */
+#define FUSES_FUCFG12_NONSECC_EBI(value)      (FUSES_FUCFG12_NONSECC_EBI_Msk & (_UINT32_(value) << FUSES_FUCFG12_NONSECC_EBI_Pos)) /* Assigment of value for NONSECC_EBI in the FUSES_FUCFG12 register */
+#define FUSES_FUCFG12_Msk                     _UINT32_(0x007FFFFF)                                 /* (FUSES_FUCFG12) Register Mask  */
 
-#define FUSES_FUCFG12_NONSECC_SERCOM_Pos      _UINT32_(0)                                          /* (FUSES_FUCFG12 Position) BOOTROM NONSEC C SERCOM6 secure/non-secure */
-#define FUSES_FUCFG12_NONSECC_SERCOM_Msk      (_UINT32_(0x3) << FUSES_FUCFG12_NONSECC_SERCOM_Pos)  /* (FUSES_FUCFG12 Mask) NONSECC_SERCOM */
+#define FUSES_FUCFG12_NONSECC_SERCOM_Pos      _UINT32_(0)                                          /* (FUSES_FUCFG12 Position) BOOTROM NONSEC C SERCOM4 secure/non-secure */
+#define FUSES_FUCFG12_NONSECC_SERCOM_Msk      (_UINT32_(0xF) << FUSES_FUCFG12_NONSECC_SERCOM_Pos)  /* (FUSES_FUCFG12 Mask) NONSECC_SERCOM */
 #define FUSES_FUCFG12_NONSECC_SERCOM(value)   (FUSES_FUCFG12_NONSECC_SERCOM_Msk & (_UINT32_(value) << FUSES_FUCFG12_NONSECC_SERCOM_Pos)) 
-#define FUSES_FUCFG12_NONSECC_TCC_Pos         _UINT32_(2)                                          /* (FUSES_FUCFG12 Position) BOOTROM NONSEC C TCC4 secure/non-secure */
+#define FUSES_FUCFG12_NONSECC_TCC_Pos         _UINT32_(4)                                          /* (FUSES_FUCFG12 Position) BOOTROM NONSEC C TCC4 secure/non-secure */
 #define FUSES_FUCFG12_NONSECC_TCC_Msk         (_UINT32_(0xF) << FUSES_FUCFG12_NONSECC_TCC_Pos)     /* (FUSES_FUCFG12 Mask) NONSECC_TCC */
 #define FUSES_FUCFG12_NONSECC_TCC(value)      (FUSES_FUCFG12_NONSECC_TCC_Msk & (_UINT32_(value) << FUSES_FUCFG12_NONSECC_TCC_Pos)) 
-#define FUSES_FUCFG12_NONSECC_CAN_Pos         _UINT32_(13)                                         /* (FUSES_FUCFG12 Position) BOOTROM NONSEC C CANx secure/non-secure */
+#define FUSES_FUCFG12_NONSECC_CAN_Pos         _UINT32_(15)                                         /* (FUSES_FUCFG12 Position) BOOTROM NONSEC C CANx secure/non-secure */
 #define FUSES_FUCFG12_NONSECC_CAN_Msk         (_UINT32_(0x3) << FUSES_FUCFG12_NONSECC_CAN_Pos)     /* (FUSES_FUCFG12 Mask) NONSECC_CAN */
 #define FUSES_FUCFG12_NONSECC_CAN(value)      (FUSES_FUCFG12_NONSECC_CAN_Msk & (_UINT32_(value) << FUSES_FUCFG12_NONSECC_CAN_Pos)) 
-#define FUSES_FUCFG12_NONSECC_SDMMC_Pos       _UINT32_(17)                                         /* (FUSES_FUCFG12 Position) BOOTROM NONSEC C SDMMCx secure/non-secure */
+#define FUSES_FUCFG12_NONSECC_SDMMC_Pos       _UINT32_(19)                                         /* (FUSES_FUCFG12 Position) BOOTROM NONSEC C SDMMCx secure/non-secure */
 #define FUSES_FUCFG12_NONSECC_SDMMC_Msk       (_UINT32_(0x3) << FUSES_FUCFG12_NONSECC_SDMMC_Pos)   /* (FUSES_FUCFG12 Mask) NONSECC_SDMMC */
 #define FUSES_FUCFG12_NONSECC_SDMMC(value)    (FUSES_FUCFG12_NONSECC_SDMMC_Msk & (_UINT32_(value) << FUSES_FUCFG12_NONSECC_SDMMC_Pos)) 
 

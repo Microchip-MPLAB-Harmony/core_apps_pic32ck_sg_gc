@@ -1,7 +1,7 @@
 /*--------------------------------------------------------------------------
  * MPLAB XC32 Compiler -  PIC32CK2051SG01144 linker script
  * 
- * Copyright (c) 2023, Microchip Technology Inc. and its subsidiaries ("Microchip")
+ * Copyright (c) 2024, Microchip Technology Inc. and its subsidiaries ("Microchip")
  * All rights reserved.
  * 
  * This software is developed by Microchip Technology Inc. and its
@@ -249,7 +249,7 @@ MEMORY
 # define DATA_REGION ram
 #endif 
 #ifndef VECTOR_REGION
-# define VECTOR_REGION CODE_REGION
+# define VECTOR_REGION boot_rom
 #endif
 
 __rom_end = ORIGIN(rom) + LENGTH(rom);

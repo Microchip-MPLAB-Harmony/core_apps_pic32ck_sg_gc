@@ -1,9 +1,13 @@
-<?xml version='1.0' encoding='UTF-8'?>
+<?xml version="1.0" encoding="UTF-8"?>
 <configurationDescriptor version="65">
   <logicalFolder name="root" displayName="root" projectFiles="true">
-    <logicalFolder name="HeaderFiles" displayName="Header Files" projectFiles="true">
+    <logicalFolder name="HeaderFiles"
+                   displayName="Header Files"
+                   projectFiles="true">
       <logicalFolder name="config" displayName="config" projectFiles="true">
-        <logicalFolder name="pic32ck_sg01_cult" displayName="pic32ck_sg01_cult" projectFiles="true">
+        <logicalFolder name="pic32ck_sg01_cult"
+                       displayName="pic32ck_sg01_cult"
+                       projectFiles="true">
           <logicalFolder name="bsp" displayName="bsp" projectFiles="true">
             <itemPath>../src/config/pic32ck_sg01_cult/bsp/bsp.h</itemPath>
           </logicalFolder>
@@ -90,7 +94,9 @@
             </logicalFolder>
           </logicalFolder>
         </logicalFolder>
-        <logicalFolder name="PIC32CK2051SG01144_DFP" displayName="PIC32CK2051SG01144_DFP" projectFiles="true">
+        <logicalFolder name="PIC32CK2051SG01144_DFP"
+                       displayName="PIC32CK2051SG01144_DFP"
+                       projectFiles="true">
           <logicalFolder name="component" displayName="component" projectFiles="true">
             <itemPath>../src/packs/PIC32CK2051SG01144_DFP/component/hmatrix2.h</itemPath>
             <itemPath>../src/packs/PIC32CK2051SG01144_DFP/component/usb.h</itemPath>
@@ -100,7 +106,6 @@
             <itemPath>../src/packs/PIC32CK2051SG01144_DFP/component/osc32kctrl.h</itemPath>
             <itemPath>../src/packs/PIC32CK2051SG01144_DFP/component/rtc.h</itemPath>
             <itemPath>../src/packs/PIC32CK2051SG01144_DFP/component/sercom.h</itemPath>
-            <itemPath>../src/packs/PIC32CK2051SG01144_DFP/component/sig.h</itemPath>
             <itemPath>../src/packs/PIC32CK2051SG01144_DFP/component/eth.h</itemPath>
             <itemPath>../src/packs/PIC32CK2051SG01144_DFP/component/pdec.h</itemPath>
             <itemPath>../src/packs/PIC32CK2051SG01144_DFP/component/prm.h</itemPath>
@@ -148,7 +153,6 @@
             <itemPath>../src/packs/PIC32CK2051SG01144_DFP/instance/tcc4.h</itemPath>
             <itemPath>../src/packs/PIC32CK2051SG01144_DFP/instance/fcw.h</itemPath>
             <itemPath>../src/packs/PIC32CK2051SG01144_DFP/instance/cmcc.h</itemPath>
-            <itemPath>../src/packs/PIC32CK2051SG01144_DFP/instance/sig.h</itemPath>
             <itemPath>../src/packs/PIC32CK2051SG01144_DFP/instance/spi_ixs.h</itemPath>
             <itemPath>../src/packs/PIC32CK2051SG01144_DFP/instance/pdec.h</itemPath>
             <itemPath>../src/packs/PIC32CK2051SG01144_DFP/instance/trng.h</itemPath>
@@ -158,7 +162,6 @@
             <itemPath>../src/packs/PIC32CK2051SG01144_DFP/instance/sercom3.h</itemPath>
             <itemPath>../src/packs/PIC32CK2051SG01144_DFP/instance/ccl.h</itemPath>
             <itemPath>../src/packs/PIC32CK2051SG01144_DFP/instance/tram.h</itemPath>
-            <itemPath>../src/packs/PIC32CK2051SG01144_DFP/instance/sig_ns.h</itemPath>
             <itemPath>../src/packs/PIC32CK2051SG01144_DFP/instance/gclk.h</itemPath>
             <itemPath>../src/packs/PIC32CK2051SG01144_DFP/instance/fuses.h</itemPath>
             <itemPath>../src/packs/PIC32CK2051SG01144_DFP/instance/oscctrl.h</itemPath>
@@ -213,16 +216,31 @@
       <itemPath>../src/app.h</itemPath>
       <itemPath>../src/app1.h</itemPath>
     </logicalFolder>
-    <logicalFolder name="LinkerScript" displayName="Linker Files" projectFiles="true">
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="true">
+      <itemPath>Makefile</itemPath>
+      <itemPath>basic_freertos_trustZone_pic32ck_sg01_cult_NonSecure.mc3</itemPath>
+      <itemPath>../src/config/pic32ck_sg01_cult/harmony-manifest-success.yml</itemPath>
+    </logicalFolder>
+    <logicalFolder name="LinkerScript"
+                   displayName="Linker Files"
+                   projectFiles="true">
       <logicalFolder name="config" displayName="config" projectFiles="true">
-        <logicalFolder name="pic32ck_sg01_cult" displayName="pic32ck_sg01_cult" projectFiles="true">
+        <logicalFolder name="pic32ck_sg01_cult"
+                       displayName="pic32ck_sg01_cult"
+                       projectFiles="true">
           <itemPath>../src/config/pic32ck_sg01_cult/PIC32CK2051SG01144.ld</itemPath>
         </logicalFolder>
       </logicalFolder>
     </logicalFolder>
-    <logicalFolder name="SourceFiles" displayName="Source Files" projectFiles="true">
+    <logicalFolder name="SourceFiles"
+                   displayName="Source Files"
+                   projectFiles="true">
       <logicalFolder name="config" displayName="config" projectFiles="true">
-        <logicalFolder name="pic32ck_sg01_cult" displayName="pic32ck_sg01_cult" projectFiles="true">
+        <logicalFolder name="pic32ck_sg01_cult"
+                       displayName="pic32ck_sg01_cult"
+                       projectFiles="true">
           <logicalFolder name="bsp" displayName="bsp" projectFiles="true">
             <itemPath>../src/config/pic32ck_sg01_cult/bsp/bsp.c</itemPath>
           </logicalFolder>
@@ -284,11 +302,6 @@
       <itemPath>../src/config/pic32ck_sg01_cult/pin_configurations.csv</itemPath>
       <itemPath>../src/app.c</itemPath>
     </logicalFolder>
-    <logicalFolder name="ExternalFiles" displayName="Important Files" projectFiles="false">
-      <itemPath>Makefile</itemPath>
-      <itemPath>basic_freertos_trustZone_pic32ck_sg01_cult_NonSecure.mc3</itemPath>
-      <itemPath>../src/config/pic32ck_sg01_cult/harmony-manifest-success.yml</itemPath>
-    </logicalFolder>
   </logicalFolder>
   <projectmakefile>Makefile</projectmakefile>
   <confs>
@@ -296,16 +309,16 @@
       <toolsSet>
         <developmentServer>localhost</developmentServer>
         <targetDevice>PIC32CK2051SG01144</targetDevice>
-        <targetHeader/>
-        <targetPluginBoard/>
-        <platformTool/>
+        <targetHeader></targetHeader>
+        <targetPluginBoard></targetPluginBoard>
+        <platformTool>pkob4hybrid</platformTool>
         <languageToolchain>XC32</languageToolchain>
-        <languageToolchainVersion>4.21</languageToolchainVersion>
+        <languageToolchainVersion>4.35</languageToolchainVersion>
         <platform>3</platform>
       </toolsSet>
       <packs>
-        <pack name="PIC32CK-SG_DFP" vendor="Microchip" version="1.0.141"/>
-        <pack name="CMSIS" vendor="ARM" version="5.4.0"/>
+        <pack name="PIC32CK-SG_DFP" vendor="Microchip" version="1.3.168"/>
+        <pack name="CMSIS" vendor="ARM" version="5.8.0"/>
       </packs>
       <ScriptingSettings>
       </ScriptingSettings>
@@ -317,11 +330,24 @@
         <archiverTool>
         </archiverTool>
         <loading>
-          <makeArtifact PL="../../../Secure/firmware/pic32ck_sg01_cult_Secure.X" CT="1" CN="pic32ck_sg01_cult" AC="true" BL="true" WD="../../../Secure/firmware/pic32ck_sg01_cult_Secure.X" BC="${MAKE}  -f Makefile CONF=pic32ck_sg01_cult" DBC="${MAKE}  -f Makefile CONF=pic32ck_sg01_cult TYPE_IMAGE=DEBUG_RUN" CC="rm -rf &quot;build/pic32ck_sg01_cult&quot; &quot;dist/pic32ck_sg01_cult&quot;" OP="dist/pic32ck_sg01_cult/production/pic32ck_sg01_cult_Secure.X.production.hex" DOP="dist/pic32ck_sg01_cult/debug/pic32ck_sg01_cult_Secure.X.debug.elf" FL="dist/pic32ck_sg01_cult/production/pic32ck_sg01_cult_Secure.X.production.hex" PD="dist/pic32ck_sg01_cult/production/pic32ck_sg01_cult_Secure.X.production.elf" DD="dist/pic32ck_sg01_cult/debug/pic32ck_sg01_cult_Secure.X.debug.elf">
+          <makeArtifact PL="../../../Secure/firmware/pic32ck_sg01_cult_Secure.X"
+                        CT="1"
+                        CN="pic32ck_sg01_cult"
+                        AC="true"
+                        BL="true"
+                        WD="../../../Secure/firmware/pic32ck_sg01_cult_Secure.X"
+                        BC="${MAKE}  -f Makefile CONF=pic32ck_sg01_cult"
+                        DBC="${MAKE}  -f Makefile CONF=pic32ck_sg01_cult TYPE_IMAGE=DEBUG_RUN"
+                        CC="rm -rf &quot;build/pic32ck_sg01_cult&quot; &quot;dist/pic32ck_sg01_cult&quot;"
+                        OP="dist/pic32ck_sg01_cult/production/pic32ck_sg01_cult_Secure.X.production.hex"
+                        DOP="dist/pic32ck_sg01_cult/debug/pic32ck_sg01_cult_Secure.X.debug.elf"
+                        FL="dist/pic32ck_sg01_cult/production/pic32ck_sg01_cult_Secure.X.production.hex"
+                        PD="dist/pic32ck_sg01_cult/production/pic32ck_sg01_cult_Secure.X.production.elf"
+                        DD="dist/pic32ck_sg01_cult/debug/pic32ck_sg01_cult_Secure.X.debug.elf">
           </makeArtifact>
           <useAlternateLoadableFile>false</useAlternateLoadableFile>
           <parseOnProdLoad>false</parseOnProdLoad>
-          <alternateLoadableFile/>
+          <alternateLoadableFile></alternateLoadableFile>
         </loading>
         <subordinates>
         </subordinates>
@@ -329,9 +355,9 @@
       <makeCustomizationType>
         <makeCustomizationPreStepEnabled>false</makeCustomizationPreStepEnabled>
         <makeUseCleanTarget>false</makeUseCleanTarget>
-        <makeCustomizationPreStep/>
+        <makeCustomizationPreStep></makeCustomizationPreStep>
         <makeCustomizationPostStepEnabled>false</makeCustomizationPostStepEnabled>
-        <makeCustomizationPostStep/>
+        <makeCustomizationPostStep></makeCustomizationPostStep>
         <makeCustomizationPutChecksumInUserID>false</makeCustomizationPutChecksumInUserID>
         <makeCustomizationEnableLongLines>false</makeCustomizationEnableLongLines>
         <makeCustomizationNormalizeHexFile>false</makeCustomizationNormalizeHexFile>
@@ -345,7 +371,8 @@
         <property key="enable-symbols" value="true"/>
         <property key="enable-unroll-loops" value="false"/>
         <property key="exclude-floating-point" value="false"/>
-        <property key="extra-include-directories" value="../../../Secure/firmware/src/third_party/rtos/FreeRTOS/Source/portable/GCC/ARM_CM33/secure;../src;../src/config/pic32ck_sg01_cult;../src/packs/CMSIS/;../src/packs/CMSIS/CMSIS/Core/Include;../src/packs/PIC32CK2051SG01144_DFP;../src/third_party/rtos/FreeRTOS/Source/include;../src/third_party/rtos/FreeRTOS/Source/portable/GCC/ARM_CM33/non_secure"/>
+        <property key="extra-include-directories"
+                  value="../../../Secure/firmware/src/third_party/rtos/FreeRTOS/Source/portable/GCC/ARM_CM33/secure;../src;../src/config/pic32ck_sg01_cult;../src/packs/CMSIS/;../src/packs/CMSIS/CMSIS/Core/Include;../src/packs/PIC32CK2051SG01144_DFP;../src/third_party/rtos/FreeRTOS/Source/include;../src/third_party/rtos/FreeRTOS/Source/portable/GCC/ARM_CM33/non_secure"/>
         <property key="generate-16-bit-code" value="false"/>
         <property key="generate-micro-compressed-code" value="false"/>
         <property key="isolate-each-function" value="true"/>
@@ -422,7 +449,8 @@
         <property key="no-startup-files" value="false"/>
         <property key="oXC32ld-extra-opts" value=""/>
         <property key="optimization-level" value=""/>
-        <property key="preprocessor-macros" value="ANS_SIZE=0x100000;NONSECURE;RNS_SIZE=0x40000"/>
+        <property key="preprocessor-macros"
+                  value="ANS_SIZE=0x100000;NONSECURE;RNS_SIZE=0x40000;VECTOR_REGION=CODE_REGION"/>
         <property key="remove-unused-sections" value="true"/>
         <property key="report-memory-usage" value="false"/>
         <property key="serial-length" value=""/>
@@ -445,7 +473,8 @@
         <property key="enable-unroll-loops" value="false"/>
         <property key="exceptions" value="true"/>
         <property key="exclude-floating-point" value="false"/>
-        <property key="extra-include-directories" value="../../../Secure/firmware/src/third_party/rtos/FreeRTOS/Source/portable/GCC/ARM_CM33/secure;../src;../src/config/pic32ck_sg01_cult;../src/packs/CMSIS/;../src/packs/CMSIS/CMSIS/Core/Include;../src/packs/PIC32CK2051SG01144_DFP;../src/third_party/rtos/FreeRTOS/Source/include;../src/third_party/rtos/FreeRTOS/Source/portable/GCC/ARM_CM33/non_secure"/>
+        <property key="extra-include-directories"
+                  value="../../../Secure/firmware/src/third_party/rtos/FreeRTOS/Source/portable/GCC/ARM_CM33/secure;../src;../src/config/pic32ck_sg01_cult;../src/packs/CMSIS/;../src/packs/CMSIS/CMSIS/Core/Include;../src/packs/PIC32CK2051SG01144_DFP;../src/third_party/rtos/FreeRTOS/Source/include;../src/third_party/rtos/FreeRTOS/Source/portable/GCC/ARM_CM33/non_secure"/>
         <property key="generate-16-bit-code" value="false"/>
         <property key="generate-micro-compressed-code" value="false"/>
         <property key="isolate-each-function" value="true"/>
@@ -477,6 +506,122 @@
         <property key="stack-smashing" value=""/>
         <property key="wpo-lto" value="false"/>
       </C32Global>
+      <Tool>
+        <property key="AutoSelectMemRanges" value="auto"/>
+        <property key="SecureSegment.SegmentProgramming" value="FullChipProgramming"/>
+        <property key="ToolFirmwareFilePath"
+                  value="Press to browse for a specific firmware version"/>
+        <property key="ToolFirmwareOption.UpdateOptions"
+                  value="ToolFirmwareOption.UseLatest"/>
+        <property key="ToolFirmwareToolPack"
+                  value="Press to select which tool pack to use"/>
+        <property key="communication.interface" value="swd"/>
+        <property key="communication.interface.jtag" value="2wire"/>
+        <property key="communication.speed" value="1.000"/>
+        <property key="debugoptions.debug-startup" value="Use system settings"/>
+        <property key="debugoptions.reset-behaviour" value="Use system settings"/>
+        <property key="debugoptions.simultaneous.debug" value="false"/>
+        <property key="debugoptions.useswbreakpoints" value="false"/>
+        <property key="event.recorder.debugger.behavior" value="Running"/>
+        <property key="event.recorder.enabled" value="false"/>
+        <property key="event.recorder.scvd.files" value=""/>
+        <property key="freeze.timers" value="false"/>
+        <property key="lastid" value=""/>
+        <property key="memories.aux" value="false"/>
+        <property key="memories.bootflash" value="true"/>
+        <property key="memories.configurationmemory" value="true"/>
+        <property key="memories.configurationmemory2" value="true"/>
+        <property key="memories.dataflash" value="true"/>
+        <property key="memories.eeprom" value="true"/>
+        <property key="memories.exclude.configurationmemory" value="true"/>
+        <property key="memories.flashdata" value="true"/>
+        <property key="memories.id" value="true"/>
+        <property key="memories.instruction.ram.ranges"
+                  value="${memories.instruction.ram.ranges}"/>
+        <property key="memories.programmemory" value="true"/>
+        <property key="memories.programmemory.ranges" value="0-63ffffff"/>
+        <property key="programoptions.donoteraseauxmem" value="false"/>
+        <property key="programoptions.eraseb4program" value="true"/>
+        <property key="programoptions.pgmentry.voltage" value="low"/>
+        <property key="programoptions.pgmspeed" value="Med"/>
+        <property key="programoptions.preservedataflash" value="false"/>
+        <property key="programoptions.preservedataflash.ranges"
+                  value="${memories.dataflash.default}"/>
+        <property key="programoptions.preserveeeprom" value="false"/>
+        <property key="programoptions.preserveeeprom.ranges" value=""/>
+        <property key="programoptions.preserveprogram.ranges" value=""/>
+        <property key="programoptions.preserveprogramrange" value="false"/>
+        <property key="programoptions.preserveuserid" value="false"/>
+        <property key="programoptions.program.otpconfig" value="false"/>
+        <property key="programoptions.programcalmem" value="false"/>
+        <property key="programoptions.programuserotp" value="false"/>
+        <property key="programoptions.smart.program" value="When debugging only"/>
+        <property key="programoptions.testmodeentrymethod" value="VDDFirst"/>
+        <property key="toolpack.updateoptions"
+                  value="toolpack.updateoptions.uselatestoolpack"/>
+        <property key="toolpack.updateoptions.packversion"
+                  value="Press to select which tool pack to use"/>
+        <property key="x.erase.key" value="0xFFFFFFFF,0xFFFFFFFF,0xFFFFFFFF,0xFFFFFFFF"/>
+        <property key="x.erase.type" value="ChipEraseAll"/>
+      </Tool>
+      <pkob4hybrid>
+        <property key="AutoSelectMemRanges" value="auto"/>
+        <property key="SecureSegment.SegmentProgramming" value="FullChipProgramming"/>
+        <property key="ToolFirmwareFilePath"
+                  value="Press to browse for a specific firmware version"/>
+        <property key="ToolFirmwareOption.UpdateOptions"
+                  value="ToolFirmwareOption.UseLatest"/>
+        <property key="ToolFirmwareToolPack"
+                  value="Press to select which tool pack to use"/>
+        <property key="communication.interface" value="swd"/>
+        <property key="communication.interface.jtag" value="2wire"/>
+        <property key="communication.speed" value="1.000"/>
+        <property key="debugoptions.debug-startup" value="Use system settings"/>
+        <property key="debugoptions.reset-behaviour" value="Use system settings"/>
+        <property key="debugoptions.simultaneous.debug" value="false"/>
+        <property key="debugoptions.useswbreakpoints" value="false"/>
+        <property key="event.recorder.debugger.behavior" value="Running"/>
+        <property key="event.recorder.enabled" value="false"/>
+        <property key="event.recorder.scvd.files" value=""/>
+        <property key="freeze.timers" value="false"/>
+        <property key="lastid" value=""/>
+        <property key="memories.aux" value="false"/>
+        <property key="memories.bootflash" value="true"/>
+        <property key="memories.configurationmemory" value="true"/>
+        <property key="memories.configurationmemory2" value="true"/>
+        <property key="memories.dataflash" value="true"/>
+        <property key="memories.eeprom" value="true"/>
+        <property key="memories.exclude.configurationmemory" value="true"/>
+        <property key="memories.flashdata" value="true"/>
+        <property key="memories.id" value="true"/>
+        <property key="memories.instruction.ram.ranges"
+                  value="${memories.instruction.ram.ranges}"/>
+        <property key="memories.programmemory" value="true"/>
+        <property key="memories.programmemory.ranges" value="0-63ffffff"/>
+        <property key="programoptions.donoteraseauxmem" value="false"/>
+        <property key="programoptions.eraseb4program" value="true"/>
+        <property key="programoptions.pgmentry.voltage" value="low"/>
+        <property key="programoptions.pgmspeed" value="Med"/>
+        <property key="programoptions.preservedataflash" value="false"/>
+        <property key="programoptions.preservedataflash.ranges"
+                  value="${memories.dataflash.default}"/>
+        <property key="programoptions.preserveeeprom" value="false"/>
+        <property key="programoptions.preserveeeprom.ranges" value=""/>
+        <property key="programoptions.preserveprogram.ranges" value=""/>
+        <property key="programoptions.preserveprogramrange" value="false"/>
+        <property key="programoptions.preserveuserid" value="false"/>
+        <property key="programoptions.program.otpconfig" value="false"/>
+        <property key="programoptions.programcalmem" value="false"/>
+        <property key="programoptions.programuserotp" value="false"/>
+        <property key="programoptions.smart.program" value="When debugging only"/>
+        <property key="programoptions.testmodeentrymethod" value="VDDFirst"/>
+        <property key="toolpack.updateoptions"
+                  value="toolpack.updateoptions.uselatestoolpack"/>
+        <property key="toolpack.updateoptions.packversion"
+                  value="Press to select which tool pack to use"/>
+        <property key="x.erase.key" value="0xFFFFFFFF,0xFFFFFFFF,0xFFFFFFFF,0xFFFFFFFF"/>
+        <property key="x.erase.type" value="ChipEraseAll"/>
+      </pkob4hybrid>
     </conf>
   </confs>
 </configurationDescriptor>

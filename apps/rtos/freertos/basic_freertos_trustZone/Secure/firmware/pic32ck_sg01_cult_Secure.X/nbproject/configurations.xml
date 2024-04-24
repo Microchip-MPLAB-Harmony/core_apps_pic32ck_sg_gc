@@ -111,7 +111,6 @@
             <itemPath>../src/packs/PIC32CK2051SG01144_DFP/component/fcw.h</itemPath>
             <itemPath>../src/packs/PIC32CK2051SG01144_DFP/component/pm.h</itemPath>
             <itemPath>../src/packs/PIC32CK2051SG01144_DFP/component/sdmmc.h</itemPath>
-            <itemPath>../src/packs/PIC32CK2051SG01144_DFP/component/sig.h</itemPath>
             <itemPath>../src/packs/PIC32CK2051SG01144_DFP/component/oscctrl.h</itemPath>
             <itemPath>../src/packs/PIC32CK2051SG01144_DFP/component/pdec.h</itemPath>
             <itemPath>../src/packs/PIC32CK2051SG01144_DFP/component/pcc.h</itemPath>
@@ -129,7 +128,6 @@
             <itemPath>../src/packs/PIC32CK2051SG01144_DFP/instance/fcw.h</itemPath>
             <itemPath>../src/packs/PIC32CK2051SG01144_DFP/instance/oscctrl.h</itemPath>
             <itemPath>../src/packs/PIC32CK2051SG01144_DFP/instance/dma0.h</itemPath>
-            <itemPath>../src/packs/PIC32CK2051SG01144_DFP/instance/sig.h</itemPath>
             <itemPath>../src/packs/PIC32CK2051SG01144_DFP/instance/rstc.h</itemPath>
             <itemPath>../src/packs/PIC32CK2051SG01144_DFP/instance/adc.h</itemPath>
             <itemPath>../src/packs/PIC32CK2051SG01144_DFP/instance/sercom0.h</itemPath>
@@ -169,7 +167,6 @@
             <itemPath>../src/packs/PIC32CK2051SG01144_DFP/instance/cmcc.h</itemPath>
             <itemPath>../src/packs/PIC32CK2051SG01144_DFP/instance/ptc.h</itemPath>
             <itemPath>../src/packs/PIC32CK2051SG01144_DFP/instance/usb.h</itemPath>
-            <itemPath>../src/packs/PIC32CK2051SG01144_DFP/instance/sig_ns.h</itemPath>
             <itemPath>../src/packs/PIC32CK2051SG01144_DFP/instance/tcc5.h</itemPath>
             <itemPath>../src/packs/PIC32CK2051SG01144_DFP/instance/hsm.h</itemPath>
             <itemPath>../src/packs/PIC32CK2051SG01144_DFP/instance/tcc1.h</itemPath>
@@ -194,6 +191,12 @@
         </logicalFolder>
       </logicalFolder>
       <itemPath>../src/config/pic32ck_sg01_cult/device.h</itemPath>
+    </logicalFolder>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="true">
+      <itemPath>Makefile</itemPath>
+      <itemPath>../../../NonSecure/firmware/pic32ck_sg01_cult_NonSecure.X/basic_freertos_trustZone_pic32ck_sg01_cult_NonSecure.mc3</itemPath>
     </logicalFolder>
     <logicalFolder name="LinkerScript"
                    displayName="Linker Files"
@@ -267,12 +270,6 @@
       </logicalFolder>
       <itemPath>../src/main.c</itemPath>
     </logicalFolder>
-    <logicalFolder name="ExternalFiles"
-                   displayName="Important Files"
-                   projectFiles="false">
-      <itemPath>Makefile</itemPath>
-      <itemPath>../../../NonSecure/firmware/pic32ck_sg01_cult_NonSecure.X/basic_freertos_trustZone_pic32ck_sg01_cult_NonSecure.mc3</itemPath>
-    </logicalFolder>
   </logicalFolder>
   <projectmakefile>Makefile</projectmakefile>
   <confs>
@@ -282,14 +279,14 @@
         <targetDevice>PIC32CK2051SG01144</targetDevice>
         <targetHeader></targetHeader>
         <targetPluginBoard></targetPluginBoard>
-        <platformTool></platformTool>
+        <platformTool>noID</platformTool>
         <languageToolchain>XC32</languageToolchain>
-        <languageToolchainVersion>4.21</languageToolchainVersion>
+        <languageToolchainVersion>4.35</languageToolchainVersion>
         <platform>3</platform>
       </toolsSet>
       <packs>
-        <pack name="PIC32CK-SG_DFP" vendor="Microchip" version="1.0.141"/>
-        <pack name="CMSIS" vendor="ARM" version="5.4.0"/>
+        <pack name="CMSIS" vendor="ARM" version="5.8.0"/>
+        <pack name="PIC32CK-SG_DFP" vendor="Microchip" version="1.3.168"/>
       </packs>
       <ScriptingSettings>
       </ScriptingSettings>
