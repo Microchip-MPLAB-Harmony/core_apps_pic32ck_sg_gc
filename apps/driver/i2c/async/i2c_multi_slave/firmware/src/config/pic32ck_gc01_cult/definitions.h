@@ -57,8 +57,8 @@
 #include "peripheral/pm/plib_pm.h"
 #include "peripheral/sercom/usart/plib_sercom5_usart.h"
 #include "peripheral/sercom/i2c_master/plib_sercom4_i2c_master.h"
-#include "system/time/sys_time.h"
 #include "driver/i2c/drv_i2c.h"
+#include "system/time/sys_time.h"
 #include "bsp/bsp.h"
 #include "system/console/sys_console.h"
 #include "system/console/src/sys_console_uart_definitions.h"
@@ -80,13 +80,13 @@ extern "C" {
 // DOM-IGNORE-END
 
 /* Device Information */
-#define DEVICE_NAME			 "PIC32CK2051GC01144"
-#define DEVICE_ARCH			 "CORTEX-M33"
-#define DEVICE_FAMILY		 "PIC32CK"
-#define DEVICE_SERIES		 "PIC32CKGC01"
+#define DEVICE_NAME          "PIC32CK2051GC01144"
+#define DEVICE_ARCH          "CORTEX-M33"
+#define DEVICE_FAMILY        "PIC32CK"
+#define DEVICE_SERIES        "PIC32CKGC01"
 
 /* CPU clock frequency */
-#define CPU_CLOCK_FREQUENCY 120000000
+#define CPU_CLOCK_FREQUENCY 120000000U
 
 // *****************************************************************************
 // *****************************************************************************
