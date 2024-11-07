@@ -89,11 +89,62 @@ static uint8_t jedecID[4];
 // *****************************************************************************
 // *****************************************************************************
 
+static bool DRV_SST26_InitiateReadStatus(void)
+{
+    void *ptr = NULL;
+    
+    dObj->isTransferDone = false;
+
+
+    sqiCmdBuffer[0]             = (uint8_t)SST26_CMD_READ_STATUS_REG;
+
+    sqiCmdBuffer[1]             = DUMMY_BYTE;
+
+    sqiCmdDesc[0].bd_ctrl       = ( SQI_BDCTRL_BD_BUFLEN(2) | SQI_LANE_MODE_M |
+                                    SQI_CHIP_SELECT | SQI_BDCTRL_DESC_EN_Msk);
+    ptr                         = &sqiCmdBuffer[0];
+    sqiCmdDesc[0].bd_bufaddr    = (uint32_t *)(ptr);
+    sqiCmdDesc[0].bd_stat       = 0;
+    ptr                         = &sqiBufDesc[0];
+    sqiCmdDesc[0].bd_nxtptr     = (sqi_dma_desc_t *)(ptr);
+
+    sqiBufDesc[0].bd_ctrl       = ( SQI_BDCTRL_BD_BUFLEN(1) | SQI_BDCTRL_PKT_INT_EN_Msk |
+                                    SQI_BDCTRL_LIFM_Msk | SQI_BDCTRL_LAST_BD_Msk |
+                                    SQI_LANE_MODE_M | SQI_BDCTRL_DIR_Msk |
+                                    SQI_CHIP_SELECT | SQI_BDCTRL_CS_ASSERT_Msk |
+                                    SQI_BDCTRL_DESC_EN_Msk);
+    ptr                         = sqiReadBuffer;
+    sqiBufDesc[0].bd_bufaddr    = (uint32_t *)(ptr);
+    sqiBufDesc[0].bd_stat       = 0;
+    sqiBufDesc[0].bd_nxtptr     = NULL;
+
+    dObj->curOpType = DRV_SST26_OPERATION_TYPE_READ_STATUS;
+
+
+    // Initialize the root buffer descriptor
+    dObj->sst26Plib->DMATransfer((sqi_dma_desc_t *)(&sqiCmdDesc[0]));
+	
+	return true;
+}
+
 static void DRV_SST26_EventHandler(uintptr_t context)
 {
     DRV_SST26_OBJECT *obj = (DRV_SST26_OBJECT *)context;
 
     obj->isTransferDone = true;
+	
+	if (obj->curOpType == DRV_SST26_OPERATION_TYPE_WRITE || obj->curOpType == DRV_SST26_OPERATION_TYPE_ERASE)
+	{
+		(void)DRV_SST26_InitiateReadStatus();
+	}
+	else if (obj->curOpType == DRV_SST26_OPERATION_TYPE_READ_STATUS && (sqiReadBuffer[0] & 0x81U) == 0U)
+	{
+		obj->internal_write_complete_flag = true;
+	}
+	else
+	{
+        (void)DRV_SST26_InitiateReadStatus();
+	}
 }
 
 /* This function returns the flash size in bytes for the specified deviceId. A
@@ -298,44 +349,23 @@ bool DRV_SST26_ReadJedecId( const DRV_HANDLE handle, void *jedec_id)
     return true;
 }
 
-bool DRV_SST26_ReadStatus( const DRV_HANDLE handle, void *rx_data, uint32_t rx_data_length )
+bool DRV_SST26_ReadStatus( const DRV_HANDLE handle, void* rx_data, uint32_t rx_data_length )
 {
-    uint8_t* status = (uint8_t *)rx_data;
+    (void)rx_data_length;
+    
+    uint8_t *status = (uint8_t *)rx_data;
+    
+    if (status == NULL)
+    {
+        return false;
+    }
 
     if(DRV_SST26_ValidateHandleAndCheckBusy(handle) == true)
     {
         return false;
     }
 
-    dObj->isTransferDone = false;
-
-
-    sqiCmdBuffer[0]             = (uint8_t)SST26_CMD_READ_STATUS_REG;
-
-    sqiCmdBuffer[1]             = DUMMY_BYTE;
-
-    sqiCmdDesc[0].bd_ctrl       = ( SQI_BDCTRL_BD_BUFLEN(2) | SQI_LANE_MODE_M |
-                                    SQI_CHIP_SELECT | SQI_BDCTRL_DESC_EN_Msk);
-
-    sqiCmdDesc[0].bd_bufaddr    = (uint32_t *)(&sqiCmdBuffer[0]);
-    sqiCmdDesc[0].bd_stat       = 0;
-    sqiCmdDesc[0].bd_nxtptr     = (sqi_dma_desc_t *)(&sqiBufDesc[0]);
-
-    sqiBufDesc[0].bd_ctrl       = ( SQI_BDCTRL_BD_BUFLEN(rx_data_length) | SQI_BDCTRL_PKT_INT_EN_Msk |
-                                    SQI_BDCTRL_LIFM_Msk | SQI_BDCTRL_LAST_BD_Msk |
-                                    SQI_LANE_MODE_M | SQI_BDCTRL_DIR_Msk |
-                                    SQI_CHIP_SELECT | SQI_BDCTRL_CS_ASSERT_Msk |
-                                    SQI_BDCTRL_DESC_EN_Msk);
-
-    sqiBufDesc[0].bd_bufaddr    = (uint32_t *)(sqiReadBuffer);
-    sqiBufDesc[0].bd_stat       = 0;
-    sqiBufDesc[0].bd_nxtptr     = NULL;
-
-    dObj->curOpType = DRV_SST26_OPERATION_TYPE_READ;
-
-
-    // Initialize the root buffer descriptor
-    dObj->sst26Plib->DMATransfer((sqi_dma_desc_t *)(&sqiCmdDesc[0]));
+    (void)DRV_SST26_InitiateReadStatus();
 
     while(dObj->isTransferDone == false)
     {
@@ -356,15 +386,36 @@ DRV_SST26_TRANSFER_STATUS DRV_SST26_TransferStatusGet( const DRV_HANDLE handle )
         return status;
     }
 
-    if (dObj->isTransferDone == true)
+   if(dObj->curOpType == DRV_SST26_OPERATION_TYPE_READ)
     {
-        status = DRV_SST26_TRANSFER_COMPLETED;
+        if (dObj->isTransferDone == true )
+        {
+            status = DRV_SST26_TRANSFER_COMPLETED;
+        }
+        else
+        {
+            status = DRV_SST26_TRANSFER_BUSY;
+        }   
+    }
+    else if (dObj->curOpType == DRV_SST26_OPERATION_TYPE_WRITE ||
+            dObj->curOpType == DRV_SST26_OPERATION_TYPE_ERASE || 
+            dObj->curOpType == DRV_SST26_OPERATION_TYPE_READ_STATUS
+    )
+    {
+        if(dObj->isTransferDone == true && dObj->internal_write_complete_flag == true)
+        {
+            dObj->internal_write_complete_flag = false;
+            status = DRV_SST26_TRANSFER_COMPLETED;
+        }
+        else
+        {
+            status = DRV_SST26_TRANSFER_BUSY;
+        }
     }
     else
     {
-        status = DRV_SST26_TRANSFER_BUSY;
+        //Do nothing
     }
-
     return status;
 }
 
@@ -413,9 +464,9 @@ bool DRV_SST26_Read( const DRV_HANDLE handle, void *rx_data, uint32_t rx_data_le
     sqiCmdDesc[1].bd_nxtptr     = (sqi_dma_desc_t *)(&sqiBufDesc[0]);
 
     i = 0U;
-    while((i < DRV_SST26_BUFF_DESC_NUMBER) && (pendingBytes > 0U))
+    while(i < DRV_SST26_BUFF_DESC_NUMBER)
     {
-        if (pendingBytes > DRV_SST26_PAGE_SIZE)
+        if (pendingBytes >= DRV_SST26_PAGE_SIZE)
         {
             numBytes = DRV_SST26_PAGE_SIZE;
         }
@@ -435,6 +486,10 @@ bool DRV_SST26_Read( const DRV_HANDLE handle, void *rx_data, uint32_t rx_data_le
         pendingBytes    -= numBytes;
         readBuffer      += numBytes;
         i++;
+        if (pendingBytes == 0U)
+        {
+            break;
+        }
     }
 
     /* The last descriptor must indicate the end of the descriptor list */
@@ -454,6 +509,7 @@ bool DRV_SST26_Read( const DRV_HANDLE handle, void *rx_data, uint32_t rx_data_le
 
 bool DRV_SST26_PageWrite( const DRV_HANDLE handle, void *tx_data, uint32_t address )
 {
+    void *ptr = NULL;
     if(DRV_SST26_ValidateHandleAndCheckBusy(handle) == true)
     {
         return false;
@@ -472,7 +528,8 @@ bool DRV_SST26_PageWrite( const DRV_HANDLE handle, void *tx_data, uint32_t addre
     sqiCmdDesc[1].bd_ctrl       = ( SQI_BDCTRL_BD_BUFLEN(4) | SQI_LANE_MODE_M |
                                     SQI_CHIP_SELECT | SQI_BDCTRL_DESC_EN_Msk);
 
-    sqiCmdDesc[1].bd_bufaddr    = (uint32_t *)(&sqiCmdBuffer[4]);
+    ptr                         = &sqiCmdBuffer[4]; 
+    sqiCmdDesc[1].bd_bufaddr    = (uint32_t *)(ptr);
     sqiCmdDesc[1].bd_stat       = 0;
     sqiCmdDesc[1].bd_nxtptr     = (sqi_dma_desc_t *)(&sqiBufDesc[0]);
 
@@ -487,7 +544,8 @@ bool DRV_SST26_PageWrite( const DRV_HANDLE handle, void *tx_data, uint32_t addre
     sqiBufDesc[0].bd_nxtptr     = NULL;
 
     dObj->curOpType = DRV_SST26_OPERATION_TYPE_WRITE;
-
+	
+	dObj->internal_write_complete_flag = false;
 
     // Initialize the root buffer descriptor
     dObj->sst26Plib->DMATransfer((sqi_dma_desc_t *)(&sqiCmdDesc[0]));
@@ -512,7 +570,8 @@ static bool DRV_SST26_Erase( uint8_t *instruction, uint32_t length )
     sqiCmdDesc[1].bd_nxtptr     = NULL;
 
     dObj->curOpType = DRV_SST26_OPERATION_TYPE_ERASE;
-
+	
+	dObj->internal_write_complete_flag = false;
 
     dObj->sst26Plib->DMATransfer((sqi_dma_desc_t *)(&sqiCmdDesc[0]));
 

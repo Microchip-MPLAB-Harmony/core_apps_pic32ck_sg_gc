@@ -127,7 +127,6 @@
             <itemPath>../src/packs/PIC32CK2051GC01144_DFP/component/dsu.h</itemPath>
             <itemPath>../src/packs/PIC32CK2051GC01144_DFP/component/prm.h</itemPath>
             <itemPath>../src/packs/PIC32CK2051GC01144_DFP/component/eic.h</itemPath>
-            <itemPath>../src/packs/PIC32CK2051GC01144_DFP/component/sig.h</itemPath>
             <itemPath>../src/packs/PIC32CK2051GC01144_DFP/component/gclk.h</itemPath>
             <itemPath>../src/packs/PIC32CK2051GC01144_DFP/component/eth.h</itemPath>
             <itemPath>../src/packs/PIC32CK2051GC01144_DFP/component/adc.h</itemPath>
@@ -171,7 +170,6 @@
             <itemPath>../src/packs/PIC32CK2051GC01144_DFP/instance/osc32kctrl.h</itemPath>
             <itemPath>../src/packs/PIC32CK2051GC01144_DFP/instance/sercom3.h</itemPath>
             <itemPath>../src/packs/PIC32CK2051GC01144_DFP/instance/pdec.h</itemPath>
-            <itemPath>../src/packs/PIC32CK2051GC01144_DFP/instance/sig.h</itemPath>
             <itemPath>../src/packs/PIC32CK2051GC01144_DFP/instance/gclk.h</itemPath>
             <itemPath>../src/packs/PIC32CK2051GC01144_DFP/instance/dsu.h</itemPath>
             <itemPath>../src/packs/PIC32CK2051GC01144_DFP/instance/prm.h</itemPath>
@@ -325,12 +323,12 @@
         <targetPluginBoard/>
         <platformTool>pkob4hybrid</platformTool>
         <languageToolchain>XC32</languageToolchain>
-        <languageToolchainVersion>4.21</languageToolchainVersion>
+        <languageToolchainVersion>4.45</languageToolchainVersion>
         <platform>3</platform>
       </toolsSet>
       <packs>
         <pack name="CMSIS" vendor="ARM" version="5.4.0"/>
-        <pack name="PIC32CK-GC_DFP" vendor="Microchip" version="1.0.131"/>
+        <pack name="PIC32CK-GC_DFP" vendor="Microchip" version="1.1.148"/>
       </packs>
       <ScriptingSettings>
       </ScriptingSettings>
