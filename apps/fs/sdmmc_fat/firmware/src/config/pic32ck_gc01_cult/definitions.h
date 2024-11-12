@@ -49,8 +49,8 @@
 #include <stddef.h>
 #include <stdbool.h>
 #include "peripheral/evsys/plib_evsys.h"
-#include "driver/sdmmc/drv_sdmmc.h"
 #include "bsp/bsp.h"
+#include "driver/sdmmc/drv_sdmmc.h"
 #include "system/fs/sys_fs.h"
 #include "system/fs/sys_fs_media_manager.h"
 #include "system/fs/sys_fs_fat_interface.h"
@@ -82,13 +82,13 @@ extern "C" {
 // DOM-IGNORE-END
 
 /* Device Information */
-#define DEVICE_NAME			 "PIC32CK2051GC01144"
-#define DEVICE_ARCH			 "CORTEX-M33"
-#define DEVICE_FAMILY		 "PIC32CK"
-#define DEVICE_SERIES		 "PIC32CKGC01"
+#define DEVICE_NAME          "PIC32CK2051GC01144"
+#define DEVICE_ARCH          "CORTEX-M33"
+#define DEVICE_FAMILY        "PIC32CK"
+#define DEVICE_SERIES        "PIC32CKGC01"
 
 /* CPU clock frequency */
-#define CPU_CLOCK_FREQUENCY 120000000
+#define CPU_CLOCK_FREQUENCY 120000000U
 
 // *****************************************************************************
 // *****************************************************************************
