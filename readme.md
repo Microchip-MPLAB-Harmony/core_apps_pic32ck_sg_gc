@@ -1,46 +1,54 @@
-﻿# Harmony 3 Driver, System Services and RTOS Application Examples for PIC32CK GC/SG Family
+[![MCHP](https://raw.githubusercontent.com/wiki/Microchip-MPLAB-Harmony/Microchip-MPLAB-Harmony.github.io/images/microchip_logo.png)](https://www.microchip.com)
 
-MPLAB® Harmony 3 is an extension of the MPLAB® ecosystem for creating embedded firmware<br /> solutions for Microchip 32-bit SAM and PIC® microcontroller and microprocessor devices.<br /> Refer to the following links for more information.
+# Harmony 3 driver and system service application examples for PIC32CK-GC/SG family
 
--   [Microchip 32-bit MCUs](https://www.microchip.com/design-centers/32-bit)
--   [Microchip 32-bit MPUs](https://www.microchip.com/design-centers/32-bit-mpus)
--   [Microchip MPLAB X IDE](https://www.microchip.com/mplab/mplab-x-ide)
--   [Microchip MPLAB® Harmony](https://www.microchip.com/mplab/mplab-harmony)
--   [Microchip MPLAB® Harmony Pages](https://microchip-mplab-harmony.github.io/)
+MPLAB® Harmony 3 is an extension of the MPLAB® ecosystem for creating embedded firmware solutions for Microchip 32-bit SAM and PIC® microcontroller and microprocessor devices.  Refer to the following links for more information.
 
-This repository contains the MPLAB® Harmony 3 driver and system service application<br /> examples for PIC32CK GC/SG family:
+- [Microchip 32-bit MCUs](https://www.microchip.com/design-centers/32-bit)
+- [Microchip 32-bit MPUs](https://www.microchip.com/design-centers/32-bit-mpus)
+- [Microchip MPLAB X IDE](https://www.microchip.com/mplab/mplab-x-ide)
+- [Microchip MPLAB® Harmony](https://www.microchip.com/mplab/mplab-harmony)
+- [Microchip MPLAB® Harmony Pages](https://microchip-mplab-harmony.github.io/)
 
--   [Release Notes](release_notes.md)
--   [MPLAB® Harmony License](mplab_harmony_license.md)
+This repository contains the MPLAB® Harmony 3 driver and system service application examples for PIC32CK-GC/SG family
 
-To clone or download these applications from Github, go to the [main page of this repository](https://github.com/Microchip-MPLAB-Harmony/core_apps_pic32ck_sg_gc) and then click<br /> **Clone** button to clone this repository or download as zip file. This content<br /> can also be downloaded using content manager by following these [instructions](https://github.com/Microchip-MPLAB-Harmony/contentmanager/wiki).
+- [Release Notes](release_notes.md)
+- [Microchip SLA](Microchip_SLA001.md)
 
+To clone or download these applications from Github, go to the [main page of this repository](https://github.com/Microchip-MPLAB-Harmony/core_apps_pic32ck_sg_gc) and then click **Clone** button to clone this repository or download as zip file.
+This content can also be downloaded using MCC content manager available as part of the MPLAB® X IDE.
 
 ## Contents Summary
 
-|Folder|Description|
-|:-----|:----------|
-|apps|Contains driver and system service<br /> example applications|
+| Folder     | Description                             |
+|:----------:|:---------------------------------------:|
+| apps       | Contains driver and system service example applications |
 
 ## Code Examples
 
-The following applications are provided to demonstrate the typical or interesting<br /> usage models of one or more peripheral libraries.
+Click [here](https://onlinedocs.microchip.com/v2/keyword-lookup?keyword=CORE_APPS_PIC32CK_SG_GC_INTRODUCTION&redirect=true) to view the online documentation of code examples hosted in this repository.
 
-|Name|Description|
-|----|-----------|
-|[Console Debug System Service using UART](https://onlinedocs.microchip.com/v2/keyword-lookup?keyword=CORE_APPS_PIC32CK_SG_GC_CONSOLE_DEBUG_SYSTEM_SERVICE_USING_UART&redirect=true)|This<br /> example application demonstrates the UART based console and<br /> debug system service|
-|[FAT File System using NVM Media](https://onlinedocs.microchip.com/v2/keyword-lookup?keyword=CORE_APPS_PIC32CK_SG_GC_FAT_FILESYSTEM_USING_NVM_MEDIA&redirect=true)|This<br /> application shows an example of implementing a FAT disk in the<br /> device internal Flash memory|
-|[FAT File System using SD Card media](https://onlinedocs.microchip.com/v2/keyword-lookup?keyword=CORE_APPS_PIC32CK_SG_GC_FAT_FILESYSTEM_USING_SD_CARD_MEDIA&redirect=true)|This<br /> application shows an example of using the MPLAB Harmony File<br /> System to access and modify the contents of a SD card using the<br /> SDSPI driver and the SPI PLIB|
-|[FAT File System using SDMMC Media](https://onlinedocs.microchip.com/v2/keyword-lookup?keyword=CORE_APPS_PIC32CK_SG_GC_FAT_FILESYSTEM_USING_SDMMC_MEDIA&redirect=true)|This<br /> application shows an example of using the MPLAB Harmony File<br /> System to access and modify the contents of a SD card using the<br /> SDMMC driver|
-|[FAT File System using SST26 Media](https://onlinedocs.microchip.com/v2/keyword-lookup?keyword=CORE_APPS_PIC32CK_SG_GC_FAT_FILESYSTEM_USING_SST26_MEDIA&redirect=true)|This<br /> application shows an example of using the FAT File System to<br /> access SQI based SST26 flash media|
-|[FreeRTOS Basic](https://onlinedocs.microchip.com/v2/keyword-lookup?keyword=CORE_APPS_PIC32CK_SG_GC_FREERTOS_BASIC&redirect=true)|This<br /> example application demonstrates context switching between four<br /> tasks of different priorities. Two tasks run periodically while<br /> the other two tasks are event driven|
-|[I2C EEPROM AT24 Driver - EEPROM Read Write](https://onlinedocs.microchip.com/v2/keyword-lookup?keyword=CORE_APPS_PIC32CK_SG_GC_I2C_EEPROM_AT24_DRIVER_EEPROM_READ_WRITE&redirect=true)|This<br /> example application shows how to use the AT24 driver to perform<br /> read and write operations on AT24 series of EEPROM|
-|[I2C Driver Asynchronous - Multi-client](https://onlinedocs.microchip.com/v2/keyword-lookup?keyword=CORE_APPS_PIC32CK_SG_GC_I2C_DRIVER_ASYNCHRONOUS_MULTI_CLIENT&redirect=true)|This<br /> example application demonstrates the multi-client feature of the<br /> asynchronous mode of the I2C driver by communicating with an<br /> external EEPROM and a temperature sensor|
-|[SPI Driver Asynchronous - Self Loopback Multi Client](https://onlinedocs.microchip.com/v2/keyword-lookup?keyword=CORE_APPS_PIC32CK_SG_GC_SPI_DRIVER_ASYNCHRONOUS_SELF_LLOPBACK_MULTI_CLIENT&redirect=true)|This<br /> example demonstrates how to use the SPI driver in asynchronous<br /> mode to achieve self-loop back between multiple clients|
-|[SPI Driver Synchronous - Self Loopback Multi Client](https://onlinedocs.microchip.com/v2/keyword-lookup?keyword=CORE_APPS_PIC32CK_SG_GC_SPI_DRIVER_SYNCHRONOUS_SELF_LLOPBACK_MULTI_CLIENT&redirect=true)|This<br /> example demonstrates how to use the SPI driver in synchronous<br /> mode to achieve self-loop back between multiple clients in RTOS<br /> environment|
-|[SPI EEPROM AT25 Driver - EEPROM Read Write](https://onlinedocs.microchip.com/v2/keyword-lookup?keyword=CORE_APPS_PIC32CK_SG_GC_SPI_EEPROM_AT25_DRIVER_EEPROM_READ_WRITE&redirect=true)|This<br /> example application shows how to use the AT25 driver to perform<br /> read and write operations on AT25 series of EEPROM|
-|[Time System Service Multi-client](https://onlinedocs.microchip.com/v2/keyword-lookup?keyword=CORE_APPS_PIC32CK_SG_GC_TIME_SYSTEM_SERVICE_MULTI_CLIENT&redirect=true)|This<br /> example application demonstrates the multi-client system timer<br /> functionality|
-|[TrustZone FreeRTOS Basic](https://onlinedocs.microchip.com/v2/keyword-lookup?keyword=CORE_APPS_PIC32CK_SG_GC_TRUSTZONE_FREERTOS_BASIC&redirect=true)|This<br /> example application blinks an LED to show the FreeRTOS threads<br /> that are running in non-secure mode and to indicate<br /> status|
-|[USART Driver Asynchronous - USART Echo](https://onlinedocs.microchip.com/v2/keyword-lookup?keyword=CORE_APPS_PIC32CK_SG_GC_USART_DRIVER_ASYNCHRONOUS_USART_ECHO&redirect=true)|This<br /> example echoes the received characters over the console using<br /> the USART driver in asynchronous mode|
-|[USART Driver Synchronous - USART Echo](https://onlinedocs.microchip.com/v2/keyword-lookup?keyword=CORE_APPS_PIC32CK_SG_GC_USART_DRIVER_SYNCHRONOUS_USART_ECHO&redirect=true)|This<br /> example echoes the received characters over the console using<br /> the USART driver in synchronous mode|
+To view the documentation offline, follow these steps:
+ - Download the publication as a zip file from [here](https://onlinedocs.microchip.com/download/GUID-C58783E0-804C-442C-B7FD-3D97EA9BE301?type=webhelp).
+ - Extract the zip file into a folder.
+ - Navigate to the folder and open **index.html** in a web browser of your choice.
 
+____
+
+[![License](https://img.shields.io/badge/license-Harmony%20license-orange.svg)](https://github.com/Microchip-MPLAB-Harmony/core_apps_pic32ck_sg_gc/blob/master/Microchip_SLA001.md)
+[![Latest release](https://img.shields.io/github/release/Microchip-MPLAB-Harmony/core_apps_pic32ck_sg_gc.svg)](https://github.com/Microchip-MPLAB-Harmony/core_apps_pic32ck_sg_gc/releases/latest)
+[![Latest release date](https://img.shields.io/github/release-date/Microchip-MPLAB-Harmony/core_apps_pic32ck_sg_gc.svg)](https://github.com/Microchip-MPLAB-Harmony/core_apps_pic32ck_sg_gc/releases/latest)
+[![Commit activity](https://img.shields.io/github/commit-activity/y/Microchip-MPLAB-Harmony/core_apps_pic32ck_sg_gc.svg)](https://github.com/Microchip-MPLAB-Harmony/core_apps_pic32ck_sg_gc/graphs/commit-activity)
+[![Contributors](https://img.shields.io/github/contributors-anon/Microchip-MPLAB-Harmony/core_apps_pic32ck_sg_gc.svg)]()
+
+____
+
+[![Developer Help](https://img.shields.io/badge/Youtube-Developer%20Help-red.svg)](https://www.youtube.com/MicrochipDeveloperHelp)
+[![Developer Help](https://img.shields.io/badge/XWiki-Developer%20Help-torquiose.svg)](https://developerhelp.microchip.com/xwiki/bin/view/software-tools/harmony/)
+[![Follow us on Youtube](https://img.shields.io/badge/Youtube-Follow%20us%20on%20Youtube-red.svg)](https://www.youtube.com/user/MicrochipTechnology)
+[![Follow us on LinkedIn](https://img.shields.io/badge/LinkedIn-Follow%20us%20on%20LinkedIn-blue.svg)](https://www.linkedin.com/company/microchip-technology)
+[![Follow us on Facebook](https://img.shields.io/badge/Facebook-Follow%20us%20on%20Facebook-blue.svg)](https://www.facebook.com/microchiptechnology/)
+[![Follow us on Twitter](https://img.shields.io/twitter/follow/MicrochipTech.svg?style=social)](https://twitter.com/MicrochipTech)
+
+[![](https://img.shields.io/github/stars/Microchip-MPLAB-Harmony/core_apps_pic32ck_sg_gc.svg?style=social)]()
+[![](https://img.shields.io/github/watchers/Microchip-MPLAB-Harmony/core_apps_pic32ck_sg_gc.svg?style=social)]()
