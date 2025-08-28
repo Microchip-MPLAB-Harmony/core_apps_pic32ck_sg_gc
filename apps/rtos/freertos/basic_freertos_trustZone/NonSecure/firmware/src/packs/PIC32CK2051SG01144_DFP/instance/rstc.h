@@ -1,7 +1,9 @@
 /*
  * Instance header file for PIC32CK2051SG01144
  *
- * Copyright (c) 2024 Microchip Technology Inc. and its subsidiaries.
+ * Copyright (c) 2025 Microchip Technology Inc. and its subsidiaries.
+ *
+ * SPDX-License-Identifier: Apache-2.0
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -17,17 +19,17 @@
  *
  */
 
-/* file generated from device description file (ATDF) version 2024-04-02T09:16:38Z */
+/* file generated from device description file (ATDF) version 2025-07-03T22:19:01Z */
 #ifndef _PIC32CKSG01_RSTC_INSTANCE_
 #define _PIC32CKSG01_RSTC_INSTANCE_
 
 
 /* ========== Instance Parameter definitions for RSTC peripheral ========== */
-#define RSTC_BACKUP_IMPLEMENTED                  (1)        
+#define RSTC_BACKUP_IMPLEMENTED                  (1)
 #define RSTC_CM_DBGRESET_STRETCHED               (3)        /* Reset stretcher size for Cortex CPU related to DBGRESET. */
 #define RSTC_CM_HRESET_N_STRETCHED               (3)        /* Reset stretcher size for Cortex CPU related to HRESETn. */
 #define RSTC_CM_PORESET_STRETCHED                (3)        /* Reset stretcher size for Cortex CPU related to PORESET. */
-#define RSTC_HIB_IMPLEMENTED                     (1)        
+#define RSTC_HIB_IMPLEMENTED                     (1)
 #define RSTC_INSTANCE_ID                         (5)        /* Instance index for RSTC */
 #define RSTC_MCLK_ID_APB                         (37)       /* Index for RSTC APB clock */
 #define RSTC_PAC_ID                              (5)        /* Index for RSTC registers write protection */

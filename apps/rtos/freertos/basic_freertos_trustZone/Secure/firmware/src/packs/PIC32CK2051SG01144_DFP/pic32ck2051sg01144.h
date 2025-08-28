@@ -1,7 +1,9 @@
 /*
  * Header file for PIC32CK2051SG01144
  *
- * Copyright (c) 2024 Microchip Technology Inc. and its subsidiaries.
+ * Copyright (c) 2025 Microchip Technology Inc. and its subsidiaries.
+ *
+ * SPDX-License-Identifier: Apache-2.0
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -17,7 +19,7 @@
  *
  */
 
-/* File generated from device description file (ATDF) version 2024-04-02T09:16:38Z */
+/* File generated from device description file (ATDF) version 2025-07-03T22:19:01Z */
 #ifndef _PIC32CK2051SG01144_H_
 #define _PIC32CK2051SG01144_H_
 
@@ -64,7 +66,7 @@
 #endif /* SKIP_INTEGER_LITERALS */
 
 /* ************************************************************************** */
-/* CMSIS DEFINITIONS FOR PIC32CK2051SG01144                                 */
+/*                  CMSIS DEFINITIONS FOR PIC32CK2051SG01144                  */
 /* ************************************************************************** */
 #if !(defined(__ASSEMBLER__) || defined(__IAR_SYSTEMS_ASM__))
 /* Interrupt Number Definition */
@@ -83,7 +85,7 @@ typedef enum IRQn
   PendSV_IRQn               =  -2, /* -2  Pendable request for system service */
   SysTick_IRQn              =  -1, /* -1  System Tick Timer                   */
 
-/******  PIC32CK2051SG01144 specific Interrupt Numbers ***********************************/
+/* ************* PIC32CK2051SG01144 specific Interrupt Numbers ************** */
   FCR_ERR_IRQn              =   0, /* 0   Flash Read Controller (FCR) (FCR)   */
   FCR_FLT_IRQn              =   1, /* 1   Flash Read Controller (FCR) (FCR)   */
   FCW_IRQn                  =   2, /* 2   Flash Write Control (FCW) (FCW)     */
@@ -627,11 +629,11 @@ void HSM_RXINT_Handler             ( void );
 /* CMSIS includes */
 #include "core_cm33.h"
 #if defined USE_CMSIS_INIT
-#include "system_pic32cksg01.h"
+#include "system_pic32ck2051sg01144.h"
 #endif /* USE_CMSIS_INIT */
 
 /* ************************************************************************** */
-/*   SOFTWARE PERIPHERAL API DEFINITION FOR PIC32CK2051SG01144                */
+/*         SOFTWARE PERIPHERAL API DEFINITIONS FOR PIC32CK2051SG01144         */
 /* ************************************************************************** */
 #include "component/ac.h"
 #include "component/adc.h"
@@ -677,10 +679,11 @@ void HSM_RXINT_Handler             ( void );
 #include "component/wdt.h"
 
 /* ************************************************************************** */
-/*   INSTANCE DEFINITIONS FOR PIC32CK2051SG01144 */
+/*                INSTANCE DEFINITIONS FOR PIC32CK2051SG01144                 */
 /* ************************************************************************** */
 #include "instance/ac.h"
 #include "instance/adc.h"
+#include "instance/bsdap.h"
 #include "instance/can0.h"
 #include "instance/can1.h"
 #include "instance/ccl.h"
@@ -741,7 +744,7 @@ void HSM_RXINT_Handler             ( void );
 #include "instance/wdt.h"
 
 /* ************************************************************************** */
-/*  PERIPHERAL ID DEFINITIONS FOR PIC32CK2051SG01144                          */
+/*              PERIPHERAL ID DEFINITIONS FOR PIC32CK2051SG01144              */
 /* ************************************************************************** */
 #define ID_DSU           (  0) /* Instance index for DSU (DSU) */
 #define ID_FCR           (  1) /* Instance index for FCR (FCR) */
@@ -805,7 +808,7 @@ void HSM_RXINT_Handler             ( void );
 #define ID_PERIPH_MAX    ( 98) /* Number of peripheral IDs */
 
 /* ************************************************************************** */
-/*   REGISTER STRUCTURE ADDRESS DEFINITIONS FOR PIC32CK2051SG01144            */
+/*       REGISTER STRUCTURE ADDRESS DEFINITIONS FOR PIC32CK2051SG01144        */
 /* ************************************************************************** */
 #if !(defined(__ASSEMBLER__) || defined(__IAR_SYSTEMS_ASM__))
 #define AC_REGS                          ((ac_registers_t*)0x45012000)                 /* AC Registers Address         */
@@ -877,7 +880,7 @@ void HSM_RXINT_Handler             ( void );
 #endif /* (defined(__ASSEMBLER__) || defined(__IAR_SYSTEMS_ASM__)) */
 
 /* ************************************************************************** */
-/*   BASE ADDRESS DEFINITIONS FOR PIC32CK2051SG01144                          */
+/*              BASE ADDRESS DEFINITIONS FOR PIC32CK2051SG01144               */
 /* ************************************************************************** */
 #define AC_BASE_ADDRESS                  _UINT32_(0x45012000)                          /* AC Base Address */
 #define ADC_BASE_ADDRESS                 _UINT32_(0x45010000)                          /* ADC Base Address */
@@ -947,12 +950,12 @@ void HSM_RXINT_Handler             ( void );
 #define WDT_BASE_ADDRESS                 _UINT32_(0x44016000)                          /* WDT Base Address */
 
 /* ************************************************************************** */
-/*   PIO DEFINITIONS FOR PIC32CK2051SG01144                                   */
+/*                   PIO DEFINITIONS FOR PIC32CK2051SG01144                   */
 /* ************************************************************************** */
 #include "pio/pic32ck2051sg01144.h"
 
 /* ************************************************************************** */
-/*   MEMORY MAPPING DEFINITIONS FOR PIC32CK2051SG01144                        */
+/*             MEMORY MAPPING DEFINITIONS FOR PIC32CK2051SG01144              */
 /* ************************************************************************** */
 #define CMCC_DATARAM_SIZE              _UINT32_(0x00001000)    /*    4kB Memory segment type: ram */
 #define CMCC_TAGRAM_SIZE               _UINT32_(0x00000400)    /*    1kB Memory segment type: ram */
@@ -1046,16 +1049,16 @@ void HSM_RXINT_Handler             ( void );
 #define PPB_ADDR                       _UINT32_(0xe0000000)    /* PPB base address (type: io)*/
 
 /* ************************************************************************** */
-/*   DEVICE SIGNATURES FOR PIC32CK2051SG01144                                 */
+/*                  DEVICE SIGNATURES FOR PIC32CK2051SG01144                  */
 /* ************************************************************************** */
 #define CHIP_DSU_DID                   _UINT32_(0X09506053)
 
 /* ************************************************************************** */
-/*   ELECTRICAL DEFINITIONS FOR PIC32CK2051SG01144                            */
+/*               ELECTRICAL DEFINITIONS FOR PIC32CK2051SG01144                */
 /* ************************************************************************** */
 
 /* ************************************************************************** */
-/* Event Generator IDs for C32CK2051SG01144 */
+/*                  Event Generator IDs for C32CK2051SG01144                  */
 /* ************************************************************************** */
 #define EVENT_ID_GEN_SUPC_LVDET                           1 /* ID for SUPC event generator LVDET */
 #define EVENT_ID_GEN_OSCCTRL_XOSC_FAIL                    2 /* ID for OSCCTRL event generator XOSC_FAIL */
@@ -1182,7 +1185,7 @@ void HSM_RXINT_Handler             ( void );
 #define EVENT_ID_GEN_TRNG_READY                         125 /* ID for TRNG event generator READY */
 
 /* ************************************************************************** */
-/*  Event User IDs for C32CK2051SG01144 */
+/*                    Event User IDs for C32CK2051SG01144                     */
 /* ************************************************************************** */
 #define EVENT_ID_USER_FREQM_START                         0 /* ID for FREQM event user START */
 #define EVENT_ID_USER_RTC_TAMPER                          1 /* ID for RTC event user TAMPER */
@@ -1288,7 +1291,7 @@ void HSM_RXINT_Handler             ( void );
 #define EVENT_ID_USER_HSM_TAMPER_3                      103 /* ID for HSM event user TAMPER_3 */
 
 /* ************************************************************************** */
-/* IDAU TrustZone REGION DEFINITIONS FOR PIC32CK2051SG01144 */
+/*          IDAU TrustZone REGION DEFINITIONS FOR PIC32CK2051SG01144          */
 /* ************************************************************************** */
 #define IDAU_REGION_CMCC_DATARAM_SEC             _UINT32_(1) /* IDAU region number for CMCC_DATARAM_SEC */
 #define IDAU_REGION_CMCC_TAGRAM_SEC              _UINT32_(2) /* IDAU region number for CMCC_TAGRAM_SEC */

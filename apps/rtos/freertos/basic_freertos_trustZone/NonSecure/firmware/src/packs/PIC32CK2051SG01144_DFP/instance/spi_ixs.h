@@ -1,7 +1,9 @@
 /*
  * Instance header file for PIC32CK2051SG01144
  *
- * Copyright (c) 2024 Microchip Technology Inc. and its subsidiaries.
+ * Copyright (c) 2025 Microchip Technology Inc. and its subsidiaries.
+ *
+ * SPDX-License-Identifier: Apache-2.0
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -17,14 +19,14 @@
  *
  */
 
-/* file generated from device description file (ATDF) version 2024-04-02T09:16:38Z */
+/* file generated from device description file (ATDF) version 2025-07-03T22:19:01Z */
 #ifndef _PIC32CKSG01_SPI_IXS_INSTANCE_
 #define _PIC32CKSG01_SPI_IXS_INSTANCE_
 
 
 /* ========== Instance Parameter definitions for SPI_IXS peripheral ========== */
-#define SPI_IXS_DMAC_ID_RX                       (65)       
-#define SPI_IXS_DMAC_ID_TX                       (66)       
+#define SPI_IXS_DMAC_ID_RX                       (65)
+#define SPI_IXS_DMAC_ID_TX                       (66)
 #define SPI_IXS_GCLK_ID                          (36)       /* Index of Generic Clock */
 #define SPI_IXS_INSTANCE_ID                      (75)       /* Instance index for SPI_IXS */
 #define SPI_IXS_MCLK_ID_APB                      (107)      /* Index for SPI_IXS APB clock */

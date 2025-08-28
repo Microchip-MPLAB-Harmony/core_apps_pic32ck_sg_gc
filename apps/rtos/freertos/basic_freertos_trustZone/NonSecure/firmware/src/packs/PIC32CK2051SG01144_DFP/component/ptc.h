@@ -1,7 +1,9 @@
 /*
  * Component description for PTC
  *
- * Copyright (c) 2024 Microchip Technology Inc. and its subsidiaries.
+ * Copyright (c) 2025 Microchip Technology Inc. and its subsidiaries.
+ *
+ * SPDX-License-Identifier: Apache-2.0
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -17,18 +19,20 @@
  *
  */
 
-/* file generated from device description file (ATDF) version 2024-04-02T09:16:38Z */
+/*  file generated from device description file (ATDF) version 2025-07-03T22:19:01Z  */
 #ifndef _PIC32CKSG01_PTC_COMPONENT_H_
 #define _PIC32CKSG01_PTC_COMPONENT_H_
 
+#include "core_cm33.h"
+
 /* ************************************************************************** */
-/*   SOFTWARE API DEFINITION FOR PTC                                          */
+/*                      SOFTWARE API DEFINITION FOR PTC                       */
 /* ************************************************************************** */
 
-/** \brief PTC register offsets definitions */
+/* PTC register offsets definitions */
 
 #if !(defined(__ASSEMBLER__) || defined(__IAR_SYSTEMS_ASM__))
-/** \brief No register API structure defined for PTC */
+/* No register API structure defined for PTC */
 typedef void Ptc;
 
 

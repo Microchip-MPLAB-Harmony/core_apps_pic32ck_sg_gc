@@ -1,7 +1,9 @@
 /*
  * Instance header file for PIC32CK2051SG01144
  *
- * Copyright (c) 2024 Microchip Technology Inc. and its subsidiaries.
+ * Copyright (c) 2025 Microchip Technology Inc. and its subsidiaries.
+ *
+ * SPDX-License-Identifier: Apache-2.0
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -17,7 +19,7 @@
  *
  */
 
-/* file generated from device description file (ATDF) version 2024-04-02T09:16:38Z */
+/* file generated from device description file (ATDF) version 2025-07-03T22:19:01Z */
 #ifndef _PIC32CKSG01_ADC_INSTANCE_
 #define _PIC32CKSG01_ADC_INSTANCE_
 
@@ -29,7 +31,7 @@
 #define ADC_CHNSAR_NMBR3                         (0)        /* Number of Channels on SARCORE number 3 */
 #define ADC_CHNSAR_NMBR4                         (0)        /* Number of Channels on SARCORE number 4 */
 #define ADC_DCMP_NMBR                            (1)        /* Number of Digital Comparators Max=4 */
-#define ADC_DMAC_ID_PFFRDY                       (61)       
+#define ADC_DMAC_ID_PFFRDY                       (61)
 #define ADC_EARLY_INTR_PRESENT                   (1)        /* Early Interrupts Present */
 #define ADC_FLTR_NMBR                            (1)        /* Number of Digital Filters, Max=0 */
 #define ADC_GCLK_ID                              (33)       /* Index of Generic Clock */

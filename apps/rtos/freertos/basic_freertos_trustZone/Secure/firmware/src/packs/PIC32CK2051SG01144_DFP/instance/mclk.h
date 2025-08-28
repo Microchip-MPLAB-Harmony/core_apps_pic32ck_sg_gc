@@ -1,7 +1,9 @@
 /*
  * Instance header file for PIC32CK2051SG01144
  *
- * Copyright (c) 2024 Microchip Technology Inc. and its subsidiaries.
+ * Copyright (c) 2025 Microchip Technology Inc. and its subsidiaries.
+ *
+ * SPDX-License-Identifier: Apache-2.0
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -17,13 +19,13 @@
  *
  */
 
-/* file generated from device description file (ATDF) version 2024-04-02T09:16:38Z */
+/* file generated from device description file (ATDF) version 2025-07-03T22:19:01Z */
 #ifndef _PIC32CKSG01_MCLK_INSTANCE_
 #define _PIC32CKSG01_MCLK_INSTANCE_
 
 
 /* ========== Instance Parameter definitions for MCLK peripheral ========== */
-#define MCLK_DIV_CLK_NUM                         (1)        
+#define MCLK_DIV_CLK_NUM                         (1)
 #define MCLK_INSTANCE_ID                         (9)        /* Instance index for MCLK */
 #define MCLK_ID_APB                              (41)       /* Index for MCLK APB clock */
 #define MCLK_PAC_ID                              (9)        /* Index for MCLK registers write protection */

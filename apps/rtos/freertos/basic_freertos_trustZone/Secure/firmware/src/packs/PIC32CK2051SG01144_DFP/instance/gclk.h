@@ -1,7 +1,9 @@
 /*
  * Instance header file for PIC32CK2051SG01144
  *
- * Copyright (c) 2024 Microchip Technology Inc. and its subsidiaries.
+ * Copyright (c) 2025 Microchip Technology Inc. and its subsidiaries.
+ *
+ * SPDX-License-Identifier: Apache-2.0
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -17,13 +19,13 @@
  *
  */
 
-/* file generated from device description file (ATDF) version 2024-04-02T09:16:38Z */
+/* file generated from device description file (ATDF) version 2025-07-03T22:19:01Z */
 #ifndef _PIC32CKSG01_GCLK_INSTANCE_
 #define _PIC32CKSG01_GCLK_INSTANCE_
 
 
 /* ========== Instance Parameter definitions for GCLK peripheral ========== */
-#define GCLK_GEN_BITS                            (4)        
+#define GCLK_GEN_BITS                            (4)
 #define GCLK_GEN_NUM                             (12)       /* Number of Generic Clock Generators */
 #define GCLK_GEN_NUM_MSB                         (11)       /* Number of Generic Clock Generators - 1 */
 #define GCLK_GEN_SOURCE_NUM_MSB                  (11)       /* Number of Generic Clock Sources - 1 */
@@ -32,7 +34,7 @@
 #define GCLK_MCLK_ID_APB                         (40)       /* Index for GCLK APB clock */
 #define GCLK_NUM                                 (48)       /* Number of Generic Clock Users */
 #define GCLK_PAC_ID                              (8)        /* Index for GCLK registers write protection */
-#define GCLK_SOURCE_BITS                         (4)        
+#define GCLK_SOURCE_BITS                         (4)
 #define GCLK_SOURCE_NUM                          (12)       /* Number of Generic Clock Sources */
 
 #endif /* _PIC32CKSG01_GCLK_INSTANCE_ */

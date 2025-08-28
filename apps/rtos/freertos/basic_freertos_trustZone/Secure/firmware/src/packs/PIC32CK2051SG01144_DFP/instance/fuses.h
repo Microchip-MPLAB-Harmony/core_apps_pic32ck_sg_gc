@@ -1,7 +1,9 @@
 /*
  * Instance header file for PIC32CK2051SG01144
  *
- * Copyright (c) 2024 Microchip Technology Inc. and its subsidiaries.
+ * Copyright (c) 2025 Microchip Technology Inc. and its subsidiaries.
+ *
+ * SPDX-License-Identifier: Apache-2.0
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -17,12 +19,12 @@
  *
  */
 
-/* file generated from device description file (ATDF) version 2024-04-02T09:16:38Z */
+/* file generated from device description file (ATDF) version 2025-07-03T22:19:01Z */
 #ifndef _PIC32CKSG01_FUSES_INSTANCE_
 #define _PIC32CKSG01_FUSES_INSTANCE_
 
 
 /* ========== Instance Parameter definitions for FUSES peripheral ========== */
-#define FUSES_RDY_MSB                            (14)       
+#define FUSES_RDY_MSB                            (14)
 
 #endif /* _PIC32CKSG01_FUSES_INSTANCE_ */

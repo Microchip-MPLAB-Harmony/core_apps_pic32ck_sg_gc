@@ -194,6 +194,8 @@ typedef enum
     PORT_PIN_PA18 = 18U,
     /* PA28 pin */
     PORT_PIN_PA28 = 28U,
+    /* PA19 pin */
+    PORT_PIN_PA19 = 19U,
     /* PA09 pin */
     PORT_PIN_PA09 = 9U,
     /* PA10 pin */

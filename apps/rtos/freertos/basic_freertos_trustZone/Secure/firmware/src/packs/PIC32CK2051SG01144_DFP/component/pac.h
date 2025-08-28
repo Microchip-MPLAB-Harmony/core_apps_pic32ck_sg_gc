@@ -1,7 +1,9 @@
 /*
  * Component description for PAC
  *
- * Copyright (c) 2024 Microchip Technology Inc. and its subsidiaries.
+ * Copyright (c) 2025 Microchip Technology Inc. and its subsidiaries.
+ *
+ * SPDX-License-Identifier: Apache-2.0
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -17,12 +19,14 @@
  *
  */
 
-/* file generated from device description file (ATDF) version 2024-04-02T09:16:38Z */
+/*  file generated from device description file (ATDF) version 2025-07-03T22:19:01Z  */
 #ifndef _PIC32CKSG01_PAC_COMPONENT_H_
 #define _PIC32CKSG01_PAC_COMPONENT_H_
 
+#include "core_cm33.h"
+
 /* ************************************************************************** */
-/*   SOFTWARE API DEFINITION FOR PAC                                          */
+/*                      SOFTWARE API DEFINITION FOR PAC                       */
 /* ************************************************************************** */
 
 /* -------- PAC_WRCTRL : (PAC Offset: 0x00) (R/W 32) Write control -------- */
@@ -30,18 +34,18 @@
 
 #define PAC_WRCTRL_PERID_Pos                  _UINT32_(0)                                          /* (PAC_WRCTRL) Peripheral identifier Position */
 #define PAC_WRCTRL_PERID_Msk                  (_UINT32_(0xFFFF) << PAC_WRCTRL_PERID_Pos)           /* (PAC_WRCTRL) Peripheral identifier Mask */
-#define PAC_WRCTRL_PERID(value)               (PAC_WRCTRL_PERID_Msk & (_UINT32_(value) << PAC_WRCTRL_PERID_Pos)) /* Assigment of value for PERID in the PAC_WRCTRL register */
+#define PAC_WRCTRL_PERID(value)               (PAC_WRCTRL_PERID_Msk & (_UINT32_(value) << PAC_WRCTRL_PERID_Pos)) /* Assignment of value for PERID in the PAC_WRCTRL register */
 #define PAC_WRCTRL_KEY_Pos                    _UINT32_(16)                                         /* (PAC_WRCTRL) Peripheral access control key Position */
 #define PAC_WRCTRL_KEY_Msk                    (_UINT32_(0xFF) << PAC_WRCTRL_KEY_Pos)               /* (PAC_WRCTRL) Peripheral access control key Mask */
-#define PAC_WRCTRL_KEY(value)                 (PAC_WRCTRL_KEY_Msk & (_UINT32_(value) << PAC_WRCTRL_KEY_Pos)) /* Assigment of value for KEY in the PAC_WRCTRL register */
+#define PAC_WRCTRL_KEY(value)                 (PAC_WRCTRL_KEY_Msk & (_UINT32_(value) << PAC_WRCTRL_KEY_Pos)) /* Assignment of value for KEY in the PAC_WRCTRL register */
 #define   PAC_WRCTRL_KEY_OFF_Val              _UINT32_(0x0)                                        /* (PAC_WRCTRL) No action  */
 #define   PAC_WRCTRL_KEY_CLR_Val              _UINT32_(0x1)                                        /* (PAC_WRCTRL) Clear protection  */
 #define   PAC_WRCTRL_KEY_SET_Val              _UINT32_(0x2)                                        /* (PAC_WRCTRL) Set protection  */
 #define   PAC_WRCTRL_KEY_SETLCK_Val           _UINT32_(0x3)                                        /* (PAC_WRCTRL) Set and lock protection  */
-#define PAC_WRCTRL_KEY_OFF                    (PAC_WRCTRL_KEY_OFF_Val << PAC_WRCTRL_KEY_Pos)       /* (PAC_WRCTRL) No action Position  */
-#define PAC_WRCTRL_KEY_CLR                    (PAC_WRCTRL_KEY_CLR_Val << PAC_WRCTRL_KEY_Pos)       /* (PAC_WRCTRL) Clear protection Position  */
-#define PAC_WRCTRL_KEY_SET                    (PAC_WRCTRL_KEY_SET_Val << PAC_WRCTRL_KEY_Pos)       /* (PAC_WRCTRL) Set protection Position  */
-#define PAC_WRCTRL_KEY_SETLCK                 (PAC_WRCTRL_KEY_SETLCK_Val << PAC_WRCTRL_KEY_Pos)    /* (PAC_WRCTRL) Set and lock protection Position  */
+#define PAC_WRCTRL_KEY_OFF                    (PAC_WRCTRL_KEY_OFF_Val << PAC_WRCTRL_KEY_Pos)       /* (PAC_WRCTRL) No action Position */
+#define PAC_WRCTRL_KEY_CLR                    (PAC_WRCTRL_KEY_CLR_Val << PAC_WRCTRL_KEY_Pos)       /* (PAC_WRCTRL) Clear protection Position */
+#define PAC_WRCTRL_KEY_SET                    (PAC_WRCTRL_KEY_SET_Val << PAC_WRCTRL_KEY_Pos)       /* (PAC_WRCTRL) Set protection Position */
+#define PAC_WRCTRL_KEY_SETLCK                 (PAC_WRCTRL_KEY_SETLCK_Val << PAC_WRCTRL_KEY_Pos)    /* (PAC_WRCTRL) Set and lock protection Position */
 #define PAC_WRCTRL_Msk                        _UINT32_(0x00FFFFFF)                                 /* (PAC_WRCTRL) Register Mask  */
 
 
@@ -50,7 +54,7 @@
 
 #define PAC_EVCTRL_ERREO_Pos                  _UINT8_(0)                                           /* (PAC_EVCTRL) Peripheral acess error event output Position */
 #define PAC_EVCTRL_ERREO_Msk                  (_UINT8_(0x1) << PAC_EVCTRL_ERREO_Pos)               /* (PAC_EVCTRL) Peripheral acess error event output Mask */
-#define PAC_EVCTRL_ERREO(value)               (PAC_EVCTRL_ERREO_Msk & (_UINT8_(value) << PAC_EVCTRL_ERREO_Pos)) /* Assigment of value for ERREO in the PAC_EVCTRL register */
+#define PAC_EVCTRL_ERREO(value)               (PAC_EVCTRL_ERREO_Msk & (_UINT8_(value) << PAC_EVCTRL_ERREO_Pos)) /* Assignment of value for ERREO in the PAC_EVCTRL register */
 #define PAC_EVCTRL_Msk                        _UINT8_(0x01)                                        /* (PAC_EVCTRL) Register Mask  */
 
 
@@ -59,7 +63,7 @@
 
 #define PAC_INTENCLR_ERR_Pos                  _UINT8_(0)                                           /* (PAC_INTENCLR) Peripheral access error interrupt disable Position */
 #define PAC_INTENCLR_ERR_Msk                  (_UINT8_(0x1) << PAC_INTENCLR_ERR_Pos)               /* (PAC_INTENCLR) Peripheral access error interrupt disable Mask */
-#define PAC_INTENCLR_ERR(value)               (PAC_INTENCLR_ERR_Msk & (_UINT8_(value) << PAC_INTENCLR_ERR_Pos)) /* Assigment of value for ERR in the PAC_INTENCLR register */
+#define PAC_INTENCLR_ERR(value)               (PAC_INTENCLR_ERR_Msk & (_UINT8_(value) << PAC_INTENCLR_ERR_Pos)) /* Assignment of value for ERR in the PAC_INTENCLR register */
 #define PAC_INTENCLR_Msk                      _UINT8_(0x01)                                        /* (PAC_INTENCLR) Register Mask  */
 
 
@@ -68,7 +72,7 @@
 
 #define PAC_INTENSET_ERR_Pos                  _UINT8_(0)                                           /* (PAC_INTENSET) Peripheral access error interrupt enable Position */
 #define PAC_INTENSET_ERR_Msk                  (_UINT8_(0x1) << PAC_INTENSET_ERR_Pos)               /* (PAC_INTENSET) Peripheral access error interrupt enable Mask */
-#define PAC_INTENSET_ERR(value)               (PAC_INTENSET_ERR_Msk & (_UINT8_(value) << PAC_INTENSET_ERR_Pos)) /* Assigment of value for ERR in the PAC_INTENSET register */
+#define PAC_INTENSET_ERR(value)               (PAC_INTENSET_ERR_Msk & (_UINT8_(value) << PAC_INTENSET_ERR_Pos)) /* Assignment of value for ERR in the PAC_INTENSET register */
 #define PAC_INTENSET_Msk                      _UINT8_(0x01)                                        /* (PAC_INTENSET) Register Mask  */
 
 
@@ -174,7 +178,7 @@
 #define PAC_SECLOCKD_Msk                      _UINT32_(0x00000000)                                 /* (PAC_SECLOCKD) Register Mask  */
 
 
-/** \brief PAC register offsets definitions */
+/* PAC register offsets definitions */
 #define PAC_WRCTRL_REG_OFST            _UINT32_(0x00)      /* (PAC_WRCTRL) Write control Offset */
 #define PAC_EVCTRL_REG_OFST            _UINT32_(0x04)      /* (PAC_EVCTRL) Event control Offset */
 #define PAC_INTENCLR_REG_OFST          _UINT32_(0x08)      /* (PAC_INTENCLR) Interrupt enable clear Offset */
@@ -198,35 +202,35 @@
 #define PAC_SECLOCKD_REG_OFST          _UINT32_(0x80)      /* (PAC_SECLOCKD) Peripheral Security Lock Status - Bridge D Offset */
 
 #if !(defined(__ASSEMBLER__) || defined(__IAR_SYSTEMS_ASM__))
-/** \brief PAC register API structure */
+/* PAC register API structure */
 typedef struct
 {  /* Peripheral Access Controller */
-  __IO  uint32_t                       PAC_WRCTRL;         /**< Offset: 0x00 (R/W  32) Write control */
-  __IO  uint8_t                        PAC_EVCTRL;         /**< Offset: 0x04 (R/W  8) Event control */
+  __IO  uint32_t                       PAC_WRCTRL;         /* Offset: 0x00 (R/W  32) Write control */
+  __IO  uint8_t                        PAC_EVCTRL;         /* Offset: 0x04 (R/W  8) Event control */
   __I   uint8_t                        Reserved1[0x03];
-  __IO  uint8_t                        PAC_INTENCLR;       /**< Offset: 0x08 (R/W  8) Interrupt enable clear */
-  __IO  uint8_t                        PAC_INTENSET;       /**< Offset: 0x09 (R/W  8) Interrupt enable set */
+  __IO  uint8_t                        PAC_INTENCLR;       /* Offset: 0x08 (R/W  8) Interrupt enable clear */
+  __IO  uint8_t                        PAC_INTENSET;       /* Offset: 0x09 (R/W  8) Interrupt enable set */
   __I   uint8_t                        Reserved2[0x06];
-  __IO  uint32_t                       PAC_INTFLAGAHB;     /**< Offset: 0x10 (R/W  32) Bridge interrupt flag status */
-  __IO  uint32_t                       PAC_INTFLAGA;       /**< Offset: 0x14 (R/W  32) Peripheral interrupt flag status - Bridge A */
-  __IO  uint32_t                       PAC_INTFLAGB;       /**< Offset: 0x18 (R/W  32) Peripheral interrupt flag status - Bridge B */
-  __IO  uint32_t                       PAC_INTFLAGC;       /**< Offset: 0x1C (R/W  32) Peripheral interrupt flag status - Bridge C */
-  __IO  uint32_t                       PAC_INTFLAGD;       /**< Offset: 0x20 (R/W  32) Peripheral interrupt flag status - Bridge D */
+  __IO  uint32_t                       PAC_INTFLAGAHB;     /* Offset: 0x10 (R/W  32) Bridge interrupt flag status */
+  __IO  uint32_t                       PAC_INTFLAGA;       /* Offset: 0x14 (R/W  32) Peripheral interrupt flag status - Bridge A */
+  __IO  uint32_t                       PAC_INTFLAGB;       /* Offset: 0x18 (R/W  32) Peripheral interrupt flag status - Bridge B */
+  __IO  uint32_t                       PAC_INTFLAGC;       /* Offset: 0x1C (R/W  32) Peripheral interrupt flag status - Bridge C */
+  __IO  uint32_t                       PAC_INTFLAGD;       /* Offset: 0x20 (R/W  32) Peripheral interrupt flag status - Bridge D */
   __I   uint8_t                        Reserved3[0x10];
-  __I   uint32_t                       PAC_STATUSA;        /**< Offset: 0x34 (R/   32) Peripheral write protection status - Bridge A */
-  __I   uint32_t                       PAC_STATUSB;        /**< Offset: 0x38 (R/   32) Peripheral write protection status - Bridge B */
-  __I   uint32_t                       PAC_STATUSC;        /**< Offset: 0x3C (R/   32) Peripheral write protection status - Bridge C */
-  __I   uint32_t                       PAC_STATUSD;        /**< Offset: 0x40 (R/   32) Peripheral write protection status - Bridge D */
+  __I   uint32_t                       PAC_STATUSA;        /* Offset: 0x34 (R/   32) Peripheral write protection status - Bridge A */
+  __I   uint32_t                       PAC_STATUSB;        /* Offset: 0x38 (R/   32) Peripheral write protection status - Bridge B */
+  __I   uint32_t                       PAC_STATUSC;        /* Offset: 0x3C (R/   32) Peripheral write protection status - Bridge C */
+  __I   uint32_t                       PAC_STATUSD;        /* Offset: 0x40 (R/   32) Peripheral write protection status - Bridge D */
   __I   uint8_t                        Reserved4[0x10];
-  __I   uint32_t                       PAC_NONSECA;        /**< Offset: 0x54 (R/   32) Peripheral Non-Secure Status - Bridge A */
-  __I   uint32_t                       PAC_NONSECB;        /**< Offset: 0x58 (R/   32) Peripheral Non-Secure Status - Bridge B */
-  __I   uint32_t                       PAC_NONSECC;        /**< Offset: 0x5C (R/   32) Peripheral Non-Secure Status - Bridge C */
-  __I   uint32_t                       PAC_NONSECD;        /**< Offset: 0x60 (R/   32) Peripheral Non-Secure Status - Bridge D */
+  __I   uint32_t                       PAC_NONSECA;        /* Offset: 0x54 (R/   32) Peripheral Non-Secure Status - Bridge A */
+  __I   uint32_t                       PAC_NONSECB;        /* Offset: 0x58 (R/   32) Peripheral Non-Secure Status - Bridge B */
+  __I   uint32_t                       PAC_NONSECC;        /* Offset: 0x5C (R/   32) Peripheral Non-Secure Status - Bridge C */
+  __I   uint32_t                       PAC_NONSECD;        /* Offset: 0x60 (R/   32) Peripheral Non-Secure Status - Bridge D */
   __I   uint8_t                        Reserved5[0x10];
-  __I   uint32_t                       PAC_SECLOCKA;       /**< Offset: 0x74 (R/   32) Peripheral Security Lock Status - Bridge A */
-  __I   uint32_t                       PAC_SECLOCKB;       /**< Offset: 0x78 (R/   32) Peripheral Security Lock Status - Bridge B */
-  __I   uint32_t                       PAC_SECLOCKC;       /**< Offset: 0x7C (R/   32) Peripheral Security Lock Status - Bridge C */
-  __I   uint32_t                       PAC_SECLOCKD;       /**< Offset: 0x80 (R/   32) Peripheral Security Lock Status - Bridge D */
+  __I   uint32_t                       PAC_SECLOCKA;       /* Offset: 0x74 (R/   32) Peripheral Security Lock Status - Bridge A */
+  __I   uint32_t                       PAC_SECLOCKB;       /* Offset: 0x78 (R/   32) Peripheral Security Lock Status - Bridge B */
+  __I   uint32_t                       PAC_SECLOCKC;       /* Offset: 0x7C (R/   32) Peripheral Security Lock Status - Bridge C */
+  __I   uint32_t                       PAC_SECLOCKD;       /* Offset: 0x80 (R/   32) Peripheral Security Lock Status - Bridge D */
 } pac_registers_t;
 
 

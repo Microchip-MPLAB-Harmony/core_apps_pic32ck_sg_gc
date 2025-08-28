@@ -1,7 +1,9 @@
 /*
  * Instance header file for PIC32CK2051SG01144
  *
- * Copyright (c) 2024 Microchip Technology Inc. and its subsidiaries.
+ * Copyright (c) 2025 Microchip Technology Inc. and its subsidiaries.
+ *
+ * SPDX-License-Identifier: Apache-2.0
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -17,22 +19,22 @@
  *
  */
 
-/* file generated from device description file (ATDF) version 2024-04-02T09:16:38Z */
+/* file generated from device description file (ATDF) version 2025-07-03T22:19:01Z */
 #ifndef _PIC32CKSG01_PORT_INSTANCE_
 #define _PIC32CKSG01_PORT_INSTANCE_
 
 
 /* ========== Instance Parameter definitions for PORT peripheral ========== */
-#define PORT_AHB_IMPLEMENTED                     (0)        
-#define PORT_BITS                                (118)      
+#define PORT_AHB_IMPLEMENTED                     (0)
+#define PORT_BITS                                (118)
 #define PORT_DRVSTR                              (0)        /* Number of DRVSTR bits (0/1/2) */
-#define PORT_EV_NUM                              (4)        
-#define PORT_GROUPS                              (4)        
+#define PORT_EV_NUM                              (4)
+#define PORT_GROUPS                              (4)
 #define PORT_HADDR_MSB                           (31)       /* AHB bus address MSB */
 #define PORT_INSTANCE_ID                         (32)       /* Instance index for PORT */
-#define PORT_IOBUS_IMPLEMENTED                   (0)        
+#define PORT_IOBUS_IMPLEMENTED                   (0)
 #define PORT_MCLK_ID_APB                         (64)       /* Index for PORT APB clock */
-#define PORT_MSB                                 (117)      
+#define PORT_MSB                                 (117)
 #define PORT_ODRAIN                              (1)        /* ODRAIN supported? */
 #define PORT_PAC_ID                              (32)       /* Index for PORT registers write protection */
 #define PORT_PPP_IMPLEMENTED                     (0)        /* IOBUS2 implemented? */

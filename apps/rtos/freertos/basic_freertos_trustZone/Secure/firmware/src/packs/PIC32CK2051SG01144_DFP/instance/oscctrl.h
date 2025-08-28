@@ -1,7 +1,9 @@
 /*
  * Instance header file for PIC32CK2051SG01144
  *
- * Copyright (c) 2024 Microchip Technology Inc. and its subsidiaries.
+ * Copyright (c) 2025 Microchip Technology Inc. and its subsidiaries.
+ *
+ * SPDX-License-Identifier: Apache-2.0
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -17,7 +19,7 @@
  *
  */
 
-/* file generated from device description file (ATDF) version 2024-04-02T09:16:38Z */
+/* file generated from device description file (ATDF) version 2025-07-03T22:19:01Z */
 #ifndef _PIC32CKSG01_OSCCTRL_INSTANCE_
 #define _PIC32CKSG01_OSCCTRL_INSTANCE_
 
@@ -27,7 +29,7 @@
 #define OSCCTRL_DFLL48M_ATEST_SIZE               (8)        /* number of effective bits in DFLL48M ATEST register */
 #define OSCCTRL_DFLL48M_IS_STARTUP_OSCILLATOR    (1)        /* DFLL48M is startup oscillator */
 #define OSCCTRL_DFLL48M_RC48MCAL0_PORVAL         (0)        /* Defines the RC48MCAL0 register reset value after POR. */
-#define OSCCTRL_DIV_8MHZ_NUM                     (2)        
+#define OSCCTRL_DIV_8MHZ_NUM                     (2)
 #define OSCCTRL_FRACDIVS_NUM                     (1)        /* Number of FRACDIVs */
 #define OSCCTRL_FRACDIV_DIVIDER_RESET_VAL        (32)       /* Fracdiv Divider reset value */
 #define OSCCTRL_FRACDIV_PLLSRC                   (0)        /* Indice of the PLL that is source of the FRACDIV */

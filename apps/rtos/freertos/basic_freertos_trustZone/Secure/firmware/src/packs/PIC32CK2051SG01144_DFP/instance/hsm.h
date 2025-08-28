@@ -1,7 +1,9 @@
 /*
  * Instance header file for PIC32CK2051SG01144
  *
- * Copyright (c) 2024 Microchip Technology Inc. and its subsidiaries.
+ * Copyright (c) 2025 Microchip Technology Inc. and its subsidiaries.
+ *
+ * SPDX-License-Identifier: Apache-2.0
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -17,16 +19,16 @@
  *
  */
 
-/* file generated from device description file (ATDF) version 2024-04-02T09:16:38Z */
+/* file generated from device description file (ATDF) version 2025-07-03T22:19:01Z */
 #ifndef _PIC32CKSG01_HSM_INSTANCE_
 #define _PIC32CKSG01_HSM_INSTANCE_
 
 
 /* ========== Instance Parameter definitions for HSM peripheral ========== */
 #define HSM_INSTANCE_ID                          (98)       /* Instance index for HSM */
-#define HSM_KEN_VALUE                            (0)        
+#define HSM_KEN_VALUE                            (0)
 #define HSM_MCLK_ID_AHB                          (22)       /* Index for HSM AHB clock */
 #define HSM_PAC_ID                               (98)       /* Index for HSM registers write protection */
-#define HSM_g_ClkGating                          (1)        
+#define HSM_g_ClkGating                          (1)
 
 #endif /* _PIC32CKSG01_HSM_INSTANCE_ */

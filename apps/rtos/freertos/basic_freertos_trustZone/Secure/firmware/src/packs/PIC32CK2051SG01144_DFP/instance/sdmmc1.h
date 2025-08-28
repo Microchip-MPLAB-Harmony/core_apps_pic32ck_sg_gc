@@ -1,7 +1,9 @@
 /*
  * Instance header file for PIC32CK2051SG01144
  *
- * Copyright (c) 2024 Microchip Technology Inc. and its subsidiaries.
+ * Copyright (c) 2025 Microchip Technology Inc. and its subsidiaries.
+ *
+ * SPDX-License-Identifier: Apache-2.0
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -17,20 +19,20 @@
  *
  */
 
-/* file generated from device description file (ATDF) version 2024-04-02T09:16:38Z */
+/* file generated from device description file (ATDF) version 2025-07-03T22:19:01Z */
 #ifndef _PIC32CKSG01_SDMMC1_INSTANCE_
 #define _PIC32CKSG01_SDMMC1_INSTANCE_
 
 
 /* ========== Instance Parameter definitions for SDMMC1 peripheral ========== */
-#define SDMMC1_CARD_DATA_SIZE                    (4)        
+#define SDMMC1_CARD_DATA_SIZE                    (4)
 #define SDMMC1_CLOCK_MULTIPLIER                  (2)        /* Multiplier between "sd_mult_src_clock" and "sd_src_clock" */
 #define SDMMC1_DDR50_SUPPORT                     (0)        /* SD - UHS DDR50 Support Implemented */
 #define SDMMC1_DIVBY2_FOR_SDSRCCLK               (1)        /* Div-by-2 Source Clock is Implemented */
-#define SDMMC1_DLL_NB_OF_PHASES                  (16)       
+#define SDMMC1_DLL_NB_OF_PHASES                  (16)
 #define SDMMC1_EIGHT_BITS_BUS_WIDTH              (0)        /* Data Bus Width */
-#define SDMMC1_GCLK_ID                           (45)       
-#define SDMMC1_GCLK_ID_SLOW                      (18)       
+#define SDMMC1_GCLK_ID                           (45)
+#define SDMMC1_GCLK_ID_SLOW                      (18)
 #define SDMMC1_GLOBAL_INTERRUPT                  (1)        /* Global Interrupt */
 #define SDMMC1_HS200_SUPPORT                     (0)        /* e.MMC - HS200 Support Implemented */
 #define SDMMC1_HSDDR_SUPPORT                     (0)        /* e.MMC - HSDDR Support Implemented */

@@ -1,7 +1,9 @@
 /*
  * Instance header file for PIC32CK2051SG01144
  *
- * Copyright (c) 2024 Microchip Technology Inc. and its subsidiaries.
+ * Copyright (c) 2025 Microchip Technology Inc. and its subsidiaries.
+ *
+ * SPDX-License-Identifier: Apache-2.0
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -17,22 +19,22 @@
  *
  */
 
-/* file generated from device description file (ATDF) version 2024-04-02T09:16:38Z */
+/* file generated from device description file (ATDF) version 2025-07-03T22:19:01Z */
 #ifndef _PIC32CKSG01_SQI_INSTANCE_
 #define _PIC32CKSG01_SQI_INSTANCE_
 
 
 /* ========== Instance Parameter definitions for SQI peripheral ========== */
-#define SQI_ATSPEED_IMPLEMENTED                  (1)        
-#define SQI_CBUF_DEPTH                           (3)        
+#define SQI_ATSPEED_IMPLEMENTED                  (1)
+#define SQI_CBUF_DEPTH                           (3)
 #define SQI_GCLK_ID                              (43)       /* Index of Generic Clock */
 #define SQI_INSTANCE_ID                          (96)       /* Instance index for SQI */
 #define SQI_MCLK_ID_AHB                          (16)       /* Index for SQI AHB clock */
 #define SQI_PAC_ID                               (96)       /* Index for SQI registers write protection */
-#define SQI_SFR_ADDRESS                          (0x0ffff000) 
-#define SQI_TRXBUF_DEPTH                         (8)        
-#define SQI_XIP_ADDRESS                          (0x10)     
-#define SQI_XIP_CS_MSB                           (3)        
-#define SQI_XIP_HSEL                             (1)        
+#define SQI_SFR_ADDRESS                          (0x0ffff000)
+#define SQI_TRXBUF_DEPTH                         (8)
+#define SQI_XIP_ADDRESS                          (0x10)
+#define SQI_XIP_CS_MSB                           (3)
+#define SQI_XIP_HSEL                             (1)
 
 #endif /* _PIC32CKSG01_SQI_INSTANCE_ */

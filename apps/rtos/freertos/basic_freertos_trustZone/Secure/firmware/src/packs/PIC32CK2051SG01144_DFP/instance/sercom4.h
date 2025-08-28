@@ -1,7 +1,9 @@
 /*
  * Instance header file for PIC32CK2051SG01144
  *
- * Copyright (c) 2024 Microchip Technology Inc. and its subsidiaries.
+ * Copyright (c) 2025 Microchip Technology Inc. and its subsidiaries.
+ *
+ * SPDX-License-Identifier: Apache-2.0
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -17,7 +19,7 @@
  *
  */
 
-/* file generated from device description file (ATDF) version 2024-04-02T09:16:38Z */
+/* file generated from device description file (ATDF) version 2025-07-03T22:19:01Z */
 #ifndef _PIC32CKSG01_SERCOM4_INSTANCE_
 #define _PIC32CKSG01_SERCOM4_INSTANCE_
 
@@ -30,8 +32,8 @@
 #define SERCOM4_FIFO_IMPLEMENTED                 (1)        /* FIFO Rx/Tx implemented? */
 #define SERCOM4_FIFO_SIZE                        (8)        /* Rx-Tx FIFO size in bytes */
 #define SERCOM4_FSYNC_IMPLEMENTED                (1)        /* SPI Frame Synch mode implemented? */
-#define SERCOM4_GCLK_ID_CORE                     (25)       
-#define SERCOM4_GCLK_ID_SLOW                     (18)       
+#define SERCOM4_GCLK_ID_CORE                     (25)
+#define SERCOM4_GCLK_ID_SLOW                     (18)
 #define SERCOM4_I2C_0_INT_SRC                    (96)       /* USART/SPI/I2C Error */
 #define SERCOM4_I2C_1_INT_SRC                    (99)       /* USART-SPI Receive Complete/ I2C Data Ready */
 #define SERCOM4_I2C_2_INT_SRC                    (100)      /* USART Receive Start/ SPI Slave Select Low/ I2C TX FIFO Empty */
