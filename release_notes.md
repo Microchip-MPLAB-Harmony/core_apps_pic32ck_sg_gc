@@ -3,6 +3,25 @@
 
 # Microchip MPLAB® Harmony 3 Release Notes
 
+## MPLAB® Harmony 3 Peripheral Library Application Examples for PIC32CK GC/SG Family v3.1.1
+
+-   Regenerated and tested rtos\_freertos\_basic\_freertos\_trustZone\_pic32ck\_sg01\_cult demo
+
+### New Features
+
+-   None
+
+### Known Issues
+
+-   None
+
+### Development Tools
+
+-   [MPLAB® X IDE v6.25](https://www.microchip.com/mplab/mplab-x-ide)
+-   MPLAB® X IDE plug-ins:
+    -   MPLAB® Code Configurator \(MCC\) v5.6.2
+-   [MPLAB® XC32 C/C++ Compiler v4.60](https://www.microchip.com/mplab/compilers)
+
 ## Harmony 3 driver and system service application examples for PIC32CK-GC/SG family v3.1.0
 
 ### Development kit and demo application support
