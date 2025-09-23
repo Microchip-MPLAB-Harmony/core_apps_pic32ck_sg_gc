@@ -1,13 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <configurationDescriptor version="65">
   <logicalFolder name="root" displayName="root" projectFiles="true">
-    <logicalFolder name="HeaderFiles"
-                   displayName="Header Files"
-                   projectFiles="true">
+    <logicalFolder name="HeaderFiles" displayName="Header Files" projectFiles="true">
       <logicalFolder name="config" displayName="config" projectFiles="true">
-        <logicalFolder name="pic32ck_gc01_cult_freertos"
-                       displayName="pic32ck_gc01_cult_freertos"
-                       projectFiles="true">
+        <logicalFolder name="pic32ck_gc01_cult_freertos" displayName="pic32ck_gc01_cult_freertos" projectFiles="true">
           <logicalFolder name="bsp" displayName="bsp" projectFiles="true">
             <itemPath>../src/config/pic32ck_gc01_cult_freertos/bsp/bsp.h</itemPath>
           </logicalFolder>
@@ -105,9 +101,7 @@
           </logicalFolder>
           <logicalFolder name="portable" displayName="portable" projectFiles="true">
             <logicalFolder name="GCC" displayName="GCC" projectFiles="true">
-              <logicalFolder name="ARM_CM33_NTZ"
-                             displayName="ARM_CM33_NTZ"
-                             projectFiles="true">
+              <logicalFolder name="ARM_CM33_NTZ" displayName="ARM_CM33_NTZ" projectFiles="true">
                 <logicalFolder name="non_secure" displayName="non_secure" projectFiles="true">
                   <itemPath>../src/third_party/rtos/FreeRTOS/Source/portable/GCC/ARM_CM33_NTZ/non_secure/portmacro.h</itemPath>
                   <itemPath>../src/third_party/rtos/FreeRTOS/Source/portable/GCC/ARM_CM33_NTZ/non_secure/portasm.h</itemPath>
@@ -138,9 +132,7 @@
             </logicalFolder>
           </logicalFolder>
         </logicalFolder>
-        <logicalFolder name="PIC32CK2051GC01144_DFP"
-                       displayName="PIC32CK2051GC01144_DFP"
-                       projectFiles="true">
+        <logicalFolder name="PIC32CK2051GC01144_DFP" displayName="PIC32CK2051GC01144_DFP" projectFiles="true">
           <logicalFolder name="component" displayName="component" projectFiles="true">
             <itemPath>../src/packs/PIC32CK2051GC01144_DFP/component/pcc.h</itemPath>
             <itemPath>../src/packs/PIC32CK2051GC01144_DFP/component/sqi.h</itemPath>
@@ -175,7 +167,6 @@
             <itemPath>../src/packs/PIC32CK2051GC01144_DFP/component/dma.h</itemPath>
             <itemPath>../src/packs/PIC32CK2051GC01144_DFP/component/pm.h</itemPath>
             <itemPath>../src/packs/PIC32CK2051GC01144_DFP/component/rtc.h</itemPath>
-            <itemPath>../src/packs/PIC32CK2051GC01144_DFP/component/sig.h</itemPath>
             <itemPath>../src/packs/PIC32CK2051GC01144_DFP/component/idau.h</itemPath>
             <itemPath>../src/packs/PIC32CK2051GC01144_DFP/component/gclk.h</itemPath>
             <itemPath>../src/packs/PIC32CK2051GC01144_DFP/component/fcw.h</itemPath>
@@ -211,7 +202,6 @@
             <itemPath>../src/packs/PIC32CK2051GC01144_DFP/instance/sercom5.h</itemPath>
             <itemPath>../src/packs/PIC32CK2051GC01144_DFP/instance/tcc2.h</itemPath>
             <itemPath>../src/packs/PIC32CK2051GC01144_DFP/instance/eth.h</itemPath>
-            <itemPath>../src/packs/PIC32CK2051GC01144_DFP/instance/sig.h</itemPath>
             <itemPath>../src/packs/PIC32CK2051GC01144_DFP/instance/usb.h</itemPath>
             <itemPath>../src/packs/PIC32CK2051GC01144_DFP/instance/can0.h</itemPath>
             <itemPath>../src/packs/PIC32CK2051GC01144_DFP/instance/pcc.h</itemPath>
@@ -256,31 +246,36 @@
       <itemPath>../src/app_client1.h</itemPath>
       <itemPath>../src/app_client2.h</itemPath>
     </logicalFolder>
-    <logicalFolder name="ExternalFiles"
-                   displayName="Important Files"
-                   projectFiles="true">
+    <logicalFolder name="ExternalFiles" displayName="Important Files" projectFiles="true">
+      <logicalFolder name="spi_sync_spi_self_loopback_multi_client_pic32ck_gc01_cult_freertos_pic32ck_gc01_cult_freertos" displayName="spi_sync_spi_self_loopback_multi_client_pic32ck_gc01_cult_freertos_pic32ck_gc01_cult_freertos" projectFiles="true">
+        <itemPath>spi_sync_spi_self_loopback_multi_client_pic32ck_gc01_cult_freertos_pic32ck_gc01_cult_freertos/mcc-config.mc4</itemPath>
+        <logicalFolder name="components" displayName="components" projectFiles="true">
+          <itemPath>spi_sync_spi_self_loopback_multi_client_pic32ck_gc01_cult_freertos_pic32ck_gc01_cult_freertos/components/BSP_PIC32CK_GC01_Curiosity_Ultra.yml</itemPath>
+          <itemPath>spi_sync_spi_self_loopback_multi_client_pic32ck_gc01_cult_freertos_pic32ck_gc01_cult_freertos/components/FreeRTOS.yml</itemPath>
+          <itemPath>spi_sync_spi_self_loopback_multi_client_pic32ck_gc01_cult_freertos_pic32ck_gc01_cult_freertos/components/HarmonyCore.yml</itemPath>
+          <itemPath>spi_sync_spi_self_loopback_multi_client_pic32ck_gc01_cult_freertos_pic32ck_gc01_cult_freertos/components/cmsis.yml</itemPath>
+          <itemPath>spi_sync_spi_self_loopback_multi_client_pic32ck_gc01_cult_freertos_pic32ck_gc01_cult_freertos/components/core.yml</itemPath>
+          <itemPath>spi_sync_spi_self_loopback_multi_client_pic32ck_gc01_cult_freertos_pic32ck_gc01_cult_freertos/components/dfp.yml</itemPath>
+          <itemPath>spi_sync_spi_self_loopback_multi_client_pic32ck_gc01_cult_freertos_pic32ck_gc01_cult_freertos/components/drv_spi.yml</itemPath>
+          <itemPath>spi_sync_spi_self_loopback_multi_client_pic32ck_gc01_cult_freertos_pic32ck_gc01_cult_freertos/components/drv_spi_0.yml</itemPath>
+          <itemPath>spi_sync_spi_self_loopback_multi_client_pic32ck_gc01_cult_freertos_pic32ck_gc01_cult_freertos/components/evsys.yml</itemPath>
+          <itemPath>spi_sync_spi_self_loopback_multi_client_pic32ck_gc01_cult_freertos_pic32ck_gc01_cult_freertos/components/pm.yml</itemPath>
+          <itemPath>spi_sync_spi_self_loopback_multi_client_pic32ck_gc01_cult_freertos_pic32ck_gc01_cult_freertos/components/sercom2.yml</itemPath>
+        </logicalFolder>
+      </logicalFolder>
       <itemPath>Makefile</itemPath>
-      <itemPath>spi_sync_spi_self_loopback_multi_client_pic32ck_gc01_cult_freertos.mc3</itemPath>
       <itemPath>../src/config/pic32ck_gc01_cult_freertos/harmony-manifest-success.yml</itemPath>
     </logicalFolder>
-    <logicalFolder name="LinkerScript"
-                   displayName="Linker Files"
-                   projectFiles="true">
+    <logicalFolder name="LinkerScript" displayName="Linker Files" projectFiles="true">
       <logicalFolder name="config" displayName="config" projectFiles="true">
-        <logicalFolder name="pic32ck_gc01_cult_freertos"
-                       displayName="pic32ck_gc01_cult_freertos"
-                       projectFiles="true">
+        <logicalFolder name="pic32ck_gc01_cult_freertos" displayName="pic32ck_gc01_cult_freertos" projectFiles="true">
           <itemPath>../src/config/pic32ck_gc01_cult_freertos/PIC32CK2051GC01144.ld</itemPath>
         </logicalFolder>
       </logicalFolder>
     </logicalFolder>
-    <logicalFolder name="SourceFiles"
-                   displayName="Source Files"
-                   projectFiles="true">
+    <logicalFolder name="SourceFiles" displayName="Source Files" projectFiles="true">
       <logicalFolder name="config" displayName="config" projectFiles="true">
-        <logicalFolder name="pic32ck_gc01_cult_freertos"
-                       displayName="pic32ck_gc01_cult_freertos"
-                       projectFiles="true">
+        <logicalFolder name="pic32ck_gc01_cult_freertos" displayName="pic32ck_gc01_cult_freertos" projectFiles="true">
           <logicalFolder name="bsp" displayName="bsp" projectFiles="true">
             <itemPath>../src/config/pic32ck_gc01_cult_freertos/bsp/bsp.c</itemPath>
           </logicalFolder>
@@ -341,9 +336,7 @@
         <logicalFolder name="Source" displayName="Source" projectFiles="true">
           <logicalFolder name="portable" displayName="portable" projectFiles="true">
             <logicalFolder name="GCC" displayName="GCC" projectFiles="true">
-              <logicalFolder name="ARM_CM33_NTZ"
-                             displayName="ARM_CM33_NTZ"
-                             projectFiles="true">
+              <logicalFolder name="ARM_CM33_NTZ" displayName="ARM_CM33_NTZ" projectFiles="true">
                 <logicalFolder name="non_secure" displayName="non_secure" projectFiles="true">
                   <itemPath>../src/third_party/rtos/FreeRTOS/Source/portable/GCC/ARM_CM33_NTZ/non_secure/port.c</itemPath>
                   <itemPath>../src/third_party/rtos/FreeRTOS/Source/portable/GCC/ARM_CM33_NTZ/non_secure/portasm.c</itemPath>
@@ -376,16 +369,16 @@
       <toolsSet>
         <developmentServer>localhost</developmentServer>
         <targetDevice>PIC32CK2051GC01144</targetDevice>
-        <targetHeader></targetHeader>
-        <targetPluginBoard></targetPluginBoard>
+        <targetHeader/>
+        <targetPluginBoard/>
         <platformTool>pkob4hybrid</platformTool>
         <languageToolchain>XC32</languageToolchain>
-        <languageToolchainVersion>4.21</languageToolchainVersion>
+        <languageToolchainVersion>4.60</languageToolchainVersion>
         <platform>3</platform>
       </toolsSet>
       <packs>
         <pack name="CMSIS" vendor="ARM" version="5.4.0"/>
-        <pack name="PIC32CK-GC_DFP" vendor="Microchip" version="1.0.131"/>
+        <pack name="PIC32CK-GC_DFP" vendor="Microchip" version="1.1.148"/>
       </packs>
       <ScriptingSettings>
       </ScriptingSettings>
@@ -399,7 +392,7 @@
         <loading>
           <useAlternateLoadableFile>false</useAlternateLoadableFile>
           <parseOnProdLoad>false</parseOnProdLoad>
-          <alternateLoadableFile></alternateLoadableFile>
+          <alternateLoadableFile/>
         </loading>
         <subordinates>
         </subordinates>
@@ -407,9 +400,9 @@
       <makeCustomizationType>
         <makeCustomizationPreStepEnabled>false</makeCustomizationPreStepEnabled>
         <makeUseCleanTarget>false</makeUseCleanTarget>
-        <makeCustomizationPreStep></makeCustomizationPreStep>
+        <makeCustomizationPreStep/>
         <makeCustomizationPostStepEnabled>false</makeCustomizationPostStepEnabled>
-        <makeCustomizationPostStep></makeCustomizationPostStep>
+        <makeCustomizationPostStep/>
         <makeCustomizationPutChecksumInUserID>false</makeCustomizationPutChecksumInUserID>
         <makeCustomizationEnableLongLines>false</makeCustomizationEnableLongLines>
         <makeCustomizationNormalizeHexFile>false</makeCustomizationNormalizeHexFile>
@@ -423,8 +416,7 @@
         <property key="enable-symbols" value="true"/>
         <property key="enable-unroll-loops" value="false"/>
         <property key="exclude-floating-point" value="false"/>
-        <property key="extra-include-directories"
-                  value="../src;../src/config/pic32ck_gc01_cult_freertos;../src/packs/CMSIS/;../src/packs/CMSIS/CMSIS/Core/Include;../src/packs/PIC32CK2051GC01144_DFP;../src/third_party/rtos/FreeRTOS/Source/include;../src/third_party/rtos/FreeRTOS/Source/portable/GCC/ARM_CM33_NTZ/non_secure"/>
+        <property key="extra-include-directories" value="../src;../src/config/pic32ck_gc01_cult_freertos;../src/packs/CMSIS/;../src/packs/CMSIS/CMSIS/Core/Include;../src/packs/PIC32CK2051GC01144_DFP;../src/third_party/rtos/FreeRTOS/Source/include;../src/third_party/rtos/FreeRTOS/Source/portable/GCC/ARM_CM33_NTZ/non_secure"/>
         <property key="generate-16-bit-code" value="false"/>
         <property key="generate-micro-compressed-code" value="false"/>
         <property key="isolate-each-function" value="true"/>
@@ -523,8 +515,7 @@
         <property key="enable-unroll-loops" value="false"/>
         <property key="exceptions" value="true"/>
         <property key="exclude-floating-point" value="false"/>
-        <property key="extra-include-directories"
-                  value="../src;../src/config/pic32ck_gc01_cult_freertos;../src/packs/CMSIS/;../src/packs/CMSIS/CMSIS/Core/Include;../src/packs/PIC32CK2051GC01144_DFP;../src/third_party/rtos/FreeRTOS/Source/include;../src/third_party/rtos/FreeRTOS/Source/portable/GCC/ARM_CM33_NTZ/non_secure"/>
+        <property key="extra-include-directories" value="../src;../src/config/pic32ck_gc01_cult_freertos;../src/packs/CMSIS/;../src/packs/CMSIS/CMSIS/Core/Include;../src/packs/PIC32CK2051GC01144_DFP;../src/third_party/rtos/FreeRTOS/Source/include;../src/third_party/rtos/FreeRTOS/Source/portable/GCC/ARM_CM33_NTZ/non_secure"/>
         <property key="generate-16-bit-code" value="false"/>
         <property key="generate-micro-compressed-code" value="false"/>
         <property key="isolate-each-function" value="true"/>
@@ -558,12 +549,9 @@
       </C32Global>
       <Tool>
         <property key="AutoSelectMemRanges" value="auto"/>
-        <property key="ToolFirmwareFilePath"
-                  value="Press to browse for a specific firmware version"/>
-        <property key="ToolFirmwareOption.UpdateOptions"
-                  value="ToolFirmwareOption.UseLatest"/>
-        <property key="ToolFirmwareToolPack"
-                  value="Press to select which tool pack to use"/>
+        <property key="ToolFirmwareFilePath" value="Press to browse for a specific firmware version"/>
+        <property key="ToolFirmwareOption.UpdateOptions" value="ToolFirmwareOption.UseLatest"/>
+        <property key="ToolFirmwareToolPack" value="Press to select which tool pack to use"/>
         <property key="communication.interface" value="swd"/>
         <property key="communication.interface.jtag" value="2wire"/>
         <property key="communication.speed" value="2.000"/>
@@ -583,8 +571,7 @@
         <property key="memories.exclude.configurationmemory" value="true"/>
         <property key="memories.flashdata" value="true"/>
         <property key="memories.id" value="true"/>
-        <property key="memories.instruction.ram.ranges"
-                  value="${memories.instruction.ram.ranges}"/>
+        <property key="memories.instruction.ram.ranges" value="${memories.instruction.ram.ranges}"/>
         <property key="memories.programmemory" value="true"/>
         <property key="memories.programmemory.ranges" value="0-63ffffff"/>
         <property key="programoptions.donoteraseauxmem" value="false"/>
@@ -592,8 +579,7 @@
         <property key="programoptions.pgmentry.voltage" value="low"/>
         <property key="programoptions.pgmspeed" value="Med"/>
         <property key="programoptions.preservedataflash" value="false"/>
-        <property key="programoptions.preservedataflash.ranges"
-                  value="${memories.dataflash.default}"/>
+        <property key="programoptions.preservedataflash.ranges" value="${memories.dataflash.default}"/>
         <property key="programoptions.preserveeeprom" value="false"/>
         <property key="programoptions.preserveeeprom.ranges" value=""/>
         <property key="programoptions.preserveprogram.ranges" value=""/>
@@ -603,19 +589,14 @@
         <property key="programoptions.programcalmem" value="false"/>
         <property key="programoptions.programuserotp" value="false"/>
         <property key="programoptions.testmodeentrymethod" value="VDDFirst"/>
-        <property key="toolpack.updateoptions"
-                  value="toolpack.updateoptions.uselatestoolpack"/>
-        <property key="toolpack.updateoptions.packversion"
-                  value="Press to select which tool pack to use"/>
+        <property key="toolpack.updateoptions" value="toolpack.updateoptions.uselatestoolpack"/>
+        <property key="toolpack.updateoptions.packversion" value="Press to select which tool pack to use"/>
       </Tool>
       <pkob4hybrid>
         <property key="AutoSelectMemRanges" value="auto"/>
-        <property key="ToolFirmwareFilePath"
-                  value="Press to browse for a specific firmware version"/>
-        <property key="ToolFirmwareOption.UpdateOptions"
-                  value="ToolFirmwareOption.UseLatest"/>
-        <property key="ToolFirmwareToolPack"
-                  value="Press to select which tool pack to use"/>
+        <property key="ToolFirmwareFilePath" value="Press to browse for a specific firmware version"/>
+        <property key="ToolFirmwareOption.UpdateOptions" value="ToolFirmwareOption.UseLatest"/>
+        <property key="ToolFirmwareToolPack" value="Press to select which tool pack to use"/>
         <property key="communication.interface" value="swd"/>
         <property key="communication.interface.jtag" value="2wire"/>
         <property key="communication.speed" value="2.000"/>
@@ -635,8 +616,7 @@
         <property key="memories.exclude.configurationmemory" value="true"/>
         <property key="memories.flashdata" value="true"/>
         <property key="memories.id" value="true"/>
-        <property key="memories.instruction.ram.ranges"
-                  value="${memories.instruction.ram.ranges}"/>
+        <property key="memories.instruction.ram.ranges" value="${memories.instruction.ram.ranges}"/>
         <property key="memories.programmemory" value="true"/>
         <property key="memories.programmemory.ranges" value="0-63ffffff"/>
         <property key="programoptions.donoteraseauxmem" value="false"/>
@@ -644,8 +624,7 @@
         <property key="programoptions.pgmentry.voltage" value="low"/>
         <property key="programoptions.pgmspeed" value="Med"/>
         <property key="programoptions.preservedataflash" value="false"/>
-        <property key="programoptions.preservedataflash.ranges"
-                  value="${memories.dataflash.default}"/>
+        <property key="programoptions.preservedataflash.ranges" value="${memories.dataflash.default}"/>
         <property key="programoptions.preserveeeprom" value="false"/>
         <property key="programoptions.preserveeeprom.ranges" value=""/>
         <property key="programoptions.preserveprogram.ranges" value=""/>
@@ -655,10 +634,8 @@
         <property key="programoptions.programcalmem" value="false"/>
         <property key="programoptions.programuserotp" value="false"/>
         <property key="programoptions.testmodeentrymethod" value="VDDFirst"/>
-        <property key="toolpack.updateoptions"
-                  value="toolpack.updateoptions.uselatestoolpack"/>
-        <property key="toolpack.updateoptions.packversion"
-                  value="Press to select which tool pack to use"/>
+        <property key="toolpack.updateoptions" value="toolpack.updateoptions.uselatestoolpack"/>
+        <property key="toolpack.updateoptions.packversion" value="Press to select which tool pack to use"/>
       </pkob4hybrid>
     </conf>
   </confs>
