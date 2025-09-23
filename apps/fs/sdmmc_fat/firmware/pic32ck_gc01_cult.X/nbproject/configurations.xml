@@ -314,8 +314,24 @@
       <itemPath>../src/app.c</itemPath>
     </logicalFolder>
     <logicalFolder name="ExternalFiles" displayName="Important Files" projectFiles="false">
+      <logicalFolder name="fs_sdmmc_fat_pic32ck_gc01_cult_pic32ck_gc01_cult" displayName="fs_sdmmc_fat_pic32ck_gc01_cult_pic32ck_gc01_cult" projectFiles="true">
+        <itemPath>fs_sdmmc_fat_pic32ck_gc01_cult_pic32ck_gc01_cult/mcc-config.mc4</itemPath>
+        <logicalFolder name="components" displayName="components" projectFiles="true">
+          <itemPath>fs_sdmmc_fat_pic32ck_gc01_cult_pic32ck_gc01_cult/components/BSP_PIC32CK_GC01_Curiosity_Ultra.yml</itemPath>
+          <itemPath>fs_sdmmc_fat_pic32ck_gc01_cult_pic32ck_gc01_cult/components/HarmonyCore.yml</itemPath>
+          <itemPath>fs_sdmmc_fat_pic32ck_gc01_cult_pic32ck_gc01_cult/components/cmsis.yml</itemPath>
+          <itemPath>fs_sdmmc_fat_pic32ck_gc01_cult_pic32ck_gc01_cult/components/core.yml</itemPath>
+          <itemPath>fs_sdmmc_fat_pic32ck_gc01_cult_pic32ck_gc01_cult/components/dfp.yml</itemPath>
+          <itemPath>fs_sdmmc_fat_pic32ck_gc01_cult_pic32ck_gc01_cult/components/drv_sdmmc.yml</itemPath>
+          <itemPath>fs_sdmmc_fat_pic32ck_gc01_cult_pic32ck_gc01_cult/components/drv_sdmmc_0.yml</itemPath>
+          <itemPath>fs_sdmmc_fat_pic32ck_gc01_cult_pic32ck_gc01_cult/components/evsys.yml</itemPath>
+          <itemPath>fs_sdmmc_fat_pic32ck_gc01_cult_pic32ck_gc01_cult/components/pm.yml</itemPath>
+          <itemPath>fs_sdmmc_fat_pic32ck_gc01_cult_pic32ck_gc01_cult/components/sdmmc0.yml</itemPath>
+          <itemPath>fs_sdmmc_fat_pic32ck_gc01_cult_pic32ck_gc01_cult/components/sys_fs.yml</itemPath>
+          <itemPath>fs_sdmmc_fat_pic32ck_gc01_cult_pic32ck_gc01_cult/components/sys_time.yml</itemPath>
+        </logicalFolder>
+      </logicalFolder>
       <itemPath>Makefile</itemPath>
-      <itemPath>fs_sdmmc_fat_pic32ck_gc01_cult.mc3</itemPath>
       <itemPath>../src/config/pic32ck_gc01_cult/harmony-manifest-success.yml</itemPath>
     </logicalFolder>
   </logicalFolder>
@@ -329,7 +345,7 @@
         <targetPluginBoard/>
         <platformTool>pkob4hybrid</platformTool>
         <languageToolchain>XC32</languageToolchain>
-        <languageToolchainVersion>4.45</languageToolchainVersion>
+        <languageToolchainVersion>4.60</languageToolchainVersion>
         <platform>3</platform>
       </toolsSet>
       <packs>
