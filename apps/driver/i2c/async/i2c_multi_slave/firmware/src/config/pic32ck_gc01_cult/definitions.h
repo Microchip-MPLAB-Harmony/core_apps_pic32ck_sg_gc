@@ -14,7 +14,7 @@
 
 //DOM-IGNORE-BEGIN
 /*******************************************************************************
-* Copyright (C) 2018 Microchip Technology Inc. and its subsidiaries.
+* Copyright (C) 2025 Microchip Technology Inc. and its subsidiaries.
 *
 * Subject to your compliance with these terms, you may use Microchip software
 * and any derivatives exclusively with Microchip products. It is your
@@ -54,8 +54,8 @@
 #include "peripheral/nvic/plib_nvic.h"
 #include "peripheral/systick/plib_systick.h"
 #include "peripheral/cmcc/plib_cmcc.h"
-#include "peripheral/pm/plib_pm.h"
 #include "peripheral/sercom/usart/plib_sercom5_usart.h"
+#include "peripheral/pm/plib_pm.h"
 #include "peripheral/sercom/i2c_master/plib_sercom4_i2c_master.h"
 #include "driver/i2c/drv_i2c.h"
 #include "system/time/sys_time.h"
