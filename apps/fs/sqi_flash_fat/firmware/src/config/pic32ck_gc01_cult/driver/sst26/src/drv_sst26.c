@@ -66,7 +66,11 @@ static DRV_SST26_OBJECT gDrvSST26Obj;
 static DRV_SST26_OBJECT *dObj = &gDrvSST26Obj;
 
 /* Table mapping the Flash ID's to their sizes. */
-static uint32_t gSstFlashIdSizeTable [5][2] = {
+static uint32_t gSstFlashIdSizeTable [9][2] = {
+    {0x12, 0x40000},  /* 2 MBit */
+    {0x54, 0x80000},  /* 4 MBit */
+    {0x18, 0x100000}, /* 8 MBit */
+    {0x58, 0x100000}, /* 8 MBit */
     {0x01, 0x200000}, /* 16 MBit */
     {0x41, 0x200000}, /* 16 MBit */
     {0x02, 0x400000}, /* 32 MBit */
@@ -92,7 +96,7 @@ static uint8_t jedecID[4];
 static bool DRV_SST26_InitiateReadStatus(void)
 {
     void *ptr = NULL;
-    
+
     dObj->isTransferDone = false;
 
 
@@ -123,8 +127,8 @@ static bool DRV_SST26_InitiateReadStatus(void)
 
     // Initialize the root buffer descriptor
     dObj->sst26Plib->DMATransfer((sqi_dma_desc_t *)(&sqiCmdDesc[0]));
-	
-	return true;
+
+    return true;
 }
 
 static void DRV_SST26_EventHandler(uintptr_t context)
@@ -132,19 +136,19 @@ static void DRV_SST26_EventHandler(uintptr_t context)
     DRV_SST26_OBJECT *obj = (DRV_SST26_OBJECT *)context;
 
     obj->isTransferDone = true;
-	
-	if (obj->curOpType == DRV_SST26_OPERATION_TYPE_WRITE || obj->curOpType == DRV_SST26_OPERATION_TYPE_ERASE)
-	{
-		(void)DRV_SST26_InitiateReadStatus();
-	}
-	else if (obj->curOpType == DRV_SST26_OPERATION_TYPE_READ_STATUS && (sqiReadBuffer[0] & 0x81U) == 0U)
-	{
-		obj->internal_write_complete_flag = true;
-	}
-	else
-	{
+
+    if (obj->curOpType == DRV_SST26_OPERATION_TYPE_WRITE || obj->curOpType == DRV_SST26_OPERATION_TYPE_ERASE)
+    {
         (void)DRV_SST26_InitiateReadStatus();
-	}
+    }
+    else if (obj->curOpType == DRV_SST26_OPERATION_TYPE_READ_STATUS && (sqiReadBuffer[0] & 0x81U) == 0U)
+    {
+        obj->internal_write_complete_flag = true;
+    }
+    else
+    {
+        (void)DRV_SST26_InitiateReadStatus();
+    }
 }
 
 /* This function returns the flash size in bytes for the specified deviceId. A
@@ -153,7 +157,7 @@ static uint32_t DRV_SST26_GetFlashSize( uint8_t deviceId )
 {
     uint8_t i = 0;
 
-    for (i = 0U; i < 5U; i++)
+    for (i = 0U; i < 9U; i++)
     {
         if (deviceId == gSstFlashIdSizeTable[i][0])
         {
@@ -273,37 +277,74 @@ static bool DRV_SST26_ValidateHandleAndCheckBusy( const DRV_HANDLE handle )
 
 bool DRV_SST26_UnlockFlash( const DRV_HANDLE handle )
 {
+    bool status = true;
+    bool blockWriteProtection = false;
+    uint32_t bdctrlBufLen = 0U;
+
     if(DRV_SST26_ValidateHandleAndCheckBusy(handle) == true)
     {
-        return false;
+        status = false;
     }
-
-    dObj->isTransferDone = false;
-
-    DRV_SST26_WriteEnable();
-
-    sqiCmdBuffer[4]               = (uint8_t)SST26_CMD_UNPROTECT_GLOBAL;
-
-    sqiCmdDesc[1].bd_ctrl       = ( SQI_BDCTRL_BD_BUFLEN(1) | SQI_BDCTRL_PKT_INT_EN_Msk |
-                                    SQI_BDCTRL_LIFM_Msk | SQI_BDCTRL_LAST_BD_Msk |
-                                    SQI_LANE_MODE_M | SQI_CHIP_SELECT |
-                                    SQI_BDCTRL_CS_ASSERT_Msk | SQI_BDCTRL_DESC_EN_Msk);
-
-    sqiCmdDesc[1].bd_bufaddr    = (uint32_t *)(&sqiCmdBuffer[4]);
-    sqiCmdDesc[1].bd_stat       = 0;
-    sqiCmdDesc[1].bd_nxtptr     = NULL;
-
-    dObj->curOpType = DRV_SST26_OPERATION_TYPE_CMD;
-
-
-    dObj->sst26Plib->DMATransfer((sqi_dma_desc_t *)(&sqiCmdDesc[0]));
-
-    while(dObj->isTransferDone == false)
+    else
     {
-         /* Nothing to do */
+
+        if (DRV_SST26_ReadJedecId(handle, (void *)sqiReadBuffer) == false)
+        {
+            status = false;
+        }
+        else
+        {
+
+            *((uint32_t*)jedecID) = *((uint32_t*)sqiReadBuffer);
+
+            /* Unblock block write protection using write status register command */
+            if (jedecID[2] == 0x12U || jedecID[2] == 0x18U)
+            {
+                blockWriteProtection = true;
+            }
+            else
+            {
+                blockWriteProtection = false;
+            }
+
+            dObj->isTransferDone = false;
+
+            DRV_SST26_WriteEnable();
+
+            if (blockWriteProtection == true)
+            {
+                sqiCmdBuffer[4]               = (uint8_t)SST26_CMD_WRITE_STATUS_REG;
+                sqiCmdBuffer[5]               = 0U;
+                bdctrlBufLen                  = 2U;
+            }
+            else
+            {
+                sqiCmdBuffer[4]               = (uint8_t)SST26_CMD_UNPROTECT_GLOBAL;
+                bdctrlBufLen                  = 1U;
+            }
+
+            sqiCmdDesc[1].bd_ctrl       = ( SQI_BDCTRL_BD_BUFLEN(bdctrlBufLen) | SQI_BDCTRL_PKT_INT_EN_Msk |
+                                            SQI_BDCTRL_LIFM_Msk | SQI_BDCTRL_LAST_BD_Msk |
+                                            SQI_LANE_MODE_M | SQI_CHIP_SELECT |
+                                            SQI_BDCTRL_CS_ASSERT_Msk | SQI_BDCTRL_DESC_EN_Msk);
+
+            sqiCmdDesc[1].bd_bufaddr    = (uint32_t *)(&sqiCmdBuffer[4]);
+            sqiCmdDesc[1].bd_stat       = 0;
+            sqiCmdDesc[1].bd_nxtptr     = NULL;
+
+            dObj->curOpType = DRV_SST26_OPERATION_TYPE_CMD;
+
+
+            dObj->sst26Plib->DMATransfer((sqi_dma_desc_t *)(&sqiCmdDesc[0]));
+
+            while(dObj->isTransferDone == false)
+            {
+                 /* Nothing to do */
+            }
+        }
     }
 
-    return true;
+    return status;
 }
 
 bool DRV_SST26_ReadJedecId( const DRV_HANDLE handle, void *jedec_id)
@@ -352,9 +393,9 @@ bool DRV_SST26_ReadJedecId( const DRV_HANDLE handle, void *jedec_id)
 bool DRV_SST26_ReadStatus( const DRV_HANDLE handle, void* rx_data, uint32_t rx_data_length )
 {
     (void)rx_data_length;
-    
+
     uint8_t *status = (uint8_t *)rx_data;
-    
+
     if (status == NULL)
     {
         return false;
@@ -395,10 +436,10 @@ DRV_SST26_TRANSFER_STATUS DRV_SST26_TransferStatusGet( const DRV_HANDLE handle )
         else
         {
             status = DRV_SST26_TRANSFER_BUSY;
-        }   
+        }
     }
     else if (dObj->curOpType == DRV_SST26_OPERATION_TYPE_WRITE ||
-            dObj->curOpType == DRV_SST26_OPERATION_TYPE_ERASE || 
+            dObj->curOpType == DRV_SST26_OPERATION_TYPE_ERASE ||
             dObj->curOpType == DRV_SST26_OPERATION_TYPE_READ_STATUS
     )
     {
@@ -528,7 +569,7 @@ bool DRV_SST26_PageWrite( const DRV_HANDLE handle, void *tx_data, uint32_t addre
     sqiCmdDesc[1].bd_ctrl       = ( SQI_BDCTRL_BD_BUFLEN(4) | SQI_LANE_MODE_M |
                                     SQI_CHIP_SELECT | SQI_BDCTRL_DESC_EN_Msk);
 
-    ptr                         = &sqiCmdBuffer[4]; 
+    ptr                         = &sqiCmdBuffer[4];
     sqiCmdDesc[1].bd_bufaddr    = (uint32_t *)(ptr);
     sqiCmdDesc[1].bd_stat       = 0;
     sqiCmdDesc[1].bd_nxtptr     = (sqi_dma_desc_t *)(&sqiBufDesc[0]);
@@ -544,8 +585,8 @@ bool DRV_SST26_PageWrite( const DRV_HANDLE handle, void *tx_data, uint32_t addre
     sqiBufDesc[0].bd_nxtptr     = NULL;
 
     dObj->curOpType = DRV_SST26_OPERATION_TYPE_WRITE;
-	
-	dObj->internal_write_complete_flag = false;
+
+    dObj->internal_write_complete_flag = false;
 
     // Initialize the root buffer descriptor
     dObj->sst26Plib->DMATransfer((sqi_dma_desc_t *)(&sqiCmdDesc[0]));
@@ -570,8 +611,8 @@ static bool DRV_SST26_Erase( uint8_t *instruction, uint32_t length )
     sqiCmdDesc[1].bd_nxtptr     = NULL;
 
     dObj->curOpType = DRV_SST26_OPERATION_TYPE_ERASE;
-	
-	dObj->internal_write_complete_flag = false;
+
+    dObj->internal_write_complete_flag = false;
 
     dObj->sst26Plib->DMATransfer((sqi_dma_desc_t *)(&sqiCmdDesc[0]));
 

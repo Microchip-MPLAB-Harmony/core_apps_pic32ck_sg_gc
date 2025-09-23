@@ -1,0 +1,926 @@
+configVersion: 1.0.0
+componentName: core
+coreVersion: 5.8.2
+device: PIC32CK2051GC01144
+library: []
+dependency:
+- dependencyPackage: class com.microchip.mcc.harmony.HarmonyModule
+  name: core
+  type: module
+  version: ''
+- dependencyPackage: ''
+  name: CMSIS_5
+  type: package
+  version: 5.9.0
+- dependencyPackage: ''
+  name: bsp
+  type: package
+  version: v3.23.0
+- dependencyPackage: ''
+  name: core
+  type: package
+  version: v3.15.5
+- dependencyPackage: ''
+  name: csp
+  type: package
+  version: v3.23.0
+- dependencyPackage: ''
+  name: filex
+  type: package
+  version: v6.4.0_rel
+- dependencyPackage: ''
+  name: littlefs
+  type: package
+  version: v2.9.3
+customDataClassName: com.microchip.utils_mh3.utils.persistence.CustomModuleData
+data:
+  attachments: {}
+  elementPosition:
+    attributes:
+      id: __ROOTVIEW
+    children:
+    - children:
+      - attributes:
+          id: core
+          x: '30'
+          y: '180'
+        type: ElementPosition
+      type: ElementPositions
+    type: ComponentGraph
+  symbols:
+    GCLK_ID_43_CHEN:
+      attributes:
+        id: GCLK_ID_43_CHEN
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    GCLK_ID_43_FREQ:
+      attributes:
+        id: GCLK_ID_43_FREQ
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '60000000'
+          type: Dynamic
+        type: Values
+      type: Integer
+    NVIC_146_0_ENABLE:
+      attributes:
+        id: NVIC_146_0_ENABLE
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    NVIC_146_0_HANDLER:
+      attributes:
+        id: NVIC_146_0_HANDLER
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: SQI_InterruptHandler
+          type: Dynamic
+        type: Values
+      type: String
+    NVIC_146_0_HANDLER_LOCK:
+      attributes:
+        id: NVIC_146_0_HANDLER_LOCK
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    PIN_121_DIR:
+      attributes:
+        id: PIN_121_DIR
+      children:
+      - children:
+        - attributes:
+            value: ''
+          type: User
+        type: Values
+      type: String
+    PIN_121_PERIPHERAL_FUNCTION:
+      attributes:
+        id: PIN_121_PERIPHERAL_FUNCTION
+      children:
+      - children:
+        - attributes:
+            value: SWITCH_AL
+          type: User
+        type: Values
+      type: String
+    PIN_133_INEN:
+      attributes:
+        id: PIN_133_INEN
+      children:
+      - children:
+        - attributes:
+            value: ''
+          type: User
+        type: Values
+      type: String
+    PIN_133_PERIPHERAL_FUNCTION:
+      attributes:
+        id: PIN_133_PERIPHERAL_FUNCTION
+      children:
+      - children:
+        - attributes:
+            value: LED_AL
+          type: User
+        type: Values
+      type: String
+    PIN_133_PULLEN:
+      attributes:
+        id: PIN_133_PULLEN
+      children:
+      - children:
+        - attributes:
+            value: ''
+          type: User
+        type: Values
+      type: String
+    PIN_136_FUNCTION_TYPE:
+      attributes:
+        id: PIN_136_FUNCTION_TYPE
+      children:
+      - children:
+        - attributes:
+            value: SQI_CS1
+          type: User
+        type: Values
+      type: String
+    PIN_136_MODE:
+      attributes:
+        id: PIN_136_MODE
+      children:
+      - children:
+        - attributes:
+            value: ''
+          type: User
+        type: Values
+      type: String
+    PIN_136_PERIPHERAL_FUNCTION:
+      attributes:
+        id: PIN_136_PERIPHERAL_FUNCTION
+      children:
+      - children:
+        - attributes:
+            value: H
+          type: User
+        type: Values
+      type: String
+    PIN_138_FUNCTION_TYPE:
+      attributes:
+        id: PIN_138_FUNCTION_TYPE
+      children:
+      - children:
+        - attributes:
+            value: SQI_DATA0
+          type: User
+        type: Values
+      type: String
+    PIN_138_MODE:
+      attributes:
+        id: PIN_138_MODE
+      children:
+      - children:
+        - attributes:
+            value: ''
+          type: User
+        type: Values
+      type: String
+    PIN_138_PERIPHERAL_FUNCTION:
+      attributes:
+        id: PIN_138_PERIPHERAL_FUNCTION
+      children:
+      - children:
+        - attributes:
+            value: H
+          type: User
+        type: Values
+      type: String
+    PIN_141_FUNCTION_TYPE:
+      attributes:
+        id: PIN_141_FUNCTION_TYPE
+      children:
+      - children:
+        - attributes:
+            value: SQI_DATA2
+          type: User
+        type: Values
+      type: String
+    PIN_141_MODE:
+      attributes:
+        id: PIN_141_MODE
+      children:
+      - children:
+        - attributes:
+            value: ''
+          type: User
+        type: Values
+      type: String
+    PIN_141_PERIPHERAL_FUNCTION:
+      attributes:
+        id: PIN_141_PERIPHERAL_FUNCTION
+      children:
+      - children:
+        - attributes:
+            value: H
+          type: User
+        type: Values
+      type: String
+    PIN_142_FUNCTION_TYPE:
+      attributes:
+        id: PIN_142_FUNCTION_TYPE
+      children:
+      - children:
+        - attributes:
+            value: SQI_DATA3
+          type: User
+        type: Values
+      type: String
+    PIN_142_MODE:
+      attributes:
+        id: PIN_142_MODE
+      children:
+      - children:
+        - attributes:
+            value: ''
+          type: User
+        type: Values
+      type: String
+    PIN_142_PERIPHERAL_FUNCTION:
+      attributes:
+        id: PIN_142_PERIPHERAL_FUNCTION
+      children:
+      - children:
+        - attributes:
+            value: H
+          type: User
+        type: Values
+      type: String
+    PIN_143_FUNCTION_TYPE:
+      attributes:
+        id: PIN_143_FUNCTION_TYPE
+      children:
+      - children:
+        - attributes:
+            value: SQI_CLK
+          type: User
+        type: Values
+      type: String
+    PIN_143_MODE:
+      attributes:
+        id: PIN_143_MODE
+      children:
+      - children:
+        - attributes:
+            value: ''
+          type: User
+        type: Values
+      type: String
+    PIN_143_PERIPHERAL_FUNCTION:
+      attributes:
+        id: PIN_143_PERIPHERAL_FUNCTION
+      children:
+      - children:
+        - attributes:
+            value: H
+          type: User
+        type: Values
+      type: String
+    PIN_144_FUNCTION_TYPE:
+      attributes:
+        id: PIN_144_FUNCTION_TYPE
+      children:
+      - children:
+        - attributes:
+            value: SQI_DATA1
+          type: User
+        type: Values
+      type: String
+    PIN_144_MODE:
+      attributes:
+        id: PIN_144_MODE
+      children:
+      - children:
+        - attributes:
+            value: ''
+          type: User
+        type: Values
+      type: String
+    PIN_144_PERIPHERAL_FUNCTION:
+      attributes:
+        id: PIN_144_PERIPHERAL_FUNCTION
+      children:
+      - children:
+        - attributes:
+            value: H
+          type: User
+        type: Values
+      type: String
+    PIN_63_INEN:
+      attributes:
+        id: PIN_63_INEN
+      children:
+      - children:
+        - attributes:
+            value: ''
+          type: User
+        type: Values
+      type: String
+    PIN_63_PERIPHERAL_FUNCTION:
+      attributes:
+        id: PIN_63_PERIPHERAL_FUNCTION
+      children:
+      - children:
+        - attributes:
+            value: LED_AL
+          type: User
+        type: Values
+      type: String
+    PIN_63_PULLEN:
+      attributes:
+        id: PIN_63_PULLEN
+      children:
+      - children:
+        - attributes:
+            value: ''
+          type: User
+        type: Values
+      type: String
+    PIN_64_DIR:
+      attributes:
+        id: PIN_64_DIR
+      children:
+      - children:
+        - attributes:
+            value: ''
+          type: User
+        type: Values
+      type: String
+    PIN_64_PERIPHERAL_FUNCTION:
+      attributes:
+        id: PIN_64_PERIPHERAL_FUNCTION
+      children:
+      - children:
+        - attributes:
+            value: SWITCH_AL
+          type: User
+        type: Values
+      type: String
+    PORT_GROUP_1_DIR:
+      attributes:
+        id: PORT_GROUP_1_DIR
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0x2000000'
+          type: Dynamic
+        type: Values
+      type: String
+    PORT_GROUP_1_OUT:
+      attributes:
+        id: PORT_GROUP_1_OUT
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0x6000000'
+          type: Dynamic
+        type: Values
+      type: String
+    PORT_GROUP_1_PAD_25:
+      attributes:
+        id: PORT_GROUP_1_PAD_25
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: PB25
+          type: Dynamic
+        type: Values
+      type: String
+    PORT_GROUP_1_PAD_26:
+      attributes:
+        id: PORT_GROUP_1_PAD_26
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: PB26
+          type: Dynamic
+        type: Values
+      type: String
+    PORT_GROUP_1_PINCFG25:
+      attributes:
+        id: PORT_GROUP_1_PINCFG25
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0x0'
+          type: Dynamic
+        type: Values
+      type: String
+    PORT_GROUP_1_PINCFG26:
+      attributes:
+        id: PORT_GROUP_1_PINCFG26
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0x6'
+          type: Dynamic
+        type: Values
+      type: String
+    PORT_GROUP_1_PIN_25_USED:
+      attributes:
+        id: PORT_GROUP_1_PIN_25_USED
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    PORT_GROUP_1_PIN_26_USED:
+      attributes:
+        id: PORT_GROUP_1_PIN_26_USED
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    PORT_GROUP_1_PMUX12:
+      attributes:
+        id: PORT_GROUP_1_PMUX12
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0x0'
+          type: Dynamic
+        type: Values
+      type: String
+    PORT_GROUP_1_PMUX13:
+      attributes:
+        id: PORT_GROUP_1_PMUX13
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0x0'
+          type: Dynamic
+        type: Values
+      type: String
+    PORT_GROUP_3_DIR:
+      attributes:
+        id: PORT_GROUP_3_DIR
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0x100000'
+          type: Dynamic
+        type: Values
+      type: String
+    PORT_GROUP_3_OUT:
+      attributes:
+        id: PORT_GROUP_3_OUT
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0x100004'
+          type: Dynamic
+        type: Values
+      type: String
+    PORT_GROUP_3_PAD_10:
+      attributes:
+        id: PORT_GROUP_3_PAD_10
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: PD10
+          type: Dynamic
+        type: Values
+      type: String
+    PORT_GROUP_3_PAD_11:
+      attributes:
+        id: PORT_GROUP_3_PAD_11
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: PD11
+          type: Dynamic
+        type: Values
+      type: String
+    PORT_GROUP_3_PAD_2:
+      attributes:
+        id: PORT_GROUP_3_PAD_2
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: PD02
+          type: Dynamic
+        type: Values
+      type: String
+    PORT_GROUP_3_PAD_20:
+      attributes:
+        id: PORT_GROUP_3_PAD_20
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: PD20
+          type: Dynamic
+        type: Values
+      type: String
+    PORT_GROUP_3_PAD_5:
+      attributes:
+        id: PORT_GROUP_3_PAD_5
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: PD05
+          type: Dynamic
+        type: Values
+      type: String
+    PORT_GROUP_3_PAD_7:
+      attributes:
+        id: PORT_GROUP_3_PAD_7
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: PD07
+          type: Dynamic
+        type: Values
+      type: String
+    PORT_GROUP_3_PAD_8:
+      attributes:
+        id: PORT_GROUP_3_PAD_8
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: PD08
+          type: Dynamic
+        type: Values
+      type: String
+    PORT_GROUP_3_PAD_9:
+      attributes:
+        id: PORT_GROUP_3_PAD_9
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: PD09
+          type: Dynamic
+        type: Values
+      type: String
+    PORT_GROUP_3_PINCFG10:
+      attributes:
+        id: PORT_GROUP_3_PINCFG10
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0x1'
+          type: Dynamic
+        type: Values
+      type: String
+    PORT_GROUP_3_PINCFG11:
+      attributes:
+        id: PORT_GROUP_3_PINCFG11
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0x1'
+          type: Dynamic
+        type: Values
+      type: String
+    PORT_GROUP_3_PINCFG2:
+      attributes:
+        id: PORT_GROUP_3_PINCFG2
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0x6'
+          type: Dynamic
+        type: Values
+      type: String
+    PORT_GROUP_3_PINCFG20:
+      attributes:
+        id: PORT_GROUP_3_PINCFG20
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0x0'
+          type: Dynamic
+        type: Values
+      type: String
+    PORT_GROUP_3_PINCFG5:
+      attributes:
+        id: PORT_GROUP_3_PINCFG5
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0x1'
+          type: Dynamic
+        type: Values
+      type: String
+    PORT_GROUP_3_PINCFG7:
+      attributes:
+        id: PORT_GROUP_3_PINCFG7
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0x1'
+          type: Dynamic
+        type: Values
+      type: String
+    PORT_GROUP_3_PINCFG8:
+      attributes:
+        id: PORT_GROUP_3_PINCFG8
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0x1'
+          type: Dynamic
+        type: Values
+      type: String
+    PORT_GROUP_3_PINCFG9:
+      attributes:
+        id: PORT_GROUP_3_PINCFG9
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0x1'
+          type: Dynamic
+        type: Values
+      type: String
+    PORT_GROUP_3_PIN_10_USED:
+      attributes:
+        id: PORT_GROUP_3_PIN_10_USED
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    PORT_GROUP_3_PIN_11_USED:
+      attributes:
+        id: PORT_GROUP_3_PIN_11_USED
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    PORT_GROUP_3_PIN_20_USED:
+      attributes:
+        id: PORT_GROUP_3_PIN_20_USED
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    PORT_GROUP_3_PIN_2_USED:
+      attributes:
+        id: PORT_GROUP_3_PIN_2_USED
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    PORT_GROUP_3_PIN_5_USED:
+      attributes:
+        id: PORT_GROUP_3_PIN_5_USED
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    PORT_GROUP_3_PIN_7_USED:
+      attributes:
+        id: PORT_GROUP_3_PIN_7_USED
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    PORT_GROUP_3_PIN_8_USED:
+      attributes:
+        id: PORT_GROUP_3_PIN_8_USED
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    PORT_GROUP_3_PIN_9_USED:
+      attributes:
+        id: PORT_GROUP_3_PIN_9_USED
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    PORT_GROUP_3_PMUX1:
+      attributes:
+        id: PORT_GROUP_3_PMUX1
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0x0'
+          type: Dynamic
+        type: Values
+      type: String
+    PORT_GROUP_3_PMUX10:
+      attributes:
+        id: PORT_GROUP_3_PMUX10
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0x0'
+          type: Dynamic
+        type: Values
+      type: String
+    PORT_GROUP_3_PMUX2:
+      attributes:
+        id: PORT_GROUP_3_PMUX2
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0x70'
+          type: Dynamic
+        type: Values
+      type: String
+    PORT_GROUP_3_PMUX3:
+      attributes:
+        id: PORT_GROUP_3_PMUX3
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0x70'
+          type: Dynamic
+        type: Values
+      type: String
+    PORT_GROUP_3_PMUX4:
+      attributes:
+        id: PORT_GROUP_3_PMUX4
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0x77'
+          type: Dynamic
+        type: Values
+      type: String
+    PORT_GROUP_3_PMUX5:
+      attributes:
+        id: PORT_GROUP_3_PMUX5
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0x77'
+          type: Dynamic
+        type: Values
+      type: String
+    SQI_CLOCK_ENABLE:
+      attributes:
+        id: SQI_CLOCK_ENABLE
+      children:
+      - children:
+        - attributes:
+            id: sqi
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    SQI_CLOCK_FREQUENCY:
+      attributes:
+        id: SQI_CLOCK_FREQUENCY
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '60000000'
+          type: Dynamic
+        type: Values
+      type: Integer
+    SQI_INTERRUPT_ENABLE:
+      attributes:
+        id: SQI_INTERRUPT_ENABLE
+      children:
+      - children:
+        - attributes:
+            id: sqi
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    SQI_INTERRUPT_ENABLE_UPDATE:
+      attributes:
+        id: SQI_INTERRUPT_ENABLE_UPDATE
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'false'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    SQI_INTERRUPT_HANDLER:
+      attributes:
+        id: SQI_INTERRUPT_HANDLER
+      children:
+      - children:
+        - attributes:
+            id: sqi
+            value: SQI_InterruptHandler
+          type: Dynamic
+        type: Values
+      type: String
+    SQI_INTERRUPT_HANDLER_LOCK:
+      attributes:
+        id: SQI_INTERRUPT_HANDLER_LOCK
+      children:
+      - children:
+        - attributes:
+            id: sqi
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+  userData:
+    children:
+    - attributes:
+        canvasHeight: '498'
+        canvasWidth: '434'
+      type: GraphSettings
+    - children:
+      - attributes:
+          id: profile0
+          name: Main
+        type: Profile
+      type: PowerProfiles
+    type: UserData
