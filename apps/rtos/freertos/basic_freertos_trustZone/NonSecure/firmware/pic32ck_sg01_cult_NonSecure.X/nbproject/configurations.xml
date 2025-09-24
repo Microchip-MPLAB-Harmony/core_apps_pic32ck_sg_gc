@@ -227,14 +227,14 @@
                      displayName="basic_freertos_trustZone_pic32ck_sg01_cult_NonSecure_pic32ck_sg01_cult"
                      projectFiles="true">
         <logicalFolder name="components" displayName="components" projectFiles="true">
-          <itemPath>basic_freertos_trustZone_pic32ck_sg01_cult_NonSecure_pic32ck_sg01_cult/components/HarmonyCore.yml</itemPath>
-          <itemPath>basic_freertos_trustZone_pic32ck_sg01_cult_NonSecure_pic32ck_sg01_cult/components/dfp.yml</itemPath>
-          <itemPath>basic_freertos_trustZone_pic32ck_sg01_cult_NonSecure_pic32ck_sg01_cult/components/cmsis.yml</itemPath>
           <itemPath>basic_freertos_trustZone_pic32ck_sg01_cult_NonSecure_pic32ck_sg01_cult/components/pm.yml</itemPath>
-          <itemPath>basic_freertos_trustZone_pic32ck_sg01_cult_NonSecure_pic32ck_sg01_cult/components/BSP_PIC32CK_SG01_Curiosity_Ultra.yml</itemPath>
+          <itemPath>basic_freertos_trustZone_pic32ck_sg01_cult_NonSecure_pic32ck_sg01_cult/components/cmsis.yml</itemPath>
           <itemPath>basic_freertos_trustZone_pic32ck_sg01_cult_NonSecure_pic32ck_sg01_cult/components/core.yml</itemPath>
-          <itemPath>basic_freertos_trustZone_pic32ck_sg01_cult_NonSecure_pic32ck_sg01_cult/components/evsys.yml</itemPath>
+          <itemPath>basic_freertos_trustZone_pic32ck_sg01_cult_NonSecure_pic32ck_sg01_cult/components/HarmonyCore.yml</itemPath>
+          <itemPath>basic_freertos_trustZone_pic32ck_sg01_cult_NonSecure_pic32ck_sg01_cult/components/BSP_PIC32CK_SG01_Curiosity_Ultra.yml</itemPath>
           <itemPath>basic_freertos_trustZone_pic32ck_sg01_cult_NonSecure_pic32ck_sg01_cult/components/FreeRTOS.yml</itemPath>
+          <itemPath>basic_freertos_trustZone_pic32ck_sg01_cult_NonSecure_pic32ck_sg01_cult/components/dfp.yml</itemPath>
+          <itemPath>basic_freertos_trustZone_pic32ck_sg01_cult_NonSecure_pic32ck_sg01_cult/components/evsys.yml</itemPath>
         </logicalFolder>
         <itemPath>basic_freertos_trustZone_pic32ck_sg01_cult_NonSecure_pic32ck_sg01_cult/mcc-config.mc4</itemPath>
       </logicalFolder>

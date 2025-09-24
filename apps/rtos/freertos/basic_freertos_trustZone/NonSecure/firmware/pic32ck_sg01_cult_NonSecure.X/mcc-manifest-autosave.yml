@@ -2,7 +2,7 @@
 
 manifest_file_version: 1.0.0
 project: basic_freertos_trustZone_pic32ck_sg01_cult_NonSecure
-creation_date: 2025-08-28T10:15:43.869+05:30[Asia/Calcutta]
+creation_date: 2025-09-24T11:36:23.564+05:30[Asia/Calcutta]
 operating_system: Windows 11
 mcc_mode: IDE
 mcc_mode_version: v6.25
@@ -18,8 +18,8 @@ device_library: {library_class: com.microchip.mcc.harmony.Harmony3Library, name:
   version: Bundled}
 packs: {name: PIC32CK-SG_DFP, version: 1.6.199}
 modules:
-- {name: csp, type: HARMONY, version: v3.22.7}
-- {name: core, type: HARMONY, version: v3.15.4}
+- {name: csp, type: HARMONY, version: v3.23.0}
+- {name: core, type: HARMONY, version: v3.15.5}
 - {name: CMSIS_5, type: HARMONY, version: 5.9.0}
 - {name: FreeRTOS-Kernel, type: HARMONY, version: V11.1.0}
-- {name: bsp, type: HARMONY, version: v3.22.0}
+- {name: bsp, type: HARMONY, version: v3.23.0}

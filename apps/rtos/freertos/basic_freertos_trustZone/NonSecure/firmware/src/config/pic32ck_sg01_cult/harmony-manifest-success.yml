@@ -4,7 +4,7 @@
 
 
 project: basic_freertos_trustZone_pic32ck_sg01_cult_NonSecure
-creation_date: 2025-08-28T10:15:43.576+05:30[Asia/Calcutta]    # ISO 8601 format: https://www.w3.org/TR/NOTE-datetime
+creation_date: 2025-09-24T11:36:23.221+05:30[Asia/Calcutta]    # ISO 8601 format: https://www.w3.org/TR/NOTE-datetime
 operating_system: Windows 11
 mcc_mode: IDE            # [IDE|Standalone|Headless]
 mcc_version: v5.6.2
@@ -14,11 +14,11 @@ harmony_version: v5.6.2
 compiler: XC32 4.60
 
 modules:
-    - {name: "csp", version: "v3.22.7"}
-    - {name: "core", version: "v3.15.4"}
+    - {name: "csp", version: "v3.23.0"}
+    - {name: "core", version: "v3.15.5"}
     - {name: "CMSIS_5", version: "5.9.0"}
     - {name: "FreeRTOS-Kernel", version: "V11.1.0"}
-    - {name: "bsp", version: "v3.22.0"}
+    - {name: "bsp", version: "v3.23.0"}
 
 packs:
     - {name: "PIC32CK-SG_DFP", version: "1.6.199"}

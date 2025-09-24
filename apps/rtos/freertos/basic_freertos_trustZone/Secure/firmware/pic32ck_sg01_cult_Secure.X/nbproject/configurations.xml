@@ -199,7 +199,6 @@
                    displayName="Important Files"
                    projectFiles="true">
       <itemPath>Makefile</itemPath>
-      <itemPath>../../../NonSecure/firmware/pic32ck_sg01_cult_NonSecure.X/basic_freertos_trustZone_pic32ck_sg01_cult_NonSecure.mc3</itemPath>
       <itemPath>../../../NonSecure/firmware/pic32ck_sg01_cult_NonSecure.X/basic_freertos_trustZone_pic32ck_sg01_cult_NonSecure_pic32ck_sg01_cult/mcc-config.mc4</itemPath>
     </logicalFolder>
     <logicalFolder name="LinkerScript"
