@@ -1,6 +1,5 @@
 configVersion: 1.0.0
 coreVersion: 5.8.2
-spaHostVersion: 1.0.0
 device: PIC32CK2051GC01144
 deviceLibrary:
   className: com.microchip.mcc.harmony.Harmony3Library
@@ -32,7 +31,7 @@ generatedFileHashHistoryMap:
 - file: ..\src\config\pic32ck_gc01_cult\configuration.h
   hash: 5794dd904d127aee9dd8a5511641347084aea500a8b9ee17e9eb71b87c0c0826
 - file: ..\src\config\pic32ck_gc01_cult\definitions.h
-  hash: 5724c453452fb60794a59a04bf045110646aa91bcde7c82f2d525ceb58fc077e
+  hash: 009aef1d45efd1a4615a9c2cd2203ecc6378a2fa16d46001b335829317536dd2
 - file: ..\src\config\pic32ck_gc01_cult\device.h
   hash: 16c68b32ace41533b1b0f8cffc704dfea71c361c40fbc7fdab13f96645707c9f
 - file: ..\src\config\pic32ck_gc01_cult\device_cache.h

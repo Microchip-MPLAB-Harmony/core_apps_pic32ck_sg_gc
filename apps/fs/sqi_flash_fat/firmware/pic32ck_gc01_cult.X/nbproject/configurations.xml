@@ -16,6 +16,7 @@
               <itemPath>../src/config/pic32ck_gc01_cult/driver/memory/src/drv_memory_local.h</itemPath>
               <itemPath>../src/config/pic32ck_gc01_cult/driver/memory/drv_memory.h</itemPath>
               <itemPath>../src/config/pic32ck_gc01_cult/driver/memory/drv_memory_definitions.h</itemPath>
+              <itemPath>../src/config/pic32ck_gc01_cult/driver/memory/src/drv_memory_file_system.h</itemPath>
             </logicalFolder>
             <logicalFolder name="sst26" displayName="sst26" projectFiles="true">
               <itemPath>../src/config/pic32ck_gc01_cult/driver/sst26/drv_sst26_definitions.h</itemPath>
@@ -256,7 +257,7 @@
         <itemPath>fs_sqi_flash_fat_pic32ck_gc01_cult_pic32ck_gc01_cult/mcc-config.mc4</itemPath>
       </logicalFolder>
       <itemPath>Makefile</itemPath>
-      <itemPath>../src/config/pic32ck_gc01_cult/harmony-manifest-success.yml</itemPath>
+      <itemPath>../src/config/pic32ck_gc01_cult/pin_configurations.csv</itemPath>
     </logicalFolder>
     <logicalFolder name="LinkerScript"
                    displayName="Linker Files"
@@ -348,7 +349,6 @@
       </logicalFolder>
       <itemPath>../src/main.c</itemPath>
       <itemPath>../src/app.c</itemPath>
-      <itemPath>../src/config/pic32ck_gc01_cult/pin_configurations.csv</itemPath>
     </logicalFolder>
   </logicalFolder>
   <projectmakefile>Makefile</projectmakefile>
@@ -365,7 +365,7 @@
         <platform>3</platform>
       </toolsSet>
       <packs>
-        <pack name="CMSIS" vendor="ARM" version="5.4.0"/>
+        <pack name="CMSIS" vendor="ARM" version="5.9.0"/>
         <pack name="PIC32CK-GC_DFP" vendor="Microchip" version="1.1.148"/>
       </packs>
       <ScriptingSettings>
@@ -481,7 +481,7 @@
         <property key="no-startup-files" value="false"/>
         <property key="oXC32ld-extra-opts" value=""/>
         <property key="optimization-level" value=""/>
-        <property key="preprocessor-macros" value=""/>
+        <property key="preprocessor-macros" value="VECTOR_REGION=boot_rom"/>
         <property key="remove-unused-sections" value="true"/>
         <property key="report-memory-usage" value="false"/>
         <property key="serial-length" value=""/>

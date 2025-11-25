@@ -256,7 +256,7 @@
         <itemPath>basic_freertos_pic32ck_gc01_cult_pic32ck_gc01_cult/mcc-config.mc4</itemPath>
       </logicalFolder>
       <itemPath>Makefile</itemPath>
-      <itemPath>../src/config/pic32ck_gc01_cult/harmony-manifest-success.yml</itemPath>
+      <itemPath>../src/config/pic32ck_gc01_cult/pin_configurations.csv</itemPath>
     </logicalFolder>
     <logicalFolder name="LinkerScript"
                    displayName="Linker Files"
@@ -358,7 +358,6 @@
       <itemPath>../src/task1.c</itemPath>
       <itemPath>../src/task4.c</itemPath>
       <itemPath>../src/task3.c</itemPath>
-      <itemPath>../src/config/pic32ck_gc01_cult/pin_configurations.csv</itemPath>
     </logicalFolder>
   </logicalFolder>
   <projectmakefile>Makefile</projectmakefile>
@@ -376,7 +375,7 @@
       </toolsSet>
       <packs>
         <pack name="PIC32CK-GC_DFP" vendor="Microchip" version="1.1.148"/>
-        <pack name="CMSIS" vendor="ARM" version="5.4.0"/>
+        <pack name="CMSIS" vendor="ARM" version="5.9.0"/>
       </packs>
       <ScriptingSettings>
       </ScriptingSettings>

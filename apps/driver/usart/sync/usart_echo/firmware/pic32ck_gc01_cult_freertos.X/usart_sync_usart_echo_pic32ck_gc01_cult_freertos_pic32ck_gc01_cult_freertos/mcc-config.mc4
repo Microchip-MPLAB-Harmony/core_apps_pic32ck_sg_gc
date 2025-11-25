@@ -32,7 +32,7 @@ generatedFileHashHistoryMap:
 - file: ..\src\config\pic32ck_gc01_cult_freertos\configuration.h
   hash: a32642d69ae02dc9bf66699861150ac7785c6167c7917475c50b41198c25f1e5
 - file: ..\src\config\pic32ck_gc01_cult_freertos\definitions.h
-  hash: da51a9d9c92bf64e06455c8ac94ccdcfef7d3c273e73cf6997f9e2cd156f0bd2
+  hash: de146d45419b7415c144ba0bf03dab5dd0fb7c161c847e707b1e4340e083a41f
 - file: ..\src\config\pic32ck_gc01_cult_freertos\device.h
   hash: 16c68b32ace41533b1b0f8cffc704dfea71c361c40fbc7fdab13f96645707c9f
 - file: ..\src\config\pic32ck_gc01_cult_freertos\device_cache.h
@@ -56,7 +56,7 @@ generatedFileHashHistoryMap:
 - file: ..\src\config\pic32ck_gc01_cult_freertos\freertos_hooks.c
   hash: 98b7f3e712d5a90f2cabfe527a5d49f03de1df531d02a0bb9d818a1a95ad4a40
 - file: ..\src\config\pic32ck_gc01_cult_freertos\initialization.c
-  hash: ef54a42cbb65c54209533372c8f8a14bd944230b69947501f8dee4da450bc3d7
+  hash: 6fb1c1e30239def9a845ad9a459613f94cdeb986b4b3109205dc002169f0d229
 - file: ..\src\config\pic32ck_gc01_cult_freertos\interrupts.c
   hash: 9d93dbd772b39b2339b01526c3370444ca8bcd92d5780ce24746da591a58c97c
 - file: ..\src\config\pic32ck_gc01_cult_freertos\interrupts.h

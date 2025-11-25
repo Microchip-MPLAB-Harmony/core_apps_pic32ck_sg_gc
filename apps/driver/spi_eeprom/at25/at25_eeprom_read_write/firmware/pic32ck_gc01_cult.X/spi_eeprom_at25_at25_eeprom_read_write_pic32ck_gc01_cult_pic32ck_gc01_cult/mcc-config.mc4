@@ -28,7 +28,7 @@ generatedFileHashHistoryMap:
 - file: ..\src\config\pic32ck_gc01_cult\configuration.h
   hash: 4f8c8929406735b52847d63bb20f7e25b1cebf2b9ddcdb701717cd25560a0c6e
 - file: ..\src\config\pic32ck_gc01_cult\definitions.h
-  hash: 179b395b5c4d46ecefe76676c957807aca8b8b94c97f2846bf869ff091172aef
+  hash: a772c22a6e2722cb317231ded205ed2118e9d85c6ed505c72a9e30618c148ae9
 - file: ..\src\config\pic32ck_gc01_cult\device.h
   hash: 16c68b32ace41533b1b0f8cffc704dfea71c361c40fbc7fdab13f96645707c9f
 - file: ..\src\config\pic32ck_gc01_cult\device_cache.h

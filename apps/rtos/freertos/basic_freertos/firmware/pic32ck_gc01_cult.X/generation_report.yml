@@ -1,786 +1,786 @@
 generatedFiles:
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/config/pic32ck_gc01_cult/peripheral/evsys/plib_evsys.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/config/pic32ck_gc01_cult/peripheral/evsys/plib_evsys.h
   projectFolder: config/pic32ck_gc01_cult/peripheral/evsys
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/config/pic32ck_gc01_cult/peripheral/evsys/plib_evsys.c
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/config/pic32ck_gc01_cult/peripheral/evsys/plib_evsys.c
   projectFolder: config/pic32ck_gc01_cult/peripheral/evsys
   type: Source Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/config/pic32ck_gc01_cult/bsp/bsp.c
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/config/pic32ck_gc01_cult/bsp/bsp.c
   projectFolder: config/pic32ck_gc01_cult/bsp
   type: Source Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/config/pic32ck_gc01_cult/bsp/bsp.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/config/pic32ck_gc01_cult/bsp/bsp.h
   projectFolder: config/pic32ck_gc01_cult/bsp
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/config/pic32ck_gc01_cult/device_cache.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/config/pic32ck_gc01_cult/device_cache.h
   projectFolder: config/pic32ck_gc01_cult
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/config/pic32ck_gc01_cult/toolchain_specifics.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/config/pic32ck_gc01_cult/toolchain_specifics.h
   projectFolder: config/pic32ck_gc01_cult
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/main.c
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/main.c
   projectFolder: ''
   type: Source Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/config/pic32ck_gc01_cult/definitions.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/config/pic32ck_gc01_cult/definitions.h
   projectFolder: config/pic32ck_gc01_cult
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/config/pic32ck_gc01_cult/initialization.c
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/config/pic32ck_gc01_cult/initialization.c
   projectFolder: config/pic32ck_gc01_cult
   type: Source Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/config/pic32ck_gc01_cult/interrupts.c
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/config/pic32ck_gc01_cult/interrupts.c
   projectFolder: config/pic32ck_gc01_cult
   type: Source Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/config/pic32ck_gc01_cult/interrupts.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/config/pic32ck_gc01_cult/interrupts.h
   projectFolder: config/pic32ck_gc01_cult
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/config/pic32ck_gc01_cult/device_vectors.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/config/pic32ck_gc01_cult/device_vectors.h
   projectFolder: config/pic32ck_gc01_cult
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/config/pic32ck_gc01_cult/exceptions.c
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/config/pic32ck_gc01_cult/exceptions.c
   projectFolder: config/pic32ck_gc01_cult
   type: Source Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/config/pic32ck_gc01_cult/PIC32CK2051GC01144.ld
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/config/pic32ck_gc01_cult/PIC32CK2051GC01144.ld
   projectFolder: config/pic32ck_gc01_cult
   type: Linker Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/config/pic32ck_gc01_cult/stdio/xc32_monitor.c
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/config/pic32ck_gc01_cult/stdio/xc32_monitor.c
   projectFolder: config/pic32ck_gc01_cult/stdio
   type: Source Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/config/pic32ck_gc01_cult/peripheral/port/plib_port.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/config/pic32ck_gc01_cult/peripheral/port/plib_port.h
   projectFolder: config/pic32ck_gc01_cult/peripheral/port
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/config/pic32ck_gc01_cult/peripheral/port/plib_port.c
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/config/pic32ck_gc01_cult/peripheral/port/plib_port.c
   projectFolder: config/pic32ck_gc01_cult/peripheral/port
   type: Source Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/config/pic32ck_gc01_cult/pin_configurations.csv
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/config/pic32ck_gc01_cult/pin_configurations.csv
   projectFolder: ''
   type: Important Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/config/pic32ck_gc01_cult/peripheral/clock/plib_clock.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/config/pic32ck_gc01_cult/peripheral/clock/plib_clock.h
   projectFolder: config/pic32ck_gc01_cult/peripheral/clock
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/config/pic32ck_gc01_cult/peripheral/clock/plib_clock.c
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/config/pic32ck_gc01_cult/peripheral/clock/plib_clock.c
   projectFolder: config/pic32ck_gc01_cult/peripheral/clock
   type: Source Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/config/pic32ck_gc01_cult/peripheral/nvic/plib_nvic.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/config/pic32ck_gc01_cult/peripheral/nvic/plib_nvic.h
   projectFolder: config/pic32ck_gc01_cult/peripheral/nvic
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/config/pic32ck_gc01_cult/peripheral/nvic/plib_nvic.c
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/config/pic32ck_gc01_cult/peripheral/nvic/plib_nvic.c
   projectFolder: config/pic32ck_gc01_cult/peripheral/nvic
   type: Source Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/config/pic32ck_gc01_cult/peripheral/cmcc/plib_cmcc.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/config/pic32ck_gc01_cult/peripheral/cmcc/plib_cmcc.h
   projectFolder: config/pic32ck_gc01_cult/peripheral/cmcc
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/config/pic32ck_gc01_cult/peripheral/cmcc/plib_cmcc.c
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/config/pic32ck_gc01_cult/peripheral/cmcc/plib_cmcc.c
   projectFolder: config/pic32ck_gc01_cult/peripheral/cmcc
   type: Source Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/config/pic32ck_gc01_cult/startup_xc32.c
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/config/pic32ck_gc01_cult/startup_xc32.c
   projectFolder: config/pic32ck_gc01_cult
   type: Source Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/config/pic32ck_gc01_cult/libc_syscalls.c
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/config/pic32ck_gc01_cult/libc_syscalls.c
   projectFolder: config/pic32ck_gc01_cult
   type: Source Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/config/pic32ck_gc01_cult/peripheral/pm/plib_pm.h
-  projectFolder: config/pic32ck_gc01_cult/peripheral/pm
-  type: Header Files
-- excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/config/pic32ck_gc01_cult/peripheral/pm/plib_pm.c
-  projectFolder: config/pic32ck_gc01_cult/peripheral/pm
-  type: Source Files
-- excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/config/pic32ck_gc01_cult/peripheral/sercom/usart/plib_sercom5_usart.h
-  projectFolder: config/pic32ck_gc01_cult/peripheral/sercom/usart
-  type: Header Files
-- excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/config/pic32ck_gc01_cult/peripheral/sercom/usart/plib_sercom_usart_common.h
-  projectFolder: config/pic32ck_gc01_cult/peripheral/sercom/usart
-  type: Header Files
-- excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/config/pic32ck_gc01_cult/peripheral/sercom/usart/plib_sercom5_usart.c
-  projectFolder: config/pic32ck_gc01_cult/peripheral/sercom/usart
-  type: Source Files
-- excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/config/pic32ck_gc01_cult/device.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/config/pic32ck_gc01_cult/device.h
   projectFolder: config/pic32ck_gc01_cult
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/packs/PIC32CK2051GC01144_DFP/component/ac.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/packs/PIC32CK2051GC01144_DFP/component/ac.h
   projectFolder: packs/PIC32CK2051GC01144_DFP/component
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/packs/PIC32CK2051GC01144_DFP/component/adc.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/packs/PIC32CK2051GC01144_DFP/component/adc.h
   projectFolder: packs/PIC32CK2051GC01144_DFP/component
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/packs/PIC32CK2051GC01144_DFP/component/can.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/packs/PIC32CK2051GC01144_DFP/component/can.h
   projectFolder: packs/PIC32CK2051GC01144_DFP/component
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/packs/PIC32CK2051GC01144_DFP/component/ccl.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/packs/PIC32CK2051GC01144_DFP/component/ccl.h
   projectFolder: packs/PIC32CK2051GC01144_DFP/component
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/packs/PIC32CK2051GC01144_DFP/component/cmcc.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/packs/PIC32CK2051GC01144_DFP/component/cmcc.h
   projectFolder: packs/PIC32CK2051GC01144_DFP/component
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/packs/PIC32CK2051GC01144_DFP/component/dma.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/packs/PIC32CK2051GC01144_DFP/component/dma.h
   projectFolder: packs/PIC32CK2051GC01144_DFP/component
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/packs/PIC32CK2051GC01144_DFP/component/dsu.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/packs/PIC32CK2051GC01144_DFP/component/dsu.h
   projectFolder: packs/PIC32CK2051GC01144_DFP/component
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/packs/PIC32CK2051GC01144_DFP/component/ebi.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/packs/PIC32CK2051GC01144_DFP/component/ebi.h
   projectFolder: packs/PIC32CK2051GC01144_DFP/component
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/packs/PIC32CK2051GC01144_DFP/component/eic.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/packs/PIC32CK2051GC01144_DFP/component/eic.h
   projectFolder: packs/PIC32CK2051GC01144_DFP/component
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/packs/PIC32CK2051GC01144_DFP/component/eth.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/packs/PIC32CK2051GC01144_DFP/component/eth.h
   projectFolder: packs/PIC32CK2051GC01144_DFP/component
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/packs/PIC32CK2051GC01144_DFP/component/evsys.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/packs/PIC32CK2051GC01144_DFP/component/evsys.h
   projectFolder: packs/PIC32CK2051GC01144_DFP/component
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/packs/PIC32CK2051GC01144_DFP/component/fcr.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/packs/PIC32CK2051GC01144_DFP/component/fcr.h
   projectFolder: packs/PIC32CK2051GC01144_DFP/component
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/packs/PIC32CK2051GC01144_DFP/component/fcw.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/packs/PIC32CK2051GC01144_DFP/component/fcw.h
   projectFolder: packs/PIC32CK2051GC01144_DFP/component
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/packs/PIC32CK2051GC01144_DFP/component/freqm.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/packs/PIC32CK2051GC01144_DFP/component/freqm.h
   projectFolder: packs/PIC32CK2051GC01144_DFP/component
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/packs/PIC32CK2051GC01144_DFP/component/fuses.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/packs/PIC32CK2051GC01144_DFP/component/fuses.h
   projectFolder: packs/PIC32CK2051GC01144_DFP/component
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/packs/PIC32CK2051GC01144_DFP/component/gclk.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/packs/PIC32CK2051GC01144_DFP/component/gclk.h
   projectFolder: packs/PIC32CK2051GC01144_DFP/component
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/packs/PIC32CK2051GC01144_DFP/component/hmatrix2.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/packs/PIC32CK2051GC01144_DFP/component/hmatrix2.h
   projectFolder: packs/PIC32CK2051GC01144_DFP/component
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/packs/PIC32CK2051GC01144_DFP/component/idau.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/packs/PIC32CK2051GC01144_DFP/component/idau.h
   projectFolder: packs/PIC32CK2051GC01144_DFP/component
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/packs/PIC32CK2051GC01144_DFP/component/mclk.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/packs/PIC32CK2051GC01144_DFP/component/mclk.h
   projectFolder: packs/PIC32CK2051GC01144_DFP/component
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/packs/PIC32CK2051GC01144_DFP/component/osc32kctrl.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/packs/PIC32CK2051GC01144_DFP/component/osc32kctrl.h
   projectFolder: packs/PIC32CK2051GC01144_DFP/component
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/packs/PIC32CK2051GC01144_DFP/component/oscctrl.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/packs/PIC32CK2051GC01144_DFP/component/oscctrl.h
   projectFolder: packs/PIC32CK2051GC01144_DFP/component
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/packs/PIC32CK2051GC01144_DFP/component/pac.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/packs/PIC32CK2051GC01144_DFP/component/pac.h
   projectFolder: packs/PIC32CK2051GC01144_DFP/component
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/packs/PIC32CK2051GC01144_DFP/component/pcc.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/packs/PIC32CK2051GC01144_DFP/component/pcc.h
   projectFolder: packs/PIC32CK2051GC01144_DFP/component
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/packs/PIC32CK2051GC01144_DFP/component/pdec.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/packs/PIC32CK2051GC01144_DFP/component/pdec.h
   projectFolder: packs/PIC32CK2051GC01144_DFP/component
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/packs/PIC32CK2051GC01144_DFP/component/pm.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/packs/PIC32CK2051GC01144_DFP/component/pm.h
   projectFolder: packs/PIC32CK2051GC01144_DFP/component
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/packs/PIC32CK2051GC01144_DFP/component/port.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/packs/PIC32CK2051GC01144_DFP/component/port.h
   projectFolder: packs/PIC32CK2051GC01144_DFP/component
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/packs/PIC32CK2051GC01144_DFP/component/prm.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/packs/PIC32CK2051GC01144_DFP/component/prm.h
   projectFolder: packs/PIC32CK2051GC01144_DFP/component
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/packs/PIC32CK2051GC01144_DFP/component/ptc.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/packs/PIC32CK2051GC01144_DFP/component/ptc.h
   projectFolder: packs/PIC32CK2051GC01144_DFP/component
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/packs/PIC32CK2051GC01144_DFP/component/rstc.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/packs/PIC32CK2051GC01144_DFP/component/rstc.h
   projectFolder: packs/PIC32CK2051GC01144_DFP/component
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/packs/PIC32CK2051GC01144_DFP/component/rtc.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/packs/PIC32CK2051GC01144_DFP/component/rtc.h
   projectFolder: packs/PIC32CK2051GC01144_DFP/component
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/packs/PIC32CK2051GC01144_DFP/component/sdmmc.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/packs/PIC32CK2051GC01144_DFP/component/sdmmc.h
   projectFolder: packs/PIC32CK2051GC01144_DFP/component
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/packs/PIC32CK2051GC01144_DFP/component/sercom.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/packs/PIC32CK2051GC01144_DFP/component/sercom.h
   projectFolder: packs/PIC32CK2051GC01144_DFP/component
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/packs/PIC32CK2051GC01144_DFP/component/spi_ixs.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/packs/PIC32CK2051GC01144_DFP/component/spi_ixs.h
   projectFolder: packs/PIC32CK2051GC01144_DFP/component
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/packs/PIC32CK2051GC01144_DFP/component/sqi.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/packs/PIC32CK2051GC01144_DFP/component/sqi.h
   projectFolder: packs/PIC32CK2051GC01144_DFP/component
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/packs/PIC32CK2051GC01144_DFP/component/supc.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/packs/PIC32CK2051GC01144_DFP/component/supc.h
   projectFolder: packs/PIC32CK2051GC01144_DFP/component
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/packs/PIC32CK2051GC01144_DFP/component/tcc.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/packs/PIC32CK2051GC01144_DFP/component/tcc.h
   projectFolder: packs/PIC32CK2051GC01144_DFP/component
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/packs/PIC32CK2051GC01144_DFP/component/tram.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/packs/PIC32CK2051GC01144_DFP/component/tram.h
   projectFolder: packs/PIC32CK2051GC01144_DFP/component
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/packs/PIC32CK2051GC01144_DFP/component/trng.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/packs/PIC32CK2051GC01144_DFP/component/trng.h
   projectFolder: packs/PIC32CK2051GC01144_DFP/component
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/packs/PIC32CK2051GC01144_DFP/component/usb.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/packs/PIC32CK2051GC01144_DFP/component/usb.h
   projectFolder: packs/PIC32CK2051GC01144_DFP/component
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/packs/PIC32CK2051GC01144_DFP/component/usbhs.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/packs/PIC32CK2051GC01144_DFP/component/usbhs.h
   projectFolder: packs/PIC32CK2051GC01144_DFP/component
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/packs/PIC32CK2051GC01144_DFP/component/wdt.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/packs/PIC32CK2051GC01144_DFP/component/wdt.h
   projectFolder: packs/PIC32CK2051GC01144_DFP/component
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/packs/PIC32CK2051GC01144_DFP/instance/ac.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/packs/PIC32CK2051GC01144_DFP/instance/ac.h
   projectFolder: packs/PIC32CK2051GC01144_DFP/instance
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/packs/PIC32CK2051GC01144_DFP/instance/adc.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/packs/PIC32CK2051GC01144_DFP/instance/adc.h
   projectFolder: packs/PIC32CK2051GC01144_DFP/instance
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/packs/PIC32CK2051GC01144_DFP/instance/can0.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/packs/PIC32CK2051GC01144_DFP/instance/can0.h
   projectFolder: packs/PIC32CK2051GC01144_DFP/instance
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/packs/PIC32CK2051GC01144_DFP/instance/can1.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/packs/PIC32CK2051GC01144_DFP/instance/can1.h
   projectFolder: packs/PIC32CK2051GC01144_DFP/instance
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/packs/PIC32CK2051GC01144_DFP/instance/ccl.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/packs/PIC32CK2051GC01144_DFP/instance/ccl.h
   projectFolder: packs/PIC32CK2051GC01144_DFP/instance
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/packs/PIC32CK2051GC01144_DFP/instance/cmcc.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/packs/PIC32CK2051GC01144_DFP/instance/cmcc.h
   projectFolder: packs/PIC32CK2051GC01144_DFP/instance
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/packs/PIC32CK2051GC01144_DFP/instance/dma0.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/packs/PIC32CK2051GC01144_DFP/instance/dma0.h
   projectFolder: packs/PIC32CK2051GC01144_DFP/instance
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/packs/PIC32CK2051GC01144_DFP/instance/dma1.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/packs/PIC32CK2051GC01144_DFP/instance/dma1.h
   projectFolder: packs/PIC32CK2051GC01144_DFP/instance
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/packs/PIC32CK2051GC01144_DFP/instance/dsu.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/packs/PIC32CK2051GC01144_DFP/instance/dsu.h
   projectFolder: packs/PIC32CK2051GC01144_DFP/instance
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/packs/PIC32CK2051GC01144_DFP/instance/ebi.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/packs/PIC32CK2051GC01144_DFP/instance/ebi.h
   projectFolder: packs/PIC32CK2051GC01144_DFP/instance
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/packs/PIC32CK2051GC01144_DFP/instance/eic.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/packs/PIC32CK2051GC01144_DFP/instance/eic.h
   projectFolder: packs/PIC32CK2051GC01144_DFP/instance
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/packs/PIC32CK2051GC01144_DFP/instance/eth.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/packs/PIC32CK2051GC01144_DFP/instance/eth.h
   projectFolder: packs/PIC32CK2051GC01144_DFP/instance
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/packs/PIC32CK2051GC01144_DFP/instance/evsys.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/packs/PIC32CK2051GC01144_DFP/instance/evsys.h
   projectFolder: packs/PIC32CK2051GC01144_DFP/instance
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/packs/PIC32CK2051GC01144_DFP/instance/fcr.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/packs/PIC32CK2051GC01144_DFP/instance/fcr.h
   projectFolder: packs/PIC32CK2051GC01144_DFP/instance
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/packs/PIC32CK2051GC01144_DFP/instance/fcw.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/packs/PIC32CK2051GC01144_DFP/instance/fcw.h
   projectFolder: packs/PIC32CK2051GC01144_DFP/instance
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/packs/PIC32CK2051GC01144_DFP/instance/freqm.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/packs/PIC32CK2051GC01144_DFP/instance/freqm.h
   projectFolder: packs/PIC32CK2051GC01144_DFP/instance
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/packs/PIC32CK2051GC01144_DFP/instance/fuses.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/packs/PIC32CK2051GC01144_DFP/instance/fuses.h
   projectFolder: packs/PIC32CK2051GC01144_DFP/instance
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/packs/PIC32CK2051GC01144_DFP/instance/gclk.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/packs/PIC32CK2051GC01144_DFP/instance/gclk.h
   projectFolder: packs/PIC32CK2051GC01144_DFP/instance
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/packs/PIC32CK2051GC01144_DFP/instance/hmatrix.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/packs/PIC32CK2051GC01144_DFP/instance/hmatrix.h
   projectFolder: packs/PIC32CK2051GC01144_DFP/instance
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/packs/PIC32CK2051GC01144_DFP/instance/idau.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/packs/PIC32CK2051GC01144_DFP/instance/idau.h
   projectFolder: packs/PIC32CK2051GC01144_DFP/instance
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/packs/PIC32CK2051GC01144_DFP/instance/mclk.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/packs/PIC32CK2051GC01144_DFP/instance/mclk.h
   projectFolder: packs/PIC32CK2051GC01144_DFP/instance
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/packs/PIC32CK2051GC01144_DFP/instance/osc32kctrl.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/packs/PIC32CK2051GC01144_DFP/instance/osc32kctrl.h
   projectFolder: packs/PIC32CK2051GC01144_DFP/instance
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/packs/PIC32CK2051GC01144_DFP/instance/oscctrl.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/packs/PIC32CK2051GC01144_DFP/instance/oscctrl.h
   projectFolder: packs/PIC32CK2051GC01144_DFP/instance
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/packs/PIC32CK2051GC01144_DFP/instance/pac.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/packs/PIC32CK2051GC01144_DFP/instance/pac.h
   projectFolder: packs/PIC32CK2051GC01144_DFP/instance
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/packs/PIC32CK2051GC01144_DFP/instance/pcc.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/packs/PIC32CK2051GC01144_DFP/instance/pcc.h
   projectFolder: packs/PIC32CK2051GC01144_DFP/instance
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/packs/PIC32CK2051GC01144_DFP/instance/pdec.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/packs/PIC32CK2051GC01144_DFP/instance/pdec.h
   projectFolder: packs/PIC32CK2051GC01144_DFP/instance
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/packs/PIC32CK2051GC01144_DFP/instance/pm.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/packs/PIC32CK2051GC01144_DFP/instance/pm.h
   projectFolder: packs/PIC32CK2051GC01144_DFP/instance
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/packs/PIC32CK2051GC01144_DFP/instance/port.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/packs/PIC32CK2051GC01144_DFP/instance/port.h
   projectFolder: packs/PIC32CK2051GC01144_DFP/instance
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/packs/PIC32CK2051GC01144_DFP/instance/prm.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/packs/PIC32CK2051GC01144_DFP/instance/prm.h
   projectFolder: packs/PIC32CK2051GC01144_DFP/instance
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/packs/PIC32CK2051GC01144_DFP/instance/ptc.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/packs/PIC32CK2051GC01144_DFP/instance/ptc.h
   projectFolder: packs/PIC32CK2051GC01144_DFP/instance
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/packs/PIC32CK2051GC01144_DFP/instance/rstc.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/packs/PIC32CK2051GC01144_DFP/instance/rstc.h
   projectFolder: packs/PIC32CK2051GC01144_DFP/instance
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/packs/PIC32CK2051GC01144_DFP/instance/rtc.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/packs/PIC32CK2051GC01144_DFP/instance/rtc.h
   projectFolder: packs/PIC32CK2051GC01144_DFP/instance
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/packs/PIC32CK2051GC01144_DFP/instance/sdmmc0.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/packs/PIC32CK2051GC01144_DFP/instance/sdmmc0.h
   projectFolder: packs/PIC32CK2051GC01144_DFP/instance
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/packs/PIC32CK2051GC01144_DFP/instance/sdmmc1.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/packs/PIC32CK2051GC01144_DFP/instance/sdmmc1.h
   projectFolder: packs/PIC32CK2051GC01144_DFP/instance
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/packs/PIC32CK2051GC01144_DFP/instance/sercom0.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/packs/PIC32CK2051GC01144_DFP/instance/sercom0.h
   projectFolder: packs/PIC32CK2051GC01144_DFP/instance
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/packs/PIC32CK2051GC01144_DFP/instance/sercom1.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/packs/PIC32CK2051GC01144_DFP/instance/sercom1.h
   projectFolder: packs/PIC32CK2051GC01144_DFP/instance
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/packs/PIC32CK2051GC01144_DFP/instance/sercom2.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/packs/PIC32CK2051GC01144_DFP/instance/sercom2.h
   projectFolder: packs/PIC32CK2051GC01144_DFP/instance
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/packs/PIC32CK2051GC01144_DFP/instance/sercom3.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/packs/PIC32CK2051GC01144_DFP/instance/sercom3.h
   projectFolder: packs/PIC32CK2051GC01144_DFP/instance
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/packs/PIC32CK2051GC01144_DFP/instance/sercom4.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/packs/PIC32CK2051GC01144_DFP/instance/sercom4.h
   projectFolder: packs/PIC32CK2051GC01144_DFP/instance
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/packs/PIC32CK2051GC01144_DFP/instance/sercom5.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/packs/PIC32CK2051GC01144_DFP/instance/sercom5.h
   projectFolder: packs/PIC32CK2051GC01144_DFP/instance
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/packs/PIC32CK2051GC01144_DFP/instance/sercom6.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/packs/PIC32CK2051GC01144_DFP/instance/sercom6.h
   projectFolder: packs/PIC32CK2051GC01144_DFP/instance
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/packs/PIC32CK2051GC01144_DFP/instance/sercom7.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/packs/PIC32CK2051GC01144_DFP/instance/sercom7.h
   projectFolder: packs/PIC32CK2051GC01144_DFP/instance
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/packs/PIC32CK2051GC01144_DFP/instance/spi_ixs.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/packs/PIC32CK2051GC01144_DFP/instance/spi_ixs.h
   projectFolder: packs/PIC32CK2051GC01144_DFP/instance
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/packs/PIC32CK2051GC01144_DFP/instance/sqi.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/packs/PIC32CK2051GC01144_DFP/instance/sqi.h
   projectFolder: packs/PIC32CK2051GC01144_DFP/instance
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/packs/PIC32CK2051GC01144_DFP/instance/supc.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/packs/PIC32CK2051GC01144_DFP/instance/supc.h
   projectFolder: packs/PIC32CK2051GC01144_DFP/instance
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/packs/PIC32CK2051GC01144_DFP/instance/tcc0.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/packs/PIC32CK2051GC01144_DFP/instance/tcc0.h
   projectFolder: packs/PIC32CK2051GC01144_DFP/instance
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/packs/PIC32CK2051GC01144_DFP/instance/tcc1.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/packs/PIC32CK2051GC01144_DFP/instance/tcc1.h
   projectFolder: packs/PIC32CK2051GC01144_DFP/instance
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/packs/PIC32CK2051GC01144_DFP/instance/tcc2.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/packs/PIC32CK2051GC01144_DFP/instance/tcc2.h
   projectFolder: packs/PIC32CK2051GC01144_DFP/instance
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/packs/PIC32CK2051GC01144_DFP/instance/tcc3.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/packs/PIC32CK2051GC01144_DFP/instance/tcc3.h
   projectFolder: packs/PIC32CK2051GC01144_DFP/instance
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/packs/PIC32CK2051GC01144_DFP/instance/tcc4.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/packs/PIC32CK2051GC01144_DFP/instance/tcc4.h
   projectFolder: packs/PIC32CK2051GC01144_DFP/instance
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/packs/PIC32CK2051GC01144_DFP/instance/tcc5.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/packs/PIC32CK2051GC01144_DFP/instance/tcc5.h
   projectFolder: packs/PIC32CK2051GC01144_DFP/instance
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/packs/PIC32CK2051GC01144_DFP/instance/tcc6.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/packs/PIC32CK2051GC01144_DFP/instance/tcc6.h
   projectFolder: packs/PIC32CK2051GC01144_DFP/instance
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/packs/PIC32CK2051GC01144_DFP/instance/tcc7.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/packs/PIC32CK2051GC01144_DFP/instance/tcc7.h
   projectFolder: packs/PIC32CK2051GC01144_DFP/instance
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/packs/PIC32CK2051GC01144_DFP/instance/tram.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/packs/PIC32CK2051GC01144_DFP/instance/tram.h
   projectFolder: packs/PIC32CK2051GC01144_DFP/instance
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/packs/PIC32CK2051GC01144_DFP/instance/trng.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/packs/PIC32CK2051GC01144_DFP/instance/trng.h
   projectFolder: packs/PIC32CK2051GC01144_DFP/instance
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/packs/PIC32CK2051GC01144_DFP/instance/usb.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/packs/PIC32CK2051GC01144_DFP/instance/usb.h
   projectFolder: packs/PIC32CK2051GC01144_DFP/instance
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/packs/PIC32CK2051GC01144_DFP/instance/usbhs.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/packs/PIC32CK2051GC01144_DFP/instance/usbhs.h
   projectFolder: packs/PIC32CK2051GC01144_DFP/instance
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/packs/PIC32CK2051GC01144_DFP/instance/wdt.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/packs/PIC32CK2051GC01144_DFP/instance/wdt.h
   projectFolder: packs/PIC32CK2051GC01144_DFP/instance
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/packs/PIC32CK2051GC01144_DFP/pic32ck2051gc01144.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/packs/PIC32CK2051GC01144_DFP/pic32ck2051gc01144.h
   projectFolder: packs/PIC32CK2051GC01144_DFP
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/packs/PIC32CK2051GC01144_DFP/pio/pic32ck2051gc01144.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/packs/PIC32CK2051GC01144_DFP/pio/pic32ck2051gc01144.h
   projectFolder: packs/PIC32CK2051GC01144_DFP/pio
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/config/pic32ck_gc01_cult/peripheral/eic/plib_eic.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/config/pic32ck_gc01_cult/peripheral/sercom/usart/plib_sercom5_usart.h
+  projectFolder: config/pic32ck_gc01_cult/peripheral/sercom/usart
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/config/pic32ck_gc01_cult/peripheral/sercom/usart/plib_sercom_usart_common.h
+  projectFolder: config/pic32ck_gc01_cult/peripheral/sercom/usart
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/config/pic32ck_gc01_cult/peripheral/sercom/usart/plib_sercom5_usart.c
+  projectFolder: config/pic32ck_gc01_cult/peripheral/sercom/usart
+  type: Source Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/config/pic32ck_gc01_cult/peripheral/pm/plib_pm.h
+  projectFolder: config/pic32ck_gc01_cult/peripheral/pm
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/config/pic32ck_gc01_cult/peripheral/pm/plib_pm.c
+  projectFolder: config/pic32ck_gc01_cult/peripheral/pm
+  type: Source Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/config/pic32ck_gc01_cult/peripheral/eic/plib_eic.h
   projectFolder: config/pic32ck_gc01_cult/peripheral/eic
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/config/pic32ck_gc01_cult/peripheral/eic/plib_eic.c
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/config/pic32ck_gc01_cult/peripheral/eic/plib_eic.c
   projectFolder: config/pic32ck_gc01_cult/peripheral/eic
   type: Source Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/packs/CMSIS/CMSIS/Core/Include/cmsis_version.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/packs/CMSIS/CMSIS/Core/Include/cmsis_version.h
   projectFolder: packs/CMSIS/CMSIS/Core/Include
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/packs/CMSIS/CMSIS/Core/Include/cmsis_compiler.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/packs/CMSIS/CMSIS/Core/Include/cmsis_compiler.h
   projectFolder: packs/CMSIS/CMSIS/Core/Include
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/packs/CMSIS/CMSIS/Core/Include/cmsis_iccarm.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/packs/CMSIS/CMSIS/Core/Include/cmsis_iccarm.h
   projectFolder: packs/CMSIS/CMSIS/Core/Include
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/packs/CMSIS/CMSIS/Core/Include/cmsis_gcc.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/packs/CMSIS/CMSIS/Core/Include/cmsis_gcc.h
   projectFolder: packs/CMSIS/CMSIS/Core/Include
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/packs/CMSIS/CMSIS/Core/Include/cmsis_armcc.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/packs/CMSIS/CMSIS/Core/Include/cmsis_armcc.h
   projectFolder: packs/CMSIS/CMSIS/Core/Include
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/packs/CMSIS/CMSIS/Core/Include/cmsis_armclang.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/packs/CMSIS/CMSIS/Core/Include/cmsis_armclang.h
   projectFolder: packs/CMSIS/CMSIS/Core/Include
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/packs/CMSIS/CMSIS/Core/Include/cmsis_armclang_ltm.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/packs/CMSIS/CMSIS/Core/Include/cmsis_armclang_ltm.h
   projectFolder: packs/CMSIS/CMSIS/Core/Include
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/packs/CMSIS/CMSIS/Core/Include/core_cm33.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/packs/CMSIS/CMSIS/Core/Include/core_cm33.h
   projectFolder: packs/CMSIS/CMSIS/Core/Include
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/packs/CMSIS/CMSIS/Core/Include/mpu_armv8.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/packs/CMSIS/CMSIS/Core/Include/mpu_armv8.h
   projectFolder: packs/CMSIS/CMSIS/Core/Include
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/packs/CMSIS/CMSIS/Core/Include/cachel1_armv7.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/packs/CMSIS/CMSIS/Core/Include/cachel1_armv7.h
   projectFolder: packs/CMSIS/CMSIS/Core/Include
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/packs/CMSIS/CMSIS/Core/Include/tz_context.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/packs/CMSIS/CMSIS/Core/Include/tz_context.h
   projectFolder: packs/CMSIS/CMSIS/Core/Include
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/config/pic32ck_gc01_cult/FreeRTOSConfig.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/config/pic32ck_gc01_cult/FreeRTOSConfig.h
   projectFolder: config/pic32ck_gc01_cult
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/config/pic32ck_gc01_cult/freertos_hooks.c
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/config/pic32ck_gc01_cult/freertos_hooks.c
   projectFolder: config/pic32ck_gc01_cult
   type: Source Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/third_party/rtos/FreeRTOS/Source/croutine.c
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/third_party/rtos/FreeRTOS/Source/croutine.c
   projectFolder: FreeRTOS/Source
   type: Source Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/third_party/rtos/FreeRTOS/Source/list.c
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/third_party/rtos/FreeRTOS/Source/list.c
   projectFolder: FreeRTOS/Source
   type: Source Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/third_party/rtos/FreeRTOS/Source/queue.c
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/third_party/rtos/FreeRTOS/Source/queue.c
   projectFolder: FreeRTOS/Source
   type: Source Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/third_party/rtos/FreeRTOS/Source/FreeRTOS_tasks.c
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/third_party/rtos/FreeRTOS/Source/FreeRTOS_tasks.c
   projectFolder: FreeRTOS/Source
   type: Source Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/third_party/rtos/FreeRTOS/Source/timers.c
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/third_party/rtos/FreeRTOS/Source/timers.c
   projectFolder: FreeRTOS/Source
   type: Source Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/third_party/rtos/FreeRTOS/Source/event_groups.c
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/third_party/rtos/FreeRTOS/Source/event_groups.c
   projectFolder: FreeRTOS/Source
   type: Source Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/third_party/rtos/FreeRTOS/Source/stream_buffer.c
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/third_party/rtos/FreeRTOS/Source/stream_buffer.c
   projectFolder: FreeRTOS/Source
   type: Source Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/third_party/rtos/FreeRTOS/Source/portable/MemMang/heap_1.c
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/third_party/rtos/FreeRTOS/Source/portable/MemMang/heap_1.c
   projectFolder: FreeRTOS/Source/portable/MemMang
   type: Source Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/third_party/rtos/FreeRTOS/Source/include/croutine.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/third_party/rtos/FreeRTOS/Source/include/croutine.h
   projectFolder: FreeRTOS/Source/include
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/third_party/rtos/FreeRTOS/Source/include/event_groups.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/third_party/rtos/FreeRTOS/Source/include/event_groups.h
   projectFolder: FreeRTOS/Source/include
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/third_party/rtos/FreeRTOS/Source/include/FreeRTOS.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/third_party/rtos/FreeRTOS/Source/include/FreeRTOS.h
   projectFolder: FreeRTOS/Source/include
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/third_party/rtos/FreeRTOS/Source/include/list.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/third_party/rtos/FreeRTOS/Source/include/list.h
   projectFolder: FreeRTOS/Source/include
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/third_party/rtos/FreeRTOS/Source/include/mpu_wrappers.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/third_party/rtos/FreeRTOS/Source/include/mpu_wrappers.h
   projectFolder: FreeRTOS/Source/include
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/third_party/rtos/FreeRTOS/Source/include/portable.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/third_party/rtos/FreeRTOS/Source/include/portable.h
   projectFolder: FreeRTOS/Source/include
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/third_party/rtos/FreeRTOS/Source/include/projdefs.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/third_party/rtos/FreeRTOS/Source/include/projdefs.h
   projectFolder: FreeRTOS/Source/include
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/third_party/rtos/FreeRTOS/Source/include/queue.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/third_party/rtos/FreeRTOS/Source/include/queue.h
   projectFolder: FreeRTOS/Source/include
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/third_party/rtos/FreeRTOS/Source/include/semphr.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/third_party/rtos/FreeRTOS/Source/include/semphr.h
   projectFolder: FreeRTOS/Source/include
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/third_party/rtos/FreeRTOS/Source/include/stack_macros.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/third_party/rtos/FreeRTOS/Source/include/stack_macros.h
   projectFolder: FreeRTOS/Source/include
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/third_party/rtos/FreeRTOS/Source/include/deprecated_definitions.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/third_party/rtos/FreeRTOS/Source/include/deprecated_definitions.h
   projectFolder: FreeRTOS/Source/include
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/third_party/rtos/FreeRTOS/Source/include/task.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/third_party/rtos/FreeRTOS/Source/include/task.h
   projectFolder: FreeRTOS/Source/include
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/third_party/rtos/FreeRTOS/Source/include/timers.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/third_party/rtos/FreeRTOS/Source/include/timers.h
   projectFolder: FreeRTOS/Source/include
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/third_party/rtos/FreeRTOS/Source/include/mpu_prototypes.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/third_party/rtos/FreeRTOS/Source/include/mpu_prototypes.h
   projectFolder: FreeRTOS/Source/include
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/third_party/rtos/FreeRTOS/Source/include/mpu_syscall_numbers.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/third_party/rtos/FreeRTOS/Source/include/mpu_syscall_numbers.h
   projectFolder: FreeRTOS/Source/include
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/third_party/rtos/FreeRTOS/Source/include/stream_buffer.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/third_party/rtos/FreeRTOS/Source/include/stream_buffer.h
   projectFolder: FreeRTOS/Source/include
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/third_party/rtos/FreeRTOS/Source/include/message_buffer.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/third_party/rtos/FreeRTOS/Source/include/message_buffer.h
   projectFolder: FreeRTOS/Source/include
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/third_party/rtos/FreeRTOS/Source/portable/GCC/ARM_CM33_NTZ/non_secure/port.c
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/third_party/rtos/FreeRTOS/Source/portable/GCC/ARM_CM33_NTZ/non_secure/port.c
   projectFolder: FreeRTOS/Source/portable/GCC/ARM_CM33_NTZ/non_secure
   type: Source Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/third_party/rtos/FreeRTOS/Source/portable/GCC/ARM_CM33_NTZ/non_secure/portasm.c
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/third_party/rtos/FreeRTOS/Source/portable/GCC/ARM_CM33_NTZ/non_secure/portasm.c
   projectFolder: FreeRTOS/Source/portable/GCC/ARM_CM33_NTZ/non_secure
   type: Source Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/third_party/rtos/FreeRTOS/Source/portable/GCC/ARM_CM33_NTZ/non_secure/portasm.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/third_party/rtos/FreeRTOS/Source/portable/GCC/ARM_CM33_NTZ/non_secure/portasm.h
   projectFolder: FreeRTOS/Source/portable/GCC/ARM_CM33_NTZ/non_secure
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/third_party/rtos/FreeRTOS/Source/portable/GCC/ARM_CM33_NTZ/non_secure/portmacro.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/third_party/rtos/FreeRTOS/Source/portable/GCC/ARM_CM33_NTZ/non_secure/portmacro.h
   projectFolder: FreeRTOS/Source/portable/GCC/ARM_CM33_NTZ/non_secure
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/third_party/rtos/FreeRTOS/Source/portable/GCC/ARM_CM33_NTZ/non_secure/portmacrocommon.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/third_party/rtos/FreeRTOS/Source/portable/GCC/ARM_CM33_NTZ/non_secure/portmacrocommon.h
   projectFolder: FreeRTOS/Source/portable/GCC/ARM_CM33_NTZ/non_secure
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/config/pic32ck_gc01_cult/system/cache/sys_cache.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/config/pic32ck_gc01_cult/system/cache/sys_cache.h
   projectFolder: config/pic32ck_gc01_cult/system/cache
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/config/pic32ck_gc01_cult/system/cache/sys_cache.c
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/config/pic32ck_gc01_cult/system/cache/sys_cache.c
   projectFolder: config/pic32ck_gc01_cult/system/cache
   type: Source Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/config/pic32ck_gc01_cult/osal/osal.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/config/pic32ck_gc01_cult/osal/osal.h
   projectFolder: config/pic32ck_gc01_cult/osal
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/config/pic32ck_gc01_cult/osal/osal_definitions.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/config/pic32ck_gc01_cult/osal/osal_definitions.h
   projectFolder: config/pic32ck_gc01_cult/osal
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/config/pic32ck_gc01_cult/osal/osal_freertos.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/config/pic32ck_gc01_cult/osal/osal_freertos.h
   projectFolder: config/pic32ck_gc01_cult/osal
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/config/pic32ck_gc01_cult/osal/osal_freertos.c
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/config/pic32ck_gc01_cult/osal/osal_freertos.c
   projectFolder: config/pic32ck_gc01_cult/osal
   type: Source Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/task1.c
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/task1.c
   projectFolder: ''
   type: Source Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/task1.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/task1.h
   projectFolder: ''
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/task2.c
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/task2.c
   projectFolder: ''
   type: Source Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/task2.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/task2.h
   projectFolder: ''
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/task3.c
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/task3.c
   projectFolder: ''
   type: Source Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/task3.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/task3.h
   projectFolder: ''
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/task4.c
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/task4.c
   projectFolder: ''
   type: Source Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/task4.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/task4.h
   projectFolder: ''
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/config/pic32ck_gc01_cult/user.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/config/pic32ck_gc01_cult/user.h
   projectFolder: config/pic32ck_gc01_cult
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/config/pic32ck_gc01_cult/configuration.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/config/pic32ck_gc01_cult/configuration.h
   projectFolder: config/pic32ck_gc01_cult
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/config/pic32ck_gc01_cult/sys_tasks.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/config/pic32ck_gc01_cult/sys_tasks.h
   projectFolder: config/pic32ck_gc01_cult
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/config/pic32ck_gc01_cult/tasks.c
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/rtos/freertos/basic_freertos/firmware/src/config/pic32ck_gc01_cult/tasks.c
   projectFolder: config/pic32ck_gc01_cult
   type: Source Files
 generatedSettings:

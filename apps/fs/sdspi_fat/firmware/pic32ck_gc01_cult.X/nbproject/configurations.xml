@@ -258,27 +258,23 @@
                      displayName="fs_sdspi_fat_pic32ck_gc01_cult_pic32ck_gc01_cult"
                      projectFiles="true">
         <logicalFolder name="components" displayName="components" projectFiles="true">
-          <itemPath>fs_sdspi_fat_pic32ck_gc01_cult_pic32ck_gc01_cult/components/sys_fs.yml</itemPath>
-          <itemPath>fs_sdspi_fat_pic32ck_gc01_cult_pic32ck_gc01_cult/components/evsys.yml</itemPath>
-          <itemPath>fs_sdspi_fat_pic32ck_gc01_cult_pic32ck_gc01_cult/components/drv_sdspi_0.yml</itemPath>
-          <itemPath>fs_sdspi_fat_pic32ck_gc01_cult_pic32ck_gc01_cult/components/sercom2.yml</itemPath>
-          <itemPath>fs_sdspi_fat_pic32ck_gc01_cult_pic32ck_gc01_cult/components/core.yml</itemPath>
-          <itemPath>fs_sdspi_fat_pic32ck_gc01_cult_pic32ck_gc01_cult/components/drv_sdspi.yml</itemPath>
           <itemPath>fs_sdspi_fat_pic32ck_gc01_cult_pic32ck_gc01_cult/components/BSP_PIC32CK_GC01_Curiosity_Ultra.yml</itemPath>
-          <itemPath>fs_sdspi_fat_pic32ck_gc01_cult_pic32ck_gc01_cult/components/dfp.yml</itemPath>
-          <itemPath>fs_sdspi_fat_pic32ck_gc01_cult_pic32ck_gc01_cult/components/pm.yml</itemPath>
-          <itemPath>fs_sdspi_fat_pic32ck_gc01_cult_pic32ck_gc01_cult/components/sys_time.yml</itemPath>
           <itemPath>fs_sdspi_fat_pic32ck_gc01_cult_pic32ck_gc01_cult/components/HarmonyCore.yml</itemPath>
           <itemPath>fs_sdspi_fat_pic32ck_gc01_cult_pic32ck_gc01_cult/components/cmsis.yml</itemPath>
+          <itemPath>fs_sdspi_fat_pic32ck_gc01_cult_pic32ck_gc01_cult/components/core.yml</itemPath>
+          <itemPath>fs_sdspi_fat_pic32ck_gc01_cult_pic32ck_gc01_cult/components/dfp.yml</itemPath>
+          <itemPath>fs_sdspi_fat_pic32ck_gc01_cult_pic32ck_gc01_cult/components/drv_sdspi.yml</itemPath>
+          <itemPath>fs_sdspi_fat_pic32ck_gc01_cult_pic32ck_gc01_cult/components/drv_sdspi_0.yml</itemPath>
+          <itemPath>fs_sdspi_fat_pic32ck_gc01_cult_pic32ck_gc01_cult/components/evsys.yml</itemPath>
+          <itemPath>fs_sdspi_fat_pic32ck_gc01_cult_pic32ck_gc01_cult/components/pm.yml</itemPath>
+          <itemPath>fs_sdspi_fat_pic32ck_gc01_cult_pic32ck_gc01_cult/components/sercom2.yml</itemPath>
+          <itemPath>fs_sdspi_fat_pic32ck_gc01_cult_pic32ck_gc01_cult/components/sys_fs.yml</itemPath>
+          <itemPath>fs_sdspi_fat_pic32ck_gc01_cult_pic32ck_gc01_cult/components/sys_time.yml</itemPath>
         </logicalFolder>
         <itemPath>fs_sdspi_fat_pic32ck_gc01_cult_pic32ck_gc01_cult/mcc-config.mc4</itemPath>
       </logicalFolder>
       <itemPath>Makefile</itemPath>
-      <itemPath>../src/config/pic32ck_gc01_cult/harmony-manifest-success.yml</itemPath>
-    </logicalFolder>
-    <logicalFolder name="LibraryFiles"
-                   displayName="LibraryFiles"
-                   projectFiles="true">
+      <itemPath>../src/config/pic32ck_gc01_cult/pin_configurations.csv</itemPath>
     </logicalFolder>
     <logicalFolder name="LinkerScript"
                    displayName="Linker Files"
@@ -382,7 +378,6 @@
       </logicalFolder>
       <itemPath>../src/main.c</itemPath>
       <itemPath>../src/app.c</itemPath>
-      <itemPath>../src/config/pic32ck_gc01_cult/pin_configurations.csv</itemPath>
     </logicalFolder>
   </logicalFolder>
   <projectmakefile>Makefile</projectmakefile>
@@ -399,7 +394,7 @@
         <platform>3</platform>
       </toolsSet>
       <packs>
-        <pack name="CMSIS" vendor="ARM" version="5.4.0"/>
+        <pack name="CMSIS" vendor="ARM" version="5.9.0"/>
         <pack name="PIC32CK-GC_DFP" vendor="Microchip" version="1.1.148"/>
       </packs>
       <ScriptingSettings>

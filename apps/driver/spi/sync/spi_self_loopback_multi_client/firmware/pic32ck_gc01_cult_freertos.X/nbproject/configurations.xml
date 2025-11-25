@@ -276,7 +276,7 @@
         <itemPath>spi_sync_spi_self_loopback_multi_client_pic32ck_gc01_cult_freertos_pic32ck_gc01_cult_freertos/mcc-config.mc4</itemPath>
       </logicalFolder>
       <itemPath>Makefile</itemPath>
-      <itemPath>../src/config/pic32ck_gc01_cult_freertos/harmony-manifest-success.yml</itemPath>
+      <itemPath>../src/config/pic32ck_gc01_cult_freertos/pin_configurations.csv</itemPath>
     </logicalFolder>
     <logicalFolder name="LinkerScript"
                    displayName="Linker Files"
@@ -378,7 +378,6 @@
           <itemPath>../src/third_party/rtos/FreeRTOS/Source/list.c</itemPath>
         </logicalFolder>
       </logicalFolder>
-      <itemPath>../src/config/pic32ck_gc01_cult_freertos/pin_configurations.csv</itemPath>
       <itemPath>../src/app_monitor.c</itemPath>
       <itemPath>../src/main.c</itemPath>
       <itemPath>../src/app_client1.c</itemPath>
@@ -399,7 +398,7 @@
         <platform>3</platform>
       </toolsSet>
       <packs>
-        <pack name="CMSIS" vendor="ARM" version="5.4.0"/>
+        <pack name="CMSIS" vendor="ARM" version="5.9.0"/>
         <pack name="PIC32CK-GC_DFP" vendor="Microchip" version="1.1.148"/>
       </packs>
       <ScriptingSettings>
