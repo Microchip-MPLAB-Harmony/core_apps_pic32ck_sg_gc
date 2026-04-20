@@ -1,0 +1,116 @@
+configVersion: 1.0.0
+componentName: sqi
+coreVersion: 5.8.4
+device: PIC32CK2051GC01144
+library: []
+dependency:
+- dependencyPackage: class com.microchip.mcc.harmony.HarmonyModule
+  name: sqi
+  type: module
+  version: ''
+- dependencyPackage: ''
+  name: csp
+  type: package
+  version: v3.25.1
+customDataClassName: com.microchip.utils_mh3.utils.persistence.CustomModuleData
+data:
+  attachments:
+    children:
+    - children:
+      - attributes:
+          id: SQI_SQI
+        children:
+        - children:
+          - attributes:
+              id: targetComponentID
+            children:
+            - type: Value
+              value: drv_sfdp
+            type: String
+          - attributes:
+              id: targetAttachmentID
+            children:
+            - type: Value
+              value: drv_sfdp_SQI_dependency
+            type: String
+          type: Attributes
+        type: DirectCapability
+      type: Attachments
+    type: sqi
+  elementPosition:
+    attributes:
+      id: __ROOTVIEW
+    children:
+    - children:
+      - attributes:
+          id: sqi
+          x: '42'
+          y: '186'
+        type: ElementPosition
+      type: ElementPositions
+    type: ComponentGraph
+  symbols:
+    SQI_CLKDIV:
+      attributes:
+        id: SQI_CLKDIV
+      children:
+      - children:
+        - attributes:
+            value: '10'
+          type: User
+        type: Values
+      type: KeyValueSet
+    SQI_CSEN:
+      attributes:
+        id: SQI_CSEN
+      children:
+      - children:
+        - attributes:
+            value: '2'
+          type: User
+        type: Values
+      type: KeyValueSet
+    SQI_FLASH_STATUS_CHECK:
+      attributes:
+        id: SQI_FLASH_STATUS_CHECK
+      children:
+      - children:
+        - attributes:
+            id: readOnly
+          children:
+          - type: Value
+            value: 'true'
+          type: Boolean
+        type: Attributes
+      type: Boolean
+    SQI_LANE_MODE:
+      attributes:
+        id: SQI_LANE_MODE
+      children:
+      - children:
+        - attributes:
+            id: readOnly
+          children:
+          - type: Value
+            value: 'true'
+          type: Boolean
+        type: Attributes
+      - children:
+        - attributes:
+            id: sqi
+            value: '2'
+          type: Dynamic
+        type: Values
+      type: KeyValueSet
+    SQI_STATTYPE:
+      attributes:
+        id: SQI_STATTYPE
+      children:
+      - children:
+        - attributes:
+            id: sqi
+            value: '2'
+          type: Dynamic
+        type: Values
+      type: KeyValueSet
+  userData: {}
