@@ -725,7 +725,7 @@ typedef enum
 
 }DRV_SDSPI_TYPE;
 
-/* MISRA C-2012 Rule 5.2 deviated:2 Deviation record ID -  H3_MISRAC_2012_R_5_2_DR_1 */
+/* MISRA C-2023 Rule 5.2 deviated:2 Deviation record ID -  H3_MISRAC_2023_R_5_2_DR_1 */
 
 typedef enum
 {
@@ -891,7 +891,7 @@ typedef struct
 
 } DRV_SDSPI_CMD_OBJ;
 
-/* MISRA C-2012 Rule 6.1 deviated:5 Deviation record ID -  H3_MISRAC_2012_R_6_1_DR_1 */
+/* MISRA C-2023 Rule 6.1 deviated:5 Deviation record ID -  H3_MISRAC_2023_R_6_1_DR_1 */
 
 typedef union
 {

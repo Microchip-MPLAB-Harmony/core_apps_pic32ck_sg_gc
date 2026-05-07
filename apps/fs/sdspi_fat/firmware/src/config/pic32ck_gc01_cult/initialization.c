@@ -325,10 +325,10 @@
 // *****************************************************************************
 // *****************************************************************************
 /* Following MISRA-C rules are deviated in the below code block */
-/* MISRA C-2012 Rule 7.2 - Deviation record ID - H3_MISRAC_2012_R_7_2_DR_1 */
-/* MISRA C-2012 Rule 11.1 - Deviation record ID - H3_MISRAC_2012_R_11_1_DR_1 */
-/* MISRA C-2012 Rule 11.3 - Deviation record ID - H3_MISRAC_2012_R_11_3_DR_1 */
-/* MISRA C-2012 Rule 11.8 - Deviation record ID - H3_MISRAC_2012_R_11_8_DR_1 */
+/* MISRA C-2023 Rule 7.2 - Deviation record ID - H3_MISRAC_2023_R_7_2_DR_1 */
+/* MISRA C-2023 Rule 11.1 - Deviation record ID - H3_MISRAC_2023_R_11_1_DR_1 */
+/* MISRA C-2023 Rule 11.3 - Deviation record ID - H3_MISRAC_2023_R_11_3_DR_1 */
+/* MISRA C-2023 Rule 11.8 - Deviation record ID - H3_MISRAC_2023_R_11_8_DR_1 */
 // <editor-fold defaultstate="collapsed" desc="DRV_SDSPI Instance 0 Initialization Data">
 
 /* SDSPI Client Objects Pool */
@@ -520,7 +520,7 @@ static const SYS_TIME_INIT sysTimeInitData =
 // *****************************************************************************
 // *****************************************************************************
 
-/* MISRAC 2012 deviation block end */
+/* MISRAC 2023 deviation block end */
 
 /*******************************************************************************
   Function:
@@ -535,8 +535,8 @@ static const SYS_TIME_INIT sysTimeInitData =
 void SYS_Initialize ( void* data )
 {
 
-    /* MISRAC 2012 deviation block start */
-    /* MISRA C-2012 Rule 2.2 deviated in this file.  Deviation record ID -  H3_MISRAC_2012_R_2_2_DR_1 */
+    /* MISRAC 2023 deviation block start */
+    /* MISRA C-2023 Rule 2.2 deviated in this file.  Deviation record ID -  H3_MISRAC_2023_R_2_2_DR_1 */
 
   
     PORT_Initialize();
@@ -557,34 +557,34 @@ void SYS_Initialize ( void* data )
     PM_Initialize();
 
 
-    /* MISRAC 2012 deviation block start */
+    /* MISRAC 2023 deviation block start */
     /* Following MISRA-C rules deviated in this block  */
-    /* MISRA C-2012 Rule 11.3 - Deviation record ID - H3_MISRAC_2012_R_11_3_DR_1 */
-    /* MISRA C-2012 Rule 11.8 - Deviation record ID - H3_MISRAC_2012_R_11_8_DR_1 */
+    /* MISRA C-2023 Rule 11.3 - Deviation record ID - H3_MISRAC_2023_R_11_3_DR_1 */
+    /* MISRA C-2023 Rule 11.8 - Deviation record ID - H3_MISRAC_2023_R_11_8_DR_1 */
 
     /* Initialize SDSPI0 Driver Instance */
     sysObj.drvSDSPI0 = DRV_SDSPI_Initialize(DRV_SDSPI_INDEX_0, (SYS_MODULE_INIT *)&drvSDSPI0InitData);
 
 
-    /* MISRA C-2012 Rule 11.3, 11.8 deviated below. Deviation record ID -  
-    H3_MISRAC_2012_R_11_3_DR_1 & H3_MISRAC_2012_R_11_8_DR_1*/
-        
-    sysObj.sysTime = SYS_TIME_Initialize(SYS_TIME_INDEX_0, (SYS_MODULE_INIT *)&sysTimeInitData);
+    /* MISRA C-2023 Rule 11.3, 11.8 deviated below. Deviation record ID -
+    H3_MISRAC_2023_R_11_3_DR_1 & H3_MISRAC_2023_R_11_8_DR_1*/
     
+    sysObj.sysTime = SYS_TIME_Initialize(SYS_TIME_INDEX_0, (SYS_MODULE_INIT *)&sysTimeInitData);
+
     /* MISRAC 2012 deviation block end */
 
     /*** File System Service Initialization Code ***/
     (void) SYS_FS_Initialize( (const void *) sysFSInit );
 
 
-    /* MISRAC 2012 deviation block end */
+    /* MISRAC 2023 deviation block end */
     APP_Initialize();
 
 
     NVIC_Initialize();
 
 
-    /* MISRAC 2012 deviation block end */
+    /* MISRAC 2023 deviation block end */
 }
 
 /*******************************************************************************

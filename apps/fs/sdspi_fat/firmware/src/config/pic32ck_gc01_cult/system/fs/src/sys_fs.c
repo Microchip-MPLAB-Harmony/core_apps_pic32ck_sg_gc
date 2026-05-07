@@ -39,6 +39,7 @@
 *******************************************************************************/
 //DOM-IGNORE-END
 
+/* MISRAC-2023 Rule 17.1 deviation taken for using stdarg.h header file */
 #include <stdarg.h>
 #include <string.h>
 
@@ -329,7 +330,7 @@ static bool SYS_FS_StringWildCardCompare
     See sys_fs.h for usage information.
 ***************************************************************************/
 
-/* MISRA C-2012 Rule 11.8 deviated:1 Deviation record ID -  H3_MISRAC_2012_R_11_8_DR_1 */
+/* MISRA C-2023 Rule 11.8 deviated:1 Deviation record ID -  H3_MISRAC_2023_R_11_8_DR_1 */
 SYS_FS_RESULT SYS_FS_Initialize
 (
     const void* initData
@@ -743,8 +744,25 @@ SYS_FS_RESULT SYS_FS_Unmount
         disk->mountNameLength = 0;
 
         /* Reset the current mount point if it is set to the current disk. */
-        if ((gSYSFSCurrentMountPoint.inUse == true) && (gSYSFSCurrentMountPoint.currentDisk == disk))
+        if ((gSYSFSCurrentMountPoint.inUse == true) &&
+            (gSYSFSCurrentMountPoint.currentDisk == disk))
         {
+            /* Find another valid mount point */
+            for (index = 0; index < SYS_FS_VOLUME_NUMBER; index++)
+            {
+                if (gSYSFSMountPoint[index].inUse == true && &gSYSFSMountPoint[index] != disk)
+                {
+                    /* Switch to the next valid mount point */
+                    gSYSFSCurrentMountPoint.currentDisk = &gSYSFSMountPoint[index];
+
+                    /* Release the acquired mutex. */
+                    (void) OSAL_MUTEX_Unlock (&gSysFsMutex);
+
+                    return (fileStatus == 0) ? SYS_FS_RES_SUCCESS : SYS_FS_RES_FAILURE;
+                }
+            }
+
+            /* If no other mount points are valid, invalidate the current mount point */
             gSYSFSCurrentMountPoint.inUse = false;
         }
     }
@@ -2760,7 +2778,7 @@ SYS_FS_RESULT SYS_FS_FileStringPut
     See sys_fs.h for usage information.
 ***************************************************************************/
 
-/* MISRA C-2012 Rule 17.1 deviated:3 Deviation record ID -  H3_MISRAC_2012_R_17_1_DR_1 */
+/* MISRA C-2023 Rule 17.1 deviated:3 Deviation record ID -  H3_MISRAC_2023_R_17_1_DR_1 */
 SYS_FS_RESULT SYS_FS_FilePrintf
 (
     SYS_FS_HANDLE handle,

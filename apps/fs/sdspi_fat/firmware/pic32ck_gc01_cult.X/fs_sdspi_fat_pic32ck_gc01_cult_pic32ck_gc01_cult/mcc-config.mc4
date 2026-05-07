@@ -1,5 +1,6 @@
 configVersion: 1.0.0
-coreVersion: 5.8.2
+coreVersion: 5.8.4
+spaHostVersion: 1.2.1
 device: PIC32CK2051GC01144
 deviceLibrary:
   className: com.microchip.mcc.harmony.Harmony3Library
@@ -31,9 +32,9 @@ generatedFileHashHistoryMap:
 - file: ..\src\config\pic32ck_gc01_cult\configuration.h
   hash: 5794dd904d127aee9dd8a5511641347084aea500a8b9ee17e9eb71b87c0c0826
 - file: ..\src\config\pic32ck_gc01_cult\definitions.h
-  hash: 009aef1d45efd1a4615a9c2cd2203ecc6378a2fa16d46001b335829317536dd2
+  hash: 3ac41141db9ea3621f43773f46b769fadb18d4d3d439a470ba7b60c07ab95f74
 - file: ..\src\config\pic32ck_gc01_cult\device.h
-  hash: 16c68b32ace41533b1b0f8cffc704dfea71c361c40fbc7fdab13f96645707c9f
+  hash: 0bc15d825d9c99782a7f3bd5e280284a8b70f174a67b574f0df1b68311f646df
 - file: ..\src\config\pic32ck_gc01_cult\device_cache.h
   hash: 5117c844c51e88132b384c381a94d9cc9e68777352e4ab4dc39c261d210b3ebd
 - file: ..\src\config\pic32ck_gc01_cult\device_vectors.h
@@ -43,37 +44,37 @@ generatedFileHashHistoryMap:
 - file: ..\src\config\pic32ck_gc01_cult\driver\driver_common.h
   hash: 5217965f6720b4fdf717e99ce9df4f2c9fbd82bbbc9655847166d1eefa806fee
 - file: ..\src\config\pic32ck_gc01_cult\driver\sdspi\drv_sdspi.h
-  hash: e32ef37da37e9aa65eced2ce7837fa357a49de927902754c92d7df4300d76a7c
+  hash: f2f7553674355bad831aa2887abd8116771a01958f2651777ab35d53bb6152fb
 - file: ..\src\config\pic32ck_gc01_cult\driver\sdspi\drv_sdspi_definitions.h
   hash: b0915e4a3afffb0a8a24bca64dc1b13de57692560e79b889c83ba07e9e7e0e14
 - file: ..\src\config\pic32ck_gc01_cult\driver\sdspi\src\drv_sdspi.c
-  hash: c0b7ba99049f4cb060eb95edafe5059e204ff79f71a017b5a0fd7562c9383455
+  hash: 3c0c822b22e95ce760a8dd44cf7873d4268ea6483f5bb108caa8820f4e0619d7
 - file: ..\src\config\pic32ck_gc01_cult\driver\sdspi\src\drv_sdspi_file_system.c
-  hash: 3fb4d5b9bc5a3b213c3fbf2eb72bd3375d104fc3ed57513c266c48788d9bba90
+  hash: 8800bcf7ae7e56b0d778c492866ec17e44211f103f52f810840ad68d0732cef2
 - file: ..\src\config\pic32ck_gc01_cult\driver\sdspi\src\drv_sdspi_file_system.h
   hash: 17db69f76094817bad08afa773c9ace5c292cbea019e024b428d0ea11e056bff
 - file: ..\src\config\pic32ck_gc01_cult\driver\sdspi\src\drv_sdspi_local.h
-  hash: acfe89aec3f4cf34b9fe84f987b8cc46a0089917f40f28a2cc2bbf1062b8d2b9
+  hash: 2862db6d772d2c53b384ca760007240386e2391e71f3a0c05fa197b055def9f0
 - file: ..\src\config\pic32ck_gc01_cult\driver\sdspi\src\drv_sdspi_plib_interface.c
   hash: d18d910f3c7973d8ca3a384398d36b49522cb3349c2cdb118e52ee499f8177b5
 - file: ..\src\config\pic32ck_gc01_cult\driver\sdspi\src\drv_sdspi_plib_interface.h
   hash: 91c7dbafed62343f2199baef23c3c11b2bef51cf090a879a694dbf844405e3e1
 - file: ..\src\config\pic32ck_gc01_cult\exceptions.c
-  hash: b0b65c30aa1f7a01ef7be6c1628c331a5ca3eae7dc3bd76ebe647703b76f432d
+  hash: 4460457d985f664a3dcd5a719dd869dec9348b072e04671de668948ee99faa56
 - file: ..\src\config\pic32ck_gc01_cult\initialization.c
-  hash: d45199962f0b1bfa10e0029f68f32179e0e1cd7057941c6e156e4aa9a79adcdf
+  hash: 642ea546bf6b6377d32777b4a22618551656892d6a8aab136f980292635623c7
 - file: ..\src\config\pic32ck_gc01_cult\interrupts.c
-  hash: faaf60db3b9a2c83f42af0dc9e980931a06d9a2aa436efe54c9be2eaf5e5f73a
+  hash: 9d08d03acd4f0937600c9f09e108b62641071ffb738bc04c8f506925f46cb2f5
 - file: ..\src\config\pic32ck_gc01_cult\interrupts.h
   hash: 31ed0390955f12b692c778584959003ba68c80850644b2c0da6d1bfcea971480
 - file: ..\src\config\pic32ck_gc01_cult\libc_syscalls.c
-  hash: 88bb2e34c939601b5b7ad076556e3ee0fcedf388436b8cddb6d6fd3e9d07472f
+  hash: c9afc1b1257829415a1a6746ce3744f0a768b339d59fff2ab3ca1fab58b2a916
 - file: ..\src\config\pic32ck_gc01_cult\osal\osal.h
   hash: 1cfe3b61d9693b2369922041eef33fe16b3c1ccd9c85d4ded808b805f90a869c
 - file: ..\src\config\pic32ck_gc01_cult\osal\osal_definitions.h
   hash: 5f0a2513a093b6d228e2b50646b204923a82047335a47f3d35a2938309ab6f37
 - file: ..\src\config\pic32ck_gc01_cult\osal\osal_impl_basic.h
-  hash: 65e68edbc0320d0407399f65e6d06ff7e6d3d7697231cf1fe0a1fdf1d65f0463
+  hash: 158c4107f883f6d8c0244b73273361d1ca2ebd57c0934572b11a25c532fd22c5
 - file: ..\src\config\pic32ck_gc01_cult\peripheral\clock\plib_clock.c
   hash: e1b7588e33bfd4e63726f0226d06664169a1cd56bef55ead7f0da66bd00765da
 - file: ..\src\config\pic32ck_gc01_cult\peripheral\clock\plib_clock.h
@@ -115,13 +116,13 @@ generatedFileHashHistoryMap:
 - file: ..\src\config\pic32ck_gc01_cult\pin_configurations.csv
   hash: a9ed44238ca3cdd20b2b232e71a9ef56710f300bfc65ed9f0002fa8503bbb0b3
 - file: ..\src\config\pic32ck_gc01_cult\startup_xc32.c
-  hash: 6945b6a1826ae28babaae6cd59e20b8e74e464d4de4fa6fdbb92158ffaa02257
+  hash: 4175a6826e3ad6955caa8fd14b2b9a3a0d38a7569baf4a6f05d4119ed1c202c2
 - file: ..\src\config\pic32ck_gc01_cult\stdio\xc32_monitor.c
   hash: 858f8710d4287200a5ee7f3b3ad7c24f505aed9c05c16956ab0ff9f7bb162a6a
 - file: ..\src\config\pic32ck_gc01_cult\sys_tasks.h
   hash: 21f254f497a18a024cd00128d06c4776c2643f867a460c1ba9880a7dd41a8d56
 - file: ..\src\config\pic32ck_gc01_cult\system\cache\sys_cache.c
-  hash: 5f8c30e8077b915a4c4ff0515354b2877dc74c3236f307bdc1132307269fbf86
+  hash: fe689fc9935d239003803374bdf7d7d1a1ca075abb28bd3df163ab7db26c22d5
 - file: ..\src\config\pic32ck_gc01_cult\system\cache\sys_cache.h
   hash: b4b3a4e7434759c9bbcd3c6a0ab97558eb2a007f083a4eb76dbedcb2e2c3d86b
 - file: ..\src\config\pic32ck_gc01_cult\system\debug\sys_debug.h
@@ -129,7 +130,7 @@ generatedFileHashHistoryMap:
 - file: ..\src\config\pic32ck_gc01_cult\system\dma\sys_dma.c
   hash: dcc277f824528f12233ff3a466d19a89d1e24793c2f1cfb0f102bf7458771bd4
 - file: ..\src\config\pic32ck_gc01_cult\system\dma\sys_dma.h
-  hash: 8260d98a08c249547af0189ed0840a327e0a8afa00e18a99779ed49be1016d56
+  hash: 8f79c95a64f0c8744920c30bb27fee157795c8e162233d0ca632759467b1f6bf
 - file: ..\src\config\pic32ck_gc01_cult\system\dma\sys_dma_mapping.h
   hash: 52cec5c5a02bb4af97d7dc0b9e9172a59c65fa87da12052d2dee2bab4b44681b
 - file: ..\src\config\pic32ck_gc01_cult\system\fs\fat_fs\file_system\ff.c
@@ -145,27 +146,27 @@ generatedFileHashHistoryMap:
 - file: ..\src\config\pic32ck_gc01_cult\system\fs\fat_fs\hardware_access\diskio.h
   hash: eabe00adfe80de32df0b75244c230f3a04dbc27cb29b1d418cef549e3e7a9ec2
 - file: ..\src\config\pic32ck_gc01_cult\system\fs\src\sys_fs.c
-  hash: ecc5ea0bc26927dea239f8485e871def38b0170415921b6e2cd784aa8ef5932b
+  hash: 215acfba4f152ef7cafe39dcc686aad77879ef3f4192023aa42ab8c77b1eadee
 - file: ..\src\config\pic32ck_gc01_cult\system\fs\src\sys_fs_fat_interface.c
-  hash: 60b86f1de0b9cb870c46cf96730cf666e2f4bedfd2d50a039542de27a750bb5c
+  hash: 3f9af79a4b9c76ae7216556056916b802642e0dc28755f394ff4da4f55615805
 - file: ..\src\config\pic32ck_gc01_cult\system\fs\src\sys_fs_local.h
   hash: ef6b5ddf2d37deece42f4f38d4c80cff0c5b4c67b150bfa11a78b78aec79baff
 - file: ..\src\config\pic32ck_gc01_cult\system\fs\src\sys_fs_media_manager.c
-  hash: 38a260f85a5aeebbba6049f5f99a60aa7961e490bdbc4e3ca5e8cf2df6c6200c
+  hash: 76755a5ca2af7b45bbfdaaddb86dd272e1911231c5981133fa05099be39d082e
 - file: ..\src\config\pic32ck_gc01_cult\system\fs\src\sys_fs_media_manager_local.h
   hash: 5d471f0372ec41b3ef362ad533beede076e4e959274e57221ed229b996d7231e
 - file: ..\src\config\pic32ck_gc01_cult\system\fs\sys_fs.h
-  hash: 4ca0bf61b93d1b4335bad8755bfeeed6dfda8a7eb3f2eabfcd9239a0b78e01af
+  hash: aeaf49359ef924aba8d05e5c67c769485f95bb0e3449f5f8c58efae23d6fcfb2
 - file: ..\src\config\pic32ck_gc01_cult\system\fs\sys_fs_fat_interface.h
-  hash: 7d398a893c42258ee2c06a2135087fd6ac9bcec02df07bea5882a5d55373ca4b
+  hash: 2e708c6174fae87333e2aa89c00d21e8b2830644ee890e46199b17121bfdd250
 - file: ..\src\config\pic32ck_gc01_cult\system\fs\sys_fs_media_manager.h
-  hash: e777be6440f14c582e5e75fe021664b2eba99f57d781d5d58a22bea3a48ac9dd
+  hash: 7c250f6e613e3f1ee71f3b50b4a3962fa143e10e8d9903e3e340f4104bba7d17
 - file: ..\src\config\pic32ck_gc01_cult\system\int\src\sys_int.c
   hash: 4281667cc2b84c9e4be1f0dfb3f7d42b77d36c5dcf6513d29ff40262f746cfc6
 - file: ..\src\config\pic32ck_gc01_cult\system\int\sys_int.h
-  hash: dc104ae181fd5309e1bb42896246644fae95915a8e639b23ecfccc8840850274
+  hash: d8207e3358a37e8e964cd563150eda15ac17ec512b6e3c221f5603d9fa2da0ca
 - file: ..\src\config\pic32ck_gc01_cult\system\int\sys_int_mapping.h
-  hash: 5abf8528dabc1b17378f5d137870597037214fddf33880fa40e9263352da3008
+  hash: 8e6e231f4debf9f25707af7aa1af1f07fbd93596e8045030991b7685290d354c
 - file: ..\src\config\pic32ck_gc01_cult\system\ports\sys_ports.h
   hash: 18305340456ed6282f7ea3217fcab3aad1d702b84375fa20e2a5ce43d27a4be1
 - file: ..\src\config\pic32ck_gc01_cult\system\ports\sys_ports_mapping.h
@@ -177,9 +178,9 @@ generatedFileHashHistoryMap:
 - file: ..\src\config\pic32ck_gc01_cult\system\system_media.h
   hash: e61ba67015cfba6a7425d077cd2c633ba9989218bbe585078efe2face729401f
 - file: ..\src\config\pic32ck_gc01_cult\system\system_module.h
-  hash: 96c74368801b0a7aaa25aec3ec2cb0d483250385f103ffc1ff64089b4ca2c6d9
+  hash: 7bfe351ce506b843c61e5be013b6e3bf2a6253d73f5db189dbaf0c4f494cb75a
 - file: ..\src\config\pic32ck_gc01_cult\system\time\src\sys_time.c
-  hash: 1c9a9a245a9bb59bc036d0e1789149da6c2129a974418436dfca6832d80afc92
+  hash: 7125d85005c3afb20cdca4509083568ad7975ac71b3ab36d60f86f325f430db5
 - file: ..\src\config\pic32ck_gc01_cult\system\time\src\sys_time_local.h
   hash: b5911e9527666f333c003f69b86f92b9b88712a365d0d5f92c6e816e9f43b4c6
 - file: ..\src\config\pic32ck_gc01_cult\system\time\sys_time.h

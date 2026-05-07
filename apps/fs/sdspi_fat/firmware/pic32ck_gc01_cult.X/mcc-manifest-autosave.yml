@@ -2,25 +2,25 @@
 
 manifest_file_version: 1.0.0
 project: fs_sdspi_fat_pic32ck_gc01_cult
-creation_date: 2025-11-25T11:00:37.823+00:00[UTC]
+creation_date: 2026-05-07T21:49:05.345+05:30[Asia/Calcutta]
 operating_system: Windows 11
 mcc_mode: IDE
-mcc_mode_version: v6.25
+mcc_mode_version: v6.30
 device_name: PIC32CK2051GC01144
-compiler: XC32 4.60
-mcc_version: 5.6.2
-mcc_core_version: 5.8.2
-content_manager_version: 6.0.2
-is_mcc_offline: false
+compiler: XC32 5.10
+mcc_version: 5.6.4
+mcc_core_version: 5.8.4
+content_manager_version: 6.0.4
+is_mcc_offline: true
 is_using_prerelease_versions: true
 mcc_content_registries: https://registry.npmjs.org/
 device_library: {library_class: com.microchip.mcc.harmony.Harmony3Library, name: Bundled,
   version: Bundled}
 packs: {name: PIC32CK-GC_DFP, version: 1.1.148}
 modules:
-- {name: csp, type: HARMONY, version: v3.23.0}
-- {name: core, type: HARMONY, version: v3.15.5}
+- {name: csp, type: HARMONY, version: v3.25.2}
+- {name: core, type: HARMONY, version: v3.16.2}
 - {name: filex, type: HARMONY, version: v6.4.0_rel}
 - {name: CMSIS_5, type: HARMONY, version: 5.9.0}
 - {name: littlefs, type: HARMONY, version: v2.9.3}
-- {name: bsp, type: HARMONY, version: v3.23.0}
+- {name: bsp, type: HARMONY, version: v3.25.0}

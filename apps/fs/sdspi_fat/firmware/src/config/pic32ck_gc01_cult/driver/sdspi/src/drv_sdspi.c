@@ -51,7 +51,7 @@
 #include "drv_sdspi_local.h"
 #include "driver/sdspi/src/drv_sdspi_file_system.h"
 
-/* MISRA C-2012 Rule 11.3 deviated:5 Deviation record ID -  H3_MISRAC_2012_R_11_3_DR_1 */
+/* MISRA C-2023 Rule 11.3 deviated:5 Deviation record ID -  H3_MISRAC_2023_R_11_3_DR_1 */
 
 // *****************************************************************************
 // *****************************************************************************
