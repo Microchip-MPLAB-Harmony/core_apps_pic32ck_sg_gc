@@ -1,7 +1,9 @@
 /*
  * Header file for PIC32CK2051GC01144
  *
- * Copyright (c) 2024 Microchip Technology Inc. and its subsidiaries.
+ * Copyright (c) 2025 Microchip Technology Inc. and its subsidiaries.
+ *
+ * SPDX-License-Identifier: Apache-2.0
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -17,7 +19,7 @@
  *
  */
 
-/* File generated from device description file (ATDF) version 2024-04-02T09:16:01Z */
+/* File generated from device description file (ATDF) version 2025-04-07T17:07:52Z */
 #ifndef _PIC32CK2051GC01144_H_
 #define _PIC32CK2051GC01144_H_
 
@@ -677,6 +679,7 @@ void USBHS_Handler                 ( void );
 /* ************************************************************************** */
 #include "instance/ac.h"
 #include "instance/adc.h"
+#include "instance/bsdap.h"
 #include "instance/can0.h"
 #include "instance/can1.h"
 #include "instance/ccl.h"

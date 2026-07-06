@@ -84,6 +84,9 @@ static CACHE_ALIGN uint32_t dwordData[20] = { 0 };
 // *****************************************************************************
 // *****************************************************************************
 
+/* MISRA C-2023 Rule 11.3 deviated below. Deviation record ID -
+   H3_MISRAC_2023_R_11_3_DR_1*/
+
 /* Reads SFDP data using DMA descriptor chain.
  * Per JESD216, SFDP must be read in single-bit SPI mode (1-1-1) */
 static bool DRV_SFDP_ReadSFDPData(uint32_t address, uint8_t *data, uint32_t length)
@@ -247,7 +250,8 @@ static bool DRV_SFDP_ParseBasicFlashParams(uint32_t tableAddress, uint8_t tableL
 
         /* Parse DWORD 0: Address Bytes */
         /* Bits 18:17 - Address Bytes: 00 = 3 byte */
-        uint8_t addrMode = (uint8_t)((dwordData[0] >> 17U) & 0x03U);
+        uint32_t addrModeTemp = (dwordData[0] >> 17U) & 0x03U;
+        uint8_t addrMode = (uint8_t)addrModeTemp;
         if (addrMode == 0x02U)
         {
             flashParams->addressBytes = 4U;
@@ -266,7 +270,7 @@ static bool DRV_SFDP_ParseBasicFlashParams(uint32_t tableAddress, uint8_t tableL
             /* Convert bits to bytes: 2^n bits = 2^(n-3) bytes */
             if (n >= 3U)
             {
-                flashParams->flashSize = (1U << (n - 3U));
+                flashParams->flashSize = ((uint32_t)1U << (n - 3U));
             }
             else
             {
@@ -291,19 +295,24 @@ static bool DRV_SFDP_ParseBasicFlashParams(uint32_t tableAddress, uint8_t tableL
             if (flashParams->supports_1_4_4)
             {
                 /* Bits 15:8 - 1-4-4 Fast Read instruction */
-                flashParams->fastReadOpcode_1_4_4 = (uint8_t)((dwordData[2] >> 8U) & 0xFFU);
+                uint32_t opcode144Temp = (dwordData[2] >> 8U) & 0xFFU;
+                flashParams->fastReadOpcode_1_4_4 = (uint8_t)opcode144Temp;
                 /* Bits 4:0 - Number of dummy cycles for 1-4-4 */
-                flashParams->fastReadDummyCycles_1_4_4 = (uint8_t)(dwordData[2] & 0x1FU) + (uint8_t)((dwordData[2] >> 5U) & 0x7U);
+                uint32_t waitStates144 = dwordData[2] & 0x1FU;
+                uint32_t modeClocks144 = (dwordData[2] >> 5U) & 0x7U;
+                flashParams->fastReadDummyCycles_1_4_4 = (uint8_t)waitStates144 + (uint8_t)modeClocks144;
             }
 
             /* Parse 1-1-4 Fast Read (Quad Output) */
             if (flashParams->supports_1_1_4)
             {
                 /* Bits 31:24 - 1-1-4 Fast Read instruction */
-                flashParams->fastReadOpcode_1_1_4 = (uint8_t)((dwordData[2] >> 24U) & 0xFFU);
+                uint32_t opcode114Temp = (dwordData[2] >> 24U) & 0xFFU;
+                flashParams->fastReadOpcode_1_1_4 = (uint8_t)opcode114Temp;
                 /* Bits 20:16 - Number of dummy cycles for 1-1-4 */
                 /* Note: Dummy cycles for 1-1-4 */
-                flashParams->fastReadDummyCycles_1_1_4 = (uint8_t)((dwordData[2] >> 16U) & 0x1FU);
+                uint32_t dummy114Temp = (dwordData[2] >> 16U) & 0x1FU;
+                flashParams->fastReadDummyCycles_1_1_4 = (uint8_t)dummy114Temp;
             }
         }
 
@@ -311,7 +320,8 @@ static bool DRV_SFDP_ParseBasicFlashParams(uint32_t tableAddress, uint8_t tableL
         if (readLength >= 20U)
         {
             /* Bit 4: Supports 4-4-4 Fast Read (Quad command) */
-            flashParams->supports_4_4_4 = ((dwordData[4] & 0x10U) != 0U);
+            bool tempSupports444 = ((dwordData[4] & 0x10U) != 0U);
+            flashParams->supports_4_4_4 = tempSupports444;
         }
 
         /* Parse DWORD 6: Fast Read instructions and dummy cycles */
@@ -321,22 +331,29 @@ static bool DRV_SFDP_ParseBasicFlashParams(uint32_t tableAddress, uint8_t tableL
             if (flashParams->supports_4_4_4)
             {
                 /* Bits 31:24 - 4-4-4 Fast Read instruction */
-                flashParams->fastReadOpcode_4_4_4 = (uint8_t)((dwordData[6] >> 24U) & 0xFFU);
+                uint32_t opcode444Temp = (dwordData[6] >> 24U) & 0xFFU;
+                flashParams->fastReadOpcode_4_4_4 = (uint8_t)opcode444Temp;
                 /* Bits 20:16 - Number of dummy cycles for 4-4-4 */
                 /* Note: Dummy cycles for 4-4-4 */
-                flashParams->fastReadDummyCycles_4_4_4 = (uint8_t)((dwordData[6] >> 16U) & 0x1FU) + (uint8_t)((dwordData[6] >> 21U) & 0x7U);
+                uint32_t dummy_low_temp = (dwordData[6] >> 16U) & 0x1FU;
+                uint32_t dummy_high_temp = (dwordData[6] >> 21U) & 0x7U;
+                uint8_t dummy_low = (uint8_t)dummy_low_temp;
+                uint8_t dummy_high = (uint8_t)dummy_high_temp;
+                flashParams->fastReadDummyCycles_4_4_4 = dummy_low + dummy_high;
             }
         }
 
         /* Parse DWORD 7: Sector Erase (4KB) - Bits 7:0 size, Bits 15:8 opcode */
         if (readLength >= 32U)
         {
-            flashParams->eraseOpcode4K = (uint8_t)((dwordData[7] >> 8U) & 0xFFU);
+            uint32_t eraseOpcodeTemp = (dwordData[7] >> 8U) & 0xFFU;
+            flashParams->eraseOpcode4K = (uint8_t)eraseOpcodeTemp;
             /* Sector size encoding: 2^N bytes */
-            uint8_t sizeExp = (uint8_t)(dwordData[7] & 0xFFU);
+            uint32_t sizeExpTemp = dwordData[7] & 0xFFU;
+            uint8_t sizeExp = (uint8_t)sizeExpTemp;
             if (sizeExp != 0U)
             {
-                flashParams->sectorSize = (1U << sizeExp);
+                flashParams->sectorSize = ((uint32_t)1U << sizeExp);
             }
         }
 
@@ -344,15 +361,17 @@ static bool DRV_SFDP_ParseBasicFlashParams(uint32_t tableAddress, uint8_t tableL
         if (readLength >= 36U)
         {
             /* Erase 64KB: Bits 31:24 opcode, Bits 23:16 size */
-            flashParams->eraseOpcode64K = (uint8_t)((dwordData[8] >> 24U) & 0xFFU);
+            uint32_t eraseOpcode64KTemp = (dwordData[8] >> 24U) & 0xFFU;
+            flashParams->eraseOpcode64K = (uint8_t)eraseOpcode64KTemp;
             if (flashParams->eraseOpcode64K == 0xFFU)
             {
-                flashParams->eraseOpcode64K = SFDP_CMD_BLOCK_ERASE_64K;
+                flashParams->eraseOpcode64K = (uint8_t)SFDP_CMD_BLOCK_ERASE_64K;
             }
-            uint8_t blockSizeExp = (uint8_t)((dwordData[8] >> 16U) & 0xFFU);
+            uint32_t blockSizeExpTemp = (dwordData[8] >> 16U) & 0xFFU;
+            uint8_t blockSizeExp = (uint8_t)blockSizeExpTemp;
             if (blockSizeExp != 0U)
             {
-                flashParams->blockSize = (1U << blockSizeExp);
+                flashParams->blockSize = ((uint32_t)1U << blockSizeExp);
             }
         }
 
@@ -362,17 +381,19 @@ static bool DRV_SFDP_ParseBasicFlashParams(uint32_t tableAddress, uint8_t tableL
         /* Parse DWORD 10: Page Size - Bits 7:4 (2^N bytes) */
         if (readLength >= 44U)
         {
-            uint8_t pageSizeExp = (uint8_t)((dwordData[10] >> 4U) & 0x0FU);
+            uint32_t pageSizeExpTemp = (dwordData[10] >> 4U) & 0x0FU;
+            uint8_t pageSizeExp = (uint8_t)pageSizeExpTemp;
             if (pageSizeExp != 0U)
             {
-                flashParams->pageSize = (1U << pageSizeExp);
+                flashParams->pageSize = ((uint32_t)1U << pageSizeExp);
             }
         }
 
         /* Parse DWORD 14:  Quad command enable - Bits 8:4, Quad command disable - Bits 3:0 */
         if (readLength >= 60U)
         {
-            uint8_t quadEnable = (uint8_t)((dwordData[14] >> 4U) & 0x1FU);
+            uint32_t quadEnableTemp = (dwordData[14] >> 4U) & 0x1FU;
+            uint8_t quadEnable = (uint8_t)quadEnableTemp;
             if ((quadEnable & 0x3U) != 0U)
             {
                 flashParams->quadCommandEnable = 0x38U;
@@ -386,7 +407,8 @@ static bool DRV_SFDP_ParseBasicFlashParams(uint32_t tableAddress, uint8_t tableL
                 // do nothing
             }
 
-            uint8_t quadDisable = (uint8_t)(dwordData[14] & 0xFU);
+            uint32_t quadDisableTemp = dwordData[14] & 0xFU;
+            uint8_t quadDisable = (uint8_t)quadDisableTemp;
             if ((quadDisable & 0x1U) != 0U)
             {
                 flashParams->quadCommandDisable = 0xFFU;
@@ -564,8 +586,6 @@ static void DRV_SFDP_EventHandler(uintptr_t context)
     }
 }
 
-/* MISRA C-2023 Rule 11.3 deviated:40 Deviation record ID -  H3_MISRAC_2023_R_11_3_DR_1 */
-
 static void DRV_SFDP_ResetFlash(void)
 {
     dObj->isTransferDone = false;
@@ -612,6 +632,19 @@ static void DRV_SFDP_ResetFlash(void)
     {
         /* Nothing to do */
     }
+}
+
+static void DRV_SFDP_WriteEnable(void)
+{
+    sqiCmdBuffer[0] = (uint8_t)SFDP_CMD_WRITE_ENABLE;
+
+    sqiCmdDesc[0].bd_ctrl = (SQI_BDCTRL_BD_BUFLEN(1) | SQI_LANE_MODE_M |
+                             SQI_CHIP_SELECT | SQI_BDCTRL_CS_ASSERT_Msk |
+                             SQI_BDCTRL_DESC_EN_Msk);
+
+    sqiCmdDesc[0].bd_bufaddr = (uint32_t *)(&sqiCmdBuffer[0]);
+    sqiCmdDesc[0].bd_stat = 0;
+    sqiCmdDesc[0].bd_nxtptr = (sqi_dma_desc_t *)(&sqiCmdDesc[1]);
 }
 
 static void DRV_SFDP_EnableQuadIO(void)
@@ -669,17 +702,360 @@ static void DRV_SFDP_DisableQuadIO(void)
     }
 }
 
-static void DRV_SFDP_WriteEnable(void)
+/* Detect device type from JEDEC ID and apply device-specific configurations */
+static SFDP_DEVICE_TYPE DRV_SFDP_DetectDeviceType(uint8_t *jedecId, DRV_SFDP_FLASH_PARAMS *flashParams)
 {
-    sqiCmdBuffer[0] = (uint8_t)SFDP_CMD_WRITE_ENABLE;
+    SFDP_DEVICE_TYPE deviceType = SFDP_DEVICE_TYPE_GENERIC;
 
-    sqiCmdDesc[0].bd_ctrl = (SQI_BDCTRL_BD_BUFLEN(1) | SQI_LANE_MODE_M |
+    if ((jedecId == NULL) || (flashParams == NULL))
+    {
+        return deviceType;
+    }
+
+    /* Extract vendor and device ID */
+    flashParams->vendorId = jedecId[0];
+    flashParams->deviceId = ((uint16_t)jedecId[1] << 8) | jedecId[2];
+
+    /* Detect device type by vendor ID */
+    if (flashParams->vendorId == 0xBFU)
+    {
+        /* SST devices */
+        deviceType = SFDP_DEVICE_TYPE_SST26;
+    }
+    else if (flashParams->vendorId == 0xEFU)
+    {
+        /* W25 devices */
+        deviceType = SFDP_DEVICE_TYPE_W25;
+    }
+    else if (flashParams->vendorId == 0x20U)
+    {
+        /* N25Q devices */
+        deviceType = SFDP_DEVICE_TYPE_N25Q;
+    }
+    else if (flashParams->vendorId == 0xC2U)
+    {
+        /* MX25L/MX66 devices */
+        deviceType = SFDP_DEVICE_TYPE_MX25L;
+    }
+    else if (flashParams->vendorId == 0x01U)
+    {
+        /* S25FL devices */
+        deviceType = SFDP_DEVICE_TYPE_S25FL;
+    }
+    else if (flashParams->vendorId == 0x9DU)
+    {
+        /* IS25 devices */
+        deviceType = SFDP_DEVICE_TYPE_IS25;
+    }
+    else
+    {
+        deviceType = SFDP_DEVICE_TYPE_GENERIC;
+    }
+
+    return deviceType;
+}
+
+/* N25Q256 Quad Enable */
+static bool DRV_SFDP_EnableQuadIO_N25Q(void)
+{
+    bool status = false;
+    uint8_t config_reg = 0x1FU; /* Quad protocol enabled, 10 dummy cycles */
+
+    /* First send write enable command */
+    DRV_SFDP_WriteEnable();
+
+    dObj->isTransferDone = false;
+
+    /* Setup command descriptor for Enhanced Volatile Config Register write */
+    sqiCmdBuffer[0] = (uint8_t)SFDP_CMD_WRITE_ENABLE;
+    sqiCmdBuffer[1] = (uint8_t)SFDP_CMD_WRITE_ENHANCED_VOLATILE_CONFIG_REG;
+    sqiCmdBuffer[2] = config_reg;
+
+    /* Write enable descriptor */
+    sqiCmdDesc[0].bd_ctrl = (SQI_BDCTRL_BD_BUFLEN(1) | SQI_LANE_MODE_SINGLE |
+                             SQI_CHIP_SELECT | SQI_BDCTRL_CS_ASSERT_Msk |
+                             SQI_BDCTRL_DESC_EN_Msk);
+    sqiCmdDesc[0].bd_bufaddr = (uint32_t *)(&sqiCmdBuffer[0]);
+    sqiCmdDesc[0].bd_stat = 0;
+    sqiCmdDesc[0].bd_nxtptr = (sqi_dma_desc_t *)(&sqiCmdDesc[1]);
+
+    /* Enhanced volatile config register write descriptor */
+    sqiCmdDesc[1].bd_ctrl = (SQI_BDCTRL_BD_BUFLEN(2) | SQI_BDCTRL_PKT_INT_EN_Msk |
+                             SQI_BDCTRL_LIFM_Msk | SQI_BDCTRL_LAST_BD_Msk |
+                             SQI_LANE_MODE_SINGLE | SQI_CHIP_SELECT |
+                             SQI_BDCTRL_CS_ASSERT_Msk | SQI_BDCTRL_DESC_EN_Msk);
+    sqiCmdDesc[1].bd_bufaddr = (uint32_t *)(&sqiCmdBuffer[1]);
+    sqiCmdDesc[1].bd_stat = 0;
+    sqiCmdDesc[1].bd_nxtptr = NULL;
+
+    dObj->curOpType = DRV_SFDP_OPERATION_TYPE_CMD;
+
+
+    dObj->sfdpPlib->DMATransfer((sqi_dma_desc_t *)(&sqiCmdDesc[0]));
+
+    while (dObj->isTransferDone == false)
+    {
+        /* Nothing to do */
+    }
+
+    status = true;
+
+    return status;
+}
+
+/* W25 Quad Enable */
+static bool DRV_SFDP_EnableQuadIO_W25(void)
+{
+    return true;
+}
+
+/* MX25L/MX66 Quad Enable */
+static bool DRV_SFDP_EnableQuadIO_MX25L(void)
+{
+    bool status = false;
+
+    dObj->isTransferDone = false;
+
+    sqiCmdBuffer[0] = (uint8_t)SFDP_CMD_ENABLE_QUAD_IO_MX25L;
+
+    sqiCmdDesc[0].bd_ctrl = (SQI_BDCTRL_BD_BUFLEN(1) | SQI_BDCTRL_PKT_INT_EN_Msk |
+                             SQI_BDCTRL_LIFM_Msk | SQI_BDCTRL_LAST_BD_Msk |
                              SQI_CHIP_SELECT | SQI_BDCTRL_CS_ASSERT_Msk |
                              SQI_BDCTRL_DESC_EN_Msk);
 
     sqiCmdDesc[0].bd_bufaddr = (uint32_t *)(&sqiCmdBuffer[0]);
     sqiCmdDesc[0].bd_stat = 0;
+    sqiCmdDesc[0].bd_nxtptr = NULL;
+
+    dObj->curOpType = DRV_SFDP_OPERATION_TYPE_CMD;
+
+
+    dObj->sfdpPlib->DMATransfer((sqi_dma_desc_t *)(&sqiCmdDesc[0]));
+
+    while (dObj->isTransferDone == false)
+    {
+        /* Nothing to do */
+    }
+
+    status = true;
+
+    return status;
+}
+
+/* S25FL Quad Enable */
+static bool DRV_SFDP_EnableQuadIO_S25FL(void)
+{
+    bool status = false;
+    uint8_t statusReg1 = 0;
+    uint8_t statusReg2 = 0;
+
+    /* Read Status Register 1 using single bit mode */
+    sqiCmdBuffer[0] = (uint8_t)SFDP_CMD_READ_STATUS_REG;
+
+    sqiCmdDesc[0].bd_ctrl = (SQI_BDCTRL_BD_BUFLEN(1) | SQI_LANE_MODE_SINGLE |
+                             SQI_CHIP_SELECT | SQI_BDCTRL_CS_ASSERT_Msk |
+                             SQI_BDCTRL_DESC_EN_Msk);
+    sqiCmdDesc[0].bd_bufaddr = (uint32_t *)(&sqiCmdBuffer[0]);
+    sqiCmdDesc[0].bd_stat = 0;
     sqiCmdDesc[0].bd_nxtptr = (sqi_dma_desc_t *)(&sqiCmdDesc[1]);
+
+    sqiCmdDesc[1].bd_ctrl = (SQI_BDCTRL_BD_BUFLEN(1) | SQI_BDCTRL_PKT_INT_EN_Msk |
+                             SQI_BDCTRL_LIFM_Msk | SQI_BDCTRL_LAST_BD_Msk |
+                             SQI_LANE_MODE_SINGLE | SQI_CHIP_SELECT |
+                             SQI_BDCTRL_CS_ASSERT_Msk |
+                             SQI_BDCTRL_DESC_EN_Msk);
+    sqiCmdDesc[1].bd_bufaddr = (uint32_t *)(&statusReg1);
+    sqiCmdDesc[1].bd_stat = 0;
+    sqiCmdDesc[1].bd_nxtptr = NULL;
+
+    dObj->isTransferDone = false;
+    dObj->curOpType = DRV_SFDP_OPERATION_TYPE_READ_STATUS;
+
+
+    dObj->sfdpPlib->DMATransfer((sqi_dma_desc_t *)(&sqiCmdDesc[0]));
+
+    while (dObj->isTransferDone == false) { /* Wait */ }
+
+    /* Read Configuration Register (acts as SR2 for S25FL) */
+    sqiCmdBuffer[0] = (uint8_t)SFDP_CMD_READ_CONFIG_REG;
+
+    sqiCmdDesc[0].bd_ctrl = (SQI_BDCTRL_BD_BUFLEN(1) | SQI_LANE_MODE_SINGLE |
+                             SQI_CHIP_SELECT | SQI_BDCTRL_CS_ASSERT_Msk |
+                             SQI_BDCTRL_DESC_EN_Msk);
+    sqiCmdDesc[0].bd_bufaddr = (uint32_t *)(&sqiCmdBuffer[0]);
+    sqiCmdDesc[0].bd_stat = 0;
+    sqiCmdDesc[0].bd_nxtptr = (sqi_dma_desc_t *)(&sqiCmdDesc[1]);
+
+    sqiCmdDesc[1].bd_ctrl = (SQI_BDCTRL_BD_BUFLEN(1) | SQI_BDCTRL_PKT_INT_EN_Msk |
+                             SQI_BDCTRL_LIFM_Msk | SQI_BDCTRL_LAST_BD_Msk |
+                             SQI_LANE_MODE_SINGLE | SQI_CHIP_SELECT |
+                             SQI_BDCTRL_CS_ASSERT_Msk |
+                             SQI_BDCTRL_DESC_EN_Msk);
+    sqiCmdDesc[1].bd_bufaddr = (uint32_t *)(&statusReg2);
+    sqiCmdDesc[1].bd_stat = 0;
+    sqiCmdDesc[1].bd_nxtptr = NULL;
+
+    dObj->isTransferDone = false;
+
+
+    dObj->sfdpPlib->DMATransfer((sqi_dma_desc_t *)(&sqiCmdDesc[0]));
+
+    while (dObj->isTransferDone == false) { /* Wait */ }
+
+    /* Set QE bit (bit 1 of Configuration Register) */
+    statusReg2 |= (1U << 1);
+
+    /* Write enable */
+    DRV_SFDP_WriteEnable();
+
+    /* Write both Status Register 1 and Configuration Register */
+    sqiCmdBuffer[0] = (uint8_t)SFDP_CMD_WRITE_ENABLE;
+    sqiCmdBuffer[1] = (uint8_t)SFDP_CMD_WRITE_STATUS_REG;
+    sqiCmdBuffer[2] = statusReg1;
+    sqiCmdBuffer[3] = statusReg2;
+
+    sqiCmdDesc[0].bd_ctrl = (SQI_BDCTRL_BD_BUFLEN(1) | SQI_LANE_MODE_SINGLE |
+                             SQI_CHIP_SELECT | SQI_BDCTRL_CS_ASSERT_Msk |
+                             SQI_BDCTRL_DESC_EN_Msk);
+    sqiCmdDesc[0].bd_bufaddr = (uint32_t *)(&sqiCmdBuffer[0]);
+    sqiCmdDesc[0].bd_stat = 0;
+    sqiCmdDesc[0].bd_nxtptr = (sqi_dma_desc_t *)(&sqiCmdDesc[1]);
+
+    sqiCmdDesc[1].bd_ctrl = (SQI_BDCTRL_BD_BUFLEN(3) | SQI_BDCTRL_PKT_INT_EN_Msk |
+                             SQI_BDCTRL_LIFM_Msk | SQI_BDCTRL_LAST_BD_Msk |
+                             SQI_LANE_MODE_SINGLE | SQI_CHIP_SELECT |
+                             SQI_BDCTRL_CS_ASSERT_Msk | SQI_BDCTRL_DESC_EN_Msk);
+    sqiCmdDesc[1].bd_bufaddr = (uint32_t *)(&sqiCmdBuffer[1]);
+    sqiCmdDesc[1].bd_stat = 0;
+    sqiCmdDesc[1].bd_nxtptr = NULL;
+
+    dObj->isTransferDone = false;
+    dObj->curOpType = DRV_SFDP_OPERATION_TYPE_CMD;
+
+
+    dObj->sfdpPlib->DMATransfer((sqi_dma_desc_t *)(&sqiCmdDesc[0]));
+
+    while (dObj->isTransferDone == false) { /* Wait */ }
+
+    status = true;
+    return status;
+}
+
+/* IS25 Quad Enable */
+static bool DRV_SFDP_EnableQuadIO_IS25(void)
+{
+    bool status = false;
+    uint8_t statusReg2 = 0;
+
+    /* Read Status Register 2 */
+    sqiCmdBuffer[0] = (uint8_t)SFDP_CMD_READ_STATUS_REG2;
+
+    sqiCmdDesc[0].bd_ctrl = (SQI_BDCTRL_BD_BUFLEN(1) | SQI_LANE_MODE_SINGLE |
+                             SQI_CHIP_SELECT | SQI_BDCTRL_CS_ASSERT_Msk |
+                             SQI_BDCTRL_DESC_EN_Msk);
+    sqiCmdDesc[0].bd_bufaddr = (uint32_t *)(&sqiCmdBuffer[0]);
+    sqiCmdDesc[0].bd_stat = 0;
+    sqiCmdDesc[0].bd_nxtptr = (sqi_dma_desc_t *)(&sqiCmdDesc[1]);
+
+    sqiCmdDesc[1].bd_ctrl = (SQI_BDCTRL_BD_BUFLEN(1) | SQI_BDCTRL_PKT_INT_EN_Msk |
+                             SQI_BDCTRL_LIFM_Msk | SQI_BDCTRL_LAST_BD_Msk |
+                             SQI_LANE_MODE_SINGLE | SQI_CHIP_SELECT |
+                             SQI_BDCTRL_CS_ASSERT_Msk |
+                             SQI_BDCTRL_DESC_EN_Msk);
+    sqiCmdDesc[1].bd_bufaddr = (uint32_t *)(&statusReg2);
+    sqiCmdDesc[1].bd_stat = 0;
+    sqiCmdDesc[1].bd_nxtptr = NULL;
+
+    dObj->isTransferDone = false;
+    dObj->curOpType = DRV_SFDP_OPERATION_TYPE_READ_STATUS;
+
+
+    dObj->sfdpPlib->DMATransfer((sqi_dma_desc_t *)(&sqiCmdDesc[0]));
+
+    while (dObj->isTransferDone == false) { /* Wait */ }
+
+    /* Set QE bit (bit 7 of Status Register 2) */
+    statusReg2 |= (1U << 7);
+
+    /* Write enable */
+    DRV_SFDP_WriteEnable();
+
+    /* Write Status Register 2 */
+    sqiCmdBuffer[0] = (uint8_t)SFDP_CMD_WRITE_ENABLE;
+    sqiCmdBuffer[1] = (uint8_t)SFDP_CMD_WRITE_STATUS_REG2;
+    sqiCmdBuffer[2] = statusReg2;
+
+    sqiCmdDesc[0].bd_ctrl = (SQI_BDCTRL_BD_BUFLEN(1) | SQI_LANE_MODE_SINGLE |
+                             SQI_CHIP_SELECT | SQI_BDCTRL_CS_ASSERT_Msk |
+                             SQI_BDCTRL_DESC_EN_Msk);
+    sqiCmdDesc[0].bd_bufaddr = (uint32_t *)(&sqiCmdBuffer[0]);
+    sqiCmdDesc[0].bd_stat = 0;
+    sqiCmdDesc[0].bd_nxtptr = (sqi_dma_desc_t *)(&sqiCmdDesc[1]);
+
+    sqiCmdDesc[1].bd_ctrl = (SQI_BDCTRL_BD_BUFLEN(2) | SQI_BDCTRL_PKT_INT_EN_Msk |
+                             SQI_BDCTRL_LIFM_Msk | SQI_BDCTRL_LAST_BD_Msk |
+                             SQI_LANE_MODE_SINGLE | SQI_CHIP_SELECT |
+                             SQI_BDCTRL_CS_ASSERT_Msk | SQI_BDCTRL_DESC_EN_Msk);
+    sqiCmdDesc[1].bd_bufaddr = (uint32_t *)(&sqiCmdBuffer[1]);
+    sqiCmdDesc[1].bd_stat = 0;
+    sqiCmdDesc[1].bd_nxtptr = NULL;
+
+    dObj->isTransferDone = false;
+    dObj->curOpType = DRV_SFDP_OPERATION_TYPE_CMD;
+
+
+    dObj->sfdpPlib->DMATransfer((sqi_dma_desc_t *)(&sqiCmdDesc[0]));
+
+    while (dObj->isTransferDone == false) { /* Wait */ }
+
+    status = true;
+    return status;
+}
+
+/* Generic device-aware quad enable dispatcher */
+static bool DRV_SFDP_EnableQuadIO_DeviceSpecific(void)
+{
+    bool status = false;
+
+    switch (dObj->flashParams.deviceType)
+    {
+        case SFDP_DEVICE_TYPE_N25Q:
+            status = DRV_SFDP_EnableQuadIO_N25Q();
+            break;
+
+        case SFDP_DEVICE_TYPE_W25:
+            status = DRV_SFDP_EnableQuadIO_W25();
+            break;
+
+        case SFDP_DEVICE_TYPE_MX25L:
+            status = DRV_SFDP_EnableQuadIO_MX25L();
+            break;
+
+        case SFDP_DEVICE_TYPE_S25FL:
+            status = DRV_SFDP_EnableQuadIO_S25FL();
+            break;
+
+        case SFDP_DEVICE_TYPE_IS25:
+            status = DRV_SFDP_EnableQuadIO_IS25();
+            break;
+
+        case SFDP_DEVICE_TYPE_SST26:
+        case SFDP_DEVICE_TYPE_GENERIC:
+        default:
+            /* Use SFDP-discovered quad enable method */
+            if (dObj->flashParams.supports_4_4_4 || dObj->flashParams.supports_1_4_4)
+            {
+                DRV_SFDP_EnableQuadIO(); /* Existing function */
+                status = true;
+            }
+            else
+            {
+                status = true; /* No quad mode available */
+            }
+            break;
+    }
+
+    return status;
 }
 
 static bool DRV_SFDP_ValidateHandleAndCheckBusy(const DRV_HANDLE handle)
@@ -876,7 +1252,7 @@ DRV_SFDP_TRANSFER_STATUS DRV_SFDP_TransferStatusGet(const DRV_HANDLE handle)
     }
     else
     {
-        //Do nothing
+        /* Do nothing - status already set to DRV_SFDP_TRANSFER_ERROR_UNKNOWN */
     }
 
     return status;
@@ -903,34 +1279,82 @@ bool DRV_SFDP_Read(const DRV_HANDLE handle, void *rx_data, uint32_t rx_data_leng
 
     dObj->isTransferDone = false;
 
-    /* Build command descriptor using optimal read opcode and dummy cycles from SFDP */
-    sqiCmdBuffer[0] = dObj->flashParams.optimalReadOpcode;
+    /* Device-specific read command selection */
+    uint8_t readOpcode;
+    uint32_t readWidth;
+    uint8_t dummyCycles;
 
-    /* Address bytes */
-    addrBytes = dObj->flashParams.addressBytes;
-    if (addrBytes == 4U)
+    if (dObj->flashParams.deviceType == SFDP_DEVICE_TYPE_W25)
     {
-        sqiCmdBuffer[1] = (uint8_t)((address >> 24) & 0xFFU);
-        sqiCmdBuffer[2] = (uint8_t)((address >> 16) & 0xFFU);
-        sqiCmdBuffer[3] = (uint8_t)((address >> 8) & 0xFFU);
-        sqiCmdBuffer[4] = (uint8_t)(address & 0xFFU);
+        /* W25 uses 0xEB for Quad I/O Read */
+        readOpcode = (uint8_t)SFDP_CMD_FAST_READ_QUAD_IO_W25;
+        readWidth = SQI_LANE_MODE_M;
+        dummyCycles = 6;
+    }
+    else if (dObj->flashParams.deviceType == SFDP_DEVICE_TYPE_N25Q)
+    {
+        /* N25Q256 uses 0x0B with 10 dummy cycles in quad mode */
+        readOpcode = (uint8_t)SFDP_CMD_HIGH_SPEED_READ;
+        readWidth = SQI_LANE_MODE_M;
+        dummyCycles = 10;
+    }
+    else if (dObj->flashParams.deviceType == SFDP_DEVICE_TYPE_MX25L)
+    {
+        /* MX25L/MX66 uses 0xEB with 6 dummy cycles in quad command mode */
+        readOpcode = (uint8_t)SFDP_CMD_HIGH_SPEED_QREAD_MX25L;
+        readWidth = SQI_LANE_MODE_M;
+        dummyCycles = 6;
     }
     else
     {
-        sqiCmdBuffer[1] = (uint8_t)((address >> 16) & 0xFFU);
-        sqiCmdBuffer[2] = (uint8_t)((address >> 8) & 0xFFU);
-        sqiCmdBuffer[3] = (uint8_t)(address & 0xFFU);
+        /* Use optimal read opcode and parameters discovered from SFDP */
+        readOpcode = dObj->flashParams.optimalReadOpcode;
+        readWidth = dObj->flashParams.optimalReadWidth;
+        dummyCycles = dObj->flashParams.optimalReadDummyCycles;
+    }
+
+    sqiCmdBuffer[0] = readOpcode;
+
+    /* 32-bit address support: Check if device requires 4-byte addressing or address exceeds 24-bit */
+    if ((dObj->flashParams.addressBytes == 4U) || (address > 0xFFFFFFU))
+    {
+        addrBytes = 4U;
+    }
+    else
+    {
+        addrBytes = 3U;
+    }
+
+    if (addrBytes == 4U)
+    {
+        uint32_t addr_byte3 = (address >> 24) & 0xFFU;
+        uint32_t addr_byte2 = (address >> 16) & 0xFFU;
+        uint32_t addr_byte1 = (address >> 8) & 0xFFU;
+        uint32_t addr_byte0 = address & 0xFFU;
+        sqiCmdBuffer[1] = (uint8_t)addr_byte3;
+        sqiCmdBuffer[2] = (uint8_t)addr_byte2;
+        sqiCmdBuffer[3] = (uint8_t)addr_byte1;
+        sqiCmdBuffer[4] = (uint8_t)addr_byte0;
+    }
+    else
+    {
+        uint32_t addr_byte2 = (address >> 16) & 0xFFU;
+        uint32_t addr_byte1 = (address >> 8) & 0xFFU;
+        uint32_t addr_byte0 = address & 0xFFU;
+        sqiCmdBuffer[1] = (uint8_t)addr_byte2;
+        sqiCmdBuffer[2] = (uint8_t)addr_byte1;
+        sqiCmdBuffer[3] = (uint8_t)addr_byte0;
     }
 
     /* Command descriptor */
-    sqiCmdDesc[0].bd_ctrl = (SQI_BDCTRL_BD_BUFLEN(1 + addrBytes) | dObj->flashParams.optimalReadWidth |
+    sqiCmdDesc[0].bd_ctrl = (SQI_BDCTRL_BD_BUFLEN((uint32_t)1U + addrBytes) | readWidth |
                              SQI_CHIP_SELECT | SQI_BDCTRL_DESC_EN_Msk);
     ptr = &sqiCmdBuffer[0];
     sqiCmdDesc[0].bd_bufaddr = (uint32_t *)(ptr);
     sqiCmdDesc[0].bd_stat = 0;
 
     /* Add dummy cycles if needed */
-    if (dObj->flashParams.optimalReadDummyCycles > 0U)
+    if (dummyCycles > 0U)
     {
         uint8_t dummyBytes;
         uint8_t j;
@@ -939,22 +1363,22 @@ bool DRV_SFDP_Read(const DRV_HANDLE handle, void *rx_data, uint32_t rx_data_leng
             (dObj->flashParams.supports_1_4_4) ||
             (dObj->flashParams.supports_1_1_4))
         {
-            dummyBytes = dObj->flashParams.optimalReadDummyCycles / 2U;
+            dummyBytes = dummyCycles / 2U;
         }
         else
         {
-            dummyBytes = dObj->flashParams.optimalReadDummyCycles / 8U;
+            dummyBytes = dummyCycles / 8U;
         }
 
         for (j = 0; j < dummyBytes; j++)
         {
-            sqiCmdBuffer[8 + j] = DUMMY_BYTE;
+            sqiCmdBuffer[8U + j] = DUMMY_BYTE;
         }
 
         ptr = &sqiCmdDesc[1];
         sqiCmdDesc[0].bd_nxtptr = (sqi_dma_desc_t *)(ptr);
 
-        sqiCmdDesc[1].bd_ctrl = (SQI_BDCTRL_BD_BUFLEN(dummyBytes) | dObj->flashParams.optimalReadWidth |
+        sqiCmdDesc[1].bd_ctrl = (SQI_BDCTRL_BD_BUFLEN(dummyBytes) | readWidth |
                                  SQI_CHIP_SELECT | SQI_BDCTRL_DESC_EN_Msk);
         ptr = &sqiCmdBuffer[8];
         sqiCmdDesc[1].bd_bufaddr = (uint32_t *)(ptr);
@@ -982,7 +1406,7 @@ bool DRV_SFDP_Read(const DRV_HANDLE handle, void *rx_data, uint32_t rx_data_leng
         }
 
         sqiBufDesc[i].bd_ctrl = (SQI_BDCTRL_BD_BUFLEN(numBytes) | SQI_BDCTRL_PKT_INT_EN_Msk |
-                                 dObj->flashParams.optimalReadWidth | SQI_BDCTRL_DIR_Msk |
+                                 readWidth | SQI_BDCTRL_DIR_Msk |
                                  SQI_CHIP_SELECT | SQI_BDCTRL_DESC_EN_Msk);
 
         sqiBufDesc[i].bd_bufaddr = (uint32_t *)(readBuffer);
@@ -1017,7 +1441,7 @@ bool DRV_SFDP_PageWrite(const DRV_HANDLE handle, void *tx_data, uint32_t address
 {
     void *ptr = NULL;
     uint32_t pageSize = dObj->flashParams.pageSize;
-    uint8_t addrBytes = dObj->flashParams.addressBytes;
+    uint8_t addrBytes;
 
     if (DRV_SFDP_ValidateHandleAndCheckBusy(handle) == true)
     {
@@ -1028,24 +1452,57 @@ bool DRV_SFDP_PageWrite(const DRV_HANDLE handle, void *tx_data, uint32_t address
 
     DRV_SFDP_WriteEnable();
 
-    /* Build command descriptor */
-    sqiCmdBuffer[4] = (uint8_t)SFDP_CMD_PAGE_PROGRAM;
+    /* Device-specific page program command */
+    uint8_t writeOpcode;
+    uint32_t writeWidth;
 
-    if (addrBytes == 4U)
+    if (dObj->flashParams.deviceType == SFDP_DEVICE_TYPE_W25)
     {
-        sqiCmdBuffer[5] = (uint8_t)((address >> 24) & 0xFFU);
-        sqiCmdBuffer[6] = (uint8_t)((address >> 16) & 0xFFU);
-        sqiCmdBuffer[7] = (uint8_t)((address >> 8) & 0xFFU);
-        sqiCmdBuffer[8] = (uint8_t)(address & 0xFFU);
+        /* W25 Quad Input Page Program */
+        writeOpcode = (uint8_t)SFDP_CMD_QUAD_INPUT_PAGE_PROGRAM;
+        writeWidth = SQI_LANE_MODE_M;
     }
     else
     {
-        sqiCmdBuffer[5] = (uint8_t)((address >> 16) & 0xFFU);
-        sqiCmdBuffer[6] = (uint8_t)((address >> 8) & 0xFFU);
-        sqiCmdBuffer[7] = (uint8_t)(address & 0xFFU);
+        /* Standard page program for other devices */
+        writeOpcode = (uint8_t)SFDP_CMD_PAGE_PROGRAM;
+        writeWidth = dObj->flashParams.optimalWriteWidth;
     }
 
-    sqiCmdDesc[1].bd_ctrl = (SQI_BDCTRL_BD_BUFLEN(1 + addrBytes) | dObj->flashParams.optimalWriteWidth |
+    sqiCmdBuffer[4] = writeOpcode;
+
+    /* 32-bit address support */
+    if ((dObj->flashParams.addressBytes == 4U) || (address > 0xFFFFFFU))
+    {
+        addrBytes = 4U;
+    }
+    else
+    {
+        addrBytes = 3U;
+    }
+
+    if (addrBytes == 4U)
+    {
+        uint32_t addr_byte3 = (address >> 24) & 0xFFU;
+        uint32_t addr_byte2 = (address >> 16) & 0xFFU;
+        uint32_t addr_byte1 = (address >> 8) & 0xFFU;
+        uint32_t addr_byte0 = address & 0xFFU;
+        sqiCmdBuffer[5] = (uint8_t)addr_byte3;
+        sqiCmdBuffer[6] = (uint8_t)addr_byte2;
+        sqiCmdBuffer[7] = (uint8_t)addr_byte1;
+        sqiCmdBuffer[8] = (uint8_t)addr_byte0;
+    }
+    else
+    {
+        uint32_t addr_byte2 = (address >> 16) & 0xFFU;
+        uint32_t addr_byte1 = (address >> 8) & 0xFFU;
+        uint32_t addr_byte0 = address & 0xFFU;
+        sqiCmdBuffer[5] = (uint8_t)addr_byte2;
+        sqiCmdBuffer[6] = (uint8_t)addr_byte1;
+        sqiCmdBuffer[7] = (uint8_t)addr_byte0;
+    }
+
+    sqiCmdDesc[1].bd_ctrl = (SQI_BDCTRL_BD_BUFLEN((uint32_t)1U + addrBytes) | writeWidth |
                              SQI_CHIP_SELECT | SQI_BDCTRL_DESC_EN_Msk);
     ptr = &sqiCmdBuffer[4];
     sqiCmdDesc[1].bd_bufaddr = (uint32_t *)(ptr);
@@ -1056,7 +1513,7 @@ bool DRV_SFDP_PageWrite(const DRV_HANDLE handle, void *tx_data, uint32_t address
     /* Data descriptor */
     sqiBufDesc[0].bd_ctrl = (SQI_BDCTRL_BD_BUFLEN(pageSize) | SQI_BDCTRL_PKT_INT_EN_Msk |
                              SQI_BDCTRL_LIFM_Msk | SQI_BDCTRL_LAST_BD_Msk |
-                             dObj->flashParams.optimalWriteWidth | SQI_BDCTRL_STAT_CHECK_Msk |
+                             writeWidth | SQI_BDCTRL_STAT_CHECK_Msk |
                              SQI_CHIP_SELECT | SQI_BDCTRL_CS_ASSERT_Msk |
                              SQI_BDCTRL_DESC_EN_Msk);
 
@@ -1077,7 +1534,7 @@ static bool DRV_SFDP_Erase(uint8_t instruction, uint32_t address)
 {
     void *ptr = NULL;
     uint8_t addrBytes = dObj->flashParams.addressBytes;
-    uint32_t bufLen = 1U + addrBytes;
+    uint32_t bufLen = ((uint32_t)1U + addrBytes);
 
     dObj->isTransferDone = false;
 
@@ -1087,16 +1544,23 @@ static bool DRV_SFDP_Erase(uint8_t instruction, uint32_t address)
 
     if (addrBytes == 4U)
     {
-        sqiCmdBuffer[5] = (uint8_t)((address >> 24) & 0xFFU);
-        sqiCmdBuffer[6] = (uint8_t)((address >> 16) & 0xFFU);
-        sqiCmdBuffer[7] = (uint8_t)((address >> 8) & 0xFFU);
-        sqiCmdBuffer[8] = (uint8_t)(address & 0xFFU);
+        uint32_t addr_byte3 = (address >> 24) & 0xFFU;
+        uint32_t addr_byte2 = (address >> 16) & 0xFFU;
+        uint32_t addr_byte1 = (address >> 8) & 0xFFU;
+        uint32_t addr_byte0 = address & 0xFFU;
+        sqiCmdBuffer[5] = (uint8_t)addr_byte3;
+        sqiCmdBuffer[6] = (uint8_t)addr_byte2;
+        sqiCmdBuffer[7] = (uint8_t)addr_byte1;
+        sqiCmdBuffer[8] = (uint8_t)addr_byte0;
     }
     else
     {
-        sqiCmdBuffer[5] = (uint8_t)((address >> 16) & 0xFFU);
-        sqiCmdBuffer[6] = (uint8_t)((address >> 8) & 0xFFU);
-        sqiCmdBuffer[7] = (uint8_t)(address & 0xFFU);
+        uint32_t addr_byte2 = (address >> 16) & 0xFFU;
+        uint32_t addr_byte1 = (address >> 8) & 0xFFU;
+        uint32_t addr_byte0 = address & 0xFFU;
+        sqiCmdBuffer[5] = (uint8_t)addr_byte2;
+        sqiCmdBuffer[6] = (uint8_t)addr_byte1;
+        sqiCmdBuffer[7] = (uint8_t)addr_byte0;
     }
 
     sqiCmdDesc[1].bd_ctrl = (SQI_BDCTRL_BD_BUFLEN(bufLen) | SQI_BDCTRL_PKT_INT_EN_Msk |
@@ -1225,9 +1689,92 @@ DRV_HANDLE DRV_SFDP_Open(const SYS_MODULE_INDEX drvIndex, const DRV_IO_INTENT io
 
     dObj->sfdpDiscovered = true;
 
-    if (dObj->flashParams.supports_4_4_4)
+    /* Read JEDEC ID for device-specific detection */
+    uint8_t jedecID[3] = { 0 };
+
+    if (DRV_SFDP_ReadJedecId((DRV_HANDLE)drvIndex, (void *)&jedecID) == false)
     {
-        DRV_SFDP_EnableQuadIO();
+        /* Continue with generic mode if JEDEC ID read fails */
+        dObj->flashParams.deviceType = SFDP_DEVICE_TYPE_GENERIC;
+    }
+    else
+    {
+        /* Detect device type and apply device-specific overrides */
+        dObj->flashParams.deviceType = DRV_SFDP_DetectDeviceType(jedecID, &dObj->flashParams);
+
+        /* Apply device-specific parameter overrides */
+        if (dObj->flashParams.deviceType == SFDP_DEVICE_TYPE_N25Q)
+        {
+            /* N25Q256 specific: Force quad command mode and 10 dummy cycles */
+            dObj->flashParams.supports_4_4_4 = true;
+            dObj->flashParams.optimalReadWidth = SQI_LANE_MODE_M;
+            dObj->flashParams.optimalReadDummyCycles = 10;
+        }
+        else if (dObj->flashParams.deviceType == SFDP_DEVICE_TYPE_W25)
+        {
+            /* W25 specific: Use 1-4-4 mode (Quad I/O) */
+            dObj->flashParams.supports_1_4_4 = true;
+            dObj->flashParams.optimalReadWidth = SQI_LANE_MODE_M;
+            dObj->flashParams.optimalReadOpcode = 0xEB;
+            dObj->flashParams.optimalReadDummyCycles = 6;
+        }
+        else if (dObj->flashParams.deviceType == SFDP_DEVICE_TYPE_MX25L)
+        {
+            /* MX25L/MX66 specific: Use 4-4-4 mode (Quad Command) */
+            dObj->flashParams.supports_4_4_4 = true;
+            dObj->flashParams.optimalReadWidth = SQI_LANE_MODE_M;
+            dObj->flashParams.optimalReadOpcode = 0xEB;
+            dObj->flashParams.optimalReadDummyCycles = 6;
+        }
+        else if (dObj->flashParams.deviceType == SFDP_DEVICE_TYPE_S25FL)
+        {
+            /* S25FL specific: Use SFDP-discovered quad mode with QE bit enabled */
+            /* Parameters are already discovered from SFDP, just ensure quad modes are enabled */
+            if (dObj->flashParams.supports_1_4_4)
+            {
+                dObj->flashParams.optimalReadWidth = SQI_LANE_MODE_M;
+            }
+            else if (dObj->flashParams.supports_1_1_4)
+            {
+                dObj->flashParams.optimalReadWidth = SQI_LANE_MODE_M;
+            }
+            else
+            {
+                /* Use SFDP-discovered single mode */
+            }
+        }
+        else if (dObj->flashParams.deviceType == SFDP_DEVICE_TYPE_IS25)
+        {
+            /* IS25 specific: Use SFDP-discovered quad mode with QE bit enabled */
+            /* Parameters are already discovered from SFDP, just ensure quad modes are enabled */
+            if (dObj->flashParams.supports_1_4_4)
+            {
+                dObj->flashParams.optimalReadWidth = SQI_LANE_MODE_M;
+            }
+            else if (dObj->flashParams.supports_1_1_4)
+            {
+                dObj->flashParams.optimalReadWidth = SQI_LANE_MODE_M;
+            }
+            else
+            {
+                /* Use SFDP-discovered single mode */
+            }
+        }
+        else
+        {
+            /* For SST26 and generic devices, use SFDP-discovered parameters */
+        }
+    }
+
+    /* Enable QUAD IO Mode using device-specific method */
+    if (dObj->flashParams.supports_4_4_4 || dObj->flashParams.supports_1_4_4)
+    {
+        if (DRV_SFDP_EnableQuadIO_DeviceSpecific() == false)
+        {
+            /* Continue even if quad enable fails - fall back to single SPI */
+            dObj->flashParams.optimalReadWidth = SQI_LANE_MODE_SINGLE;
+            dObj->flashParams.optimalWriteWidth = SQI_LANE_MODE_SINGLE;
+        }
     }
 
     if (((uint32_t)ioIntent & (uint32_t)DRV_IO_INTENT_WRITE) == ((uint32_t)DRV_IO_INTENT_WRITE))

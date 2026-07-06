@@ -1,7 +1,9 @@
 /*
- * Peripheral I/O description for PIC32CK2051GC01144
+ * Peripheral I/O description for pic32ck2051gc01144
  *
- * Copyright (c) 2024 Microchip Technology Inc. and its subsidiaries.
+ * Copyright (c) 2025 Microchip Technology Inc. and its subsidiaries.
+ *
+ * SPDX-License-Identifier: Apache-2.0
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -17,9 +19,9 @@
  *
  */
 
-/*  file generated from device description file (ATDF) version 2024-04-02T09:16:01Z  */
-#ifndef _PIC32CK2051GC01144_GPIO_H_
-#define _PIC32CK2051GC01144_GPIO_H_
+/*  file generated from device description file (ATDF) version 2025-04-07T17:07:52Z  */
+#ifndef _pic32ck2051gc01144_GPIO_H_
+#define _pic32ck2051gc01144_GPIO_H_
 
 /* ======================= Peripheral I/O pin numbers ======================= */
 #define PIN_PA00                    (    0)  /* Pin Number for PA00 */
@@ -3476,5 +3478,5 @@
 
 
 
-#endif /* _PIC32CK2051GC01144_GPIO_H_ */
+#endif /* _pic32ck2051gc01144_GPIO_H_ */
 
