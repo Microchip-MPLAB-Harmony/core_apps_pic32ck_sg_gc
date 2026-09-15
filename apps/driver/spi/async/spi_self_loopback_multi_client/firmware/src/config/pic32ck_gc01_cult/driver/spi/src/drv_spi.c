@@ -249,8 +249,8 @@ static DRV_SPI_TRANSFER_OBJ* lDRV_SPI_FreeTransferObjGet(DRV_SPI_CLIENT_OBJ* cli
     }
     return NULL;
 }
-/* MISRA C-2012 Rule 11.3, 11.8 deviated below. Deviation record ID -
-   H3_MISRAC_2012_R_11_3_DR_1 & H3_MISRAC_2012_R_11_8_DR_1*/
+/* MISRA C-2023 Rule 11.3, 11.8 deviated below. Deviation record ID -
+   H3_MISRAC_2023_R_11_3_DR_1 & H3_MISRAC_2023_R_11_8_DR_1*/
 
 static bool lDRV_SPI_TransferObjAddToList(
     DRV_SPI_OBJ* dObj,

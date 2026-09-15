@@ -1,7 +1,9 @@
 /*
  * Component description for EIC
  *
- * Copyright (c) 2024 Microchip Technology Inc. and its subsidiaries.
+ * Copyright (c) 2026 Microchip Technology Inc. and its subsidiaries.
+ *
+ * SPDX-License-Identifier: Apache-2.0
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -17,9 +19,13 @@
  *
  */
 
-/*  file generated from device description file (ATDF) version 2024-04-02T09:16:01Z  */
+/*  file generated from device description file (ATDF) version 2026-09-01T07:31:34Z  */
 #ifndef _PIC32CKGC01_EIC_COMPONENT_H_
 #define _PIC32CKGC01_EIC_COMPONENT_H_
+
+#if !defined(DISABLE_CMSIS)
+#include "core_cm33.h"
+#endif /* !defined(DISABLE_CMSIS) */
 
 /* ************************************************************************** */
 /*                      SOFTWARE API DEFINITION FOR EIC                       */
@@ -30,13 +36,13 @@
 
 #define EIC_CTRLA_SWRST_Pos                   _UINT8_(0)                                           /* (EIC_CTRLA) Software Reset Position */
 #define EIC_CTRLA_SWRST_Msk                   (_UINT8_(0x1) << EIC_CTRLA_SWRST_Pos)                /* (EIC_CTRLA) Software Reset Mask */
-#define EIC_CTRLA_SWRST(value)                (EIC_CTRLA_SWRST_Msk & (_UINT8_(value) << EIC_CTRLA_SWRST_Pos)) /* Assignment of value for SWRST in the EIC_CTRLA register */
+#define EIC_CTRLA_SWRST(value)                (EIC_CTRLA_SWRST_Msk & ((uint8_t)(value) << EIC_CTRLA_SWRST_Pos)) /* Assignment of value for SWRST in the EIC_CTRLA register */
 #define EIC_CTRLA_ENABLE_Pos                  _UINT8_(1)                                           /* (EIC_CTRLA) Enable Position */
 #define EIC_CTRLA_ENABLE_Msk                  (_UINT8_(0x1) << EIC_CTRLA_ENABLE_Pos)               /* (EIC_CTRLA) Enable Mask */
-#define EIC_CTRLA_ENABLE(value)               (EIC_CTRLA_ENABLE_Msk & (_UINT8_(value) << EIC_CTRLA_ENABLE_Pos)) /* Assignment of value for ENABLE in the EIC_CTRLA register */
+#define EIC_CTRLA_ENABLE(value)               (EIC_CTRLA_ENABLE_Msk & ((uint8_t)(value) << EIC_CTRLA_ENABLE_Pos)) /* Assignment of value for ENABLE in the EIC_CTRLA register */
 #define EIC_CTRLA_CKSEL_Pos                   _UINT8_(4)                                           /* (EIC_CTRLA) Clock Selection Position */
 #define EIC_CTRLA_CKSEL_Msk                   (_UINT8_(0x1) << EIC_CTRLA_CKSEL_Pos)                /* (EIC_CTRLA) Clock Selection Mask */
-#define EIC_CTRLA_CKSEL(value)                (EIC_CTRLA_CKSEL_Msk & (_UINT8_(value) << EIC_CTRLA_CKSEL_Pos)) /* Assignment of value for CKSEL in the EIC_CTRLA register */
+#define EIC_CTRLA_CKSEL(value)                (EIC_CTRLA_CKSEL_Msk & ((uint8_t)(value) << EIC_CTRLA_CKSEL_Pos)) /* Assignment of value for CKSEL in the EIC_CTRLA register */
 #define   EIC_CTRLA_CKSEL_CLK_GCLK_Val        _UINT8_(0x0)                                         /* (EIC_CTRLA) Clocked by GCLK  */
 #define   EIC_CTRLA_CKSEL_CLK_ULP32K_Val      _UINT8_(0x1)                                         /* (EIC_CTRLA) Clocked by ULP32K  */
 #define EIC_CTRLA_CKSEL_CLK_GCLK              (EIC_CTRLA_CKSEL_CLK_GCLK_Val << EIC_CTRLA_CKSEL_Pos) /* (EIC_CTRLA) Clocked by GCLK Position */
@@ -49,7 +55,7 @@
 
 #define EIC_NMICTRL_NMISENSE_Pos              _UINT8_(0)                                           /* (EIC_NMICTRL) Non-Maskable Interrupt Sense Configuration Position */
 #define EIC_NMICTRL_NMISENSE_Msk              (_UINT8_(0x7) << EIC_NMICTRL_NMISENSE_Pos)           /* (EIC_NMICTRL) Non-Maskable Interrupt Sense Configuration Mask */
-#define EIC_NMICTRL_NMISENSE(value)           (EIC_NMICTRL_NMISENSE_Msk & (_UINT8_(value) << EIC_NMICTRL_NMISENSE_Pos)) /* Assignment of value for NMISENSE in the EIC_NMICTRL register */
+#define EIC_NMICTRL_NMISENSE(value)           (EIC_NMICTRL_NMISENSE_Msk & ((uint8_t)(value) << EIC_NMICTRL_NMISENSE_Pos)) /* Assignment of value for NMISENSE in the EIC_NMICTRL register */
 #define   EIC_NMICTRL_NMISENSE_NONE_Val       _UINT8_(0x0)                                         /* (EIC_NMICTRL) No detection  */
 #define   EIC_NMICTRL_NMISENSE_RISE_Val       _UINT8_(0x1)                                         /* (EIC_NMICTRL) Rising-edge detection  */
 #define   EIC_NMICTRL_NMISENSE_FALL_Val       _UINT8_(0x2)                                         /* (EIC_NMICTRL) Falling-edge detection  */
@@ -64,10 +70,10 @@
 #define EIC_NMICTRL_NMISENSE_LOW              (EIC_NMICTRL_NMISENSE_LOW_Val << EIC_NMICTRL_NMISENSE_Pos) /* (EIC_NMICTRL) Low-level detection Position */
 #define EIC_NMICTRL_NMIFILTEN_Pos             _UINT8_(3)                                           /* (EIC_NMICTRL) Non-Maskable Interrupt Filter Enable Position */
 #define EIC_NMICTRL_NMIFILTEN_Msk             (_UINT8_(0x1) << EIC_NMICTRL_NMIFILTEN_Pos)          /* (EIC_NMICTRL) Non-Maskable Interrupt Filter Enable Mask */
-#define EIC_NMICTRL_NMIFILTEN(value)          (EIC_NMICTRL_NMIFILTEN_Msk & (_UINT8_(value) << EIC_NMICTRL_NMIFILTEN_Pos)) /* Assignment of value for NMIFILTEN in the EIC_NMICTRL register */
+#define EIC_NMICTRL_NMIFILTEN(value)          (EIC_NMICTRL_NMIFILTEN_Msk & ((uint8_t)(value) << EIC_NMICTRL_NMIFILTEN_Pos)) /* Assignment of value for NMIFILTEN in the EIC_NMICTRL register */
 #define EIC_NMICTRL_NMIASYNCH_Pos             _UINT8_(4)                                           /* (EIC_NMICTRL) Asynchronous Edge Detection Mode Position */
 #define EIC_NMICTRL_NMIASYNCH_Msk             (_UINT8_(0x1) << EIC_NMICTRL_NMIASYNCH_Pos)          /* (EIC_NMICTRL) Asynchronous Edge Detection Mode Mask */
-#define EIC_NMICTRL_NMIASYNCH(value)          (EIC_NMICTRL_NMIASYNCH_Msk & (_UINT8_(value) << EIC_NMICTRL_NMIASYNCH_Pos)) /* Assignment of value for NMIASYNCH in the EIC_NMICTRL register */
+#define EIC_NMICTRL_NMIASYNCH(value)          (EIC_NMICTRL_NMIASYNCH_Msk & ((uint8_t)(value) << EIC_NMICTRL_NMIASYNCH_Pos)) /* Assignment of value for NMIASYNCH in the EIC_NMICTRL register */
 #define   EIC_NMICTRL_NMIASYNCH_SYNC_Val      _UINT8_(0x0)                                         /* (EIC_NMICTRL) Edge detection is clock synchronously operated  */
 #define   EIC_NMICTRL_NMIASYNCH_ASYNC_Val     _UINT8_(0x1)                                         /* (EIC_NMICTRL) Edge detection is clock asynchronously operated  */
 #define EIC_NMICTRL_NMIASYNCH_SYNC            (EIC_NMICTRL_NMIASYNCH_SYNC_Val << EIC_NMICTRL_NMIASYNCH_Pos) /* (EIC_NMICTRL) Edge detection is clock synchronously operated Position */
@@ -80,7 +86,7 @@
 
 #define EIC_NMIFLAG_NMI_Pos                   _UINT16_(0)                                          /* (EIC_NMIFLAG) Non-Maskable Interrupt Position */
 #define EIC_NMIFLAG_NMI_Msk                   (_UINT16_(0x1) << EIC_NMIFLAG_NMI_Pos)               /* (EIC_NMIFLAG) Non-Maskable Interrupt Mask */
-#define EIC_NMIFLAG_NMI(value)                (EIC_NMIFLAG_NMI_Msk & (_UINT16_(value) << EIC_NMIFLAG_NMI_Pos)) /* Assignment of value for NMI in the EIC_NMIFLAG register */
+#define EIC_NMIFLAG_NMI(value)                (EIC_NMIFLAG_NMI_Msk & ((uint16_t)(value) << EIC_NMIFLAG_NMI_Pos)) /* Assignment of value for NMI in the EIC_NMIFLAG register */
 #define EIC_NMIFLAG_Msk                       _UINT16_(0x0001)                                     /* (EIC_NMIFLAG) Register Mask  */
 
 
@@ -89,10 +95,10 @@
 
 #define EIC_SYNCBUSY_SWRST_Pos                _UINT32_(0)                                          /* (EIC_SYNCBUSY) Software Reset Synchronization Busy Status Position */
 #define EIC_SYNCBUSY_SWRST_Msk                (_UINT32_(0x1) << EIC_SYNCBUSY_SWRST_Pos)            /* (EIC_SYNCBUSY) Software Reset Synchronization Busy Status Mask */
-#define EIC_SYNCBUSY_SWRST(value)             (EIC_SYNCBUSY_SWRST_Msk & (_UINT32_(value) << EIC_SYNCBUSY_SWRST_Pos)) /* Assignment of value for SWRST in the EIC_SYNCBUSY register */
+#define EIC_SYNCBUSY_SWRST(value)             (EIC_SYNCBUSY_SWRST_Msk & ((uint32_t)(value) << EIC_SYNCBUSY_SWRST_Pos)) /* Assignment of value for SWRST in the EIC_SYNCBUSY register */
 #define EIC_SYNCBUSY_ENABLE_Pos               _UINT32_(1)                                          /* (EIC_SYNCBUSY) Enable Synchronization Busy Status Position */
 #define EIC_SYNCBUSY_ENABLE_Msk               (_UINT32_(0x1) << EIC_SYNCBUSY_ENABLE_Pos)           /* (EIC_SYNCBUSY) Enable Synchronization Busy Status Mask */
-#define EIC_SYNCBUSY_ENABLE(value)            (EIC_SYNCBUSY_ENABLE_Msk & (_UINT32_(value) << EIC_SYNCBUSY_ENABLE_Pos)) /* Assignment of value for ENABLE in the EIC_SYNCBUSY register */
+#define EIC_SYNCBUSY_ENABLE(value)            (EIC_SYNCBUSY_ENABLE_Msk & ((uint32_t)(value) << EIC_SYNCBUSY_ENABLE_Pos)) /* Assignment of value for ENABLE in the EIC_SYNCBUSY register */
 #define EIC_SYNCBUSY_Msk                      _UINT32_(0x00000003)                                 /* (EIC_SYNCBUSY) Register Mask  */
 
 
@@ -101,7 +107,7 @@
 
 #define EIC_EVCTRL_EXTINTEO_Pos               _UINT32_(0)                                          /* (EIC_EVCTRL) External Interrupt Event Output Enable Position */
 #define EIC_EVCTRL_EXTINTEO_Msk               (_UINT32_(0xFFFF) << EIC_EVCTRL_EXTINTEO_Pos)        /* (EIC_EVCTRL) External Interrupt Event Output Enable Mask */
-#define EIC_EVCTRL_EXTINTEO(value)            (EIC_EVCTRL_EXTINTEO_Msk & (_UINT32_(value) << EIC_EVCTRL_EXTINTEO_Pos)) /* Assignment of value for EXTINTEO in the EIC_EVCTRL register */
+#define EIC_EVCTRL_EXTINTEO(value)            (EIC_EVCTRL_EXTINTEO_Msk & ((uint32_t)(value) << EIC_EVCTRL_EXTINTEO_Pos)) /* Assignment of value for EXTINTEO in the EIC_EVCTRL register */
 #define EIC_EVCTRL_Msk                        _UINT32_(0x0000FFFF)                                 /* (EIC_EVCTRL) Register Mask  */
 
 
@@ -110,7 +116,7 @@
 
 #define EIC_INTENCLR_EXTINT_Pos               _UINT32_(0)                                          /* (EIC_INTENCLR) External Interrupt Enable Position */
 #define EIC_INTENCLR_EXTINT_Msk               (_UINT32_(0xFFFF) << EIC_INTENCLR_EXTINT_Pos)        /* (EIC_INTENCLR) External Interrupt Enable Mask */
-#define EIC_INTENCLR_EXTINT(value)            (EIC_INTENCLR_EXTINT_Msk & (_UINT32_(value) << EIC_INTENCLR_EXTINT_Pos)) /* Assignment of value for EXTINT in the EIC_INTENCLR register */
+#define EIC_INTENCLR_EXTINT(value)            (EIC_INTENCLR_EXTINT_Msk & ((uint32_t)(value) << EIC_INTENCLR_EXTINT_Pos)) /* Assignment of value for EXTINT in the EIC_INTENCLR register */
 #define EIC_INTENCLR_Msk                      _UINT32_(0x0000FFFF)                                 /* (EIC_INTENCLR) Register Mask  */
 
 
@@ -119,7 +125,7 @@
 
 #define EIC_INTENSET_EXTINT_Pos               _UINT32_(0)                                          /* (EIC_INTENSET) External Interrupt Enable Position */
 #define EIC_INTENSET_EXTINT_Msk               (_UINT32_(0xFFFF) << EIC_INTENSET_EXTINT_Pos)        /* (EIC_INTENSET) External Interrupt Enable Mask */
-#define EIC_INTENSET_EXTINT(value)            (EIC_INTENSET_EXTINT_Msk & (_UINT32_(value) << EIC_INTENSET_EXTINT_Pos)) /* Assignment of value for EXTINT in the EIC_INTENSET register */
+#define EIC_INTENSET_EXTINT(value)            (EIC_INTENSET_EXTINT_Msk & ((uint32_t)(value) << EIC_INTENSET_EXTINT_Pos)) /* Assignment of value for EXTINT in the EIC_INTENSET register */
 #define EIC_INTENSET_Msk                      _UINT32_(0x0000FFFF)                                 /* (EIC_INTENSET) Register Mask  */
 
 
@@ -128,7 +134,7 @@
 
 #define EIC_INTFLAG_EXTINT_Pos                _UINT32_(0)                                          /* (EIC_INTFLAG) External Interrupt Position */
 #define EIC_INTFLAG_EXTINT_Msk                (_UINT32_(0xFFFF) << EIC_INTFLAG_EXTINT_Pos)         /* (EIC_INTFLAG) External Interrupt Mask */
-#define EIC_INTFLAG_EXTINT(value)             (EIC_INTFLAG_EXTINT_Msk & (_UINT32_(value) << EIC_INTFLAG_EXTINT_Pos)) /* Assignment of value for EXTINT in the EIC_INTFLAG register */
+#define EIC_INTFLAG_EXTINT(value)             (EIC_INTFLAG_EXTINT_Msk & ((uint32_t)(value) << EIC_INTFLAG_EXTINT_Pos)) /* Assignment of value for EXTINT in the EIC_INTFLAG register */
 #define EIC_INTFLAG_Msk                       _UINT32_(0x0000FFFF)                                 /* (EIC_INTFLAG) Register Mask  */
 
 
@@ -137,7 +143,7 @@
 
 #define EIC_ASYNCH_ASYNCH_Pos                 _UINT32_(0)                                          /* (EIC_ASYNCH) Asynchronous Edge Detection Mode Position */
 #define EIC_ASYNCH_ASYNCH_Msk                 (_UINT32_(0xFFFF) << EIC_ASYNCH_ASYNCH_Pos)          /* (EIC_ASYNCH) Asynchronous Edge Detection Mode Mask */
-#define EIC_ASYNCH_ASYNCH(value)              (EIC_ASYNCH_ASYNCH_Msk & (_UINT32_(value) << EIC_ASYNCH_ASYNCH_Pos)) /* Assignment of value for ASYNCH in the EIC_ASYNCH register */
+#define EIC_ASYNCH_ASYNCH(value)              (EIC_ASYNCH_ASYNCH_Msk & ((uint32_t)(value) << EIC_ASYNCH_ASYNCH_Pos)) /* Assignment of value for ASYNCH in the EIC_ASYNCH register */
 #define   EIC_ASYNCH_ASYNCH_SYNC_Val          _UINT32_(0x0)                                        /* (EIC_ASYNCH) Edge detection is clock synchronously operated  */
 #define   EIC_ASYNCH_ASYNCH_ASYNC_Val         _UINT32_(0x1)                                        /* (EIC_ASYNCH) Edge detection is clock asynchronously operated  */
 #define EIC_ASYNCH_ASYNCH_SYNC                (EIC_ASYNCH_ASYNCH_SYNC_Val << EIC_ASYNCH_ASYNCH_Pos) /* (EIC_ASYNCH) Edge detection is clock synchronously operated Position */
@@ -150,7 +156,7 @@
 
 #define EIC_CONFIG0_SENSE0_Pos                _UINT32_(0)                                          /* (EIC_CONFIG0) Input Sense Configuration 0 Position */
 #define EIC_CONFIG0_SENSE0_Msk                (_UINT32_(0x7) << EIC_CONFIG0_SENSE0_Pos)            /* (EIC_CONFIG0) Input Sense Configuration 0 Mask */
-#define EIC_CONFIG0_SENSE0(value)             (EIC_CONFIG0_SENSE0_Msk & (_UINT32_(value) << EIC_CONFIG0_SENSE0_Pos)) /* Assignment of value for SENSE0 in the EIC_CONFIG0 register */
+#define EIC_CONFIG0_SENSE0(value)             (EIC_CONFIG0_SENSE0_Msk & ((uint32_t)(value) << EIC_CONFIG0_SENSE0_Pos)) /* Assignment of value for SENSE0 in the EIC_CONFIG0 register */
 #define   EIC_CONFIG0_SENSE0_NONE_Val         _UINT32_(0x0)                                        /* (EIC_CONFIG0) No detection  */
 #define   EIC_CONFIG0_SENSE0_RISE_Val         _UINT32_(0x1)                                        /* (EIC_CONFIG0) Rising edge detection  */
 #define   EIC_CONFIG0_SENSE0_FALL_Val         _UINT32_(0x2)                                        /* (EIC_CONFIG0) Falling edge detection  */
@@ -165,10 +171,10 @@
 #define EIC_CONFIG0_SENSE0_LOW                (EIC_CONFIG0_SENSE0_LOW_Val << EIC_CONFIG0_SENSE0_Pos) /* (EIC_CONFIG0) Low level detection Position */
 #define EIC_CONFIG0_FILTEN0_Pos               _UINT32_(3)                                          /* (EIC_CONFIG0) Filter Enable 0 Position */
 #define EIC_CONFIG0_FILTEN0_Msk               (_UINT32_(0x1) << EIC_CONFIG0_FILTEN0_Pos)           /* (EIC_CONFIG0) Filter Enable 0 Mask */
-#define EIC_CONFIG0_FILTEN0(value)            (EIC_CONFIG0_FILTEN0_Msk & (_UINT32_(value) << EIC_CONFIG0_FILTEN0_Pos)) /* Assignment of value for FILTEN0 in the EIC_CONFIG0 register */
+#define EIC_CONFIG0_FILTEN0(value)            (EIC_CONFIG0_FILTEN0_Msk & ((uint32_t)(value) << EIC_CONFIG0_FILTEN0_Pos)) /* Assignment of value for FILTEN0 in the EIC_CONFIG0 register */
 #define EIC_CONFIG0_SENSE1_Pos                _UINT32_(4)                                          /* (EIC_CONFIG0) Input Sense Configuration 1 Position */
 #define EIC_CONFIG0_SENSE1_Msk                (_UINT32_(0x7) << EIC_CONFIG0_SENSE1_Pos)            /* (EIC_CONFIG0) Input Sense Configuration 1 Mask */
-#define EIC_CONFIG0_SENSE1(value)             (EIC_CONFIG0_SENSE1_Msk & (_UINT32_(value) << EIC_CONFIG0_SENSE1_Pos)) /* Assignment of value for SENSE1 in the EIC_CONFIG0 register */
+#define EIC_CONFIG0_SENSE1(value)             (EIC_CONFIG0_SENSE1_Msk & ((uint32_t)(value) << EIC_CONFIG0_SENSE1_Pos)) /* Assignment of value for SENSE1 in the EIC_CONFIG0 register */
 #define   EIC_CONFIG0_SENSE1_NONE_Val         _UINT32_(0x0)                                        /* (EIC_CONFIG0) No detection  */
 #define   EIC_CONFIG0_SENSE1_RISE_Val         _UINT32_(0x1)                                        /* (EIC_CONFIG0) Rising edge detection  */
 #define   EIC_CONFIG0_SENSE1_FALL_Val         _UINT32_(0x2)                                        /* (EIC_CONFIG0) Falling edge detection  */
@@ -183,10 +189,10 @@
 #define EIC_CONFIG0_SENSE1_LOW                (EIC_CONFIG0_SENSE1_LOW_Val << EIC_CONFIG0_SENSE1_Pos) /* (EIC_CONFIG0) Low level detection Position */
 #define EIC_CONFIG0_FILTEN1_Pos               _UINT32_(7)                                          /* (EIC_CONFIG0) Filter Enable 1 Position */
 #define EIC_CONFIG0_FILTEN1_Msk               (_UINT32_(0x1) << EIC_CONFIG0_FILTEN1_Pos)           /* (EIC_CONFIG0) Filter Enable 1 Mask */
-#define EIC_CONFIG0_FILTEN1(value)            (EIC_CONFIG0_FILTEN1_Msk & (_UINT32_(value) << EIC_CONFIG0_FILTEN1_Pos)) /* Assignment of value for FILTEN1 in the EIC_CONFIG0 register */
+#define EIC_CONFIG0_FILTEN1(value)            (EIC_CONFIG0_FILTEN1_Msk & ((uint32_t)(value) << EIC_CONFIG0_FILTEN1_Pos)) /* Assignment of value for FILTEN1 in the EIC_CONFIG0 register */
 #define EIC_CONFIG0_SENSE2_Pos                _UINT32_(8)                                          /* (EIC_CONFIG0) Input Sense Configuration 2 Position */
 #define EIC_CONFIG0_SENSE2_Msk                (_UINT32_(0x7) << EIC_CONFIG0_SENSE2_Pos)            /* (EIC_CONFIG0) Input Sense Configuration 2 Mask */
-#define EIC_CONFIG0_SENSE2(value)             (EIC_CONFIG0_SENSE2_Msk & (_UINT32_(value) << EIC_CONFIG0_SENSE2_Pos)) /* Assignment of value for SENSE2 in the EIC_CONFIG0 register */
+#define EIC_CONFIG0_SENSE2(value)             (EIC_CONFIG0_SENSE2_Msk & ((uint32_t)(value) << EIC_CONFIG0_SENSE2_Pos)) /* Assignment of value for SENSE2 in the EIC_CONFIG0 register */
 #define   EIC_CONFIG0_SENSE2_NONE_Val         _UINT32_(0x0)                                        /* (EIC_CONFIG0) No detection  */
 #define   EIC_CONFIG0_SENSE2_RISE_Val         _UINT32_(0x1)                                        /* (EIC_CONFIG0) Rising edge detection  */
 #define   EIC_CONFIG0_SENSE2_FALL_Val         _UINT32_(0x2)                                        /* (EIC_CONFIG0) Falling edge detection  */
@@ -201,10 +207,10 @@
 #define EIC_CONFIG0_SENSE2_LOW                (EIC_CONFIG0_SENSE2_LOW_Val << EIC_CONFIG0_SENSE2_Pos) /* (EIC_CONFIG0) Low level detection Position */
 #define EIC_CONFIG0_FILTEN2_Pos               _UINT32_(11)                                         /* (EIC_CONFIG0) Filter Enable 2 Position */
 #define EIC_CONFIG0_FILTEN2_Msk               (_UINT32_(0x1) << EIC_CONFIG0_FILTEN2_Pos)           /* (EIC_CONFIG0) Filter Enable 2 Mask */
-#define EIC_CONFIG0_FILTEN2(value)            (EIC_CONFIG0_FILTEN2_Msk & (_UINT32_(value) << EIC_CONFIG0_FILTEN2_Pos)) /* Assignment of value for FILTEN2 in the EIC_CONFIG0 register */
+#define EIC_CONFIG0_FILTEN2(value)            (EIC_CONFIG0_FILTEN2_Msk & ((uint32_t)(value) << EIC_CONFIG0_FILTEN2_Pos)) /* Assignment of value for FILTEN2 in the EIC_CONFIG0 register */
 #define EIC_CONFIG0_SENSE3_Pos                _UINT32_(12)                                         /* (EIC_CONFIG0) Input Sense Configuration 3 Position */
 #define EIC_CONFIG0_SENSE3_Msk                (_UINT32_(0x7) << EIC_CONFIG0_SENSE3_Pos)            /* (EIC_CONFIG0) Input Sense Configuration 3 Mask */
-#define EIC_CONFIG0_SENSE3(value)             (EIC_CONFIG0_SENSE3_Msk & (_UINT32_(value) << EIC_CONFIG0_SENSE3_Pos)) /* Assignment of value for SENSE3 in the EIC_CONFIG0 register */
+#define EIC_CONFIG0_SENSE3(value)             (EIC_CONFIG0_SENSE3_Msk & ((uint32_t)(value) << EIC_CONFIG0_SENSE3_Pos)) /* Assignment of value for SENSE3 in the EIC_CONFIG0 register */
 #define   EIC_CONFIG0_SENSE3_NONE_Val         _UINT32_(0x0)                                        /* (EIC_CONFIG0) No detection  */
 #define   EIC_CONFIG0_SENSE3_RISE_Val         _UINT32_(0x1)                                        /* (EIC_CONFIG0) Rising edge detection  */
 #define   EIC_CONFIG0_SENSE3_FALL_Val         _UINT32_(0x2)                                        /* (EIC_CONFIG0) Falling edge detection  */
@@ -219,10 +225,10 @@
 #define EIC_CONFIG0_SENSE3_LOW                (EIC_CONFIG0_SENSE3_LOW_Val << EIC_CONFIG0_SENSE3_Pos) /* (EIC_CONFIG0) Low level detection Position */
 #define EIC_CONFIG0_FILTEN3_Pos               _UINT32_(15)                                         /* (EIC_CONFIG0) Filter Enable 3 Position */
 #define EIC_CONFIG0_FILTEN3_Msk               (_UINT32_(0x1) << EIC_CONFIG0_FILTEN3_Pos)           /* (EIC_CONFIG0) Filter Enable 3 Mask */
-#define EIC_CONFIG0_FILTEN3(value)            (EIC_CONFIG0_FILTEN3_Msk & (_UINT32_(value) << EIC_CONFIG0_FILTEN3_Pos)) /* Assignment of value for FILTEN3 in the EIC_CONFIG0 register */
+#define EIC_CONFIG0_FILTEN3(value)            (EIC_CONFIG0_FILTEN3_Msk & ((uint32_t)(value) << EIC_CONFIG0_FILTEN3_Pos)) /* Assignment of value for FILTEN3 in the EIC_CONFIG0 register */
 #define EIC_CONFIG0_SENSE4_Pos                _UINT32_(16)                                         /* (EIC_CONFIG0) Input Sense Configuration 4 Position */
 #define EIC_CONFIG0_SENSE4_Msk                (_UINT32_(0x7) << EIC_CONFIG0_SENSE4_Pos)            /* (EIC_CONFIG0) Input Sense Configuration 4 Mask */
-#define EIC_CONFIG0_SENSE4(value)             (EIC_CONFIG0_SENSE4_Msk & (_UINT32_(value) << EIC_CONFIG0_SENSE4_Pos)) /* Assignment of value for SENSE4 in the EIC_CONFIG0 register */
+#define EIC_CONFIG0_SENSE4(value)             (EIC_CONFIG0_SENSE4_Msk & ((uint32_t)(value) << EIC_CONFIG0_SENSE4_Pos)) /* Assignment of value for SENSE4 in the EIC_CONFIG0 register */
 #define   EIC_CONFIG0_SENSE4_NONE_Val         _UINT32_(0x0)                                        /* (EIC_CONFIG0) No detection  */
 #define   EIC_CONFIG0_SENSE4_RISE_Val         _UINT32_(0x1)                                        /* (EIC_CONFIG0) Rising edge detection  */
 #define   EIC_CONFIG0_SENSE4_FALL_Val         _UINT32_(0x2)                                        /* (EIC_CONFIG0) Falling edge detection  */
@@ -237,10 +243,10 @@
 #define EIC_CONFIG0_SENSE4_LOW                (EIC_CONFIG0_SENSE4_LOW_Val << EIC_CONFIG0_SENSE4_Pos) /* (EIC_CONFIG0) Low level detection Position */
 #define EIC_CONFIG0_FILTEN4_Pos               _UINT32_(19)                                         /* (EIC_CONFIG0) Filter Enable 4 Position */
 #define EIC_CONFIG0_FILTEN4_Msk               (_UINT32_(0x1) << EIC_CONFIG0_FILTEN4_Pos)           /* (EIC_CONFIG0) Filter Enable 4 Mask */
-#define EIC_CONFIG0_FILTEN4(value)            (EIC_CONFIG0_FILTEN4_Msk & (_UINT32_(value) << EIC_CONFIG0_FILTEN4_Pos)) /* Assignment of value for FILTEN4 in the EIC_CONFIG0 register */
+#define EIC_CONFIG0_FILTEN4(value)            (EIC_CONFIG0_FILTEN4_Msk & ((uint32_t)(value) << EIC_CONFIG0_FILTEN4_Pos)) /* Assignment of value for FILTEN4 in the EIC_CONFIG0 register */
 #define EIC_CONFIG0_SENSE5_Pos                _UINT32_(20)                                         /* (EIC_CONFIG0) Input Sense Configuration 5 Position */
 #define EIC_CONFIG0_SENSE5_Msk                (_UINT32_(0x7) << EIC_CONFIG0_SENSE5_Pos)            /* (EIC_CONFIG0) Input Sense Configuration 5 Mask */
-#define EIC_CONFIG0_SENSE5(value)             (EIC_CONFIG0_SENSE5_Msk & (_UINT32_(value) << EIC_CONFIG0_SENSE5_Pos)) /* Assignment of value for SENSE5 in the EIC_CONFIG0 register */
+#define EIC_CONFIG0_SENSE5(value)             (EIC_CONFIG0_SENSE5_Msk & ((uint32_t)(value) << EIC_CONFIG0_SENSE5_Pos)) /* Assignment of value for SENSE5 in the EIC_CONFIG0 register */
 #define   EIC_CONFIG0_SENSE5_NONE_Val         _UINT32_(0x0)                                        /* (EIC_CONFIG0) No detection  */
 #define   EIC_CONFIG0_SENSE5_RISE_Val         _UINT32_(0x1)                                        /* (EIC_CONFIG0) Rising edge detection  */
 #define   EIC_CONFIG0_SENSE5_FALL_Val         _UINT32_(0x2)                                        /* (EIC_CONFIG0) Falling edge detection  */
@@ -255,10 +261,10 @@
 #define EIC_CONFIG0_SENSE5_LOW                (EIC_CONFIG0_SENSE5_LOW_Val << EIC_CONFIG0_SENSE5_Pos) /* (EIC_CONFIG0) Low level detection Position */
 #define EIC_CONFIG0_FILTEN5_Pos               _UINT32_(23)                                         /* (EIC_CONFIG0) Filter Enable 5 Position */
 #define EIC_CONFIG0_FILTEN5_Msk               (_UINT32_(0x1) << EIC_CONFIG0_FILTEN5_Pos)           /* (EIC_CONFIG0) Filter Enable 5 Mask */
-#define EIC_CONFIG0_FILTEN5(value)            (EIC_CONFIG0_FILTEN5_Msk & (_UINT32_(value) << EIC_CONFIG0_FILTEN5_Pos)) /* Assignment of value for FILTEN5 in the EIC_CONFIG0 register */
+#define EIC_CONFIG0_FILTEN5(value)            (EIC_CONFIG0_FILTEN5_Msk & ((uint32_t)(value) << EIC_CONFIG0_FILTEN5_Pos)) /* Assignment of value for FILTEN5 in the EIC_CONFIG0 register */
 #define EIC_CONFIG0_SENSE6_Pos                _UINT32_(24)                                         /* (EIC_CONFIG0) Input Sense Configuration 6 Position */
 #define EIC_CONFIG0_SENSE6_Msk                (_UINT32_(0x7) << EIC_CONFIG0_SENSE6_Pos)            /* (EIC_CONFIG0) Input Sense Configuration 6 Mask */
-#define EIC_CONFIG0_SENSE6(value)             (EIC_CONFIG0_SENSE6_Msk & (_UINT32_(value) << EIC_CONFIG0_SENSE6_Pos)) /* Assignment of value for SENSE6 in the EIC_CONFIG0 register */
+#define EIC_CONFIG0_SENSE6(value)             (EIC_CONFIG0_SENSE6_Msk & ((uint32_t)(value) << EIC_CONFIG0_SENSE6_Pos)) /* Assignment of value for SENSE6 in the EIC_CONFIG0 register */
 #define   EIC_CONFIG0_SENSE6_NONE_Val         _UINT32_(0x0)                                        /* (EIC_CONFIG0) No detection  */
 #define   EIC_CONFIG0_SENSE6_RISE_Val         _UINT32_(0x1)                                        /* (EIC_CONFIG0) Rising edge detection  */
 #define   EIC_CONFIG0_SENSE6_FALL_Val         _UINT32_(0x2)                                        /* (EIC_CONFIG0) Falling edge detection  */
@@ -273,10 +279,10 @@
 #define EIC_CONFIG0_SENSE6_LOW                (EIC_CONFIG0_SENSE6_LOW_Val << EIC_CONFIG0_SENSE6_Pos) /* (EIC_CONFIG0) Low level detection Position */
 #define EIC_CONFIG0_FILTEN6_Pos               _UINT32_(27)                                         /* (EIC_CONFIG0) Filter Enable 6 Position */
 #define EIC_CONFIG0_FILTEN6_Msk               (_UINT32_(0x1) << EIC_CONFIG0_FILTEN6_Pos)           /* (EIC_CONFIG0) Filter Enable 6 Mask */
-#define EIC_CONFIG0_FILTEN6(value)            (EIC_CONFIG0_FILTEN6_Msk & (_UINT32_(value) << EIC_CONFIG0_FILTEN6_Pos)) /* Assignment of value for FILTEN6 in the EIC_CONFIG0 register */
+#define EIC_CONFIG0_FILTEN6(value)            (EIC_CONFIG0_FILTEN6_Msk & ((uint32_t)(value) << EIC_CONFIG0_FILTEN6_Pos)) /* Assignment of value for FILTEN6 in the EIC_CONFIG0 register */
 #define EIC_CONFIG0_SENSE7_Pos                _UINT32_(28)                                         /* (EIC_CONFIG0) Input Sense Configuration 7 Position */
 #define EIC_CONFIG0_SENSE7_Msk                (_UINT32_(0x7) << EIC_CONFIG0_SENSE7_Pos)            /* (EIC_CONFIG0) Input Sense Configuration 7 Mask */
-#define EIC_CONFIG0_SENSE7(value)             (EIC_CONFIG0_SENSE7_Msk & (_UINT32_(value) << EIC_CONFIG0_SENSE7_Pos)) /* Assignment of value for SENSE7 in the EIC_CONFIG0 register */
+#define EIC_CONFIG0_SENSE7(value)             (EIC_CONFIG0_SENSE7_Msk & ((uint32_t)(value) << EIC_CONFIG0_SENSE7_Pos)) /* Assignment of value for SENSE7 in the EIC_CONFIG0 register */
 #define   EIC_CONFIG0_SENSE7_NONE_Val         _UINT32_(0x0)                                        /* (EIC_CONFIG0) No detection  */
 #define   EIC_CONFIG0_SENSE7_RISE_Val         _UINT32_(0x1)                                        /* (EIC_CONFIG0) Rising edge detection  */
 #define   EIC_CONFIG0_SENSE7_FALL_Val         _UINT32_(0x2)                                        /* (EIC_CONFIG0) Falling edge detection  */
@@ -291,7 +297,7 @@
 #define EIC_CONFIG0_SENSE7_LOW                (EIC_CONFIG0_SENSE7_LOW_Val << EIC_CONFIG0_SENSE7_Pos) /* (EIC_CONFIG0) Low level detection Position */
 #define EIC_CONFIG0_FILTEN7_Pos               _UINT32_(31)                                         /* (EIC_CONFIG0) Filter Enable 7 Position */
 #define EIC_CONFIG0_FILTEN7_Msk               (_UINT32_(0x1) << EIC_CONFIG0_FILTEN7_Pos)           /* (EIC_CONFIG0) Filter Enable 7 Mask */
-#define EIC_CONFIG0_FILTEN7(value)            (EIC_CONFIG0_FILTEN7_Msk & (_UINT32_(value) << EIC_CONFIG0_FILTEN7_Pos)) /* Assignment of value for FILTEN7 in the EIC_CONFIG0 register */
+#define EIC_CONFIG0_FILTEN7(value)            (EIC_CONFIG0_FILTEN7_Msk & ((uint32_t)(value) << EIC_CONFIG0_FILTEN7_Pos)) /* Assignment of value for FILTEN7 in the EIC_CONFIG0 register */
 #define EIC_CONFIG0_Msk                       _UINT32_(0xFFFFFFFF)                                 /* (EIC_CONFIG0) Register Mask  */
 
 
@@ -300,7 +306,7 @@
 
 #define EIC_CONFIG1_SENSE8_Pos                _UINT32_(0)                                          /* (EIC_CONFIG1) Input Sense Configuration 8 Position */
 #define EIC_CONFIG1_SENSE8_Msk                (_UINT32_(0x7) << EIC_CONFIG1_SENSE8_Pos)            /* (EIC_CONFIG1) Input Sense Configuration 8 Mask */
-#define EIC_CONFIG1_SENSE8(value)             (EIC_CONFIG1_SENSE8_Msk & (_UINT32_(value) << EIC_CONFIG1_SENSE8_Pos)) /* Assignment of value for SENSE8 in the EIC_CONFIG1 register */
+#define EIC_CONFIG1_SENSE8(value)             (EIC_CONFIG1_SENSE8_Msk & ((uint32_t)(value) << EIC_CONFIG1_SENSE8_Pos)) /* Assignment of value for SENSE8 in the EIC_CONFIG1 register */
 #define   EIC_CONFIG1_SENSE8_NONE_Val         _UINT32_(0x0)                                        /* (EIC_CONFIG1) No detection  */
 #define   EIC_CONFIG1_SENSE8_RISE_Val         _UINT32_(0x1)                                        /* (EIC_CONFIG1) Rising edge detection  */
 #define   EIC_CONFIG1_SENSE8_FALL_Val         _UINT32_(0x2)                                        /* (EIC_CONFIG1) Falling edge detection  */
@@ -315,10 +321,10 @@
 #define EIC_CONFIG1_SENSE8_LOW                (EIC_CONFIG1_SENSE8_LOW_Val << EIC_CONFIG1_SENSE8_Pos) /* (EIC_CONFIG1) Low level detection Position */
 #define EIC_CONFIG1_FILTEN8_Pos               _UINT32_(3)                                          /* (EIC_CONFIG1) Filter Enable 8 Position */
 #define EIC_CONFIG1_FILTEN8_Msk               (_UINT32_(0x1) << EIC_CONFIG1_FILTEN8_Pos)           /* (EIC_CONFIG1) Filter Enable 8 Mask */
-#define EIC_CONFIG1_FILTEN8(value)            (EIC_CONFIG1_FILTEN8_Msk & (_UINT32_(value) << EIC_CONFIG1_FILTEN8_Pos)) /* Assignment of value for FILTEN8 in the EIC_CONFIG1 register */
+#define EIC_CONFIG1_FILTEN8(value)            (EIC_CONFIG1_FILTEN8_Msk & ((uint32_t)(value) << EIC_CONFIG1_FILTEN8_Pos)) /* Assignment of value for FILTEN8 in the EIC_CONFIG1 register */
 #define EIC_CONFIG1_SENSE9_Pos                _UINT32_(4)                                          /* (EIC_CONFIG1) Input Sense Configuration 9 Position */
 #define EIC_CONFIG1_SENSE9_Msk                (_UINT32_(0x7) << EIC_CONFIG1_SENSE9_Pos)            /* (EIC_CONFIG1) Input Sense Configuration 9 Mask */
-#define EIC_CONFIG1_SENSE9(value)             (EIC_CONFIG1_SENSE9_Msk & (_UINT32_(value) << EIC_CONFIG1_SENSE9_Pos)) /* Assignment of value for SENSE9 in the EIC_CONFIG1 register */
+#define EIC_CONFIG1_SENSE9(value)             (EIC_CONFIG1_SENSE9_Msk & ((uint32_t)(value) << EIC_CONFIG1_SENSE9_Pos)) /* Assignment of value for SENSE9 in the EIC_CONFIG1 register */
 #define   EIC_CONFIG1_SENSE9_NONE_Val         _UINT32_(0x0)                                        /* (EIC_CONFIG1) No detection  */
 #define   EIC_CONFIG1_SENSE9_RISE_Val         _UINT32_(0x1)                                        /* (EIC_CONFIG1) Rising edge detection  */
 #define   EIC_CONFIG1_SENSE9_FALL_Val         _UINT32_(0x2)                                        /* (EIC_CONFIG1) Falling edge detection  */
@@ -333,10 +339,10 @@
 #define EIC_CONFIG1_SENSE9_LOW                (EIC_CONFIG1_SENSE9_LOW_Val << EIC_CONFIG1_SENSE9_Pos) /* (EIC_CONFIG1) Low level detection Position */
 #define EIC_CONFIG1_FILTEN9_Pos               _UINT32_(7)                                          /* (EIC_CONFIG1) Filter Enable 9 Position */
 #define EIC_CONFIG1_FILTEN9_Msk               (_UINT32_(0x1) << EIC_CONFIG1_FILTEN9_Pos)           /* (EIC_CONFIG1) Filter Enable 9 Mask */
-#define EIC_CONFIG1_FILTEN9(value)            (EIC_CONFIG1_FILTEN9_Msk & (_UINT32_(value) << EIC_CONFIG1_FILTEN9_Pos)) /* Assignment of value for FILTEN9 in the EIC_CONFIG1 register */
+#define EIC_CONFIG1_FILTEN9(value)            (EIC_CONFIG1_FILTEN9_Msk & ((uint32_t)(value) << EIC_CONFIG1_FILTEN9_Pos)) /* Assignment of value for FILTEN9 in the EIC_CONFIG1 register */
 #define EIC_CONFIG1_SENSE10_Pos               _UINT32_(8)                                          /* (EIC_CONFIG1) Input Sense Configuration 10 Position */
 #define EIC_CONFIG1_SENSE10_Msk               (_UINT32_(0x7) << EIC_CONFIG1_SENSE10_Pos)           /* (EIC_CONFIG1) Input Sense Configuration 10 Mask */
-#define EIC_CONFIG1_SENSE10(value)            (EIC_CONFIG1_SENSE10_Msk & (_UINT32_(value) << EIC_CONFIG1_SENSE10_Pos)) /* Assignment of value for SENSE10 in the EIC_CONFIG1 register */
+#define EIC_CONFIG1_SENSE10(value)            (EIC_CONFIG1_SENSE10_Msk & ((uint32_t)(value) << EIC_CONFIG1_SENSE10_Pos)) /* Assignment of value for SENSE10 in the EIC_CONFIG1 register */
 #define   EIC_CONFIG1_SENSE10_NONE_Val        _UINT32_(0x0)                                        /* (EIC_CONFIG1) No detection  */
 #define   EIC_CONFIG1_SENSE10_RISE_Val        _UINT32_(0x1)                                        /* (EIC_CONFIG1) Rising edge detection  */
 #define   EIC_CONFIG1_SENSE10_FALL_Val        _UINT32_(0x2)                                        /* (EIC_CONFIG1) Falling edge detection  */
@@ -351,10 +357,10 @@
 #define EIC_CONFIG1_SENSE10_LOW               (EIC_CONFIG1_SENSE10_LOW_Val << EIC_CONFIG1_SENSE10_Pos) /* (EIC_CONFIG1) Low level detection Position */
 #define EIC_CONFIG1_FILTEN10_Pos              _UINT32_(11)                                         /* (EIC_CONFIG1) Filter Enable 10 Position */
 #define EIC_CONFIG1_FILTEN10_Msk              (_UINT32_(0x1) << EIC_CONFIG1_FILTEN10_Pos)          /* (EIC_CONFIG1) Filter Enable 10 Mask */
-#define EIC_CONFIG1_FILTEN10(value)           (EIC_CONFIG1_FILTEN10_Msk & (_UINT32_(value) << EIC_CONFIG1_FILTEN10_Pos)) /* Assignment of value for FILTEN10 in the EIC_CONFIG1 register */
+#define EIC_CONFIG1_FILTEN10(value)           (EIC_CONFIG1_FILTEN10_Msk & ((uint32_t)(value) << EIC_CONFIG1_FILTEN10_Pos)) /* Assignment of value for FILTEN10 in the EIC_CONFIG1 register */
 #define EIC_CONFIG1_SENSE11_Pos               _UINT32_(12)                                         /* (EIC_CONFIG1) Input Sense Configuration 11 Position */
 #define EIC_CONFIG1_SENSE11_Msk               (_UINT32_(0x7) << EIC_CONFIG1_SENSE11_Pos)           /* (EIC_CONFIG1) Input Sense Configuration 11 Mask */
-#define EIC_CONFIG1_SENSE11(value)            (EIC_CONFIG1_SENSE11_Msk & (_UINT32_(value) << EIC_CONFIG1_SENSE11_Pos)) /* Assignment of value for SENSE11 in the EIC_CONFIG1 register */
+#define EIC_CONFIG1_SENSE11(value)            (EIC_CONFIG1_SENSE11_Msk & ((uint32_t)(value) << EIC_CONFIG1_SENSE11_Pos)) /* Assignment of value for SENSE11 in the EIC_CONFIG1 register */
 #define   EIC_CONFIG1_SENSE11_NONE_Val        _UINT32_(0x0)                                        /* (EIC_CONFIG1) No detection  */
 #define   EIC_CONFIG1_SENSE11_RISE_Val        _UINT32_(0x1)                                        /* (EIC_CONFIG1) Rising edge detection  */
 #define   EIC_CONFIG1_SENSE11_FALL_Val        _UINT32_(0x2)                                        /* (EIC_CONFIG1) Falling edge detection  */
@@ -369,10 +375,10 @@
 #define EIC_CONFIG1_SENSE11_LOW               (EIC_CONFIG1_SENSE11_LOW_Val << EIC_CONFIG1_SENSE11_Pos) /* (EIC_CONFIG1) Low level detection Position */
 #define EIC_CONFIG1_FILTEN11_Pos              _UINT32_(15)                                         /* (EIC_CONFIG1) Filter Enable 11 Position */
 #define EIC_CONFIG1_FILTEN11_Msk              (_UINT32_(0x1) << EIC_CONFIG1_FILTEN11_Pos)          /* (EIC_CONFIG1) Filter Enable 11 Mask */
-#define EIC_CONFIG1_FILTEN11(value)           (EIC_CONFIG1_FILTEN11_Msk & (_UINT32_(value) << EIC_CONFIG1_FILTEN11_Pos)) /* Assignment of value for FILTEN11 in the EIC_CONFIG1 register */
+#define EIC_CONFIG1_FILTEN11(value)           (EIC_CONFIG1_FILTEN11_Msk & ((uint32_t)(value) << EIC_CONFIG1_FILTEN11_Pos)) /* Assignment of value for FILTEN11 in the EIC_CONFIG1 register */
 #define EIC_CONFIG1_SENSE12_Pos               _UINT32_(16)                                         /* (EIC_CONFIG1) Input Sense Configuration 12 Position */
 #define EIC_CONFIG1_SENSE12_Msk               (_UINT32_(0x7) << EIC_CONFIG1_SENSE12_Pos)           /* (EIC_CONFIG1) Input Sense Configuration 12 Mask */
-#define EIC_CONFIG1_SENSE12(value)            (EIC_CONFIG1_SENSE12_Msk & (_UINT32_(value) << EIC_CONFIG1_SENSE12_Pos)) /* Assignment of value for SENSE12 in the EIC_CONFIG1 register */
+#define EIC_CONFIG1_SENSE12(value)            (EIC_CONFIG1_SENSE12_Msk & ((uint32_t)(value) << EIC_CONFIG1_SENSE12_Pos)) /* Assignment of value for SENSE12 in the EIC_CONFIG1 register */
 #define   EIC_CONFIG1_SENSE12_NONE_Val        _UINT32_(0x0)                                        /* (EIC_CONFIG1) No detection  */
 #define   EIC_CONFIG1_SENSE12_RISE_Val        _UINT32_(0x1)                                        /* (EIC_CONFIG1) Rising edge detection  */
 #define   EIC_CONFIG1_SENSE12_FALL_Val        _UINT32_(0x2)                                        /* (EIC_CONFIG1) Falling edge detection  */
@@ -387,10 +393,10 @@
 #define EIC_CONFIG1_SENSE12_LOW               (EIC_CONFIG1_SENSE12_LOW_Val << EIC_CONFIG1_SENSE12_Pos) /* (EIC_CONFIG1) Low level detection Position */
 #define EIC_CONFIG1_FILTEN12_Pos              _UINT32_(19)                                         /* (EIC_CONFIG1) Filter Enable 12 Position */
 #define EIC_CONFIG1_FILTEN12_Msk              (_UINT32_(0x1) << EIC_CONFIG1_FILTEN12_Pos)          /* (EIC_CONFIG1) Filter Enable 12 Mask */
-#define EIC_CONFIG1_FILTEN12(value)           (EIC_CONFIG1_FILTEN12_Msk & (_UINT32_(value) << EIC_CONFIG1_FILTEN12_Pos)) /* Assignment of value for FILTEN12 in the EIC_CONFIG1 register */
+#define EIC_CONFIG1_FILTEN12(value)           (EIC_CONFIG1_FILTEN12_Msk & ((uint32_t)(value) << EIC_CONFIG1_FILTEN12_Pos)) /* Assignment of value for FILTEN12 in the EIC_CONFIG1 register */
 #define EIC_CONFIG1_SENSE13_Pos               _UINT32_(20)                                         /* (EIC_CONFIG1) Input Sense Configuration 13 Position */
 #define EIC_CONFIG1_SENSE13_Msk               (_UINT32_(0x7) << EIC_CONFIG1_SENSE13_Pos)           /* (EIC_CONFIG1) Input Sense Configuration 13 Mask */
-#define EIC_CONFIG1_SENSE13(value)            (EIC_CONFIG1_SENSE13_Msk & (_UINT32_(value) << EIC_CONFIG1_SENSE13_Pos)) /* Assignment of value for SENSE13 in the EIC_CONFIG1 register */
+#define EIC_CONFIG1_SENSE13(value)            (EIC_CONFIG1_SENSE13_Msk & ((uint32_t)(value) << EIC_CONFIG1_SENSE13_Pos)) /* Assignment of value for SENSE13 in the EIC_CONFIG1 register */
 #define   EIC_CONFIG1_SENSE13_NONE_Val        _UINT32_(0x0)                                        /* (EIC_CONFIG1) No detection  */
 #define   EIC_CONFIG1_SENSE13_RISE_Val        _UINT32_(0x1)                                        /* (EIC_CONFIG1) Rising edge detection  */
 #define   EIC_CONFIG1_SENSE13_FALL_Val        _UINT32_(0x2)                                        /* (EIC_CONFIG1) Falling edge detection  */
@@ -405,10 +411,10 @@
 #define EIC_CONFIG1_SENSE13_LOW               (EIC_CONFIG1_SENSE13_LOW_Val << EIC_CONFIG1_SENSE13_Pos) /* (EIC_CONFIG1) Low level detection Position */
 #define EIC_CONFIG1_FILTEN13_Pos              _UINT32_(23)                                         /* (EIC_CONFIG1) Filter Enable 13 Position */
 #define EIC_CONFIG1_FILTEN13_Msk              (_UINT32_(0x1) << EIC_CONFIG1_FILTEN13_Pos)          /* (EIC_CONFIG1) Filter Enable 13 Mask */
-#define EIC_CONFIG1_FILTEN13(value)           (EIC_CONFIG1_FILTEN13_Msk & (_UINT32_(value) << EIC_CONFIG1_FILTEN13_Pos)) /* Assignment of value for FILTEN13 in the EIC_CONFIG1 register */
+#define EIC_CONFIG1_FILTEN13(value)           (EIC_CONFIG1_FILTEN13_Msk & ((uint32_t)(value) << EIC_CONFIG1_FILTEN13_Pos)) /* Assignment of value for FILTEN13 in the EIC_CONFIG1 register */
 #define EIC_CONFIG1_SENSE14_Pos               _UINT32_(24)                                         /* (EIC_CONFIG1) Input Sense Configuration 14 Position */
 #define EIC_CONFIG1_SENSE14_Msk               (_UINT32_(0x7) << EIC_CONFIG1_SENSE14_Pos)           /* (EIC_CONFIG1) Input Sense Configuration 14 Mask */
-#define EIC_CONFIG1_SENSE14(value)            (EIC_CONFIG1_SENSE14_Msk & (_UINT32_(value) << EIC_CONFIG1_SENSE14_Pos)) /* Assignment of value for SENSE14 in the EIC_CONFIG1 register */
+#define EIC_CONFIG1_SENSE14(value)            (EIC_CONFIG1_SENSE14_Msk & ((uint32_t)(value) << EIC_CONFIG1_SENSE14_Pos)) /* Assignment of value for SENSE14 in the EIC_CONFIG1 register */
 #define   EIC_CONFIG1_SENSE14_NONE_Val        _UINT32_(0x0)                                        /* (EIC_CONFIG1) No detection  */
 #define   EIC_CONFIG1_SENSE14_RISE_Val        _UINT32_(0x1)                                        /* (EIC_CONFIG1) Rising edge detection  */
 #define   EIC_CONFIG1_SENSE14_FALL_Val        _UINT32_(0x2)                                        /* (EIC_CONFIG1) Falling edge detection  */
@@ -423,10 +429,10 @@
 #define EIC_CONFIG1_SENSE14_LOW               (EIC_CONFIG1_SENSE14_LOW_Val << EIC_CONFIG1_SENSE14_Pos) /* (EIC_CONFIG1) Low level detection Position */
 #define EIC_CONFIG1_FILTEN14_Pos              _UINT32_(27)                                         /* (EIC_CONFIG1) Filter Enable 14 Position */
 #define EIC_CONFIG1_FILTEN14_Msk              (_UINT32_(0x1) << EIC_CONFIG1_FILTEN14_Pos)          /* (EIC_CONFIG1) Filter Enable 14 Mask */
-#define EIC_CONFIG1_FILTEN14(value)           (EIC_CONFIG1_FILTEN14_Msk & (_UINT32_(value) << EIC_CONFIG1_FILTEN14_Pos)) /* Assignment of value for FILTEN14 in the EIC_CONFIG1 register */
+#define EIC_CONFIG1_FILTEN14(value)           (EIC_CONFIG1_FILTEN14_Msk & ((uint32_t)(value) << EIC_CONFIG1_FILTEN14_Pos)) /* Assignment of value for FILTEN14 in the EIC_CONFIG1 register */
 #define EIC_CONFIG1_SENSE15_Pos               _UINT32_(28)                                         /* (EIC_CONFIG1) Input Sense Configuration 15 Position */
 #define EIC_CONFIG1_SENSE15_Msk               (_UINT32_(0x7) << EIC_CONFIG1_SENSE15_Pos)           /* (EIC_CONFIG1) Input Sense Configuration 15 Mask */
-#define EIC_CONFIG1_SENSE15(value)            (EIC_CONFIG1_SENSE15_Msk & (_UINT32_(value) << EIC_CONFIG1_SENSE15_Pos)) /* Assignment of value for SENSE15 in the EIC_CONFIG1 register */
+#define EIC_CONFIG1_SENSE15(value)            (EIC_CONFIG1_SENSE15_Msk & ((uint32_t)(value) << EIC_CONFIG1_SENSE15_Pos)) /* Assignment of value for SENSE15 in the EIC_CONFIG1 register */
 #define   EIC_CONFIG1_SENSE15_NONE_Val        _UINT32_(0x0)                                        /* (EIC_CONFIG1) No detection  */
 #define   EIC_CONFIG1_SENSE15_RISE_Val        _UINT32_(0x1)                                        /* (EIC_CONFIG1) Rising edge detection  */
 #define   EIC_CONFIG1_SENSE15_FALL_Val        _UINT32_(0x2)                                        /* (EIC_CONFIG1) Falling edge detection  */
@@ -441,7 +447,7 @@
 #define EIC_CONFIG1_SENSE15_LOW               (EIC_CONFIG1_SENSE15_LOW_Val << EIC_CONFIG1_SENSE15_Pos) /* (EIC_CONFIG1) Low level detection Position */
 #define EIC_CONFIG1_FILTEN15_Pos              _UINT32_(31)                                         /* (EIC_CONFIG1) Filter Enable 15 Position */
 #define EIC_CONFIG1_FILTEN15_Msk              (_UINT32_(0x1) << EIC_CONFIG1_FILTEN15_Pos)          /* (EIC_CONFIG1) Filter Enable 15 Mask */
-#define EIC_CONFIG1_FILTEN15(value)           (EIC_CONFIG1_FILTEN15_Msk & (_UINT32_(value) << EIC_CONFIG1_FILTEN15_Pos)) /* Assignment of value for FILTEN15 in the EIC_CONFIG1 register */
+#define EIC_CONFIG1_FILTEN15(value)           (EIC_CONFIG1_FILTEN15_Msk & ((uint32_t)(value) << EIC_CONFIG1_FILTEN15_Pos)) /* Assignment of value for FILTEN15 in the EIC_CONFIG1 register */
 #define EIC_CONFIG1_Msk                       _UINT32_(0xFFFFFFFF)                                 /* (EIC_CONFIG1) Register Mask  */
 
 
@@ -450,7 +456,7 @@
 
 #define EIC_DEBOUNCEN_DEBOUNCEN_Pos           _UINT32_(0)                                          /* (EIC_DEBOUNCEN) Debouncer Enable Position */
 #define EIC_DEBOUNCEN_DEBOUNCEN_Msk           (_UINT32_(0xFFFF) << EIC_DEBOUNCEN_DEBOUNCEN_Pos)    /* (EIC_DEBOUNCEN) Debouncer Enable Mask */
-#define EIC_DEBOUNCEN_DEBOUNCEN(value)        (EIC_DEBOUNCEN_DEBOUNCEN_Msk & (_UINT32_(value) << EIC_DEBOUNCEN_DEBOUNCEN_Pos)) /* Assignment of value for DEBOUNCEN in the EIC_DEBOUNCEN register */
+#define EIC_DEBOUNCEN_DEBOUNCEN(value)        (EIC_DEBOUNCEN_DEBOUNCEN_Msk & ((uint32_t)(value) << EIC_DEBOUNCEN_DEBOUNCEN_Pos)) /* Assignment of value for DEBOUNCEN in the EIC_DEBOUNCEN register */
 #define EIC_DEBOUNCEN_Msk                     _UINT32_(0x0000FFFF)                                 /* (EIC_DEBOUNCEN) Register Mask  */
 
 
@@ -459,7 +465,7 @@
 
 #define EIC_DPRESCALER_PRESCALER0_Pos         _UINT32_(0)                                          /* (EIC_DPRESCALER) Debouncer Prescaler Position */
 #define EIC_DPRESCALER_PRESCALER0_Msk         (_UINT32_(0x7) << EIC_DPRESCALER_PRESCALER0_Pos)     /* (EIC_DPRESCALER) Debouncer Prescaler Mask */
-#define EIC_DPRESCALER_PRESCALER0(value)      (EIC_DPRESCALER_PRESCALER0_Msk & (_UINT32_(value) << EIC_DPRESCALER_PRESCALER0_Pos)) /* Assignment of value for PRESCALER0 in the EIC_DPRESCALER register */
+#define EIC_DPRESCALER_PRESCALER0(value)      (EIC_DPRESCALER_PRESCALER0_Msk & ((uint32_t)(value) << EIC_DPRESCALER_PRESCALER0_Pos)) /* Assignment of value for PRESCALER0 in the EIC_DPRESCALER register */
 #define   EIC_DPRESCALER_PRESCALER0_DIV2_Val  _UINT32_(0x0)                                        /* (EIC_DPRESCALER) EIC clock divided by 2  */
 #define   EIC_DPRESCALER_PRESCALER0_DIV4_Val  _UINT32_(0x1)                                        /* (EIC_DPRESCALER) EIC clock divided by 4  */
 #define   EIC_DPRESCALER_PRESCALER0_DIV8_Val  _UINT32_(0x2)                                        /* (EIC_DPRESCALER) EIC clock divided by 8  */
@@ -478,14 +484,14 @@
 #define EIC_DPRESCALER_PRESCALER0_DIV256      (EIC_DPRESCALER_PRESCALER0_DIV256_Val << EIC_DPRESCALER_PRESCALER0_Pos) /* (EIC_DPRESCALER) EIC clock divided by 256 Position */
 #define EIC_DPRESCALER_STATES0_Pos            _UINT32_(3)                                          /* (EIC_DPRESCALER) Debouncer number of states Position */
 #define EIC_DPRESCALER_STATES0_Msk            (_UINT32_(0x1) << EIC_DPRESCALER_STATES0_Pos)        /* (EIC_DPRESCALER) Debouncer number of states Mask */
-#define EIC_DPRESCALER_STATES0(value)         (EIC_DPRESCALER_STATES0_Msk & (_UINT32_(value) << EIC_DPRESCALER_STATES0_Pos)) /* Assignment of value for STATES0 in the EIC_DPRESCALER register */
+#define EIC_DPRESCALER_STATES0(value)         (EIC_DPRESCALER_STATES0_Msk & ((uint32_t)(value) << EIC_DPRESCALER_STATES0_Pos)) /* Assignment of value for STATES0 in the EIC_DPRESCALER register */
 #define   EIC_DPRESCALER_STATES0_LFREQ3_Val   _UINT32_(0x0)                                        /* (EIC_DPRESCALER) 3 low frequency samples  */
 #define   EIC_DPRESCALER_STATES0_LFREQ7_Val   _UINT32_(0x1)                                        /* (EIC_DPRESCALER) 7 low frequency samples  */
 #define EIC_DPRESCALER_STATES0_LFREQ3         (EIC_DPRESCALER_STATES0_LFREQ3_Val << EIC_DPRESCALER_STATES0_Pos) /* (EIC_DPRESCALER) 3 low frequency samples Position */
 #define EIC_DPRESCALER_STATES0_LFREQ7         (EIC_DPRESCALER_STATES0_LFREQ7_Val << EIC_DPRESCALER_STATES0_Pos) /* (EIC_DPRESCALER) 7 low frequency samples Position */
 #define EIC_DPRESCALER_PRESCALER1_Pos         _UINT32_(4)                                          /* (EIC_DPRESCALER) Debouncer Prescaler Position */
 #define EIC_DPRESCALER_PRESCALER1_Msk         (_UINT32_(0x7) << EIC_DPRESCALER_PRESCALER1_Pos)     /* (EIC_DPRESCALER) Debouncer Prescaler Mask */
-#define EIC_DPRESCALER_PRESCALER1(value)      (EIC_DPRESCALER_PRESCALER1_Msk & (_UINT32_(value) << EIC_DPRESCALER_PRESCALER1_Pos)) /* Assignment of value for PRESCALER1 in the EIC_DPRESCALER register */
+#define EIC_DPRESCALER_PRESCALER1(value)      (EIC_DPRESCALER_PRESCALER1_Msk & ((uint32_t)(value) << EIC_DPRESCALER_PRESCALER1_Pos)) /* Assignment of value for PRESCALER1 in the EIC_DPRESCALER register */
 #define   EIC_DPRESCALER_PRESCALER1_DIV2_Val  _UINT32_(0x0)                                        /* (EIC_DPRESCALER) EIC clock divided by 2  */
 #define   EIC_DPRESCALER_PRESCALER1_DIV4_Val  _UINT32_(0x1)                                        /* (EIC_DPRESCALER) EIC clock divided by 4  */
 #define   EIC_DPRESCALER_PRESCALER1_DIV8_Val  _UINT32_(0x2)                                        /* (EIC_DPRESCALER) EIC clock divided by 8  */
@@ -504,14 +510,14 @@
 #define EIC_DPRESCALER_PRESCALER1_DIV256      (EIC_DPRESCALER_PRESCALER1_DIV256_Val << EIC_DPRESCALER_PRESCALER1_Pos) /* (EIC_DPRESCALER) EIC clock divided by 256 Position */
 #define EIC_DPRESCALER_STATES1_Pos            _UINT32_(7)                                          /* (EIC_DPRESCALER) Debouncer number of states Position */
 #define EIC_DPRESCALER_STATES1_Msk            (_UINT32_(0x1) << EIC_DPRESCALER_STATES1_Pos)        /* (EIC_DPRESCALER) Debouncer number of states Mask */
-#define EIC_DPRESCALER_STATES1(value)         (EIC_DPRESCALER_STATES1_Msk & (_UINT32_(value) << EIC_DPRESCALER_STATES1_Pos)) /* Assignment of value for STATES1 in the EIC_DPRESCALER register */
+#define EIC_DPRESCALER_STATES1(value)         (EIC_DPRESCALER_STATES1_Msk & ((uint32_t)(value) << EIC_DPRESCALER_STATES1_Pos)) /* Assignment of value for STATES1 in the EIC_DPRESCALER register */
 #define   EIC_DPRESCALER_STATES1_LFREQ3_Val   _UINT32_(0x0)                                        /* (EIC_DPRESCALER) 3 low frequency samples  */
 #define   EIC_DPRESCALER_STATES1_LFREQ7_Val   _UINT32_(0x1)                                        /* (EIC_DPRESCALER) 7 low frequency samples  */
 #define EIC_DPRESCALER_STATES1_LFREQ3         (EIC_DPRESCALER_STATES1_LFREQ3_Val << EIC_DPRESCALER_STATES1_Pos) /* (EIC_DPRESCALER) 3 low frequency samples Position */
 #define EIC_DPRESCALER_STATES1_LFREQ7         (EIC_DPRESCALER_STATES1_LFREQ7_Val << EIC_DPRESCALER_STATES1_Pos) /* (EIC_DPRESCALER) 7 low frequency samples Position */
 #define EIC_DPRESCALER_TICKON_Pos             _UINT32_(16)                                         /* (EIC_DPRESCALER) Pin Sampler frequency selection Position */
 #define EIC_DPRESCALER_TICKON_Msk             (_UINT32_(0x1) << EIC_DPRESCALER_TICKON_Pos)         /* (EIC_DPRESCALER) Pin Sampler frequency selection Mask */
-#define EIC_DPRESCALER_TICKON(value)          (EIC_DPRESCALER_TICKON_Msk & (_UINT32_(value) << EIC_DPRESCALER_TICKON_Pos)) /* Assignment of value for TICKON in the EIC_DPRESCALER register */
+#define EIC_DPRESCALER_TICKON(value)          (EIC_DPRESCALER_TICKON_Msk & ((uint32_t)(value) << EIC_DPRESCALER_TICKON_Pos)) /* Assignment of value for TICKON in the EIC_DPRESCALER register */
 #define   EIC_DPRESCALER_TICKON_CLK_GCLK_EIC_Val _UINT32_(0x0)                                        /* (EIC_DPRESCALER) Clocked by GCLK  */
 #define   EIC_DPRESCALER_TICKON_CLK_LFREQ_Val _UINT32_(0x1)                                        /* (EIC_DPRESCALER) Clocked by Low Frequency Clock  */
 #define EIC_DPRESCALER_TICKON_CLK_GCLK_EIC    (EIC_DPRESCALER_TICKON_CLK_GCLK_EIC_Val << EIC_DPRESCALER_TICKON_Pos) /* (EIC_DPRESCALER) Clocked by GCLK Position */
@@ -524,7 +530,7 @@
 
 #define EIC_PINSTATE_PINSTATE_Pos             _UINT32_(0)                                          /* (EIC_PINSTATE) Pin State Position */
 #define EIC_PINSTATE_PINSTATE_Msk             (_UINT32_(0xFFFF) << EIC_PINSTATE_PINSTATE_Pos)      /* (EIC_PINSTATE) Pin State Mask */
-#define EIC_PINSTATE_PINSTATE(value)          (EIC_PINSTATE_PINSTATE_Msk & (_UINT32_(value) << EIC_PINSTATE_PINSTATE_Pos)) /* Assignment of value for PINSTATE in the EIC_PINSTATE register */
+#define EIC_PINSTATE_PINSTATE(value)          (EIC_PINSTATE_PINSTATE_Msk & ((uint32_t)(value) << EIC_PINSTATE_PINSTATE_Pos)) /* Assignment of value for PINSTATE in the EIC_PINSTATE register */
 #define EIC_PINSTATE_Msk                      _UINT32_(0x0000FFFF)                                 /* (EIC_PINSTATE) Register Mask  */
 
 
