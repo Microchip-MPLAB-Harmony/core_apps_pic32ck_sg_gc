@@ -243,11 +243,11 @@ SYS_MODULE_OBJ DRV_AT24_Initialize(
     const SYS_MODULE_INIT * const init
 )
 {
-  
-/* MISRA C-2012 Rule 11.3, 11.8 deviated below. Deviation record ID -  H3_MISRAC_2012_R_11_3_DR_1 & H3_MISRAC_2012_R_11_8_DR_1*/
+
+/* MISRA C-2023 Rule 11.3, 11.8 deviated below. Deviation record ID -  H3_MISRAC_2023_R_11_3_DR_1 & H3_MISRAC_2023_R_11_8_DR_1*/
 
     DRV_AT24_INIT *at24Init = (DRV_AT24_INIT *)init;
-    
+
 /* MISRAC 2012 deviation block end */
 
     /* Validate the request */
@@ -380,7 +380,7 @@ bool DRV_AT24_Read(
     /* For 8-bit address */
     gDrvAT24Obj.writeBuffer[nBytes] = (uint8_t)((address & 0x000000FFU));
     nBytes++;
-    
+
     gDrvAT24Obj.command = DRV_AT24_CMD_READ;
 
     if(gDrvAT24Obj.i2cPlib->writeRead(slaveAddr, \
@@ -477,4 +477,4 @@ bool DRV_AT24_GeometryGet(const DRV_HANDLE handle, DRV_AT24_GEOMETRY *geometry)
     geometry->blockStartAddress = gDrvAT24Obj.blockStartAddress;
 
     return true;
-} 
+}

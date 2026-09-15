@@ -147,6 +147,8 @@ typedef enum
 
     SYS_PORT_PIN_PA18 = 18,
 
+    SYS_PORT_PIN_PA19 = 19,
+
     SYS_PORT_PIN_PA20 = 20,
 
     SYS_PORT_PIN_PA21 = 21,
