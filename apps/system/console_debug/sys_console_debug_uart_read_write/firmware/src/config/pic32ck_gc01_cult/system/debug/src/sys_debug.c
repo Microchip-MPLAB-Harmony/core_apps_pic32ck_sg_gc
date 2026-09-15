@@ -51,6 +51,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
+/* MISRAC-2023 Rule 17.1 deviation taken for using stdarg.h header file */
 #include <stdarg.h>
 #include "configuration.h"
 #include "system/system.h"
@@ -62,8 +63,8 @@ static SYS_DEBUG_INSTANCE sysDebugInstance;
 
 SYS_ERROR_LEVEL gblErrLvl;
 
-/* MISRA C-2012 Rule 11.3, 11.8 deviated below. Deviation record ID -  
-   H3_MISRAC_2012_R_11_3_DR_1 & H3_MISRAC_2012_R_11_8_DR_1*/
+/* MISRA C-2023 Rule 11.3, 11.8 deviated below. Deviation record ID -
+   H3_MISRAC_2023_R_11_3_DR_1 & H3_MISRAC_2023_R_11_8_DR_1*/
 
 SYS_MODULE_OBJ SYS_DEBUG_Initialize(
     const SYS_MODULE_INDEX index,
@@ -110,6 +111,6 @@ bool SYS_DEBUG_Redirect(const SYS_MODULE_INDEX index)
         sysDebugInstance.debugConsole = index;
         checkflag = true;
     }
-    
-    return checkflag;    
+
+    return checkflag;
 }

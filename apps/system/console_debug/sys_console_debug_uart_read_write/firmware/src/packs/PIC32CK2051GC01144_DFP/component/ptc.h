@@ -1,7 +1,9 @@
 /*
  * Component description for PTC
  *
- * Copyright (c) 2024 Microchip Technology Inc. and its subsidiaries.
+ * Copyright (c) 2026 Microchip Technology Inc. and its subsidiaries.
+ *
+ * SPDX-License-Identifier: Apache-2.0
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -17,9 +19,13 @@
  *
  */
 
-/*  file generated from device description file (ATDF) version 2024-04-02T09:16:01Z  */
+/*  file generated from device description file (ATDF) version 2026-09-01T07:31:34Z  */
 #ifndef _PIC32CKGC01_PTC_COMPONENT_H_
 #define _PIC32CKGC01_PTC_COMPONENT_H_
+
+#if !defined(DISABLE_CMSIS)
+#include "core_cm33.h"
+#endif /* !defined(DISABLE_CMSIS) */
 
 /* ************************************************************************** */
 /*                      SOFTWARE API DEFINITION FOR PTC                       */
