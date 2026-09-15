@@ -429,7 +429,7 @@ SYS_STATUS DRV_MEMORY_Status( SYS_MODULE_OBJ object );
       called in the thread context.
 */
 
-/* MISRA C-2012 Rule 8.6 deviated:10 Deviation record ID -  H3_MISRAC_2012_R_8_6_DR_1 */
+/* MISRA C-2023 Rule 8.6 deviated:10 Deviation record ID -  H3_MISRAC_2023_R_8_6_DR_1 */
 
 void DRV_MEMORY_Tasks( SYS_MODULE_OBJ object );
 
