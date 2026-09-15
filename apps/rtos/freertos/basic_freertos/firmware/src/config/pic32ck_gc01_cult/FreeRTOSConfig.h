@@ -1,5 +1,5 @@
-/* MISRA C-2012 Rule 3.1, 5.4 deviated below. Deviation record ID -
-   H3_MISRAC_2012_R_3_1_DR_1 & H3_MISRAC_2012_R_5_4_DR_1*/
+/* MISRA C-2023 Rule 3.1, 5.4 deviated below. Deviation record ID -
+   H3_MISRAC_2023_R_3_1_DR_1 & H3_MISRAC_2023_R_5_4_DR_1*/
 
 #ifndef FREERTOS_CONFIG_H
 #define FREERTOS_CONFIG_H

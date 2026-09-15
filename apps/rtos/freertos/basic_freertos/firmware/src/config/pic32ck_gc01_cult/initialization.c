@@ -97,8 +97,6 @@
 #pragma config FUSES_USERCFG1_FUCFG2_BRCFGUDSSMOR_BOR_TRIP = 0x3U
 #pragma config FUSES_USERCFG1_FUCFG3_HYST_BOR_VDDIO = SET
 #pragma config FUSES_USERCFG1_FUCFG3_BOR_TRIP_VDDIO = 0x3U
-#pragma config FUSES_USERCFG1_FUCFG3_HYST_BOR_VDDIOB = SET
-#pragma config FUSES_USERCFG1_FUCFG3_BOR_TRIP_VDDIOB = 0x3U
 #pragma config FUSES_USERCFG1_FUCFG3_HYST_BOR_VDDA = SET
 #pragma config FUSES_USERCFG1_FUCFG3_BOR_TRIP_VDDA = 0x3U
 #pragma config FUSES_USERCFG1_FUCFG3_HYST_BOR_VDDREG = SET
@@ -228,8 +226,6 @@
 #pragma config FUSES_USERCFG2_FUCFG2_BRCFGUDSSMOR_BOR_TRIP = 0x3U
 #pragma config FUSES_USERCFG2_FUCFG3_HYST_BOR_VDDIO = SET
 #pragma config FUSES_USERCFG2_FUCFG3_BOR_TRIP_VDDIO = 0x3U
-#pragma config FUSES_USERCFG2_FUCFG3_HYST_BOR_VDDIOB = SET
-#pragma config FUSES_USERCFG2_FUCFG3_BOR_TRIP_VDDIOB = 0x3U
 #pragma config FUSES_USERCFG2_FUCFG3_HYST_BOR_VDDA = SET
 #pragma config FUSES_USERCFG2_FUCFG3_BOR_TRIP_VDDA = 0x3U
 #pragma config FUSES_USERCFG2_FUCFG3_HYST_BOR_VDDREG = SET
@@ -325,10 +321,10 @@
 // *****************************************************************************
 // *****************************************************************************
 /* Following MISRA-C rules are deviated in the below code block */
-/* MISRA C-2012 Rule 7.2 - Deviation record ID - H3_MISRAC_2012_R_7_2_DR_1 */
-/* MISRA C-2012 Rule 11.1 - Deviation record ID - H3_MISRAC_2012_R_11_1_DR_1 */
-/* MISRA C-2012 Rule 11.3 - Deviation record ID - H3_MISRAC_2012_R_11_3_DR_1 */
-/* MISRA C-2012 Rule 11.8 - Deviation record ID - H3_MISRAC_2012_R_11_8_DR_1 */
+/* MISRA C-2023 Rule 7.2 - Deviation record ID - H3_MISRAC_2023_R_7_2_DR_1 */
+/* MISRA C-2023 Rule 11.1 - Deviation record ID - H3_MISRAC_2023_R_11_1_DR_1 */
+/* MISRA C-2023 Rule 11.3 - Deviation record ID - H3_MISRAC_2023_R_11_3_DR_1 */
+/* MISRA C-2023 Rule 11.8 - Deviation record ID - H3_MISRAC_2023_R_11_8_DR_1 */
 
 
 
@@ -359,7 +355,7 @@
 // *****************************************************************************
 // *****************************************************************************
 
-/* MISRAC 2012 deviation block end */
+/* MISRAC 2023 deviation block end */
 
 /*******************************************************************************
   Function:
@@ -374,8 +370,8 @@
 void SYS_Initialize ( void* data )
 {
 
-    /* MISRAC 2012 deviation block start */
-    /* MISRA C-2012 Rule 2.2 deviated in this file.  Deviation record ID -  H3_MISRAC_2012_R_2_2_DR_1 */
+    /* MISRAC 2023 deviation block start */
+    /* MISRA C-2023 Rule 2.2 deviated in this file.  Deviation record ID -  H3_MISRAC_2023_R_2_2_DR_1 */
 
   
     PORT_Initialize();
@@ -404,7 +400,7 @@ void SYS_Initialize ( void* data )
     NVIC_Initialize();
 
 
-    /* MISRAC 2012 deviation block end */
+    /* MISRAC 2023 deviation block end */
 }
 
 /*******************************************************************************

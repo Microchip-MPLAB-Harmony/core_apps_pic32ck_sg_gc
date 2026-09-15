@@ -20,15 +20,11 @@
  */
 
 /* file generated from device description file (ATDF) version 2026-09-01T07:31:34Z */
-#ifndef _PIC32CKGC01_PDEC_INSTANCE_
-#define _PIC32CKGC01_PDEC_INSTANCE_
+#ifndef _PIC32CKGC01_BSDAP_INSTANCE_
+#define _PIC32CKGC01_BSDAP_INSTANCE_
 
 
-/* ========== Instance Parameter definitions for PDEC peripheral ========== */
-#define PDEC_CC_NUM                              (2)        /* Number of Compare Channels units */
-#define PDEC_GCLK_ID                             (38)       /* Index of Generic Clocks for Synchronous Channels */
-#define PDEC_INSTANCE_ID                         (78)       /* Instance index for PDEC */
-#define PDEC_MCLK_ID_APB                         (110)      /* Index for PDEC APB clock */
-#define PDEC_PAC_ID                              (78)       /* Index for PDEC registers write protection */
+/* ========== Instance Parameter definitions for BSDAP peripheral ========== */
+#define BSDAP_MCLK_ID_DAP                        (115)      /* Index for BSDAP DAP clock */
 
-#endif /* _PIC32CKGC01_PDEC_INSTANCE_ */
+#endif /* _PIC32CKGC01_BSDAP_INSTANCE_ */
