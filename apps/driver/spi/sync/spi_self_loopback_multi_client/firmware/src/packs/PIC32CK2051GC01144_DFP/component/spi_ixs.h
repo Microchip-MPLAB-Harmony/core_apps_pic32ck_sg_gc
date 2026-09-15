@@ -1,7 +1,9 @@
 /*
  * Component description for SPI_IXS
  *
- * Copyright (c) 2024 Microchip Technology Inc. and its subsidiaries.
+ * Copyright (c) 2026 Microchip Technology Inc. and its subsidiaries.
+ *
+ * SPDX-License-Identifier: Apache-2.0
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -17,9 +19,13 @@
  *
  */
 
-/*  file generated from device description file (ATDF) version 2024-04-02T09:16:01Z  */
+/*  file generated from device description file (ATDF) version 2026-09-01T07:31:34Z  */
 #ifndef _PIC32CKGC01_SPI_IXS_COMPONENT_H_
 #define _PIC32CKGC01_SPI_IXS_COMPONENT_H_
+
+#if !defined(DISABLE_CMSIS)
+#include "core_cm33.h"
+#endif /* !defined(DISABLE_CMSIS) */
 
 /* ************************************************************************** */
 /*                    SOFTWARE API DEFINITION FOR SPI_IXS                     */
@@ -30,13 +36,13 @@
 
 #define SPI_IXS_CTRLA_SWRST_Pos               _UINT32_(0)                                          /* (SPI_IXS_CTRLA) SPI Software Reset Position */
 #define SPI_IXS_CTRLA_SWRST_Msk               (_UINT32_(0x1) << SPI_IXS_CTRLA_SWRST_Pos)           /* (SPI_IXS_CTRLA) SPI Software Reset Mask */
-#define SPI_IXS_CTRLA_SWRST(value)            (SPI_IXS_CTRLA_SWRST_Msk & (_UINT32_(value) << SPI_IXS_CTRLA_SWRST_Pos)) /* Assignment of value for SWRST in the SPI_IXS_CTRLA register */
+#define SPI_IXS_CTRLA_SWRST(value)            (SPI_IXS_CTRLA_SWRST_Msk & ((uint32_t)(value) << SPI_IXS_CTRLA_SWRST_Pos)) /* Assignment of value for SWRST in the SPI_IXS_CTRLA register */
 #define SPI_IXS_CTRLA_ENABLE_Pos              _UINT32_(1)                                          /* (SPI_IXS_CTRLA) SPI Enable (ON) bit Position */
 #define SPI_IXS_CTRLA_ENABLE_Msk              (_UINT32_(0x1) << SPI_IXS_CTRLA_ENABLE_Pos)          /* (SPI_IXS_CTRLA) SPI Enable (ON) bit Mask */
-#define SPI_IXS_CTRLA_ENABLE(value)           (SPI_IXS_CTRLA_ENABLE_Msk & (_UINT32_(value) << SPI_IXS_CTRLA_ENABLE_Pos)) /* Assignment of value for ENABLE in the SPI_IXS_CTRLA register */
+#define SPI_IXS_CTRLA_ENABLE(value)           (SPI_IXS_CTRLA_ENABLE_Msk & ((uint32_t)(value) << SPI_IXS_CTRLA_ENABLE_Pos)) /* Assignment of value for ENABLE in the SPI_IXS_CTRLA register */
 #define SPI_IXS_CTRLA_RUNSTDBY_Pos            _UINT32_(6)                                          /* (SPI_IXS_CTRLA) RUN STANDBY Mode Enable bit Position */
 #define SPI_IXS_CTRLA_RUNSTDBY_Msk            (_UINT32_(0x1) << SPI_IXS_CTRLA_RUNSTDBY_Pos)        /* (SPI_IXS_CTRLA) RUN STANDBY Mode Enable bit Mask */
-#define SPI_IXS_CTRLA_RUNSTDBY(value)         (SPI_IXS_CTRLA_RUNSTDBY_Msk & (_UINT32_(value) << SPI_IXS_CTRLA_RUNSTDBY_Pos)) /* Assignment of value for RUNSTDBY in the SPI_IXS_CTRLA register */
+#define SPI_IXS_CTRLA_RUNSTDBY(value)         (SPI_IXS_CTRLA_RUNSTDBY_Msk & ((uint32_t)(value) << SPI_IXS_CTRLA_RUNSTDBY_Pos)) /* Assignment of value for RUNSTDBY in the SPI_IXS_CTRLA register */
 #define SPI_IXS_CTRLA_Msk                     _UINT32_(0x00000043)                                 /* (SPI_IXS_CTRLA) Register Mask  */
 
 
@@ -45,7 +51,7 @@
 
 #define SPI_IXS_SELCTRL_CLKINDLY_Pos          _UINT32_(0)                                          /* (SPI_IXS_SELCTRL) Serial Clock Input Delay for SDI sampling Position */
 #define SPI_IXS_SELCTRL_CLKINDLY_Msk          (_UINT32_(0x3) << SPI_IXS_SELCTRL_CLKINDLY_Pos)      /* (SPI_IXS_SELCTRL) Serial Clock Input Delay for SDI sampling Mask */
-#define SPI_IXS_SELCTRL_CLKINDLY(value)       (SPI_IXS_SELCTRL_CLKINDLY_Msk & (_UINT32_(value) << SPI_IXS_SELCTRL_CLKINDLY_Pos)) /* Assignment of value for CLKINDLY in the SPI_IXS_SELCTRL register */
+#define SPI_IXS_SELCTRL_CLKINDLY(value)       (SPI_IXS_SELCTRL_CLKINDLY_Msk & ((uint32_t)(value) << SPI_IXS_SELCTRL_CLKINDLY_Pos)) /* Assignment of value for CLKINDLY in the SPI_IXS_SELCTRL register */
 #define   SPI_IXS_SELCTRL_CLKINDLY_TDLY0_Val  _UINT32_(0x0)                                        /* (SPI_IXS_SELCTRL) 0 Tap Delays  */
 #define   SPI_IXS_SELCTRL_CLKINDLY_TDLY1_Val  _UINT32_(0x1)                                        /* (SPI_IXS_SELCTRL) 1 Tap Delay  */
 #define   SPI_IXS_SELCTRL_CLKINDLY_TDLY2_Val  _UINT32_(0x2)                                        /* (SPI_IXS_SELCTRL) 2 Tap Delay  */
@@ -56,7 +62,7 @@
 #define SPI_IXS_SELCTRL_CLKINDLY_TDLY3        (SPI_IXS_SELCTRL_CLKINDLY_TDLY3_Val << SPI_IXS_SELCTRL_CLKINDLY_Pos) /* (SPI_IXS_SELCTRL) 3 Tap Delay Position */
 #define SPI_IXS_SELCTRL_SRXISEL_Pos           _UINT32_(4)                                          /* (SPI_IXS_SELCTRL) SPI Receive Service Request Interrupt Select Position */
 #define SPI_IXS_SELCTRL_SRXISEL_Msk           (_UINT32_(0x3) << SPI_IXS_SELCTRL_SRXISEL_Pos)       /* (SPI_IXS_SELCTRL) SPI Receive Service Request Interrupt Select Mask */
-#define SPI_IXS_SELCTRL_SRXISEL(value)        (SPI_IXS_SELCTRL_SRXISEL_Msk & (_UINT32_(value) << SPI_IXS_SELCTRL_SRXISEL_Pos)) /* Assignment of value for SRXISEL in the SPI_IXS_SELCTRL register */
+#define SPI_IXS_SELCTRL_SRXISEL(value)        (SPI_IXS_SELCTRL_SRXISEL_Msk & ((uint32_t)(value) << SPI_IXS_SELCTRL_SRXISEL_Pos)) /* Assignment of value for SRXISEL in the SPI_IXS_SELCTRL register */
 #define   SPI_IXS_SELCTRL_SRXISEL_RXBEMPTY_Val _UINT32_(0x0)                                        /* (SPI_IXS_SELCTRL) RXB Empty  */
 #define   SPI_IXS_SELCTRL_SRXISEL_RXBNEMPTY_Val _UINT32_(0x1)                                        /* (SPI_IXS_SELCTRL) RXB Not Empty  */
 #define   SPI_IXS_SELCTRL_SRXISEL_RXBHFULL_Val _UINT32_(0x2)                                        /* (SPI_IXS_SELCTRL) RXB Half Full  */
@@ -67,16 +73,16 @@
 #define SPI_IXS_SELCTRL_SRXISEL_RXBFULL       (SPI_IXS_SELCTRL_SRXISEL_RXBFULL_Val << SPI_IXS_SELCTRL_SRXISEL_Pos) /* (SPI_IXS_SELCTRL) RXB Full Position */
 #define SPI_IXS_SELCTRL_IGNROV_Pos            _UINT32_(6)                                          /* (SPI_IXS_SELCTRL) Ignore Receive Overflow (for Audio Data Transmissions) Position */
 #define SPI_IXS_SELCTRL_IGNROV_Msk            (_UINT32_(0x1) << SPI_IXS_SELCTRL_IGNROV_Pos)        /* (SPI_IXS_SELCTRL) Ignore Receive Overflow (for Audio Data Transmissions) Mask */
-#define SPI_IXS_SELCTRL_IGNROV(value)         (SPI_IXS_SELCTRL_IGNROV_Msk & (_UINT32_(value) << SPI_IXS_SELCTRL_IGNROV_Pos)) /* Assignment of value for IGNROV in the SPI_IXS_SELCTRL register */
+#define SPI_IXS_SELCTRL_IGNROV(value)         (SPI_IXS_SELCTRL_IGNROV_Msk & ((uint32_t)(value) << SPI_IXS_SELCTRL_IGNROV_Pos)) /* Assignment of value for IGNROV in the SPI_IXS_SELCTRL register */
 #define SPI_IXS_SELCTRL_CPHA_Pos              _UINT32_(10)                                         /* (SPI_IXS_SELCTRL) SPI Clock Edge Select bit Position */
 #define SPI_IXS_SELCTRL_CPHA_Msk              (_UINT32_(0x1) << SPI_IXS_SELCTRL_CPHA_Pos)          /* (SPI_IXS_SELCTRL) SPI Clock Edge Select bit Mask */
-#define SPI_IXS_SELCTRL_CPHA(value)           (SPI_IXS_SELCTRL_CPHA_Msk & (_UINT32_(value) << SPI_IXS_SELCTRL_CPHA_Pos)) /* Assignment of value for CPHA in the SPI_IXS_SELCTRL register */
+#define SPI_IXS_SELCTRL_CPHA(value)           (SPI_IXS_SELCTRL_CPHA_Msk & ((uint32_t)(value) << SPI_IXS_SELCTRL_CPHA_Pos)) /* Assignment of value for CPHA in the SPI_IXS_SELCTRL register */
 #define SPI_IXS_SELCTRL_CPOL_Pos              _UINT32_(11)                                         /* (SPI_IXS_SELCTRL) Clock Polarity Select bit Position */
 #define SPI_IXS_SELCTRL_CPOL_Msk              (_UINT32_(0x1) << SPI_IXS_SELCTRL_CPOL_Pos)          /* (SPI_IXS_SELCTRL) Clock Polarity Select bit Mask */
-#define SPI_IXS_SELCTRL_CPOL(value)           (SPI_IXS_SELCTRL_CPOL_Msk & (_UINT32_(value) << SPI_IXS_SELCTRL_CPOL_Pos)) /* Assignment of value for CPOL in the SPI_IXS_SELCTRL register */
+#define SPI_IXS_SELCTRL_CPOL(value)           (SPI_IXS_SELCTRL_CPOL_Msk & ((uint32_t)(value) << SPI_IXS_SELCTRL_CPOL_Pos)) /* Assignment of value for CPOL in the SPI_IXS_SELCTRL register */
 #define SPI_IXS_SELCTRL_STXISEL_Pos           _UINT32_(12)                                         /* (SPI_IXS_SELCTRL) SPI Transmit Service Request Interrupt Select Position */
 #define SPI_IXS_SELCTRL_STXISEL_Msk           (_UINT32_(0x3) << SPI_IXS_SELCTRL_STXISEL_Pos)       /* (SPI_IXS_SELCTRL) SPI Transmit Service Request Interrupt Select Mask */
-#define SPI_IXS_SELCTRL_STXISEL(value)        (SPI_IXS_SELCTRL_STXISEL_Msk & (_UINT32_(value) << SPI_IXS_SELCTRL_STXISEL_Pos)) /* Assignment of value for STXISEL in the SPI_IXS_SELCTRL register */
+#define SPI_IXS_SELCTRL_STXISEL(value)        (SPI_IXS_SELCTRL_STXISEL_Msk & ((uint32_t)(value) << SPI_IXS_SELCTRL_STXISEL_Pos)) /* Assignment of value for STXISEL in the SPI_IXS_SELCTRL register */
 #define   SPI_IXS_SELCTRL_STXISEL_TXBSREMPTY_Val _UINT32_(0x0)                                        /* (SPI_IXS_SELCTRL) TXB And SR Empty  */
 #define   SPI_IXS_SELCTRL_STXISEL_TXBEMPTY_Val _UINT32_(0x1)                                        /* (SPI_IXS_SELCTRL) TXB Empty  */
 #define   SPI_IXS_SELCTRL_STXISEL_TXBHEMPTY_Val _UINT32_(0x2)                                        /* (SPI_IXS_SELCTRL) TXB Half Empty  */
@@ -87,19 +93,19 @@
 #define SPI_IXS_SELCTRL_STXISEL_TXBNFULL      (SPI_IXS_SELCTRL_STXISEL_TXBNFULL_Val << SPI_IXS_SELCTRL_STXISEL_Pos) /* (SPI_IXS_SELCTRL) TXB Not Full Position */
 #define SPI_IXS_SELCTRL_IGNTUR_Pos            _UINT32_(14)                                         /* (SPI_IXS_SELCTRL) Ignore Transmit Underrun (for Audio Data Transmissions) Position */
 #define SPI_IXS_SELCTRL_IGNTUR_Msk            (_UINT32_(0x1) << SPI_IXS_SELCTRL_IGNTUR_Pos)        /* (SPI_IXS_SELCTRL) Ignore Transmit Underrun (for Audio Data Transmissions) Mask */
-#define SPI_IXS_SELCTRL_IGNTUR(value)         (SPI_IXS_SELCTRL_IGNTUR_Msk & (_UINT32_(value) << SPI_IXS_SELCTRL_IGNTUR_Pos)) /* Assignment of value for IGNTUR in the SPI_IXS_SELCTRL register */
+#define SPI_IXS_SELCTRL_IGNTUR(value)         (SPI_IXS_SELCTRL_IGNTUR_Msk & ((uint32_t)(value) << SPI_IXS_SELCTRL_IGNTUR_Pos)) /* Assignment of value for IGNTUR in the SPI_IXS_SELCTRL register */
 #define SPI_IXS_SELCTRL_DATFMTLR_Pos          _UINT32_(16)                                         /* (SPI_IXS_SELCTRL) Packed data format -- left or right justified Position */
 #define SPI_IXS_SELCTRL_DATFMTLR_Msk          (_UINT32_(0x1) << SPI_IXS_SELCTRL_DATFMTLR_Pos)      /* (SPI_IXS_SELCTRL) Packed data format -- left or right justified Mask */
-#define SPI_IXS_SELCTRL_DATFMTLR(value)       (SPI_IXS_SELCTRL_DATFMTLR_Msk & (_UINT32_(value) << SPI_IXS_SELCTRL_DATFMTLR_Pos)) /* Assignment of value for DATFMTLR in the SPI_IXS_SELCTRL register */
+#define SPI_IXS_SELCTRL_DATFMTLR(value)       (SPI_IXS_SELCTRL_DATFMTLR_Msk & ((uint32_t)(value) << SPI_IXS_SELCTRL_DATFMTLR_Pos)) /* Assignment of value for DATFMTLR in the SPI_IXS_SELCTRL register */
 #define SPI_IXS_SELCTRL_TURSAMP_Pos           _UINT32_(23)                                         /* (SPI_IXS_SELCTRL) Transmit Under-run last sample sent Position */
 #define SPI_IXS_SELCTRL_TURSAMP_Msk           (_UINT32_(0x1) << SPI_IXS_SELCTRL_TURSAMP_Pos)       /* (SPI_IXS_SELCTRL) Transmit Under-run last sample sent Mask */
-#define SPI_IXS_SELCTRL_TURSAMP(value)        (SPI_IXS_SELCTRL_TURSAMP_Msk & (_UINT32_(value) << SPI_IXS_SELCTRL_TURSAMP_Pos)) /* Assignment of value for TURSAMP in the SPI_IXS_SELCTRL register */
+#define SPI_IXS_SELCTRL_TURSAMP(value)        (SPI_IXS_SELCTRL_TURSAMP_Msk & ((uint32_t)(value) << SPI_IXS_SELCTRL_TURSAMP_Pos)) /* Assignment of value for TURSAMP in the SPI_IXS_SELCTRL register */
 #define SPI_IXS_SELCTRL_DATFILL_Pos           _UINT32_(24)                                         /* (SPI_IXS_SELCTRL) DATFILL undefined bits 1 or 0 Position */
 #define SPI_IXS_SELCTRL_DATFILL_Msk           (_UINT32_(0x1) << SPI_IXS_SELCTRL_DATFILL_Pos)       /* (SPI_IXS_SELCTRL) DATFILL undefined bits 1 or 0 Mask */
-#define SPI_IXS_SELCTRL_DATFILL(value)        (SPI_IXS_SELCTRL_DATFILL_Msk & (_UINT32_(value) << SPI_IXS_SELCTRL_DATFILL_Pos)) /* Assignment of value for DATFILL in the SPI_IXS_SELCTRL register */
+#define SPI_IXS_SELCTRL_DATFILL(value)        (SPI_IXS_SELCTRL_DATFILL_Msk & ((uint32_t)(value) << SPI_IXS_SELCTRL_DATFILL_Pos)) /* Assignment of value for DATFILL in the SPI_IXS_SELCTRL register */
 #define SPI_IXS_SELCTRL_MODEEN_Pos            _UINT32_(30)                                         /* (SPI_IXS_SELCTRL) MACRO MODE ENABLED Position */
 #define SPI_IXS_SELCTRL_MODEEN_Msk            (_UINT32_(0x3) << SPI_IXS_SELCTRL_MODEEN_Pos)        /* (SPI_IXS_SELCTRL) MACRO MODE ENABLED Mask */
-#define SPI_IXS_SELCTRL_MODEEN(value)         (SPI_IXS_SELCTRL_MODEEN_Msk & (_UINT32_(value) << SPI_IXS_SELCTRL_MODEEN_Pos)) /* Assignment of value for MODEEN in the SPI_IXS_SELCTRL register */
+#define SPI_IXS_SELCTRL_MODEEN(value)         (SPI_IXS_SELCTRL_MODEEN_Msk & ((uint32_t)(value) << SPI_IXS_SELCTRL_MODEEN_Pos)) /* Assignment of value for MODEEN in the SPI_IXS_SELCTRL register */
 #define   SPI_IXS_SELCTRL_MODEEN_DFTLEN_Val   _UINT32_(0x0)                                        /* (SPI_IXS_SELCTRL) Default Mode  */
 #define   SPI_IXS_SELCTRL_MODEEN_AUDEN_Val    _UINT32_(0x1)                                        /* (SPI_IXS_SELCTRL) Audio Mode  */
 #define   SPI_IXS_SELCTRL_MODEEN_TDMEN_Val    _UINT32_(0x2)                                        /* (SPI_IXS_SELCTRL) Framed Mode  */
@@ -116,7 +122,7 @@
 
 #define SPI_IXS_SPICTRL_MODE_Pos              _UINT32_(0)                                          /* (SPI_IXS_SPICTRL) Serial Word Length bits for AUDEN=0, not used when AUDEN=1 Position */
 #define SPI_IXS_SPICTRL_MODE_Msk              (_UINT32_(0x3) << SPI_IXS_SPICTRL_MODE_Pos)          /* (SPI_IXS_SPICTRL) Serial Word Length bits for AUDEN=0, not used when AUDEN=1 Mask */
-#define SPI_IXS_SPICTRL_MODE(value)           (SPI_IXS_SPICTRL_MODE_Msk & (_UINT32_(value) << SPI_IXS_SPICTRL_MODE_Pos)) /* Assignment of value for MODE in the SPI_IXS_SPICTRL register */
+#define SPI_IXS_SPICTRL_MODE(value)           (SPI_IXS_SPICTRL_MODE_Msk & ((uint32_t)(value) << SPI_IXS_SPICTRL_MODE_Pos)) /* Assignment of value for MODE in the SPI_IXS_SPICTRL register */
 #define   SPI_IXS_SPICTRL_MODE_MODE8_Val      _UINT32_(0x0)                                        /* (SPI_IXS_SPICTRL) 8 Bits Mode  */
 #define   SPI_IXS_SPICTRL_MODE_MODE16_Val     _UINT32_(0x1)                                        /* (SPI_IXS_SPICTRL) 16 Bits Mode  */
 #define   SPI_IXS_SPICTRL_MODE_MODE32_Val     _UINT32_(0x2)                                        /* (SPI_IXS_SPICTRL) 32 Bits Mode  */
@@ -125,22 +131,22 @@
 #define SPI_IXS_SPICTRL_MODE_MODE32           (SPI_IXS_SPICTRL_MODE_MODE32_Val << SPI_IXS_SPICTRL_MODE_Pos) /* (SPI_IXS_SPICTRL) 32 Bits Mode Position */
 #define SPI_IXS_SPICTRL_DISSDI_Pos            _UINT32_(3)                                          /* (SPI_IXS_SPICTRL) Disable SDI bit Position */
 #define SPI_IXS_SPICTRL_DISSDI_Msk            (_UINT32_(0x1) << SPI_IXS_SPICTRL_DISSDI_Pos)        /* (SPI_IXS_SPICTRL) Disable SDI bit Mask */
-#define SPI_IXS_SPICTRL_DISSDI(value)         (SPI_IXS_SPICTRL_DISSDI_Msk & (_UINT32_(value) << SPI_IXS_SPICTRL_DISSDI_Pos)) /* Assignment of value for DISSDI in the SPI_IXS_SPICTRL register */
+#define SPI_IXS_SPICTRL_DISSDI(value)         (SPI_IXS_SPICTRL_DISSDI_Msk & ((uint32_t)(value) << SPI_IXS_SPICTRL_DISSDI_Pos)) /* Assignment of value for DISSDI in the SPI_IXS_SPICTRL register */
 #define SPI_IXS_SPICTRL_DISSDO_Pos            _UINT32_(4)                                          /* (SPI_IXS_SPICTRL) Disable SDO bit Position */
 #define SPI_IXS_SPICTRL_DISSDO_Msk            (_UINT32_(0x1) << SPI_IXS_SPICTRL_DISSDO_Pos)        /* (SPI_IXS_SPICTRL) Disable SDO bit Mask */
-#define SPI_IXS_SPICTRL_DISSDO(value)         (SPI_IXS_SPICTRL_DISSDO_Msk & (_UINT32_(value) << SPI_IXS_SPICTRL_DISSDO_Pos)) /* Assignment of value for DISSDO in the SPI_IXS_SPICTRL register */
+#define SPI_IXS_SPICTRL_DISSDO(value)         (SPI_IXS_SPICTRL_DISSDO_Msk & ((uint32_t)(value) << SPI_IXS_SPICTRL_DISSDO_Pos)) /* Assignment of value for DISSDO in the SPI_IXS_SPICTRL register */
 #define SPI_IXS_SPICTRL_MSTEN_Pos             _UINT32_(5)                                          /* (SPI_IXS_SPICTRL) Master Mode Enable bit Position */
 #define SPI_IXS_SPICTRL_MSTEN_Msk             (_UINT32_(0x1) << SPI_IXS_SPICTRL_MSTEN_Pos)         /* (SPI_IXS_SPICTRL) Master Mode Enable bit Mask */
-#define SPI_IXS_SPICTRL_MSTEN(value)          (SPI_IXS_SPICTRL_MSTEN_Msk & (_UINT32_(value) << SPI_IXS_SPICTRL_MSTEN_Pos)) /* Assignment of value for MSTEN in the SPI_IXS_SPICTRL register */
-#define SPI_IXS_SPICTRL_MSSEN_Pos             _UINT32_(6)                                          /* (SPI_IXS_SPICTRL) Master/Slave Mode Select Enable bit Position */
-#define SPI_IXS_SPICTRL_MSSEN_Msk             (_UINT32_(0x1) << SPI_IXS_SPICTRL_MSSEN_Pos)         /* (SPI_IXS_SPICTRL) Master/Slave Mode Select Enable bit Mask */
-#define SPI_IXS_SPICTRL_MSSEN(value)          (SPI_IXS_SPICTRL_MSSEN_Msk & (_UINT32_(value) << SPI_IXS_SPICTRL_MSSEN_Pos)) /* Assignment of value for MSSEN in the SPI_IXS_SPICTRL register */
+#define SPI_IXS_SPICTRL_MSTEN(value)          (SPI_IXS_SPICTRL_MSTEN_Msk & ((uint32_t)(value) << SPI_IXS_SPICTRL_MSTEN_Pos)) /* Assignment of value for MSTEN in the SPI_IXS_SPICTRL register */
+#define SPI_IXS_SPICTRL_CSEN_Pos              _UINT32_(6)                                          /* (SPI_IXS_SPICTRL) Host/Client Mode Select Enable bit Position */
+#define SPI_IXS_SPICTRL_CSEN_Msk              (_UINT32_(0x1) << SPI_IXS_SPICTRL_CSEN_Pos)          /* (SPI_IXS_SPICTRL) Host/Client Mode Select Enable bit Mask */
+#define SPI_IXS_SPICTRL_CSEN(value)           (SPI_IXS_SPICTRL_CSEN_Msk & ((uint32_t)(value) << SPI_IXS_SPICTRL_CSEN_Pos)) /* Assignment of value for CSEN in the SPI_IXS_SPICTRL register */
 #define SPI_IXS_SPICTRL_SPISGNEXT_Pos         _UINT32_(9)                                          /* (SPI_IXS_SPICTRL) Sign Extend Read Data from the RX FIFO Position */
 #define SPI_IXS_SPICTRL_SPISGNEXT_Msk         (_UINT32_(0x1) << SPI_IXS_SPICTRL_SPISGNEXT_Pos)     /* (SPI_IXS_SPICTRL) Sign Extend Read Data from the RX FIFO Mask */
-#define SPI_IXS_SPICTRL_SPISGNEXT(value)      (SPI_IXS_SPICTRL_SPISGNEXT_Msk & (_UINT32_(value) << SPI_IXS_SPICTRL_SPISGNEXT_Pos)) /* Assignment of value for SPISGNEXT in the SPI_IXS_SPICTRL register */
+#define SPI_IXS_SPICTRL_SPISGNEXT(value)      (SPI_IXS_SPICTRL_SPISGNEXT_Msk & ((uint32_t)(value) << SPI_IXS_SPICTRL_SPISGNEXT_Pos)) /* Assignment of value for SPISGNEXT in the SPI_IXS_SPICTRL register */
 #define SPI_IXS_SPICTRL_SMP_Pos               _UINT32_(10)                                         /* (SPI_IXS_SPICTRL) SPI Data Input Sample Phase bit Position */
 #define SPI_IXS_SPICTRL_SMP_Msk               (_UINT32_(0x1) << SPI_IXS_SPICTRL_SMP_Pos)           /* (SPI_IXS_SPICTRL) SPI Data Input Sample Phase bit Mask */
-#define SPI_IXS_SPICTRL_SMP(value)            (SPI_IXS_SPICTRL_SMP_Msk & (_UINT32_(value) << SPI_IXS_SPICTRL_SMP_Pos)) /* Assignment of value for SMP in the SPI_IXS_SPICTRL register */
+#define SPI_IXS_SPICTRL_SMP(value)            (SPI_IXS_SPICTRL_SMP_Msk & ((uint32_t)(value) << SPI_IXS_SPICTRL_SMP_Pos)) /* Assignment of value for SMP in the SPI_IXS_SPICTRL register */
 #define SPI_IXS_SPICTRL_Msk                   _UINT32_(0x0000067B)                                 /* (SPI_IXS_SPICTRL) Register Mask  */
 
 
@@ -149,7 +155,7 @@
 
 #define SPI_IXS_FRAMECTRL_FRMSYPW_Pos         _UINT32_(0)                                          /* (SPI_IXS_FRAMECTRL) Frame sync pulse width in serial words Position */
 #define SPI_IXS_FRAMECTRL_FRMSYPW_Msk         (_UINT32_(0xF) << SPI_IXS_FRAMECTRL_FRMSYPW_Pos)     /* (SPI_IXS_FRAMECTRL) Frame sync pulse width in serial words Mask */
-#define SPI_IXS_FRAMECTRL_FRMSYPW(value)      (SPI_IXS_FRAMECTRL_FRMSYPW_Msk & (_UINT32_(value) << SPI_IXS_FRAMECTRL_FRMSYPW_Pos)) /* Assignment of value for FRMSYPW in the SPI_IXS_FRAMECTRL register */
+#define SPI_IXS_FRAMECTRL_FRMSYPW(value)      (SPI_IXS_FRAMECTRL_FRMSYPW_Msk & ((uint32_t)(value) << SPI_IXS_FRAMECTRL_FRMSYPW_Pos)) /* Assignment of value for FRMSYPW in the SPI_IXS_FRAMECTRL register */
 #define   SPI_IXS_FRAMECTRL_FRMSYPW_SYPW0_Val _UINT32_(0x0)                                        /* (SPI_IXS_FRAMECTRL) Frame sync pulse is one clock wide  */
 #define   SPI_IXS_FRAMECTRL_FRMSYPW_SYPW1_Val _UINT32_(0x1)                                        /* (SPI_IXS_FRAMECTRL) Frame sync pulse is one slots wide  */
 #define   SPI_IXS_FRAMECTRL_FRMSYPW_SYPW2_Val _UINT32_(0x2)                                        /* (SPI_IXS_FRAMECTRL) Frame sync pulse is two slots wide  */
@@ -174,16 +180,16 @@
 #define SPI_IXS_FRAMECTRL_FRMSYPW_SYPW31      (SPI_IXS_FRAMECTRL_FRMSYPW_SYPW31_Val << SPI_IXS_FRAMECTRL_FRMSYPW_Pos) /* (SPI_IXS_FRAMECTRL) Frame sync pulse is thirty one slots wide Position */
 #define SPI_IXS_FRAMECTRL_FRMCOINC_Pos        _UINT32_(8)                                          /* (SPI_IXS_FRAMECTRL) Frame Sync Pulse Edge Select bit Position */
 #define SPI_IXS_FRAMECTRL_FRMCOINC_Msk        (_UINT32_(0x1) << SPI_IXS_FRAMECTRL_FRMCOINC_Pos)    /* (SPI_IXS_FRAMECTRL) Frame Sync Pulse Edge Select bit Mask */
-#define SPI_IXS_FRAMECTRL_FRMCOINC(value)     (SPI_IXS_FRAMECTRL_FRMCOINC_Msk & (_UINT32_(value) << SPI_IXS_FRAMECTRL_FRMCOINC_Pos)) /* Assignment of value for FRMCOINC in the SPI_IXS_FRAMECTRL register */
+#define SPI_IXS_FRAMECTRL_FRMCOINC(value)     (SPI_IXS_FRAMECTRL_FRMCOINC_Msk & ((uint32_t)(value) << SPI_IXS_FRAMECTRL_FRMCOINC_Pos)) /* Assignment of value for FRMCOINC in the SPI_IXS_FRAMECTRL register */
 #define SPI_IXS_FRAMECTRL_FRMPOL_Pos          _UINT32_(13)                                         /* (SPI_IXS_FRAMECTRL) Frame Sync / Slave Select Polarity bit Position */
 #define SPI_IXS_FRAMECTRL_FRMPOL_Msk          (_UINT32_(0x1) << SPI_IXS_FRAMECTRL_FRMPOL_Pos)      /* (SPI_IXS_FRAMECTRL) Frame Sync / Slave Select Polarity bit Mask */
-#define SPI_IXS_FRAMECTRL_FRMPOL(value)       (SPI_IXS_FRAMECTRL_FRMPOL_Msk & (_UINT32_(value) << SPI_IXS_FRAMECTRL_FRMPOL_Pos)) /* Assignment of value for FRMPOL in the SPI_IXS_FRAMECTRL register */
+#define SPI_IXS_FRAMECTRL_FRMPOL(value)       (SPI_IXS_FRAMECTRL_FRMPOL_Msk & ((uint32_t)(value) << SPI_IXS_FRAMECTRL_FRMPOL_Pos)) /* Assignment of value for FRMPOL in the SPI_IXS_FRAMECTRL register */
 #define SPI_IXS_FRAMECTRL_FRMSLV_Pos          _UINT32_(14)                                         /* (SPI_IXS_FRAMECTRL) Frame Sync Pulse Direction Control bit Position */
 #define SPI_IXS_FRAMECTRL_FRMSLV_Msk          (_UINT32_(0x1) << SPI_IXS_FRAMECTRL_FRMSLV_Pos)      /* (SPI_IXS_FRAMECTRL) Frame Sync Pulse Direction Control bit Mask */
-#define SPI_IXS_FRAMECTRL_FRMSLV(value)       (SPI_IXS_FRAMECTRL_FRMSLV_Msk & (_UINT32_(value) << SPI_IXS_FRAMECTRL_FRMSLV_Pos)) /* Assignment of value for FRMSLV in the SPI_IXS_FRAMECTRL register */
+#define SPI_IXS_FRAMECTRL_FRMSLV(value)       (SPI_IXS_FRAMECTRL_FRMSLV_Msk & ((uint32_t)(value) << SPI_IXS_FRAMECTRL_FRMSLV_Pos)) /* Assignment of value for FRMSLV in the SPI_IXS_FRAMECTRL register */
 #define SPI_IXS_FRAMECTRL_FRMCNT_Pos          _UINT32_(16)                                         /* (SPI_IXS_FRAMECTRL) Frame sync pulse counter Position */
 #define SPI_IXS_FRAMECTRL_FRMCNT_Msk          (_UINT32_(0x1F) << SPI_IXS_FRAMECTRL_FRMCNT_Pos)     /* (SPI_IXS_FRAMECTRL) Frame sync pulse counter Mask */
-#define SPI_IXS_FRAMECTRL_FRMCNT(value)       (SPI_IXS_FRAMECTRL_FRMCNT_Msk & (_UINT32_(value) << SPI_IXS_FRAMECTRL_FRMCNT_Pos)) /* Assignment of value for FRMCNT in the SPI_IXS_FRAMECTRL register */
+#define SPI_IXS_FRAMECTRL_FRMCNT(value)       (SPI_IXS_FRAMECTRL_FRMCNT_Msk & ((uint32_t)(value) << SPI_IXS_FRAMECTRL_FRMCNT_Pos)) /* Assignment of value for FRMCNT in the SPI_IXS_FRAMECTRL register */
 #define   SPI_IXS_FRAMECTRL_FRMCNT_CNT1_Val   _UINT32_(0x0)                                        /* (SPI_IXS_FRAMECTRL) Generate a Frame sync pulse on each serial word  */
 #define   SPI_IXS_FRAMECTRL_FRMCNT_CNT2_Val   _UINT32_(0x1)                                        /* (SPI_IXS_FRAMECTRL) Number of slots per frame sync pulse is 2  */
 #define   SPI_IXS_FRAMECTRL_FRMCNT_CNT3_Val   _UINT32_(0x2)                                        /* (SPI_IXS_FRAMECTRL) Number of slots per frame sync pulse is 3  */
@@ -224,7 +230,7 @@
 #define SPI_IXS_FRAMECTRL_FRMCNT_CNT32        (SPI_IXS_FRAMECTRL_FRMCNT_CNT32_Val << SPI_IXS_FRAMECTRL_FRMCNT_Pos) /* (SPI_IXS_FRAMECTRL) Number of slots per frame sync pulse is 32 Position */
 #define SPI_IXS_FRAMECTRL_TDMSSZ_Pos          _UINT32_(24)                                         /* (SPI_IXS_FRAMECTRL) TDM Number of Bits in a Slot Size Position */
 #define SPI_IXS_FRAMECTRL_TDMSSZ_Msk          (_UINT32_(0x7) << SPI_IXS_FRAMECTRL_TDMSSZ_Pos)      /* (SPI_IXS_FRAMECTRL) TDM Number of Bits in a Slot Size Mask */
-#define SPI_IXS_FRAMECTRL_TDMSSZ(value)       (SPI_IXS_FRAMECTRL_TDMSSZ_Msk & (_UINT32_(value) << SPI_IXS_FRAMECTRL_TDMSSZ_Pos)) /* Assignment of value for TDMSSZ in the SPI_IXS_FRAMECTRL register */
+#define SPI_IXS_FRAMECTRL_TDMSSZ(value)       (SPI_IXS_FRAMECTRL_TDMSSZ_Msk & ((uint32_t)(value) << SPI_IXS_FRAMECTRL_TDMSSZ_Pos)) /* Assignment of value for TDMSSZ in the SPI_IXS_FRAMECTRL register */
 #define   SPI_IXS_FRAMECTRL_TDMSSZ_SLTSZ8_Val _UINT32_(0x0)                                        /* (SPI_IXS_FRAMECTRL) Slot Size 8  */
 #define   SPI_IXS_FRAMECTRL_TDMSSZ_SLTSZ12_Val _UINT32_(0x1)                                        /* (SPI_IXS_FRAMECTRL) Slot Size 12  */
 #define   SPI_IXS_FRAMECTRL_TDMSSZ_SLTSZ16_Val _UINT32_(0x2)                                        /* (SPI_IXS_FRAMECTRL) Slot Size 16  */
@@ -241,7 +247,7 @@
 #define SPI_IXS_FRAMECTRL_TDMSSZ_SLTSZ32      (SPI_IXS_FRAMECTRL_TDMSSZ_SLTSZ32_Val << SPI_IXS_FRAMECTRL_TDMSSZ_Pos) /* (SPI_IXS_FRAMECTRL) Slot Size 32 Position */
 #define SPI_IXS_FRAMECTRL_TDMWSZ_Pos          _UINT32_(29)                                         /* (SPI_IXS_FRAMECTRL) TDM Number of Bits in a Word Size Position */
 #define SPI_IXS_FRAMECTRL_TDMWSZ_Msk          (_UINT32_(0x7) << SPI_IXS_FRAMECTRL_TDMWSZ_Pos)      /* (SPI_IXS_FRAMECTRL) TDM Number of Bits in a Word Size Mask */
-#define SPI_IXS_FRAMECTRL_TDMWSZ(value)       (SPI_IXS_FRAMECTRL_TDMWSZ_Msk & (_UINT32_(value) << SPI_IXS_FRAMECTRL_TDMWSZ_Pos)) /* Assignment of value for TDMWSZ in the SPI_IXS_FRAMECTRL register */
+#define SPI_IXS_FRAMECTRL_TDMWSZ(value)       (SPI_IXS_FRAMECTRL_TDMWSZ_Msk & ((uint32_t)(value) << SPI_IXS_FRAMECTRL_TDMWSZ_Pos)) /* Assignment of value for TDMWSZ in the SPI_IXS_FRAMECTRL register */
 #define   SPI_IXS_FRAMECTRL_TDMWSZ_WDSZ8_Val  _UINT32_(0x0)                                        /* (SPI_IXS_FRAMECTRL) Word Size 8  */
 #define   SPI_IXS_FRAMECTRL_TDMWSZ_WDSZ12_Val _UINT32_(0x1)                                        /* (SPI_IXS_FRAMECTRL) Word Size 12  */
 #define   SPI_IXS_FRAMECTRL_TDMWSZ_WDSZ16_Val _UINT32_(0x2)                                        /* (SPI_IXS_FRAMECTRL) Word Size 16  */
@@ -264,7 +270,7 @@
 
 #define SPI_IXS_AUDCTRL_AUDMOD_Pos            _UINT32_(0)                                          /* (SPI_IXS_AUDCTRL) Audio Protocol Mode Position */
 #define SPI_IXS_AUDCTRL_AUDMOD_Msk            (_UINT32_(0x3) << SPI_IXS_AUDCTRL_AUDMOD_Pos)        /* (SPI_IXS_AUDCTRL) Audio Protocol Mode Mask */
-#define SPI_IXS_AUDCTRL_AUDMOD(value)         (SPI_IXS_AUDCTRL_AUDMOD_Msk & (_UINT32_(value) << SPI_IXS_AUDCTRL_AUDMOD_Pos)) /* Assignment of value for AUDMOD in the SPI_IXS_AUDCTRL register */
+#define SPI_IXS_AUDCTRL_AUDMOD(value)         (SPI_IXS_AUDCTRL_AUDMOD_Msk & ((uint32_t)(value) << SPI_IXS_AUDCTRL_AUDMOD_Pos)) /* Assignment of value for AUDMOD in the SPI_IXS_AUDCTRL register */
 #define   SPI_IXS_AUDCTRL_AUDMOD_STDMODE_Val  _UINT32_(0x0)                                        /* (SPI_IXS_AUDCTRL) I2S/I8S Standard Mode  */
 #define   SPI_IXS_AUDCTRL_AUDMOD_LJRJMODE_Val _UINT32_(0x1)                                        /* (SPI_IXS_AUDCTRL) I2S/I8S Left Or Right Justified  */
 #define   SPI_IXS_AUDCTRL_AUDMOD_PCMMODE_Val  _UINT32_(0x3)                                        /* (SPI_IXS_AUDCTRL) PCM/DSP Mode  */
@@ -273,10 +279,10 @@
 #define SPI_IXS_AUDCTRL_AUDMOD_PCMMODE        (SPI_IXS_AUDCTRL_AUDMOD_PCMMODE_Val << SPI_IXS_AUDCTRL_AUDMOD_Pos) /* (SPI_IXS_AUDCTRL) PCM/DSP Mode Position */
 #define SPI_IXS_AUDCTRL_AUDMONO_Pos           _UINT32_(3)                                          /* (SPI_IXS_AUDCTRL) Transmit audio data format Position */
 #define SPI_IXS_AUDCTRL_AUDMONO_Msk           (_UINT32_(0x1) << SPI_IXS_AUDCTRL_AUDMONO_Pos)       /* (SPI_IXS_AUDCTRL) Transmit audio data format Mask */
-#define SPI_IXS_AUDCTRL_AUDMONO(value)        (SPI_IXS_AUDCTRL_AUDMONO_Msk & (_UINT32_(value) << SPI_IXS_AUDCTRL_AUDMONO_Pos)) /* Assignment of value for AUDMONO in the SPI_IXS_AUDCTRL register */
+#define SPI_IXS_AUDCTRL_AUDMONO(value)        (SPI_IXS_AUDCTRL_AUDMONO_Msk & ((uint32_t)(value) << SPI_IXS_AUDCTRL_AUDMONO_Pos)) /* Assignment of value for AUDMONO in the SPI_IXS_AUDCTRL register */
 #define SPI_IXS_AUDCTRL_AUDFMT_Pos            _UINT32_(4)                                          /* (SPI_IXS_AUDCTRL) Audio Protocol Format Position */
 #define SPI_IXS_AUDCTRL_AUDFMT_Msk            (_UINT32_(0x7) << SPI_IXS_AUDCTRL_AUDFMT_Pos)        /* (SPI_IXS_AUDCTRL) Audio Protocol Format Mask */
-#define SPI_IXS_AUDCTRL_AUDFMT(value)         (SPI_IXS_AUDCTRL_AUDFMT_Msk & (_UINT32_(value) << SPI_IXS_AUDCTRL_AUDFMT_Pos)) /* Assignment of value for AUDFMT in the SPI_IXS_AUDCTRL register */
+#define SPI_IXS_AUDCTRL_AUDFMT(value)         (SPI_IXS_AUDCTRL_AUDFMT_Msk & ((uint32_t)(value) << SPI_IXS_AUDCTRL_AUDFMT_Pos)) /* Assignment of value for AUDFMT in the SPI_IXS_AUDCTRL register */
 #define   SPI_IXS_AUDCTRL_AUDFMT_I2SLEGACY_Val _UINT32_(0x0)                                        /* (SPI_IXS_AUDCTRL) Legacy I2S Mode  */
 #define   SPI_IXS_AUDCTRL_AUDFMT_I2SRAW_Val   _UINT32_(0x1)                                        /* (SPI_IXS_AUDCTRL) I2S Raw Audio Format  */
 #define   SPI_IXS_AUDCTRL_AUDFMT_I2SOTHER824_Val _UINT32_(0x2)                                        /* (SPI_IXS_AUDCTRL) I2S Other AM824 Format  */
@@ -291,7 +297,7 @@
 #define SPI_IXS_AUDCTRL_AUDFMT_I8SOTHER824    (SPI_IXS_AUDCTRL_AUDFMT_I8SOTHER824_Val << SPI_IXS_AUDCTRL_AUDFMT_Pos) /* (SPI_IXS_AUDCTRL) I8S Other AM824 Format Position */
 #define SPI_IXS_AUDCTRL_AUDWDMODE_Pos         _UINT32_(8)                                          /* (SPI_IXS_AUDCTRL) Serial Word Length bits (Ignored when AUDEN=0) Position */
 #define SPI_IXS_AUDCTRL_AUDWDMODE_Msk         (_UINT32_(0x3) << SPI_IXS_AUDCTRL_AUDWDMODE_Pos)     /* (SPI_IXS_AUDCTRL) Serial Word Length bits (Ignored when AUDEN=0) Mask */
-#define SPI_IXS_AUDCTRL_AUDWDMODE(value)      (SPI_IXS_AUDCTRL_AUDWDMODE_Msk & (_UINT32_(value) << SPI_IXS_AUDCTRL_AUDWDMODE_Pos)) /* Assignment of value for AUDWDMODE in the SPI_IXS_AUDCTRL register */
+#define SPI_IXS_AUDCTRL_AUDWDMODE(value)      (SPI_IXS_AUDCTRL_AUDWDMODE_Msk & ((uint32_t)(value) << SPI_IXS_AUDCTRL_AUDWDMODE_Pos)) /* Assignment of value for AUDWDMODE in the SPI_IXS_AUDCTRL register */
 #define SPI_IXS_AUDCTRL_Msk                   _UINT32_(0x0000037B)                                 /* (SPI_IXS_AUDCTRL) Register Mask  */
 
 
@@ -300,7 +306,7 @@
 
 #define SPI_IXS_TPDCTRL_PKFMT_Pos             _UINT32_(0)                                          /* (SPI_IXS_TPDCTRL) Master Slave TPD mode. Position */
 #define SPI_IXS_TPDCTRL_PKFMT_Msk             (_UINT32_(0x7) << SPI_IXS_TPDCTRL_PKFMT_Pos)         /* (SPI_IXS_TPDCTRL) Master Slave TPD mode. Mask */
-#define SPI_IXS_TPDCTRL_PKFMT(value)          (SPI_IXS_TPDCTRL_PKFMT_Msk & (_UINT32_(value) << SPI_IXS_TPDCTRL_PKFMT_Pos)) /* Assignment of value for PKFMT in the SPI_IXS_TPDCTRL register */
+#define SPI_IXS_TPDCTRL_PKFMT(value)          (SPI_IXS_TPDCTRL_PKFMT_Msk & ((uint32_t)(value) << SPI_IXS_TPDCTRL_PKFMT_Pos)) /* Assignment of value for PKFMT in the SPI_IXS_TPDCTRL register */
 #define   SPI_IXS_TPDCTRL_PKFMT_PKT4x32_Val   _UINT32_(0x0)                                        /* (SPI_IXS_TPDCTRL) 32 bit data in 4x32 packed format  */
 #define   SPI_IXS_TPDCTRL_PKFMT_PKT3x32_Val   _UINT32_(0x1)                                        /* (SPI_IXS_TPDCTRL) 32 bit data in 3x32 packed format  */
 #define   SPI_IXS_TPDCTRL_PKFMT_PKT4x24_Val   _UINT32_(0x2)                                        /* (SPI_IXS_TPDCTRL) 24 bit data in 4x24 packed format  */
@@ -317,7 +323,7 @@
 #define SPI_IXS_TPDCTRL_PKFMT_PKT2x16         (SPI_IXS_TPDCTRL_PKFMT_PKT2x16_Val << SPI_IXS_TPDCTRL_PKFMT_Pos) /* (SPI_IXS_TPDCTRL) 16 bit data in 2x16 packed format Position */
 #define SPI_IXS_TPDCTRL_SLVNUM_Pos            _UINT32_(8)                                          /* (SPI_IXS_TPDCTRL) Number of the Slave designated: to be used with the PKFMT to determine the slave. Position */
 #define SPI_IXS_TPDCTRL_SLVNUM_Msk            (_UINT32_(0x7) << SPI_IXS_TPDCTRL_SLVNUM_Pos)        /* (SPI_IXS_TPDCTRL) Number of the Slave designated: to be used with the PKFMT to determine the slave. Mask */
-#define SPI_IXS_TPDCTRL_SLVNUM(value)         (SPI_IXS_TPDCTRL_SLVNUM_Msk & (_UINT32_(value) << SPI_IXS_TPDCTRL_SLVNUM_Pos)) /* Assignment of value for SLVNUM in the SPI_IXS_TPDCTRL register */
+#define SPI_IXS_TPDCTRL_SLVNUM(value)         (SPI_IXS_TPDCTRL_SLVNUM_Msk & ((uint32_t)(value) << SPI_IXS_TPDCTRL_SLVNUM_Pos)) /* Assignment of value for SLVNUM in the SPI_IXS_TPDCTRL register */
 #define   SPI_IXS_TPDCTRL_SLVNUM_SLAVE0_Val   _UINT32_(0x0)                                        /* (SPI_IXS_TPDCTRL) SLAVE 0  */
 #define   SPI_IXS_TPDCTRL_SLVNUM_SLAVE1_Val   _UINT32_(0x1)                                        /* (SPI_IXS_TPDCTRL) SLAVE 1  */
 #define   SPI_IXS_TPDCTRL_SLVNUM_SLAVE2_Val   _UINT32_(0x2)                                        /* (SPI_IXS_TPDCTRL) SLAVE 2  */
@@ -336,19 +342,19 @@
 
 #define SPI_IXS_INTENSET_SPIRXBFEN_Pos        _UINT32_(0)                                          /* (SPI_IXS_INTENSET) Enablie Interrupt Events via SPIRXBF Position */
 #define SPI_IXS_INTENSET_SPIRXBFEN_Msk        (_UINT32_(0x1) << SPI_IXS_INTENSET_SPIRXBFEN_Pos)    /* (SPI_IXS_INTENSET) Enablie Interrupt Events via SPIRXBF Mask */
-#define SPI_IXS_INTENSET_SPIRXBFEN(value)     (SPI_IXS_INTENSET_SPIRXBFEN_Msk & (_UINT32_(value) << SPI_IXS_INTENSET_SPIRXBFEN_Pos)) /* Assignment of value for SPIRXBFEN in the SPI_IXS_INTENSET register */
+#define SPI_IXS_INTENSET_SPIRXBFEN(value)     (SPI_IXS_INTENSET_SPIRXBFEN_Msk & ((uint32_t)(value) << SPI_IXS_INTENSET_SPIRXBFEN_Pos)) /* Assignment of value for SPIRXBFEN in the SPI_IXS_INTENSET register */
 #define SPI_IXS_INTENSET_SPITXBEEN_Pos        _UINT32_(4)                                          /* (SPI_IXS_INTENSET) Enablie Interrupt Events via SPITXBE Position */
 #define SPI_IXS_INTENSET_SPITXBEEN_Msk        (_UINT32_(0x1) << SPI_IXS_INTENSET_SPITXBEEN_Pos)    /* (SPI_IXS_INTENSET) Enablie Interrupt Events via SPITXBE Mask */
-#define SPI_IXS_INTENSET_SPITXBEEN(value)     (SPI_IXS_INTENSET_SPITXBEEN_Msk & (_UINT32_(value) << SPI_IXS_INTENSET_SPITXBEEN_Pos)) /* Assignment of value for SPITXBEEN in the SPI_IXS_INTENSET register */
+#define SPI_IXS_INTENSET_SPITXBEEN(value)     (SPI_IXS_INTENSET_SPITXBEEN_Msk & ((uint32_t)(value) << SPI_IXS_INTENSET_SPITXBEEN_Pos)) /* Assignment of value for SPITXBEEN in the SPI_IXS_INTENSET register */
 #define SPI_IXS_INTENSET_FRMERREN_Pos         _UINT32_(15)                                         /* (SPI_IXS_INTENSET) Enable Interrupt Events via FRMERR Position */
 #define SPI_IXS_INTENSET_FRMERREN_Msk         (_UINT32_(0x1) << SPI_IXS_INTENSET_FRMERREN_Pos)     /* (SPI_IXS_INTENSET) Enable Interrupt Events via FRMERR Mask */
-#define SPI_IXS_INTENSET_FRMERREN(value)      (SPI_IXS_INTENSET_FRMERREN_Msk & (_UINT32_(value) << SPI_IXS_INTENSET_FRMERREN_Pos)) /* Assignment of value for FRMERREN in the SPI_IXS_INTENSET register */
+#define SPI_IXS_INTENSET_FRMERREN(value)      (SPI_IXS_INTENSET_FRMERREN_Msk & ((uint32_t)(value) << SPI_IXS_INTENSET_FRMERREN_Pos)) /* Assignment of value for FRMERREN in the SPI_IXS_INTENSET register */
 #define SPI_IXS_INTENSET_SPITUREN_Pos         _UINT32_(27)                                         /* (SPI_IXS_INTENSET) Enable Interrupt Events via SPITUR Position */
 #define SPI_IXS_INTENSET_SPITUREN_Msk         (_UINT32_(0x1) << SPI_IXS_INTENSET_SPITUREN_Pos)     /* (SPI_IXS_INTENSET) Enable Interrupt Events via SPITUR Mask */
-#define SPI_IXS_INTENSET_SPITUREN(value)      (SPI_IXS_INTENSET_SPITUREN_Msk & (_UINT32_(value) << SPI_IXS_INTENSET_SPITUREN_Pos)) /* Assignment of value for SPITUREN in the SPI_IXS_INTENSET register */
+#define SPI_IXS_INTENSET_SPITUREN(value)      (SPI_IXS_INTENSET_SPITUREN_Msk & ((uint32_t)(value) << SPI_IXS_INTENSET_SPITUREN_Pos)) /* Assignment of value for SPITUREN in the SPI_IXS_INTENSET register */
 #define SPI_IXS_INTENSET_SPIROVEN_Pos         _UINT32_(30)                                         /* (SPI_IXS_INTENSET) Enable Interrupt Events via SPIROV Position */
 #define SPI_IXS_INTENSET_SPIROVEN_Msk         (_UINT32_(0x1) << SPI_IXS_INTENSET_SPIROVEN_Pos)     /* (SPI_IXS_INTENSET) Enable Interrupt Events via SPIROV Mask */
-#define SPI_IXS_INTENSET_SPIROVEN(value)      (SPI_IXS_INTENSET_SPIROVEN_Msk & (_UINT32_(value) << SPI_IXS_INTENSET_SPIROVEN_Pos)) /* Assignment of value for SPIROVEN in the SPI_IXS_INTENSET register */
+#define SPI_IXS_INTENSET_SPIROVEN(value)      (SPI_IXS_INTENSET_SPIROVEN_Msk & ((uint32_t)(value) << SPI_IXS_INTENSET_SPIROVEN_Pos)) /* Assignment of value for SPIROVEN in the SPI_IXS_INTENSET register */
 #define SPI_IXS_INTENSET_Msk                  _UINT32_(0x48008011)                                 /* (SPI_IXS_INTENSET) Register Mask  */
 
 
@@ -357,19 +363,19 @@
 
 #define SPI_IXS_INTENCLR_SPIRXBFEN_Pos        _UINT32_(0)                                          /* (SPI_IXS_INTENCLR) Enablie Interrupt Events via SPIRXBF Position */
 #define SPI_IXS_INTENCLR_SPIRXBFEN_Msk        (_UINT32_(0x1) << SPI_IXS_INTENCLR_SPIRXBFEN_Pos)    /* (SPI_IXS_INTENCLR) Enablie Interrupt Events via SPIRXBF Mask */
-#define SPI_IXS_INTENCLR_SPIRXBFEN(value)     (SPI_IXS_INTENCLR_SPIRXBFEN_Msk & (_UINT32_(value) << SPI_IXS_INTENCLR_SPIRXBFEN_Pos)) /* Assignment of value for SPIRXBFEN in the SPI_IXS_INTENCLR register */
+#define SPI_IXS_INTENCLR_SPIRXBFEN(value)     (SPI_IXS_INTENCLR_SPIRXBFEN_Msk & ((uint32_t)(value) << SPI_IXS_INTENCLR_SPIRXBFEN_Pos)) /* Assignment of value for SPIRXBFEN in the SPI_IXS_INTENCLR register */
 #define SPI_IXS_INTENCLR_SPITXBEEN_Pos        _UINT32_(4)                                          /* (SPI_IXS_INTENCLR) Enablie Interrupt Events via SPITXBE Position */
 #define SPI_IXS_INTENCLR_SPITXBEEN_Msk        (_UINT32_(0x1) << SPI_IXS_INTENCLR_SPITXBEEN_Pos)    /* (SPI_IXS_INTENCLR) Enablie Interrupt Events via SPITXBE Mask */
-#define SPI_IXS_INTENCLR_SPITXBEEN(value)     (SPI_IXS_INTENCLR_SPITXBEEN_Msk & (_UINT32_(value) << SPI_IXS_INTENCLR_SPITXBEEN_Pos)) /* Assignment of value for SPITXBEEN in the SPI_IXS_INTENCLR register */
+#define SPI_IXS_INTENCLR_SPITXBEEN(value)     (SPI_IXS_INTENCLR_SPITXBEEN_Msk & ((uint32_t)(value) << SPI_IXS_INTENCLR_SPITXBEEN_Pos)) /* Assignment of value for SPITXBEEN in the SPI_IXS_INTENCLR register */
 #define SPI_IXS_INTENCLR_FRMERREN_Pos         _UINT32_(15)                                         /* (SPI_IXS_INTENCLR) Enable Interrupt Events via FRMERR Position */
 #define SPI_IXS_INTENCLR_FRMERREN_Msk         (_UINT32_(0x1) << SPI_IXS_INTENCLR_FRMERREN_Pos)     /* (SPI_IXS_INTENCLR) Enable Interrupt Events via FRMERR Mask */
-#define SPI_IXS_INTENCLR_FRMERREN(value)      (SPI_IXS_INTENCLR_FRMERREN_Msk & (_UINT32_(value) << SPI_IXS_INTENCLR_FRMERREN_Pos)) /* Assignment of value for FRMERREN in the SPI_IXS_INTENCLR register */
+#define SPI_IXS_INTENCLR_FRMERREN(value)      (SPI_IXS_INTENCLR_FRMERREN_Msk & ((uint32_t)(value) << SPI_IXS_INTENCLR_FRMERREN_Pos)) /* Assignment of value for FRMERREN in the SPI_IXS_INTENCLR register */
 #define SPI_IXS_INTENCLR_SPITUREN_Pos         _UINT32_(27)                                         /* (SPI_IXS_INTENCLR) Enable Interrupt Events via SPITUR Position */
 #define SPI_IXS_INTENCLR_SPITUREN_Msk         (_UINT32_(0x1) << SPI_IXS_INTENCLR_SPITUREN_Pos)     /* (SPI_IXS_INTENCLR) Enable Interrupt Events via SPITUR Mask */
-#define SPI_IXS_INTENCLR_SPITUREN(value)      (SPI_IXS_INTENCLR_SPITUREN_Msk & (_UINT32_(value) << SPI_IXS_INTENCLR_SPITUREN_Pos)) /* Assignment of value for SPITUREN in the SPI_IXS_INTENCLR register */
+#define SPI_IXS_INTENCLR_SPITUREN(value)      (SPI_IXS_INTENCLR_SPITUREN_Msk & ((uint32_t)(value) << SPI_IXS_INTENCLR_SPITUREN_Pos)) /* Assignment of value for SPITUREN in the SPI_IXS_INTENCLR register */
 #define SPI_IXS_INTENCLR_SPIROVEN_Pos         _UINT32_(30)                                         /* (SPI_IXS_INTENCLR) Enable Interrupt Events via SPIROV Position */
 #define SPI_IXS_INTENCLR_SPIROVEN_Msk         (_UINT32_(0x1) << SPI_IXS_INTENCLR_SPIROVEN_Pos)     /* (SPI_IXS_INTENCLR) Enable Interrupt Events via SPIROV Mask */
-#define SPI_IXS_INTENCLR_SPIROVEN(value)      (SPI_IXS_INTENCLR_SPIROVEN_Msk & (_UINT32_(value) << SPI_IXS_INTENCLR_SPIROVEN_Pos)) /* Assignment of value for SPIROVEN in the SPI_IXS_INTENCLR register */
+#define SPI_IXS_INTENCLR_SPIROVEN(value)      (SPI_IXS_INTENCLR_SPIROVEN_Msk & ((uint32_t)(value) << SPI_IXS_INTENCLR_SPIROVEN_Pos)) /* Assignment of value for SPIROVEN in the SPI_IXS_INTENCLR register */
 #define SPI_IXS_INTENCLR_Msk                  _UINT32_(0x48008011)                                 /* (SPI_IXS_INTENCLR) Register Mask  */
 
 
@@ -378,19 +384,19 @@
 
 #define SPI_IXS_INTFLAG_SPIRXBF_Pos           _UINT32_(0)                                          /* (SPI_IXS_INTFLAG) SPI Receive Buffer Full Status Bit Position */
 #define SPI_IXS_INTFLAG_SPIRXBF_Msk           (_UINT32_(0x1) << SPI_IXS_INTFLAG_SPIRXBF_Pos)       /* (SPI_IXS_INTFLAG) SPI Receive Buffer Full Status Bit Mask */
-#define SPI_IXS_INTFLAG_SPIRXBF(value)        (SPI_IXS_INTFLAG_SPIRXBF_Msk & (_UINT32_(value) << SPI_IXS_INTFLAG_SPIRXBF_Pos)) /* Assignment of value for SPIRXBF in the SPI_IXS_INTFLAG register */
+#define SPI_IXS_INTFLAG_SPIRXBF(value)        (SPI_IXS_INTFLAG_SPIRXBF_Msk & ((uint32_t)(value) << SPI_IXS_INTFLAG_SPIRXBF_Pos)) /* Assignment of value for SPIRXBF in the SPI_IXS_INTFLAG register */
 #define SPI_IXS_INTFLAG_SPITXBE_Pos           _UINT32_(4)                                          /* (SPI_IXS_INTFLAG) SPI Transmit Buffer Empty Status Bit Position */
 #define SPI_IXS_INTFLAG_SPITXBE_Msk           (_UINT32_(0x1) << SPI_IXS_INTFLAG_SPITXBE_Pos)       /* (SPI_IXS_INTFLAG) SPI Transmit Buffer Empty Status Bit Mask */
-#define SPI_IXS_INTFLAG_SPITXBE(value)        (SPI_IXS_INTFLAG_SPITXBE_Msk & (_UINT32_(value) << SPI_IXS_INTFLAG_SPITXBE_Pos)) /* Assignment of value for SPITXBE in the SPI_IXS_INTFLAG register */
+#define SPI_IXS_INTFLAG_SPITXBE(value)        (SPI_IXS_INTFLAG_SPITXBE_Msk & ((uint32_t)(value) << SPI_IXS_INTFLAG_SPITXBE_Pos)) /* Assignment of value for SPITXBE in the SPI_IXS_INTFLAG register */
 #define SPI_IXS_INTFLAG_FRMERR_Pos            _UINT32_(15)                                         /* (SPI_IXS_INTFLAG) SPI Frame Error Status bit Position */
 #define SPI_IXS_INTFLAG_FRMERR_Msk            (_UINT32_(0x1) << SPI_IXS_INTFLAG_FRMERR_Pos)        /* (SPI_IXS_INTFLAG) SPI Frame Error Status bit Mask */
-#define SPI_IXS_INTFLAG_FRMERR(value)         (SPI_IXS_INTFLAG_FRMERR_Msk & (_UINT32_(value) << SPI_IXS_INTFLAG_FRMERR_Pos)) /* Assignment of value for FRMERR in the SPI_IXS_INTFLAG register */
+#define SPI_IXS_INTFLAG_FRMERR(value)         (SPI_IXS_INTFLAG_FRMERR_Msk & ((uint32_t)(value) << SPI_IXS_INTFLAG_FRMERR_Pos)) /* Assignment of value for FRMERR in the SPI_IXS_INTFLAG register */
 #define SPI_IXS_INTFLAG_SPITUR_Pos            _UINT32_(27)                                         /* (SPI_IXS_INTFLAG) Transmit Underrun Status bit Position */
 #define SPI_IXS_INTFLAG_SPITUR_Msk            (_UINT32_(0x1) << SPI_IXS_INTFLAG_SPITUR_Pos)        /* (SPI_IXS_INTFLAG) Transmit Underrun Status bit Mask */
-#define SPI_IXS_INTFLAG_SPITUR(value)         (SPI_IXS_INTFLAG_SPITUR_Msk & (_UINT32_(value) << SPI_IXS_INTFLAG_SPITUR_Pos)) /* Assignment of value for SPITUR in the SPI_IXS_INTFLAG register */
+#define SPI_IXS_INTFLAG_SPITUR(value)         (SPI_IXS_INTFLAG_SPITUR_Msk & ((uint32_t)(value) << SPI_IXS_INTFLAG_SPITUR_Pos)) /* Assignment of value for SPITUR in the SPI_IXS_INTFLAG register */
 #define SPI_IXS_INTFLAG_SPIROV_Pos            _UINT32_(30)                                         /* (SPI_IXS_INTFLAG) Receive Overflow Status bit Position */
 #define SPI_IXS_INTFLAG_SPIROV_Msk            (_UINT32_(0x1) << SPI_IXS_INTFLAG_SPIROV_Pos)        /* (SPI_IXS_INTFLAG) Receive Overflow Status bit Mask */
-#define SPI_IXS_INTFLAG_SPIROV(value)         (SPI_IXS_INTFLAG_SPIROV_Msk & (_UINT32_(value) << SPI_IXS_INTFLAG_SPIROV_Pos)) /* Assignment of value for SPIROV in the SPI_IXS_INTFLAG register */
+#define SPI_IXS_INTFLAG_SPIROV(value)         (SPI_IXS_INTFLAG_SPIROV_Msk & ((uint32_t)(value) << SPI_IXS_INTFLAG_SPIROV_Pos)) /* Assignment of value for SPIROV in the SPI_IXS_INTFLAG register */
 #define SPI_IXS_INTFLAG_Msk                   _UINT32_(0x48008011)                                 /* (SPI_IXS_INTFLAG) Register Mask  */
 
 
@@ -399,28 +405,28 @@
 
 #define SPI_IXS_STATUS_RXBUFELM_Pos           _UINT32_(0)                                          /* (SPI_IXS_STATUS) Receive Buffer Element Count bits Position */
 #define SPI_IXS_STATUS_RXBUFELM_Msk           (_UINT32_(0x1FF) << SPI_IXS_STATUS_RXBUFELM_Pos)     /* (SPI_IXS_STATUS) Receive Buffer Element Count bits Mask */
-#define SPI_IXS_STATUS_RXBUFELM(value)        (SPI_IXS_STATUS_RXBUFELM_Msk & (_UINT32_(value) << SPI_IXS_STATUS_RXBUFELM_Pos)) /* Assignment of value for RXBUFELM in the SPI_IXS_STATUS register */
+#define SPI_IXS_STATUS_RXBUFELM(value)        (SPI_IXS_STATUS_RXBUFELM_Msk & ((uint32_t)(value) << SPI_IXS_STATUS_RXBUFELM_Pos)) /* Assignment of value for RXBUFELM in the SPI_IXS_STATUS register */
 #define SPI_IXS_STATUS_SRMT_Pos               _UINT32_(13)                                         /* (SPI_IXS_STATUS) Register (SR) Empty bit Position */
 #define SPI_IXS_STATUS_SRMT_Msk               (_UINT32_(0x1) << SPI_IXS_STATUS_SRMT_Pos)           /* (SPI_IXS_STATUS) Register (SR) Empty bit Mask */
-#define SPI_IXS_STATUS_SRMT(value)            (SPI_IXS_STATUS_SRMT_Msk & (_UINT32_(value) << SPI_IXS_STATUS_SRMT_Pos)) /* Assignment of value for SRMT in the SPI_IXS_STATUS register */
+#define SPI_IXS_STATUS_SRMT(value)            (SPI_IXS_STATUS_SRMT_Msk & ((uint32_t)(value) << SPI_IXS_STATUS_SRMT_Pos)) /* Assignment of value for SRMT in the SPI_IXS_STATUS register */
 #define SPI_IXS_STATUS_SPIBUSY_Pos            _UINT32_(14)                                         /* (SPI_IXS_STATUS) SPI activity status bit Position */
 #define SPI_IXS_STATUS_SPIBUSY_Msk            (_UINT32_(0x1) << SPI_IXS_STATUS_SPIBUSY_Pos)        /* (SPI_IXS_STATUS) SPI activity status bit Mask */
-#define SPI_IXS_STATUS_SPIBUSY(value)         (SPI_IXS_STATUS_SPIBUSY_Msk & (_UINT32_(value) << SPI_IXS_STATUS_SPIBUSY_Pos)) /* Assignment of value for SPIBUSY in the SPI_IXS_STATUS register */
+#define SPI_IXS_STATUS_SPIBUSY(value)         (SPI_IXS_STATUS_SPIBUSY_Msk & ((uint32_t)(value) << SPI_IXS_STATUS_SPIBUSY_Pos)) /* Assignment of value for SPIBUSY in the SPI_IXS_STATUS register */
 #define SPI_IXS_STATUS_TXBUFELM_Pos           _UINT32_(16)                                         /* (SPI_IXS_STATUS) Transmit Buffer Element Count bits Position */
 #define SPI_IXS_STATUS_TXBUFELM_Msk           (_UINT32_(0x1FF) << SPI_IXS_STATUS_TXBUFELM_Pos)     /* (SPI_IXS_STATUS) Transmit Buffer Element Count bits Mask */
-#define SPI_IXS_STATUS_TXBUFELM(value)        (SPI_IXS_STATUS_TXBUFELM_Msk & (_UINT32_(value) << SPI_IXS_STATUS_TXBUFELM_Pos)) /* Assignment of value for TXBUFELM in the SPI_IXS_STATUS register */
+#define SPI_IXS_STATUS_TXBUFELM(value)        (SPI_IXS_STATUS_TXBUFELM_Msk & ((uint32_t)(value) << SPI_IXS_STATUS_TXBUFELM_Pos)) /* Assignment of value for TXBUFELM in the SPI_IXS_STATUS register */
 #define SPI_IXS_STATUS_SPITBF_Pos             _UINT32_(26)                                         /* (SPI_IXS_STATUS) SPI Transmit Buffer Full Status bit Position */
 #define SPI_IXS_STATUS_SPITBF_Msk             (_UINT32_(0x1) << SPI_IXS_STATUS_SPITBF_Pos)         /* (SPI_IXS_STATUS) SPI Transmit Buffer Full Status bit Mask */
-#define SPI_IXS_STATUS_SPITBF(value)          (SPI_IXS_STATUS_SPITBF_Msk & (_UINT32_(value) << SPI_IXS_STATUS_SPITBF_Pos)) /* Assignment of value for SPITBF in the SPI_IXS_STATUS register */
+#define SPI_IXS_STATUS_SPITBF(value)          (SPI_IXS_STATUS_SPITBF_Msk & ((uint32_t)(value) << SPI_IXS_STATUS_SPITBF_Pos)) /* Assignment of value for SPITBF in the SPI_IXS_STATUS register */
 #define SPI_IXS_STATUS_SPITBE_Pos             _UINT32_(28)                                         /* (SPI_IXS_STATUS) SPI Transmit Buffer Empty status bit Position */
 #define SPI_IXS_STATUS_SPITBE_Msk             (_UINT32_(0x1) << SPI_IXS_STATUS_SPITBE_Pos)         /* (SPI_IXS_STATUS) SPI Transmit Buffer Empty status bit Mask */
-#define SPI_IXS_STATUS_SPITBE(value)          (SPI_IXS_STATUS_SPITBE_Msk & (_UINT32_(value) << SPI_IXS_STATUS_SPITBE_Pos)) /* Assignment of value for SPITBE in the SPI_IXS_STATUS register */
+#define SPI_IXS_STATUS_SPITBE(value)          (SPI_IXS_STATUS_SPITBE_Msk & ((uint32_t)(value) << SPI_IXS_STATUS_SPITBE_Pos)) /* Assignment of value for SPITBE in the SPI_IXS_STATUS register */
 #define SPI_IXS_STATUS_SPIRBF_Pos             _UINT32_(29)                                         /* (SPI_IXS_STATUS) SPI Receive Buffer Full status bit Position */
 #define SPI_IXS_STATUS_SPIRBF_Msk             (_UINT32_(0x1) << SPI_IXS_STATUS_SPIRBF_Pos)         /* (SPI_IXS_STATUS) SPI Receive Buffer Full status bit Mask */
-#define SPI_IXS_STATUS_SPIRBF(value)          (SPI_IXS_STATUS_SPIRBF_Msk & (_UINT32_(value) << SPI_IXS_STATUS_SPIRBF_Pos)) /* Assignment of value for SPIRBF in the SPI_IXS_STATUS register */
+#define SPI_IXS_STATUS_SPIRBF(value)          (SPI_IXS_STATUS_SPIRBF_Msk & ((uint32_t)(value) << SPI_IXS_STATUS_SPIRBF_Pos)) /* Assignment of value for SPIRBF in the SPI_IXS_STATUS register */
 #define SPI_IXS_STATUS_SPIRBE_Pos             _UINT32_(31)                                         /* (SPI_IXS_STATUS) RX Buffer Empty bit Position */
 #define SPI_IXS_STATUS_SPIRBE_Msk             (_UINT32_(0x1) << SPI_IXS_STATUS_SPIRBE_Pos)         /* (SPI_IXS_STATUS) RX Buffer Empty bit Mask */
-#define SPI_IXS_STATUS_SPIRBE(value)          (SPI_IXS_STATUS_SPIRBE_Msk & (_UINT32_(value) << SPI_IXS_STATUS_SPIRBE_Pos)) /* Assignment of value for SPIRBE in the SPI_IXS_STATUS register */
+#define SPI_IXS_STATUS_SPIRBE(value)          (SPI_IXS_STATUS_SPIRBE_Msk & ((uint32_t)(value) << SPI_IXS_STATUS_SPIRBE_Pos)) /* Assignment of value for SPIRBE in the SPI_IXS_STATUS register */
 #define SPI_IXS_STATUS_Msk                    _UINT32_(0xB5FF61FF)                                 /* (SPI_IXS_STATUS) Register Mask  */
 
 
@@ -429,7 +435,7 @@
 
 #define SPI_IXS_BUF_DATA_Pos                  _UINT32_(0)                                          /* (SPI_IXS_BUF) FIFO Data bits Position */
 #define SPI_IXS_BUF_DATA_Msk                  (_UINT32_(0xFFFFFFFF) << SPI_IXS_BUF_DATA_Pos)       /* (SPI_IXS_BUF) FIFO Data bits Mask */
-#define SPI_IXS_BUF_DATA(value)               (SPI_IXS_BUF_DATA_Msk & (_UINT32_(value) << SPI_IXS_BUF_DATA_Pos)) /* Assignment of value for DATA in the SPI_IXS_BUF register */
+#define SPI_IXS_BUF_DATA(value)               (SPI_IXS_BUF_DATA_Msk & ((uint32_t)(value) << SPI_IXS_BUF_DATA_Pos)) /* Assignment of value for DATA in the SPI_IXS_BUF register */
 #define SPI_IXS_BUF_Msk                       _UINT32_(0xFFFFFFFF)                                 /* (SPI_IXS_BUF) Register Mask  */
 
 
@@ -438,7 +444,7 @@
 
 #define SPI_IXS_BRG_BRG_Pos                   _UINT32_(0)                                          /* (SPI_IXS_BRG) Baud Rate Divisor bits Position */
 #define SPI_IXS_BRG_BRG_Msk                   (_UINT32_(0x1FFF) << SPI_IXS_BRG_BRG_Pos)            /* (SPI_IXS_BRG) Baud Rate Divisor bits Mask */
-#define SPI_IXS_BRG_BRG(value)                (SPI_IXS_BRG_BRG_Msk & (_UINT32_(value) << SPI_IXS_BRG_BRG_Pos)) /* Assignment of value for BRG in the SPI_IXS_BRG register */
+#define SPI_IXS_BRG_BRG(value)                (SPI_IXS_BRG_BRG_Msk & ((uint32_t)(value) << SPI_IXS_BRG_BRG_Pos)) /* Assignment of value for BRG in the SPI_IXS_BRG register */
 #define SPI_IXS_BRG_Msk                       _UINT32_(0x00001FFF)                                 /* (SPI_IXS_BRG) Register Mask  */
 
 
@@ -447,7 +453,7 @@
 
 #define SPI_IXS_DBGCTRL_DBGRUN_Pos            _UINT32_(0)                                          /* (SPI_IXS_DBGCTRL) Debug Running State Position */
 #define SPI_IXS_DBGCTRL_DBGRUN_Msk            (_UINT32_(0x1) << SPI_IXS_DBGCTRL_DBGRUN_Pos)        /* (SPI_IXS_DBGCTRL) Debug Running State Mask */
-#define SPI_IXS_DBGCTRL_DBGRUN(value)         (SPI_IXS_DBGCTRL_DBGRUN_Msk & (_UINT32_(value) << SPI_IXS_DBGCTRL_DBGRUN_Pos)) /* Assignment of value for DBGRUN in the SPI_IXS_DBGCTRL register */
+#define SPI_IXS_DBGCTRL_DBGRUN(value)         (SPI_IXS_DBGCTRL_DBGRUN_Msk & ((uint32_t)(value) << SPI_IXS_DBGCTRL_DBGRUN_Pos)) /* Assignment of value for DBGRUN in the SPI_IXS_DBGCTRL register */
 #define SPI_IXS_DBGCTRL_Msk                   _UINT32_(0x00000001)                                 /* (SPI_IXS_DBGCTRL) Register Mask  */
 
 
@@ -456,7 +462,7 @@
 
 #define SPI_IXS_SYNCBUSY_SWRSTBSY_Pos         _UINT32_(0)                                          /* (SPI_IXS_SYNCBUSY) Software reset busy bit   --- Synchronizing Busy bit for swrst Position */
 #define SPI_IXS_SYNCBUSY_SWRSTBSY_Msk         (_UINT32_(0x1) << SPI_IXS_SYNCBUSY_SWRSTBSY_Pos)     /* (SPI_IXS_SYNCBUSY) Software reset busy bit   --- Synchronizing Busy bit for swrst Mask */
-#define SPI_IXS_SYNCBUSY_SWRSTBSY(value)      (SPI_IXS_SYNCBUSY_SWRSTBSY_Msk & (_UINT32_(value) << SPI_IXS_SYNCBUSY_SWRSTBSY_Pos)) /* Assignment of value for SWRSTBSY in the SPI_IXS_SYNCBUSY register */
+#define SPI_IXS_SYNCBUSY_SWRSTBSY(value)      (SPI_IXS_SYNCBUSY_SWRSTBSY_Msk & ((uint32_t)(value) << SPI_IXS_SYNCBUSY_SWRSTBSY_Pos)) /* Assignment of value for SWRSTBSY in the SPI_IXS_SYNCBUSY register */
 #define SPI_IXS_SYNCBUSY_Msk                  _UINT32_(0x00000001)                                 /* (SPI_IXS_SYNCBUSY) Register Mask  */
 
 
@@ -465,7 +471,7 @@
 
 #define SPI_IXS_EVCTRL_FPSEEN_Pos             _UINT32_(0)                                          /* (SPI_IXS_EVCTRL) Frame Pulse Event Enable Bit Position */
 #define SPI_IXS_EVCTRL_FPSEEN_Msk             (_UINT32_(0x1) << SPI_IXS_EVCTRL_FPSEEN_Pos)         /* (SPI_IXS_EVCTRL) Frame Pulse Event Enable Bit Mask */
-#define SPI_IXS_EVCTRL_FPSEEN(value)          (SPI_IXS_EVCTRL_FPSEEN_Msk & (_UINT32_(value) << SPI_IXS_EVCTRL_FPSEEN_Pos)) /* Assignment of value for FPSEEN in the SPI_IXS_EVCTRL register */
+#define SPI_IXS_EVCTRL_FPSEEN(value)          (SPI_IXS_EVCTRL_FPSEEN_Msk & ((uint32_t)(value) << SPI_IXS_EVCTRL_FPSEEN_Pos)) /* Assignment of value for FPSEEN in the SPI_IXS_EVCTRL register */
 #define SPI_IXS_EVCTRL_Msk                    _UINT32_(0x00000001)                                 /* (SPI_IXS_EVCTRL) Register Mask  */
 
 

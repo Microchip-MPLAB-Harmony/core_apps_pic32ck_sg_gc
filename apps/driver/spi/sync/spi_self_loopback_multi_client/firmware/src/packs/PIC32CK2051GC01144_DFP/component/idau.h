@@ -1,7 +1,9 @@
 /*
  * Component description for IDAU
  *
- * Copyright (c) 2024 Microchip Technology Inc. and its subsidiaries.
+ * Copyright (c) 2026 Microchip Technology Inc. and its subsidiaries.
+ *
+ * SPDX-License-Identifier: Apache-2.0
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -17,9 +19,13 @@
  *
  */
 
-/*  file generated from device description file (ATDF) version 2024-04-02T09:16:01Z  */
+/*  file generated from device description file (ATDF) version 2026-09-01T07:31:34Z  */
 #ifndef _PIC32CKGC01_IDAU_COMPONENT_H_
 #define _PIC32CKGC01_IDAU_COMPONENT_H_
+
+#if !defined(DISABLE_CMSIS)
+#include "core_cm33.h"
+#endif /* !defined(DISABLE_CMSIS) */
 
 /* ************************************************************************** */
 /*                      SOFTWARE API DEFINITION FOR IDAU                      */
@@ -33,10 +39,10 @@
 /* BLOCK mode */
 #define IDAU_RCTRL_BLOCK_ARG_Pos              _UINT32_(0)                                          /* (IDAU_RCTRL) Command Argument (Block ID) Position */
 #define IDAU_RCTRL_BLOCK_ARG_Msk              (_UINT32_(0x1F) << IDAU_RCTRL_BLOCK_ARG_Pos)         /* (IDAU_RCTRL) Command Argument (Block ID) Mask */
-#define IDAU_RCTRL_BLOCK_ARG(value)           (IDAU_RCTRL_BLOCK_ARG_Msk & (_UINT32_(value) << IDAU_RCTRL_BLOCK_ARG_Pos))
+#define IDAU_RCTRL_BLOCK_ARG(value)           (IDAU_RCTRL_BLOCK_ARG_Msk & ((uint32_t)(value) << IDAU_RCTRL_BLOCK_ARG_Pos))
 #define IDAU_RCTRL_BLOCK_CMD_Pos              _UINT32_(24)                                         /* (IDAU_RCTRL) Command Position */
 #define IDAU_RCTRL_BLOCK_CMD_Msk              (_UINT32_(0xFF) << IDAU_RCTRL_BLOCK_CMD_Pos)         /* (IDAU_RCTRL) Command Mask */
-#define IDAU_RCTRL_BLOCK_CMD(value)           (IDAU_RCTRL_BLOCK_CMD_Msk & (_UINT32_(value) << IDAU_RCTRL_BLOCK_CMD_Pos))
+#define IDAU_RCTRL_BLOCK_CMD(value)           (IDAU_RCTRL_BLOCK_CMD_Msk & ((uint32_t)(value) << IDAU_RCTRL_BLOCK_CMD_Pos))
 #define   IDAU_RCTRL_BLOCK_CMD_CLRNONSEC_Val  _UINT32_(0x5A)                                       /* (IDAU_RCTRL) Clear IDAU region x Non-Secure State of block ARG (RSTATUSB[x].NONSEC[ARG]=0)  */
 #define   IDAU_RCTRL_BLOCK_CMD_SETNONSEC_Val  _UINT32_(0x5B)                                       /* (IDAU_RCTRL) Set IDAU region x Non-Secure State of block ARG (RSTATUSB[x].NONSEC[ARG]=1)  */
 #define IDAU_RCTRL_BLOCK_CMD_CLRNONSEC        (IDAU_RCTRL_BLOCK_CMD_CLRNONSEC_Val << IDAU_RCTRL_BLOCK_CMD_Pos) /* (IDAU_RCTRL) Clear IDAU region x Non-Secure State of block ARG (RSTATUSB[x].NONSEC[ARG]=0) Position */
@@ -46,10 +52,10 @@
 /* WATERMARK mode */
 #define IDAU_RCTRL_WATERMARK_ARG_Pos          _UINT32_(0)                                          /* (IDAU_RCTRL) Command Argument (Watermark) Position */
 #define IDAU_RCTRL_WATERMARK_ARG_Msk          (_UINT32_(0xFFFFFF) << IDAU_RCTRL_WATERMARK_ARG_Pos) /* (IDAU_RCTRL) Command Argument (Watermark) Mask */
-#define IDAU_RCTRL_WATERMARK_ARG(value)       (IDAU_RCTRL_WATERMARK_ARG_Msk & (_UINT32_(value) << IDAU_RCTRL_WATERMARK_ARG_Pos))
+#define IDAU_RCTRL_WATERMARK_ARG(value)       (IDAU_RCTRL_WATERMARK_ARG_Msk & ((uint32_t)(value) << IDAU_RCTRL_WATERMARK_ARG_Pos))
 #define IDAU_RCTRL_WATERMARK_CMD_Pos          _UINT32_(24)                                         /* (IDAU_RCTRL) Command Position */
 #define IDAU_RCTRL_WATERMARK_CMD_Msk          (_UINT32_(0xFF) << IDAU_RCTRL_WATERMARK_CMD_Pos)     /* (IDAU_RCTRL) Command Mask */
-#define IDAU_RCTRL_WATERMARK_CMD(value)       (IDAU_RCTRL_WATERMARK_CMD_Msk & (_UINT32_(value) << IDAU_RCTRL_WATERMARK_CMD_Pos))
+#define IDAU_RCTRL_WATERMARK_CMD(value)       (IDAU_RCTRL_WATERMARK_CMD_Msk & ((uint32_t)(value) << IDAU_RCTRL_WATERMARK_CMD_Pos))
 #define   IDAU_RCTRL_WATERMARK_CMD_WRSZ_Val   _UINT32_(0x5C)                                       /* (IDAU_RCTRL) Write IDAU region x Size (RSTATUSB[x].SIZE=ARG)  */
 #define IDAU_RCTRL_WATERMARK_CMD_WRSZ         (IDAU_RCTRL_WATERMARK_CMD_WRSZ_Val << IDAU_RCTRL_WATERMARK_CMD_Pos) /* (IDAU_RCTRL) Write IDAU region x Size (RSTATUSB[x].SIZE=ARG) Position */
 #define IDAU_RCTRL_WATERMARK_Msk              _UINT32_(0xFFFFFFFF)                                 /* (IDAU_RCTRL_WATERMARK) Register Mask  */
@@ -60,7 +66,7 @@
 
 #define IDAU_RSTATUSA_TYPE_Pos                _UINT32_(0)                                          /* (IDAU_RSTATUSA) IDAU Region Type Position */
 #define IDAU_RSTATUSA_TYPE_Msk                (_UINT32_(0xF) << IDAU_RSTATUSA_TYPE_Pos)            /* (IDAU_RSTATUSA) IDAU Region Type Mask */
-#define IDAU_RSTATUSA_TYPE(value)             (IDAU_RSTATUSA_TYPE_Msk & (_UINT32_(value) << IDAU_RSTATUSA_TYPE_Pos)) /* Assignment of value for TYPE in the IDAU_RSTATUSA register */
+#define IDAU_RSTATUSA_TYPE(value)             (IDAU_RSTATUSA_TYPE_Msk & ((uint32_t)(value) << IDAU_RSTATUSA_TYPE_Pos)) /* Assignment of value for TYPE in the IDAU_RSTATUSA register */
 #define   IDAU_RSTATUSA_TYPE_INVALID_Val      _UINT32_(0x0)                                        /* (IDAU_RSTATUSA) Region is invalid  */
 #define   IDAU_RSTATUSA_TYPE_SEC_Val          _UINT32_(0x1)                                        /* (IDAU_RSTATUSA) Region is secure  */
 #define   IDAU_RSTATUSA_TYPE_NONSEC_Val       _UINT32_(0x2)                                        /* (IDAU_RSTATUSA) Region is non secure  */
@@ -79,7 +85,7 @@
 #define IDAU_RSTATUSA_TYPE_EXEMPT_B           (IDAU_RSTATUSA_TYPE_EXEMPT_B_Val << IDAU_RSTATUSA_TYPE_Pos) /* (IDAU_RSTATUSA) Region is exempt from security, the associated register group implements a block configuration Position */
 #define IDAU_RSTATUSA_GRAN_Pos                _UINT32_(8)                                          /* (IDAU_RSTATUSA) Region Granularity Position */
 #define IDAU_RSTATUSA_GRAN_Msk                (_UINT32_(0x3F) << IDAU_RSTATUSA_GRAN_Pos)           /* (IDAU_RSTATUSA) Region Granularity Mask */
-#define IDAU_RSTATUSA_GRAN(value)             (IDAU_RSTATUSA_GRAN_Msk & (_UINT32_(value) << IDAU_RSTATUSA_GRAN_Pos)) /* Assignment of value for GRAN in the IDAU_RSTATUSA register */
+#define IDAU_RSTATUSA_GRAN(value)             (IDAU_RSTATUSA_GRAN_Msk & ((uint32_t)(value) << IDAU_RSTATUSA_GRAN_Pos)) /* Assignment of value for GRAN in the IDAU_RSTATUSA register */
 #define   IDAU_RSTATUSA_GRAN_GRAN_NA_Val      _UINT32_(0x0)                                        /* (IDAU_RSTATUSA) Not Applicable  */
 #define   IDAU_RSTATUSA_GRAN_GRAN_32B_Val     _UINT32_(0x5)                                        /* (IDAU_RSTATUSA)   */
 #define   IDAU_RSTATUSA_GRAN_GRAN_64B_Val     _UINT32_(0x6)                                        /* (IDAU_RSTATUSA)   */
@@ -140,7 +146,7 @@
 #define IDAU_RSTATUSA_GRAN_GRAN_4GB           (IDAU_RSTATUSA_GRAN_GRAN_4GB_Val << IDAU_RSTATUSA_GRAN_Pos) /* (IDAU_RSTATUSA)  Position */
 #define IDAU_RSTATUSA_MAXSZ_Pos               _UINT32_(16)                                         /* (IDAU_RSTATUSA) Command Argument Maximum Size Position */
 #define IDAU_RSTATUSA_MAXSZ_Msk               (_UINT32_(0x3F) << IDAU_RSTATUSA_MAXSZ_Pos)          /* (IDAU_RSTATUSA) Command Argument Maximum Size Mask */
-#define IDAU_RSTATUSA_MAXSZ(value)            (IDAU_RSTATUSA_MAXSZ_Msk & (_UINT32_(value) << IDAU_RSTATUSA_MAXSZ_Pos)) /* Assignment of value for MAXSZ in the IDAU_RSTATUSA register */
+#define IDAU_RSTATUSA_MAXSZ(value)            (IDAU_RSTATUSA_MAXSZ_Msk & ((uint32_t)(value) << IDAU_RSTATUSA_MAXSZ_Pos)) /* Assignment of value for MAXSZ in the IDAU_RSTATUSA register */
 #define IDAU_RSTATUSA_Msk                     _UINT32_(0x003F3F0F)                                 /* (IDAU_RSTATUSA) Register Mask  */
 
 
@@ -152,13 +158,13 @@
 /* BLOCK mode */
 #define IDAU_RSTATUSB_BLOCK_NONSEC_Pos        _UINT32_(0)                                          /* (IDAU_RSTATUSB) Block Based Region Non-Secure State Position */
 #define IDAU_RSTATUSB_BLOCK_NONSEC_Msk        (_UINT32_(0xFFFFFFFF) << IDAU_RSTATUSB_BLOCK_NONSEC_Pos) /* (IDAU_RSTATUSB) Block Based Region Non-Secure State Mask */
-#define IDAU_RSTATUSB_BLOCK_NONSEC(value)     (IDAU_RSTATUSB_BLOCK_NONSEC_Msk & (_UINT32_(value) << IDAU_RSTATUSB_BLOCK_NONSEC_Pos))
+#define IDAU_RSTATUSB_BLOCK_NONSEC(value)     (IDAU_RSTATUSB_BLOCK_NONSEC_Msk & ((uint32_t)(value) << IDAU_RSTATUSB_BLOCK_NONSEC_Pos))
 #define IDAU_RSTATUSB_BLOCK_Msk               _UINT32_(0xFFFFFFFF)                                 /* (IDAU_RSTATUSB_BLOCK) Register Mask  */
 
 /* WATERMARK mode */
 #define IDAU_RSTATUSB_WATERMARK_SIZE_Pos      _UINT32_(0)                                          /* (IDAU_RSTATUSB) Watermark Based Region Size in Bytes Position */
 #define IDAU_RSTATUSB_WATERMARK_SIZE_Msk      (_UINT32_(0xFFFFFFFF) << IDAU_RSTATUSB_WATERMARK_SIZE_Pos) /* (IDAU_RSTATUSB) Watermark Based Region Size in Bytes Mask */
-#define IDAU_RSTATUSB_WATERMARK_SIZE(value)   (IDAU_RSTATUSB_WATERMARK_SIZE_Msk & (_UINT32_(value) << IDAU_RSTATUSB_WATERMARK_SIZE_Pos))
+#define IDAU_RSTATUSB_WATERMARK_SIZE(value)   (IDAU_RSTATUSB_WATERMARK_SIZE_Msk & ((uint32_t)(value) << IDAU_RSTATUSB_WATERMARK_SIZE_Pos))
 #define IDAU_RSTATUSB_WATERMARK_Msk           _UINT32_(0xFFFFFFFF)                                 /* (IDAU_RSTATUSB_WATERMARK) Register Mask  */
 
 
@@ -170,16 +176,16 @@
 /* BLOCK mode */
 #define IDAU_RSTATUSC_BLOCK_CST_Pos           _UINT32_(0)                                          /* (IDAU_RSTATUSC) Constant Block Configuration Position */
 #define IDAU_RSTATUSC_BLOCK_CST_Msk           (_UINT32_(0xFFFFFFFF) << IDAU_RSTATUSC_BLOCK_CST_Pos) /* (IDAU_RSTATUSC) Constant Block Configuration Mask */
-#define IDAU_RSTATUSC_BLOCK_CST(value)        (IDAU_RSTATUSC_BLOCK_CST_Msk & (_UINT32_(value) << IDAU_RSTATUSC_BLOCK_CST_Pos))
+#define IDAU_RSTATUSC_BLOCK_CST(value)        (IDAU_RSTATUSC_BLOCK_CST_Msk & ((uint32_t)(value) << IDAU_RSTATUSC_BLOCK_CST_Pos))
 #define IDAU_RSTATUSC_BLOCK_Msk               _UINT32_(0xFFFFFFFF)                                 /* (IDAU_RSTATUSC_BLOCK) Register Mask  */
 
 /* LINK mode */
 #define IDAU_RSTATUSC_LINK_RGN_Pos            _UINT32_(0)                                          /* (IDAU_RSTATUSC) Linked IDAU Region ID Position */
 #define IDAU_RSTATUSC_LINK_RGN_Msk            (_UINT32_(0xFF) << IDAU_RSTATUSC_LINK_RGN_Pos)       /* (IDAU_RSTATUSC) Linked IDAU Region ID Mask */
-#define IDAU_RSTATUSC_LINK_RGN(value)         (IDAU_RSTATUSC_LINK_RGN_Msk & (_UINT32_(value) << IDAU_RSTATUSC_LINK_RGN_Pos))
+#define IDAU_RSTATUSC_LINK_RGN(value)         (IDAU_RSTATUSC_LINK_RGN_Msk & ((uint32_t)(value) << IDAU_RSTATUSC_LINK_RGN_Pos))
 #define IDAU_RSTATUSC_LINK_BLK_Pos            _UINT32_(8)                                          /* (IDAU_RSTATUSC) Linked IDAU Region Block ID Position */
 #define IDAU_RSTATUSC_LINK_BLK_Msk            (_UINT32_(0x1F) << IDAU_RSTATUSC_LINK_BLK_Pos)       /* (IDAU_RSTATUSC) Linked IDAU Region Block ID Mask */
-#define IDAU_RSTATUSC_LINK_BLK(value)         (IDAU_RSTATUSC_LINK_BLK_Msk & (_UINT32_(value) << IDAU_RSTATUSC_LINK_BLK_Pos))
+#define IDAU_RSTATUSC_LINK_BLK(value)         (IDAU_RSTATUSC_LINK_BLK_Msk & ((uint32_t)(value) << IDAU_RSTATUSC_LINK_BLK_Pos))
 #define IDAU_RSTATUSC_LINK_Msk                _UINT32_(0x00001FFF)                                 /* (IDAU_RSTATUSC_LINK) Register Mask  */
 
 
@@ -188,7 +194,7 @@
 
 #define IDAU_CTRL_CMD_Pos                     _UINT32_(16)                                         /* (IDAU_CTRL) Command Register Position */
 #define IDAU_CTRL_CMD_Msk                     (_UINT32_(0xFFFF) << IDAU_CTRL_CMD_Pos)              /* (IDAU_CTRL) Command Register Mask */
-#define IDAU_CTRL_CMD(value)                  (IDAU_CTRL_CMD_Msk & (_UINT32_(value) << IDAU_CTRL_CMD_Pos)) /* Assignment of value for CMD in the IDAU_CTRL register */
+#define IDAU_CTRL_CMD(value)                  (IDAU_CTRL_CMD_Msk & ((uint32_t)(value) << IDAU_CTRL_CMD_Pos)) /* Assignment of value for CMD in the IDAU_CTRL register */
 #define   IDAU_CTRL_CMD_ENABLE_Val            _UINT32_(0xA501)                                     /* (IDAU_CTRL) Module Enable  */
 #define   IDAU_CTRL_CMD_DISABLE_Val           _UINT32_(0xA502)                                     /* (IDAU_CTRL) Module Disable  */
 #define   IDAU_CTRL_CMD_WLCK_Val              _UINT32_(0xA503)                                     /* (IDAU_CTRL) Write Lock  */
@@ -201,13 +207,13 @@
 /* -------- IDAU_STATUSA : (IDAU Offset: 0x04) ( R/ 32) Status A -------- */
 #define IDAU_STATUSA_ENABLE_Pos               _UINT32_(0)                                          /* (IDAU_STATUSA) Enable Position */
 #define IDAU_STATUSA_ENABLE_Msk               (_UINT32_(0x1) << IDAU_STATUSA_ENABLE_Pos)           /* (IDAU_STATUSA) Enable Mask */
-#define IDAU_STATUSA_ENABLE(value)            (IDAU_STATUSA_ENABLE_Msk & (_UINT32_(value) << IDAU_STATUSA_ENABLE_Pos)) /* Assignment of value for ENABLE in the IDAU_STATUSA register */
+#define IDAU_STATUSA_ENABLE(value)            (IDAU_STATUSA_ENABLE_Msk & ((uint32_t)(value) << IDAU_STATUSA_ENABLE_Pos)) /* Assignment of value for ENABLE in the IDAU_STATUSA register */
 #define IDAU_STATUSA_WLCK_Pos                 _UINT32_(1)                                          /* (IDAU_STATUSA) Write Lock Position */
 #define IDAU_STATUSA_WLCK_Msk                 (_UINT32_(0x1) << IDAU_STATUSA_WLCK_Pos)             /* (IDAU_STATUSA) Write Lock Mask */
-#define IDAU_STATUSA_WLCK(value)              (IDAU_STATUSA_WLCK_Msk & (_UINT32_(value) << IDAU_STATUSA_WLCK_Pos)) /* Assignment of value for WLCK in the IDAU_STATUSA register */
+#define IDAU_STATUSA_WLCK(value)              (IDAU_STATUSA_WLCK_Msk & ((uint32_t)(value) << IDAU_STATUSA_WLCK_Pos)) /* Assignment of value for WLCK in the IDAU_STATUSA register */
 #define IDAU_STATUSA_NBRG_Pos                 _UINT32_(8)                                          /* (IDAU_STATUSA) Number Of IDAU Regions Position */
 #define IDAU_STATUSA_NBRG_Msk                 (_UINT32_(0x1FF) << IDAU_STATUSA_NBRG_Pos)           /* (IDAU_STATUSA) Number Of IDAU Regions Mask */
-#define IDAU_STATUSA_NBRG(value)              (IDAU_STATUSA_NBRG_Msk & (_UINT32_(value) << IDAU_STATUSA_NBRG_Pos)) /* Assignment of value for NBRG in the IDAU_STATUSA register */
+#define IDAU_STATUSA_NBRG(value)              (IDAU_STATUSA_NBRG_Msk & ((uint32_t)(value) << IDAU_STATUSA_NBRG_Pos)) /* Assignment of value for NBRG in the IDAU_STATUSA register */
 #define IDAU_STATUSA_Msk                      _UINT32_(0x0001FF03)                                 /* (IDAU_STATUSA) Register Mask  */
 
 
@@ -216,7 +222,7 @@
 
 #define IDAU_STATUSB_CFGERR_Pos               _UINT32_(0)                                          /* (IDAU_STATUSB) Configuration Error Position */
 #define IDAU_STATUSB_CFGERR_Msk               (_UINT32_(0x1) << IDAU_STATUSB_CFGERR_Pos)           /* (IDAU_STATUSB) Configuration Error Mask */
-#define IDAU_STATUSB_CFGERR(value)            (IDAU_STATUSB_CFGERR_Msk & (_UINT32_(value) << IDAU_STATUSB_CFGERR_Pos)) /* Assignment of value for CFGERR in the IDAU_STATUSB register */
+#define IDAU_STATUSB_CFGERR(value)            (IDAU_STATUSB_CFGERR_Msk & ((uint32_t)(value) << IDAU_STATUSB_CFGERR_Pos)) /* Assignment of value for CFGERR in the IDAU_STATUSB register */
 #define IDAU_STATUSB_Msk                      _UINT32_(0x00000001)                                 /* (IDAU_STATUSB) Register Mask  */
 
 
