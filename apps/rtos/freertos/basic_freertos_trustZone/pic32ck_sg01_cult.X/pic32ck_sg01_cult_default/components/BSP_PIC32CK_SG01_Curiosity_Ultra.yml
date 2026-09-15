@@ -1,0 +1,210 @@
+configVersion: 1.0.0
+componentName: BSP_PIC32CK_SG01_Curiosity_Ultra
+coreVersion: 5.9.0
+device: PIC32CK2051SG01144
+library: []
+dependency:
+- dependencyPackage: class com.microchip.mcc.harmony.HarmonyModule
+  name: BSP_PIC32CK_SG01_Curiosity_Ultra
+  type: module
+  version: ''
+- dependencyPackage: ''
+  name: bsp
+  type: package
+  version: v3.25.0
+customDataClassName: com.microchip.utils_mh3.utils.persistence.CustomModuleData
+data:
+  attachments: {}
+  elementPosition: {}
+  symbols:
+    BSP_BOARD_NAME:
+      attributes:
+        id: BSP_BOARD_NAME
+        label: BSP Name
+      type: String
+    BSP_CUSTOM_DIR0:
+      attributes:
+        id: BSP_CUSTOM_DIR0
+        label: Direction
+      type: String
+    BSP_CUSTOM_DIR1:
+      attributes:
+        id: BSP_CUSTOM_DIR1
+        label: Direction
+      type: String
+    BSP_CUSTOM_DIR2:
+      attributes:
+        id: BSP_CUSTOM_DIR2
+        label: Direction
+      type: String
+    BSP_CUSTOM_DIR3:
+      attributes:
+        id: BSP_CUSTOM_DIR3
+        label: Direction
+      type: String
+    BSP_CUSTOM_DIR4:
+      attributes:
+        id: BSP_CUSTOM_DIR4
+        label: Direction
+      type: String
+    BSP_CUSTOM_DIR5:
+      attributes:
+        id: BSP_CUSTOM_DIR5
+        label: Direction
+      type: String
+    BSP_CUSTOM_IE0:
+      attributes:
+        id: BSP_CUSTOM_IE0
+        label: Input Enable
+      type: String
+    BSP_CUSTOM_IE1:
+      attributes:
+        id: BSP_CUSTOM_IE1
+        label: Input Enable
+      type: String
+    BSP_CUSTOM_IE2:
+      attributes:
+        id: BSP_CUSTOM_IE2
+        label: Input Enable
+      type: String
+    BSP_CUSTOM_IE3:
+      attributes:
+        id: BSP_CUSTOM_IE3
+        label: Input Enable
+      type: String
+    BSP_CUSTOM_IE4:
+      attributes:
+        id: BSP_CUSTOM_IE4
+        label: Input Enable
+      type: String
+    BSP_CUSTOM_IE5:
+      attributes:
+        id: BSP_CUSTOM_IE5
+        label: Input Enable
+      type: String
+    BSP_CUSTOM_LAT0:
+      attributes:
+        id: BSP_CUSTOM_LAT0
+        label: Initial Latch Value
+      type: String
+    BSP_CUSTOM_LAT1:
+      attributes:
+        id: BSP_CUSTOM_LAT1
+        label: Initial Latch Value
+      type: String
+    BSP_CUSTOM_LAT2:
+      attributes:
+        id: BSP_CUSTOM_LAT2
+        label: Initial Latch Value
+      type: String
+    BSP_CUSTOM_LAT3:
+      attributes:
+        id: BSP_CUSTOM_LAT3
+        label: Initial Latch Value
+      type: String
+    BSP_CUSTOM_LAT4:
+      attributes:
+        id: BSP_CUSTOM_LAT4
+        label: Initial Latch Value
+      type: String
+    BSP_CUSTOM_LAT5:
+      attributes:
+        id: BSP_CUSTOM_LAT5
+        label: Initial Latch Value
+      type: String
+    BSP_CUSTOM_MODE0:
+      attributes:
+        id: BSP_CUSTOM_MODE0
+        label: Mode
+      type: String
+    BSP_CUSTOM_MODE1:
+      attributes:
+        id: BSP_CUSTOM_MODE1
+        label: Mode
+      type: String
+    BSP_CUSTOM_MODE2:
+      attributes:
+        id: BSP_CUSTOM_MODE2
+        label: Mode
+      type: String
+    BSP_CUSTOM_MODE3:
+      attributes:
+        id: BSP_CUSTOM_MODE3
+        label: Mode
+      type: String
+    BSP_CUSTOM_MODE4:
+      attributes:
+        id: BSP_CUSTOM_MODE4
+        label: Mode
+      type: String
+    BSP_CUSTOM_MODE5:
+      attributes:
+        id: BSP_CUSTOM_MODE5
+        label: Mode
+      type: String
+    BSP_CUSTOM_PE0:
+      attributes:
+        id: BSP_CUSTOM_PE0
+        label: Pull Enable
+      type: String
+    BSP_CUSTOM_PE1:
+      attributes:
+        id: BSP_CUSTOM_PE1
+        label: Pull Enable
+      type: String
+    BSP_CUSTOM_PE2:
+      attributes:
+        id: BSP_CUSTOM_PE2
+        label: Pull Enable
+      type: String
+    BSP_CUSTOM_PE3:
+      attributes:
+        id: BSP_CUSTOM_PE3
+        label: Pull Enable
+      type: String
+    BSP_CUSTOM_PE4:
+      attributes:
+        id: BSP_CUSTOM_PE4
+        label: Pull Enable
+      type: String
+    BSP_CUSTOM_PE5:
+      attributes:
+        id: BSP_CUSTOM_PE5
+        label: Pull Enable
+      type: String
+    BSP_CUSTOM_TYPE0:
+      attributes:
+        id: BSP_CUSTOM_TYPE0
+        label: Type Name
+      type: String
+    BSP_CUSTOM_TYPE1:
+      attributes:
+        id: BSP_CUSTOM_TYPE1
+        label: Type Name
+      type: String
+    BSP_CUSTOM_TYPE2:
+      attributes:
+        id: BSP_CUSTOM_TYPE2
+        label: Type Name
+      type: String
+    BSP_CUSTOM_TYPE3:
+      attributes:
+        id: BSP_CUSTOM_TYPE3
+        label: Type Name
+      type: String
+    BSP_CUSTOM_TYPE4:
+      attributes:
+        id: BSP_CUSTOM_TYPE4
+        label: Type Name
+      type: String
+    BSP_CUSTOM_TYPE5:
+      attributes:
+        id: BSP_CUSTOM_TYPE5
+        label: Type Name
+      type: String
+    BSP_TYPE_SIZE:
+      attributes:
+        id: BSP_TYPE_SIZE
+        label: BSP_TYPE_SIZE
+      type: Integer
+  userData: {}

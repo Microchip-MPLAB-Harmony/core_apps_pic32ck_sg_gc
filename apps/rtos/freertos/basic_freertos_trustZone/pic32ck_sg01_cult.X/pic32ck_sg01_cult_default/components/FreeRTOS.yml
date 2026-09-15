@@ -1,0 +1,525 @@
+configVersion: 1.0.0
+componentName: FreeRTOS
+coreVersion: 5.9.0
+device: PIC32CK2051SG01144
+library: []
+dependency:
+- dependencyPackage: class com.microchip.mcc.harmony.HarmonyModule
+  name: FreeRTOS
+  type: module
+  version: ''
+- dependencyPackage: ''
+  devMode: true
+  name: FreeRTOS-Kernel
+  type: package
+  version: V11.1.0
+- dependencyPackage: ''
+  name: core
+  type: package
+  version: v3.17.1
+customDataClassName: com.microchip.utils_mh3.utils.persistence.CustomModuleData
+data:
+  attachments: {}
+  elementPosition: {}
+  symbols:
+    FREERTOS_ALLOW_UNPRIVILEGED_CRITICAL_SECTIONS:
+      attributes:
+        id: FREERTOS_ALLOW_UNPRIVILEGED_CRITICAL_SECTIONS
+        label: Allow Unprivileged Critical Sections
+      type: Boolean
+    FREERTOS_APPLICATION_ALLOCATED_HEAP:
+      attributes:
+        id: FREERTOS_APPLICATION_ALLOCATED_HEAP
+        label: Enable application allocated heap
+      type: Boolean
+    FREERTOS_APPLICATION_DEFINED_PRIVILEGED_FUNCTIONS:
+      attributes:
+        id: FREERTOS_APPLICATION_DEFINED_PRIVILEGED_FUNCTIONS
+        label: Application Defined Privileged Functions
+      type: Boolean
+    FREERTOS_CHECK_FOR_STACK_OVERFLOW:
+      attributes:
+        id: FREERTOS_CHECK_FOR_STACK_OVERFLOW
+        label: Stack Overflow Checking
+      type: Combo
+    FREERTOS_CHECK_HANDLER_INSTALLATION:
+      attributes:
+        id: FREERTOS_CHECK_HANDLER_INSTALLATION
+        label: Check handler installation
+      type: Boolean
+    FREERTOS_CONFIG_PRIORITY_BITS:
+      attributes:
+        id: FREERTOS_CONFIG_PRIORITY_BITS
+        label: Number of Bits used for Priority Levels
+      type: Integer
+    FREERTOS_CPU_CLOCK_HZ:
+      attributes:
+        id: FREERTOS_CPU_CLOCK_HZ
+        label: CPU Clock Speed (Hz)
+      type: Integer
+    FREERTOS_DAEMON_TASK_STARTUP_HOOK:
+      attributes:
+        id: FREERTOS_DAEMON_TASK_STARTUP_HOOK
+        label: Use Application Daemon Task Startup Hook
+      type: Boolean
+    FREERTOS_DYNAMIC_ALLOC:
+      attributes:
+        id: FREERTOS_DYNAMIC_ALLOC
+        label: Enable Dynamic Memory Allocation
+      type: Boolean
+    FREERTOS_ENABLE_ACCESS_CONTROL_LIST:
+      attributes:
+        id: FREERTOS_ENABLE_ACCESS_CONTROL_LIST
+        label: Enable Access Control List
+      type: Integer
+    FREERTOS_ENABLE_BACKWARD_COMPATIBILITY:
+      attributes:
+        id: FREERTOS_ENABLE_BACKWARD_COMPATIBILITY
+        label: Enable Backward Compatibility
+      type: Boolean
+    FREERTOS_ENABLE_FPU:
+      attributes:
+        id: FREERTOS_ENABLE_FPU
+        label: Enable FPU support
+      type: Boolean
+    FREERTOS_ENABLE_HEAP_PROTECTOR:
+      attributes:
+        id: FREERTOS_ENABLE_HEAP_PROTECTOR
+        label: Enable heap protector
+      type: Boolean
+    FREERTOS_ENABLE_MPU:
+      attributes:
+        id: FREERTOS_ENABLE_MPU
+        label: Enable MPU
+      type: Boolean
+    FREERTOS_ENABLE_MVE:
+      attributes:
+        id: FREERTOS_ENABLE_MVE
+        label: Enable MVE
+      type: Boolean
+    FREERTOS_ENABLE_TRUSTZONE:
+      attributes:
+        id: FREERTOS_ENABLE_TRUSTZONE
+        label: Enable TrustZone
+      type: Boolean
+    FREERTOS_ENFORCE_SYSTEM_CALLS_FROM_KERNEL_ONLY:
+      attributes:
+        id: FREERTOS_ENFORCE_SYSTEM_CALLS_FROM_KERNEL_ONLY
+        label: Enforce System Calls from Kernel Only
+      type: Boolean
+    FREERTOS_ERRATA_837070_WORKAROUND:
+      attributes:
+        id: FREERTOS_ERRATA_837070_WORKAROUND
+        label: Enable Errata 837070 Workaround
+      type: Boolean
+    FREERTOS_EXPECTED_IDLE_TIME_BEFORE_SLEEP:
+      attributes:
+        id: FREERTOS_EXPECTED_IDLE_TIME_BEFORE_SLEEP
+        label: Expected idle time before sleep
+      type: Integer
+    FREERTOS_GENERATE_RUN_TIME_STATS:
+      attributes:
+        id: FREERTOS_GENERATE_RUN_TIME_STATS
+        label: Generate runtime statistics
+      type: Boolean
+    FREERTOS_HEAP_CLEAR_MEMORY_ON_FREE:
+      attributes:
+        id: FREERTOS_HEAP_CLEAR_MEMORY_ON_FREE
+        label: Heap clear memory on free
+      type: Boolean
+    FREERTOS_IDLE_HOOK:
+      attributes:
+        id: FREERTOS_IDLE_HOOK
+        label: Use Idle Hook
+      type: Boolean
+    FREERTOS_IDLE_SHOULD_YIELD:
+      attributes:
+        id: FREERTOS_IDLE_SHOULD_YIELD
+        label: Idle task should yield
+      type: Boolean
+    FREERTOS_INCLUDE_ETASKGETSTATE:
+      attributes:
+        id: FREERTOS_INCLUDE_ETASKGETSTATE
+        label: Include eTaskGetState
+      type: Boolean
+    FREERTOS_INCLUDE_UXTASKGETSTACKHIGHWATERMARK:
+      attributes:
+        id: FREERTOS_INCLUDE_UXTASKGETSTACKHIGHWATERMARK
+        label: Include uxTaskGetStackHighWaterMark
+      type: Boolean
+    FREERTOS_INCLUDE_UXTASKGETSTACKHIGHWATERMARK2:
+      attributes:
+        id: FREERTOS_INCLUDE_UXTASKGETSTACKHIGHWATERMARK2
+        label: Include uxTaskGetStackHighWaterMark2
+      type: Boolean
+    FREERTOS_INCLUDE_UXTASKPRIORITYGET:
+      attributes:
+        id: FREERTOS_INCLUDE_UXTASKPRIORITYGET
+        label: Include uxTaskPriorityGet
+      type: Boolean
+    FREERTOS_INCLUDE_VTASKDELAY:
+      attributes:
+        id: FREERTOS_INCLUDE_VTASKDELAY
+        label: Include vTaskDelay
+      type: Boolean
+    FREERTOS_INCLUDE_VTASKDELAYUNTIL:
+      attributes:
+        id: FREERTOS_INCLUDE_VTASKDELAYUNTIL
+        label: Include vTaskDelayUntil
+      type: Boolean
+    FREERTOS_INCLUDE_VTASKDELETE:
+      attributes:
+        id: FREERTOS_INCLUDE_VTASKDELETE
+        label: Include vTaskDelete
+      type: Boolean
+    FREERTOS_INCLUDE_VTASKPRIORITYSET:
+      attributes:
+        id: FREERTOS_INCLUDE_VTASKPRIORITYSET
+        label: Include vTaskPrioritySet
+      type: Boolean
+    FREERTOS_INCLUDE_VTASKSUSPEND:
+      attributes:
+        id: FREERTOS_INCLUDE_VTASKSUSPEND
+        label: Include vTaskSuspend
+      type: Boolean
+    FREERTOS_INCLUDE_XEVENTGROUPSETBITFROMISR:
+      attributes:
+        id: FREERTOS_INCLUDE_XEVENTGROUPSETBITFROMISR
+        label: Include xEventGroupSetBitFromISR
+      type: Boolean
+    FREERTOS_INCLUDE_XQUEUEGETMUTEXHOLDER:
+      attributes:
+        id: FREERTOS_INCLUDE_XQUEUEGETMUTEXHOLDER
+        label: Include xQueueGetMutexHolder
+      type: Boolean
+    FREERTOS_INCLUDE_XRESUMEFROMISR:
+      attributes:
+        id: FREERTOS_INCLUDE_XRESUMEFROMISR
+        label: Include xResumeFromISR
+      type: Boolean
+    FREERTOS_INCLUDE_XSEMAPHOREGETMUTEXHOLDER:
+      attributes:
+        id: FREERTOS_INCLUDE_XSEMAPHOREGETMUTEXHOLDER
+        label: Include xSemaphoreGetMutexHolder
+      type: Boolean
+    FREERTOS_INCLUDE_XTASKABORTDELAY:
+      attributes:
+        id: FREERTOS_INCLUDE_XTASKABORTDELAY
+        label: Include xTaskAbortDelay
+      type: Boolean
+    FREERTOS_INCLUDE_XTASKGETCURRENTTASKHANDLE:
+      attributes:
+        id: FREERTOS_INCLUDE_XTASKGETCURRENTTASKHANDLE
+        label: Include xTaskGetCurrentTaskHandle
+      type: Boolean
+    FREERTOS_INCLUDE_XTASKGETHANDLE:
+      attributes:
+        id: FREERTOS_INCLUDE_XTASKGETHANDLE
+        label: Include xTaskGetHandle
+      type: Boolean
+    FREERTOS_INCLUDE_XTASKGETIDLETASKHANDLE:
+      attributes:
+        id: FREERTOS_INCLUDE_XTASKGETIDLETASKHANDLE
+        label: Include xTaskGetIdleTaskHandle
+      type: Boolean
+    FREERTOS_INCLUDE_XTASKGETSCHEDULERSTATE:
+      attributes:
+        id: FREERTOS_INCLUDE_XTASKGETSCHEDULERSTATE
+        label: Include xTaskGetSchedulerState
+      type: Boolean
+    FREERTOS_INCLUDE_XTASKRESUMEFROMISR:
+      attributes:
+        id: FREERTOS_INCLUDE_XTASKRESUMEFROMISR
+        label: Include xTaskResumeFromISR
+      type: Boolean
+    FREERTOS_INCLUDE_XTIMERPENDFUNCTIONCALL:
+      attributes:
+        id: FREERTOS_INCLUDE_XTIMERPENDFUNCTIONCALL
+        label: Include xTimerPendFunctionCall
+      type: Boolean
+    FREERTOS_KERNEL_INTERRUPT_PRIORITY:
+      attributes:
+        id: FREERTOS_KERNEL_INTERRUPT_PRIORITY
+        label: Kernel interrupt priority
+      type: Integer
+    FREERTOS_KERNEL_PROVIDED_STATIC_MEMORY:
+      attributes:
+        id: FREERTOS_KERNEL_PROVIDED_STATIC_MEMORY
+        label: Kernel Provided Static Memory
+      type: Boolean
+    FREERTOS_MAX_CO_ROUTINE_PRIORITIES:
+      attributes:
+        id: FREERTOS_MAX_CO_ROUTINE_PRIORITIES
+        label: Maximum Co-Routines priorities
+      type: Integer
+    FREERTOS_MAX_PRIORITIES:
+      attributes:
+        id: FREERTOS_MAX_PRIORITIES
+        label: Maximum number of priorities
+      type: Integer
+    FREERTOS_MAX_SECURE_CONTEXTS:
+      attributes:
+        id: FREERTOS_MAX_SECURE_CONTEXTS
+        label: Maximum Secure Contexts
+      type: Integer
+    FREERTOS_MAX_SYSCALL_INTERRUPT_PRIORITY:
+      attributes:
+        id: FREERTOS_MAX_SYSCALL_INTERRUPT_PRIORITY
+        label: Maximum system call interrupt priority
+      type: Integer
+    FREERTOS_MAX_TASK_NAME_LEN:
+      attributes:
+        id: FREERTOS_MAX_TASK_NAME_LEN
+        label: Maximum task name length
+      type: Integer
+    FREERTOS_MEMORY_MANAGEMENT_CHOICE:
+      attributes:
+        id: FREERTOS_MEMORY_MANAGEMENT_CHOICE
+        label: Memory Management Type
+      type: Combo
+    FREERTOS_MINIMAL_SECURE_STACK_SIZE:
+      attributes:
+        id: FREERTOS_MINIMAL_SECURE_STACK_SIZE
+        label: Minimal Secure Stack Size
+      type: Integer
+    FREERTOS_MINIMAL_STACK_SIZE:
+      attributes:
+        id: FREERTOS_MINIMAL_STACK_SIZE
+        label: Minimal Stack Size
+      type: Integer
+    FREERTOS_MPU_PORT_ENABLE:
+      attributes:
+        id: FREERTOS_MPU_PORT_ENABLE
+        label: Enable FreeRTOS MPU Port
+      type: Boolean
+    FREERTOS_NUM_THREAD_LOCAL_STORAGE_POINTERS:
+      attributes:
+        id: FREERTOS_NUM_THREAD_LOCAL_STORAGE_POINTERS
+        label: Number of index in TLS array
+      type: Integer
+    FREERTOS_PROTECTED_KERNEL_OBJECT_POOL_SIZE:
+      attributes:
+        id: FREERTOS_PROTECTED_KERNEL_OBJECT_POOL_SIZE
+        label: Protected Kernel Object Pool Size
+      type: Integer
+    FREERTOS_QUEUE_REGISTRY_SIZE:
+      attributes:
+        id: FREERTOS_QUEUE_REGISTRY_SIZE
+        label: Queue Registry Size
+      type: Integer
+    FREERTOS_RUN_FREERTOS_SECURE_ONLY:
+      attributes:
+        id: FREERTOS_RUN_FREERTOS_SECURE_ONLY
+        label: Run FreeRTOS on the Secure Side
+      type: Boolean
+    FREERTOS_SCHEDULER:
+      attributes:
+        id: FREERTOS_SCHEDULER
+        label: Scheduler Type
+      type: Combo
+    FREERTOS_SECURE_TOTAL_HEAP_SIZE:
+      attributes:
+        id: FREERTOS_SECURE_TOTAL_HEAP_SIZE
+        label: Total secure heap size
+      type: Integer
+    FREERTOS_STACK_ALLOCATION_FROM_SEPARATE_HEAP:
+      attributes:
+        id: FREERTOS_STACK_ALLOCATION_FROM_SEPARATE_HEAP
+        label: Stack allocation from separate heap
+      type: Boolean
+    FREERTOS_STACK_DEPTH_TYPE:
+      attributes:
+        id: FREERTOS_STACK_DEPTH_TYPE
+        label: Stack depth type
+      type: String
+    FREERTOS_STATIC_ALLOC:
+      attributes:
+        id: FREERTOS_STATIC_ALLOC
+        label: Enable Static memory allocation
+      type: Boolean
+    FREERTOS_SYSTEM_CALL_STACK_SIZE:
+      attributes:
+        id: FREERTOS_SYSTEM_CALL_STACK_SIZE
+        label: System Call Stack Size
+      type: Integer
+    FREERTOS_TASK_NOTIFICATION_ARRAY_ENTRIES:
+      attributes:
+        id: FREERTOS_TASK_NOTIFICATION_ARRAY_ENTRIES
+        label: Task Notifications Array Entries
+      type: Integer
+    FREERTOS_TASK_SELECTION:
+      attributes:
+        id: FREERTOS_TASK_SELECTION
+        label: Task Selection
+      type: Combo
+    FREERTOS_TEX_S_C_B_FLASH:
+      attributes:
+        id: FREERTOS_TEX_S_C_B_FLASH
+        label: TEX S C B for Flash
+      type: Hex
+    FREERTOS_TEX_S_C_B_SRAM:
+      attributes:
+        id: FREERTOS_TEX_S_C_B_SRAM
+        label: TEX S C B for SRAM
+      type: Hex
+    FREERTOS_TICKLESS_IDLE_CHOICE:
+      attributes:
+        id: FREERTOS_TICKLESS_IDLE_CHOICE
+        label: Tick Mode
+      type: Combo
+    FREERTOS_TICK_HOOK:
+      attributes:
+        id: FREERTOS_TICK_HOOK
+        label: Use Tick Hook
+      type: Boolean
+    FREERTOS_TICK_RATE_HZ:
+      attributes:
+        id: FREERTOS_TICK_RATE_HZ
+        label: Tick Rate (Hz)
+      type: Integer
+    FREERTOS_TICK_TYPE_WIDTH_IN_BITS:
+      attributes:
+        id: FREERTOS_TICK_TYPE_WIDTH_IN_BITS
+        label: Tick type width in bits
+      type: Combo
+    FREERTOS_TIMER_QUEUE_LENGTH:
+      attributes:
+        id: FREERTOS_TIMER_QUEUE_LENGTH
+        label: Timer queue length
+      type: Integer
+    FREERTOS_TIMER_TASK_PRIORITY:
+      attributes:
+        id: FREERTOS_TIMER_TASK_PRIORITY
+        label: Timer task priority
+      type: Integer
+    FREERTOS_TIMER_TASK_STACK_DEPTH:
+      attributes:
+        id: FREERTOS_TIMER_TASK_STACK_DEPTH
+        label: Timer task stack depth
+      type: Integer
+    FREERTOS_TOTAL_HEAP_SIZE:
+      attributes:
+        id: FREERTOS_TOTAL_HEAP_SIZE
+        label: Total heap size
+      type: Integer
+    FREERTOS_TOTAL_MPU_REGIONS:
+      attributes:
+        id: FREERTOS_TOTAL_MPU_REGIONS
+        label: Total MPU Regions
+      type: Integer
+    FREERTOS_TRACE_FREE_FNC:
+      attributes:
+        id: FREERTOS_TRACE_FREE_FNC
+        label: Use Free trace function
+      type: String
+    FREERTOS_TRACE_MALLOC_FNC:
+      attributes:
+        id: FREERTOS_TRACE_MALLOC_FNC
+        label: Use Malloc trace function
+      type: String
+    FREERTOS_USE_16_BIT_TICKS:
+      attributes:
+        id: FREERTOS_USE_16_BIT_TICKS
+        label: Use 16-bit ticks
+      type: Boolean
+    FREERTOS_USE_APPLICATION_TASK_TAG:
+      attributes:
+        id: FREERTOS_USE_APPLICATION_TASK_TAG
+        label: Use application task tags
+      type: Boolean
+    FREERTOS_USE_CONFIGASSERT:
+      attributes:
+        id: FREERTOS_USE_CONFIGASSERT
+        label: Use the configAssert macro
+      type: Boolean
+    FREERTOS_USE_COUNTING_SEMAPHORES:
+      attributes:
+        id: FREERTOS_USE_COUNTING_SEMAPHORES
+        label: Use Counting Semaphores
+      type: Boolean
+    FREERTOS_USE_CO_ROUTINES:
+      attributes:
+        id: FREERTOS_USE_CO_ROUTINES
+        label: Use Co-Routines
+      type: Boolean
+    FREERTOS_USE_EVENT_GROUPS:
+      attributes:
+        id: FREERTOS_USE_EVENT_GROUPS
+        label: Use event groups
+      type: Boolean
+    FREERTOS_USE_MALLOC_FAILED_HOOK:
+      attributes:
+        id: FREERTOS_USE_MALLOC_FAILED_HOOK
+        label: Use malloc failed hook
+      type: Boolean
+    FREERTOS_USE_MINI_LIST_ITEM:
+      attributes:
+        id: FREERTOS_USE_MINI_LIST_ITEM
+        label: Use mini list item
+      type: Boolean
+    FREERTOS_USE_MPU_WRAPPERS_V1:
+      attributes:
+        id: FREERTOS_USE_MPU_WRAPPERS_V1
+        label: Use MPU Wrappers V1
+      type: Boolean
+    FREERTOS_USE_MUTEXES:
+      attributes:
+        id: FREERTOS_USE_MUTEXES
+        label: Use Mutexes
+      type: Boolean
+    FREERTOS_USE_NEWLIB_REENTRANT:
+      attributes:
+        id: FREERTOS_USE_NEWLIB_REENTRANT
+        label: Use newlib reentrant structure
+      type: Boolean
+    FREERTOS_USE_QUEUE_SETS:
+      attributes:
+        id: FREERTOS_USE_QUEUE_SETS
+        label: Use Queue Sets
+      type: Boolean
+    FREERTOS_USE_RECURSIVE_MUTEXES:
+      attributes:
+        id: FREERTOS_USE_RECURSIVE_MUTEXES
+        label: Use Recursive Mutexes
+      type: Boolean
+    FREERTOS_USE_SB_COMPLETED_CALLBACK:
+      attributes:
+        id: FREERTOS_USE_SB_COMPLETED_CALLBACK
+        label: Use stream buffer callback
+      type: Boolean
+    FREERTOS_USE_STATS_FORMATTING_FUNCTIONS:
+      attributes:
+        id: FREERTOS_USE_STATS_FORMATTING_FUNCTIONS
+        label: Use stats formatting functions
+      type: Boolean
+    FREERTOS_USE_STREAM_BUFFERS:
+      attributes:
+        id: FREERTOS_USE_STREAM_BUFFERS
+        label: Use stream buffers
+      type: Boolean
+    FREERTOS_USE_TASK_FPU_SUPPORT:
+      attributes:
+        id: FREERTOS_USE_TASK_FPU_SUPPORT
+        label: Enable hardware FPU support for tasks
+      type: Boolean
+    FREERTOS_USE_TASK_NOTIFICATIONS:
+      attributes:
+        id: FREERTOS_USE_TASK_NOTIFICATIONS
+        label: Use Task Notifications
+      type: Boolean
+    FREERTOS_USE_TIMERS:
+      attributes:
+        id: FREERTOS_USE_TIMERS
+        label: Use Timers
+      type: Boolean
+    FREERTOS_USE_TIME_SLICING:
+      attributes:
+        id: FREERTOS_USE_TIME_SLICING
+        label: Use Time Slicing
+      type: Boolean
+    FREERTOS_USE_TRACE_FACILITY:
+      attributes:
+        id: FREERTOS_USE_TRACE_FACILITY
+        label: Use trace facility
+      type: Boolean
+  userData: {}
