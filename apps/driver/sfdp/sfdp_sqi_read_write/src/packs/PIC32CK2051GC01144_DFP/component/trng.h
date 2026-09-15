@@ -1,7 +1,7 @@
 /*
  * Component description for TRNG
  *
- * Copyright (c) 2025 Microchip Technology Inc. and its subsidiaries.
+ * Copyright (c) 2026 Microchip Technology Inc. and its subsidiaries.
  *
  * SPDX-License-Identifier: Apache-2.0
  *
@@ -19,9 +19,13 @@
  *
  */
 
-/*  file generated from device description file (ATDF) version 2025-04-07T17:07:52Z  */
+/*  file generated from device description file (ATDF) version 2026-09-01T07:31:34Z  */
 #ifndef _PIC32CKGC01_TRNG_COMPONENT_H_
 #define _PIC32CKGC01_TRNG_COMPONENT_H_
+
+#if !defined(DISABLE_CMSIS)
+#include "core_cm33.h"
+#endif /* !defined(DISABLE_CMSIS) */
 
 /* ************************************************************************** */
 /*                      SOFTWARE API DEFINITION FOR TRNG                      */
@@ -32,10 +36,10 @@
 
 #define TRNG_CTRLA_ENABLE_Pos                 _UINT8_(1)                                           /* (TRNG_CTRLA) Enable Position */
 #define TRNG_CTRLA_ENABLE_Msk                 (_UINT8_(0x1) << TRNG_CTRLA_ENABLE_Pos)              /* (TRNG_CTRLA) Enable Mask */
-#define TRNG_CTRLA_ENABLE(value)              (TRNG_CTRLA_ENABLE_Msk & (_UINT8_(value) << TRNG_CTRLA_ENABLE_Pos)) /* Assignment of value for ENABLE in the TRNG_CTRLA register */
+#define TRNG_CTRLA_ENABLE(value)              (TRNG_CTRLA_ENABLE_Msk & ((uint8_t)(value) << TRNG_CTRLA_ENABLE_Pos)) /* Assignment of value for ENABLE in the TRNG_CTRLA register */
 #define TRNG_CTRLA_RUNSTDBY_Pos               _UINT8_(6)                                           /* (TRNG_CTRLA) Run in Standby Position */
 #define TRNG_CTRLA_RUNSTDBY_Msk               (_UINT8_(0x1) << TRNG_CTRLA_RUNSTDBY_Pos)            /* (TRNG_CTRLA) Run in Standby Mask */
-#define TRNG_CTRLA_RUNSTDBY(value)            (TRNG_CTRLA_RUNSTDBY_Msk & (_UINT8_(value) << TRNG_CTRLA_RUNSTDBY_Pos)) /* Assignment of value for RUNSTDBY in the TRNG_CTRLA register */
+#define TRNG_CTRLA_RUNSTDBY(value)            (TRNG_CTRLA_RUNSTDBY_Msk & ((uint8_t)(value) << TRNG_CTRLA_RUNSTDBY_Pos)) /* Assignment of value for RUNSTDBY in the TRNG_CTRLA register */
 #define TRNG_CTRLA_Msk                        _UINT8_(0x42)                                        /* (TRNG_CTRLA) Register Mask  */
 
 
@@ -44,7 +48,7 @@
 
 #define TRNG_EVCTRL_DATARDYEO_Pos             _UINT8_(0)                                           /* (TRNG_EVCTRL) Data Ready Event Output Position */
 #define TRNG_EVCTRL_DATARDYEO_Msk             (_UINT8_(0x1) << TRNG_EVCTRL_DATARDYEO_Pos)          /* (TRNG_EVCTRL) Data Ready Event Output Mask */
-#define TRNG_EVCTRL_DATARDYEO(value)          (TRNG_EVCTRL_DATARDYEO_Msk & (_UINT8_(value) << TRNG_EVCTRL_DATARDYEO_Pos)) /* Assignment of value for DATARDYEO in the TRNG_EVCTRL register */
+#define TRNG_EVCTRL_DATARDYEO(value)          (TRNG_EVCTRL_DATARDYEO_Msk & ((uint8_t)(value) << TRNG_EVCTRL_DATARDYEO_Pos)) /* Assignment of value for DATARDYEO in the TRNG_EVCTRL register */
 #define TRNG_EVCTRL_Msk                       _UINT8_(0x01)                                        /* (TRNG_EVCTRL) Register Mask  */
 
 
@@ -53,7 +57,7 @@
 
 #define TRNG_INTENCLR_DATARDY_Pos             _UINT8_(0)                                           /* (TRNG_INTENCLR) Data Ready Interrupt Enable Position */
 #define TRNG_INTENCLR_DATARDY_Msk             (_UINT8_(0x1) << TRNG_INTENCLR_DATARDY_Pos)          /* (TRNG_INTENCLR) Data Ready Interrupt Enable Mask */
-#define TRNG_INTENCLR_DATARDY(value)          (TRNG_INTENCLR_DATARDY_Msk & (_UINT8_(value) << TRNG_INTENCLR_DATARDY_Pos)) /* Assignment of value for DATARDY in the TRNG_INTENCLR register */
+#define TRNG_INTENCLR_DATARDY(value)          (TRNG_INTENCLR_DATARDY_Msk & ((uint8_t)(value) << TRNG_INTENCLR_DATARDY_Pos)) /* Assignment of value for DATARDY in the TRNG_INTENCLR register */
 #define TRNG_INTENCLR_Msk                     _UINT8_(0x01)                                        /* (TRNG_INTENCLR) Register Mask  */
 
 
@@ -62,7 +66,7 @@
 
 #define TRNG_INTENSET_DATARDY_Pos             _UINT8_(0)                                           /* (TRNG_INTENSET) Data Ready Interrupt Enable Position */
 #define TRNG_INTENSET_DATARDY_Msk             (_UINT8_(0x1) << TRNG_INTENSET_DATARDY_Pos)          /* (TRNG_INTENSET) Data Ready Interrupt Enable Mask */
-#define TRNG_INTENSET_DATARDY(value)          (TRNG_INTENSET_DATARDY_Msk & (_UINT8_(value) << TRNG_INTENSET_DATARDY_Pos)) /* Assignment of value for DATARDY in the TRNG_INTENSET register */
+#define TRNG_INTENSET_DATARDY(value)          (TRNG_INTENSET_DATARDY_Msk & ((uint8_t)(value) << TRNG_INTENSET_DATARDY_Pos)) /* Assignment of value for DATARDY in the TRNG_INTENSET register */
 #define TRNG_INTENSET_Msk                     _UINT8_(0x01)                                        /* (TRNG_INTENSET) Register Mask  */
 
 
@@ -71,14 +75,14 @@
 
 #define TRNG_INTFLAG_DATARDY_Pos              _UINT8_(0)                                           /* (TRNG_INTFLAG) Data Ready Interrupt Flag Position */
 #define TRNG_INTFLAG_DATARDY_Msk              (_UINT8_(0x1) << TRNG_INTFLAG_DATARDY_Pos)           /* (TRNG_INTFLAG) Data Ready Interrupt Flag Mask */
-#define TRNG_INTFLAG_DATARDY(value)           (TRNG_INTFLAG_DATARDY_Msk & (_UINT8_(value) << TRNG_INTFLAG_DATARDY_Pos)) /* Assignment of value for DATARDY in the TRNG_INTFLAG register */
+#define TRNG_INTFLAG_DATARDY(value)           (TRNG_INTFLAG_DATARDY_Msk & ((uint8_t)(value) << TRNG_INTFLAG_DATARDY_Pos)) /* Assignment of value for DATARDY in the TRNG_INTFLAG register */
 #define TRNG_INTFLAG_Msk                      _UINT8_(0x01)                                        /* (TRNG_INTFLAG) Register Mask  */
 
 
 /* -------- TRNG_DATA : (TRNG Offset: 0x20) ( R/ 32) Output Data -------- */
 #define TRNG_DATA_DATA_Pos                    _UINT32_(0)                                          /* (TRNG_DATA) Output Data Position */
 #define TRNG_DATA_DATA_Msk                    (_UINT32_(0xFFFFFFFF) << TRNG_DATA_DATA_Pos)         /* (TRNG_DATA) Output Data Mask */
-#define TRNG_DATA_DATA(value)                 (TRNG_DATA_DATA_Msk & (_UINT32_(value) << TRNG_DATA_DATA_Pos)) /* Assignment of value for DATA in the TRNG_DATA register */
+#define TRNG_DATA_DATA(value)                 (TRNG_DATA_DATA_Msk & ((uint32_t)(value) << TRNG_DATA_DATA_Pos)) /* Assignment of value for DATA in the TRNG_DATA register */
 #define TRNG_DATA_Msk                         _UINT32_(0xFFFFFFFF)                                 /* (TRNG_DATA) Register Mask  */
 
 

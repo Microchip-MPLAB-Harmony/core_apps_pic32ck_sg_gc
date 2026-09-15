@@ -1,7 +1,7 @@
 /*
  * Instance header file for PIC32CK2051GC01144
  *
- * Copyright (c) 2025 Microchip Technology Inc. and its subsidiaries.
+ * Copyright (c) 2026 Microchip Technology Inc. and its subsidiaries.
  *
  * SPDX-License-Identifier: Apache-2.0
  *
@@ -19,19 +19,19 @@
  *
  */
 
-/* file generated from device description file (ATDF) version 2025-04-07T17:07:52Z */
+/* file generated from device description file (ATDF) version 2026-09-01T07:31:34Z */
 #ifndef _PIC32CKGC01_FCW_INSTANCE_
 #define _PIC32CKGC01_FCW_INSTANCE_
 
 
 /* ========== Instance Parameter definitions for FCW peripheral ========== */
-#define FCW_FLASH_SIZE                           (2097152)  
+#define FCW_FLASH_SIZE                           (2097152)
 #define FCW_INSTANCE_ID                          (2)        /* Instance index for FCW */
 #define FCW_MCLK_ID_AHB                          (5)        /* Index for FCW AHB clock */
 #define FCW_MCLK_ID_APB                          (34)       /* Index for FCW APB clock */
 #define FCW_PAC_ID                               (2)        /* Index for FCW registers write protection */
-#define FCW_PAGES                                (512)      
-#define FCW_PAGES_PR_REGION                      (32)       
+#define FCW_PAGES                                (512)
+#define FCW_PAGES_PR_REGION                      (32)
 #define FCW_PFM_NUM_PAGES                        (256)      /* No of PFM Pages Per panel */
 #define FCW_PFM_PAGE_ADDR_MSB                    (11)       /* Flash Page Size MSB */
 #define FCW_PFM_PAGE_SIZE                        (4096)     /* PFM page size */

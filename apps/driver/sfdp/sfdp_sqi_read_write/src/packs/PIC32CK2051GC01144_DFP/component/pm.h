@@ -1,7 +1,7 @@
 /*
  * Component description for PM
  *
- * Copyright (c) 2025 Microchip Technology Inc. and its subsidiaries.
+ * Copyright (c) 2026 Microchip Technology Inc. and its subsidiaries.
  *
  * SPDX-License-Identifier: Apache-2.0
  *
@@ -19,9 +19,13 @@
  *
  */
 
-/*  file generated from device description file (ATDF) version 2025-04-07T17:07:52Z  */
+/*  file generated from device description file (ATDF) version 2026-09-01T07:31:34Z  */
 #ifndef _PIC32CKGC01_PM_COMPONENT_H_
 #define _PIC32CKGC01_PM_COMPONENT_H_
+
+#if !defined(DISABLE_CMSIS)
+#include "core_cm33.h"
+#endif /* !defined(DISABLE_CMSIS) */
 
 /* ************************************************************************** */
 /*                       SOFTWARE API DEFINITION FOR PM                       */
@@ -32,7 +36,7 @@
 
 #define PM_CTRLA_IORET_Pos                    _UINT8_(2)                                           /* (PM_CTRLA) I/O Retention Position */
 #define PM_CTRLA_IORET_Msk                    (_UINT8_(0x1) << PM_CTRLA_IORET_Pos)                 /* (PM_CTRLA) I/O Retention Mask */
-#define PM_CTRLA_IORET(value)                 (PM_CTRLA_IORET_Msk & (_UINT8_(value) << PM_CTRLA_IORET_Pos)) /* Assignment of value for IORET in the PM_CTRLA register */
+#define PM_CTRLA_IORET(value)                 (PM_CTRLA_IORET_Msk & ((uint8_t)(value) << PM_CTRLA_IORET_Pos)) /* Assignment of value for IORET in the PM_CTRLA register */
 #define   PM_CTRLA_IORET_NOIORET_Val          _UINT8_(0x0)                                         /* (PM_CTRLA) When  the  device  exits  the  HIBERNATE or BACKUP  mode,  the  I/O  line  configuration are released.  */
 #define   PM_CTRLA_IORET_IORET_Val            _UINT8_(0x1)                                         /* (PM_CTRLA) When  the  device  exits  the  HIBERNATE or BACKUP  mode,  the  I/O  line  configuration are stretched.  */
 #define PM_CTRLA_IORET_NOIORET                (PM_CTRLA_IORET_NOIORET_Val << PM_CTRLA_IORET_Pos)   /* (PM_CTRLA) When  the  device  exits  the  HIBERNATE or BACKUP  mode,  the  I/O  line  configuration are released. Position */
@@ -45,7 +49,7 @@
 
 #define PM_SLEEPCFG_SLEEPMODE_Pos             _UINT8_(0)                                           /* (PM_SLEEPCFG) Sleep Mode Position */
 #define PM_SLEEPCFG_SLEEPMODE_Msk             (_UINT8_(0x7) << PM_SLEEPCFG_SLEEPMODE_Pos)          /* (PM_SLEEPCFG) Sleep Mode Mask */
-#define PM_SLEEPCFG_SLEEPMODE(value)          (PM_SLEEPCFG_SLEEPMODE_Msk & (_UINT8_(value) << PM_SLEEPCFG_SLEEPMODE_Pos)) /* Assignment of value for SLEEPMODE in the PM_SLEEPCFG register */
+#define PM_SLEEPCFG_SLEEPMODE(value)          (PM_SLEEPCFG_SLEEPMODE_Msk & ((uint8_t)(value) << PM_SLEEPCFG_SLEEPMODE_Pos)) /* Assignment of value for SLEEPMODE in the PM_SLEEPCFG register */
 #define   PM_SLEEPCFG_SLEEPMODE_IDLE_Val      _UINT8_(0x2)                                         /* (PM_SLEEPCFG) CPU, AHB and APB clocks are OFF  */
 #define   PM_SLEEPCFG_SLEEPMODE_STANDBY_Val   _UINT8_(0x4)                                         /* (PM_SLEEPCFG) All Clocks are OFF  */
 #define   PM_SLEEPCFG_SLEEPMODE_HIBERNATE_Val _UINT8_(0x5)                                         /* (PM_SLEEPCFG) Backup domain is ON as well as some PDRAMs  */
@@ -64,7 +68,7 @@
 
 #define PM_INTENCLR_SLEEPRDY_Pos              _UINT8_(0)                                           /* (PM_INTENCLR) Backup Sleep Mode Entry Ready Enable Position */
 #define PM_INTENCLR_SLEEPRDY_Msk              (_UINT8_(0x1) << PM_INTENCLR_SLEEPRDY_Pos)           /* (PM_INTENCLR) Backup Sleep Mode Entry Ready Enable Mask */
-#define PM_INTENCLR_SLEEPRDY(value)           (PM_INTENCLR_SLEEPRDY_Msk & (_UINT8_(value) << PM_INTENCLR_SLEEPRDY_Pos)) /* Assignment of value for SLEEPRDY in the PM_INTENCLR register */
+#define PM_INTENCLR_SLEEPRDY(value)           (PM_INTENCLR_SLEEPRDY_Msk & ((uint8_t)(value) << PM_INTENCLR_SLEEPRDY_Pos)) /* Assignment of value for SLEEPRDY in the PM_INTENCLR register */
 #define PM_INTENCLR_Msk                       _UINT8_(0x01)                                        /* (PM_INTENCLR) Register Mask  */
 
 
@@ -73,7 +77,7 @@
 
 #define PM_INTENSET_SLEEPRDY_Pos              _UINT8_(0)                                           /* (PM_INTENSET) Backup Sleep Mode Entry Ready Enable Position */
 #define PM_INTENSET_SLEEPRDY_Msk              (_UINT8_(0x1) << PM_INTENSET_SLEEPRDY_Pos)           /* (PM_INTENSET) Backup Sleep Mode Entry Ready Enable Mask */
-#define PM_INTENSET_SLEEPRDY(value)           (PM_INTENSET_SLEEPRDY_Msk & (_UINT8_(value) << PM_INTENSET_SLEEPRDY_Pos)) /* Assignment of value for SLEEPRDY in the PM_INTENSET register */
+#define PM_INTENSET_SLEEPRDY(value)           (PM_INTENSET_SLEEPRDY_Msk & ((uint8_t)(value) << PM_INTENSET_SLEEPRDY_Pos)) /* Assignment of value for SLEEPRDY in the PM_INTENSET register */
 #define PM_INTENSET_Msk                       _UINT8_(0x01)                                        /* (PM_INTENSET) Register Mask  */
 
 
@@ -82,7 +86,7 @@
 
 #define PM_INTFLAG_SLEEPRDY_Pos               _UINT8_(0)                                           /* (PM_INTFLAG) Backup Sleep Mode Entry Ready Position */
 #define PM_INTFLAG_SLEEPRDY_Msk               (_UINT8_(0x1) << PM_INTFLAG_SLEEPRDY_Pos)            /* (PM_INTFLAG) Backup Sleep Mode Entry Ready Mask */
-#define PM_INTFLAG_SLEEPRDY(value)            (PM_INTFLAG_SLEEPRDY_Msk & (_UINT8_(value) << PM_INTFLAG_SLEEPRDY_Pos)) /* Assignment of value for SLEEPRDY in the PM_INTFLAG register */
+#define PM_INTFLAG_SLEEPRDY(value)            (PM_INTFLAG_SLEEPRDY_Msk & ((uint8_t)(value) << PM_INTFLAG_SLEEPRDY_Pos)) /* Assignment of value for SLEEPRDY in the PM_INTFLAG register */
 #define PM_INTFLAG_Msk                        _UINT8_(0x01)                                        /* (PM_INTFLAG) Register Mask  */
 
 
@@ -91,14 +95,14 @@
 
 #define PM_STDBYCFG_RAMCFG_Pos                _UINT8_(0)                                           /* (PM_STDBYCFG) Ram Configuration Position */
 #define PM_STDBYCFG_RAMCFG_Msk                (_UINT8_(0x1) << PM_STDBYCFG_RAMCFG_Pos)             /* (PM_STDBYCFG) Ram Configuration Mask */
-#define PM_STDBYCFG_RAMCFG(value)             (PM_STDBYCFG_RAMCFG_Msk & (_UINT8_(value) << PM_STDBYCFG_RAMCFG_Pos)) /* Assignment of value for RAMCFG in the PM_STDBYCFG register */
+#define PM_STDBYCFG_RAMCFG(value)             (PM_STDBYCFG_RAMCFG_Msk & ((uint8_t)(value) << PM_STDBYCFG_RAMCFG_Pos)) /* Assignment of value for RAMCFG in the PM_STDBYCFG register */
 #define   PM_STDBYCFG_RAMCFG_RET_Val          _UINT8_(0x0)                                         /* (PM_STDBYCFG) All the RAMs are retained  */
 #define   PM_STDBYCFG_RAMCFG_OFF_Val          _UINT8_(0x1)                                         /* (PM_STDBYCFG) Only the first 32K bytes are retained  */
 #define PM_STDBYCFG_RAMCFG_RET                (PM_STDBYCFG_RAMCFG_RET_Val << PM_STDBYCFG_RAMCFG_Pos) /* (PM_STDBYCFG) All the RAMs are retained Position */
 #define PM_STDBYCFG_RAMCFG_OFF                (PM_STDBYCFG_RAMCFG_OFF_Val << PM_STDBYCFG_RAMCFG_Pos) /* (PM_STDBYCFG) Only the first 32K bytes are retained Position */
 #define PM_STDBYCFG_LPRAM_Pos                 _UINT8_(2)                                           /* (PM_STDBYCFG) Low Power RAM Enable Position */
 #define PM_STDBYCFG_LPRAM_Msk                 (_UINT8_(0x1) << PM_STDBYCFG_LPRAM_Pos)              /* (PM_STDBYCFG) Low Power RAM Enable Mask */
-#define PM_STDBYCFG_LPRAM(value)              (PM_STDBYCFG_LPRAM_Msk & (_UINT8_(value) << PM_STDBYCFG_LPRAM_Pos)) /* Assignment of value for LPRAM in the PM_STDBYCFG register */
+#define PM_STDBYCFG_LPRAM(value)              (PM_STDBYCFG_LPRAM_Msk & ((uint8_t)(value) << PM_STDBYCFG_LPRAM_Pos)) /* Assignment of value for LPRAM in the PM_STDBYCFG register */
 #define PM_STDBYCFG_Msk                       _UINT8_(0x05)                                        /* (PM_STDBYCFG) Register Mask  */
 
 
@@ -107,14 +111,14 @@
 
 #define PM_HIBCFG_RAMCFG_Pos                  _UINT8_(0)                                           /* (PM_HIBCFG) Ram Configuration Position */
 #define PM_HIBCFG_RAMCFG_Msk                  (_UINT8_(0x1) << PM_HIBCFG_RAMCFG_Pos)               /* (PM_HIBCFG) Ram Configuration Mask */
-#define PM_HIBCFG_RAMCFG(value)               (PM_HIBCFG_RAMCFG_Msk & (_UINT8_(value) << PM_HIBCFG_RAMCFG_Pos)) /* Assignment of value for RAMCFG in the PM_HIBCFG register */
+#define PM_HIBCFG_RAMCFG(value)               (PM_HIBCFG_RAMCFG_Msk & ((uint8_t)(value) << PM_HIBCFG_RAMCFG_Pos)) /* Assignment of value for RAMCFG in the PM_HIBCFG register */
 #define   PM_HIBCFG_RAMCFG_RET_Val            _UINT8_(0x0)                                         /* (PM_HIBCFG) All the RAMs are retained  */
 #define   PM_HIBCFG_RAMCFG_OFF_Val            _UINT8_(0x1)                                         /* (PM_HIBCFG) Only the first 32K bytes are retained  */
 #define PM_HIBCFG_RAMCFG_RET                  (PM_HIBCFG_RAMCFG_RET_Val << PM_HIBCFG_RAMCFG_Pos)   /* (PM_HIBCFG) All the RAMs are retained Position */
 #define PM_HIBCFG_RAMCFG_OFF                  (PM_HIBCFG_RAMCFG_OFF_Val << PM_HIBCFG_RAMCFG_Pos)   /* (PM_HIBCFG) Only the first 32K bytes are retained Position */
 #define PM_HIBCFG_LPRAM_Pos                   _UINT8_(2)                                           /* (PM_HIBCFG) Low Power RAM Enable Position */
 #define PM_HIBCFG_LPRAM_Msk                   (_UINT8_(0x1) << PM_HIBCFG_LPRAM_Pos)                /* (PM_HIBCFG) Low Power RAM Enable Mask */
-#define PM_HIBCFG_LPRAM(value)                (PM_HIBCFG_LPRAM_Msk & (_UINT8_(value) << PM_HIBCFG_LPRAM_Pos)) /* Assignment of value for LPRAM in the PM_HIBCFG register */
+#define PM_HIBCFG_LPRAM(value)                (PM_HIBCFG_LPRAM_Msk & ((uint8_t)(value) << PM_HIBCFG_LPRAM_Pos)) /* Assignment of value for LPRAM in the PM_HIBCFG register */
 #define PM_HIBCFG_Msk                         _UINT8_(0x05)                                        /* (PM_HIBCFG) Register Mask  */
 
 

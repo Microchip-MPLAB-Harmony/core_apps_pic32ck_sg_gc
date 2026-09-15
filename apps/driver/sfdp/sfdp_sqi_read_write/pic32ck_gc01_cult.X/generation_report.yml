@@ -712,8 +712,5 @@ generatedSettings:
 - category: C32Global
   key: mstacktcm
   value: 'false'
-removedFiles:
-- C:\apps\core_apps_pic32ck_sg_gc\apps\driver\sfdp\sfdp_sqi_read_write\src\packs\CMSIS\CMSIS\Core\Include\cachel1_armv7.h
-- C:\apps\core_apps_pic32ck_sg_gc\apps\driver\sfdp\sfdp_sqi_read_write\src\packs\CMSIS\CMSIS\Core\Include\cmsis_armcc.h
-- C:\apps\core_apps_pic32ck_sg_gc\apps\driver\sfdp\sfdp_sqi_read_write\src\packs\CMSIS\CMSIS\Core\Include\cmsis_armclang_ltm.h
-- C:\apps\core_apps_pic32ck_sg_gc\apps\driver\sfdp\sfdp_sqi_read_write\src\packs\CMSIS\CMSIS\Core\Include\mpu_armv8.h
+removedFiles: [
+  ]

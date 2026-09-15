@@ -1,7 +1,7 @@
 /*
  * Instance header file for PIC32CK2051GC01144
  *
- * Copyright (c) 2025 Microchip Technology Inc. and its subsidiaries.
+ * Copyright (c) 2026 Microchip Technology Inc. and its subsidiaries.
  *
  * SPDX-License-Identifier: Apache-2.0
  *
@@ -19,7 +19,7 @@
  *
  */
 
-/* file generated from device description file (ATDF) version 2025-04-07T17:07:52Z */
+/* file generated from device description file (ATDF) version 2026-09-01T07:31:34Z */
 #ifndef _PIC32CKGC01_TCC2_INSTANCE_
 #define _PIC32CKGC01_TCC2_INSTANCE_
 
@@ -43,7 +43,7 @@
 #define TCC2_OW_NUM                              (8)        /* Number of Output Waveforms */
 #define TCC2_PAC_ID                              (46)       /* Index for TCC2 registers write protection */
 #define TCC2_PG                                  (1)        /* Pattern Generation feature implemented */
-#define TCC2_SIZE                                (32)       
+#define TCC2_SIZE                                (32)
 #define TCC2_SWAP                                (1)        /* DTI outputs swap feature implemented */
 
 #endif /* _PIC32CKGC01_TCC2_INSTANCE_ */

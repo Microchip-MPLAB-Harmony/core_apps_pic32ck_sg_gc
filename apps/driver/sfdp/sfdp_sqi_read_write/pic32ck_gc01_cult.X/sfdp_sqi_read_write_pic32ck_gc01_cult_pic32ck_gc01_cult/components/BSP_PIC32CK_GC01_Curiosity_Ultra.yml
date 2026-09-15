@@ -1,6 +1,6 @@
 configVersion: 1.0.0
 componentName: BSP_PIC32CK_GC01_Curiosity_Ultra
-coreVersion: 5.8.4
+coreVersion: 5.9.0
 device: PIC32CK2051GC01144
 library: []
 dependency:

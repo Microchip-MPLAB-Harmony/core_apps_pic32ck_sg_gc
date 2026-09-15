@@ -1,7 +1,7 @@
 /*
  * Header file for PIC32CK2051GC01144
  *
- * Copyright (c) 2025 Microchip Technology Inc. and its subsidiaries.
+ * Copyright (c) 2026 Microchip Technology Inc. and its subsidiaries.
  *
  * SPDX-License-Identifier: Apache-2.0
  *
@@ -19,15 +19,15 @@
  *
  */
 
-/* File generated from device description file (ATDF) version 2025-04-07T17:07:52Z */
+/* File generated from device description file (ATDF) version 2026-09-01T07:31:34Z */
 #ifndef _PIC32CK2051GC01144_H_
 #define _PIC32CK2051GC01144_H_
 
 /* Header version uses Semantic Versioning 2.0.0 (https://semver.org/) */
-#define HEADER_FORMAT_VERSION "2.1.1"
+#define HEADER_FORMAT_VERSION "3.0.1"
 
-#define HEADER_FORMAT_VERSION_MAJOR (2)
-#define HEADER_FORMAT_VERSION_MINOR (1)
+#define HEADER_FORMAT_VERSION_MAJOR (3)
+#define HEADER_FORMAT_VERSION_MINOR (0)
 #define HEADER_FORMAT_VERSION_PATCH (1)
 
 /* PIC32CK2051GC01144 definitions
@@ -47,21 +47,23 @@
 #endif /* !(defined(__ASSEMBLER__) || defined(__IAR_SYSTEMS_ASM__)) */
 
 #if !defined(SKIP_INTEGER_LITERALS)
-#  if defined(_UINT8_) || defined(_UINT16_) || defined(_UINT32_)
+#  if defined(_UINT8_) || defined(_UINT16_) || defined(_UINT32_) || defined(_UINT64_)
 #    error "Integer constant value macros already defined elsewhere"
 #  endif
 
 #if !(defined(__ASSEMBLER__) || defined(__IAR_SYSTEMS_ASM__))
 /* Macros that deal with sizes of integer constants for C/C++ */
-#  define _UINT8_(x)   ((uint8_t)(x))    /* C code: 8-bits unsigned integer constant value */
-#  define _UINT16_(x)  ((uint16_t)(x))   /* C code: 16-bits unsigned integer constant value */
-#  define _UINT32_(x)  ((uint32_t)(x))   /* C code: 32-bits unsigned integer constant value */
+#  define _UINT8_(x)   (UINT8_C(x))    /* C code: 8-bits unsigned integer constant value */
+#  define _UINT16_(x)  (UINT16_C(x))   /* C code: 16-bits unsigned integer constant value */
+#  define _UINT32_(x)  (UINT32_C(x))   /* C code: 32-bits unsigned integer constant value */
+#  define _UINT64_(x)  (UINT64_C(x))   /* C code: 64-bits unsigned integer constant value */
 
 #else /* Assembler */
 
-#  define _UINT8_(x) x    /* Assembler: 8-bits unsigned integer constant value */
-#  define _UINT16_(x) x   /* Assembler: 16-bits unsigned integer constant value */
-#  define _UINT32_(x) x   /* Assembler: 32-bits unsigned integer constant value */
+#  define _UINT8_(x) (x)    /* Assembler: 8-bits unsigned integer constant value */
+#  define _UINT16_(x) (x)   /* Assembler: 16-bits unsigned integer constant value */
+#  define _UINT32_(x) (x)   /* Assembler: 32-bits unsigned integer constant value */
+#  define _UINT64_(x) (x)   /* Assembler: 64-bits unsigned integer constant value */
 #endif /* !(defined(__ASSEMBLER__) || defined(__IAR_SYSTEMS_ASM__)) */
 #endif /* SKIP_INTEGER_LITERALS */
 
@@ -220,10 +222,6 @@ typedef enum IRQn
   TCC7_MC1_IRQn             = 131, /* 131 Timer Counter for Control Applications (TCC7) */
   ADC_GLOBAL_IRQn           = 132, /* 132 ADC Controller (ADC)                */
   ADC_CORE1_IRQn            = 133, /* 133 ADC Controller (ADC)                */
-  Reserved2_IRQn            = 134, /* 134 ADC Controller (ADC)                */
-  Reserved3_IRQn            = 135, /* 135 ADC Controller (ADC)                */
-  Reserved4_IRQn            = 136, /* 136 ADC Controller (ADC)                */
-  Reserved5_IRQn            = 137, /* 137 ADC Controller (ADC)                */
   AC_IRQn                   = 138, /* 138 Analog Comparator Controller (AC)   */
   PTC_IRQn                  = 139, /* 139 Peripheral Touch Controller (PTC)   */
   SPI_IXS_IRQn              = 140, /* 140 Audio SPI with 8 channels compatibilty (SPI_IXS) */
@@ -241,11 +239,8 @@ typedef enum IRQn
   USB_TRCPT0_IRQn           = 152, /* 152 Full-Speed Universal Serial Bus (USB) */
   USB_TRCPT1_IRQn           = 153, /* 153 Full-Speed Universal Serial Bus (USB) */
   USBHS_IRQn                = 154, /* 154 USB High Speed (USBHS)              */
-  HSM_ERROR_IRQn            = 155, /* 155 HSM_ERROR (HSM)                     */
-  HSM_TXINT_IRQn            = 156, /* 156 HSM_TXINT (HSM)                     */
-  HSM_RXINT_IRQn            = 157, /* 157 HSM_RXINT (HSM)                     */
 
-  PERIPH_MAX_IRQn           = 157  /* Max peripheral ID */
+  PERIPH_MAX_IRQn           = 154  /* Max peripheral ID */
 } IRQn_Type;
 #endif /* !(defined(__ASSEMBLER__) || defined(__IAR_SYSTEMS_ASM__)) */
 
@@ -256,17 +251,17 @@ typedef struct _DeviceVectors
   void* pvStack;
   /* CORTEX-M33 handlers */
   void* pfnReset_Handler;                        /* -15 Reset Vector, invoked on Power up and warm reset */
-  void* pfnNonMaskableInt_Handler;               /* -14 Non maskable Interrupt, cannot be stopped or preempted */
+  void* pfnNMI_Handler;                          /* -14 Non maskable Interrupt, cannot be stopped or preempted */
   void* pfnHardFault_Handler;                    /* -13 Hard Fault, all classes of Fault */
-  void* pfnMemoryManagement_Handler;             /* -12 Memory Management, MPU mismatch, including Access Violation and No Match */
+  void* pfnMemManage_Handler;                    /* -12 Memory Management, MPU mismatch, including Access Violation and No Match */
   void* pfnBusFault_Handler;                     /* -11 Bus Fault, Pre-Fetch-, Memory Access Fault, other address/memory related Fault */
   void* pfnUsageFault_Handler;                   /* -10 Usage Fault, i.e. Undef Instruction, Illegal State Transition */
   void* pfnSecureFaultMonitor_Handler;           /*  -9 Secure Fault */
   void* pvReservedC8;
   void* pvReservedC7;
   void* pvReservedC6;
-  void* pfnSVCall_Handler;                       /*  -5 System Service Call via SVC instruction */
-  void* pfnDebugMonitor_Handler;                 /*  -4 Debug Monitor */
+  void* pfnSVC_Handler;                          /*  -5 System Service Call via SVC instruction */
+  void* pfnDebugMon_Handler;                     /*  -4 Debug Monitor */
   void* pvReservedC3;
   void* pfnPendSV_Handler;                       /*  -2 Pendable request for system service */
   void* pfnSysTick_Handler;                      /*  -1 System Tick Timer */
@@ -406,10 +401,10 @@ typedef struct _DeviceVectors
   void* pfnTCC7_MC1_Handler;                     /* 131 Timer Counter for Control Applications (TCC7) */
   void* pfnADC_GLOBAL_Handler;                   /* 132 ADC Controller (ADC) */
   void* pfnADC_CORE1_Handler;                    /* 133 ADC Controller (ADC) */
-  void* pfnReserved2_Handler;                    /* 134 ADC Controller (ADC) */
-  void* pfnReserved3_Handler;                    /* 135 ADC Controller (ADC) */
-  void* pfnReserved4_Handler;                    /* 136 ADC Controller (ADC) */
-  void* pfnReserved5_Handler;                    /* 137 ADC Controller (ADC) */
+  void* pvReserved134;
+  void* pvReserved135;
+  void* pvReserved136;
+  void* pvReserved137;
   void* pfnAC_Handler;                           /* 138 Analog Comparator Controller (AC) */
   void* pfnPTC_Handler;                          /* 139 Peripheral Touch Controller (PTC) */
   void* pfnSPI_IXS_Handler;                      /* 140 Audio SPI with 8 channels compatibilty (SPI_IXS) */
@@ -427,9 +422,6 @@ typedef struct _DeviceVectors
   void* pfnUSB_TRCPT0_Handler;                   /* 152 Full-Speed Universal Serial Bus (USB) */
   void* pfnUSB_TRCPT1_Handler;                   /* 153 Full-Speed Universal Serial Bus (USB) */
   void* pfnUSBHS_Handler;                        /* 154 USB High Speed (USBHS) */
-  void* pvReserved155;
-  void* pvReserved156;
-  void* pvReserved157;
 } DeviceVectors;
 
 #endif /* !(defined(__ASSEMBLER__) || defined(__IAR_SYSTEMS_ASM__)) */
@@ -438,14 +430,34 @@ typedef struct _DeviceVectors
 #if !defined DONT_USE_PREDEFINED_CORE_HANDLERS
 /* CORTEX-M33 exception handlers */
 void Reset_Handler                 ( void );
-void NonMaskableInt_Handler        ( void );
+void NMI_Handler                   ( void );
+#ifndef __IAR_SYSTEMS_ICC__
+void NonMaskableInt_Handler        ( void ) __attribute__((deprecated("Use NMI_Handler instead"))); /* The legacy name - kept for backward compatibility */
+#else
+void NonMaskableInt_Handler        ( void ); /* The legacy name - kept for backward compatibility */
+#endif
 void HardFault_Handler             ( void );
-void MemoryManagement_Handler      ( void );
+void MemManage_Handler             ( void );
+#ifndef __IAR_SYSTEMS_ICC__
+void MemoryManagement_Handler      ( void ) __attribute__((deprecated("Use MemManage_Handler instead"))); /* The legacy name - kept for backward compatibility */
+#else
+void MemoryManagement_Handler      ( void ); /* The legacy name - kept for backward compatibility */
+#endif
 void BusFault_Handler              ( void );
 void UsageFault_Handler            ( void );
 void SecureFaultMonitor_Handler    ( void );
-void SVCall_Handler                ( void );
-void DebugMonitor_Handler          ( void );
+void SVC_Handler                   ( void );
+#ifndef __IAR_SYSTEMS_ICC__
+void SVCall_Handler                ( void ) __attribute__((deprecated("Use SVC_Handler instead"))); /* The legacy name - kept for backward compatibility */
+#else
+void SVCall_Handler                ( void ); /* The legacy name - kept for backward compatibility */
+#endif
+void DebugMon_Handler              ( void );
+#ifndef __IAR_SYSTEMS_ICC__
+void DebugMonitor_Handler          ( void ) __attribute__((deprecated("Use DebugMon_Handler instead"))); /* The legacy name - kept for backward compatibility */
+#else
+void DebugMonitor_Handler          ( void ); /* The legacy name - kept for backward compatibility */
+#endif
 void PendSV_Handler                ( void );
 void SysTick_Handler               ( void );
 #endif /* DONT_USE_PREDEFINED_CORE_HANDLERS */
@@ -586,10 +598,6 @@ void TCC7_MC0_Handler              ( void );
 void TCC7_MC1_Handler              ( void );
 void ADC_GLOBAL_Handler            ( void );
 void ADC_CORE1_Handler             ( void );
-void Reserved2_Handler             ( void );
-void Reserved3_Handler             ( void );
-void Reserved4_Handler             ( void );
-void Reserved5_Handler             ( void );
 void AC_Handler                    ( void );
 void PTC_Handler                   ( void );
 void SPI_IXS_Handler               ( void );
@@ -624,10 +632,12 @@ void USBHS_Handler                 ( void );
 #define __ARCH_ARM_CORTEX_M                1
 
 /* CMSIS includes */
+#if !defined(DISABLE_CMSIS)
 #include "core_cm33.h"
-#if defined USE_CMSIS_INIT
-#include "system_pic32ckgc01.h"
-#endif /* USE_CMSIS_INIT */
+#if !defined(DISABLE_CMSIS_INIT)
+#include "system_pic32ck2051gc01144.h"
+#endif /* DISABLE_CMSIS_INIT */
+#endif /* DISABLE_CMSIS */
 
 /* ************************************************************************** */
 /*         SOFTWARE PERIPHERAL API DEFINITIONS FOR PIC32CK2051GC01144         */

@@ -1,7 +1,7 @@
 /*
  * Instance header file for PIC32CK2051GC01144
  *
- * Copyright (c) 2025 Microchip Technology Inc. and its subsidiaries.
+ * Copyright (c) 2026 Microchip Technology Inc. and its subsidiaries.
  *
  * SPDX-License-Identifier: Apache-2.0
  *
@@ -19,14 +19,14 @@
  *
  */
 
-/* file generated from device description file (ATDF) version 2025-04-07T17:07:52Z */
+/* file generated from device description file (ATDF) version 2026-09-01T07:31:34Z */
 #ifndef _PIC32CKGC01_PCC_INSTANCE_
 #define _PIC32CKGC01_PCC_INSTANCE_
 
 
 /* ========== Instance Parameter definitions for PCC peripheral ========== */
-#define PCC_DATA_SIZE                            (14)       
-#define PCC_DMAC_ID_RX                           (67)       
+#define PCC_DATA_SIZE                            (14)
+#define PCC_DMAC_ID_RX                           (67)
 #define PCC_INSTANCE_ID                          (76)       /* Instance index for PCC */
 #define PCC_MCLK_ID_APB                          (108)      /* Index for PCC APB clock */
 #define PCC_PAC_ID                               (76)       /* Index for PCC registers write protection */

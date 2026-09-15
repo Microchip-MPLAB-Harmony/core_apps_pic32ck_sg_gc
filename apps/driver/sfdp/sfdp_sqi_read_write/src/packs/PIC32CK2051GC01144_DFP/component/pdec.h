@@ -1,7 +1,7 @@
 /*
  * Component description for PDEC
  *
- * Copyright (c) 2025 Microchip Technology Inc. and its subsidiaries.
+ * Copyright (c) 2026 Microchip Technology Inc. and its subsidiaries.
  *
  * SPDX-License-Identifier: Apache-2.0
  *
@@ -19,9 +19,13 @@
  *
  */
 
-/*  file generated from device description file (ATDF) version 2025-04-07T17:07:52Z  */
+/*  file generated from device description file (ATDF) version 2026-09-01T07:31:34Z  */
 #ifndef _PIC32CKGC01_PDEC_COMPONENT_H_
 #define _PIC32CKGC01_PDEC_COMPONENT_H_
+
+#if !defined(DISABLE_CMSIS)
+#include "core_cm33.h"
+#endif /* !defined(DISABLE_CMSIS) */
 
 /* ************************************************************************** */
 /*                      SOFTWARE API DEFINITION FOR PDEC                      */
@@ -32,13 +36,13 @@
 
 #define PDEC_CTRLA_SWRST_Pos                  _UINT32_(0)                                          /* (PDEC_CTRLA) Software Reset Position */
 #define PDEC_CTRLA_SWRST_Msk                  (_UINT32_(0x1) << PDEC_CTRLA_SWRST_Pos)              /* (PDEC_CTRLA) Software Reset Mask */
-#define PDEC_CTRLA_SWRST(value)               (PDEC_CTRLA_SWRST_Msk & (_UINT32_(value) << PDEC_CTRLA_SWRST_Pos)) /* Assignment of value for SWRST in the PDEC_CTRLA register */
+#define PDEC_CTRLA_SWRST(value)               (PDEC_CTRLA_SWRST_Msk & ((uint32_t)(value) << PDEC_CTRLA_SWRST_Pos)) /* Assignment of value for SWRST in the PDEC_CTRLA register */
 #define PDEC_CTRLA_ENABLE_Pos                 _UINT32_(1)                                          /* (PDEC_CTRLA) Enable Position */
 #define PDEC_CTRLA_ENABLE_Msk                 (_UINT32_(0x1) << PDEC_CTRLA_ENABLE_Pos)             /* (PDEC_CTRLA) Enable Mask */
-#define PDEC_CTRLA_ENABLE(value)              (PDEC_CTRLA_ENABLE_Msk & (_UINT32_(value) << PDEC_CTRLA_ENABLE_Pos)) /* Assignment of value for ENABLE in the PDEC_CTRLA register */
+#define PDEC_CTRLA_ENABLE(value)              (PDEC_CTRLA_ENABLE_Msk & ((uint32_t)(value) << PDEC_CTRLA_ENABLE_Pos)) /* Assignment of value for ENABLE in the PDEC_CTRLA register */
 #define PDEC_CTRLA_MODE_Pos                   _UINT32_(2)                                          /* (PDEC_CTRLA) Operation Mode Position */
 #define PDEC_CTRLA_MODE_Msk                   (_UINT32_(0x3) << PDEC_CTRLA_MODE_Pos)               /* (PDEC_CTRLA) Operation Mode Mask */
-#define PDEC_CTRLA_MODE(value)                (PDEC_CTRLA_MODE_Msk & (_UINT32_(value) << PDEC_CTRLA_MODE_Pos)) /* Assignment of value for MODE in the PDEC_CTRLA register */
+#define PDEC_CTRLA_MODE(value)                (PDEC_CTRLA_MODE_Msk & ((uint32_t)(value) << PDEC_CTRLA_MODE_Pos)) /* Assignment of value for MODE in the PDEC_CTRLA register */
 #define   PDEC_CTRLA_MODE_QDEC_Val            _UINT32_(0x0)                                        /* (PDEC_CTRLA) QDEC operating mode  */
 #define   PDEC_CTRLA_MODE_HALL_Val            _UINT32_(0x1)                                        /* (PDEC_CTRLA) HALL operating mode  */
 #define   PDEC_CTRLA_MODE_COUNTER_Val         _UINT32_(0x2)                                        /* (PDEC_CTRLA) COUNTER operating mode  */
@@ -47,10 +51,10 @@
 #define PDEC_CTRLA_MODE_COUNTER               (PDEC_CTRLA_MODE_COUNTER_Val << PDEC_CTRLA_MODE_Pos) /* (PDEC_CTRLA) COUNTER operating mode Position */
 #define PDEC_CTRLA_RUNSTDBY_Pos               _UINT32_(6)                                          /* (PDEC_CTRLA) Run in Standby Position */
 #define PDEC_CTRLA_RUNSTDBY_Msk               (_UINT32_(0x1) << PDEC_CTRLA_RUNSTDBY_Pos)           /* (PDEC_CTRLA) Run in Standby Mask */
-#define PDEC_CTRLA_RUNSTDBY(value)            (PDEC_CTRLA_RUNSTDBY_Msk & (_UINT32_(value) << PDEC_CTRLA_RUNSTDBY_Pos)) /* Assignment of value for RUNSTDBY in the PDEC_CTRLA register */
+#define PDEC_CTRLA_RUNSTDBY(value)            (PDEC_CTRLA_RUNSTDBY_Msk & ((uint32_t)(value) << PDEC_CTRLA_RUNSTDBY_Pos)) /* Assignment of value for RUNSTDBY in the PDEC_CTRLA register */
 #define PDEC_CTRLA_CONF_Pos                   _UINT32_(8)                                          /* (PDEC_CTRLA) PDEC Configuration Position */
 #define PDEC_CTRLA_CONF_Msk                   (_UINT32_(0x7) << PDEC_CTRLA_CONF_Pos)               /* (PDEC_CTRLA) PDEC Configuration Mask */
-#define PDEC_CTRLA_CONF(value)                (PDEC_CTRLA_CONF_Msk & (_UINT32_(value) << PDEC_CTRLA_CONF_Pos)) /* Assignment of value for CONF in the PDEC_CTRLA register */
+#define PDEC_CTRLA_CONF(value)                (PDEC_CTRLA_CONF_Msk & ((uint32_t)(value) << PDEC_CTRLA_CONF_Pos)) /* Assignment of value for CONF in the PDEC_CTRLA register */
 #define   PDEC_CTRLA_CONF_X4_Val              _UINT32_(0x0)                                        /* (PDEC_CTRLA) Quadrature decoder direction  */
 #define   PDEC_CTRLA_CONF_X4S_Val             _UINT32_(0x1)                                        /* (PDEC_CTRLA) Secure Quadrature decoder direction  */
 #define   PDEC_CTRLA_CONF_X2_Val              _UINT32_(0x2)                                        /* (PDEC_CTRLA) Decoder direction  */
@@ -63,55 +67,55 @@
 #define PDEC_CTRLA_CONF_AUTOC                 (PDEC_CTRLA_CONF_AUTOC_Val << PDEC_CTRLA_CONF_Pos)   /* (PDEC_CTRLA) Auto correction mode Position */
 #define PDEC_CTRLA_ALOCK_Pos                  _UINT32_(11)                                         /* (PDEC_CTRLA) Auto Lock Position */
 #define PDEC_CTRLA_ALOCK_Msk                  (_UINT32_(0x1) << PDEC_CTRLA_ALOCK_Pos)              /* (PDEC_CTRLA) Auto Lock Mask */
-#define PDEC_CTRLA_ALOCK(value)               (PDEC_CTRLA_ALOCK_Msk & (_UINT32_(value) << PDEC_CTRLA_ALOCK_Pos)) /* Assignment of value for ALOCK in the PDEC_CTRLA register */
+#define PDEC_CTRLA_ALOCK(value)               (PDEC_CTRLA_ALOCK_Msk & ((uint32_t)(value) << PDEC_CTRLA_ALOCK_Pos)) /* Assignment of value for ALOCK in the PDEC_CTRLA register */
 #define PDEC_CTRLA_SWAP_Pos                   _UINT32_(14)                                         /* (PDEC_CTRLA) PDEC Phase A and B Swap Position */
 #define PDEC_CTRLA_SWAP_Msk                   (_UINT32_(0x1) << PDEC_CTRLA_SWAP_Pos)               /* (PDEC_CTRLA) PDEC Phase A and B Swap Mask */
-#define PDEC_CTRLA_SWAP(value)                (PDEC_CTRLA_SWAP_Msk & (_UINT32_(value) << PDEC_CTRLA_SWAP_Pos)) /* Assignment of value for SWAP in the PDEC_CTRLA register */
+#define PDEC_CTRLA_SWAP(value)                (PDEC_CTRLA_SWAP_Msk & ((uint32_t)(value) << PDEC_CTRLA_SWAP_Pos)) /* Assignment of value for SWAP in the PDEC_CTRLA register */
 #define PDEC_CTRLA_PEREN_Pos                  _UINT32_(15)                                         /* (PDEC_CTRLA) Period Enable Position */
 #define PDEC_CTRLA_PEREN_Msk                  (_UINT32_(0x1) << PDEC_CTRLA_PEREN_Pos)              /* (PDEC_CTRLA) Period Enable Mask */
-#define PDEC_CTRLA_PEREN(value)               (PDEC_CTRLA_PEREN_Msk & (_UINT32_(value) << PDEC_CTRLA_PEREN_Pos)) /* Assignment of value for PEREN in the PDEC_CTRLA register */
+#define PDEC_CTRLA_PEREN(value)               (PDEC_CTRLA_PEREN_Msk & ((uint32_t)(value) << PDEC_CTRLA_PEREN_Pos)) /* Assignment of value for PEREN in the PDEC_CTRLA register */
 #define PDEC_CTRLA_PINEN0_Pos                 _UINT32_(16)                                         /* (PDEC_CTRLA) PDEC Input From Pin 0 Enable Position */
 #define PDEC_CTRLA_PINEN0_Msk                 (_UINT32_(0x1) << PDEC_CTRLA_PINEN0_Pos)             /* (PDEC_CTRLA) PDEC Input From Pin 0 Enable Mask */
-#define PDEC_CTRLA_PINEN0(value)              (PDEC_CTRLA_PINEN0_Msk & (_UINT32_(value) << PDEC_CTRLA_PINEN0_Pos)) /* Assignment of value for PINEN0 in the PDEC_CTRLA register */
+#define PDEC_CTRLA_PINEN0(value)              (PDEC_CTRLA_PINEN0_Msk & ((uint32_t)(value) << PDEC_CTRLA_PINEN0_Pos)) /* Assignment of value for PINEN0 in the PDEC_CTRLA register */
 #define PDEC_CTRLA_PINEN1_Pos                 _UINT32_(17)                                         /* (PDEC_CTRLA) PDEC Input From Pin 1 Enable Position */
 #define PDEC_CTRLA_PINEN1_Msk                 (_UINT32_(0x1) << PDEC_CTRLA_PINEN1_Pos)             /* (PDEC_CTRLA) PDEC Input From Pin 1 Enable Mask */
-#define PDEC_CTRLA_PINEN1(value)              (PDEC_CTRLA_PINEN1_Msk & (_UINT32_(value) << PDEC_CTRLA_PINEN1_Pos)) /* Assignment of value for PINEN1 in the PDEC_CTRLA register */
+#define PDEC_CTRLA_PINEN1(value)              (PDEC_CTRLA_PINEN1_Msk & ((uint32_t)(value) << PDEC_CTRLA_PINEN1_Pos)) /* Assignment of value for PINEN1 in the PDEC_CTRLA register */
 #define PDEC_CTRLA_PINEN2_Pos                 _UINT32_(18)                                         /* (PDEC_CTRLA) PDEC Input From Pin 2 Enable Position */
 #define PDEC_CTRLA_PINEN2_Msk                 (_UINT32_(0x1) << PDEC_CTRLA_PINEN2_Pos)             /* (PDEC_CTRLA) PDEC Input From Pin 2 Enable Mask */
-#define PDEC_CTRLA_PINEN2(value)              (PDEC_CTRLA_PINEN2_Msk & (_UINT32_(value) << PDEC_CTRLA_PINEN2_Pos)) /* Assignment of value for PINEN2 in the PDEC_CTRLA register */
+#define PDEC_CTRLA_PINEN2(value)              (PDEC_CTRLA_PINEN2_Msk & ((uint32_t)(value) << PDEC_CTRLA_PINEN2_Pos)) /* Assignment of value for PINEN2 in the PDEC_CTRLA register */
 #define PDEC_CTRLA_PINVEN0_Pos                _UINT32_(20)                                         /* (PDEC_CTRLA) IO Pin 0 Invert Enable Position */
 #define PDEC_CTRLA_PINVEN0_Msk                (_UINT32_(0x1) << PDEC_CTRLA_PINVEN0_Pos)            /* (PDEC_CTRLA) IO Pin 0 Invert Enable Mask */
-#define PDEC_CTRLA_PINVEN0(value)             (PDEC_CTRLA_PINVEN0_Msk & (_UINT32_(value) << PDEC_CTRLA_PINVEN0_Pos)) /* Assignment of value for PINVEN0 in the PDEC_CTRLA register */
+#define PDEC_CTRLA_PINVEN0(value)             (PDEC_CTRLA_PINVEN0_Msk & ((uint32_t)(value) << PDEC_CTRLA_PINVEN0_Pos)) /* Assignment of value for PINVEN0 in the PDEC_CTRLA register */
 #define PDEC_CTRLA_PINVEN1_Pos                _UINT32_(21)                                         /* (PDEC_CTRLA) IO Pin 1 Invert Enable Position */
 #define PDEC_CTRLA_PINVEN1_Msk                (_UINT32_(0x1) << PDEC_CTRLA_PINVEN1_Pos)            /* (PDEC_CTRLA) IO Pin 1 Invert Enable Mask */
-#define PDEC_CTRLA_PINVEN1(value)             (PDEC_CTRLA_PINVEN1_Msk & (_UINT32_(value) << PDEC_CTRLA_PINVEN1_Pos)) /* Assignment of value for PINVEN1 in the PDEC_CTRLA register */
+#define PDEC_CTRLA_PINVEN1(value)             (PDEC_CTRLA_PINVEN1_Msk & ((uint32_t)(value) << PDEC_CTRLA_PINVEN1_Pos)) /* Assignment of value for PINVEN1 in the PDEC_CTRLA register */
 #define PDEC_CTRLA_PINVEN2_Pos                _UINT32_(22)                                         /* (PDEC_CTRLA) IO Pin 2 Invert Enable Position */
 #define PDEC_CTRLA_PINVEN2_Msk                (_UINT32_(0x1) << PDEC_CTRLA_PINVEN2_Pos)            /* (PDEC_CTRLA) IO Pin 2 Invert Enable Mask */
-#define PDEC_CTRLA_PINVEN2(value)             (PDEC_CTRLA_PINVEN2_Msk & (_UINT32_(value) << PDEC_CTRLA_PINVEN2_Pos)) /* Assignment of value for PINVEN2 in the PDEC_CTRLA register */
+#define PDEC_CTRLA_PINVEN2(value)             (PDEC_CTRLA_PINVEN2_Msk & ((uint32_t)(value) << PDEC_CTRLA_PINVEN2_Pos)) /* Assignment of value for PINVEN2 in the PDEC_CTRLA register */
 #define PDEC_CTRLA_ANGULAR_Pos                _UINT32_(24)                                         /* (PDEC_CTRLA) Angular Counter Length Position */
 #define PDEC_CTRLA_ANGULAR_Msk                (_UINT32_(0x7) << PDEC_CTRLA_ANGULAR_Pos)            /* (PDEC_CTRLA) Angular Counter Length Mask */
-#define PDEC_CTRLA_ANGULAR(value)             (PDEC_CTRLA_ANGULAR_Msk & (_UINT32_(value) << PDEC_CTRLA_ANGULAR_Pos)) /* Assignment of value for ANGULAR in the PDEC_CTRLA register */
+#define PDEC_CTRLA_ANGULAR(value)             (PDEC_CTRLA_ANGULAR_Msk & ((uint32_t)(value) << PDEC_CTRLA_ANGULAR_Pos)) /* Assignment of value for ANGULAR in the PDEC_CTRLA register */
 #define PDEC_CTRLA_MAXCMP_Pos                 _UINT32_(28)                                         /* (PDEC_CTRLA) Maximum Consecutive Missing Pulses Position */
 #define PDEC_CTRLA_MAXCMP_Msk                 (_UINT32_(0xF) << PDEC_CTRLA_MAXCMP_Pos)             /* (PDEC_CTRLA) Maximum Consecutive Missing Pulses Mask */
-#define PDEC_CTRLA_MAXCMP(value)              (PDEC_CTRLA_MAXCMP_Msk & (_UINT32_(value) << PDEC_CTRLA_MAXCMP_Pos)) /* Assignment of value for MAXCMP in the PDEC_CTRLA register */
+#define PDEC_CTRLA_MAXCMP(value)              (PDEC_CTRLA_MAXCMP_Msk & ((uint32_t)(value) << PDEC_CTRLA_MAXCMP_Pos)) /* Assignment of value for MAXCMP in the PDEC_CTRLA register */
 #define PDEC_CTRLA_Msk                        _UINT32_(0xF777CF4F)                                 /* (PDEC_CTRLA) Register Mask  */
 
 #define PDEC_CTRLA_PINEN_Pos                  _UINT32_(16)                                         /* (PDEC_CTRLA Position) PDEC Input From Pin x Enable */
 #define PDEC_CTRLA_PINEN_Msk                  (_UINT32_(0x7) << PDEC_CTRLA_PINEN_Pos)              /* (PDEC_CTRLA Mask) PINEN */
-#define PDEC_CTRLA_PINEN(value)               (PDEC_CTRLA_PINEN_Msk & (_UINT32_(value) << PDEC_CTRLA_PINEN_Pos)) 
+#define PDEC_CTRLA_PINEN(value)               (PDEC_CTRLA_PINEN_Msk & ((uint32_t)(value) << PDEC_CTRLA_PINEN_Pos)) 
 #define PDEC_CTRLA_PINVEN_Pos                 _UINT32_(20)                                         /* (PDEC_CTRLA Position) IO Pin x Invert Enable */
 #define PDEC_CTRLA_PINVEN_Msk                 (_UINT32_(0x7) << PDEC_CTRLA_PINVEN_Pos)             /* (PDEC_CTRLA Mask) PINVEN */
-#define PDEC_CTRLA_PINVEN(value)              (PDEC_CTRLA_PINVEN_Msk & (_UINT32_(value) << PDEC_CTRLA_PINVEN_Pos)) 
+#define PDEC_CTRLA_PINVEN(value)              (PDEC_CTRLA_PINVEN_Msk & ((uint32_t)(value) << PDEC_CTRLA_PINVEN_Pos)) 
 
 /* -------- PDEC_CTRLBCLR : (PDEC Offset: 0x04) (R/W 8) Control B Clear -------- */
 #define PDEC_CTRLBCLR_RESETVALUE              _UINT8_(0x00)                                        /*  (PDEC_CTRLBCLR) Control B Clear  Reset Value */
 
 #define PDEC_CTRLBCLR_LUPD_Pos                _UINT8_(1)                                           /* (PDEC_CTRLBCLR) Lock Update Position */
 #define PDEC_CTRLBCLR_LUPD_Msk                (_UINT8_(0x1) << PDEC_CTRLBCLR_LUPD_Pos)             /* (PDEC_CTRLBCLR) Lock Update Mask */
-#define PDEC_CTRLBCLR_LUPD(value)             (PDEC_CTRLBCLR_LUPD_Msk & (_UINT8_(value) << PDEC_CTRLBCLR_LUPD_Pos)) /* Assignment of value for LUPD in the PDEC_CTRLBCLR register */
+#define PDEC_CTRLBCLR_LUPD(value)             (PDEC_CTRLBCLR_LUPD_Msk & ((uint8_t)(value) << PDEC_CTRLBCLR_LUPD_Pos)) /* Assignment of value for LUPD in the PDEC_CTRLBCLR register */
 #define PDEC_CTRLBCLR_CMD_Pos                 _UINT8_(5)                                           /* (PDEC_CTRLBCLR) Command Position */
 #define PDEC_CTRLBCLR_CMD_Msk                 (_UINT8_(0x7) << PDEC_CTRLBCLR_CMD_Pos)              /* (PDEC_CTRLBCLR) Command Mask */
-#define PDEC_CTRLBCLR_CMD(value)              (PDEC_CTRLBCLR_CMD_Msk & (_UINT8_(value) << PDEC_CTRLBCLR_CMD_Pos)) /* Assignment of value for CMD in the PDEC_CTRLBCLR register */
+#define PDEC_CTRLBCLR_CMD(value)              (PDEC_CTRLBCLR_CMD_Msk & ((uint8_t)(value) << PDEC_CTRLBCLR_CMD_Pos)) /* Assignment of value for CMD in the PDEC_CTRLBCLR register */
 #define   PDEC_CTRLBCLR_CMD_NONE_Val          _UINT8_(0x0)                                         /* (PDEC_CTRLBCLR) No action  */
 #define   PDEC_CTRLBCLR_CMD_RETRIGGER_Val     _UINT8_(0x1)                                         /* (PDEC_CTRLBCLR) Force a counter restart or retrigger  */
 #define   PDEC_CTRLBCLR_CMD_UPDATE_Val        _UINT8_(0x2)                                         /* (PDEC_CTRLBCLR) Force update of double buffered registers  */
@@ -132,10 +136,10 @@
 
 #define PDEC_CTRLBSET_LUPD_Pos                _UINT8_(1)                                           /* (PDEC_CTRLBSET) Lock Update Position */
 #define PDEC_CTRLBSET_LUPD_Msk                (_UINT8_(0x1) << PDEC_CTRLBSET_LUPD_Pos)             /* (PDEC_CTRLBSET) Lock Update Mask */
-#define PDEC_CTRLBSET_LUPD(value)             (PDEC_CTRLBSET_LUPD_Msk & (_UINT8_(value) << PDEC_CTRLBSET_LUPD_Pos)) /* Assignment of value for LUPD in the PDEC_CTRLBSET register */
+#define PDEC_CTRLBSET_LUPD(value)             (PDEC_CTRLBSET_LUPD_Msk & ((uint8_t)(value) << PDEC_CTRLBSET_LUPD_Pos)) /* Assignment of value for LUPD in the PDEC_CTRLBSET register */
 #define PDEC_CTRLBSET_CMD_Pos                 _UINT8_(5)                                           /* (PDEC_CTRLBSET) Command Position */
 #define PDEC_CTRLBSET_CMD_Msk                 (_UINT8_(0x7) << PDEC_CTRLBSET_CMD_Pos)              /* (PDEC_CTRLBSET) Command Mask */
-#define PDEC_CTRLBSET_CMD(value)              (PDEC_CTRLBSET_CMD_Msk & (_UINT8_(value) << PDEC_CTRLBSET_CMD_Pos)) /* Assignment of value for CMD in the PDEC_CTRLBSET register */
+#define PDEC_CTRLBSET_CMD(value)              (PDEC_CTRLBSET_CMD_Msk & ((uint8_t)(value) << PDEC_CTRLBSET_CMD_Pos)) /* Assignment of value for CMD in the PDEC_CTRLBSET register */
 #define   PDEC_CTRLBSET_CMD_NONE_Val          _UINT8_(0x0)                                         /* (PDEC_CTRLBSET) No action  */
 #define   PDEC_CTRLBSET_CMD_RETRIGGER_Val     _UINT8_(0x1)                                         /* (PDEC_CTRLBSET) Force a counter restart or retrigger  */
 #define   PDEC_CTRLBSET_CMD_UPDATE_Val        _UINT8_(0x2)                                         /* (PDEC_CTRLBSET) Force update of double buffered registers  */
@@ -156,172 +160,170 @@
 
 #define PDEC_EVCTRL_EVACT_Pos                 _UINT16_(0)                                          /* (PDEC_EVCTRL) Event Action Position */
 #define PDEC_EVCTRL_EVACT_Msk                 (_UINT16_(0x3) << PDEC_EVCTRL_EVACT_Pos)             /* (PDEC_EVCTRL) Event Action Mask */
-#define PDEC_EVCTRL_EVACT(value)              (PDEC_EVCTRL_EVACT_Msk & (_UINT16_(value) << PDEC_EVCTRL_EVACT_Pos)) /* Assignment of value for EVACT in the PDEC_EVCTRL register */
+#define PDEC_EVCTRL_EVACT(value)              (PDEC_EVCTRL_EVACT_Msk & ((uint16_t)(value) << PDEC_EVCTRL_EVACT_Pos)) /* Assignment of value for EVACT in the PDEC_EVCTRL register */
 #define   PDEC_EVCTRL_EVACT_OFF_Val           _UINT16_(0x0)                                        /* (PDEC_EVCTRL) Event action disabled  */
-#define   PDEC_EVCTRL_EVACT_RETRIGGER_Val     _UINT16_(0x1)                                        /* (PDEC_EVCTRL) Start, restart or retrigger on event  */
 #define   PDEC_EVCTRL_EVACT_COUNT_Val         _UINT16_(0x2)                                        /* (PDEC_EVCTRL) Count on event  */
 #define PDEC_EVCTRL_EVACT_OFF                 (PDEC_EVCTRL_EVACT_OFF_Val << PDEC_EVCTRL_EVACT_Pos) /* (PDEC_EVCTRL) Event action disabled Position */
-#define PDEC_EVCTRL_EVACT_RETRIGGER           (PDEC_EVCTRL_EVACT_RETRIGGER_Val << PDEC_EVCTRL_EVACT_Pos) /* (PDEC_EVCTRL) Start, restart or retrigger on event Position */
 #define PDEC_EVCTRL_EVACT_COUNT               (PDEC_EVCTRL_EVACT_COUNT_Val << PDEC_EVCTRL_EVACT_Pos) /* (PDEC_EVCTRL) Count on event Position */
 #define PDEC_EVCTRL_EVINV_Pos                 _UINT16_(2)                                          /* (PDEC_EVCTRL) Inverted Event Input Enable Position */
 #define PDEC_EVCTRL_EVINV_Msk                 (_UINT16_(0x7) << PDEC_EVCTRL_EVINV_Pos)             /* (PDEC_EVCTRL) Inverted Event Input Enable Mask */
-#define PDEC_EVCTRL_EVINV(value)              (PDEC_EVCTRL_EVINV_Msk & (_UINT16_(value) << PDEC_EVCTRL_EVINV_Pos)) /* Assignment of value for EVINV in the PDEC_EVCTRL register */
+#define PDEC_EVCTRL_EVINV(value)              (PDEC_EVCTRL_EVINV_Msk & ((uint16_t)(value) << PDEC_EVCTRL_EVINV_Pos)) /* Assignment of value for EVINV in the PDEC_EVCTRL register */
 #define PDEC_EVCTRL_EVEI_Pos                  _UINT16_(5)                                          /* (PDEC_EVCTRL) Event Input Enable Position */
 #define PDEC_EVCTRL_EVEI_Msk                  (_UINT16_(0x7) << PDEC_EVCTRL_EVEI_Pos)              /* (PDEC_EVCTRL) Event Input Enable Mask */
-#define PDEC_EVCTRL_EVEI(value)               (PDEC_EVCTRL_EVEI_Msk & (_UINT16_(value) << PDEC_EVCTRL_EVEI_Pos)) /* Assignment of value for EVEI in the PDEC_EVCTRL register */
+#define PDEC_EVCTRL_EVEI(value)               (PDEC_EVCTRL_EVEI_Msk & ((uint16_t)(value) << PDEC_EVCTRL_EVEI_Pos)) /* Assignment of value for EVEI in the PDEC_EVCTRL register */
 #define PDEC_EVCTRL_OVFEO_Pos                 _UINT16_(8)                                          /* (PDEC_EVCTRL) Overflow/Underflow Output Event Enable Position */
 #define PDEC_EVCTRL_OVFEO_Msk                 (_UINT16_(0x1) << PDEC_EVCTRL_OVFEO_Pos)             /* (PDEC_EVCTRL) Overflow/Underflow Output Event Enable Mask */
-#define PDEC_EVCTRL_OVFEO(value)              (PDEC_EVCTRL_OVFEO_Msk & (_UINT16_(value) << PDEC_EVCTRL_OVFEO_Pos)) /* Assignment of value for OVFEO in the PDEC_EVCTRL register */
+#define PDEC_EVCTRL_OVFEO(value)              (PDEC_EVCTRL_OVFEO_Msk & ((uint16_t)(value) << PDEC_EVCTRL_OVFEO_Pos)) /* Assignment of value for OVFEO in the PDEC_EVCTRL register */
 #define PDEC_EVCTRL_ERREO_Pos                 _UINT16_(9)                                          /* (PDEC_EVCTRL) Error  Output Event Enable Position */
 #define PDEC_EVCTRL_ERREO_Msk                 (_UINT16_(0x1) << PDEC_EVCTRL_ERREO_Pos)             /* (PDEC_EVCTRL) Error  Output Event Enable Mask */
-#define PDEC_EVCTRL_ERREO(value)              (PDEC_EVCTRL_ERREO_Msk & (_UINT16_(value) << PDEC_EVCTRL_ERREO_Pos)) /* Assignment of value for ERREO in the PDEC_EVCTRL register */
+#define PDEC_EVCTRL_ERREO(value)              (PDEC_EVCTRL_ERREO_Msk & ((uint16_t)(value) << PDEC_EVCTRL_ERREO_Pos)) /* Assignment of value for ERREO in the PDEC_EVCTRL register */
 #define PDEC_EVCTRL_DIREO_Pos                 _UINT16_(10)                                         /* (PDEC_EVCTRL) Direction Output Event Enable Position */
 #define PDEC_EVCTRL_DIREO_Msk                 (_UINT16_(0x1) << PDEC_EVCTRL_DIREO_Pos)             /* (PDEC_EVCTRL) Direction Output Event Enable Mask */
-#define PDEC_EVCTRL_DIREO(value)              (PDEC_EVCTRL_DIREO_Msk & (_UINT16_(value) << PDEC_EVCTRL_DIREO_Pos)) /* Assignment of value for DIREO in the PDEC_EVCTRL register */
+#define PDEC_EVCTRL_DIREO(value)              (PDEC_EVCTRL_DIREO_Msk & ((uint16_t)(value) << PDEC_EVCTRL_DIREO_Pos)) /* Assignment of value for DIREO in the PDEC_EVCTRL register */
 #define PDEC_EVCTRL_VLCEO_Pos                 _UINT16_(11)                                         /* (PDEC_EVCTRL) Velocity Output Event Enable Position */
 #define PDEC_EVCTRL_VLCEO_Msk                 (_UINT16_(0x1) << PDEC_EVCTRL_VLCEO_Pos)             /* (PDEC_EVCTRL) Velocity Output Event Enable Mask */
-#define PDEC_EVCTRL_VLCEO(value)              (PDEC_EVCTRL_VLCEO_Msk & (_UINT16_(value) << PDEC_EVCTRL_VLCEO_Pos)) /* Assignment of value for VLCEO in the PDEC_EVCTRL register */
+#define PDEC_EVCTRL_VLCEO(value)              (PDEC_EVCTRL_VLCEO_Msk & ((uint16_t)(value) << PDEC_EVCTRL_VLCEO_Pos)) /* Assignment of value for VLCEO in the PDEC_EVCTRL register */
 #define PDEC_EVCTRL_MCEO0_Pos                 _UINT16_(12)                                         /* (PDEC_EVCTRL) Match Channel 0 Event Output Enable Position */
 #define PDEC_EVCTRL_MCEO0_Msk                 (_UINT16_(0x1) << PDEC_EVCTRL_MCEO0_Pos)             /* (PDEC_EVCTRL) Match Channel 0 Event Output Enable Mask */
-#define PDEC_EVCTRL_MCEO0(value)              (PDEC_EVCTRL_MCEO0_Msk & (_UINT16_(value) << PDEC_EVCTRL_MCEO0_Pos)) /* Assignment of value for MCEO0 in the PDEC_EVCTRL register */
+#define PDEC_EVCTRL_MCEO0(value)              (PDEC_EVCTRL_MCEO0_Msk & ((uint16_t)(value) << PDEC_EVCTRL_MCEO0_Pos)) /* Assignment of value for MCEO0 in the PDEC_EVCTRL register */
 #define PDEC_EVCTRL_MCEO1_Pos                 _UINT16_(13)                                         /* (PDEC_EVCTRL) Match Channel 1 Event Output Enable Position */
 #define PDEC_EVCTRL_MCEO1_Msk                 (_UINT16_(0x1) << PDEC_EVCTRL_MCEO1_Pos)             /* (PDEC_EVCTRL) Match Channel 1 Event Output Enable Mask */
-#define PDEC_EVCTRL_MCEO1(value)              (PDEC_EVCTRL_MCEO1_Msk & (_UINT16_(value) << PDEC_EVCTRL_MCEO1_Pos)) /* Assignment of value for MCEO1 in the PDEC_EVCTRL register */
+#define PDEC_EVCTRL_MCEO1(value)              (PDEC_EVCTRL_MCEO1_Msk & ((uint16_t)(value) << PDEC_EVCTRL_MCEO1_Pos)) /* Assignment of value for MCEO1 in the PDEC_EVCTRL register */
 #define PDEC_EVCTRL_Msk                       _UINT16_(0x3FFF)                                     /* (PDEC_EVCTRL) Register Mask  */
 
 #define PDEC_EVCTRL_MCEO_Pos                  _UINT16_(12)                                         /* (PDEC_EVCTRL Position) Match Channel x Event Output Enable */
 #define PDEC_EVCTRL_MCEO_Msk                  (_UINT16_(0x3) << PDEC_EVCTRL_MCEO_Pos)              /* (PDEC_EVCTRL Mask) MCEO */
-#define PDEC_EVCTRL_MCEO(value)               (PDEC_EVCTRL_MCEO_Msk & (_UINT16_(value) << PDEC_EVCTRL_MCEO_Pos)) 
+#define PDEC_EVCTRL_MCEO(value)               (PDEC_EVCTRL_MCEO_Msk & ((uint16_t)(value) << PDEC_EVCTRL_MCEO_Pos)) 
 
 /* -------- PDEC_INTENCLR : (PDEC Offset: 0x08) (R/W 8) Interrupt Enable Clear -------- */
 #define PDEC_INTENCLR_RESETVALUE              _UINT8_(0x00)                                        /*  (PDEC_INTENCLR) Interrupt Enable Clear  Reset Value */
 
 #define PDEC_INTENCLR_OVF_Pos                 _UINT8_(0)                                           /* (PDEC_INTENCLR) Overflow/Underflow Interrupt Disable Position */
 #define PDEC_INTENCLR_OVF_Msk                 (_UINT8_(0x1) << PDEC_INTENCLR_OVF_Pos)              /* (PDEC_INTENCLR) Overflow/Underflow Interrupt Disable Mask */
-#define PDEC_INTENCLR_OVF(value)              (PDEC_INTENCLR_OVF_Msk & (_UINT8_(value) << PDEC_INTENCLR_OVF_Pos)) /* Assignment of value for OVF in the PDEC_INTENCLR register */
+#define PDEC_INTENCLR_OVF(value)              (PDEC_INTENCLR_OVF_Msk & ((uint8_t)(value) << PDEC_INTENCLR_OVF_Pos)) /* Assignment of value for OVF in the PDEC_INTENCLR register */
 #define PDEC_INTENCLR_ERR_Pos                 _UINT8_(1)                                           /* (PDEC_INTENCLR) Error Interrupt Disable Position */
 #define PDEC_INTENCLR_ERR_Msk                 (_UINT8_(0x1) << PDEC_INTENCLR_ERR_Pos)              /* (PDEC_INTENCLR) Error Interrupt Disable Mask */
-#define PDEC_INTENCLR_ERR(value)              (PDEC_INTENCLR_ERR_Msk & (_UINT8_(value) << PDEC_INTENCLR_ERR_Pos)) /* Assignment of value for ERR in the PDEC_INTENCLR register */
+#define PDEC_INTENCLR_ERR(value)              (PDEC_INTENCLR_ERR_Msk & ((uint8_t)(value) << PDEC_INTENCLR_ERR_Pos)) /* Assignment of value for ERR in the PDEC_INTENCLR register */
 #define PDEC_INTENCLR_DIR_Pos                 _UINT8_(2)                                           /* (PDEC_INTENCLR) Direction Interrupt Disable Position */
 #define PDEC_INTENCLR_DIR_Msk                 (_UINT8_(0x1) << PDEC_INTENCLR_DIR_Pos)              /* (PDEC_INTENCLR) Direction Interrupt Disable Mask */
-#define PDEC_INTENCLR_DIR(value)              (PDEC_INTENCLR_DIR_Msk & (_UINT8_(value) << PDEC_INTENCLR_DIR_Pos)) /* Assignment of value for DIR in the PDEC_INTENCLR register */
+#define PDEC_INTENCLR_DIR(value)              (PDEC_INTENCLR_DIR_Msk & ((uint8_t)(value) << PDEC_INTENCLR_DIR_Pos)) /* Assignment of value for DIR in the PDEC_INTENCLR register */
 #define PDEC_INTENCLR_VLC_Pos                 _UINT8_(3)                                           /* (PDEC_INTENCLR) Velocity Interrupt Disable Position */
 #define PDEC_INTENCLR_VLC_Msk                 (_UINT8_(0x1) << PDEC_INTENCLR_VLC_Pos)              /* (PDEC_INTENCLR) Velocity Interrupt Disable Mask */
-#define PDEC_INTENCLR_VLC(value)              (PDEC_INTENCLR_VLC_Msk & (_UINT8_(value) << PDEC_INTENCLR_VLC_Pos)) /* Assignment of value for VLC in the PDEC_INTENCLR register */
+#define PDEC_INTENCLR_VLC(value)              (PDEC_INTENCLR_VLC_Msk & ((uint8_t)(value) << PDEC_INTENCLR_VLC_Pos)) /* Assignment of value for VLC in the PDEC_INTENCLR register */
 #define PDEC_INTENCLR_MC0_Pos                 _UINT8_(4)                                           /* (PDEC_INTENCLR) Channel 0 Compare Match Disable Position */
 #define PDEC_INTENCLR_MC0_Msk                 (_UINT8_(0x1) << PDEC_INTENCLR_MC0_Pos)              /* (PDEC_INTENCLR) Channel 0 Compare Match Disable Mask */
-#define PDEC_INTENCLR_MC0(value)              (PDEC_INTENCLR_MC0_Msk & (_UINT8_(value) << PDEC_INTENCLR_MC0_Pos)) /* Assignment of value for MC0 in the PDEC_INTENCLR register */
+#define PDEC_INTENCLR_MC0(value)              (PDEC_INTENCLR_MC0_Msk & ((uint8_t)(value) << PDEC_INTENCLR_MC0_Pos)) /* Assignment of value for MC0 in the PDEC_INTENCLR register */
 #define PDEC_INTENCLR_MC1_Pos                 _UINT8_(5)                                           /* (PDEC_INTENCLR) Channel 1 Compare Match Disable Position */
 #define PDEC_INTENCLR_MC1_Msk                 (_UINT8_(0x1) << PDEC_INTENCLR_MC1_Pos)              /* (PDEC_INTENCLR) Channel 1 Compare Match Disable Mask */
-#define PDEC_INTENCLR_MC1(value)              (PDEC_INTENCLR_MC1_Msk & (_UINT8_(value) << PDEC_INTENCLR_MC1_Pos)) /* Assignment of value for MC1 in the PDEC_INTENCLR register */
+#define PDEC_INTENCLR_MC1(value)              (PDEC_INTENCLR_MC1_Msk & ((uint8_t)(value) << PDEC_INTENCLR_MC1_Pos)) /* Assignment of value for MC1 in the PDEC_INTENCLR register */
 #define PDEC_INTENCLR_Msk                     _UINT8_(0x3F)                                        /* (PDEC_INTENCLR) Register Mask  */
 
 #define PDEC_INTENCLR_MC_Pos                  _UINT8_(4)                                           /* (PDEC_INTENCLR Position) Channel x Compare Match Disable */
 #define PDEC_INTENCLR_MC_Msk                  (_UINT8_(0x3) << PDEC_INTENCLR_MC_Pos)               /* (PDEC_INTENCLR Mask) MC */
-#define PDEC_INTENCLR_MC(value)               (PDEC_INTENCLR_MC_Msk & (_UINT8_(value) << PDEC_INTENCLR_MC_Pos)) 
+#define PDEC_INTENCLR_MC(value)               (PDEC_INTENCLR_MC_Msk & ((uint8_t)(value) << PDEC_INTENCLR_MC_Pos)) 
 
 /* -------- PDEC_INTENSET : (PDEC Offset: 0x09) (R/W 8) Interrupt Enable Set -------- */
 #define PDEC_INTENSET_RESETVALUE              _UINT8_(0x00)                                        /*  (PDEC_INTENSET) Interrupt Enable Set  Reset Value */
 
 #define PDEC_INTENSET_OVF_Pos                 _UINT8_(0)                                           /* (PDEC_INTENSET) Overflow/Underflow Interrupt Enable Position */
 #define PDEC_INTENSET_OVF_Msk                 (_UINT8_(0x1) << PDEC_INTENSET_OVF_Pos)              /* (PDEC_INTENSET) Overflow/Underflow Interrupt Enable Mask */
-#define PDEC_INTENSET_OVF(value)              (PDEC_INTENSET_OVF_Msk & (_UINT8_(value) << PDEC_INTENSET_OVF_Pos)) /* Assignment of value for OVF in the PDEC_INTENSET register */
+#define PDEC_INTENSET_OVF(value)              (PDEC_INTENSET_OVF_Msk & ((uint8_t)(value) << PDEC_INTENSET_OVF_Pos)) /* Assignment of value for OVF in the PDEC_INTENSET register */
 #define PDEC_INTENSET_ERR_Pos                 _UINT8_(1)                                           /* (PDEC_INTENSET) Error Interrupt Enable Position */
 #define PDEC_INTENSET_ERR_Msk                 (_UINT8_(0x1) << PDEC_INTENSET_ERR_Pos)              /* (PDEC_INTENSET) Error Interrupt Enable Mask */
-#define PDEC_INTENSET_ERR(value)              (PDEC_INTENSET_ERR_Msk & (_UINT8_(value) << PDEC_INTENSET_ERR_Pos)) /* Assignment of value for ERR in the PDEC_INTENSET register */
+#define PDEC_INTENSET_ERR(value)              (PDEC_INTENSET_ERR_Msk & ((uint8_t)(value) << PDEC_INTENSET_ERR_Pos)) /* Assignment of value for ERR in the PDEC_INTENSET register */
 #define PDEC_INTENSET_DIR_Pos                 _UINT8_(2)                                           /* (PDEC_INTENSET) Direction Interrupt Enable Position */
 #define PDEC_INTENSET_DIR_Msk                 (_UINT8_(0x1) << PDEC_INTENSET_DIR_Pos)              /* (PDEC_INTENSET) Direction Interrupt Enable Mask */
-#define PDEC_INTENSET_DIR(value)              (PDEC_INTENSET_DIR_Msk & (_UINT8_(value) << PDEC_INTENSET_DIR_Pos)) /* Assignment of value for DIR in the PDEC_INTENSET register */
+#define PDEC_INTENSET_DIR(value)              (PDEC_INTENSET_DIR_Msk & ((uint8_t)(value) << PDEC_INTENSET_DIR_Pos)) /* Assignment of value for DIR in the PDEC_INTENSET register */
 #define PDEC_INTENSET_VLC_Pos                 _UINT8_(3)                                           /* (PDEC_INTENSET) Velocity Interrupt Enable Position */
 #define PDEC_INTENSET_VLC_Msk                 (_UINT8_(0x1) << PDEC_INTENSET_VLC_Pos)              /* (PDEC_INTENSET) Velocity Interrupt Enable Mask */
-#define PDEC_INTENSET_VLC(value)              (PDEC_INTENSET_VLC_Msk & (_UINT8_(value) << PDEC_INTENSET_VLC_Pos)) /* Assignment of value for VLC in the PDEC_INTENSET register */
+#define PDEC_INTENSET_VLC(value)              (PDEC_INTENSET_VLC_Msk & ((uint8_t)(value) << PDEC_INTENSET_VLC_Pos)) /* Assignment of value for VLC in the PDEC_INTENSET register */
 #define PDEC_INTENSET_MC0_Pos                 _UINT8_(4)                                           /* (PDEC_INTENSET) Channel 0 Compare Match Enable Position */
 #define PDEC_INTENSET_MC0_Msk                 (_UINT8_(0x1) << PDEC_INTENSET_MC0_Pos)              /* (PDEC_INTENSET) Channel 0 Compare Match Enable Mask */
-#define PDEC_INTENSET_MC0(value)              (PDEC_INTENSET_MC0_Msk & (_UINT8_(value) << PDEC_INTENSET_MC0_Pos)) /* Assignment of value for MC0 in the PDEC_INTENSET register */
+#define PDEC_INTENSET_MC0(value)              (PDEC_INTENSET_MC0_Msk & ((uint8_t)(value) << PDEC_INTENSET_MC0_Pos)) /* Assignment of value for MC0 in the PDEC_INTENSET register */
 #define PDEC_INTENSET_MC1_Pos                 _UINT8_(5)                                           /* (PDEC_INTENSET) Channel 1 Compare Match Enable Position */
 #define PDEC_INTENSET_MC1_Msk                 (_UINT8_(0x1) << PDEC_INTENSET_MC1_Pos)              /* (PDEC_INTENSET) Channel 1 Compare Match Enable Mask */
-#define PDEC_INTENSET_MC1(value)              (PDEC_INTENSET_MC1_Msk & (_UINT8_(value) << PDEC_INTENSET_MC1_Pos)) /* Assignment of value for MC1 in the PDEC_INTENSET register */
+#define PDEC_INTENSET_MC1(value)              (PDEC_INTENSET_MC1_Msk & ((uint8_t)(value) << PDEC_INTENSET_MC1_Pos)) /* Assignment of value for MC1 in the PDEC_INTENSET register */
 #define PDEC_INTENSET_Msk                     _UINT8_(0x3F)                                        /* (PDEC_INTENSET) Register Mask  */
 
 #define PDEC_INTENSET_MC_Pos                  _UINT8_(4)                                           /* (PDEC_INTENSET Position) Channel x Compare Match Enable */
 #define PDEC_INTENSET_MC_Msk                  (_UINT8_(0x3) << PDEC_INTENSET_MC_Pos)               /* (PDEC_INTENSET Mask) MC */
-#define PDEC_INTENSET_MC(value)               (PDEC_INTENSET_MC_Msk & (_UINT8_(value) << PDEC_INTENSET_MC_Pos)) 
+#define PDEC_INTENSET_MC(value)               (PDEC_INTENSET_MC_Msk & ((uint8_t)(value) << PDEC_INTENSET_MC_Pos)) 
 
 /* -------- PDEC_INTFLAG : (PDEC Offset: 0x0A) (R/W 8) Interrupt Flag Status and Clear -------- */
 #define PDEC_INTFLAG_RESETVALUE               _UINT8_(0x00)                                        /*  (PDEC_INTFLAG) Interrupt Flag Status and Clear  Reset Value */
 
 #define PDEC_INTFLAG_OVF_Pos                  _UINT8_(0)                                           /* (PDEC_INTFLAG) Overflow/Underflow Position */
 #define PDEC_INTFLAG_OVF_Msk                  (_UINT8_(0x1) << PDEC_INTFLAG_OVF_Pos)               /* (PDEC_INTFLAG) Overflow/Underflow Mask */
-#define PDEC_INTFLAG_OVF(value)               (PDEC_INTFLAG_OVF_Msk & (_UINT8_(value) << PDEC_INTFLAG_OVF_Pos)) /* Assignment of value for OVF in the PDEC_INTFLAG register */
+#define PDEC_INTFLAG_OVF(value)               (PDEC_INTFLAG_OVF_Msk & ((uint8_t)(value) << PDEC_INTFLAG_OVF_Pos)) /* Assignment of value for OVF in the PDEC_INTFLAG register */
 #define PDEC_INTFLAG_ERR_Pos                  _UINT8_(1)                                           /* (PDEC_INTFLAG) Error Position */
 #define PDEC_INTFLAG_ERR_Msk                  (_UINT8_(0x1) << PDEC_INTFLAG_ERR_Pos)               /* (PDEC_INTFLAG) Error Mask */
-#define PDEC_INTFLAG_ERR(value)               (PDEC_INTFLAG_ERR_Msk & (_UINT8_(value) << PDEC_INTFLAG_ERR_Pos)) /* Assignment of value for ERR in the PDEC_INTFLAG register */
+#define PDEC_INTFLAG_ERR(value)               (PDEC_INTFLAG_ERR_Msk & ((uint8_t)(value) << PDEC_INTFLAG_ERR_Pos)) /* Assignment of value for ERR in the PDEC_INTFLAG register */
 #define PDEC_INTFLAG_DIR_Pos                  _UINT8_(2)                                           /* (PDEC_INTFLAG) Direction Change Position */
 #define PDEC_INTFLAG_DIR_Msk                  (_UINT8_(0x1) << PDEC_INTFLAG_DIR_Pos)               /* (PDEC_INTFLAG) Direction Change Mask */
-#define PDEC_INTFLAG_DIR(value)               (PDEC_INTFLAG_DIR_Msk & (_UINT8_(value) << PDEC_INTFLAG_DIR_Pos)) /* Assignment of value for DIR in the PDEC_INTFLAG register */
+#define PDEC_INTFLAG_DIR(value)               (PDEC_INTFLAG_DIR_Msk & ((uint8_t)(value) << PDEC_INTFLAG_DIR_Pos)) /* Assignment of value for DIR in the PDEC_INTFLAG register */
 #define PDEC_INTFLAG_VLC_Pos                  _UINT8_(3)                                           /* (PDEC_INTFLAG) Velocity Position */
 #define PDEC_INTFLAG_VLC_Msk                  (_UINT8_(0x1) << PDEC_INTFLAG_VLC_Pos)               /* (PDEC_INTFLAG) Velocity Mask */
-#define PDEC_INTFLAG_VLC(value)               (PDEC_INTFLAG_VLC_Msk & (_UINT8_(value) << PDEC_INTFLAG_VLC_Pos)) /* Assignment of value for VLC in the PDEC_INTFLAG register */
+#define PDEC_INTFLAG_VLC(value)               (PDEC_INTFLAG_VLC_Msk & ((uint8_t)(value) << PDEC_INTFLAG_VLC_Pos)) /* Assignment of value for VLC in the PDEC_INTFLAG register */
 #define PDEC_INTFLAG_MC0_Pos                  _UINT8_(4)                                           /* (PDEC_INTFLAG) Channel 0 Compare Match Position */
 #define PDEC_INTFLAG_MC0_Msk                  (_UINT8_(0x1) << PDEC_INTFLAG_MC0_Pos)               /* (PDEC_INTFLAG) Channel 0 Compare Match Mask */
-#define PDEC_INTFLAG_MC0(value)               (PDEC_INTFLAG_MC0_Msk & (_UINT8_(value) << PDEC_INTFLAG_MC0_Pos)) /* Assignment of value for MC0 in the PDEC_INTFLAG register */
+#define PDEC_INTFLAG_MC0(value)               (PDEC_INTFLAG_MC0_Msk & ((uint8_t)(value) << PDEC_INTFLAG_MC0_Pos)) /* Assignment of value for MC0 in the PDEC_INTFLAG register */
 #define PDEC_INTFLAG_MC1_Pos                  _UINT8_(5)                                           /* (PDEC_INTFLAG) Channel 1 Compare Match Position */
 #define PDEC_INTFLAG_MC1_Msk                  (_UINT8_(0x1) << PDEC_INTFLAG_MC1_Pos)               /* (PDEC_INTFLAG) Channel 1 Compare Match Mask */
-#define PDEC_INTFLAG_MC1(value)               (PDEC_INTFLAG_MC1_Msk & (_UINT8_(value) << PDEC_INTFLAG_MC1_Pos)) /* Assignment of value for MC1 in the PDEC_INTFLAG register */
+#define PDEC_INTFLAG_MC1(value)               (PDEC_INTFLAG_MC1_Msk & ((uint8_t)(value) << PDEC_INTFLAG_MC1_Pos)) /* Assignment of value for MC1 in the PDEC_INTFLAG register */
 #define PDEC_INTFLAG_Msk                      _UINT8_(0x3F)                                        /* (PDEC_INTFLAG) Register Mask  */
 
 #define PDEC_INTFLAG_MC_Pos                   _UINT8_(4)                                           /* (PDEC_INTFLAG Position) Channel x Compare Match */
 #define PDEC_INTFLAG_MC_Msk                   (_UINT8_(0x3) << PDEC_INTFLAG_MC_Pos)                /* (PDEC_INTFLAG Mask) MC */
-#define PDEC_INTFLAG_MC(value)                (PDEC_INTFLAG_MC_Msk & (_UINT8_(value) << PDEC_INTFLAG_MC_Pos)) 
+#define PDEC_INTFLAG_MC(value)                (PDEC_INTFLAG_MC_Msk & ((uint8_t)(value) << PDEC_INTFLAG_MC_Pos)) 
 
 /* -------- PDEC_STATUS : (PDEC Offset: 0x0C) (R/W 16) Status -------- */
 #define PDEC_STATUS_RESETVALUE                _UINT16_(0x40)                                       /*  (PDEC_STATUS) Status  Reset Value */
 
 #define PDEC_STATUS_QERR_Pos                  _UINT16_(0)                                          /* (PDEC_STATUS) Quadrature Error Flag Position */
 #define PDEC_STATUS_QERR_Msk                  (_UINT16_(0x1) << PDEC_STATUS_QERR_Pos)              /* (PDEC_STATUS) Quadrature Error Flag Mask */
-#define PDEC_STATUS_QERR(value)               (PDEC_STATUS_QERR_Msk & (_UINT16_(value) << PDEC_STATUS_QERR_Pos)) /* Assignment of value for QERR in the PDEC_STATUS register */
+#define PDEC_STATUS_QERR(value)               (PDEC_STATUS_QERR_Msk & ((uint16_t)(value) << PDEC_STATUS_QERR_Pos)) /* Assignment of value for QERR in the PDEC_STATUS register */
 #define PDEC_STATUS_IDXERR_Pos                _UINT16_(1)                                          /* (PDEC_STATUS) Index Error Flag Position */
 #define PDEC_STATUS_IDXERR_Msk                (_UINT16_(0x1) << PDEC_STATUS_IDXERR_Pos)            /* (PDEC_STATUS) Index Error Flag Mask */
-#define PDEC_STATUS_IDXERR(value)             (PDEC_STATUS_IDXERR_Msk & (_UINT16_(value) << PDEC_STATUS_IDXERR_Pos)) /* Assignment of value for IDXERR in the PDEC_STATUS register */
+#define PDEC_STATUS_IDXERR(value)             (PDEC_STATUS_IDXERR_Msk & ((uint16_t)(value) << PDEC_STATUS_IDXERR_Pos)) /* Assignment of value for IDXERR in the PDEC_STATUS register */
 #define PDEC_STATUS_MPERR_Pos                 _UINT16_(2)                                          /* (PDEC_STATUS) Missing Pulse Error flag Position */
 #define PDEC_STATUS_MPERR_Msk                 (_UINT16_(0x1) << PDEC_STATUS_MPERR_Pos)             /* (PDEC_STATUS) Missing Pulse Error flag Mask */
-#define PDEC_STATUS_MPERR(value)              (PDEC_STATUS_MPERR_Msk & (_UINT16_(value) << PDEC_STATUS_MPERR_Pos)) /* Assignment of value for MPERR in the PDEC_STATUS register */
+#define PDEC_STATUS_MPERR(value)              (PDEC_STATUS_MPERR_Msk & ((uint16_t)(value) << PDEC_STATUS_MPERR_Pos)) /* Assignment of value for MPERR in the PDEC_STATUS register */
 #define PDEC_STATUS_WINERR_Pos                _UINT16_(4)                                          /* (PDEC_STATUS) Window Error Flag Position */
 #define PDEC_STATUS_WINERR_Msk                (_UINT16_(0x1) << PDEC_STATUS_WINERR_Pos)            /* (PDEC_STATUS) Window Error Flag Mask */
-#define PDEC_STATUS_WINERR(value)             (PDEC_STATUS_WINERR_Msk & (_UINT16_(value) << PDEC_STATUS_WINERR_Pos)) /* Assignment of value for WINERR in the PDEC_STATUS register */
+#define PDEC_STATUS_WINERR(value)             (PDEC_STATUS_WINERR_Msk & ((uint16_t)(value) << PDEC_STATUS_WINERR_Pos)) /* Assignment of value for WINERR in the PDEC_STATUS register */
 #define PDEC_STATUS_HERR_Pos                  _UINT16_(5)                                          /* (PDEC_STATUS) Hall Error Flag Position */
 #define PDEC_STATUS_HERR_Msk                  (_UINT16_(0x1) << PDEC_STATUS_HERR_Pos)              /* (PDEC_STATUS) Hall Error Flag Mask */
-#define PDEC_STATUS_HERR(value)               (PDEC_STATUS_HERR_Msk & (_UINT16_(value) << PDEC_STATUS_HERR_Pos)) /* Assignment of value for HERR in the PDEC_STATUS register */
+#define PDEC_STATUS_HERR(value)               (PDEC_STATUS_HERR_Msk & ((uint16_t)(value) << PDEC_STATUS_HERR_Pos)) /* Assignment of value for HERR in the PDEC_STATUS register */
 #define PDEC_STATUS_STOP_Pos                  _UINT16_(6)                                          /* (PDEC_STATUS) Stop Position */
 #define PDEC_STATUS_STOP_Msk                  (_UINT16_(0x1) << PDEC_STATUS_STOP_Pos)              /* (PDEC_STATUS) Stop Mask */
-#define PDEC_STATUS_STOP(value)               (PDEC_STATUS_STOP_Msk & (_UINT16_(value) << PDEC_STATUS_STOP_Pos)) /* Assignment of value for STOP in the PDEC_STATUS register */
+#define PDEC_STATUS_STOP(value)               (PDEC_STATUS_STOP_Msk & ((uint16_t)(value) << PDEC_STATUS_STOP_Pos)) /* Assignment of value for STOP in the PDEC_STATUS register */
 #define PDEC_STATUS_DIR_Pos                   _UINT16_(7)                                          /* (PDEC_STATUS) Direction Status Flag Position */
 #define PDEC_STATUS_DIR_Msk                   (_UINT16_(0x1) << PDEC_STATUS_DIR_Pos)               /* (PDEC_STATUS) Direction Status Flag Mask */
-#define PDEC_STATUS_DIR(value)                (PDEC_STATUS_DIR_Msk & (_UINT16_(value) << PDEC_STATUS_DIR_Pos)) /* Assignment of value for DIR in the PDEC_STATUS register */
+#define PDEC_STATUS_DIR(value)                (PDEC_STATUS_DIR_Msk & ((uint16_t)(value) << PDEC_STATUS_DIR_Pos)) /* Assignment of value for DIR in the PDEC_STATUS register */
 #define PDEC_STATUS_PRESCBUFV_Pos             _UINT16_(8)                                          /* (PDEC_STATUS) Prescaler Buffer Valid Position */
 #define PDEC_STATUS_PRESCBUFV_Msk             (_UINT16_(0x1) << PDEC_STATUS_PRESCBUFV_Pos)         /* (PDEC_STATUS) Prescaler Buffer Valid Mask */
-#define PDEC_STATUS_PRESCBUFV(value)          (PDEC_STATUS_PRESCBUFV_Msk & (_UINT16_(value) << PDEC_STATUS_PRESCBUFV_Pos)) /* Assignment of value for PRESCBUFV in the PDEC_STATUS register */
+#define PDEC_STATUS_PRESCBUFV(value)          (PDEC_STATUS_PRESCBUFV_Msk & ((uint16_t)(value) << PDEC_STATUS_PRESCBUFV_Pos)) /* Assignment of value for PRESCBUFV in the PDEC_STATUS register */
 #define PDEC_STATUS_FILTERBUFV_Pos            _UINT16_(9)                                          /* (PDEC_STATUS) Filter Buffer Valid Position */
 #define PDEC_STATUS_FILTERBUFV_Msk            (_UINT16_(0x1) << PDEC_STATUS_FILTERBUFV_Pos)        /* (PDEC_STATUS) Filter Buffer Valid Mask */
-#define PDEC_STATUS_FILTERBUFV(value)         (PDEC_STATUS_FILTERBUFV_Msk & (_UINT16_(value) << PDEC_STATUS_FILTERBUFV_Pos)) /* Assignment of value for FILTERBUFV in the PDEC_STATUS register */
+#define PDEC_STATUS_FILTERBUFV(value)         (PDEC_STATUS_FILTERBUFV_Msk & ((uint16_t)(value) << PDEC_STATUS_FILTERBUFV_Pos)) /* Assignment of value for FILTERBUFV in the PDEC_STATUS register */
 #define PDEC_STATUS_CCBUFV0_Pos               _UINT16_(12)                                         /* (PDEC_STATUS) Compare Channel 0 Buffer Valid Position */
 #define PDEC_STATUS_CCBUFV0_Msk               (_UINT16_(0x1) << PDEC_STATUS_CCBUFV0_Pos)           /* (PDEC_STATUS) Compare Channel 0 Buffer Valid Mask */
-#define PDEC_STATUS_CCBUFV0(value)            (PDEC_STATUS_CCBUFV0_Msk & (_UINT16_(value) << PDEC_STATUS_CCBUFV0_Pos)) /* Assignment of value for CCBUFV0 in the PDEC_STATUS register */
+#define PDEC_STATUS_CCBUFV0(value)            (PDEC_STATUS_CCBUFV0_Msk & ((uint16_t)(value) << PDEC_STATUS_CCBUFV0_Pos)) /* Assignment of value for CCBUFV0 in the PDEC_STATUS register */
 #define PDEC_STATUS_CCBUFV1_Pos               _UINT16_(13)                                         /* (PDEC_STATUS) Compare Channel 1 Buffer Valid Position */
 #define PDEC_STATUS_CCBUFV1_Msk               (_UINT16_(0x1) << PDEC_STATUS_CCBUFV1_Pos)           /* (PDEC_STATUS) Compare Channel 1 Buffer Valid Mask */
-#define PDEC_STATUS_CCBUFV1(value)            (PDEC_STATUS_CCBUFV1_Msk & (_UINT16_(value) << PDEC_STATUS_CCBUFV1_Pos)) /* Assignment of value for CCBUFV1 in the PDEC_STATUS register */
+#define PDEC_STATUS_CCBUFV1(value)            (PDEC_STATUS_CCBUFV1_Msk & ((uint16_t)(value) << PDEC_STATUS_CCBUFV1_Pos)) /* Assignment of value for CCBUFV1 in the PDEC_STATUS register */
 #define PDEC_STATUS_Msk                       _UINT16_(0x33F7)                                     /* (PDEC_STATUS) Register Mask  */
 
 #define PDEC_STATUS_CCBUFV_Pos                _UINT16_(12)                                         /* (PDEC_STATUS Position) Compare Channel x Buffer Valid */
 #define PDEC_STATUS_CCBUFV_Msk                (_UINT16_(0x3) << PDEC_STATUS_CCBUFV_Pos)            /* (PDEC_STATUS Mask) CCBUFV */
-#define PDEC_STATUS_CCBUFV(value)             (PDEC_STATUS_CCBUFV_Msk & (_UINT16_(value) << PDEC_STATUS_CCBUFV_Pos)) 
+#define PDEC_STATUS_CCBUFV(value)             (PDEC_STATUS_CCBUFV_Msk & ((uint16_t)(value) << PDEC_STATUS_CCBUFV_Pos)) 
 
 /* -------- PDEC_DBGCTRL : (PDEC Offset: 0x0F) (R/W 8) Debug Control -------- */
 #define PDEC_DBGCTRL_RESETVALUE               _UINT8_(0x00)                                        /*  (PDEC_DBGCTRL) Debug Control  Reset Value */
 
 #define PDEC_DBGCTRL_DBGRUN_Pos               _UINT8_(0)                                           /* (PDEC_DBGCTRL) Debug Run Mode Position */
 #define PDEC_DBGCTRL_DBGRUN_Msk               (_UINT8_(0x1) << PDEC_DBGCTRL_DBGRUN_Pos)            /* (PDEC_DBGCTRL) Debug Run Mode Mask */
-#define PDEC_DBGCTRL_DBGRUN(value)            (PDEC_DBGCTRL_DBGRUN_Msk & (_UINT8_(value) << PDEC_DBGCTRL_DBGRUN_Pos)) /* Assignment of value for DBGRUN in the PDEC_DBGCTRL register */
+#define PDEC_DBGCTRL_DBGRUN(value)            (PDEC_DBGCTRL_DBGRUN_Msk & ((uint8_t)(value) << PDEC_DBGCTRL_DBGRUN_Pos)) /* Assignment of value for DBGRUN in the PDEC_DBGCTRL register */
 #define PDEC_DBGCTRL_Msk                      _UINT8_(0x01)                                        /* (PDEC_DBGCTRL) Register Mask  */
 
 
@@ -330,43 +332,43 @@
 
 #define PDEC_SYNCBUSY_SWRST_Pos               _UINT32_(0)                                          /* (PDEC_SYNCBUSY) Software Reset Synchronization Busy Position */
 #define PDEC_SYNCBUSY_SWRST_Msk               (_UINT32_(0x1) << PDEC_SYNCBUSY_SWRST_Pos)           /* (PDEC_SYNCBUSY) Software Reset Synchronization Busy Mask */
-#define PDEC_SYNCBUSY_SWRST(value)            (PDEC_SYNCBUSY_SWRST_Msk & (_UINT32_(value) << PDEC_SYNCBUSY_SWRST_Pos)) /* Assignment of value for SWRST in the PDEC_SYNCBUSY register */
+#define PDEC_SYNCBUSY_SWRST(value)            (PDEC_SYNCBUSY_SWRST_Msk & ((uint32_t)(value) << PDEC_SYNCBUSY_SWRST_Pos)) /* Assignment of value for SWRST in the PDEC_SYNCBUSY register */
 #define PDEC_SYNCBUSY_ENABLE_Pos              _UINT32_(1)                                          /* (PDEC_SYNCBUSY) Enable Synchronization Busy Position */
 #define PDEC_SYNCBUSY_ENABLE_Msk              (_UINT32_(0x1) << PDEC_SYNCBUSY_ENABLE_Pos)          /* (PDEC_SYNCBUSY) Enable Synchronization Busy Mask */
-#define PDEC_SYNCBUSY_ENABLE(value)           (PDEC_SYNCBUSY_ENABLE_Msk & (_UINT32_(value) << PDEC_SYNCBUSY_ENABLE_Pos)) /* Assignment of value for ENABLE in the PDEC_SYNCBUSY register */
+#define PDEC_SYNCBUSY_ENABLE(value)           (PDEC_SYNCBUSY_ENABLE_Msk & ((uint32_t)(value) << PDEC_SYNCBUSY_ENABLE_Pos)) /* Assignment of value for ENABLE in the PDEC_SYNCBUSY register */
 #define PDEC_SYNCBUSY_CTRLB_Pos               _UINT32_(2)                                          /* (PDEC_SYNCBUSY) Control B Synchronization Busy Position */
 #define PDEC_SYNCBUSY_CTRLB_Msk               (_UINT32_(0x1) << PDEC_SYNCBUSY_CTRLB_Pos)           /* (PDEC_SYNCBUSY) Control B Synchronization Busy Mask */
-#define PDEC_SYNCBUSY_CTRLB(value)            (PDEC_SYNCBUSY_CTRLB_Msk & (_UINT32_(value) << PDEC_SYNCBUSY_CTRLB_Pos)) /* Assignment of value for CTRLB in the PDEC_SYNCBUSY register */
+#define PDEC_SYNCBUSY_CTRLB(value)            (PDEC_SYNCBUSY_CTRLB_Msk & ((uint32_t)(value) << PDEC_SYNCBUSY_CTRLB_Pos)) /* Assignment of value for CTRLB in the PDEC_SYNCBUSY register */
 #define PDEC_SYNCBUSY_STATUS_Pos              _UINT32_(3)                                          /* (PDEC_SYNCBUSY) Status Synchronization Busy Position */
 #define PDEC_SYNCBUSY_STATUS_Msk              (_UINT32_(0x1) << PDEC_SYNCBUSY_STATUS_Pos)          /* (PDEC_SYNCBUSY) Status Synchronization Busy Mask */
-#define PDEC_SYNCBUSY_STATUS(value)           (PDEC_SYNCBUSY_STATUS_Msk & (_UINT32_(value) << PDEC_SYNCBUSY_STATUS_Pos)) /* Assignment of value for STATUS in the PDEC_SYNCBUSY register */
+#define PDEC_SYNCBUSY_STATUS(value)           (PDEC_SYNCBUSY_STATUS_Msk & ((uint32_t)(value) << PDEC_SYNCBUSY_STATUS_Pos)) /* Assignment of value for STATUS in the PDEC_SYNCBUSY register */
 #define PDEC_SYNCBUSY_PRESC_Pos               _UINT32_(4)                                          /* (PDEC_SYNCBUSY) Prescaler Synchronization Busy Position */
 #define PDEC_SYNCBUSY_PRESC_Msk               (_UINT32_(0x1) << PDEC_SYNCBUSY_PRESC_Pos)           /* (PDEC_SYNCBUSY) Prescaler Synchronization Busy Mask */
-#define PDEC_SYNCBUSY_PRESC(value)            (PDEC_SYNCBUSY_PRESC_Msk & (_UINT32_(value) << PDEC_SYNCBUSY_PRESC_Pos)) /* Assignment of value for PRESC in the PDEC_SYNCBUSY register */
+#define PDEC_SYNCBUSY_PRESC(value)            (PDEC_SYNCBUSY_PRESC_Msk & ((uint32_t)(value) << PDEC_SYNCBUSY_PRESC_Pos)) /* Assignment of value for PRESC in the PDEC_SYNCBUSY register */
 #define PDEC_SYNCBUSY_FILTER_Pos              _UINT32_(5)                                          /* (PDEC_SYNCBUSY) Filter Synchronization Busy Position */
 #define PDEC_SYNCBUSY_FILTER_Msk              (_UINT32_(0x1) << PDEC_SYNCBUSY_FILTER_Pos)          /* (PDEC_SYNCBUSY) Filter Synchronization Busy Mask */
-#define PDEC_SYNCBUSY_FILTER(value)           (PDEC_SYNCBUSY_FILTER_Msk & (_UINT32_(value) << PDEC_SYNCBUSY_FILTER_Pos)) /* Assignment of value for FILTER in the PDEC_SYNCBUSY register */
+#define PDEC_SYNCBUSY_FILTER(value)           (PDEC_SYNCBUSY_FILTER_Msk & ((uint32_t)(value) << PDEC_SYNCBUSY_FILTER_Pos)) /* Assignment of value for FILTER in the PDEC_SYNCBUSY register */
 #define PDEC_SYNCBUSY_COUNT_Pos               _UINT32_(6)                                          /* (PDEC_SYNCBUSY) Count Synchronization Busy Position */
 #define PDEC_SYNCBUSY_COUNT_Msk               (_UINT32_(0x1) << PDEC_SYNCBUSY_COUNT_Pos)           /* (PDEC_SYNCBUSY) Count Synchronization Busy Mask */
-#define PDEC_SYNCBUSY_COUNT(value)            (PDEC_SYNCBUSY_COUNT_Msk & (_UINT32_(value) << PDEC_SYNCBUSY_COUNT_Pos)) /* Assignment of value for COUNT in the PDEC_SYNCBUSY register */
+#define PDEC_SYNCBUSY_COUNT(value)            (PDEC_SYNCBUSY_COUNT_Msk & ((uint32_t)(value) << PDEC_SYNCBUSY_COUNT_Pos)) /* Assignment of value for COUNT in the PDEC_SYNCBUSY register */
 #define PDEC_SYNCBUSY_CC0_Pos                 _UINT32_(7)                                          /* (PDEC_SYNCBUSY) Compare Channel 0 Synchronization Busy Position */
 #define PDEC_SYNCBUSY_CC0_Msk                 (_UINT32_(0x1) << PDEC_SYNCBUSY_CC0_Pos)             /* (PDEC_SYNCBUSY) Compare Channel 0 Synchronization Busy Mask */
-#define PDEC_SYNCBUSY_CC0(value)              (PDEC_SYNCBUSY_CC0_Msk & (_UINT32_(value) << PDEC_SYNCBUSY_CC0_Pos)) /* Assignment of value for CC0 in the PDEC_SYNCBUSY register */
+#define PDEC_SYNCBUSY_CC0(value)              (PDEC_SYNCBUSY_CC0_Msk & ((uint32_t)(value) << PDEC_SYNCBUSY_CC0_Pos)) /* Assignment of value for CC0 in the PDEC_SYNCBUSY register */
 #define PDEC_SYNCBUSY_CC1_Pos                 _UINT32_(8)                                          /* (PDEC_SYNCBUSY) Compare Channel 1 Synchronization Busy Position */
 #define PDEC_SYNCBUSY_CC1_Msk                 (_UINT32_(0x1) << PDEC_SYNCBUSY_CC1_Pos)             /* (PDEC_SYNCBUSY) Compare Channel 1 Synchronization Busy Mask */
-#define PDEC_SYNCBUSY_CC1(value)              (PDEC_SYNCBUSY_CC1_Msk & (_UINT32_(value) << PDEC_SYNCBUSY_CC1_Pos)) /* Assignment of value for CC1 in the PDEC_SYNCBUSY register */
+#define PDEC_SYNCBUSY_CC1(value)              (PDEC_SYNCBUSY_CC1_Msk & ((uint32_t)(value) << PDEC_SYNCBUSY_CC1_Pos)) /* Assignment of value for CC1 in the PDEC_SYNCBUSY register */
 #define PDEC_SYNCBUSY_Msk                     _UINT32_(0x000001FF)                                 /* (PDEC_SYNCBUSY) Register Mask  */
 
 #define PDEC_SYNCBUSY_CC_Pos                  _UINT32_(7)                                          /* (PDEC_SYNCBUSY Position) Compare Channel x Synchronization Busy */
 #define PDEC_SYNCBUSY_CC_Msk                  (_UINT32_(0x3) << PDEC_SYNCBUSY_CC_Pos)              /* (PDEC_SYNCBUSY Mask) CC */
-#define PDEC_SYNCBUSY_CC(value)               (PDEC_SYNCBUSY_CC_Msk & (_UINT32_(value) << PDEC_SYNCBUSY_CC_Pos)) 
+#define PDEC_SYNCBUSY_CC(value)               (PDEC_SYNCBUSY_CC_Msk & ((uint32_t)(value) << PDEC_SYNCBUSY_CC_Pos)) 
 
 /* -------- PDEC_PRESC : (PDEC Offset: 0x14) (R/W 8) Prescaler Value -------- */
 #define PDEC_PRESC_RESETVALUE                 _UINT8_(0x00)                                        /*  (PDEC_PRESC) Prescaler Value  Reset Value */
 
 #define PDEC_PRESC_PRESC_Pos                  _UINT8_(0)                                           /* (PDEC_PRESC) Prescaler Value Position */
 #define PDEC_PRESC_PRESC_Msk                  (_UINT8_(0xF) << PDEC_PRESC_PRESC_Pos)               /* (PDEC_PRESC) Prescaler Value Mask */
-#define PDEC_PRESC_PRESC(value)               (PDEC_PRESC_PRESC_Msk & (_UINT8_(value) << PDEC_PRESC_PRESC_Pos)) /* Assignment of value for PRESC in the PDEC_PRESC register */
+#define PDEC_PRESC_PRESC(value)               (PDEC_PRESC_PRESC_Msk & ((uint8_t)(value) << PDEC_PRESC_PRESC_Pos)) /* Assignment of value for PRESC in the PDEC_PRESC register */
 #define   PDEC_PRESC_PRESC_DIV1_Val           _UINT8_(0x0)                                         /* (PDEC_PRESC) No division  */
 #define   PDEC_PRESC_PRESC_DIV2_Val           _UINT8_(0x1)                                         /* (PDEC_PRESC) Divide by 2  */
 #define   PDEC_PRESC_PRESC_DIV4_Val           _UINT8_(0x2)                                         /* (PDEC_PRESC) Divide by 4  */
@@ -397,7 +399,7 @@
 
 #define PDEC_FILTER_FILTER_Pos                _UINT8_(0)                                           /* (PDEC_FILTER) Filter Value Position */
 #define PDEC_FILTER_FILTER_Msk                (_UINT8_(0xFF) << PDEC_FILTER_FILTER_Pos)            /* (PDEC_FILTER) Filter Value Mask */
-#define PDEC_FILTER_FILTER(value)             (PDEC_FILTER_FILTER_Msk & (_UINT8_(value) << PDEC_FILTER_FILTER_Pos)) /* Assignment of value for FILTER in the PDEC_FILTER register */
+#define PDEC_FILTER_FILTER(value)             (PDEC_FILTER_FILTER_Msk & ((uint8_t)(value) << PDEC_FILTER_FILTER_Pos)) /* Assignment of value for FILTER in the PDEC_FILTER register */
 #define PDEC_FILTER_Msk                       _UINT8_(0xFF)                                        /* (PDEC_FILTER) Register Mask  */
 
 
@@ -406,7 +408,7 @@
 
 #define PDEC_PRESCBUF_PRESCBUF_Pos            _UINT8_(0)                                           /* (PDEC_PRESCBUF) Prescaler Buffer Value Position */
 #define PDEC_PRESCBUF_PRESCBUF_Msk            (_UINT8_(0xF) << PDEC_PRESCBUF_PRESCBUF_Pos)         /* (PDEC_PRESCBUF) Prescaler Buffer Value Mask */
-#define PDEC_PRESCBUF_PRESCBUF(value)         (PDEC_PRESCBUF_PRESCBUF_Msk & (_UINT8_(value) << PDEC_PRESCBUF_PRESCBUF_Pos)) /* Assignment of value for PRESCBUF in the PDEC_PRESCBUF register */
+#define PDEC_PRESCBUF_PRESCBUF(value)         (PDEC_PRESCBUF_PRESCBUF_Msk & ((uint8_t)(value) << PDEC_PRESCBUF_PRESCBUF_Pos)) /* Assignment of value for PRESCBUF in the PDEC_PRESCBUF register */
 #define   PDEC_PRESCBUF_PRESCBUF_DIV1_Val     _UINT8_(0x0)                                         /* (PDEC_PRESCBUF) No division  */
 #define   PDEC_PRESCBUF_PRESCBUF_DIV2_Val     _UINT8_(0x1)                                         /* (PDEC_PRESCBUF) Divide by 2  */
 #define   PDEC_PRESCBUF_PRESCBUF_DIV4_Val     _UINT8_(0x2)                                         /* (PDEC_PRESCBUF) Divide by 4  */
@@ -437,7 +439,7 @@
 
 #define PDEC_FILTERBUF_FILTERBUF_Pos          _UINT8_(0)                                           /* (PDEC_FILTERBUF) Filter Buffer Value Position */
 #define PDEC_FILTERBUF_FILTERBUF_Msk          (_UINT8_(0xFF) << PDEC_FILTERBUF_FILTERBUF_Pos)      /* (PDEC_FILTERBUF) Filter Buffer Value Mask */
-#define PDEC_FILTERBUF_FILTERBUF(value)       (PDEC_FILTERBUF_FILTERBUF_Msk & (_UINT8_(value) << PDEC_FILTERBUF_FILTERBUF_Pos)) /* Assignment of value for FILTERBUF in the PDEC_FILTERBUF register */
+#define PDEC_FILTERBUF_FILTERBUF(value)       (PDEC_FILTERBUF_FILTERBUF_Msk & ((uint8_t)(value) << PDEC_FILTERBUF_FILTERBUF_Pos)) /* Assignment of value for FILTERBUF in the PDEC_FILTERBUF register */
 #define PDEC_FILTERBUF_Msk                    _UINT8_(0xFF)                                        /* (PDEC_FILTERBUF) Register Mask  */
 
 
@@ -446,7 +448,7 @@
 
 #define PDEC_COUNT_COUNT_Pos                  _UINT32_(0)                                          /* (PDEC_COUNT) Counter Value Position */
 #define PDEC_COUNT_COUNT_Msk                  (_UINT32_(0xFFFF) << PDEC_COUNT_COUNT_Pos)           /* (PDEC_COUNT) Counter Value Mask */
-#define PDEC_COUNT_COUNT(value)               (PDEC_COUNT_COUNT_Msk & (_UINT32_(value) << PDEC_COUNT_COUNT_Pos)) /* Assignment of value for COUNT in the PDEC_COUNT register */
+#define PDEC_COUNT_COUNT(value)               (PDEC_COUNT_COUNT_Msk & ((uint32_t)(value) << PDEC_COUNT_COUNT_Pos)) /* Assignment of value for COUNT in the PDEC_COUNT register */
 #define PDEC_COUNT_Msk                        _UINT32_(0x0000FFFF)                                 /* (PDEC_COUNT) Register Mask  */
 
 
@@ -455,7 +457,7 @@
 
 #define PDEC_CC_CC_Pos                        _UINT32_(0)                                          /* (PDEC_CC) Channel Compare Value Position */
 #define PDEC_CC_CC_Msk                        (_UINT32_(0xFFFF) << PDEC_CC_CC_Pos)                 /* (PDEC_CC) Channel Compare Value Mask */
-#define PDEC_CC_CC(value)                     (PDEC_CC_CC_Msk & (_UINT32_(value) << PDEC_CC_CC_Pos)) /* Assignment of value for CC in the PDEC_CC register */
+#define PDEC_CC_CC(value)                     (PDEC_CC_CC_Msk & ((uint32_t)(value) << PDEC_CC_CC_Pos)) /* Assignment of value for CC in the PDEC_CC register */
 #define PDEC_CC_Msk                           _UINT32_(0x0000FFFF)                                 /* (PDEC_CC) Register Mask  */
 
 
@@ -464,7 +466,7 @@
 
 #define PDEC_CCBUF_CCBUF_Pos                  _UINT32_(0)                                          /* (PDEC_CCBUF) Channel Compare Buffer Value Position */
 #define PDEC_CCBUF_CCBUF_Msk                  (_UINT32_(0xFFFF) << PDEC_CCBUF_CCBUF_Pos)           /* (PDEC_CCBUF) Channel Compare Buffer Value Mask */
-#define PDEC_CCBUF_CCBUF(value)               (PDEC_CCBUF_CCBUF_Msk & (_UINT32_(value) << PDEC_CCBUF_CCBUF_Pos)) /* Assignment of value for CCBUF in the PDEC_CCBUF register */
+#define PDEC_CCBUF_CCBUF(value)               (PDEC_CCBUF_CCBUF_Msk & ((uint32_t)(value) << PDEC_CCBUF_CCBUF_Pos)) /* Assignment of value for CCBUF in the PDEC_CCBUF register */
 #define PDEC_CCBUF_Msk                        _UINT32_(0x0000FFFF)                                 /* (PDEC_CCBUF) Register Mask  */
 
 

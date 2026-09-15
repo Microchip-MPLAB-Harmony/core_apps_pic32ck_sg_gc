@@ -1,7 +1,7 @@
 /*
  * Component description for MCLK
  *
- * Copyright (c) 2025 Microchip Technology Inc. and its subsidiaries.
+ * Copyright (c) 2026 Microchip Technology Inc. and its subsidiaries.
  *
  * SPDX-License-Identifier: Apache-2.0
  *
@@ -19,9 +19,13 @@
  *
  */
 
-/*  file generated from device description file (ATDF) version 2025-04-07T17:07:52Z  */
+/*  file generated from device description file (ATDF) version 2026-09-01T07:31:34Z  */
 #ifndef _PIC32CKGC01_MCLK_COMPONENT_H_
 #define _PIC32CKGC01_MCLK_COMPONENT_H_
+
+#if !defined(DISABLE_CMSIS)
+#include "core_cm33.h"
+#endif /* !defined(DISABLE_CMSIS) */
 
 /* ************************************************************************** */
 /*                      SOFTWARE API DEFINITION FOR MCLK                      */
@@ -32,7 +36,7 @@
 
 #define MCLK_INTENCLR_CKRDY_Pos               _UINT32_(0)                                          /* (MCLK_INTENCLR) Clock Ready Interrupt Enable Position */
 #define MCLK_INTENCLR_CKRDY_Msk               (_UINT32_(0x1) << MCLK_INTENCLR_CKRDY_Pos)           /* (MCLK_INTENCLR) Clock Ready Interrupt Enable Mask */
-#define MCLK_INTENCLR_CKRDY(value)            (MCLK_INTENCLR_CKRDY_Msk & (_UINT32_(value) << MCLK_INTENCLR_CKRDY_Pos)) /* Assignment of value for CKRDY in the MCLK_INTENCLR register */
+#define MCLK_INTENCLR_CKRDY(value)            (MCLK_INTENCLR_CKRDY_Msk & ((uint32_t)(value) << MCLK_INTENCLR_CKRDY_Pos)) /* Assignment of value for CKRDY in the MCLK_INTENCLR register */
 #define MCLK_INTENCLR_Msk                     _UINT32_(0x00000001)                                 /* (MCLK_INTENCLR) Register Mask  */
 
 
@@ -41,7 +45,7 @@
 
 #define MCLK_INTENSET_CKRDY_Pos               _UINT32_(0)                                          /* (MCLK_INTENSET) Clock Ready Interrupt Enable Position */
 #define MCLK_INTENSET_CKRDY_Msk               (_UINT32_(0x1) << MCLK_INTENSET_CKRDY_Pos)           /* (MCLK_INTENSET) Clock Ready Interrupt Enable Mask */
-#define MCLK_INTENSET_CKRDY(value)            (MCLK_INTENSET_CKRDY_Msk & (_UINT32_(value) << MCLK_INTENSET_CKRDY_Pos)) /* Assignment of value for CKRDY in the MCLK_INTENSET register */
+#define MCLK_INTENSET_CKRDY(value)            (MCLK_INTENSET_CKRDY_Msk & ((uint32_t)(value) << MCLK_INTENSET_CKRDY_Pos)) /* Assignment of value for CKRDY in the MCLK_INTENSET register */
 #define MCLK_INTENSET_Msk                     _UINT32_(0x00000001)                                 /* (MCLK_INTENSET) Register Mask  */
 
 
@@ -50,7 +54,7 @@
 
 #define MCLK_INTFLAG_CKRDY_Pos                _UINT32_(0)                                          /* (MCLK_INTFLAG) Clock Ready Position */
 #define MCLK_INTFLAG_CKRDY_Msk                (_UINT32_(0x1) << MCLK_INTFLAG_CKRDY_Pos)            /* (MCLK_INTFLAG) Clock Ready Mask */
-#define MCLK_INTFLAG_CKRDY(value)             (MCLK_INTFLAG_CKRDY_Msk & (_UINT32_(value) << MCLK_INTFLAG_CKRDY_Pos)) /* Assignment of value for CKRDY in the MCLK_INTFLAG register */
+#define MCLK_INTFLAG_CKRDY(value)             (MCLK_INTFLAG_CKRDY_Msk & ((uint32_t)(value) << MCLK_INTFLAG_CKRDY_Pos)) /* Assignment of value for CKRDY in the MCLK_INTFLAG register */
 #define MCLK_INTFLAG_Msk                      _UINT32_(0x00000001)                                 /* (MCLK_INTFLAG) Register Mask  */
 
 
@@ -59,7 +63,7 @@
 
 #define MCLK_CLKDIV_DIV_Pos                   _UINT32_(0)                                          /* (MCLK_CLKDIV) Clock Domain Division Factor Position */
 #define MCLK_CLKDIV_DIV_Msk                   (_UINT32_(0xFF) << MCLK_CLKDIV_DIV_Pos)              /* (MCLK_CLKDIV) Clock Domain Division Factor Mask */
-#define MCLK_CLKDIV_DIV(value)                (MCLK_CLKDIV_DIV_Msk & (_UINT32_(value) << MCLK_CLKDIV_DIV_Pos)) /* Assignment of value for DIV in the MCLK_CLKDIV register */
+#define MCLK_CLKDIV_DIV(value)                (MCLK_CLKDIV_DIV_Msk & ((uint32_t)(value) << MCLK_CLKDIV_DIV_Pos)) /* Assignment of value for DIV in the MCLK_CLKDIV register */
 #define   MCLK_CLKDIV_DIV_DIV1_Val            _UINT32_(0x1)                                        /* (MCLK_CLKDIV) Divide by 1  */
 #define   MCLK_CLKDIV_DIV_DIV2_Val            _UINT32_(0x2)                                        /* (MCLK_CLKDIV) Divide by 2  */
 #define   MCLK_CLKDIV_DIV_DIV4_Val            _UINT32_(0x4)                                        /* (MCLK_CLKDIV) Divide by 4  */
@@ -84,7 +88,7 @@
 
 #define MCLK_CLKMSK_MASK_Pos                  _UINT32_(0)                                          /* (MCLK_CLKMSK) Peripheral Clock Enable Mask Position */
 #define MCLK_CLKMSK_MASK_Msk                  (_UINT32_(0xFFFFFFFF) << MCLK_CLKMSK_MASK_Pos)       /* (MCLK_CLKMSK) Peripheral Clock Enable Mask Mask */
-#define MCLK_CLKMSK_MASK(value)               (MCLK_CLKMSK_MASK_Msk & (_UINT32_(value) << MCLK_CLKMSK_MASK_Pos)) /* Assignment of value for MASK in the MCLK_CLKMSK register */
+#define MCLK_CLKMSK_MASK(value)               (MCLK_CLKMSK_MASK_Msk & ((uint32_t)(value) << MCLK_CLKMSK_MASK_Pos)) /* Assignment of value for MASK in the MCLK_CLKMSK register */
 #define MCLK_CLKMSK_Msk                       _UINT32_(0xFFFFFFFF)                                 /* (MCLK_CLKMSK) Register Mask  */
 
 

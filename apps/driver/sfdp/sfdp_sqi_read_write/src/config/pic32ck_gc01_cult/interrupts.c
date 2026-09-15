@@ -79,7 +79,7 @@ void __attribute__((optimize("-O1"), long_call, noreturn, used))Dummy_Handler(vo
 }
 
 /* MISRAC 2023 deviation block start */
-/* MISRA C-2023 Rule 8.6 deviated 165 times.  Deviation record ID -  H3_MISRAC_2023_R_8_6_DR_1 */
+/* MISRA C-2023 Rule 8.6 deviated 158 times.  Deviation record ID -  H3_MISRAC_2023_R_8_6_DR_1 */
 /* Device vectors list dummy definition*/
 extern void MemoryManagement_Handler   ( void ) __attribute__((weak, alias("Dummy_Handler"),noreturn));
 extern void BusFault_Handler           ( void ) __attribute__((weak, alias("Dummy_Handler"),noreturn));
@@ -223,10 +223,6 @@ extern void TCC7_MC0_Handler           ( void ) __attribute__((weak, alias("Dumm
 extern void TCC7_MC1_Handler           ( void ) __attribute__((weak, alias("Dummy_Handler"),noreturn));
 extern void ADC_GLOBAL_Handler         ( void ) __attribute__((weak, alias("Dummy_Handler"),noreturn));
 extern void ADC_CORE1_Handler          ( void ) __attribute__((weak, alias("Dummy_Handler"),noreturn));
-extern void Reserved2_Handler          ( void ) __attribute__((weak, alias("Dummy_Handler"),noreturn));
-extern void Reserved3_Handler          ( void ) __attribute__((weak, alias("Dummy_Handler"),noreturn));
-extern void Reserved4_Handler          ( void ) __attribute__((weak, alias("Dummy_Handler"),noreturn));
-extern void Reserved5_Handler          ( void ) __attribute__((weak, alias("Dummy_Handler"),noreturn));
 extern void AC_Handler                 ( void ) __attribute__((weak, alias("Dummy_Handler"),noreturn));
 extern void PTC_Handler                ( void ) __attribute__((weak, alias("Dummy_Handler"),noreturn));
 extern void SPI_IXS_Handler            ( void ) __attribute__((weak, alias("Dummy_Handler"),noreturn));
@@ -243,9 +239,6 @@ extern void USB_SOF_Handler            ( void ) __attribute__((weak, alias("Dumm
 extern void USB_TRCPT0_Handler         ( void ) __attribute__((weak, alias("Dummy_Handler"),noreturn));
 extern void USB_TRCPT1_Handler         ( void ) __attribute__((weak, alias("Dummy_Handler"),noreturn));
 extern void USBHS_Handler              ( void ) __attribute__((weak, alias("Dummy_Handler"),noreturn));
-extern void HSM_ERROR_Handler          ( void ) __attribute__((weak, alias("Dummy_Handler"),noreturn));
-extern void HSM_TXINT_Handler          ( void ) __attribute__((weak, alias("Dummy_Handler"),noreturn));
-extern void HSM_RXINT_Handler          ( void ) __attribute__((weak, alias("Dummy_Handler"),noreturn));
 
 
 /* MISRAC 2023 deviation block end */
@@ -255,7 +248,7 @@ extern void HSM_RXINT_Handler          ( void ) __attribute__((weak, alias("Dumm
 
 
 /* MISRAC 2023 deviation block start */
-/* MISRA C-2023 Rule 2.8 deviated 165 times.  Deviation record ID -  H3_MISRAC_2023_R_2_8_DR_1 */
+/* MISRA C-2023 Rule 2.8 deviated 158 times.  Deviation record ID -  H3_MISRAC_2023_R_2_8_DR_1 */
 
 __attribute__ ((section(".vectors"), used))
 const H3DeviceVectors exception_table=
@@ -408,10 +401,6 @@ const H3DeviceVectors exception_table=
     .pfnTCC7_MC1_Handler           = TCC7_MC1_Handler,
     .pfnADC_GLOBAL_Handler         = ADC_GLOBAL_Handler,
     .pfnADC_CORE1_Handler          = ADC_CORE1_Handler,
-    .pfnReserved2_Handler          = Reserved2_Handler,
-    .pfnReserved3_Handler          = Reserved3_Handler,
-    .pfnReserved4_Handler          = Reserved4_Handler,
-    .pfnReserved5_Handler          = Reserved5_Handler,
     .pfnAC_Handler                 = AC_Handler,
     .pfnPTC_Handler                = PTC_Handler,
     .pfnSPI_IXS_Handler            = SPI_IXS_Handler,
@@ -429,9 +418,6 @@ const H3DeviceVectors exception_table=
     .pfnUSB_TRCPT0_Handler         = USB_TRCPT0_Handler,
     .pfnUSB_TRCPT1_Handler         = USB_TRCPT1_Handler,
     .pfnUSBHS_Handler              = USBHS_Handler,
-    .pfnHSM_ERROR_Handler          = HSM_ERROR_Handler,
-    .pfnHSM_TXINT_Handler          = HSM_TXINT_Handler,
-    .pfnHSM_RXINT_Handler          = HSM_RXINT_Handler,
 
 
 };

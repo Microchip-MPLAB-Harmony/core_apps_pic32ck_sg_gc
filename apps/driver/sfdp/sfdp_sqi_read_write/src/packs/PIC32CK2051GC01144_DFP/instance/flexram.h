@@ -1,7 +1,7 @@
 /*
  * Instance header file for PIC32CK1012GC01100
  *
- * Copyright (c) 2025 Microchip Technology Inc. and its subsidiaries.
+ * Copyright (c) 2026 Microchip Technology Inc. and its subsidiaries.
  *
  * SPDX-License-Identifier: Apache-2.0
  *
@@ -19,7 +19,7 @@
  *
  */
 
-/* file generated from device description file (ATDF) version 2025-04-07T17:07:34Z */
+/* file generated from device description file (ATDF) version 2026-09-01T07:31:03Z */
 #ifndef _PIC32CKGC01_FLEXRAM_INSTANCE_
 #define _PIC32CKGC01_FLEXRAM_INSTANCE_
 
