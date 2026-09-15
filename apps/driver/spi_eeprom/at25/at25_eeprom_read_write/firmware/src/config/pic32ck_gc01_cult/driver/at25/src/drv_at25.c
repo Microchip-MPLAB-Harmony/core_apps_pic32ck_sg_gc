@@ -351,8 +351,8 @@ static void lSPIEventHandler(uintptr_t context )
 // Section: DRV_AT25 Driver Global Functions
 // *****************************************************************************
 // *****************************************************************************
-/* MISRA C-2012 Rule 11.3, 11.8 deviated below. Deviation record ID -
-  H3_MISRAC_2012_R_11_3_DR_1 & H3_MISRAC_2012_R_11_8_DR_1*/
+/* MISRA C-2023 Rule 11.3, 11.8 deviated below. Deviation record ID -
+  H3_MISRAC_2023_R_11_3_DR_1 & H3_MISRAC_2023_R_11_8_DR_1*/
 
 SYS_MODULE_OBJ DRV_AT25_Initialize(
     const SYS_MODULE_INDEX drvIndex,
