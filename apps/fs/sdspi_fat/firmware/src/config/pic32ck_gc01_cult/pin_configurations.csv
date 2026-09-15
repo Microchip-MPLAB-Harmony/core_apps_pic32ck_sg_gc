@@ -23,6 +23,7 @@ Pin Number,Pin ID,Custom Name,Function,Mode, Direction,Latch,Pull Up,Pull Down,O
 27,PA08,,Available,,,,,,No,FAST
 28,PA18,,Available,,,,,,No,FAST
 29,PA28,,Available,,,,,,No,FAST
+32,PA19,,Available,,,,,,No,FAST
 33,PA09,,Available,,,,,,No,FAST
 34,PA10,,Available,,,,,,No,FAST
 35,PA11,,Available,,,,,,No,FAST

@@ -983,7 +983,7 @@ typedef union
 
         /* Unused bit 7 */
         unsigned unusedB7:1;
-    };
+    }task;
 
 } DRV_SDSPI_RESPONSE_1;
 
@@ -997,7 +997,7 @@ typedef union
         /* Byte-wise access */
         uint8_t      byte0;
         uint8_t      byte1;
-    };
+    }bytes;
     struct
     {
         /* Card is in idle state */
@@ -1047,7 +1047,7 @@ typedef union
 
         /* out of range or CSD over write */
         unsigned outrangeCsdOverWrite:1;
-    };
+    }task;
 
 } DRV_SDSPI_RESPONSE_2;
 
