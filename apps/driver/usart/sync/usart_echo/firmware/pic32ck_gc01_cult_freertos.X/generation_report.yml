@@ -1,807 +1,823 @@
 generatedFiles:
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/driver/usart/sync/usart_echo/firmware/src/config/pic32ck_gc01_cult_freertos/peripheral/evsys/plib_evsys.h
-  projectFolder: config/pic32ck_gc01_cult_freertos/peripheral/evsys
+  path: C:\apps\core_apps_pic32ck_sg_gc\apps\driver\usart\sync\usart_echo\firmware\src\config\pic32ck_gc01_cult_freertos\peripheral\evsys\plib_evsys.h
+  projectFolder: config\pic32ck_gc01_cult_freertos\peripheral\evsys
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/driver/usart/sync/usart_echo/firmware/src/config/pic32ck_gc01_cult_freertos/peripheral/evsys/plib_evsys.c
-  projectFolder: config/pic32ck_gc01_cult_freertos/peripheral/evsys
+  path: C:\apps\core_apps_pic32ck_sg_gc\apps\driver\usart\sync\usart_echo\firmware\src\config\pic32ck_gc01_cult_freertos\peripheral\evsys\plib_evsys.c
+  projectFolder: config\pic32ck_gc01_cult_freertos\peripheral\evsys
   type: Source Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/driver/usart/sync/usart_echo/firmware/src/config/pic32ck_gc01_cult_freertos/driver/usart/drv_usart_definitions.h
-  projectFolder: config/pic32ck_gc01_cult_freertos/driver/usart
+  path: C:\apps\core_apps_pic32ck_sg_gc\apps\driver\usart\sync\usart_echo\firmware\src\config\pic32ck_gc01_cult_freertos\driver\usart\drv_usart_definitions.h
+  projectFolder: config\pic32ck_gc01_cult_freertos\driver\usart
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/driver/usart/sync/usart_echo/firmware/src/config/pic32ck_gc01_cult_freertos/driver/usart/src/drv_usart.c
-  projectFolder: config/pic32ck_gc01_cult_freertos/driver/usart
+  path: C:\apps\core_apps_pic32ck_sg_gc\apps\driver\usart\sync\usart_echo\firmware\src\config\pic32ck_gc01_cult_freertos\driver\usart\src\drv_usart.c
+  projectFolder: config\pic32ck_gc01_cult_freertos\driver\usart
   type: Source Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/driver/usart/sync/usart_echo/firmware/src/config/pic32ck_gc01_cult_freertos/driver/usart/src/drv_usart_local.h
-  projectFolder: config/pic32ck_gc01_cult_freertos/driver/usart
+  path: C:\apps\core_apps_pic32ck_sg_gc\apps\driver\usart\sync\usart_echo\firmware\src\config\pic32ck_gc01_cult_freertos\driver\usart\src\drv_usart_local.h
+  projectFolder: config\pic32ck_gc01_cult_freertos\driver\usart
   type: Source Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/driver/usart/sync/usart_echo/firmware/src/config/pic32ck_gc01_cult_freertos/bsp/bsp.c
-  projectFolder: config/pic32ck_gc01_cult_freertos/bsp
+  path: C:\apps\core_apps_pic32ck_sg_gc\apps\driver\usart\sync\usart_echo\firmware\src\config\pic32ck_gc01_cult_freertos\bsp\bsp.c
+  projectFolder: config\pic32ck_gc01_cult_freertos\bsp
   type: Source Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/driver/usart/sync/usart_echo/firmware/src/config/pic32ck_gc01_cult_freertos/bsp/bsp.h
-  projectFolder: config/pic32ck_gc01_cult_freertos/bsp
+  path: C:\apps\core_apps_pic32ck_sg_gc\apps\driver\usart\sync\usart_echo\firmware\src\config\pic32ck_gc01_cult_freertos\bsp\bsp.h
+  projectFolder: config\pic32ck_gc01_cult_freertos\bsp
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/driver/usart/sync/usart_echo/firmware/src/config/pic32ck_gc01_cult_freertos/device_cache.h
-  projectFolder: config/pic32ck_gc01_cult_freertos
+  path: C:\apps\core_apps_pic32ck_sg_gc\apps\driver\usart\sync\usart_echo\firmware\src\config\pic32ck_gc01_cult_freertos\device_cache.h
+  projectFolder: config\pic32ck_gc01_cult_freertos
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/driver/usart/sync/usart_echo/firmware/src/config/pic32ck_gc01_cult_freertos/toolchain_specifics.h
-  projectFolder: config/pic32ck_gc01_cult_freertos
+  path: C:\apps\core_apps_pic32ck_sg_gc\apps\driver\usart\sync\usart_echo\firmware\src\config\pic32ck_gc01_cult_freertos\toolchain_specifics.h
+  projectFolder: config\pic32ck_gc01_cult_freertos
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/driver/usart/sync/usart_echo/firmware/src/main.c
+  path: C:\apps\core_apps_pic32ck_sg_gc\apps\driver\usart\sync\usart_echo\firmware\src\main.c
   projectFolder: ''
   type: Source Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/driver/usart/sync/usart_echo/firmware/src/config/pic32ck_gc01_cult_freertos/definitions.h
-  projectFolder: config/pic32ck_gc01_cult_freertos
+  path: C:\apps\core_apps_pic32ck_sg_gc\apps\driver\usart\sync\usart_echo\firmware\src\config\pic32ck_gc01_cult_freertos\definitions.h
+  projectFolder: config\pic32ck_gc01_cult_freertos
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/driver/usart/sync/usart_echo/firmware/src/config/pic32ck_gc01_cult_freertos/initialization.c
-  projectFolder: config/pic32ck_gc01_cult_freertos
+  path: C:\apps\core_apps_pic32ck_sg_gc\apps\driver\usart\sync\usart_echo\firmware\src\config\pic32ck_gc01_cult_freertos\initialization.c
+  projectFolder: config\pic32ck_gc01_cult_freertos
   type: Source Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/driver/usart/sync/usart_echo/firmware/src/config/pic32ck_gc01_cult_freertos/interrupts.c
-  projectFolder: config/pic32ck_gc01_cult_freertos
+  path: C:\apps\core_apps_pic32ck_sg_gc\apps\driver\usart\sync\usart_echo\firmware\src\config\pic32ck_gc01_cult_freertos\interrupts.c
+  projectFolder: config\pic32ck_gc01_cult_freertos
   type: Source Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/driver/usart/sync/usart_echo/firmware/src/config/pic32ck_gc01_cult_freertos/interrupts.h
-  projectFolder: config/pic32ck_gc01_cult_freertos
+  path: C:\apps\core_apps_pic32ck_sg_gc\apps\driver\usart\sync\usart_echo\firmware\src\config\pic32ck_gc01_cult_freertos\interrupts.h
+  projectFolder: config\pic32ck_gc01_cult_freertos
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/driver/usart/sync/usart_echo/firmware/src/config/pic32ck_gc01_cult_freertos/device_vectors.h
-  projectFolder: config/pic32ck_gc01_cult_freertos
+  path: C:\apps\core_apps_pic32ck_sg_gc\apps\driver\usart\sync\usart_echo\firmware\src\config\pic32ck_gc01_cult_freertos\device_vectors.h
+  projectFolder: config\pic32ck_gc01_cult_freertos
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/driver/usart/sync/usart_echo/firmware/src/config/pic32ck_gc01_cult_freertos/exceptions.c
-  projectFolder: config/pic32ck_gc01_cult_freertos
+  path: C:\apps\core_apps_pic32ck_sg_gc\apps\driver\usart\sync\usart_echo\firmware\src\config\pic32ck_gc01_cult_freertos\exceptions.c
+  projectFolder: config\pic32ck_gc01_cult_freertos
   type: Source Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/driver/usart/sync/usart_echo/firmware/src/config/pic32ck_gc01_cult_freertos/PIC32CK2051GC01144.ld
-  projectFolder: config/pic32ck_gc01_cult_freertos
+  path: C:\apps\core_apps_pic32ck_sg_gc\apps\driver\usart\sync\usart_echo\firmware\src\config\pic32ck_gc01_cult_freertos\PIC32CK2051GC01144.ld
+  projectFolder: config\pic32ck_gc01_cult_freertos
   type: Linker Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/driver/usart/sync/usart_echo/firmware/src/config/pic32ck_gc01_cult_freertos/stdio/xc32_monitor.c
-  projectFolder: config/pic32ck_gc01_cult_freertos/stdio
+  path: C:\apps\core_apps_pic32ck_sg_gc\apps\driver\usart\sync\usart_echo\firmware\src\config\pic32ck_gc01_cult_freertos\stdio\xc32_monitor.c
+  projectFolder: config\pic32ck_gc01_cult_freertos\stdio
   type: Source Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/driver/usart/sync/usart_echo/firmware/src/config/pic32ck_gc01_cult_freertos/peripheral/port/plib_port.h
-  projectFolder: config/pic32ck_gc01_cult_freertos/peripheral/port
+  path: C:\apps\core_apps_pic32ck_sg_gc\apps\driver\usart\sync\usart_echo\firmware\src\config\pic32ck_gc01_cult_freertos\peripheral\port\plib_port.h
+  projectFolder: config\pic32ck_gc01_cult_freertos\peripheral\port
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/driver/usart/sync/usart_echo/firmware/src/config/pic32ck_gc01_cult_freertos/peripheral/port/plib_port.c
-  projectFolder: config/pic32ck_gc01_cult_freertos/peripheral/port
+  path: C:\apps\core_apps_pic32ck_sg_gc\apps\driver\usart\sync\usart_echo\firmware\src\config\pic32ck_gc01_cult_freertos\peripheral\port\plib_port.c
+  projectFolder: config\pic32ck_gc01_cult_freertos\peripheral\port
   type: Source Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/driver/usart/sync/usart_echo/firmware/src/config/pic32ck_gc01_cult_freertos/pin_configurations.csv
+  path: C:\apps\core_apps_pic32ck_sg_gc\apps\driver\usart\sync\usart_echo\firmware\src\config\pic32ck_gc01_cult_freertos\pin_configurations.csv
   projectFolder: ''
   type: Important Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/driver/usart/sync/usart_echo/firmware/src/config/pic32ck_gc01_cult_freertos/peripheral/clock/plib_clock.h
-  projectFolder: config/pic32ck_gc01_cult_freertos/peripheral/clock
+  path: C:\apps\core_apps_pic32ck_sg_gc\apps\driver\usart\sync\usart_echo\firmware\src\config\pic32ck_gc01_cult_freertos\peripheral\clock\plib_clock.h
+  projectFolder: config\pic32ck_gc01_cult_freertos\peripheral\clock
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/driver/usart/sync/usart_echo/firmware/src/config/pic32ck_gc01_cult_freertos/peripheral/clock/plib_clock.c
-  projectFolder: config/pic32ck_gc01_cult_freertos/peripheral/clock
+  path: C:\apps\core_apps_pic32ck_sg_gc\apps\driver\usart\sync\usart_echo\firmware\src\config\pic32ck_gc01_cult_freertos\peripheral\clock\plib_clock.c
+  projectFolder: config\pic32ck_gc01_cult_freertos\peripheral\clock
   type: Source Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/driver/usart/sync/usart_echo/firmware/src/config/pic32ck_gc01_cult_freertos/peripheral/nvic/plib_nvic.h
-  projectFolder: config/pic32ck_gc01_cult_freertos/peripheral/nvic
+  path: C:\apps\core_apps_pic32ck_sg_gc\apps\driver\usart\sync\usart_echo\firmware\src\config\pic32ck_gc01_cult_freertos\peripheral\nvic\plib_nvic.h
+  projectFolder: config\pic32ck_gc01_cult_freertos\peripheral\nvic
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/driver/usart/sync/usart_echo/firmware/src/config/pic32ck_gc01_cult_freertos/peripheral/nvic/plib_nvic.c
-  projectFolder: config/pic32ck_gc01_cult_freertos/peripheral/nvic
+  path: C:\apps\core_apps_pic32ck_sg_gc\apps\driver\usart\sync\usart_echo\firmware\src\config\pic32ck_gc01_cult_freertos\peripheral\nvic\plib_nvic.c
+  projectFolder: config\pic32ck_gc01_cult_freertos\peripheral\nvic
   type: Source Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/driver/usart/sync/usart_echo/firmware/src/config/pic32ck_gc01_cult_freertos/peripheral/cmcc/plib_cmcc.h
-  projectFolder: config/pic32ck_gc01_cult_freertos/peripheral/cmcc
+  path: C:\apps\core_apps_pic32ck_sg_gc\apps\driver\usart\sync\usart_echo\firmware\src\config\pic32ck_gc01_cult_freertos\peripheral\cmcc\plib_cmcc.h
+  projectFolder: config\pic32ck_gc01_cult_freertos\peripheral\cmcc
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/driver/usart/sync/usart_echo/firmware/src/config/pic32ck_gc01_cult_freertos/peripheral/cmcc/plib_cmcc.c
-  projectFolder: config/pic32ck_gc01_cult_freertos/peripheral/cmcc
+  path: C:\apps\core_apps_pic32ck_sg_gc\apps\driver\usart\sync\usart_echo\firmware\src\config\pic32ck_gc01_cult_freertos\peripheral\cmcc\plib_cmcc.c
+  projectFolder: config\pic32ck_gc01_cult_freertos\peripheral\cmcc
   type: Source Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/driver/usart/sync/usart_echo/firmware/src/config/pic32ck_gc01_cult_freertos/startup_xc32.c
-  projectFolder: config/pic32ck_gc01_cult_freertos
+  path: C:\apps\core_apps_pic32ck_sg_gc\apps\driver\usart\sync\usart_echo\firmware\src\config\pic32ck_gc01_cult_freertos\startup_xc32.c
+  projectFolder: config\pic32ck_gc01_cult_freertos
   type: Source Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/driver/usart/sync/usart_echo/firmware/src/config/pic32ck_gc01_cult_freertos/libc_syscalls.c
-  projectFolder: config/pic32ck_gc01_cult_freertos
+  path: C:\apps\core_apps_pic32ck_sg_gc\apps\driver\usart\sync\usart_echo\firmware\src\config\pic32ck_gc01_cult_freertos\libc_syscalls.c
+  projectFolder: config\pic32ck_gc01_cult_freertos
   type: Source Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/driver/usart/sync/usart_echo/firmware/src/config/pic32ck_gc01_cult_freertos/peripheral/sercom/usart/plib_sercom5_usart.h
-  projectFolder: config/pic32ck_gc01_cult_freertos/peripheral/sercom/usart
+  path: C:\apps\core_apps_pic32ck_sg_gc\apps\driver\usart\sync\usart_echo\firmware\src\config\pic32ck_gc01_cult_freertos\peripheral\sercom\usart\plib_sercom5_usart.h
+  projectFolder: config\pic32ck_gc01_cult_freertos\peripheral\sercom\usart
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/driver/usart/sync/usart_echo/firmware/src/config/pic32ck_gc01_cult_freertos/peripheral/sercom/usart/plib_sercom_usart_common.h
-  projectFolder: config/pic32ck_gc01_cult_freertos/peripheral/sercom/usart
+  path: C:\apps\core_apps_pic32ck_sg_gc\apps\driver\usart\sync\usart_echo\firmware\src\config\pic32ck_gc01_cult_freertos\peripheral\sercom\usart\plib_sercom_usart_common.h
+  projectFolder: config\pic32ck_gc01_cult_freertos\peripheral\sercom\usart
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/driver/usart/sync/usart_echo/firmware/src/config/pic32ck_gc01_cult_freertos/peripheral/sercom/usart/plib_sercom5_usart.c
-  projectFolder: config/pic32ck_gc01_cult_freertos/peripheral/sercom/usart
+  path: C:\apps\core_apps_pic32ck_sg_gc\apps\driver\usart\sync\usart_echo\firmware\src\config\pic32ck_gc01_cult_freertos\peripheral\sercom\usart\plib_sercom5_usart.c
+  projectFolder: config\pic32ck_gc01_cult_freertos\peripheral\sercom\usart
   type: Source Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/driver/usart/sync/usart_echo/firmware/src/config/pic32ck_gc01_cult_freertos/peripheral/pm/plib_pm.h
-  projectFolder: config/pic32ck_gc01_cult_freertos/peripheral/pm
+  path: C:\apps\core_apps_pic32ck_sg_gc\apps\driver\usart\sync\usart_echo\firmware\src\config\pic32ck_gc01_cult_freertos\device.h
+  projectFolder: config\pic32ck_gc01_cult_freertos
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/driver/usart/sync/usart_echo/firmware/src/config/pic32ck_gc01_cult_freertos/peripheral/pm/plib_pm.c
-  projectFolder: config/pic32ck_gc01_cult_freertos/peripheral/pm
+  path: C:\apps\core_apps_pic32ck_sg_gc\apps\driver\usart\sync\usart_echo\firmware\src\packs\PIC32CK2051GC01144_DFP\component\ac.h
+  projectFolder: packs\PIC32CK2051GC01144_DFP\component
+  type: Header Files
+- excludeFromProject: false
+  path: C:\apps\core_apps_pic32ck_sg_gc\apps\driver\usart\sync\usart_echo\firmware\src\packs\PIC32CK2051GC01144_DFP\component\adc.h
+  projectFolder: packs\PIC32CK2051GC01144_DFP\component
+  type: Header Files
+- excludeFromProject: false
+  path: C:\apps\core_apps_pic32ck_sg_gc\apps\driver\usart\sync\usart_echo\firmware\src\packs\PIC32CK2051GC01144_DFP\component\can.h
+  projectFolder: packs\PIC32CK2051GC01144_DFP\component
+  type: Header Files
+- excludeFromProject: false
+  path: C:\apps\core_apps_pic32ck_sg_gc\apps\driver\usart\sync\usart_echo\firmware\src\packs\PIC32CK2051GC01144_DFP\component\ccl.h
+  projectFolder: packs\PIC32CK2051GC01144_DFP\component
+  type: Header Files
+- excludeFromProject: false
+  path: C:\apps\core_apps_pic32ck_sg_gc\apps\driver\usart\sync\usart_echo\firmware\src\packs\PIC32CK2051GC01144_DFP\component\cmcc.h
+  projectFolder: packs\PIC32CK2051GC01144_DFP\component
+  type: Header Files
+- excludeFromProject: false
+  path: C:\apps\core_apps_pic32ck_sg_gc\apps\driver\usart\sync\usart_echo\firmware\src\packs\PIC32CK2051GC01144_DFP\component\dma.h
+  projectFolder: packs\PIC32CK2051GC01144_DFP\component
+  type: Header Files
+- excludeFromProject: false
+  path: C:\apps\core_apps_pic32ck_sg_gc\apps\driver\usart\sync\usart_echo\firmware\src\packs\PIC32CK2051GC01144_DFP\component\dsu.h
+  projectFolder: packs\PIC32CK2051GC01144_DFP\component
+  type: Header Files
+- excludeFromProject: false
+  path: C:\apps\core_apps_pic32ck_sg_gc\apps\driver\usart\sync\usart_echo\firmware\src\packs\PIC32CK2051GC01144_DFP\component\ebi.h
+  projectFolder: packs\PIC32CK2051GC01144_DFP\component
+  type: Header Files
+- excludeFromProject: false
+  path: C:\apps\core_apps_pic32ck_sg_gc\apps\driver\usart\sync\usart_echo\firmware\src\packs\PIC32CK2051GC01144_DFP\component\eic.h
+  projectFolder: packs\PIC32CK2051GC01144_DFP\component
+  type: Header Files
+- excludeFromProject: false
+  path: C:\apps\core_apps_pic32ck_sg_gc\apps\driver\usart\sync\usart_echo\firmware\src\packs\PIC32CK2051GC01144_DFP\component\eth.h
+  projectFolder: packs\PIC32CK2051GC01144_DFP\component
+  type: Header Files
+- excludeFromProject: false
+  path: C:\apps\core_apps_pic32ck_sg_gc\apps\driver\usart\sync\usart_echo\firmware\src\packs\PIC32CK2051GC01144_DFP\component\evsys.h
+  projectFolder: packs\PIC32CK2051GC01144_DFP\component
+  type: Header Files
+- excludeFromProject: false
+  path: C:\apps\core_apps_pic32ck_sg_gc\apps\driver\usart\sync\usart_echo\firmware\src\packs\PIC32CK2051GC01144_DFP\component\fcr.h
+  projectFolder: packs\PIC32CK2051GC01144_DFP\component
+  type: Header Files
+- excludeFromProject: false
+  path: C:\apps\core_apps_pic32ck_sg_gc\apps\driver\usart\sync\usart_echo\firmware\src\packs\PIC32CK2051GC01144_DFP\component\fcw.h
+  projectFolder: packs\PIC32CK2051GC01144_DFP\component
+  type: Header Files
+- excludeFromProject: false
+  path: C:\apps\core_apps_pic32ck_sg_gc\apps\driver\usart\sync\usart_echo\firmware\src\packs\PIC32CK2051GC01144_DFP\component\freqm.h
+  projectFolder: packs\PIC32CK2051GC01144_DFP\component
+  type: Header Files
+- excludeFromProject: false
+  path: C:\apps\core_apps_pic32ck_sg_gc\apps\driver\usart\sync\usart_echo\firmware\src\packs\PIC32CK2051GC01144_DFP\component\fuses.h
+  projectFolder: packs\PIC32CK2051GC01144_DFP\component
+  type: Header Files
+- excludeFromProject: false
+  path: C:\apps\core_apps_pic32ck_sg_gc\apps\driver\usart\sync\usart_echo\firmware\src\packs\PIC32CK2051GC01144_DFP\component\gclk.h
+  projectFolder: packs\PIC32CK2051GC01144_DFP\component
+  type: Header Files
+- excludeFromProject: false
+  path: C:\apps\core_apps_pic32ck_sg_gc\apps\driver\usart\sync\usart_echo\firmware\src\packs\PIC32CK2051GC01144_DFP\component\hmatrix2.h
+  projectFolder: packs\PIC32CK2051GC01144_DFP\component
+  type: Header Files
+- excludeFromProject: false
+  path: C:\apps\core_apps_pic32ck_sg_gc\apps\driver\usart\sync\usart_echo\firmware\src\packs\PIC32CK2051GC01144_DFP\component\idau.h
+  projectFolder: packs\PIC32CK2051GC01144_DFP\component
+  type: Header Files
+- excludeFromProject: false
+  path: C:\apps\core_apps_pic32ck_sg_gc\apps\driver\usart\sync\usart_echo\firmware\src\packs\PIC32CK2051GC01144_DFP\component\mclk.h
+  projectFolder: packs\PIC32CK2051GC01144_DFP\component
+  type: Header Files
+- excludeFromProject: false
+  path: C:\apps\core_apps_pic32ck_sg_gc\apps\driver\usart\sync\usart_echo\firmware\src\packs\PIC32CK2051GC01144_DFP\component\mcramc.h
+  projectFolder: packs\PIC32CK2051GC01144_DFP\component
+  type: Header Files
+- excludeFromProject: false
+  path: C:\apps\core_apps_pic32ck_sg_gc\apps\driver\usart\sync\usart_echo\firmware\src\packs\PIC32CK2051GC01144_DFP\component\osc32kctrl.h
+  projectFolder: packs\PIC32CK2051GC01144_DFP\component
+  type: Header Files
+- excludeFromProject: false
+  path: C:\apps\core_apps_pic32ck_sg_gc\apps\driver\usart\sync\usart_echo\firmware\src\packs\PIC32CK2051GC01144_DFP\component\oscctrl.h
+  projectFolder: packs\PIC32CK2051GC01144_DFP\component
+  type: Header Files
+- excludeFromProject: false
+  path: C:\apps\core_apps_pic32ck_sg_gc\apps\driver\usart\sync\usart_echo\firmware\src\packs\PIC32CK2051GC01144_DFP\component\pac.h
+  projectFolder: packs\PIC32CK2051GC01144_DFP\component
+  type: Header Files
+- excludeFromProject: false
+  path: C:\apps\core_apps_pic32ck_sg_gc\apps\driver\usart\sync\usart_echo\firmware\src\packs\PIC32CK2051GC01144_DFP\component\pcc.h
+  projectFolder: packs\PIC32CK2051GC01144_DFP\component
+  type: Header Files
+- excludeFromProject: false
+  path: C:\apps\core_apps_pic32ck_sg_gc\apps\driver\usart\sync\usart_echo\firmware\src\packs\PIC32CK2051GC01144_DFP\component\pdec.h
+  projectFolder: packs\PIC32CK2051GC01144_DFP\component
+  type: Header Files
+- excludeFromProject: false
+  path: C:\apps\core_apps_pic32ck_sg_gc\apps\driver\usart\sync\usart_echo\firmware\src\packs\PIC32CK2051GC01144_DFP\component\pm.h
+  projectFolder: packs\PIC32CK2051GC01144_DFP\component
+  type: Header Files
+- excludeFromProject: false
+  path: C:\apps\core_apps_pic32ck_sg_gc\apps\driver\usart\sync\usart_echo\firmware\src\packs\PIC32CK2051GC01144_DFP\component\port.h
+  projectFolder: packs\PIC32CK2051GC01144_DFP\component
+  type: Header Files
+- excludeFromProject: false
+  path: C:\apps\core_apps_pic32ck_sg_gc\apps\driver\usart\sync\usart_echo\firmware\src\packs\PIC32CK2051GC01144_DFP\component\prm.h
+  projectFolder: packs\PIC32CK2051GC01144_DFP\component
+  type: Header Files
+- excludeFromProject: false
+  path: C:\apps\core_apps_pic32ck_sg_gc\apps\driver\usart\sync\usart_echo\firmware\src\packs\PIC32CK2051GC01144_DFP\component\ptc.h
+  projectFolder: packs\PIC32CK2051GC01144_DFP\component
+  type: Header Files
+- excludeFromProject: false
+  path: C:\apps\core_apps_pic32ck_sg_gc\apps\driver\usart\sync\usart_echo\firmware\src\packs\PIC32CK2051GC01144_DFP\component\rstc.h
+  projectFolder: packs\PIC32CK2051GC01144_DFP\component
+  type: Header Files
+- excludeFromProject: false
+  path: C:\apps\core_apps_pic32ck_sg_gc\apps\driver\usart\sync\usart_echo\firmware\src\packs\PIC32CK2051GC01144_DFP\component\rtc.h
+  projectFolder: packs\PIC32CK2051GC01144_DFP\component
+  type: Header Files
+- excludeFromProject: false
+  path: C:\apps\core_apps_pic32ck_sg_gc\apps\driver\usart\sync\usart_echo\firmware\src\packs\PIC32CK2051GC01144_DFP\component\sdmmc.h
+  projectFolder: packs\PIC32CK2051GC01144_DFP\component
+  type: Header Files
+- excludeFromProject: false
+  path: C:\apps\core_apps_pic32ck_sg_gc\apps\driver\usart\sync\usart_echo\firmware\src\packs\PIC32CK2051GC01144_DFP\component\sercom.h
+  projectFolder: packs\PIC32CK2051GC01144_DFP\component
+  type: Header Files
+- excludeFromProject: false
+  path: C:\apps\core_apps_pic32ck_sg_gc\apps\driver\usart\sync\usart_echo\firmware\src\packs\PIC32CK2051GC01144_DFP\component\spi_ixs.h
+  projectFolder: packs\PIC32CK2051GC01144_DFP\component
+  type: Header Files
+- excludeFromProject: false
+  path: C:\apps\core_apps_pic32ck_sg_gc\apps\driver\usart\sync\usart_echo\firmware\src\packs\PIC32CK2051GC01144_DFP\component\sqi.h
+  projectFolder: packs\PIC32CK2051GC01144_DFP\component
+  type: Header Files
+- excludeFromProject: false
+  path: C:\apps\core_apps_pic32ck_sg_gc\apps\driver\usart\sync\usart_echo\firmware\src\packs\PIC32CK2051GC01144_DFP\component\supc.h
+  projectFolder: packs\PIC32CK2051GC01144_DFP\component
+  type: Header Files
+- excludeFromProject: false
+  path: C:\apps\core_apps_pic32ck_sg_gc\apps\driver\usart\sync\usart_echo\firmware\src\packs\PIC32CK2051GC01144_DFP\component\tcc.h
+  projectFolder: packs\PIC32CK2051GC01144_DFP\component
+  type: Header Files
+- excludeFromProject: false
+  path: C:\apps\core_apps_pic32ck_sg_gc\apps\driver\usart\sync\usart_echo\firmware\src\packs\PIC32CK2051GC01144_DFP\component\tram.h
+  projectFolder: packs\PIC32CK2051GC01144_DFP\component
+  type: Header Files
+- excludeFromProject: false
+  path: C:\apps\core_apps_pic32ck_sg_gc\apps\driver\usart\sync\usart_echo\firmware\src\packs\PIC32CK2051GC01144_DFP\component\trng.h
+  projectFolder: packs\PIC32CK2051GC01144_DFP\component
+  type: Header Files
+- excludeFromProject: false
+  path: C:\apps\core_apps_pic32ck_sg_gc\apps\driver\usart\sync\usart_echo\firmware\src\packs\PIC32CK2051GC01144_DFP\component\usb.h
+  projectFolder: packs\PIC32CK2051GC01144_DFP\component
+  type: Header Files
+- excludeFromProject: false
+  path: C:\apps\core_apps_pic32ck_sg_gc\apps\driver\usart\sync\usart_echo\firmware\src\packs\PIC32CK2051GC01144_DFP\component\usbhs.h
+  projectFolder: packs\PIC32CK2051GC01144_DFP\component
+  type: Header Files
+- excludeFromProject: false
+  path: C:\apps\core_apps_pic32ck_sg_gc\apps\driver\usart\sync\usart_echo\firmware\src\packs\PIC32CK2051GC01144_DFP\component\wdt.h
+  projectFolder: packs\PIC32CK2051GC01144_DFP\component
+  type: Header Files
+- excludeFromProject: false
+  path: C:\apps\core_apps_pic32ck_sg_gc\apps\driver\usart\sync\usart_echo\firmware\src\packs\PIC32CK2051GC01144_DFP\instance\ac.h
+  projectFolder: packs\PIC32CK2051GC01144_DFP\instance
+  type: Header Files
+- excludeFromProject: false
+  path: C:\apps\core_apps_pic32ck_sg_gc\apps\driver\usart\sync\usart_echo\firmware\src\packs\PIC32CK2051GC01144_DFP\instance\adc.h
+  projectFolder: packs\PIC32CK2051GC01144_DFP\instance
+  type: Header Files
+- excludeFromProject: false
+  path: C:\apps\core_apps_pic32ck_sg_gc\apps\driver\usart\sync\usart_echo\firmware\src\packs\PIC32CK2051GC01144_DFP\instance\bsdap.h
+  projectFolder: packs\PIC32CK2051GC01144_DFP\instance
+  type: Header Files
+- excludeFromProject: false
+  path: C:\apps\core_apps_pic32ck_sg_gc\apps\driver\usart\sync\usart_echo\firmware\src\packs\PIC32CK2051GC01144_DFP\instance\can0.h
+  projectFolder: packs\PIC32CK2051GC01144_DFP\instance
+  type: Header Files
+- excludeFromProject: false
+  path: C:\apps\core_apps_pic32ck_sg_gc\apps\driver\usart\sync\usart_echo\firmware\src\packs\PIC32CK2051GC01144_DFP\instance\can1.h
+  projectFolder: packs\PIC32CK2051GC01144_DFP\instance
+  type: Header Files
+- excludeFromProject: false
+  path: C:\apps\core_apps_pic32ck_sg_gc\apps\driver\usart\sync\usart_echo\firmware\src\packs\PIC32CK2051GC01144_DFP\instance\ccl.h
+  projectFolder: packs\PIC32CK2051GC01144_DFP\instance
+  type: Header Files
+- excludeFromProject: false
+  path: C:\apps\core_apps_pic32ck_sg_gc\apps\driver\usart\sync\usart_echo\firmware\src\packs\PIC32CK2051GC01144_DFP\instance\cmcc.h
+  projectFolder: packs\PIC32CK2051GC01144_DFP\instance
+  type: Header Files
+- excludeFromProject: false
+  path: C:\apps\core_apps_pic32ck_sg_gc\apps\driver\usart\sync\usart_echo\firmware\src\packs\PIC32CK2051GC01144_DFP\instance\dma0.h
+  projectFolder: packs\PIC32CK2051GC01144_DFP\instance
+  type: Header Files
+- excludeFromProject: false
+  path: C:\apps\core_apps_pic32ck_sg_gc\apps\driver\usart\sync\usart_echo\firmware\src\packs\PIC32CK2051GC01144_DFP\instance\dma1.h
+  projectFolder: packs\PIC32CK2051GC01144_DFP\instance
+  type: Header Files
+- excludeFromProject: false
+  path: C:\apps\core_apps_pic32ck_sg_gc\apps\driver\usart\sync\usart_echo\firmware\src\packs\PIC32CK2051GC01144_DFP\instance\dsu.h
+  projectFolder: packs\PIC32CK2051GC01144_DFP\instance
+  type: Header Files
+- excludeFromProject: false
+  path: C:\apps\core_apps_pic32ck_sg_gc\apps\driver\usart\sync\usart_echo\firmware\src\packs\PIC32CK2051GC01144_DFP\instance\ebi.h
+  projectFolder: packs\PIC32CK2051GC01144_DFP\instance
+  type: Header Files
+- excludeFromProject: false
+  path: C:\apps\core_apps_pic32ck_sg_gc\apps\driver\usart\sync\usart_echo\firmware\src\packs\PIC32CK2051GC01144_DFP\instance\eic.h
+  projectFolder: packs\PIC32CK2051GC01144_DFP\instance
+  type: Header Files
+- excludeFromProject: false
+  path: C:\apps\core_apps_pic32ck_sg_gc\apps\driver\usart\sync\usart_echo\firmware\src\packs\PIC32CK2051GC01144_DFP\instance\eth.h
+  projectFolder: packs\PIC32CK2051GC01144_DFP\instance
+  type: Header Files
+- excludeFromProject: false
+  path: C:\apps\core_apps_pic32ck_sg_gc\apps\driver\usart\sync\usart_echo\firmware\src\packs\PIC32CK2051GC01144_DFP\instance\evsys.h
+  projectFolder: packs\PIC32CK2051GC01144_DFP\instance
+  type: Header Files
+- excludeFromProject: false
+  path: C:\apps\core_apps_pic32ck_sg_gc\apps\driver\usart\sync\usart_echo\firmware\src\packs\PIC32CK2051GC01144_DFP\instance\fcr.h
+  projectFolder: packs\PIC32CK2051GC01144_DFP\instance
+  type: Header Files
+- excludeFromProject: false
+  path: C:\apps\core_apps_pic32ck_sg_gc\apps\driver\usart\sync\usart_echo\firmware\src\packs\PIC32CK2051GC01144_DFP\instance\fcw.h
+  projectFolder: packs\PIC32CK2051GC01144_DFP\instance
+  type: Header Files
+- excludeFromProject: false
+  path: C:\apps\core_apps_pic32ck_sg_gc\apps\driver\usart\sync\usart_echo\firmware\src\packs\PIC32CK2051GC01144_DFP\instance\flexram.h
+  projectFolder: packs\PIC32CK2051GC01144_DFP\instance
+  type: Header Files
+- excludeFromProject: false
+  path: C:\apps\core_apps_pic32ck_sg_gc\apps\driver\usart\sync\usart_echo\firmware\src\packs\PIC32CK2051GC01144_DFP\instance\freqm.h
+  projectFolder: packs\PIC32CK2051GC01144_DFP\instance
+  type: Header Files
+- excludeFromProject: false
+  path: C:\apps\core_apps_pic32ck_sg_gc\apps\driver\usart\sync\usart_echo\firmware\src\packs\PIC32CK2051GC01144_DFP\instance\fuses.h
+  projectFolder: packs\PIC32CK2051GC01144_DFP\instance
+  type: Header Files
+- excludeFromProject: false
+  path: C:\apps\core_apps_pic32ck_sg_gc\apps\driver\usart\sync\usart_echo\firmware\src\packs\PIC32CK2051GC01144_DFP\instance\gclk.h
+  projectFolder: packs\PIC32CK2051GC01144_DFP\instance
+  type: Header Files
+- excludeFromProject: false
+  path: C:\apps\core_apps_pic32ck_sg_gc\apps\driver\usart\sync\usart_echo\firmware\src\packs\PIC32CK2051GC01144_DFP\instance\hmatrix.h
+  projectFolder: packs\PIC32CK2051GC01144_DFP\instance
+  type: Header Files
+- excludeFromProject: false
+  path: C:\apps\core_apps_pic32ck_sg_gc\apps\driver\usart\sync\usart_echo\firmware\src\packs\PIC32CK2051GC01144_DFP\instance\idau.h
+  projectFolder: packs\PIC32CK2051GC01144_DFP\instance
+  type: Header Files
+- excludeFromProject: false
+  path: C:\apps\core_apps_pic32ck_sg_gc\apps\driver\usart\sync\usart_echo\firmware\src\packs\PIC32CK2051GC01144_DFP\instance\mclk.h
+  projectFolder: packs\PIC32CK2051GC01144_DFP\instance
+  type: Header Files
+- excludeFromProject: false
+  path: C:\apps\core_apps_pic32ck_sg_gc\apps\driver\usart\sync\usart_echo\firmware\src\packs\PIC32CK2051GC01144_DFP\instance\osc32kctrl.h
+  projectFolder: packs\PIC32CK2051GC01144_DFP\instance
+  type: Header Files
+- excludeFromProject: false
+  path: C:\apps\core_apps_pic32ck_sg_gc\apps\driver\usart\sync\usart_echo\firmware\src\packs\PIC32CK2051GC01144_DFP\instance\oscctrl.h
+  projectFolder: packs\PIC32CK2051GC01144_DFP\instance
+  type: Header Files
+- excludeFromProject: false
+  path: C:\apps\core_apps_pic32ck_sg_gc\apps\driver\usart\sync\usart_echo\firmware\src\packs\PIC32CK2051GC01144_DFP\instance\pac.h
+  projectFolder: packs\PIC32CK2051GC01144_DFP\instance
+  type: Header Files
+- excludeFromProject: false
+  path: C:\apps\core_apps_pic32ck_sg_gc\apps\driver\usart\sync\usart_echo\firmware\src\packs\PIC32CK2051GC01144_DFP\instance\pcc.h
+  projectFolder: packs\PIC32CK2051GC01144_DFP\instance
+  type: Header Files
+- excludeFromProject: false
+  path: C:\apps\core_apps_pic32ck_sg_gc\apps\driver\usart\sync\usart_echo\firmware\src\packs\PIC32CK2051GC01144_DFP\instance\pdec.h
+  projectFolder: packs\PIC32CK2051GC01144_DFP\instance
+  type: Header Files
+- excludeFromProject: false
+  path: C:\apps\core_apps_pic32ck_sg_gc\apps\driver\usart\sync\usart_echo\firmware\src\packs\PIC32CK2051GC01144_DFP\instance\pm.h
+  projectFolder: packs\PIC32CK2051GC01144_DFP\instance
+  type: Header Files
+- excludeFromProject: false
+  path: C:\apps\core_apps_pic32ck_sg_gc\apps\driver\usart\sync\usart_echo\firmware\src\packs\PIC32CK2051GC01144_DFP\instance\port.h
+  projectFolder: packs\PIC32CK2051GC01144_DFP\instance
+  type: Header Files
+- excludeFromProject: false
+  path: C:\apps\core_apps_pic32ck_sg_gc\apps\driver\usart\sync\usart_echo\firmware\src\packs\PIC32CK2051GC01144_DFP\instance\prm.h
+  projectFolder: packs\PIC32CK2051GC01144_DFP\instance
+  type: Header Files
+- excludeFromProject: false
+  path: C:\apps\core_apps_pic32ck_sg_gc\apps\driver\usart\sync\usart_echo\firmware\src\packs\PIC32CK2051GC01144_DFP\instance\ptc.h
+  projectFolder: packs\PIC32CK2051GC01144_DFP\instance
+  type: Header Files
+- excludeFromProject: false
+  path: C:\apps\core_apps_pic32ck_sg_gc\apps\driver\usart\sync\usart_echo\firmware\src\packs\PIC32CK2051GC01144_DFP\instance\rstc.h
+  projectFolder: packs\PIC32CK2051GC01144_DFP\instance
+  type: Header Files
+- excludeFromProject: false
+  path: C:\apps\core_apps_pic32ck_sg_gc\apps\driver\usart\sync\usart_echo\firmware\src\packs\PIC32CK2051GC01144_DFP\instance\rtc.h
+  projectFolder: packs\PIC32CK2051GC01144_DFP\instance
+  type: Header Files
+- excludeFromProject: false
+  path: C:\apps\core_apps_pic32ck_sg_gc\apps\driver\usart\sync\usart_echo\firmware\src\packs\PIC32CK2051GC01144_DFP\instance\sdmmc0.h
+  projectFolder: packs\PIC32CK2051GC01144_DFP\instance
+  type: Header Files
+- excludeFromProject: false
+  path: C:\apps\core_apps_pic32ck_sg_gc\apps\driver\usart\sync\usart_echo\firmware\src\packs\PIC32CK2051GC01144_DFP\instance\sdmmc1.h
+  projectFolder: packs\PIC32CK2051GC01144_DFP\instance
+  type: Header Files
+- excludeFromProject: false
+  path: C:\apps\core_apps_pic32ck_sg_gc\apps\driver\usart\sync\usart_echo\firmware\src\packs\PIC32CK2051GC01144_DFP\instance\sercom0.h
+  projectFolder: packs\PIC32CK2051GC01144_DFP\instance
+  type: Header Files
+- excludeFromProject: false
+  path: C:\apps\core_apps_pic32ck_sg_gc\apps\driver\usart\sync\usart_echo\firmware\src\packs\PIC32CK2051GC01144_DFP\instance\sercom1.h
+  projectFolder: packs\PIC32CK2051GC01144_DFP\instance
+  type: Header Files
+- excludeFromProject: false
+  path: C:\apps\core_apps_pic32ck_sg_gc\apps\driver\usart\sync\usart_echo\firmware\src\packs\PIC32CK2051GC01144_DFP\instance\sercom2.h
+  projectFolder: packs\PIC32CK2051GC01144_DFP\instance
+  type: Header Files
+- excludeFromProject: false
+  path: C:\apps\core_apps_pic32ck_sg_gc\apps\driver\usart\sync\usart_echo\firmware\src\packs\PIC32CK2051GC01144_DFP\instance\sercom3.h
+  projectFolder: packs\PIC32CK2051GC01144_DFP\instance
+  type: Header Files
+- excludeFromProject: false
+  path: C:\apps\core_apps_pic32ck_sg_gc\apps\driver\usart\sync\usart_echo\firmware\src\packs\PIC32CK2051GC01144_DFP\instance\sercom4.h
+  projectFolder: packs\PIC32CK2051GC01144_DFP\instance
+  type: Header Files
+- excludeFromProject: false
+  path: C:\apps\core_apps_pic32ck_sg_gc\apps\driver\usart\sync\usart_echo\firmware\src\packs\PIC32CK2051GC01144_DFP\instance\sercom5.h
+  projectFolder: packs\PIC32CK2051GC01144_DFP\instance
+  type: Header Files
+- excludeFromProject: false
+  path: C:\apps\core_apps_pic32ck_sg_gc\apps\driver\usart\sync\usart_echo\firmware\src\packs\PIC32CK2051GC01144_DFP\instance\sercom6.h
+  projectFolder: packs\PIC32CK2051GC01144_DFP\instance
+  type: Header Files
+- excludeFromProject: false
+  path: C:\apps\core_apps_pic32ck_sg_gc\apps\driver\usart\sync\usart_echo\firmware\src\packs\PIC32CK2051GC01144_DFP\instance\sercom7.h
+  projectFolder: packs\PIC32CK2051GC01144_DFP\instance
+  type: Header Files
+- excludeFromProject: false
+  path: C:\apps\core_apps_pic32ck_sg_gc\apps\driver\usart\sync\usart_echo\firmware\src\packs\PIC32CK2051GC01144_DFP\instance\spi_ixs.h
+  projectFolder: packs\PIC32CK2051GC01144_DFP\instance
+  type: Header Files
+- excludeFromProject: false
+  path: C:\apps\core_apps_pic32ck_sg_gc\apps\driver\usart\sync\usart_echo\firmware\src\packs\PIC32CK2051GC01144_DFP\instance\sqi.h
+  projectFolder: packs\PIC32CK2051GC01144_DFP\instance
+  type: Header Files
+- excludeFromProject: false
+  path: C:\apps\core_apps_pic32ck_sg_gc\apps\driver\usart\sync\usart_echo\firmware\src\packs\PIC32CK2051GC01144_DFP\instance\supc.h
+  projectFolder: packs\PIC32CK2051GC01144_DFP\instance
+  type: Header Files
+- excludeFromProject: false
+  path: C:\apps\core_apps_pic32ck_sg_gc\apps\driver\usart\sync\usart_echo\firmware\src\packs\PIC32CK2051GC01144_DFP\instance\tcc0.h
+  projectFolder: packs\PIC32CK2051GC01144_DFP\instance
+  type: Header Files
+- excludeFromProject: false
+  path: C:\apps\core_apps_pic32ck_sg_gc\apps\driver\usart\sync\usart_echo\firmware\src\packs\PIC32CK2051GC01144_DFP\instance\tcc1.h
+  projectFolder: packs\PIC32CK2051GC01144_DFP\instance
+  type: Header Files
+- excludeFromProject: false
+  path: C:\apps\core_apps_pic32ck_sg_gc\apps\driver\usart\sync\usart_echo\firmware\src\packs\PIC32CK2051GC01144_DFP\instance\tcc2.h
+  projectFolder: packs\PIC32CK2051GC01144_DFP\instance
+  type: Header Files
+- excludeFromProject: false
+  path: C:\apps\core_apps_pic32ck_sg_gc\apps\driver\usart\sync\usart_echo\firmware\src\packs\PIC32CK2051GC01144_DFP\instance\tcc3.h
+  projectFolder: packs\PIC32CK2051GC01144_DFP\instance
+  type: Header Files
+- excludeFromProject: false
+  path: C:\apps\core_apps_pic32ck_sg_gc\apps\driver\usart\sync\usart_echo\firmware\src\packs\PIC32CK2051GC01144_DFP\instance\tcc4.h
+  projectFolder: packs\PIC32CK2051GC01144_DFP\instance
+  type: Header Files
+- excludeFromProject: false
+  path: C:\apps\core_apps_pic32ck_sg_gc\apps\driver\usart\sync\usart_echo\firmware\src\packs\PIC32CK2051GC01144_DFP\instance\tcc5.h
+  projectFolder: packs\PIC32CK2051GC01144_DFP\instance
+  type: Header Files
+- excludeFromProject: false
+  path: C:\apps\core_apps_pic32ck_sg_gc\apps\driver\usart\sync\usart_echo\firmware\src\packs\PIC32CK2051GC01144_DFP\instance\tcc6.h
+  projectFolder: packs\PIC32CK2051GC01144_DFP\instance
+  type: Header Files
+- excludeFromProject: false
+  path: C:\apps\core_apps_pic32ck_sg_gc\apps\driver\usart\sync\usart_echo\firmware\src\packs\PIC32CK2051GC01144_DFP\instance\tcc7.h
+  projectFolder: packs\PIC32CK2051GC01144_DFP\instance
+  type: Header Files
+- excludeFromProject: false
+  path: C:\apps\core_apps_pic32ck_sg_gc\apps\driver\usart\sync\usart_echo\firmware\src\packs\PIC32CK2051GC01144_DFP\instance\tram.h
+  projectFolder: packs\PIC32CK2051GC01144_DFP\instance
+  type: Header Files
+- excludeFromProject: false
+  path: C:\apps\core_apps_pic32ck_sg_gc\apps\driver\usart\sync\usart_echo\firmware\src\packs\PIC32CK2051GC01144_DFP\instance\trng.h
+  projectFolder: packs\PIC32CK2051GC01144_DFP\instance
+  type: Header Files
+- excludeFromProject: false
+  path: C:\apps\core_apps_pic32ck_sg_gc\apps\driver\usart\sync\usart_echo\firmware\src\packs\PIC32CK2051GC01144_DFP\instance\usb.h
+  projectFolder: packs\PIC32CK2051GC01144_DFP\instance
+  type: Header Files
+- excludeFromProject: false
+  path: C:\apps\core_apps_pic32ck_sg_gc\apps\driver\usart\sync\usart_echo\firmware\src\packs\PIC32CK2051GC01144_DFP\instance\usbhs.h
+  projectFolder: packs\PIC32CK2051GC01144_DFP\instance
+  type: Header Files
+- excludeFromProject: false
+  path: C:\apps\core_apps_pic32ck_sg_gc\apps\driver\usart\sync\usart_echo\firmware\src\packs\PIC32CK2051GC01144_DFP\instance\wdt.h
+  projectFolder: packs\PIC32CK2051GC01144_DFP\instance
+  type: Header Files
+- excludeFromProject: false
+  path: C:\apps\core_apps_pic32ck_sg_gc\apps\driver\usart\sync\usart_echo\firmware\src\packs\PIC32CK2051GC01144_DFP\pic32ck2051gc01144.h
+  projectFolder: packs\PIC32CK2051GC01144_DFP
+  type: Header Files
+- excludeFromProject: false
+  path: C:\apps\core_apps_pic32ck_sg_gc\apps\driver\usart\sync\usart_echo\firmware\src\packs\PIC32CK2051GC01144_DFP\pio\pic32ck2051gc01144.h
+  projectFolder: packs\PIC32CK2051GC01144_DFP\pio
+  type: Header Files
+- excludeFromProject: false
+  path: C:\apps\core_apps_pic32ck_sg_gc\apps\driver\usart\sync\usart_echo\firmware\src\config\pic32ck_gc01_cult_freertos\peripheral\pm\plib_pm.h
+  projectFolder: config\pic32ck_gc01_cult_freertos\peripheral\pm
+  type: Header Files
+- excludeFromProject: false
+  path: C:\apps\core_apps_pic32ck_sg_gc\apps\driver\usart\sync\usart_echo\firmware\src\config\pic32ck_gc01_cult_freertos\peripheral\pm\plib_pm.c
+  projectFolder: config\pic32ck_gc01_cult_freertos\peripheral\pm
   type: Source Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/driver/usart/sync/usart_echo/firmware/src/config/pic32ck_gc01_cult_freertos/device.h
-  projectFolder: config/pic32ck_gc01_cult_freertos
+  path: C:\apps\core_apps_pic32ck_sg_gc\apps\driver\usart\sync\usart_echo\firmware\src\packs\CMSIS\CMSIS\Core\Include\core_cm33.h
+  projectFolder: packs\CMSIS\CMSIS\Core\Include
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/driver/usart/sync/usart_echo/firmware/src/packs/PIC32CK2051GC01144_DFP/component/ac.h
-  projectFolder: packs/PIC32CK2051GC01144_DFP/component
+  path: C:\apps\core_apps_pic32ck_sg_gc\apps\driver\usart\sync\usart_echo\firmware\src\packs\CMSIS\CMSIS\Core\Include\cmsis_version.h
+  projectFolder: packs\CMSIS\CMSIS\Core\Include
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/driver/usart/sync/usart_echo/firmware/src/packs/PIC32CK2051GC01144_DFP/component/adc.h
-  projectFolder: packs/PIC32CK2051GC01144_DFP/component
+  path: C:\apps\core_apps_pic32ck_sg_gc\apps\driver\usart\sync\usart_echo\firmware\src\packs\CMSIS\CMSIS\Core\Include\cmsis_compiler.h
+  projectFolder: packs\CMSIS\CMSIS\Core\Include
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/driver/usart/sync/usart_echo/firmware/src/packs/PIC32CK2051GC01144_DFP/component/can.h
-  projectFolder: packs/PIC32CK2051GC01144_DFP/component
+  path: C:\apps\core_apps_pic32ck_sg_gc\apps\driver\usart\sync\usart_echo\firmware\src\packs\CMSIS\CMSIS\Core\Include\cmsis_iccarm.h
+  projectFolder: packs\CMSIS\CMSIS\Core\Include
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/driver/usart/sync/usart_echo/firmware/src/packs/PIC32CK2051GC01144_DFP/component/ccl.h
-  projectFolder: packs/PIC32CK2051GC01144_DFP/component
+  path: C:\apps\core_apps_pic32ck_sg_gc\apps\driver\usart\sync\usart_echo\firmware\src\packs\CMSIS\CMSIS\Core\Include\m-profile\cmsis_iccarm_m.h
+  projectFolder: packs\CMSIS\CMSIS\Core\Include\m-profile
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/driver/usart/sync/usart_echo/firmware/src/packs/PIC32CK2051GC01144_DFP/component/cmcc.h
-  projectFolder: packs/PIC32CK2051GC01144_DFP/component
+  path: C:\apps\core_apps_pic32ck_sg_gc\apps\driver\usart\sync\usart_echo\firmware\src\packs\CMSIS\CMSIS\Core\Include\cmsis_gcc.h
+  projectFolder: packs\CMSIS\CMSIS\Core\Include
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/driver/usart/sync/usart_echo/firmware/src/packs/PIC32CK2051GC01144_DFP/component/dma.h
-  projectFolder: packs/PIC32CK2051GC01144_DFP/component
+  path: C:\apps\core_apps_pic32ck_sg_gc\apps\driver\usart\sync\usart_echo\firmware\src\packs\CMSIS\CMSIS\Core\Include\m-profile\cmsis_gcc_m.h
+  projectFolder: packs\CMSIS\CMSIS\Core\Include\m-profile
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/driver/usart/sync/usart_echo/firmware/src/packs/PIC32CK2051GC01144_DFP/component/dsu.h
-  projectFolder: packs/PIC32CK2051GC01144_DFP/component
+  path: C:\apps\core_apps_pic32ck_sg_gc\apps\driver\usart\sync\usart_echo\firmware\src\packs\CMSIS\CMSIS\Core\Include\cmsis_armclang.h
+  projectFolder: packs\CMSIS\CMSIS\Core\Include
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/driver/usart/sync/usart_echo/firmware/src/packs/PIC32CK2051GC01144_DFP/component/ebi.h
-  projectFolder: packs/PIC32CK2051GC01144_DFP/component
+  path: C:\apps\core_apps_pic32ck_sg_gc\apps\driver\usart\sync\usart_echo\firmware\src\packs\CMSIS\CMSIS\Core\Include\m-profile\cmsis_armclang_m.h
+  projectFolder: packs\CMSIS\CMSIS\Core\Include\m-profile
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/driver/usart/sync/usart_echo/firmware/src/packs/PIC32CK2051GC01144_DFP/component/eic.h
-  projectFolder: packs/PIC32CK2051GC01144_DFP/component
+  path: C:\apps\core_apps_pic32ck_sg_gc\apps\driver\usart\sync\usart_echo\firmware\src\packs\CMSIS\CMSIS\Core\Include\m-profile\armv8m_mpu.h
+  projectFolder: packs\CMSIS\CMSIS\Core\Include\m-profile
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/driver/usart/sync/usart_echo/firmware/src/packs/PIC32CK2051GC01144_DFP/component/eth.h
-  projectFolder: packs/PIC32CK2051GC01144_DFP/component
+  path: C:\apps\core_apps_pic32ck_sg_gc\apps\driver\usart\sync\usart_echo\firmware\src\packs\CMSIS\CMSIS\Core\Include\m-profile\armv7m_cachel1.h
+  projectFolder: packs\CMSIS\CMSIS\Core\Include\m-profile
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/driver/usart/sync/usart_echo/firmware/src/packs/PIC32CK2051GC01144_DFP/component/evsys.h
-  projectFolder: packs/PIC32CK2051GC01144_DFP/component
+  path: C:\apps\core_apps_pic32ck_sg_gc\apps\driver\usart\sync\usart_echo\firmware\src\packs\CMSIS\CMSIS\Core\Include\tz_context.h
+  projectFolder: packs\CMSIS\CMSIS\Core\Include
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/driver/usart/sync/usart_echo/firmware/src/packs/PIC32CK2051GC01144_DFP/component/fcr.h
-  projectFolder: packs/PIC32CK2051GC01144_DFP/component
+  path: C:\apps\core_apps_pic32ck_sg_gc\apps\driver\usart\sync\usart_echo\firmware\src\config\pic32ck_gc01_cult_freertos\FreeRTOSConfig.h
+  projectFolder: config\pic32ck_gc01_cult_freertos
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/driver/usart/sync/usart_echo/firmware/src/packs/PIC32CK2051GC01144_DFP/component/fcw.h
-  projectFolder: packs/PIC32CK2051GC01144_DFP/component
-  type: Header Files
-- excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/driver/usart/sync/usart_echo/firmware/src/packs/PIC32CK2051GC01144_DFP/component/freqm.h
-  projectFolder: packs/PIC32CK2051GC01144_DFP/component
-  type: Header Files
-- excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/driver/usart/sync/usart_echo/firmware/src/packs/PIC32CK2051GC01144_DFP/component/fuses.h
-  projectFolder: packs/PIC32CK2051GC01144_DFP/component
-  type: Header Files
-- excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/driver/usart/sync/usart_echo/firmware/src/packs/PIC32CK2051GC01144_DFP/component/gclk.h
-  projectFolder: packs/PIC32CK2051GC01144_DFP/component
-  type: Header Files
-- excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/driver/usart/sync/usart_echo/firmware/src/packs/PIC32CK2051GC01144_DFP/component/hmatrix2.h
-  projectFolder: packs/PIC32CK2051GC01144_DFP/component
-  type: Header Files
-- excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/driver/usart/sync/usart_echo/firmware/src/packs/PIC32CK2051GC01144_DFP/component/idau.h
-  projectFolder: packs/PIC32CK2051GC01144_DFP/component
-  type: Header Files
-- excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/driver/usart/sync/usart_echo/firmware/src/packs/PIC32CK2051GC01144_DFP/component/mclk.h
-  projectFolder: packs/PIC32CK2051GC01144_DFP/component
-  type: Header Files
-- excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/driver/usart/sync/usart_echo/firmware/src/packs/PIC32CK2051GC01144_DFP/component/osc32kctrl.h
-  projectFolder: packs/PIC32CK2051GC01144_DFP/component
-  type: Header Files
-- excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/driver/usart/sync/usart_echo/firmware/src/packs/PIC32CK2051GC01144_DFP/component/oscctrl.h
-  projectFolder: packs/PIC32CK2051GC01144_DFP/component
-  type: Header Files
-- excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/driver/usart/sync/usart_echo/firmware/src/packs/PIC32CK2051GC01144_DFP/component/pac.h
-  projectFolder: packs/PIC32CK2051GC01144_DFP/component
-  type: Header Files
-- excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/driver/usart/sync/usart_echo/firmware/src/packs/PIC32CK2051GC01144_DFP/component/pcc.h
-  projectFolder: packs/PIC32CK2051GC01144_DFP/component
-  type: Header Files
-- excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/driver/usart/sync/usart_echo/firmware/src/packs/PIC32CK2051GC01144_DFP/component/pdec.h
-  projectFolder: packs/PIC32CK2051GC01144_DFP/component
-  type: Header Files
-- excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/driver/usart/sync/usart_echo/firmware/src/packs/PIC32CK2051GC01144_DFP/component/pm.h
-  projectFolder: packs/PIC32CK2051GC01144_DFP/component
-  type: Header Files
-- excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/driver/usart/sync/usart_echo/firmware/src/packs/PIC32CK2051GC01144_DFP/component/port.h
-  projectFolder: packs/PIC32CK2051GC01144_DFP/component
-  type: Header Files
-- excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/driver/usart/sync/usart_echo/firmware/src/packs/PIC32CK2051GC01144_DFP/component/prm.h
-  projectFolder: packs/PIC32CK2051GC01144_DFP/component
-  type: Header Files
-- excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/driver/usart/sync/usart_echo/firmware/src/packs/PIC32CK2051GC01144_DFP/component/ptc.h
-  projectFolder: packs/PIC32CK2051GC01144_DFP/component
-  type: Header Files
-- excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/driver/usart/sync/usart_echo/firmware/src/packs/PIC32CK2051GC01144_DFP/component/rstc.h
-  projectFolder: packs/PIC32CK2051GC01144_DFP/component
-  type: Header Files
-- excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/driver/usart/sync/usart_echo/firmware/src/packs/PIC32CK2051GC01144_DFP/component/rtc.h
-  projectFolder: packs/PIC32CK2051GC01144_DFP/component
-  type: Header Files
-- excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/driver/usart/sync/usart_echo/firmware/src/packs/PIC32CK2051GC01144_DFP/component/sdmmc.h
-  projectFolder: packs/PIC32CK2051GC01144_DFP/component
-  type: Header Files
-- excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/driver/usart/sync/usart_echo/firmware/src/packs/PIC32CK2051GC01144_DFP/component/sercom.h
-  projectFolder: packs/PIC32CK2051GC01144_DFP/component
-  type: Header Files
-- excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/driver/usart/sync/usart_echo/firmware/src/packs/PIC32CK2051GC01144_DFP/component/spi_ixs.h
-  projectFolder: packs/PIC32CK2051GC01144_DFP/component
-  type: Header Files
-- excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/driver/usart/sync/usart_echo/firmware/src/packs/PIC32CK2051GC01144_DFP/component/sqi.h
-  projectFolder: packs/PIC32CK2051GC01144_DFP/component
-  type: Header Files
-- excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/driver/usart/sync/usart_echo/firmware/src/packs/PIC32CK2051GC01144_DFP/component/supc.h
-  projectFolder: packs/PIC32CK2051GC01144_DFP/component
-  type: Header Files
-- excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/driver/usart/sync/usart_echo/firmware/src/packs/PIC32CK2051GC01144_DFP/component/tcc.h
-  projectFolder: packs/PIC32CK2051GC01144_DFP/component
-  type: Header Files
-- excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/driver/usart/sync/usart_echo/firmware/src/packs/PIC32CK2051GC01144_DFP/component/tram.h
-  projectFolder: packs/PIC32CK2051GC01144_DFP/component
-  type: Header Files
-- excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/driver/usart/sync/usart_echo/firmware/src/packs/PIC32CK2051GC01144_DFP/component/trng.h
-  projectFolder: packs/PIC32CK2051GC01144_DFP/component
-  type: Header Files
-- excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/driver/usart/sync/usart_echo/firmware/src/packs/PIC32CK2051GC01144_DFP/component/usb.h
-  projectFolder: packs/PIC32CK2051GC01144_DFP/component
-  type: Header Files
-- excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/driver/usart/sync/usart_echo/firmware/src/packs/PIC32CK2051GC01144_DFP/component/usbhs.h
-  projectFolder: packs/PIC32CK2051GC01144_DFP/component
-  type: Header Files
-- excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/driver/usart/sync/usart_echo/firmware/src/packs/PIC32CK2051GC01144_DFP/component/wdt.h
-  projectFolder: packs/PIC32CK2051GC01144_DFP/component
-  type: Header Files
-- excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/driver/usart/sync/usart_echo/firmware/src/packs/PIC32CK2051GC01144_DFP/instance/ac.h
-  projectFolder: packs/PIC32CK2051GC01144_DFP/instance
-  type: Header Files
-- excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/driver/usart/sync/usart_echo/firmware/src/packs/PIC32CK2051GC01144_DFP/instance/adc.h
-  projectFolder: packs/PIC32CK2051GC01144_DFP/instance
-  type: Header Files
-- excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/driver/usart/sync/usart_echo/firmware/src/packs/PIC32CK2051GC01144_DFP/instance/can0.h
-  projectFolder: packs/PIC32CK2051GC01144_DFP/instance
-  type: Header Files
-- excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/driver/usart/sync/usart_echo/firmware/src/packs/PIC32CK2051GC01144_DFP/instance/can1.h
-  projectFolder: packs/PIC32CK2051GC01144_DFP/instance
-  type: Header Files
-- excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/driver/usart/sync/usart_echo/firmware/src/packs/PIC32CK2051GC01144_DFP/instance/ccl.h
-  projectFolder: packs/PIC32CK2051GC01144_DFP/instance
-  type: Header Files
-- excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/driver/usart/sync/usart_echo/firmware/src/packs/PIC32CK2051GC01144_DFP/instance/cmcc.h
-  projectFolder: packs/PIC32CK2051GC01144_DFP/instance
-  type: Header Files
-- excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/driver/usart/sync/usart_echo/firmware/src/packs/PIC32CK2051GC01144_DFP/instance/dma0.h
-  projectFolder: packs/PIC32CK2051GC01144_DFP/instance
-  type: Header Files
-- excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/driver/usart/sync/usart_echo/firmware/src/packs/PIC32CK2051GC01144_DFP/instance/dma1.h
-  projectFolder: packs/PIC32CK2051GC01144_DFP/instance
-  type: Header Files
-- excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/driver/usart/sync/usart_echo/firmware/src/packs/PIC32CK2051GC01144_DFP/instance/dsu.h
-  projectFolder: packs/PIC32CK2051GC01144_DFP/instance
-  type: Header Files
-- excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/driver/usart/sync/usart_echo/firmware/src/packs/PIC32CK2051GC01144_DFP/instance/ebi.h
-  projectFolder: packs/PIC32CK2051GC01144_DFP/instance
-  type: Header Files
-- excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/driver/usart/sync/usart_echo/firmware/src/packs/PIC32CK2051GC01144_DFP/instance/eic.h
-  projectFolder: packs/PIC32CK2051GC01144_DFP/instance
-  type: Header Files
-- excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/driver/usart/sync/usart_echo/firmware/src/packs/PIC32CK2051GC01144_DFP/instance/eth.h
-  projectFolder: packs/PIC32CK2051GC01144_DFP/instance
-  type: Header Files
-- excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/driver/usart/sync/usart_echo/firmware/src/packs/PIC32CK2051GC01144_DFP/instance/evsys.h
-  projectFolder: packs/PIC32CK2051GC01144_DFP/instance
-  type: Header Files
-- excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/driver/usart/sync/usart_echo/firmware/src/packs/PIC32CK2051GC01144_DFP/instance/fcr.h
-  projectFolder: packs/PIC32CK2051GC01144_DFP/instance
-  type: Header Files
-- excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/driver/usart/sync/usart_echo/firmware/src/packs/PIC32CK2051GC01144_DFP/instance/fcw.h
-  projectFolder: packs/PIC32CK2051GC01144_DFP/instance
-  type: Header Files
-- excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/driver/usart/sync/usart_echo/firmware/src/packs/PIC32CK2051GC01144_DFP/instance/freqm.h
-  projectFolder: packs/PIC32CK2051GC01144_DFP/instance
-  type: Header Files
-- excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/driver/usart/sync/usart_echo/firmware/src/packs/PIC32CK2051GC01144_DFP/instance/fuses.h
-  projectFolder: packs/PIC32CK2051GC01144_DFP/instance
-  type: Header Files
-- excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/driver/usart/sync/usart_echo/firmware/src/packs/PIC32CK2051GC01144_DFP/instance/gclk.h
-  projectFolder: packs/PIC32CK2051GC01144_DFP/instance
-  type: Header Files
-- excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/driver/usart/sync/usart_echo/firmware/src/packs/PIC32CK2051GC01144_DFP/instance/hmatrix.h
-  projectFolder: packs/PIC32CK2051GC01144_DFP/instance
-  type: Header Files
-- excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/driver/usart/sync/usart_echo/firmware/src/packs/PIC32CK2051GC01144_DFP/instance/idau.h
-  projectFolder: packs/PIC32CK2051GC01144_DFP/instance
-  type: Header Files
-- excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/driver/usart/sync/usart_echo/firmware/src/packs/PIC32CK2051GC01144_DFP/instance/mclk.h
-  projectFolder: packs/PIC32CK2051GC01144_DFP/instance
-  type: Header Files
-- excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/driver/usart/sync/usart_echo/firmware/src/packs/PIC32CK2051GC01144_DFP/instance/osc32kctrl.h
-  projectFolder: packs/PIC32CK2051GC01144_DFP/instance
-  type: Header Files
-- excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/driver/usart/sync/usart_echo/firmware/src/packs/PIC32CK2051GC01144_DFP/instance/oscctrl.h
-  projectFolder: packs/PIC32CK2051GC01144_DFP/instance
-  type: Header Files
-- excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/driver/usart/sync/usart_echo/firmware/src/packs/PIC32CK2051GC01144_DFP/instance/pac.h
-  projectFolder: packs/PIC32CK2051GC01144_DFP/instance
-  type: Header Files
-- excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/driver/usart/sync/usart_echo/firmware/src/packs/PIC32CK2051GC01144_DFP/instance/pcc.h
-  projectFolder: packs/PIC32CK2051GC01144_DFP/instance
-  type: Header Files
-- excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/driver/usart/sync/usart_echo/firmware/src/packs/PIC32CK2051GC01144_DFP/instance/pdec.h
-  projectFolder: packs/PIC32CK2051GC01144_DFP/instance
-  type: Header Files
-- excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/driver/usart/sync/usart_echo/firmware/src/packs/PIC32CK2051GC01144_DFP/instance/pm.h
-  projectFolder: packs/PIC32CK2051GC01144_DFP/instance
-  type: Header Files
-- excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/driver/usart/sync/usart_echo/firmware/src/packs/PIC32CK2051GC01144_DFP/instance/port.h
-  projectFolder: packs/PIC32CK2051GC01144_DFP/instance
-  type: Header Files
-- excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/driver/usart/sync/usart_echo/firmware/src/packs/PIC32CK2051GC01144_DFP/instance/prm.h
-  projectFolder: packs/PIC32CK2051GC01144_DFP/instance
-  type: Header Files
-- excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/driver/usart/sync/usart_echo/firmware/src/packs/PIC32CK2051GC01144_DFP/instance/ptc.h
-  projectFolder: packs/PIC32CK2051GC01144_DFP/instance
-  type: Header Files
-- excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/driver/usart/sync/usart_echo/firmware/src/packs/PIC32CK2051GC01144_DFP/instance/rstc.h
-  projectFolder: packs/PIC32CK2051GC01144_DFP/instance
-  type: Header Files
-- excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/driver/usart/sync/usart_echo/firmware/src/packs/PIC32CK2051GC01144_DFP/instance/rtc.h
-  projectFolder: packs/PIC32CK2051GC01144_DFP/instance
-  type: Header Files
-- excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/driver/usart/sync/usart_echo/firmware/src/packs/PIC32CK2051GC01144_DFP/instance/sdmmc0.h
-  projectFolder: packs/PIC32CK2051GC01144_DFP/instance
-  type: Header Files
-- excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/driver/usart/sync/usart_echo/firmware/src/packs/PIC32CK2051GC01144_DFP/instance/sdmmc1.h
-  projectFolder: packs/PIC32CK2051GC01144_DFP/instance
-  type: Header Files
-- excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/driver/usart/sync/usart_echo/firmware/src/packs/PIC32CK2051GC01144_DFP/instance/sercom0.h
-  projectFolder: packs/PIC32CK2051GC01144_DFP/instance
-  type: Header Files
-- excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/driver/usart/sync/usart_echo/firmware/src/packs/PIC32CK2051GC01144_DFP/instance/sercom1.h
-  projectFolder: packs/PIC32CK2051GC01144_DFP/instance
-  type: Header Files
-- excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/driver/usart/sync/usart_echo/firmware/src/packs/PIC32CK2051GC01144_DFP/instance/sercom2.h
-  projectFolder: packs/PIC32CK2051GC01144_DFP/instance
-  type: Header Files
-- excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/driver/usart/sync/usart_echo/firmware/src/packs/PIC32CK2051GC01144_DFP/instance/sercom3.h
-  projectFolder: packs/PIC32CK2051GC01144_DFP/instance
-  type: Header Files
-- excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/driver/usart/sync/usart_echo/firmware/src/packs/PIC32CK2051GC01144_DFP/instance/sercom4.h
-  projectFolder: packs/PIC32CK2051GC01144_DFP/instance
-  type: Header Files
-- excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/driver/usart/sync/usart_echo/firmware/src/packs/PIC32CK2051GC01144_DFP/instance/sercom5.h
-  projectFolder: packs/PIC32CK2051GC01144_DFP/instance
-  type: Header Files
-- excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/driver/usart/sync/usart_echo/firmware/src/packs/PIC32CK2051GC01144_DFP/instance/sercom6.h
-  projectFolder: packs/PIC32CK2051GC01144_DFP/instance
-  type: Header Files
-- excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/driver/usart/sync/usart_echo/firmware/src/packs/PIC32CK2051GC01144_DFP/instance/sercom7.h
-  projectFolder: packs/PIC32CK2051GC01144_DFP/instance
-  type: Header Files
-- excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/driver/usart/sync/usart_echo/firmware/src/packs/PIC32CK2051GC01144_DFP/instance/spi_ixs.h
-  projectFolder: packs/PIC32CK2051GC01144_DFP/instance
-  type: Header Files
-- excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/driver/usart/sync/usart_echo/firmware/src/packs/PIC32CK2051GC01144_DFP/instance/sqi.h
-  projectFolder: packs/PIC32CK2051GC01144_DFP/instance
-  type: Header Files
-- excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/driver/usart/sync/usart_echo/firmware/src/packs/PIC32CK2051GC01144_DFP/instance/supc.h
-  projectFolder: packs/PIC32CK2051GC01144_DFP/instance
-  type: Header Files
-- excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/driver/usart/sync/usart_echo/firmware/src/packs/PIC32CK2051GC01144_DFP/instance/tcc0.h
-  projectFolder: packs/PIC32CK2051GC01144_DFP/instance
-  type: Header Files
-- excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/driver/usart/sync/usart_echo/firmware/src/packs/PIC32CK2051GC01144_DFP/instance/tcc1.h
-  projectFolder: packs/PIC32CK2051GC01144_DFP/instance
-  type: Header Files
-- excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/driver/usart/sync/usart_echo/firmware/src/packs/PIC32CK2051GC01144_DFP/instance/tcc2.h
-  projectFolder: packs/PIC32CK2051GC01144_DFP/instance
-  type: Header Files
-- excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/driver/usart/sync/usart_echo/firmware/src/packs/PIC32CK2051GC01144_DFP/instance/tcc3.h
-  projectFolder: packs/PIC32CK2051GC01144_DFP/instance
-  type: Header Files
-- excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/driver/usart/sync/usart_echo/firmware/src/packs/PIC32CK2051GC01144_DFP/instance/tcc4.h
-  projectFolder: packs/PIC32CK2051GC01144_DFP/instance
-  type: Header Files
-- excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/driver/usart/sync/usart_echo/firmware/src/packs/PIC32CK2051GC01144_DFP/instance/tcc5.h
-  projectFolder: packs/PIC32CK2051GC01144_DFP/instance
-  type: Header Files
-- excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/driver/usart/sync/usart_echo/firmware/src/packs/PIC32CK2051GC01144_DFP/instance/tcc6.h
-  projectFolder: packs/PIC32CK2051GC01144_DFP/instance
-  type: Header Files
-- excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/driver/usart/sync/usart_echo/firmware/src/packs/PIC32CK2051GC01144_DFP/instance/tcc7.h
-  projectFolder: packs/PIC32CK2051GC01144_DFP/instance
-  type: Header Files
-- excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/driver/usart/sync/usart_echo/firmware/src/packs/PIC32CK2051GC01144_DFP/instance/tram.h
-  projectFolder: packs/PIC32CK2051GC01144_DFP/instance
-  type: Header Files
-- excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/driver/usart/sync/usart_echo/firmware/src/packs/PIC32CK2051GC01144_DFP/instance/trng.h
-  projectFolder: packs/PIC32CK2051GC01144_DFP/instance
-  type: Header Files
-- excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/driver/usart/sync/usart_echo/firmware/src/packs/PIC32CK2051GC01144_DFP/instance/usb.h
-  projectFolder: packs/PIC32CK2051GC01144_DFP/instance
-  type: Header Files
-- excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/driver/usart/sync/usart_echo/firmware/src/packs/PIC32CK2051GC01144_DFP/instance/usbhs.h
-  projectFolder: packs/PIC32CK2051GC01144_DFP/instance
-  type: Header Files
-- excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/driver/usart/sync/usart_echo/firmware/src/packs/PIC32CK2051GC01144_DFP/instance/wdt.h
-  projectFolder: packs/PIC32CK2051GC01144_DFP/instance
-  type: Header Files
-- excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/driver/usart/sync/usart_echo/firmware/src/packs/PIC32CK2051GC01144_DFP/pic32ck2051gc01144.h
-  projectFolder: packs/PIC32CK2051GC01144_DFP
-  type: Header Files
-- excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/driver/usart/sync/usart_echo/firmware/src/packs/PIC32CK2051GC01144_DFP/pio/pic32ck2051gc01144.h
-  projectFolder: packs/PIC32CK2051GC01144_DFP/pio
-  type: Header Files
-- excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/driver/usart/sync/usart_echo/firmware/src/packs/CMSIS/CMSIS/Core/Include/cmsis_version.h
-  projectFolder: packs/CMSIS/CMSIS/Core/Include
-  type: Header Files
-- excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/driver/usart/sync/usart_echo/firmware/src/packs/CMSIS/CMSIS/Core/Include/cmsis_compiler.h
-  projectFolder: packs/CMSIS/CMSIS/Core/Include
-  type: Header Files
-- excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/driver/usart/sync/usart_echo/firmware/src/packs/CMSIS/CMSIS/Core/Include/cmsis_iccarm.h
-  projectFolder: packs/CMSIS/CMSIS/Core/Include
-  type: Header Files
-- excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/driver/usart/sync/usart_echo/firmware/src/packs/CMSIS/CMSIS/Core/Include/cmsis_gcc.h
-  projectFolder: packs/CMSIS/CMSIS/Core/Include
-  type: Header Files
-- excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/driver/usart/sync/usart_echo/firmware/src/packs/CMSIS/CMSIS/Core/Include/cmsis_armcc.h
-  projectFolder: packs/CMSIS/CMSIS/Core/Include
-  type: Header Files
-- excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/driver/usart/sync/usart_echo/firmware/src/packs/CMSIS/CMSIS/Core/Include/cmsis_armclang.h
-  projectFolder: packs/CMSIS/CMSIS/Core/Include
-  type: Header Files
-- excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/driver/usart/sync/usart_echo/firmware/src/packs/CMSIS/CMSIS/Core/Include/cmsis_armclang_ltm.h
-  projectFolder: packs/CMSIS/CMSIS/Core/Include
-  type: Header Files
-- excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/driver/usart/sync/usart_echo/firmware/src/packs/CMSIS/CMSIS/Core/Include/core_cm33.h
-  projectFolder: packs/CMSIS/CMSIS/Core/Include
-  type: Header Files
-- excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/driver/usart/sync/usart_echo/firmware/src/packs/CMSIS/CMSIS/Core/Include/mpu_armv8.h
-  projectFolder: packs/CMSIS/CMSIS/Core/Include
-  type: Header Files
-- excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/driver/usart/sync/usart_echo/firmware/src/packs/CMSIS/CMSIS/Core/Include/cachel1_armv7.h
-  projectFolder: packs/CMSIS/CMSIS/Core/Include
-  type: Header Files
-- excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/driver/usart/sync/usart_echo/firmware/src/packs/CMSIS/CMSIS/Core/Include/tz_context.h
-  projectFolder: packs/CMSIS/CMSIS/Core/Include
-  type: Header Files
-- excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/driver/usart/sync/usart_echo/firmware/src/config/pic32ck_gc01_cult_freertos/FreeRTOSConfig.h
-  projectFolder: config/pic32ck_gc01_cult_freertos
-  type: Header Files
-- excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/driver/usart/sync/usart_echo/firmware/src/config/pic32ck_gc01_cult_freertos/freertos_hooks.c
-  projectFolder: config/pic32ck_gc01_cult_freertos
+  path: C:\apps\core_apps_pic32ck_sg_gc\apps\driver\usart\sync\usart_echo\firmware\src\config\pic32ck_gc01_cult_freertos\freertos_hooks.c
+  projectFolder: config\pic32ck_gc01_cult_freertos
   type: Source Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/driver/usart/sync/usart_echo/firmware/src/third_party/rtos/FreeRTOS/Source/croutine.c
-  projectFolder: FreeRTOS/Source
+  path: C:\apps\core_apps_pic32ck_sg_gc\apps\driver\usart\sync\usart_echo\firmware\src\third_party\rtos\FreeRTOS\Source\croutine.c
+  projectFolder: FreeRTOS\Source
   type: Source Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/driver/usart/sync/usart_echo/firmware/src/third_party/rtos/FreeRTOS/Source/list.c
-  projectFolder: FreeRTOS/Source
+  path: C:\apps\core_apps_pic32ck_sg_gc\apps\driver\usart\sync\usart_echo\firmware\src\third_party\rtos\FreeRTOS\Source\list.c
+  projectFolder: FreeRTOS\Source
   type: Source Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/driver/usart/sync/usart_echo/firmware/src/third_party/rtos/FreeRTOS/Source/queue.c
-  projectFolder: FreeRTOS/Source
+  path: C:\apps\core_apps_pic32ck_sg_gc\apps\driver\usart\sync\usart_echo\firmware\src\third_party\rtos\FreeRTOS\Source\queue.c
+  projectFolder: FreeRTOS\Source
   type: Source Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/driver/usart/sync/usart_echo/firmware/src/third_party/rtos/FreeRTOS/Source/FreeRTOS_tasks.c
-  projectFolder: FreeRTOS/Source
+  path: C:\apps\core_apps_pic32ck_sg_gc\apps\driver\usart\sync\usart_echo\firmware\src\third_party\rtos\FreeRTOS\Source\FreeRTOS_tasks.c
+  projectFolder: FreeRTOS\Source
   type: Source Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/driver/usart/sync/usart_echo/firmware/src/third_party/rtos/FreeRTOS/Source/timers.c
-  projectFolder: FreeRTOS/Source
+  path: C:\apps\core_apps_pic32ck_sg_gc\apps\driver\usart\sync\usart_echo\firmware\src\third_party\rtos\FreeRTOS\Source\timers.c
+  projectFolder: FreeRTOS\Source
   type: Source Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/driver/usart/sync/usart_echo/firmware/src/third_party/rtos/FreeRTOS/Source/event_groups.c
-  projectFolder: FreeRTOS/Source
+  path: C:\apps\core_apps_pic32ck_sg_gc\apps\driver\usart\sync\usart_echo\firmware\src\third_party\rtos\FreeRTOS\Source\event_groups.c
+  projectFolder: FreeRTOS\Source
   type: Source Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/driver/usart/sync/usart_echo/firmware/src/third_party/rtos/FreeRTOS/Source/stream_buffer.c
-  projectFolder: FreeRTOS/Source
+  path: C:\apps\core_apps_pic32ck_sg_gc\apps\driver\usart\sync\usart_echo\firmware\src\third_party\rtos\FreeRTOS\Source\stream_buffer.c
+  projectFolder: FreeRTOS\Source
   type: Source Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/driver/usart/sync/usart_echo/firmware/src/third_party/rtos/FreeRTOS/Source/portable/MemMang/heap_1.c
-  projectFolder: FreeRTOS/Source/portable/MemMang
+  path: C:\apps\core_apps_pic32ck_sg_gc\apps\driver\usart\sync\usart_echo\firmware\src\third_party\rtos\FreeRTOS\Source\portable\MemMang\heap_1.c
+  projectFolder: FreeRTOS\Source\portable\MemMang
   type: Source Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/driver/usart/sync/usart_echo/firmware/src/third_party/rtos/FreeRTOS/Source/include/croutine.h
-  projectFolder: FreeRTOS/Source/include
+  path: C:\apps\core_apps_pic32ck_sg_gc\apps\driver\usart\sync\usart_echo\firmware\src\third_party\rtos\FreeRTOS\Source\include\croutine.h
+  projectFolder: FreeRTOS\Source\include
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/driver/usart/sync/usart_echo/firmware/src/third_party/rtos/FreeRTOS/Source/include/event_groups.h
-  projectFolder: FreeRTOS/Source/include
+  path: C:\apps\core_apps_pic32ck_sg_gc\apps\driver\usart\sync\usart_echo\firmware\src\third_party\rtos\FreeRTOS\Source\include\event_groups.h
+  projectFolder: FreeRTOS\Source\include
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/driver/usart/sync/usart_echo/firmware/src/third_party/rtos/FreeRTOS/Source/include/FreeRTOS.h
-  projectFolder: FreeRTOS/Source/include
+  path: C:\apps\core_apps_pic32ck_sg_gc\apps\driver\usart\sync\usart_echo\firmware\src\third_party\rtos\FreeRTOS\Source\include\FreeRTOS.h
+  projectFolder: FreeRTOS\Source\include
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/driver/usart/sync/usart_echo/firmware/src/third_party/rtos/FreeRTOS/Source/include/list.h
-  projectFolder: FreeRTOS/Source/include
+  path: C:\apps\core_apps_pic32ck_sg_gc\apps\driver\usart\sync\usart_echo\firmware\src\third_party\rtos\FreeRTOS\Source\include\list.h
+  projectFolder: FreeRTOS\Source\include
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/driver/usart/sync/usart_echo/firmware/src/third_party/rtos/FreeRTOS/Source/include/mpu_wrappers.h
-  projectFolder: FreeRTOS/Source/include
+  path: C:\apps\core_apps_pic32ck_sg_gc\apps\driver\usart\sync\usart_echo\firmware\src\third_party\rtos\FreeRTOS\Source\include\mpu_wrappers.h
+  projectFolder: FreeRTOS\Source\include
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/driver/usart/sync/usart_echo/firmware/src/third_party/rtos/FreeRTOS/Source/include/portable.h
-  projectFolder: FreeRTOS/Source/include
+  path: C:\apps\core_apps_pic32ck_sg_gc\apps\driver\usart\sync\usart_echo\firmware\src\third_party\rtos\FreeRTOS\Source\include\portable.h
+  projectFolder: FreeRTOS\Source\include
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/driver/usart/sync/usart_echo/firmware/src/third_party/rtos/FreeRTOS/Source/include/projdefs.h
-  projectFolder: FreeRTOS/Source/include
+  path: C:\apps\core_apps_pic32ck_sg_gc\apps\driver\usart\sync\usart_echo\firmware\src\third_party\rtos\FreeRTOS\Source\include\projdefs.h
+  projectFolder: FreeRTOS\Source\include
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/driver/usart/sync/usart_echo/firmware/src/third_party/rtos/FreeRTOS/Source/include/queue.h
-  projectFolder: FreeRTOS/Source/include
+  path: C:\apps\core_apps_pic32ck_sg_gc\apps\driver\usart\sync\usart_echo\firmware\src\third_party\rtos\FreeRTOS\Source\include\queue.h
+  projectFolder: FreeRTOS\Source\include
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/driver/usart/sync/usart_echo/firmware/src/third_party/rtos/FreeRTOS/Source/include/semphr.h
-  projectFolder: FreeRTOS/Source/include
+  path: C:\apps\core_apps_pic32ck_sg_gc\apps\driver\usart\sync\usart_echo\firmware\src\third_party\rtos\FreeRTOS\Source\include\semphr.h
+  projectFolder: FreeRTOS\Source\include
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/driver/usart/sync/usart_echo/firmware/src/third_party/rtos/FreeRTOS/Source/include/stack_macros.h
-  projectFolder: FreeRTOS/Source/include
+  path: C:\apps\core_apps_pic32ck_sg_gc\apps\driver\usart\sync\usart_echo\firmware\src\third_party\rtos\FreeRTOS\Source\include\stack_macros.h
+  projectFolder: FreeRTOS\Source\include
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/driver/usart/sync/usart_echo/firmware/src/third_party/rtos/FreeRTOS/Source/include/deprecated_definitions.h
-  projectFolder: FreeRTOS/Source/include
+  path: C:\apps\core_apps_pic32ck_sg_gc\apps\driver\usart\sync\usart_echo\firmware\src\third_party\rtos\FreeRTOS\Source\include\deprecated_definitions.h
+  projectFolder: FreeRTOS\Source\include
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/driver/usart/sync/usart_echo/firmware/src/third_party/rtos/FreeRTOS/Source/include/task.h
-  projectFolder: FreeRTOS/Source/include
+  path: C:\apps\core_apps_pic32ck_sg_gc\apps\driver\usart\sync\usart_echo\firmware\src\third_party\rtos\FreeRTOS\Source\include\task.h
+  projectFolder: FreeRTOS\Source\include
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/driver/usart/sync/usart_echo/firmware/src/third_party/rtos/FreeRTOS/Source/include/timers.h
-  projectFolder: FreeRTOS/Source/include
+  path: C:\apps\core_apps_pic32ck_sg_gc\apps\driver\usart\sync\usart_echo\firmware\src\third_party\rtos\FreeRTOS\Source\include\timers.h
+  projectFolder: FreeRTOS\Source\include
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/driver/usart/sync/usart_echo/firmware/src/third_party/rtos/FreeRTOS/Source/include/mpu_prototypes.h
-  projectFolder: FreeRTOS/Source/include
+  path: C:\apps\core_apps_pic32ck_sg_gc\apps\driver\usart\sync\usart_echo\firmware\src\third_party\rtos\FreeRTOS\Source\include\mpu_prototypes.h
+  projectFolder: FreeRTOS\Source\include
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/driver/usart/sync/usart_echo/firmware/src/third_party/rtos/FreeRTOS/Source/include/mpu_syscall_numbers.h
-  projectFolder: FreeRTOS/Source/include
+  path: C:\apps\core_apps_pic32ck_sg_gc\apps\driver\usart\sync\usart_echo\firmware\src\third_party\rtos\FreeRTOS\Source\include\mpu_syscall_numbers.h
+  projectFolder: FreeRTOS\Source\include
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/driver/usart/sync/usart_echo/firmware/src/third_party/rtos/FreeRTOS/Source/include/stream_buffer.h
-  projectFolder: FreeRTOS/Source/include
+  path: C:\apps\core_apps_pic32ck_sg_gc\apps\driver\usart\sync\usart_echo\firmware\src\third_party\rtos\FreeRTOS\Source\include\stream_buffer.h
+  projectFolder: FreeRTOS\Source\include
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/driver/usart/sync/usart_echo/firmware/src/third_party/rtos/FreeRTOS/Source/include/message_buffer.h
-  projectFolder: FreeRTOS/Source/include
+  path: C:\apps\core_apps_pic32ck_sg_gc\apps\driver\usart\sync\usart_echo\firmware\src\third_party\rtos\FreeRTOS\Source\include\message_buffer.h
+  projectFolder: FreeRTOS\Source\include
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/driver/usart/sync/usart_echo/firmware/src/third_party/rtos/FreeRTOS/Source/portable/GCC/ARM_CM33_NTZ/non_secure/port.c
-  projectFolder: FreeRTOS/Source/portable/GCC/ARM_CM33_NTZ/non_secure
+  path: C:\apps\core_apps_pic32ck_sg_gc\apps\driver\usart\sync\usart_echo\firmware\src\third_party\rtos\FreeRTOS\Source\portable\GCC\ARM_CM33_NTZ\non_secure\port.c
+  projectFolder: FreeRTOS\Source\portable\GCC\ARM_CM33_NTZ\non_secure
   type: Source Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/driver/usart/sync/usart_echo/firmware/src/third_party/rtos/FreeRTOS/Source/portable/GCC/ARM_CM33_NTZ/non_secure/portasm.c
-  projectFolder: FreeRTOS/Source/portable/GCC/ARM_CM33_NTZ/non_secure
+  path: C:\apps\core_apps_pic32ck_sg_gc\apps\driver\usart\sync\usart_echo\firmware\src\third_party\rtos\FreeRTOS\Source\portable\GCC\ARM_CM33_NTZ\non_secure\portasm.c
+  projectFolder: FreeRTOS\Source\portable\GCC\ARM_CM33_NTZ\non_secure
   type: Source Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/driver/usart/sync/usart_echo/firmware/src/third_party/rtos/FreeRTOS/Source/portable/GCC/ARM_CM33_NTZ/non_secure/portasm.h
-  projectFolder: FreeRTOS/Source/portable/GCC/ARM_CM33_NTZ/non_secure
+  path: C:\apps\core_apps_pic32ck_sg_gc\apps\driver\usart\sync\usart_echo\firmware\src\third_party\rtos\FreeRTOS\Source\portable\GCC\ARM_CM33_NTZ\non_secure\portasm.h
+  projectFolder: FreeRTOS\Source\portable\GCC\ARM_CM33_NTZ\non_secure
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/driver/usart/sync/usart_echo/firmware/src/third_party/rtos/FreeRTOS/Source/portable/GCC/ARM_CM33_NTZ/non_secure/portmacro.h
-  projectFolder: FreeRTOS/Source/portable/GCC/ARM_CM33_NTZ/non_secure
+  path: C:\apps\core_apps_pic32ck_sg_gc\apps\driver\usart\sync\usart_echo\firmware\src\third_party\rtos\FreeRTOS\Source\portable\GCC\ARM_CM33_NTZ\non_secure\portmacro.h
+  projectFolder: FreeRTOS\Source\portable\GCC\ARM_CM33_NTZ\non_secure
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/driver/usart/sync/usart_echo/firmware/src/third_party/rtos/FreeRTOS/Source/portable/GCC/ARM_CM33_NTZ/non_secure/portmacrocommon.h
-  projectFolder: FreeRTOS/Source/portable/GCC/ARM_CM33_NTZ/non_secure
+  path: C:\apps\core_apps_pic32ck_sg_gc\apps\driver\usart\sync\usart_echo\firmware\src\third_party\rtos\FreeRTOS\Source\portable\GCC\ARM_CM33_NTZ\non_secure\portmacrocommon.h
+  projectFolder: FreeRTOS\Source\portable\GCC\ARM_CM33_NTZ\non_secure
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/driver/usart/sync/usart_echo/firmware/src/config/pic32ck_gc01_cult_freertos/driver/usart/drv_usart.h
-  projectFolder: config/pic32ck_gc01_cult_freertos/driver/usart
+  path: C:\apps\core_apps_pic32ck_sg_gc\apps\driver\usart\sync\usart_echo\firmware\src\config\pic32ck_gc01_cult_freertos\driver\usart\drv_usart.h
+  projectFolder: config\pic32ck_gc01_cult_freertos\driver\usart
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/driver/usart/sync/usart_echo/firmware/src/config/pic32ck_gc01_cult_freertos/driver/driver.h
-  projectFolder: config/pic32ck_gc01_cult_freertos/driver
+  path: C:\apps\core_apps_pic32ck_sg_gc\apps\driver\usart\sync\usart_echo\firmware\src\config\pic32ck_gc01_cult_freertos\driver\driver.h
+  projectFolder: config\pic32ck_gc01_cult_freertos\driver
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/driver/usart/sync/usart_echo/firmware/src/config/pic32ck_gc01_cult_freertos/driver/driver_common.h
-  projectFolder: config/pic32ck_gc01_cult_freertos/driver
+  path: C:\apps\core_apps_pic32ck_sg_gc\apps\driver\usart\sync\usart_echo\firmware\src\config\pic32ck_gc01_cult_freertos\driver\driver_common.h
+  projectFolder: config\pic32ck_gc01_cult_freertos\driver
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/driver/usart/sync/usart_echo/firmware/src/config/pic32ck_gc01_cult_freertos/system/system.h
-  projectFolder: config/pic32ck_gc01_cult_freertos/system
+  path: C:\apps\core_apps_pic32ck_sg_gc\apps\driver\usart\sync\usart_echo\firmware\src\config\pic32ck_gc01_cult_freertos\system\system.h
+  projectFolder: config\pic32ck_gc01_cult_freertos\system
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/driver/usart/sync/usart_echo/firmware/src/config/pic32ck_gc01_cult_freertos/system/system_common.h
-  projectFolder: config/pic32ck_gc01_cult_freertos/system
+  path: C:\apps\core_apps_pic32ck_sg_gc\apps\driver\usart\sync\usart_echo\firmware\src\config\pic32ck_gc01_cult_freertos\system\system_common.h
+  projectFolder: config\pic32ck_gc01_cult_freertos\system
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/driver/usart/sync/usart_echo/firmware/src/config/pic32ck_gc01_cult_freertos/system/system_module.h
-  projectFolder: config/pic32ck_gc01_cult_freertos/system
+  path: C:\apps\core_apps_pic32ck_sg_gc\apps\driver\usart\sync\usart_echo\firmware\src\config\pic32ck_gc01_cult_freertos\system\system_module.h
+  projectFolder: config\pic32ck_gc01_cult_freertos\system
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/driver/usart/sync/usart_echo/firmware/src/config/pic32ck_gc01_cult_freertos/system/int/sys_int.h
-  projectFolder: config/pic32ck_gc01_cult_freertos/system/int
+  path: C:\apps\core_apps_pic32ck_sg_gc\apps\driver\usart\sync\usart_echo\firmware\src\config\pic32ck_gc01_cult_freertos\system\int\sys_int.h
+  projectFolder: config\pic32ck_gc01_cult_freertos\system\int
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/driver/usart/sync/usart_echo/firmware/src/config/pic32ck_gc01_cult_freertos/system/int/sys_int_mapping.h
-  projectFolder: config/pic32ck_gc01_cult_freertos/system/int
+  path: C:\apps\core_apps_pic32ck_sg_gc\apps\driver\usart\sync\usart_echo\firmware\src\config\pic32ck_gc01_cult_freertos\system\int\sys_int_mapping.h
+  projectFolder: config\pic32ck_gc01_cult_freertos\system\int
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/driver/usart/sync/usart_echo/firmware/src/config/pic32ck_gc01_cult_freertos/system/int/src/sys_int.c
-  projectFolder: config/pic32ck_gc01_cult_freertos/system/int
+  path: C:\apps\core_apps_pic32ck_sg_gc\apps\driver\usart\sync\usart_echo\firmware\src\config\pic32ck_gc01_cult_freertos\system\int\src\sys_int.c
+  projectFolder: config\pic32ck_gc01_cult_freertos\system\int
   type: Source Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/driver/usart/sync/usart_echo/firmware/src/config/pic32ck_gc01_cult_freertos/system/cache/sys_cache.h
-  projectFolder: config/pic32ck_gc01_cult_freertos/system/cache
+  path: C:\apps\core_apps_pic32ck_sg_gc\apps\driver\usart\sync\usart_echo\firmware\src\config\pic32ck_gc01_cult_freertos\system\cache\sys_cache.h
+  projectFolder: config\pic32ck_gc01_cult_freertos\system\cache
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/driver/usart/sync/usart_echo/firmware/src/config/pic32ck_gc01_cult_freertos/system/cache/sys_cache.c
-  projectFolder: config/pic32ck_gc01_cult_freertos/system/cache
+  path: C:\apps\core_apps_pic32ck_sg_gc\apps\driver\usart\sync\usart_echo\firmware\src\config\pic32ck_gc01_cult_freertos\system\cache\sys_cache.c
+  projectFolder: config\pic32ck_gc01_cult_freertos\system\cache
   type: Source Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/driver/usart/sync/usart_echo/firmware/src/config/pic32ck_gc01_cult_freertos/osal/osal.h
-  projectFolder: config/pic32ck_gc01_cult_freertos/osal
+  path: C:\apps\core_apps_pic32ck_sg_gc\apps\driver\usart\sync\usart_echo\firmware\src\config\pic32ck_gc01_cult_freertos\osal\osal.h
+  projectFolder: config\pic32ck_gc01_cult_freertos\osal
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/driver/usart/sync/usart_echo/firmware/src/config/pic32ck_gc01_cult_freertos/osal/osal_definitions.h
-  projectFolder: config/pic32ck_gc01_cult_freertos/osal
+  path: C:\apps\core_apps_pic32ck_sg_gc\apps\driver\usart\sync\usart_echo\firmware\src\config\pic32ck_gc01_cult_freertos\osal\osal_definitions.h
+  projectFolder: config\pic32ck_gc01_cult_freertos\osal
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/driver/usart/sync/usart_echo/firmware/src/config/pic32ck_gc01_cult_freertos/osal/osal_freertos.h
-  projectFolder: config/pic32ck_gc01_cult_freertos/osal
+  path: C:\apps\core_apps_pic32ck_sg_gc\apps\driver\usart\sync\usart_echo\firmware\src\config\pic32ck_gc01_cult_freertos\osal\osal_freertos.h
+  projectFolder: config\pic32ck_gc01_cult_freertos\osal
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/driver/usart/sync/usart_echo/firmware/src/config/pic32ck_gc01_cult_freertos/osal/osal_freertos.c
-  projectFolder: config/pic32ck_gc01_cult_freertos/osal
+  path: C:\apps\core_apps_pic32ck_sg_gc\apps\driver\usart\sync\usart_echo\firmware\src\config\pic32ck_gc01_cult_freertos\osal\osal_freertos.c
+  projectFolder: config\pic32ck_gc01_cult_freertos\osal
   type: Source Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/driver/usart/sync/usart_echo/firmware/src/app_usart_echo.c
+  path: C:\apps\core_apps_pic32ck_sg_gc\apps\driver\usart\sync\usart_echo\firmware\src\app_usart_echo.c
   projectFolder: ''
   type: Source Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/driver/usart/sync/usart_echo/firmware/src/app_usart_echo.h
+  path: C:\apps\core_apps_pic32ck_sg_gc\apps\driver\usart\sync\usart_echo\firmware\src\app_usart_echo.h
   projectFolder: ''
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/driver/usart/sync/usart_echo/firmware/src/config/pic32ck_gc01_cult_freertos/user.h
-  projectFolder: config/pic32ck_gc01_cult_freertos
+  path: C:\apps\core_apps_pic32ck_sg_gc\apps\driver\usart\sync\usart_echo\firmware\src\config\pic32ck_gc01_cult_freertos\user.h
+  projectFolder: config\pic32ck_gc01_cult_freertos
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/driver/usart/sync/usart_echo/firmware/src/config/pic32ck_gc01_cult_freertos/configuration.h
-  projectFolder: config/pic32ck_gc01_cult_freertos
+  path: C:\apps\core_apps_pic32ck_sg_gc\apps\driver\usart\sync\usart_echo\firmware\src\config\pic32ck_gc01_cult_freertos\configuration.h
+  projectFolder: config\pic32ck_gc01_cult_freertos
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/driver/usart/sync/usart_echo/firmware/src/config/pic32ck_gc01_cult_freertos/sys_tasks.h
-  projectFolder: config/pic32ck_gc01_cult_freertos
+  path: C:\apps\core_apps_pic32ck_sg_gc\apps\driver\usart\sync\usart_echo\firmware\src\config\pic32ck_gc01_cult_freertos\sys_tasks.h
+  projectFolder: config\pic32ck_gc01_cult_freertos
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/driver/usart/sync/usart_echo/firmware/src/config/pic32ck_gc01_cult_freertos/tasks.c
-  projectFolder: config/pic32ck_gc01_cult_freertos
+  path: C:\apps\core_apps_pic32ck_sg_gc\apps\driver\usart\sync\usart_echo\firmware\src\config\pic32ck_gc01_cult_freertos\tasks.c
+  projectFolder: config\pic32ck_gc01_cult_freertos
   type: Source Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_pic32ck_sg_gc/apps/driver/usart/sync/usart_echo/firmware/src/config/pic32ck_gc01_cult_freertos/system/debug/sys_debug.h
-  projectFolder: config/pic32ck_gc01_cult_freertos/system/debug
+  path: C:\apps\core_apps_pic32ck_sg_gc\apps\driver\usart\sync\usart_echo\firmware\src\config\pic32ck_gc01_cult_freertos\system\debug\sys_debug.h
+  projectFolder: config\pic32ck_gc01_cult_freertos\system\debug
   type: Header Files
 generatedSettings:
 - category: C32-LD
@@ -834,5 +850,8 @@ generatedSettings:
 - category: C32CPP
   key: extra-include-directories
   value: ../src/third_party/rtos/FreeRTOS/Source/portable/GCC/ARM_CM33_NTZ/non_secure;../src/third_party/rtos/FreeRTOS/Source/include;
-removedFiles: [
-  ]
+removedFiles:
+- C:\apps\core_apps_pic32ck_sg_gc\apps\driver\usart\sync\usart_echo\firmware\src\packs\CMSIS\CMSIS\Core\Include\cachel1_armv7.h
+- C:\apps\core_apps_pic32ck_sg_gc\apps\driver\usart\sync\usart_echo\firmware\src\packs\CMSIS\CMSIS\Core\Include\cmsis_armcc.h
+- C:\apps\core_apps_pic32ck_sg_gc\apps\driver\usart\sync\usart_echo\firmware\src\packs\CMSIS\CMSIS\Core\Include\cmsis_armclang_ltm.h
+- C:\apps\core_apps_pic32ck_sg_gc\apps\driver\usart\sync\usart_echo\firmware\src\packs\CMSIS\CMSIS\Core\Include\mpu_armv8.h

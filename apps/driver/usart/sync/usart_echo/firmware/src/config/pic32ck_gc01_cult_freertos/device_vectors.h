@@ -216,10 +216,10 @@ typedef struct H3DeviceVectorsTag
   pfn_handler_t pfnTCC7_MC1_Handler;                /* 131 TCC Match/Compare 1 */
   pfn_handler_t pfnADC_GLOBAL_Handler;              /* 132 ADC Global Interrupt */
   pfn_handler_t pfnADC_CORE1_Handler;               /* 133 ADC Core 1 Interrupt */
-  pfn_handler_t pfnReserved2_Handler;               /* 134 ADC Unused/Reserved */
-  pfn_handler_t pfnReserved3_Handler;               /* 135 ADC Unused/Reserved */
-  pfn_handler_t pfnReserved4_Handler;               /* 136 ADC Unused/Reserved */
-  pfn_handler_t pfnReserved5_Handler;               /* 137 ADC Unused/Reserved */
+  pfn_handler_t pfnReserved134;
+  pfn_handler_t pfnReserved135;
+  pfn_handler_t pfnReserved136;
+  pfn_handler_t pfnReserved137;
   pfn_handler_t pfnAC_Handler;                      /* 138 Analog Comparator Interrupt */
   pfn_handler_t pfnPTC_Handler;                     /* 139 Peripheral Touch Controller */
   pfn_handler_t pfnSPI_IXS_Handler;                 /* 140 Audio SPI Interrupt */
@@ -237,9 +237,6 @@ typedef struct H3DeviceVectorsTag
   pfn_handler_t pfnUSB_TRCPT0_Handler;              /* 152 USB TRCPT0 Interrupt */
   pfn_handler_t pfnUSB_TRCPT1_Handler;              /* 153 USB TRCPT1 Interrupt */
   pfn_handler_t pfnUSBHS_Handler;                   /* 154 High Speed USB Interrupt */
-  pfn_handler_t pfnHSM_ERROR_Handler;               /* 155 Hardware Security Module Error Interrupt */
-  pfn_handler_t pfnHSM_TXINT_Handler;               /* 156 Hardware Security Module Transmit Interrupt */
-  pfn_handler_t pfnHSM_RXINT_Handler;               /* 157 Hardware Security Module Receive Interrupt */
 }H3DeviceVectors;
 
 #endif //DEVICE_VECTORS_H
