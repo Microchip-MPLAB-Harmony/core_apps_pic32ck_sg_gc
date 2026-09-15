@@ -353,8 +353,8 @@ static bool DRV_MEMORY_UpdateGeometry( DRV_MEMORY_OBJECT *dObj )
 
     return true;
 }
-/* MISRA C-2012 Rule 16.1, 16.3, 16.5, 16.6 deviated below.Deviation record ID -
-  H3_MISRAC_2012_R_16_1_DR_1, H3_MISRAC_2012_R_16_3_DR_1, H3_MISRAC_2012_R_16_5_DR_1 & H3_MISRAC_2012_R_16_6_DR_1*/
+/* MISRA C-2023 Rule 16.1, 16.3, 16.5, 16.6 deviated below.Deviation record ID -
+  H3_MISRAC_2023_R_16_1_DR_1, H3_MISRAC_2023_R_16_3_DR_1, H3_MISRAC_2023_R_16_5_DR_1 & H3_MISRAC_2023_R_16_6_DR_1*/
 
 static MEMORY_DEVICE_TRANSFER_STATUS DRV_MEMORY_HandleRead
 (
@@ -731,8 +731,8 @@ static void DRV_MEMORY_SetupXfer
 // *****************************************************************************
 // *****************************************************************************
 
-/* MISRA C-2012 Rule 11.1, 11.3 and 11.8 deviated below.
-Deviation record ID -  H3_MISRAC_2012_R_11_1_DR_1, H3_MISRAC_2012_R_11_3_DR_1 & H3_MISRAC_2012_R_11_8_DR_1 */
+/* MISRA C-2023 Rule 11.1, 11.3 and 11.8 deviated below.
+Deviation record ID -  H3_MISRAC_2023_R_11_1_DR_1, H3_MISRAC_2023_R_11_3_DR_1 & H3_MISRAC_2023_R_11_8_DR_1 */
 SYS_MODULE_OBJ DRV_MEMORY_Initialize
 (
     const SYS_MODULE_INDEX drvIndex,

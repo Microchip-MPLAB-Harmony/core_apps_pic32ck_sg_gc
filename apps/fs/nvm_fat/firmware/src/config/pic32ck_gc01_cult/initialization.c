@@ -97,8 +97,6 @@
 #pragma config FUSES_USERCFG1_FUCFG2_BRCFGUDSSMOR_BOR_TRIP = 0x3U
 #pragma config FUSES_USERCFG1_FUCFG3_HYST_BOR_VDDIO = SET
 #pragma config FUSES_USERCFG1_FUCFG3_BOR_TRIP_VDDIO = 0x3U
-#pragma config FUSES_USERCFG1_FUCFG3_HYST_BOR_VDDIOB = SET
-#pragma config FUSES_USERCFG1_FUCFG3_BOR_TRIP_VDDIOB = 0x3U
 #pragma config FUSES_USERCFG1_FUCFG3_HYST_BOR_VDDA = SET
 #pragma config FUSES_USERCFG1_FUCFG3_BOR_TRIP_VDDA = 0x3U
 #pragma config FUSES_USERCFG1_FUCFG3_HYST_BOR_VDDREG = SET
@@ -228,8 +226,6 @@
 #pragma config FUSES_USERCFG2_FUCFG2_BRCFGUDSSMOR_BOR_TRIP = 0x3U
 #pragma config FUSES_USERCFG2_FUCFG3_HYST_BOR_VDDIO = SET
 #pragma config FUSES_USERCFG2_FUCFG3_BOR_TRIP_VDDIO = 0x3U
-#pragma config FUSES_USERCFG2_FUCFG3_HYST_BOR_VDDIOB = SET
-#pragma config FUSES_USERCFG2_FUCFG3_BOR_TRIP_VDDIOB = 0x3U
 #pragma config FUSES_USERCFG2_FUCFG3_HYST_BOR_VDDA = SET
 #pragma config FUSES_USERCFG2_FUCFG3_BOR_TRIP_VDDA = 0x3U
 #pragma config FUSES_USERCFG2_FUCFG3_HYST_BOR_VDDREG = SET
@@ -325,10 +321,10 @@
 // *****************************************************************************
 // *****************************************************************************
 /* Following MISRA-C rules are deviated in the below code block */
-/* MISRA C-2012 Rule 7.2 - Deviation record ID - H3_MISRAC_2012_R_7_2_DR_1 */
-/* MISRA C-2012 Rule 11.1 - Deviation record ID - H3_MISRAC_2012_R_11_1_DR_1 */
-/* MISRA C-2012 Rule 11.3 - Deviation record ID - H3_MISRAC_2012_R_11_3_DR_1 */
-/* MISRA C-2012 Rule 11.8 - Deviation record ID - H3_MISRAC_2012_R_11_8_DR_1 */
+/* MISRA C-2023 Rule 7.2 - Deviation record ID - H3_MISRAC_2023_R_7_2_DR_1 */
+/* MISRA C-2023 Rule 11.1 - Deviation record ID - H3_MISRAC_2023_R_11_1_DR_1 */
+/* MISRA C-2023 Rule 11.3 - Deviation record ID - H3_MISRAC_2023_R_11_3_DR_1 */
+/* MISRA C-2023 Rule 11.8 - Deviation record ID - H3_MISRAC_2023_R_11_8_DR_1 */
 // <editor-fold defaultstate="collapsed" desc="DRV_MEMORY Instance 0 Initialization Data">
 
 static uint8_t gDrvMemory0EraseBuffer[FCW_ERASE_BUFFER_SIZE] CACHE_ALIGN;
@@ -453,7 +449,7 @@ static const SYS_FS_REGISTRATION_TABLE sysFSInit [ SYS_FS_MAX_FILE_SYSTEM_TYPE ]
 // *****************************************************************************
 // *****************************************************************************
 
-/* MISRAC 2012 deviation block end */
+/* MISRAC 2023 deviation block end */
 
 /*******************************************************************************
   Function:
@@ -468,8 +464,8 @@ static const SYS_FS_REGISTRATION_TABLE sysFSInit [ SYS_FS_MAX_FILE_SYSTEM_TYPE ]
 void SYS_Initialize ( void* data )
 {
 
-    /* MISRAC 2012 deviation block start */
-    /* MISRA C-2012 Rule 2.2 deviated in this file.  Deviation record ID -  H3_MISRAC_2012_R_2_2_DR_1 */
+    /* MISRAC 2023 deviation block start */
+    /* MISRA C-2023 Rule 2.2 deviated in this file.  Deviation record ID -  H3_MISRAC_2023_R_2_2_DR_1 */
 
   
     PORT_Initialize();
@@ -487,10 +483,10 @@ void SYS_Initialize ( void* data )
     PM_Initialize();
 
 
-    /* MISRAC 2012 deviation block start */
+    /* MISRAC 2023 deviation block start */
     /* Following MISRA-C rules deviated in this block  */
-    /* MISRA C-2012 Rule 11.3 - Deviation record ID - H3_MISRAC_2012_R_11_3_DR_1 */
-    /* MISRA C-2012 Rule 11.8 - Deviation record ID - H3_MISRAC_2012_R_11_8_DR_1 */
+    /* MISRA C-2023 Rule 11.3 - Deviation record ID - H3_MISRAC_2023_R_11_3_DR_1 */
+    /* MISRA C-2023 Rule 11.8 - Deviation record ID - H3_MISRAC_2023_R_11_8_DR_1 */
 
 
     sysObj.drvMemory0 = DRV_MEMORY_Initialize((SYS_MODULE_INDEX)DRV_MEMORY_INDEX_0, (SYS_MODULE_INIT *)&drvMemory0InitData);
@@ -501,14 +497,14 @@ void SYS_Initialize ( void* data )
     (void) SYS_FS_Initialize( (const void *) sysFSInit );
 
 
-    /* MISRAC 2012 deviation block end */
+    /* MISRAC 2023 deviation block end */
     APP_Initialize();
 
 
     NVIC_Initialize();
 
 
-    /* MISRAC 2012 deviation block end */
+    /* MISRAC 2023 deviation block end */
 }
 
 /*******************************************************************************
