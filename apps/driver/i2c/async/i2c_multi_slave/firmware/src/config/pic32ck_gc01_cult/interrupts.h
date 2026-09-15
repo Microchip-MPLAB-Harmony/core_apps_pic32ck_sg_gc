@@ -59,7 +59,6 @@
 void Reset_Handler (void);
 void NonMaskableInt_Handler (void);
 void HardFault_Handler (void);
-void SysTick_Handler (void);
 void SERCOM4_I2C_InterruptHandler (void);
 void SERCOM5_USART_InterruptHandler (void);
 

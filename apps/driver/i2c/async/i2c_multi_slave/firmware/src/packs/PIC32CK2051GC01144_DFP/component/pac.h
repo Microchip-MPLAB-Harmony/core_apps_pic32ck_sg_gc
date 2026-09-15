@@ -1,7 +1,9 @@
 /*
  * Component description for PAC
  *
- * Copyright (c) 2024 Microchip Technology Inc. and its subsidiaries.
+ * Copyright (c) 2026 Microchip Technology Inc. and its subsidiaries.
+ *
+ * SPDX-License-Identifier: Apache-2.0
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -17,9 +19,13 @@
  *
  */
 
-/*  file generated from device description file (ATDF) version 2024-04-02T09:16:01Z  */
+/*  file generated from device description file (ATDF) version 2026-09-01T07:31:34Z  */
 #ifndef _PIC32CKGC01_PAC_COMPONENT_H_
 #define _PIC32CKGC01_PAC_COMPONENT_H_
+
+#if !defined(DISABLE_CMSIS)
+#include "core_cm33.h"
+#endif /* !defined(DISABLE_CMSIS) */
 
 /* ************************************************************************** */
 /*                      SOFTWARE API DEFINITION FOR PAC                       */
@@ -30,10 +36,10 @@
 
 #define PAC_WRCTRL_PERID_Pos                  _UINT32_(0)                                          /* (PAC_WRCTRL) Peripheral identifier Position */
 #define PAC_WRCTRL_PERID_Msk                  (_UINT32_(0xFFFF) << PAC_WRCTRL_PERID_Pos)           /* (PAC_WRCTRL) Peripheral identifier Mask */
-#define PAC_WRCTRL_PERID(value)               (PAC_WRCTRL_PERID_Msk & (_UINT32_(value) << PAC_WRCTRL_PERID_Pos)) /* Assignment of value for PERID in the PAC_WRCTRL register */
+#define PAC_WRCTRL_PERID(value)               (PAC_WRCTRL_PERID_Msk & ((uint32_t)(value) << PAC_WRCTRL_PERID_Pos)) /* Assignment of value for PERID in the PAC_WRCTRL register */
 #define PAC_WRCTRL_KEY_Pos                    _UINT32_(16)                                         /* (PAC_WRCTRL) Peripheral access control key Position */
 #define PAC_WRCTRL_KEY_Msk                    (_UINT32_(0xFF) << PAC_WRCTRL_KEY_Pos)               /* (PAC_WRCTRL) Peripheral access control key Mask */
-#define PAC_WRCTRL_KEY(value)                 (PAC_WRCTRL_KEY_Msk & (_UINT32_(value) << PAC_WRCTRL_KEY_Pos)) /* Assignment of value for KEY in the PAC_WRCTRL register */
+#define PAC_WRCTRL_KEY(value)                 (PAC_WRCTRL_KEY_Msk & ((uint32_t)(value) << PAC_WRCTRL_KEY_Pos)) /* Assignment of value for KEY in the PAC_WRCTRL register */
 #define   PAC_WRCTRL_KEY_OFF_Val              _UINT32_(0x0)                                        /* (PAC_WRCTRL) No action  */
 #define   PAC_WRCTRL_KEY_CLR_Val              _UINT32_(0x1)                                        /* (PAC_WRCTRL) Clear protection  */
 #define   PAC_WRCTRL_KEY_SET_Val              _UINT32_(0x2)                                        /* (PAC_WRCTRL) Set protection  */
@@ -50,7 +56,7 @@
 
 #define PAC_EVCTRL_ERREO_Pos                  _UINT8_(0)                                           /* (PAC_EVCTRL) Peripheral acess error event output Position */
 #define PAC_EVCTRL_ERREO_Msk                  (_UINT8_(0x1) << PAC_EVCTRL_ERREO_Pos)               /* (PAC_EVCTRL) Peripheral acess error event output Mask */
-#define PAC_EVCTRL_ERREO(value)               (PAC_EVCTRL_ERREO_Msk & (_UINT8_(value) << PAC_EVCTRL_ERREO_Pos)) /* Assignment of value for ERREO in the PAC_EVCTRL register */
+#define PAC_EVCTRL_ERREO(value)               (PAC_EVCTRL_ERREO_Msk & ((uint8_t)(value) << PAC_EVCTRL_ERREO_Pos)) /* Assignment of value for ERREO in the PAC_EVCTRL register */
 #define PAC_EVCTRL_Msk                        _UINT8_(0x01)                                        /* (PAC_EVCTRL) Register Mask  */
 
 
@@ -59,7 +65,7 @@
 
 #define PAC_INTENCLR_ERR_Pos                  _UINT8_(0)                                           /* (PAC_INTENCLR) Peripheral access error interrupt disable Position */
 #define PAC_INTENCLR_ERR_Msk                  (_UINT8_(0x1) << PAC_INTENCLR_ERR_Pos)               /* (PAC_INTENCLR) Peripheral access error interrupt disable Mask */
-#define PAC_INTENCLR_ERR(value)               (PAC_INTENCLR_ERR_Msk & (_UINT8_(value) << PAC_INTENCLR_ERR_Pos)) /* Assignment of value for ERR in the PAC_INTENCLR register */
+#define PAC_INTENCLR_ERR(value)               (PAC_INTENCLR_ERR_Msk & ((uint8_t)(value) << PAC_INTENCLR_ERR_Pos)) /* Assignment of value for ERR in the PAC_INTENCLR register */
 #define PAC_INTENCLR_Msk                      _UINT8_(0x01)                                        /* (PAC_INTENCLR) Register Mask  */
 
 
@@ -68,7 +74,7 @@
 
 #define PAC_INTENSET_ERR_Pos                  _UINT8_(0)                                           /* (PAC_INTENSET) Peripheral access error interrupt enable Position */
 #define PAC_INTENSET_ERR_Msk                  (_UINT8_(0x1) << PAC_INTENSET_ERR_Pos)               /* (PAC_INTENSET) Peripheral access error interrupt enable Mask */
-#define PAC_INTENSET_ERR(value)               (PAC_INTENSET_ERR_Msk & (_UINT8_(value) << PAC_INTENSET_ERR_Pos)) /* Assignment of value for ERR in the PAC_INTENSET register */
+#define PAC_INTENSET_ERR(value)               (PAC_INTENSET_ERR_Msk & ((uint8_t)(value) << PAC_INTENSET_ERR_Pos)) /* Assignment of value for ERR in the PAC_INTENSET register */
 #define PAC_INTENSET_Msk                      _UINT8_(0x01)                                        /* (PAC_INTENSET) Register Mask  */
 
 
