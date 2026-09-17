@@ -42,6 +42,9 @@
 #include "peripheral/cmcc/plib_cmcc.h"
 #include "interrupts.h"
 
+/* MISRAC 2023 deviation block start */
+/* MISRA C-2023 Rule 7.6 deviated in this file. Deviation record ID - H3_MISRAC_2023_R_7_6_DR_1 */
+
 void CMCC_Disable (void )
 {
     CMCC_REGS->CMCC_CTRL &=(~CMCC_CTRL_CEN_Msk);
@@ -105,4 +108,6 @@ void CMCC_InvalidateAll (void )
     }
     CMCC_REGS->CMCC_MAINT0 = CMCC_MAINT0_INVALL_Msk;
 }
+
+/* MISRAC 2023 deviation block end */
 

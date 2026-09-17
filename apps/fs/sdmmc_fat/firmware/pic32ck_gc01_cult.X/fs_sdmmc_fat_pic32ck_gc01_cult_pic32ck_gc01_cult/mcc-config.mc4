@@ -1,5 +1,6 @@
 configVersion: 1.0.0
 coreVersion: 5.9.0
+spaHostVersion: 1.3.0
 device: PIC32CK2051GC01144
 deviceLibrary:
   className: com.microchip.mcc.harmony.Harmony3Library
@@ -31,7 +32,7 @@ generatedFileHashHistoryMap:
 - file: ..\src\config\pic32ck_gc01_cult\configuration.h
   hash: 253fcb817397a5e39032cdfb86870804a22d0020e0e82917cbeac6a069393bd2
 - file: ..\src\config\pic32ck_gc01_cult\definitions.h
-  hash: e3f424676322c30939ec6f88c56c3c99f3e4096fc1526543fa035f230782c232
+  hash: 241a4f2583b7847484eb187c01ac8af49915eb666d6b6779fa281280c69a7577
 - file: ..\src\config\pic32ck_gc01_cult\device.h
   hash: 0bc15d825d9c99782a7f3bd5e280284a8b70f174a67b574f0df1b68311f646df
 - file: ..\src\config\pic32ck_gc01_cult\device_cache.h
@@ -71,15 +72,15 @@ generatedFileHashHistoryMap:
 - file: ..\src\config\pic32ck_gc01_cult\osal\osal_impl_basic.h
   hash: 158c4107f883f6d8c0244b73273361d1ca2ebd57c0934572b11a25c532fd22c5
 - file: ..\src\config\pic32ck_gc01_cult\peripheral\clock\plib_clock.c
-  hash: f6720b1ce3eda108586b691e3d1b64de65aeed9a63bf63ab0874c37f82a273b1
+  hash: ec0189b2a60df01b87782e365164cb8e7bd0d9b8a59ee3d2d55bf89161489e42
 - file: ..\src\config\pic32ck_gc01_cult\peripheral\clock\plib_clock.h
   hash: 2cfe368b59fc1bf82ec42d12ce509c5ed8d4affa8c62ae702692709590b627d4
 - file: ..\src\config\pic32ck_gc01_cult\peripheral\cmcc\plib_cmcc.c
-  hash: 3b03e762c5515130718e7694736be6c25984ff8078c84d21a3fb9eba54f68e5d
+  hash: f6ee0515ce26c343489a95c72cea79e0677f829394995164bfba57351c04659a
 - file: ..\src\config\pic32ck_gc01_cult\peripheral\cmcc\plib_cmcc.h
   hash: 89b940242bfa0ecdba3ac53666c5996e25fab712227d37d2d6881c8a86b5f497
 - file: ..\src\config\pic32ck_gc01_cult\peripheral\evsys\plib_evsys.c
-  hash: 171913270aa095f1e8ff9192995129ff7bab22e5c793c4223f9046802e69d1e6
+  hash: d788d709fe88f76d7801411754de9eb444c334e13455a40d37b61b605d353bde
 - file: ..\src\config\pic32ck_gc01_cult\peripheral\evsys\plib_evsys.h
   hash: f7d08eb8162f271ce1db384c082586a6624e506aa7f502c64c4ab5a1aadac47d
 - file: ..\src\config\pic32ck_gc01_cult\peripheral\nvic\plib_nvic.c
@@ -87,15 +88,15 @@ generatedFileHashHistoryMap:
 - file: ..\src\config\pic32ck_gc01_cult\peripheral\nvic\plib_nvic.h
   hash: 9936ac782115af41003255283fa2f603f4ff2212d16275b7c80ea8d067a9e208
 - file: ..\src\config\pic32ck_gc01_cult\peripheral\pm\plib_pm.c
-  hash: 60aa79685bd6b100e17d137d25852ed6bc0a18528c5f21e795b176769a9f08ca
+  hash: 6e643c2ffc606605d11696f3ab54064201b3c6da861fd6ae5139d1cd7069bc4d
 - file: ..\src\config\pic32ck_gc01_cult\peripheral\pm\plib_pm.h
   hash: 37890f6427dd8228e6743897f657f0d22cd7f8ea500c2b6e1bca643804728eb4
 - file: ..\src\config\pic32ck_gc01_cult\peripheral\port\plib_port.c
-  hash: b36c8ff4f1509f51a220d03c79e93d04e9380c7cb2c6f4d207955f146e41129d
+  hash: 3ee5680694e9df28faf3d47832ebe08ab66042b9c339b8cc61ec1ed79ce93024
 - file: ..\src\config\pic32ck_gc01_cult\peripheral\port\plib_port.h
-  hash: 0fffd48a41abf51b78af45402ff66fef65b5c7a1942508031f7b351a97ae9959
+  hash: c05c086d225112fba76e8f887fa58beefed2e9dcac395c0c69d28b4b749b9078
 - file: ..\src\config\pic32ck_gc01_cult\peripheral\sdmmc\plib_sdmmc0.c
-  hash: 55c4d4b82428c1cd71e284f36c919af7e4476b90c5423304fe211b4e8c3880a6
+  hash: 049be8fac94bc9beee51c88d39ed0d44eec20468473c24d9a7a4e97ecab83640
 - file: ..\src\config\pic32ck_gc01_cult\peripheral\sdmmc\plib_sdmmc0.h
   hash: 2ae052c84cb3bbb3a22bfe0b9ad040a237beb5b5b9bef715e26a9dcea4ca9bce
 - file: ..\src\config\pic32ck_gc01_cult\peripheral\sdmmc\plib_sdmmc_common.h
@@ -107,7 +108,7 @@ generatedFileHashHistoryMap:
 - file: ..\src\config\pic32ck_gc01_cult\pin_configurations.csv
   hash: dcd2726ffd641d757f3dcfb78ae0f9de62228a8dc82bd614098ad78f6e60b34b
 - file: ..\src\config\pic32ck_gc01_cult\startup_xc32.c
-  hash: 4175a6826e3ad6955caa8fd14b2b9a3a0d38a7569baf4a6f05d4119ed1c202c2
+  hash: f1c04fda7e765014234a7c2c99d75ddccb86c8fb24878ecc8df6705ec1cf1075
 - file: ..\src\config\pic32ck_gc01_cult\stdio\xc32_monitor.c
   hash: 858f8710d4287200a5ee7f3b3ad7c24f505aed9c05c16956ab0ff9f7bb162a6a
 - file: ..\src\config\pic32ck_gc01_cult\sys_tasks.h

@@ -74,6 +74,8 @@ extern uint32_t _stack;
 
 extern int main(void);
 
+/* MISRAC 2023 deviation block start */
+/* MISRA C-2023 Rule 7.6 deviated in this file. Deviation record ID - H3_MISRAC_2023_R_7_6_DR_1 */
 __STATIC_INLINE void __attribute__((optimize("-O1"))) CMCC_Configure(void)
 {
     CMCC_REGS->CMCC_CTRL &= ~(CMCC_CTRL_CEN_Msk);
@@ -84,6 +86,7 @@ __STATIC_INLINE void __attribute__((optimize("-O1"))) CMCC_Configure(void)
     CMCC_REGS->CMCC_CFG = CMCC_CFG_CSIZESW(2U)| CMCC_CFG_DCDIS_Msk;
     CMCC_REGS->CMCC_CTRL = (CMCC_CTRL_CEN_Msk);
 }
+/* MISRAC 2023 deviation block end */
 
 #if (__ARM_FP==14) || (__ARM_FP==4)
 

@@ -547,6 +547,7 @@ void SYS_Initialize ( void* data )
     EVSYS_Initialize();
 
 	BSP_Initialize();
+	SYSTICK_TimerInitialize();
     DMA0_Initialize();
 
     PM_Initialize();

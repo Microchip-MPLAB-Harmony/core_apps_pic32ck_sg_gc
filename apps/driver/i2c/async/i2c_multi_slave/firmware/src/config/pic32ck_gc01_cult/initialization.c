@@ -506,9 +506,10 @@ void SYS_Initialize ( void* data )
 
     EVSYS_Initialize();
 
-    SERCOM5_USART_Initialize();
-
+	SYSTICK_TimerInitialize();
     PM_Initialize();
+
+    SERCOM5_USART_Initialize();
 
     SERCOM4_I2C_Initialize();
 

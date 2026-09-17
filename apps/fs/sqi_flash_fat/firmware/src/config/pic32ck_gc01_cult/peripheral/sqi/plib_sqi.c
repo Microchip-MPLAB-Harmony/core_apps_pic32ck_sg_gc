@@ -43,6 +43,9 @@
 #include "interrupts.h"
 #include "plib_sqi.h"
 
+/* MISRAC 2023 deviation block start */
+/* MISRA C-2023 Rule 7.6 deviated in this file. Deviation record ID - H3_MISRAC_2023_R_7_6_DR_1 */
+
 #define SQI_CFG_CHIP_SELECT         (0x2 << SQICFG_CSEN_POSITION)
 
 typedef struct
@@ -56,7 +59,7 @@ static volatile sqiCallbackObjType SQICallbackObj;
 void SQI_Initialize(void)
 {
     // Reset and Disable SQI
-    SQI_REGS->SQI_CTRLA =  SQI_CTRLA_SWRST_Msk  ;
+    SQI_REGS->SQI_CTRLA =  1U  ;
 
     while((SQI_REGS->SQI_SYNCBUSY & SQI_SYNCBUSY_SWRST_Msk) == SQI_SYNCBUSY_SWRST_Msk)
     {
@@ -164,3 +167,5 @@ void __attribute__((used)) SQI_InterruptHandler(void)
         }
     }
 }
+
+/* MISRAC 2023 deviation block end */

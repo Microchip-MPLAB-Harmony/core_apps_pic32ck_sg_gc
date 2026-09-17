@@ -41,6 +41,9 @@
 #include "plib_clock.h"
 #include "device.h"
 
+/* MISRAC 2023 deviation block start */
+/* MISRA C-2023 Rule 7.6 deviated in this file. Deviation record ID - H3_MISRAC_2023_R_7_6_DR_1 */
+
 
 static void OSC32KCTRL_Initialize(void)
 {
@@ -139,3 +142,5 @@ void CLOCK_Initialize (void)
         /* Wait for synchronization */
     }
 }
+
+/* MISRAC 2023 deviation block end */

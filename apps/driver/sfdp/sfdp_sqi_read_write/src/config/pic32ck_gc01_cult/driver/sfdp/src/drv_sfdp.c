@@ -49,6 +49,9 @@
 
 #include "driver/sfdp/src/drv_sfdp_local.h"
 
+/* MISRAC 2023 deviation block start */
+/* MISRA C-2023 Rule 7.6 deviated in this file. Deviation record ID - H3_MISRAC_2023_R_7_6_DR_1 */
+
 // *****************************************************************************
 // *****************************************************************************
 // Section: Global objects
@@ -1842,3 +1845,4 @@ SYS_STATUS DRV_SFDP_Status(const SYS_MODULE_INDEX drvIndex)
 {
     return (gDrvSFDPObj.status);
 }
+/* MISRAC 2023 deviation block end */

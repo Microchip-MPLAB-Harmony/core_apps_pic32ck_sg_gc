@@ -50,6 +50,12 @@
 
 #include "plib_sdmmc_common.h"
 
+/* MISRAC 2023 deviation block start */
+/* MISRA C-2023 Rule 7.6 deviated in this file. Deviation record ID - H3_MISRAC_2023_R_7_6_DR_1 */
+/* MISRA C-2023 Rule 10.1 deviated in this file. Deviation record ID - H3_MISRAC_2023_R_10_1_DR_1 */
+/* MISRA C-2023 Rule 10.4 deviated in this file. Deviation record ID - H3_MISRAC_2023_R_10_4_DR_1 */
+/* MISRA C-2023 Rule 10.7 deviated in this file. Deviation record ID - H3_MISRAC_2023_R_10_7_DR_1 */
+/* MISRA C-2023 Rule 10.8 deviated in this file. Deviation record ID - H3_MISRAC_2023_R_10_8_DR_1 */
 #define SDMMC0_DMA_NUM_DESCR_LINES        (1U)
 #define SDMMC0_BASE_CLOCK_FREQUENCY       (96000000U)
 #define SDMMC0_MAX_BLOCK_SIZE             (0x200U)
@@ -556,8 +562,8 @@ void SDMMC0_ModuleInit( void )
     /* Enable ADMA2 (Check CA0R capability register first) */
     SDMMC0_REGS->SDMMC_HC1R |= SDMMC_HC1R_DMASEL(2U);
 
-    /* SD Bus Voltage Select = 3.3V, SD Bus Power = On */
-    SDMMC0_REGS->SDMMC_PCR = (SDMMC_PCR_SDBVSEL_3V3 | SDMMC_PCR_SDBPWR_ON);
+    /* SD Bus Power = On */
+    SDMMC0_REGS->SDMMC_PCR |= SDMMC_PCR_SDBPWR_ON;
 
     /* Set initial clock to 400 KHz*/
     (void) SDMMC0_ClockSet (SDMMC_CLOCK_FREQ_400_KHZ);
@@ -583,3 +589,4 @@ void SDMMC0_CallbackRegister(SDMMC_CALLBACK callback, uintptr_t contextHandle)
         sdmmc0Obj.context = contextHandle;
     }
 }
+/* MISRAC 2023 deviation block end */

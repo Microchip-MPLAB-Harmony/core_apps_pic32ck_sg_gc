@@ -13,10 +13,12 @@ dependency:
   type: package
   version: v3.17.1
 - dependencyPackage: ''
+  devMode: true
   name: filex
   type: package
   version: v6.4.0_rel
 - dependencyPackage: ''
+  devMode: true
   name: littlefs
   type: package
   version: v2.9.3

@@ -47,6 +47,9 @@
 #include "plib_dma0.h"
 #include "interrupts.h"
 
+/* MISRAC 2023 deviation block start */
+/* MISRA C-2023 Rule 7.6 deviated in this file. Deviation record ID - H3_MISRAC_2023_R_7_6_DR_1 */
+
 // *****************************************************************************
 // *****************************************************************************
 // Section: Global Data
@@ -533,3 +536,5 @@ void __attribute__((used)) DMA0_PRI2_InterruptHandler( void )
         }
     }
 }
+
+/* MISRAC 2023 deviation block end */
