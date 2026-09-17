@@ -3,6 +3,32 @@
 
 # Microchip MPLAB® Harmony 3 Release Notes
 
+## Harmony 3 driver and system service application examples for PIC32CK-GC/SG family v3.3.1
+
+### Development kit and demo application support
+
+Following table provides number of driver and system service examples available for different development kits.
+
+| Development Kits  | MPLAB X applications |
+|:-----------------:|:-------------------:|
+| [PIC32CK GC Curiosity Ultra Development Board](https://www.microchip.com/en-us/development-tool/EV44P93A) | 15 |
+| [PIC32CK SG Curiosity Ultra Development Board](https://www.microchip.com/en-us/development-tool/EV33A17A) | 2 |
+
+### New Features
+
+- None
+
+### Known Issues
+
+- None
+
+### Development Tools
+
+- [MPLAB® X IDE v6.35](https://www.microchip.com/mplab/mplab-x-ide) or higher
+- [MPLAB® XC32 C/C++ Compiler v6.00](https://www.microchip.com/mplab/compilers) or higher
+- MPLAB® X IDE plug-ins:
+    - MPLAB® Code Configurator 5.7.0 or higher
+
 ## Harmony 3 driver and system service application examples for PIC32CK-GC/SG family v3.3.0
 
 ### Development kit and demo application support
